@@ -1,0 +1,27 @@
+﻿{
+ "maxDatasetCount": 12,
+
+    "datasets": [
+        {
+			"name": "BSM Point Map",
+			"description": "Contains all Basic Safety Messages (BSMs) collected during the Advanced Messaging Concept Development (AMCD) field testing program.",
+            "url": "https://data.transportation.gov/Automobiles/BSM-Point-Map/fgbu-uats",
+            "image": "./images/BSM.PNG",
+            "altText": "Rail road car for rail related injuries"
+        },
+        {
+		    "name": "",
+			"description": "",
+            "url": "https://data.transportation.gov/Research-and-Statistics/Smart-City-Finalists-Map/gtg7-kcxb",
+            "image": "./images/SmartCity.PNG",
+            "altText": "Map of smart city finalists"
+        },
+        {
+            "name": "Advanced Messaging Concept Development",
+            "description": "Contains all Basic Mobility Control Message (BMCMs) generated during the Advanced Messaging Concept Development (AMCD) field testing",
+            "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Mobil/wqch-9e2e",
+            "image": "./images/AdvancedMessage.PNG",
+            "altText": "Graph of Advanced Message Concept"
+        }
+    ]
+}

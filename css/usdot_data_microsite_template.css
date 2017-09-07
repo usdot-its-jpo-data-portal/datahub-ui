@@ -1,0 +1,465 @@
+
+/********UNIVERSAL***********/
+
+/* body */
+body {
+
+  /* position and size */
+  /*height: 1200px;*/
+
+  /* background */
+  background: linear-gradient(#D8D8D8, white, white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/* div type to prevent movement on resize */
+#dataset-wrapper, #search-wrapper {
+
+  width: 100%;
+  /*max-width:1100px;*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/* ensures that divs are touching vertically */
+p{
+
+  margin:0px;
+
+}
+
+
+/* headings */
+.headingStyles {
+
+  /* position and size */
+  padding: 45px 0 25px 0;
+  font-weight: 400;
+  /*max-width: 1100px;*/
+
+  /* background */
+  /*background-color: #EDEDEF;
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;*/
+
+}
+
+
+/* font for headings */
+p.headingFont{
+
+  /* position and size */
+  padding: 45px 0 25px 0;
+  
+  /* text */
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.headHovers:hover {
+    color: white;
+    font-weight: bold;
+}
+/* Navigation bar background and font*/
+.navigation-bar {
+    /*position:fixed;*/
+    background: 
+        rgba(35, 91, 122, 0.6);
+    height: 40px;
+    padding: 0px 38px 0 38px;
+    margin-bottom: 50px;
+    text-align: left;
+
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background: 
+        rgba(35, 91, 122, 0.8);
+}
+
+
+.navBarLinks{
+    color: white;
+    font-size: 12px;
+    transition: transform 0.6s ease-in-out;
+    line-height: 2.5;
+    /*padding-top: 50%;*/
+}
+
+#dataseticon {
+    float: right;
+    padding-top: 6px;
+    padding-right: 8px;
+    height: 80%;
+}
+
+/* main content area */
+.contentArea {
+
+  /* position and size */
+  /*max-width: 1100px;*/
+  padding-top: 25px;
+  padding-bottom: 10%;
+}
+
+/* updates cursor to hand when hovering over a submit button */
+button:hover {
+    background-color: #2E86C1;
+    cursor: pointer;
+}
+
+
+/********SEARCH TEXTBOX AREA***********/
+
+/* search box area */
+.searchHeader {
+
+  /* position and size */
+  height: 600px;
+  /*max-width: 1100px;*/
+  margin: auto;
+
+  /* background */
+  
+
+  text-align: center;
+  background:
+      linear-gradient(
+          rgba(35, 91, 122, 0.4), 
+          rgba(35, 91, 122, 0.6)
+        ),
+      url('../images/header_background.png');
+    background-size: 100% 100%;
+    /*background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+
+/* font for search box */
+p.searchHeaderText {
+
+  /*margin-left: 8%;*/
+  line-height: 100%;
+
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+
+/* main search box */
+input.mainSearch {
+
+  /* position and size */
+  padding-left: 5px;
+  height: 60px;
+  /*width: 646px;*/
+  width: 33%;
+  /*margin-left: 80px;*/
+
+  /* background */
+  background: white;
+  border: 1px solid #DEDEDE;
+
+  /* text */
+  font-family: Arial;
+  font-size: 25px;
+  color: #333333;
+  opacity: 0.8;
+}
+
+input.mainSearch:focus {
+    opacity: 0.95;
+}
+
+/* italicizes the placeholder font inside the textbox */
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {  
+   font-style: italic;
+}
+
+
+/* main search button */
+button.searchButton {
+
+  /* position and size */
+  position: relative;
+  top: -1px;
+  height: 60px;
+  width: 130px;
+
+  /* background */
+  background-color: #01893c;
+  border: none;
+
+  /* text */
+  font-size: 18px;
+  font-weight: bold;
+  color: white;  
+}
+
+button.searchButton:hover {
+    background-color: #22b573;
+}
+
+/********TOPIC BUTTONS***********/
+
+
+button.topic {
+
+	/* position and size */
+    /*max-width: 125px;*/
+	height: 100%;
+	width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 20px;
+    /*padding-top: 20px;*/
+	/* background */
+	border: none;
+	background-color: rgba(255,255,255,0);
+
+	/* text */
+    outline: none;
+	color: #424242;
+	font-size: 20px;
+}
+
+.HoverThumbnail {
+    width: 55%;
+    height: 55%;
+    display: none;
+    margin-bottom: 20%;
+    
+    transition: all 1s ease-in-out;
+}
+button.topic:hover .HoverThumbnail {
+    display: inline;
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+button.topic:hover .RegularThumbnail{
+    display: none;
+}
+
+/*button.topic:hover {
+    box-shadow: 5px 5px 10px #d9d9d9;
+    color: #136289;
+}*/
+
+.categoryText{
+    font-weight: bold;
+    vertical-align: bottom;
+    color: #4d4d4d;
+}
+
+.categoryText:hover{
+    color: #136289;
+}
+
+/********SEARCH RESULTS***********/
+
+
+/* search results section heading */
+p.resultsSectionHeading {
+
+  /* position and size */
+  padding-left: 80px;
+
+  /* text */
+  font-size: 15px;
+  color: #565656;
+}
+
+p.resultsQuery {
+
+  /* position and size */
+  margin-right: auto;
+
+  /* text */
+  color: #787878;
+  font-size: 15px;
+}
+
+p.resultsCount {
+  /* position and size */
+  margin-right: auto;
+
+  /* text */
+  color: #787878;
+  font-size: 15px;
+}
+p.showFeaturedData {
+
+  /* position and size */
+  margin-right: 80px;
+
+  /* text */
+  font-size: 15px;
+}
+
+p.showFeaturedData:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+hr.resultsDivider {
+
+  /* position and size */
+  margin-left: 80px;
+  margin-right: 80px;
+
+  /* background */
+  border-color: #DEDEDE;
+
+}
+
+
+/* search result item headers */
+a.resultItemHeader {
+
+  /* text */
+  font-size: 17px;
+  font-weight: bold;
+  color: #1b9b67;
+  text-decoration: none;
+
+}
+
+a.resultItemHeader:hover {
+    color: #29aa73;
+}
+
+/* tag links */
+button.tag {
+
+  /* position and size */
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+  overflow:hidden;
+
+  /* background */
+  background-color: #565656;
+
+  /* text */
+  color: white;
+
+}
+
+
+/********FEATURED DATA SETS***********/
+
+iframe.featuredDataWidget {
+
+	/* position and size */
+	width: 100%;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* heading for Featured Data Sets */
+p.featuredHeading {
+
+  /* position and size */
+  margin: 7% 7% 2% 7%;
+  
+  /* text */
+  font-size: 17px;
+  font-weight: bold;
+  color: #01893c;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+p.featuredHeading:hover {
+  color: #29aa73;
+}
+
+
+/* thumbnail for Featured Data Sets */
+img.featuredDataThumbnail {
+  width: 100%;
+  height: 50%;
+}
+
+.hidden {
+    position: absolute;
+    left: -1000000px;
+    top:auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#footerInfo{
+    background-color: #2E5B7A;
+    text-align: center;
+    color: white;
+    height: 160px;
+}
+
+#categoryDiv {
+    background: url('../images/CategoryBackground.png');
+    /*background-size: 95%;*/
+    padding-top: 20px;
+    text-align: center;
+}
+
+.categorylayout {
+    padding: 0 20% 0 20%;
+    align-content: center;
+    margin-top: 2%;
+}
+
+.bulmaCategories {
+    margin-top: 10px;
+    text-align: center;
+    height: auto;
+    max-width: 400px;
+    /*width: 0%;*/
+    max-height: 300px;
+}
+
+.contentIndicator {
+    width: 69px;
+    height: 69px;
+    position: relative;
+    display: block;
+    left: 48%;
+    margin-bottom: -65px;
+}
+
+[id^=fds] {
+    transition: all .2s ease-in-out;
+}
+
+[id^=fds]:hover {
+    transform: scale(1.1);
+}

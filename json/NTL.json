@@ -1,0 +1,377 @@
+﻿{
+ "datasets": [ {
+  "title": "Establishing monitoring programs for travel time reliability.",
+   "tags": [
+        "Case studies information",
+	    "Data collection information",
+        "Data quality information",
+        "Highway travel information",
+        "Sensors information",
+        "Traffic surveillance information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61934.html",
+    "Abstract": "Within the second Strategic Highway Research Program (SHRP 2), Project L02 focused on creating a suite of methods by which transportation agencies could monitor and evaluate travel time reliability. Creation of the methods also produced an improved understanding of why and how travel times vary and the factors that create that variation. This final report provides a brief narrative about what reliability is and how it can be measured and analyzed. A general finding is that reliability is best described by creating holistic pictures like probability density functions (PDFs) and their associated cumulative density functions (CDFs). PDFs are helpful for identifying multimodality or the existence of multiple operating conditions within the data being examined. CDFs are helpful for seeing if progress is being made in making a system more reliable or for comparing the reliability of one system against another. After an introductory chapter, chapters in this report address: a survey of existing systems and user needs; functional specifications; data collection, assembly, and cleaning; sensor spacing and sampling for travel time reliability monitoring; data processing and analysis; and case studies. The last chapter provides a summary and conclusions. For supporting datasets, please see https://ntlsearch.bts.gov/tris/record/ntl/61935.html"
+  },
+  {
+  "title": "Establishing monitoring programs for travel time reliability. [supporting datasets]",
+   "tags": [
+        "Data files information",
+        "Case studies information",
+        "Data collection information",
+        "Data quality information",
+        "Highway travel information",
+        "Sensors information", 
+        "Traffic surveillance information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61935.html",
+    "Abstract": "This zip file contains case study datasets for SHRP 2 Report S2-L02-RR1: Establishing Monitoring Programs for Travel Time Reliability, https://ntlsearch.bts.gov/tris/record/ntl/61934.html The files are in comma separated value (.csv) format. The compressed zip file is 84.15 MB. These files can be unzipped using any zip compression/decompression software. The .csv files can be read with any basic text editor."
+  },
+  {
+  "title": "Analytical procedures for determining the impacts of reliability mitigation strategies.",
+   "tags": [
+        "Before and after studies information",
+        "Highway traffic control information",
+        "Highways information",
+        "Improvements information",
+        "Nonrecurrent congestion information",
+        "Strategic planning information",
+        "Traffic congestion information",
+        "Travel time information",
+        "Uncertainty information"
+    ],
+    "PublicationDate": "2013",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61950.html",
+    "Abstract": "Reliability of transport, especially the ability to reach a destination within a certain amount of time, is a regular concern of travelers and shippers. The definition of reliability used in this research is how travel time varies over time. The variability can apply to the travel times observed over a road segment during a specific time slice (e.g., 3 to 6 p.m.) over a fairly long period of time, say a year. The variability can also pertain to the travel times of repeated trips made by a person or a truck between a given origin and destination. Agencies are increasingly aware of the issue of reliability, although the transportation industry as a whole as yet lacks a firm understanding of the causes and solutions to failures of reliability. As the agenda for the SHRP 2 research on travel time reliability took shape, it became clear a fundamental study was required to be able to talk about travel time reliability in a meaningful way. The fundamental objective of SHRP 2 Project L03 was to develop predictive relationships between highway improvements and travel time reliability. In other words, how can the effect of an improvement on reliability be predicted? Alternatively, how can reliability be characterized as a function of highway, traffic, and operating conditions? A variety of challenging issues have been confronted in addressing this objective."
+  },
+  {
+  "title": "Analytical procedures for determining the impacts of reliability mitigation strategies. [supporting datasets]",
+   "tags": [
+        "Before and after studies information",
+        "Highway traffic control information",
+        "Highways information",
+        "Improvements information",
+        "Nonrecurrent congestion information",
+        "Strategic planning information",
+        "Traffic congestion information",
+        "Travel time information",
+        "Uncertainty information"
+    ],
+    "PublicationDate": "Nov 30 2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61975.html",
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L03-RR-1, Analytical procedures for determining the impacts of reliability mitigation strategies.Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://ntlsearch.bts.gov/tris/record/ntl/61950.html"
+  },
+  {
+  "title": "Analytical procedures for determining the impacts of reliability mitigation strategies. [supporting datasets]",
+   "tags": [
+        "Before and after studies information",
+        "Highway traffic control information",
+        "Highways information",
+        "Improvements information",
+        "Nonrecurrent congestion information",
+        "Strategic planning information",
+        "Traffic congestion information",
+        "Travel time information",
+        "Uncertainty information"
+    ],
+    "PublicationDate": "Nov 30 2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61937.html",
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L03-RR-1, Analytical procedures for determining the impacts of reliability mitigation strategies.Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://ntlsearch.bts.gov/tris/record/ntl/61950.html"
+  },
+  {
+  "title": "Identification and evaluation of the cost-effectiveness of highway design features to reduce nonrecurrent congestion.",
+   "tags": [
+        "Cost effectiveness information",
+        "Benefit cost analysis information",
+        "Highway design information",
+        "Highway operations information",
+        "Highway safety information",
+        "Level of service information",
+        "Life cycle analysis information",
+        "Mathematical models information",
+        "Nonrecurrent congestion information",
+        "Traffic safety information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61939.html",
+    "Abstract": "This research report presents the findings on the identification and evaluation of the use of highway geometric design features on freeways to reduce nonrecurrent congestion and improve travel time reliability. General guidance is provided on the range of design elements that could be used by transportation agencies to improve travel time reliability and reduce nonrecurrent congestion, analysis procedures and models to measure their operational and safety effectiveness, as well as a life-cycle benefit–cost method to support decision making on the possible use of individual treatments to address actual nonrecurring traffic conditions. For the safety effectiveness analysis, a new relationship between safety and congestion was explored and a mathematical model developed to quantify crash frequency at various levels of service. For datasets related to this report, please visit https://ntlsearch.bts.gov/tris/record/ntl/61939.html"
+  },
+  {
+  "title": "Identification and evaluation of the cost-effectiveness of highway design features to reduce nonrecurrent congestion. [supporting datasets]",
+   "tags": [
+        "Benefit cost analysis information",
+        "Cost effectiveness information",
+        "Highway design information",
+        "Highway operations information",
+        "Highway safety information",
+        "Level of service information",
+        "Life cycle analysis information",
+        "Mathematical models information",
+        "Nonrecurrent congestion information",
+        "Travel time information",
+        "Traffic safety information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61951.html",
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 Report S2-L07-RR-1, Identification and Evaluation of the Cost-Effectiveness of Highway Design Features to Reduce Nonrecurrent Congestion, https://ntlsearch.bts.gov/tris/record/ntl/61937.html The compressed zip file is 12 MB. These files can be unzipped using any zip compression/decompression software. The .csv files can be read with any basic text editor."
+  },
+  {
+  "title": "Incorporating travel time reliability into the Highway Capacity Manual.",
+   "tags": [
+        "Forecasting information",
+        "Freeways information",
+        "Highway capacity information",
+        "Highway travel information",
+        "Methodology information",
+        "Software information",
+        "Streets information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61971.html",
+    "Abstract": "This final report documents the activities performed"
+  },
+  {
+  "title": "Incorporating travel time reliability into the Highway Capacity Manual. [supporting datasets]",
+   "tags": [
+        "Forecasting information",
+        "Freeways information",
+        "Highway capacity information",
+        "Highway travel information",
+        "Methodology information",
+        "Software information",
+        "Streets information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2013",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61952.html",
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L08-RW-1, Incorporating travel time reliability into the Highway Capacity Manual. Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://ntlsearch.bts.gov/tris/record/ntl/61951.html"
+  },
+  {
+  "title": "Effectiveness of different approaches to disseminating traveler information on travel time reliability.",
+   "tags": [
+        "Definitions information",
+        "Human factors information",
+        "Information dissemination information",
+        "Messages (Communications) information",
+        "Nonrecurrent congestion information",
+        "State of the practice information",
+        "Traffic delay information",
+        "Travel time information",
+        "Traveler information and communication systems information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61973.html",
+    "Abstract": "The second Strategic Highway Research Program (SHRP 2) Reliability program aims to improve trip time reliability by reducing the frequency and effects of events that cause travel times to fluctuate unpredictably. Congestion caused by unreliable, or nonrecurring, events is roughly as extensive as congestion caused by routine bottlenecks (Cambridge Systematics, Inc. 2003). Nonrecurring events such as crashes, work zones, special events, and weather disrupt normal traffic flow by causing reduced speeds, lane closures, and erratic driving maneuvers. The goals of the SHRP 2 Reliability program focus on travel time variation—the characteristic of the transportation system that can cause the driver’s current trip to take much longer than normally expected. For example, a driver must allow an hour to make a trip that normally takes 30 minutes. This transportation system characteristic is important for travelers and shippers and is a component of the congestion problem in which transportation agencies can make significant and measurable gains even as travel demand grows. Reducing delays related to reliability has the added benefit of reducing primary and secondary crashes, vehicle emissions, and fuel use, as well as other benefits. Travel time reliability information includes cumulative data about traffic speeds and trip times that take into account historical variations from day to day and enable individuals to understand the level of variation in traffic. Unlike real-time travel time information, which provides a current snapshot of trip conditions and travel time, reliability information can be used to plan and budget in advance for a trip. A key component in addressing the reliability issue related to urban mobility is conveying reliability-related information to system users so they can make informed decisions about their travel. The challenge for transportation professionals lies in selecting the best means of conveying that information so it is usable and effective. The goal of this research project was to examine what combination of words, numbers, and other features of user information messages, along with communications methods and technology platforms, best communicates information about travel time and reliability to travelers so that they can make optimal travel choices from their own point of view. Such choices include whether to take a trip, departure time, mode choice, and route choice. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61973.html"
+  },
+  {
+  "title": "Effectiveness of different approaches to disseminating traveler information on travel time reliability. [supporting datasets]",
+   "tags": [
+        "Definitions information",
+        "Human factors information",
+        "Information dissemination information",
+        "Messages (Communications) information",
+        "Nonrecurrent congestion information",
+        "State of the practice information",
+        "Traffic delay information",
+        "Travel time information",
+        "Traveler information and communication systems information"
+    ],
+    "PublicationDate": "2013",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61940.html",
+    "Abstract": "Data files in this zipped package include macro-enabled Microsoft Excel spreadsheets. These spreadsheets operate as interactive games. To save them into open formats would destroy this functionality. Therefore the macro-enabled spreadsheets are left as-is. There were opened prior to ingest in this repository using Microsoft Excel 2010. This dataset supports SHRP 2 report S2-L14-RW-1, Effectiveness of different approaches to disseminating traveler information on travel time reliability. Zip contains 628 MB. Files were accessed with Microsoft Excel 2016. Data will be preserved as it is. For the publication see: https://ntlsearch.bts.gov/tris/record/ntl/61952.html"
+  },
+  {
+  "title": "Validation of urban freeway models.",
+   "tags": [
+        "Freeways information",
+        "Traffic data information",
+        "Traffic models information",
+        "Travel time information",
+        "Urban highways information",
+        "Validation information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61941.html",
+    "Abstract": "This report describes the methodology, data, conclusions, and enhanced models regarding the validation of two sets of models developed in the Strategic Highway Research Program 2 (SHRP 2) Reliability Project L03, Analytical Procedures for Determining the Impacts of Reliability Mitigation Strategies. The significance of the L03 models is they were among the first models that could be used to predict travel time reliability. Two sets of models were developed in Project L03, the data-poor and the data-rich models. The data-poor models predict a measure of reliability as a function of just the mean Travel Time Index, except for on-time measures. The data-rich models predict a measure of the variability of travel time as a function of a number of explanatory variables: the demand-to-capacity ratio, lane-hours lost (due to traffic incidents or work zones), and rainfall. Both the data-poor and data-rich models were estimated from data collected over a year from a subset of urban freeway segments in seven cities. The data-poor models apply to all time slices throughout a day, whereas four sets of data-rich models concerning different moments of the TTI distribution were estimated for the peak hour, the peak period, the midday, and weekdays. Validation data totaled 323 segment-years covering both midday and peak periods. In conducting the validation, the research team was prohibited from using data that were used to estimate the data-poor and data-rich models. The project used two criteria for assessing the validity of the L03 models. The first was the difference between the predicted and measured values of the dependent variable. The second was whether the estimated models satisfied the assumptions of linear regression. This report describes the degree to which the different models perform well in terms of prediction and satisfying regression assumptions. The data-poor models predicted acceptably well but had some shortcomings in terms of satisfying the regression assumptions. Three sets of enhanced models were developed. The research team could not find satisfactory enhancements to the data-rich models. The degree to which the data-rich models predict well and satisfy the assumptions of linear regression is also described in the report."
+  },
+  {
+  "title": "Validation of urban freeway models. [supporting datasets]",
+   "tags": [
+        "Freeways information",
+        "Traffic data information",
+        "Traffic models information",
+        "Travel time information",
+        "Urban highways information",
+        "Validation information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61953.html",
+    "Abstract": "The datasets in these 5 zip files are in support of SHRP 2 Report S2-L33-RW-1, Validation of Urban Freeway Models, https://ntlsearch.bts.gov/tris/record/ntl/61940.html The 5 zip files contain a total of 60 comma separated value (.csv) files. The compressed zip files total 3.8 GB in size. The files have been uploaded as-is; no further documentation was supplied. These files can be unzipped using any zip compression/decompression software. The files can be read in any simple text editor. [software requirements]"
+  },
+  {
+  "title": "E-tool for business processes to improve travel time reliability.",
+   "tags": [
+        "Emergency management information",
+        "Software information",
+        "State departments of transportation information",
+        "Transit operating agencies information",
+        "Transportation operations information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "http://www.trb.org/Main/Blurbs/170579.aspx",
+    "Abstract": "The research team developed an e-tool that can be used by practitioners for planning, implementing, integrating, and analyzing business processes to improve travel time reliability. From the feedback obtained from the pilot testing, practitioners indicate that the e-tool can help them by providing valuable outputs that can be used by agency business processes to allocate resources and funding to advance operations. Additionally, the agencies acknowledged that the e-tool pilot study sessions provided agencies an opportunity to help identify areas where operations might be improved or better integrated through the business processing mapping portion of its seven-step process. The results of the L34 research project are directly applicable to the SHRP 2 Reliability area’s objectives. The e-tool will help state departments of transportations (DOTs), metropolitan planning organizations (MPOs), and local transportation agencies evaluate where they stand with respect to their business processes related to advancing operations and therefore enhancing travel time reliability. The e-tool has the potential to be a valuable application of results of the SHRP 2 Reliability program because it was designed to be intuitive, easy to use, and directly applicable to the business of a state DOT, MPO, or local agency. The final e-tool product will be hosted by the research team until the final home of the product is finalized by the Federal Highway Administration (FHWA) and the Transportation Research Board (TRB). Designing the tool as an electronic product helps ensure its use and applicability in today’s environment. However, as with any research product, implementation is important. The etool can be found on the TRB website by following this link: http://www.trb.org/Main/Blurbs/170579.aspx"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Southern California.",
+   "tags": [
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Microsimulation information",
+        "Performance measurement information",
+        "Pilot studies information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61957.html",
+    "Abstract": "The second Strategic Highway Research Program (SHRP 2) has been investigating the critical subject of travel time reliability for several years. As part of this research, SHRP 2 supported multiple efforts to develop products to evaluate travel time reliability and to estimate the impact of projects on reliability. SHRP 2 reliability projects have developed several methods to help public agencies: - Collect and analyze data on the variability of travel time - Diagnose problems - Propose actions or alternative mitigation strategies - Test the impacts of solutions One goal of this research has been to find ways to demonstrate how operational strategies improve travel time reliability, which is highly valued by both the person and goods movement transportation markets. Operational strategies are critical to improve mobility and travel time reliability on highways and can be implemented faster than larger system expansion projects, since they often do not require detailed environmental reviews, and they generally cost much less. In current practice, travel demand and microsimulation models have not been able to adequately estimate the reliability benefits of operations projects. As a result, the SHRP 2 reliability products have the potential to fill a void in the ability of transportation professionals to analyze reliability and quantify the likely benefits of these strategies. Some activity-based models (ABM) with dynamic traffic assignment (DTA) tools under assessment (e.g., in the report, SHRP 2 L04 Incorporating Reliability Performance Measures into Operations and Planning Modeling Tools) may be able to meet this need in the future, but none are currently in widespread use. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61963.html"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Southern California. [supporting datasets]",
+   "tags": [
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Microsimulation information",
+        "Performance measurement information",
+        "Pilot studies information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61963.html",
+    "Abstract": "The datasets in this zip file, which is 338.39 MB in size, are in support of SHRP 2 reliability project L38A, 'Pilot testing of SHRP 2 reliability data and analytical products: Southern California.' This report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61957.html This zip file contains 11 files, including 8 Microsoft Excel worksheets (XLSX), 2 Comma Separated Values (CSV), and 1 Zip Package (PKZIP) files. The Microsoft Excel worksheets can be opened using the 2010 and 2016 versions of Microsoft Word, the CSV files can be opened using most text editors, and the PKZIP files can be opened using most zip file extraction programs. (1) Caltrans District 7 Vehicle Detection System Analysis.xlsx (2) Corridor Delay Analysis Results TASAS LA I-210 EB.xlsx (3) Corridor Delay Analysis Results TASAS ORA I-5 NB.xlsx (4) Highway 210 Eastbound Congestion Data Weekdays.xlsx (5) Highway 210 Incident Data.xlsx (6) Highway 210 Segment 1 Detailed Data Eastbound.csv (7) I-5 Northbound Congestion Data AM Peak Period.xlsx (8) I-5 Northbound Congestion Data PM Peak Period.xlsx (9) I-5 Northbound Congestion Data Weekdays.xlsx (10) Project-L38A-Travel-Time-Data.zip (11) Sample Travel Time Results.csv"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Minnesota.",
+   "tags": [
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Performance measurement information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61954.html",
+    "Abstract": "The Minnesota pilot site has undertaken an effort to test data and analytical tools developed through the Strategic Highway Research Program (SHRP) 2 Reliability focus area. The purpose of these tools is to facilitate the improvement of travel time reliability on highways by reducing the frequency and effects of events that cause travel times to fluctuate in an unpredictable manner. The SHRP 2 reliability data and analytical tools evaluated by the Minnesota team are intended to address travel time variability in one of three ways: 1. Establish monitoring systems to identify sources of unreliable travel times (Project L02) 2. Identify potential solutions to cost-effectively improve reliability (Project L07) 3. Incorporate consideration of travel time reliability into transportation agencies’ planning and programming framework (Project L05) The Project L02 data and analytical tools were pilot tested by collecting vast amounts of traffic and nonrecurring conditions data and compiling it in a travel time reliability monitoring system (TTRMS) for purposes of conducting reliability evaluations. The L07 benefit-cost tool was evaluated in a number of facets, including usability, performance, and sensitivity testing. Guidance from Project L05 to incorporate reliability into the planning and programming process was introduced to a wide audience of stakeholders through an extensive outreach effort of meetings, workshops, and web conferences. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61965.html"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Minnesota. [supporting datasets]",
+   "tags": [
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Performance measurement information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61965.html",
+    "Abstract": "The datasets in the attached ZIP file support SHRP 2 reliability project L38B, 'Pilot testing of SHRP 2 reliability data and analytical products: Minnesota.' This report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61954.html This ZIP file package, which is 22.1 MB in size, contains 6 Microsoft Excel spreadsheet files (XLSX): (1) I-94 2012 Speed and Volume Data (Part 1).xlsx (2) I-94 2012 Speed and Volume Data (Part 2).xlsx (3) I-94 2012 Speed and Volume Data (Part 3).xlsx This file package also contains 3 Comma Separated Value files (CSV): (1) I-94 WB at Park Avenue Flow.csv (2) Project L07 Combined Database.csv (3) TH 100 NB Sample Database.csv The XLSX and CSV files can be opened using Microsoft Excel 2010 and 2016. The CSV files can be opened using most available text editing programs."
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Florida.",
+   "tags": [
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Microsimulation information",
+        "Performance measurement information",
+        "Pilot studies information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2015",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61955.html",
+    "Abstract": "Transportation agencies have realized the importance of performance estimation, measurement, and management. The Moving Ahead for Progress in the 21st Century Act legislation identifies travel time reliability as one of the goals of the federal highway programs to be supported by established performance measurement processes in each state. The Reliability Program of the second Strategic Highway Research Program (SHRP 2) has developed a number of products to support estimating travel time reliability, identifying reliability deficiencies and contributing factors, identifying alternative solutions, and analyzing the impacts of these solutions. As part of the SHRP 2 program, tools have been developed to assess reliability based on a variety of approaches such as sketch planning, analytical analysis, simulation analysis, and travel time monitoring. SHRP 2 initiated the L38 project to pilot test products from five of the program’s completed projects. The products support reliability estimation and use based on data analyses, analytical techniques, and decision-making framework. The L38 project has two main objectives: (1) to assist agencies in using travel time reliability as a measure in their business practices and (2) to receive feedback from the project research teams on the applicability and usefulness of the products tested, along with their suggested possible refinements. SHRP 2 selected four teams from California, Minnesota, Florida, and Washington. This document reports on the activities performed as part of the Florida project (Project L38C). Project L38C tested elements from Projects L02, L05, L07, and L08. Project L02 identified methods to collect, archive, and integrate required data for reliability estimation and methods for analyzing and visualizing the causes of unreliability based on the collected data. Projects L07 and L08 produced analytical techniques and tools for estimating reliability based on developed models and allowing the estimation of reliability and the impacts on reliability of alternative mitigating strategies. Project L05 provided guidance regarding how to use reliability assessments to support the business processes of transportation agencies. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61966.html"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Florida. [supporting datasets]",
+   "tags": [
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Microsimulation information",
+        "Performance measurement information",
+        "Pilot studies information",
+        "Travel time information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61966.html",
+    "Abstract": "The datasets in this zip file, which is 7.83 MB in size, support of SHRP 2 reliability project L38C, 'Pilot testing of SHRP 2 reliability data and analytical products: Florida.' The accompanying report can be accessed at the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61955.html There are 12 datasets in this zip file, including 2 Microsoft Excel worksheets (XLSX) and 10 Comma Separated Values (CSV) files. The Microsoft Excel worksheets can be opened using the 2010 and 2016 versions of Microsoft Word, the CSV files can be opened using most text editors: (1) FREEVAL D6 TSS 05122010 5S.csv (2) FREEVAL I 95 NB Normal Day Volume.xlsx (3) FREEVAL PTMS Counts I95 2pm 7pm.xlsx (4) L08 STREETVAL 3 Year SR7 Crashes.csv (5) Project L38C I-95 NB 2012 Incident Data.csv (6) Project L38C Miami 2012 Precipitation.csv (7) Regimes I-95 NB EL 2012.csv (8) Regimes I-95 NB TVT DMS 22 TO CGI 2012.csv (9) Regimes I-95 SB EL 2012.csv (10) Regimes I-95 SB TVT DMS 3 TO I395 2012.csv (11) STREETEVAL SR7 Processed Data NB.csv (12) STREETEVAL SR7 Processed Data SB.csv"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Washington.",
+   "tags": [
+        "Travel time information",
+        "Traffic engineering information",
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Pilot studies information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61956.html",
+    "Abstract": "The second Strategic Highway Research Program (SHRP 2) addresses the challenges of moving people and goods efficiently and safely on the nation’s highways. In its Reliability focus area, the research emphasizes improving the reliability of highway travel time by reducing the frequencies and effects of events that cause travel time to fluctuate in an unpredictable manner. and effects of events that cause travel time to fluctuate in an unpredictable manner. Washington State Department of Transportation (WSDOT), in association with the Smart Transportation Applications and Research Laboratory (STAR Lab) at the University of Washington (UW), is one of the four research teams for conducting the pilot testing of Project L38. This research project mainly tested and evaluated SHRP 2 Reliability Data and Analytical Products, specifically those produced by the SHRP 2 L02, L05, L07, L08, and C11 projects. These analytical tools are designed to use for travel time reliability measurement, monitoring, enhancement, and impact assessment. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61968.html"
+  },
+  {
+  "title": "Pilot testing of SHRP 2 reliability data and analytical products: Washington. [supporting datasets]",
+   "tags": [
+        "Travel time information",
+        "Traffic engineering information",
+        "Business practices information",
+        "Data analysis information",
+        "Data collection information",
+        "Pilot studies information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61968.html",
+    "Abstract": "The datasets in this zip file, which is 90.5 MB in size, are in support of SHRP 2 reliability project L38D, 'Pilot testing of SHRP 2 reliability data and analytical products: Washington.' The project report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61956.html This zip file contains 20 Comma Separated Values (CSV) files, which can be opened using most text editing programs."
+  },
+  {
+  "title": "Strategic approaches at the corridor and network level to minimize disruption from the renewal process.",
+   "tags": [
+        "Decision support systems information",
+        "Highway corridors information",
+        "Highway operations information",
+        "Programming (Planning) information",
+        "Software information",
+        "Strategic planning information",
+        "Traffic delay information",
+        "Urban renewal information",
+        "Work zone traffic control information"
+    ],
+    "PublicationDate": "2014",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61962.html",
+    "Abstract": "Program managers within state departments of transportation (DOTs) and metropolitan planning organizations (MPOs) are charged with distilling a chaotic universe of identified renewal needs into a logically sequenced program of manageable projects over a period of years. In addition, program managers are tasked with sequencing programs of projects in ways that maximize available resources, minimize disruptions to the traveling public and to adjacent land uses, and recognize political priorities. Over the past several years, substantial progress has been made in the areas of performance measurement, maintenance of traffic, mitigation of congestion in work zones, and alternative contracting and construction techniques. All of this progress has been made in studies and planning designed to minimize, manage, and mitigate disruption to traffic and commerce arising from renewal programs. However, in reality, performance measures are applied largely at the project level, and impacts are not analyzed at the program (mesoscopic) level. The products of this SHRP 2 Renewal project include both a software tool that will assist program managers at DOTs and MPOs in sequencing programs of projects and the training materials on applying that tool. Task 1 of this project identified the universe of published works that may be applicable to the products of this project. During the Task 2 literature analysis, 135 documents from Task 1 were identified as being “highly relevant” to this project and were reviewed to extract critical information. In Tasks 3, 4, and 5, a similar data set was extracted through interviews with DOTs, MPOs, and other key stakeholders. This allowed the research team (the team) to draw comparisons and identify differences between theory and practice. The team observed that the gap between the state of the art (identified in Tasks 1 and 2) and the state of the practice (identified in Tasks 3 and 4) is quite pronounced and varies widely across the country (Figure ES.1). Available software platforms with capabilities similar to those considered in this project were identified and analyzed. The lessons learned from the team’s review of the various software platforms and packages provided an excellent basis and critical information for the proposed Work Zone Impact and Strategy Estimator (WISE) tool."
+  },
+  {
+  "title": "Strategic approaches at the corridor and network level to minimize disruption from the renewal process. [supporting datasets]",
+   "tags": [
+        "Decision support systems information",
+        "Highway corridors information",
+        "Highway operations information",
+        "Programming (Planning) information",
+        "Software information",
+        "Strategic planning information",
+        "Traffic delay information",
+        "Urban renewal information",
+        "Work zone traffic control information"
+    ],
+    "PublicationDate": "2017",
+    "URL": "https://ntlsearch.bts.gov/tris/record/ntl/61974.html",
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-R11-RW-1, Strategic approaches at the corridor and network level to minimize disruption from the renewal process. Zip size is 0.46 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view the publication see: https://ntlsearch.bts.gov/tris/record/ntl/61962.html"
+  }
+ ]
+}

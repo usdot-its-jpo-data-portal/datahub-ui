@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<a href="#main" class="hidden">Skip to main content</a>
+<head>
+    <title>Department of Transportation - Open Data Portal | Department of Transportation - Data Portal</title>
+    <link rel="stylesheet" type="text/css" href="css/ITS_JPO.css">
+    <link rel="stylesheet" type="text/css" href="css/usdot_data_microsite_template.css">
+    <link rel="stylesheet" href="css/bulma.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+</head>
+
+<body id="search-wrapper">
+    <div id='searchTerms'>
+        <a name="main" id="main"></a>
+
+        <!--===================DOT HEADER===================-->
+
+        <div id="dotTopBanner" style="width: 100%; background: #152350; height: 60px; padding: 5px 0 0 10px">
+            <img src="images/icons/dot_logo.png" style="height: 35px; margin-left: 25px; margin-top: 8px;"alt="department of transportation logo">
+            <div id="dotTopLinks" style="line-height: 30px; background: #04214f">
+                <a class="headHovers" href="https://www.transportation.gov/mission/about-us" style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a>
+                <a class="headHovers" href="https://www.transportation.gov/briefingroom" style="font-size: 11px; width: 80px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
+                <a class="headHovers" href="https://www.transportation.gov/our-activities" style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;OUR ACTIVITIES</a>
+            </div>
+        </div>
+        
+
+        <!--===================SEARCH HEADER===================-->
+
+        <div id="searchHead" class="searchHeader">
+            <!--==================Navigation Bar================-->
+            <div class="navigation-bar navBarLinks">
+                <a class="headHovers navBarLinks" href="#main">SEARCH HOME</a> <div style="font-size: 15px; padding:3px 5px 7px 7px; display: inline;">|</div>
+                <a class="headHovers navBarLinks" href="#CategoryAreaHead">DATA TOPICS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
+                <a class="headHovers navBarLinks" href="#FeaturedDataArea">FEATURED DATA SETS</a>
+                <div style="padding-top: 2px; line-height: 3.75;font-style: italic; font-size: 10px;float: right; width: auto;"> and counting!</div>
+                <div style="font-size: 11px; line-height: 3.75; width: auto; float: right; margin-right: 5px; font-weight: bold"> {{totalDataCount}} DATA SETS </div>
+                <img id="dataseticon" src="images/icons/DataSetIcon.png" alt="icon for data set count" />
+            </div>
+
+            <div class="TitleText" style="padding-top: 100px;">
+                <p class="searchHeaderText">EXPLORE OUR DATA - Beta Version</p>
+                <h3 style="font-size: 18px; color: white; text-align: center; margin-top: 10px; margin-bottom: 12px;">Department of Transportation ITS JPO Data</h3>
+
+                <!--search bar-->
+                <label for="mainSearch" class="hidden">Search</label>
+                <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
+
+            </div>
+
+        </div>
+
+        <div v-show='hideResults === "True"'>
+
+
+            <!--===================TOPIC BUTTONS===================-->
+            <!--"Browse Our Data Set Topics" heading-->
+            <div id="categoryDiv">
+                <img class="contentIndicator" style="top: -57px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
+                <div id="CategoryAreaHead">
+                    <p class="headingFont" style="color: #3585B2">POPULAR DATA SET TOPICS</p>
+                </div>
+
+                <!--topic buttons generated through javascript method create_buttons()-->
+                <div id="categoryArea" class="contentArea categorylayout">
+                </div>
+            </div>
+
+            <!--===================FEATURED DATA SETS===================-->
+            <!--heading-->
+            <div id="DatasetDiv" style="text-align: center;">
+                <img class="contentIndicator" style="top: -30px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
+                <div id="FeaturedDataArea">
+                    <p class="headingFont" style="background-color: #152350; color: white; padding-top: 6%;">FEATURED DATA SETS</p>
+                </div>
+                <div class="contentArea" style="background-color: #152350;">
+
+                    <!--data sets generated through javascript method loadFeaturedDatasets()-->
+                    <!--===================STATIC NON WIDGET ARTICLE===================-->
+                    <div style="display: flex; margin-left: 8%; margin-right: 8%; " id="datasetArea">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--===================SEARCH RESULTS===================-->
+
+        <div v-show='hideResults === "False"'>
+            <!--list of generated search results-->
+            <div id="searchresults" class="contentArea searchResults">
+                <h1 style="padding-left: 5%">NOTICE: Currently the data is limited, more data will be coming shortly as it is being uploaded in the coming months</h1></br>
+
+
+                <div style="display: flex;">
+                    <p class="resultsSectionHeading"><b>SEARCH RESULTS FOR:&nbsp;</b></p>
+                    <p class="resultsQuery"><b id="resultsQuery">{{query}}</b></p><br>
+                </div>
+
+                <div style="display: flex;">
+                    <p class="resultsSectionHeading"><b>Number of results:&nbsp;</b><p>
+                    <p class="resultsCount"><b>{{resultsJson.length}}</b></p><br>
+                    <p class="showFeaturedData" v-on:click="showFeatured">Return to Main Page &raquo;</p>
+                </div>
+
+                <hr class="resultsDivider" noshade>
+                <br>
+
+                <!--generates a bullet point for each search result item-->
+                <div style="margin-left: 100px; margin-right: 100px;">
+
+                    <!--displays results if there are results-->
+                    <ul v-if="resultsJson.length > 0" style="list-style: none; padding-left: 0px;">
+                        <li v-for="item in resultsJson" style="margin-bottom: 30px; list-style: none;">
+
+                            <!--the data set name-->
+                            <a class='resultItemHeader' :href="item.link" target="_blank">
+                                {{ item.name }}
+                            </a>
+
+                            <!--the data set description-->
+                            <p v-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;">{{ item.description}}</p>
+                            <p v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
+
+                            <!--lists the domain tags-->
+                            <div v-if="item.tags.length > 0" style="padding-top: 5px;">
+                                <p style="float:left; padding: 3px; height: 30px; line-height: 30px;">Tags: </p>
+                                <button v-for="tag in item.tags" class='tag' v-on:click="search(tag)">{{tag}}</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!--displays "No search results." if there are no results-->
+                    <div v-else>
+                        <p>No search results.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footerInfo" style="padding-top: 20px;">
+            
+            <div style="display:inline; font-size:50px; font-weight:100; text-align:center">
+                <img src="images/icons/dot_logo.png" style="height: 30px;margin-right: 3px;" alt="DOT Logo" /> 
+                |
+                <img src="images/icons/ITS_JPO.png" style="height: 27px" alt="DOT Logo" /> 
+                <!--<div style="display:inline; position:relative; top: -20px; font-size: 15px; font-weight: normal;">
+                    Intelligent Transpotation Systems
+                    <div style="position:relative; top: -15px; left: 171px; width: 1100px;">Joint Program Office</div>
+                </div>-->
+            </div>
+            <p style="font-weight: bold;">Questions? Contact Us</p>
+            <p id="contactEmail">{{contact_email}}</p>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
+
+<!--IMPORT VUE-->
+<script src="./js/vue.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/usdot_data_microsite_template.js"></script>
+<!--<script src="./js/unitTest.js"></script>-->
