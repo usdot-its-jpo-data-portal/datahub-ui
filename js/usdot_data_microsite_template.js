@@ -289,6 +289,10 @@ var myVue = new Vue({
             $('html,body').animate({ scrollTop: $("#main").offset().top }, 800);
             this.hideResults = "True";
         },
+        navBarClick: function () {
+            this.query = '';
+            this.hideResults = "True";
+        },
 
         // This function loads all featured data sets as html with all attributes
         loadFeaturedDatasets: function () {

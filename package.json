@@ -1,0 +1,14 @@
+{
+  "name": "converter",
+  "version": "0.0.0",
+  "description": "The microsite is a standalone website that has been templated so that small changes can be made in a couple json files to create the desired website look and functionality.",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "http-server": "^0.10.0",
+    "mocha": "^3.5.0",
+    "selenium-webdriver": "^3.5.0",
+    "webdriverio": "^4.8.0"
+  }
+}

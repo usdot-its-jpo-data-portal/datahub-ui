@@ -109,6 +109,20 @@ All the libraries are included in the template and don’t need to be downloaded
 
 4. Launch it in a local webserver for testing since it is required to load the json file.
 
+### Testing
+
+1. In order to run tests 'npm install' must be run.  The installation requires that node package manager is installed (npm).  This command installs all dependencies specified in the package.json
+
+2. Open up a terminal at '/microsite' and run the command 'http-server'.  This will create an instance of the website to run locally.
+
+3. Navigate into the '/microsite/test' directory and from another terminal run the shell script using ./testRunner.js in the terminal. This script will run the browser tests.
+
+The test cases use a variety of different softwares to run these tests
+* [Selenium Webdriver](http://www.seleniumhq.org/projects/webdriver/) - Software used to run the tests in the three web browsers IE, Firefox, and Chrome.
+* [Mocha JS](https://mochajs.org/) - Framework used to handle the test cases.
+* [Chai JS](http://chaijs.com/) - Assertion library used in conjunction with MochaJS.
+* [http-server](https://www.npmjs.com/package/http-server) - HTTP server created to run the website locally
+
 
 ## Versioning
 
