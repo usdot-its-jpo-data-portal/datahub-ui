@@ -154,7 +154,7 @@ var myVue = new Vue({
                 for (itemCountNTL = 0; itemCountNTL < json.datasets.length; itemCountNTL++) {
                     var tempJson = {};
                     tempJson["name"] = json.datasets[itemCountNTL].title;
-                    tempJson["description"] = json.datasets[itemCountNTL].Abstract;
+                    tempJson["description"] = json.datasets[itemCountNTL].Abstract;//.substring(0,200) + "...";
 
                     var tagCount;
                     var allTags = [];
@@ -290,7 +290,6 @@ var myVue = new Vue({
             this.hideResults = "True";
         },
         navBarClick: function () {
-            this.query = '';
             this.hideResults = "True";
         },
 

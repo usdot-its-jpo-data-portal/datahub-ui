@@ -1,12 +1,15 @@
 
 /********UNIVERSAL***********/
 
+html {
+    width: 100%;
+}
 /* body */
 body {
 
   /* position and size */
   /*height: 1200px;*/
-
+  min-width: 600px;
   /* background */
   background: linear-gradient(#D8D8D8, white, white);
   background-size: cover;
@@ -85,6 +88,7 @@ p.headingFont{
     top: 0;
     z-index: 100;
     position: fixed;
+    min-width: 600px;
     width: 100%;
     background: 
         rgba(35, 91, 122, 0.8);
@@ -138,7 +142,7 @@ button:hover {
   text-align: center;
   background:
       linear-gradient(
-          rgba(35, 91, 122, 0.4), 
+          rgba(35, 91, 122, 0.4),
           rgba(35, 91, 122, 0.6)
         ),
       url('../images/header_background.png');

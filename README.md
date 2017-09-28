@@ -111,7 +111,9 @@ All the libraries are included in the template and don’t need to be downloaded
 
 ### Testing
 
-1. In order to run tests 'npm install' must be run.  The installation requires that node package manager is installed (npm).  This command installs all dependencies specified in the package.json
+1. In order to run tests node package manager is installed (npm) must be installed.
+
+2. 'npm install' must then be run in the '/microsite' directory.  This command installs all dependencies specified in the package.json
 
 2. Open up a terminal at '/microsite' and run the command 'http-server'.  This will create an instance of the website to run locally.
 
