@@ -18,7 +18,9 @@
         <!--===================DOT HEADER===================-->
 
         <div id="dotTopBanner" style="width: 100%; background: #152350; height: 60px; padding: 5px 0 0 10px">
-            <img src="images/icons/dot_logo.png" style="height: 35px; margin-left: 25px; margin-top: 8px;"alt="department of transportation logo">
+            <a style="background: none" href="https://transportation.gov">
+                <img src="images/icons/dot_logo.png" style="height: 35px; margin-left: 25px; margin-top: 8px;"alt="department of transportation logo">
+            </a>
             <div id="dotTopLinks" style="line-height: 30px; background: #04214f">
                 <a class="headHovers" href="https://www.transportation.gov/mission/about-us" style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a>
                 <a class="headHovers" href="https://www.transportation.gov/briefingroom" style="font-size: 11px; width: 80px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
@@ -32,22 +34,21 @@
         <div id="searchHead" class="searchHeader">
             <!--==================Navigation Bar================-->
             <div class="navigation-bar navBarLinks">
-                <a class="headHovers navBarLinks" href="#main">SEARCH HOME</a> <div style="font-size: 15px; padding:3px 5px 7px 7px; display: inline;">|</div>
-                <a class="headHovers navBarLinks" href="#CategoryAreaHead" v-on:click="navBarClick">DATA TOPICS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-                <a class="headHovers navBarLinks" href="#FeaturedDataArea" v-on:click="navBarClick">FEATURED DATA SETS</a>
-                <div style="padding-top: 2px; line-height: 3.75;font-style: italic; font-size: 10px;float: right; width: auto;"> and counting!</div>
-                <div style="font-size: 11px; line-height: 3.75; width: auto; float: right; margin-right: 5px; font-weight: bold"> {{totalDataCount}} DATA SETS </div>
-                <img id="dataseticon" src="images/icons/DataSetIcon.png" alt="icon for data set count" />
+                <a class="headHovers navBarLinks" href="/data">SEARCH HOME</a> <div style="font-size: 15px; padding:3px 5px 7px 7px; display: inline;">|</div>
+                <a class="headHovers navBarLinks" href="/data/visualizations" v-on:click="navBarClick">VISUALIZATIONS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
+                <!-- <a class="headHovers navBarLinks" href="/data/public-access" v-on:click="navBarClick">PUBLIC ACCESS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
+                <a class="headHovers navBarLinks" href="/data/dashboard" v-on:click="navBarClick">DASHBOARD</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div> -->
+                <a class="headHovers navBarLinks" href="/" v-on:click="navBarClick">ITS JPO HOME</a>
             </div>
 
-            <div class="TitleText" style="padding-top: 100px;">
+            <div class="TitleText" style="padding-top: 40px;">
                 <p class="searchHeaderText">EXPLORE OUR DATA - Beta Version</p>
-                <h3 style="font-size: 18px; color: white; text-align: center; margin-top: 10px; margin-bottom: 12px;">Department of Transportation ITS JPO Data</h3>
+                <h3 style="font-size: 18px; color: white; text-align: center; margin-top: 10px;">Department of Transportation ITS JPO Data</h3>
+                <h3 style="font-size: 18px; color: white; text-align: center; margin-bottom: 12px;"> Welcome to the ITS JPO's public access point for ITS data</h3>
 
                 <!--search bar-->
                 <label for="mainSearch" class="hidden">Search</label>
                 <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
-
             </div>
 
         </div>
@@ -73,7 +74,7 @@
             <div id="DatasetDiv" style="text-align: center;">
                 <img class="contentIndicator" style="top: -30px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
                 <div id="FeaturedDataArea">
-                    <p class="headingFont" style="background-color: #152350; color: white; padding-top: 6%;">FEATURED DATA SETS</p>
+                    <p class="headingFont" style="background-color: #152350; color: white; padding-top: 3%;">FEATURED DATA SETS</p>
                 </div>
                 <div class="contentArea" style="background-color: #152350;">
 
@@ -94,6 +95,9 @@
             <div id="searchresults" class="contentArea searchResults">
                 <h1 style="padding-left: 5%">NOTICE: Currently the data is limited, more data will be coming shortly as it is being uploaded in the coming months</h1></br>
 
+                <div style="display: flex;">
+                    <p id="returnPage" class="resultsSectionHeading showFeaturedData" v-on:click="showFeatured">Return to Main Page &raquo;</p>
+                </div>
 
                 <div style="display: flex;">
                     <p class="resultsSectionHeading"><b>SEARCH RESULTS FOR:&nbsp;</b></p>
@@ -103,7 +107,16 @@
                 <div style="display: flex;">
                     <p class="resultsSectionHeading"><b>Number of results:&nbsp;</b><p>
                     <p class="resultsCount"><b>{{resultsJson.length}}</b></p><br>
-                    <p id="returnPage" class="showFeaturedData" v-on:click="showFeatured">Return to Main Page &raquo;</p>
+                </div>
+                
+                <div style="display: flex; float: right; margin-right: 80px">
+                    <p style="line-height: 1.8" class="resultsSectionHeading">Filter By: &nbsp;</p>
+                    <nav class="segmented-button">
+                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="N" id="seg-Users" class="filterName" checked>
+                        <label for="seg-Users" class="first">Name</label>
+                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="D" id="seg-Organisation" class="filterDate">
+                        <label for="seg-Organisation" class="last">Date</label>
+                    </nav>
                 </div>
 
                 <hr class="resultsDivider" noshade>
@@ -114,15 +127,17 @@
 
                     <!--displays results if there are results-->
                     <ul v-if="resultsJson.length > 0" style="list-style: none; padding-left: 0px;">
-                        <li v-for="item in resultsJson" style="margin-bottom: 30px; list-style: none;">
+                        <li v-model="seeMoreToggler" v-for="(item,index) in resultsJson" style="margin-bottom: 30px; list-style: none;">
 
                             <!--the data set name-->
-                            <a class='resultItemHeader' :href="item.link" target="_blank">
-                                {{ item.name }}
+                            <a class='resultItemHeader' href="item.link" target="_blank">
+                                {{ item.name }} - {{ item.date}}
                             </a>
 
                             <!--the data set description-->
-                            <p v-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;">{{ item.description}}</p>
+                            <p v-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.indexOf(" ", 290))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                            <p v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description }}</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
+                            <p v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;">{{ item.description}}</p>
                             <p v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
 
                             <!--lists the domain tags-->
@@ -130,10 +145,8 @@
                                 <p style="float:left; padding: 3px; height: 30px; line-height: 30px;">Tags: </p>
                                 <button v-for="tag in item.tags" class='tag' v-on:click="search(tag)">{{tag}}</button>
                             </div>
+                            <hr v-if="resultsJson.length != index+1" style="border-color: #DEDEDE" noshade>
                         </li>
-                    </ul>
-
-                    <!--displays "No search results." if there are no results-->
                     <div v-else>
                         <p>No search results.</p>
                     </div>
@@ -147,11 +160,7 @@
             <div style="display:inline; font-size:50px; font-weight:100; text-align:center">
                 <img src="images/icons/dot_logo.png" style="height: 30px;margin-right: 3px;" alt="DOT Logo" /> 
                 |
-                <img src="images/icons/ITS_JPO.png" style="height: 27px" alt="DOT Logo" /> 
-                <!--<div style="display:inline; position:relative; top: -20px; font-size: 15px; font-weight: normal;">
-                    Intelligent Transpotation Systems
-                    <div style="position:relative; top: -15px; left: 171px; width: 1100px;">Joint Program Office</div>
-                </div>-->
+                <img src="images/icons/ITS_JPO.png" style="height: 27px" alt="ITS JPO Logo" /> 
             </div>
             <p style="font-weight: bold;">Questions? Contact Us</p>
             <p id="contactEmail">{{contact_email}}</p>
@@ -159,13 +168,8 @@
     </div>
 </body>
 
-
-
-
 </html>
 
-<!--IMPORT VUE-->
 <script src="./js/vue.min.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/usdot_data_microsite_template.js"></script>
-<!--<script src="./js/unitTest.js"></script>-->

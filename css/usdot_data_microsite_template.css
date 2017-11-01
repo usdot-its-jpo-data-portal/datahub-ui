@@ -190,6 +190,11 @@ input.mainSearch:focus {
     opacity: 0.95;
 }
 
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 /* italicizes the placeholder font inside the textbox */
 ::-webkit-input-placeholder {
    font-style: italic;

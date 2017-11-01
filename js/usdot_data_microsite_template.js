@@ -14,7 +14,7 @@ var myVue = new Vue({
         // data set topics and search domain
         // modify these values to your preference
         url: 'https://api.us.socrata.com/api/catalog/v1?q=',
-        domain: '',
+        
         query: '',
 
         // Lists for dynamic data
@@ -31,6 +31,8 @@ var myVue = new Vue({
         datasetNames: [],
         datasetDesc: [],
         contact_email: "",
+        domain: '',
+        seeMoreToggler: [],
 
         totalDataCount: 0
     },
@@ -45,9 +47,6 @@ var myVue = new Vue({
 
         this.create_buttons();
         this.loadFeaturedDatasets();
-
-        // run unit tests
-        //this.UnitTests();
     },
 
     methods: {
@@ -65,6 +64,21 @@ var myVue = new Vue({
             }
             return comparison;
         },
+        
+        // Method used for sorting json data by date
+        compareDate: function(a, b) {
+            var self = this;
+            var dateA = new Date(a.date);
+            var dateB = new Date(b.date);
+
+            let comparison = 0;
+            if (dateA < dateB) {
+                comparison = 1;
+            } else if (dateA > dateB) {
+                comparison = -1;
+            }
+            return comparison;
+        },
 
         // function loads data.json and stores all values locally, function operates sync on load to prevent timing issue
         load_json: function () {
@@ -77,7 +91,6 @@ var myVue = new Vue({
                 var i;
                 self.domain = json.domain;
                 self.background_image = json.background_image;
-                self.search_placeholder = json.search_text;
                 self.contact_email = json.contact_email;
                 for (i = 0; i < Math.min(json.maxButtonCount, json.buttons.length) ; i++) {
                     self.buttonlabels[i] = json.buttons[i].CategoryName;
@@ -114,6 +127,7 @@ var myVue = new Vue({
             var self = this;
             $.get(self.url + '&search_context=' + self.domain, function (data) {
                 self.totalDataCount = data.results.length + self.NTLJson.length;
+                self.search_placeholder = self.totalDataCount.toString() + " data sets and counting!";
             });
         },
 
@@ -122,27 +136,45 @@ var myVue = new Vue({
             var self = this;
             var buttonIdx;
             var newQ = search_query;
-            for (buttonIdx = 0; buttonIdx < self.buttonlabels.length; buttonIdx++) {
-                if (search_query === self.buttonlabels[buttonIdx]) {
-                    var tagIdx;
-                    if (self.buttonTags[buttonIdx] !== undefined) {
-                        for (tagIdx = 0; tagIdx < self.buttonTags[buttonIdx].length; tagIdx++) {
-                            newQ = newQ + "+" + self.buttonTags[buttonIdx][tagIdx];
-                        }
-                    }
-                }
-            }
-            $.get(self.url + newQ + '&search_context=' + self.domain, function (data, xhr) {
+            //for (buttonIdx = 0; buttonIdx < self.buttonlabels.length; buttonIdx++) {
+            //    if (search_query === self.buttonlabels[buttonIdx]) {
+            //        var tagIdx;
+            //        if (self.buttonTags[buttonIdx] !== undefined) {
+            //            for (tagIdx = 0; tagIdx < self.buttonTags[buttonIdx].length; tagIdx++) {
+            //                newQ = newQ + "+" + self.buttonTags[buttonIdx][tagIdx];
+            //            }
+            //        }
+            //    }
+            //}
+            $.get(self.url + newQ + '&search_context=' + self.domain, function (data) {
                 self.resultsJson = [];
-                self.responseSocrata = xhr;
                 self.items = data;
                 self.addSocratatoJson();
                 self.addNTLtoJson(search_query);
                 self.resultsJson.sort(self.compare);
-                $('html,body').animate({ scrollTop: $("#searchresults").offset().top }, 800);
+                //document.getElementById('searchresults').scrollIntoView();
+                for (var i = 0; i < self.resultsJson.length; i = i + 1) {
+                    self.seeMoreToggler[i] = true;
+                }
+                document.getElementsByClassName("filterName")[0].checked = true;
             });
             self.query = search_query;
             this.hideResults = "False";
+        },
+
+        dropDownFilter: function () {
+            var self = this;
+            if (document.getElementsByClassName("filterName")[0].checked) {
+                self.resultsJson.sort(self.compare);
+            }
+            else if (document.getElementsByClassName("filterDate")[0].checked) {
+                self.resultsJson.sort(self.compareDate);
+            }
+        },
+
+        toggleSeeMore: function (index) {
+            this.seeMoreToggler[index] = !this.seeMoreToggler[index];
+            this.$forceUpdate();
         },
 
         // Loads json file for NTL data, called on webpage load (will be used until NTL becomes api called)
@@ -154,8 +186,8 @@ var myVue = new Vue({
                 for (itemCountNTL = 0; itemCountNTL < json.datasets.length; itemCountNTL++) {
                     var tempJson = {};
                     tempJson["name"] = json.datasets[itemCountNTL].title;
-                    tempJson["description"] = json.datasets[itemCountNTL].Abstract;//.substring(0,200) + "...";
-
+                    tempJson["description"] = json.datasets[itemCountNTL].Abstract;
+                    tempJson["date"] = json.datasets[itemCountNTL].PublicationDate;
                     var tagCount;
                     var allTags = [];
                     var RESEARCHRESULTS = "Research Results";
@@ -215,6 +247,7 @@ var myVue = new Vue({
                 var tempJson = {};
                 tempJson["name"] = self.items.results[itemCount].resource.name;
                 tempJson["description"] = self.items.results[itemCount].resource.description;
+                tempJson["date"] = self.items.results[itemCount].resource.updatedAt.substring(0,10);
                 var tagCount;
                 var allTags = []
                 for (tagCount = 0; tagCount < self.items.results[itemCount].classification.domain_tags.length; tagCount++) {
@@ -236,7 +269,7 @@ var myVue = new Vue({
             var bulmaWrapper = document.createElement("div");
             bulmaWrapper.setAttribute("class", "columns is-multiline");
             bulmaWrapper.setAttribute("id", "bulmaDataset");
-            bulmaWrapper.setAttribute("style", "padding: 0 0 15% 0; height: 100%");
+            bulmaWrapper.setAttribute("style", "padding: 0 0 5% 0; height: 100%");
 
             var buttonArea = document.getElementById("categoryArea");
             buttonArea.appendChild(bulmaWrapper);
@@ -286,8 +319,10 @@ var myVue = new Vue({
         // auto-hides the topic buttons and featured data sets if False
         showFeatured: function () {
             this.query = '';
-            $('html,body').animate({ scrollTop: $("#main").offset().top }, 800);
+            //document.getElementById('dotTopBanner').scrollIntoView();
             this.hideResults = "True";
+            document.getElementById('mainSearch').focus();
+            document.getElementById('mainSearch').select();
         },
         navBarClick: function () {
             this.hideResults = "True";
@@ -363,8 +398,8 @@ var myVue = new Vue({
 });
 
 
-/////////
-// Jquery onclick function for a links
+//////////////////////////////////////
+// Jquery onclick function for links
 var $root = $('html, body');
 $('a').click(function () {
     $root.animate({
@@ -373,19 +408,18 @@ $('a').click(function () {
     return false;
 });
 
+
+// Function allows the nav bar to move with the page
 $(document).ready(function () {
     $(window).scroll(function () {
-        //if you hard code, then use console
-        //.log to determine when you want the 
-        //nav bar to stick.  
-        //console.log($(window).scrollTop())
+        // fixed header is strange.  For now it is hard coded to adjust padding otherwise the text moves
         if ($(window).scrollTop() > 58) {
             $('.navigation-bar').addClass('navbar-fixed');
-            $('.TitleText').attr('style', 'padding-top:190px');
+            $('.TitleText').attr('style', 'padding-top:130px');
         }
         if ($(window).scrollTop() < 58) {
             $('.navigation-bar').removeClass('navbar-fixed');
-            $('.TitleText').attr('style', 'padding-top:100px');
+            $('.TitleText').attr('style', 'padding-top:40px');
         }
     });
 });
