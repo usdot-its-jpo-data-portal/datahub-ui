@@ -93,12 +93,20 @@
         <div v-show='hideResults === "False"'>
             <!--list of generated search results-->
             <div id="searchresults" class="contentArea searchResults">
-                <h1 style="padding-left: 5%">NOTICE: Currently the data is limited, more data will be coming shortly as it is being uploaded in the coming months</h1></br>
+                <h1 style="text-align:center">NOTICE: Currently the data is limited, more data will be coming shortly as it is being uploaded in the coming months</h1></br>
 
                 <div style="display: flex;">
-                    <p id="returnPage" class="resultsSectionHeading showFeaturedData" v-on:click="showFeatured">Return to Main Page &raquo;</p>
+                    <button id="returnPage" class="readButton" style="font-size: 15px; margin-left: 80px;margin-bottom: 10px" v-on:click="showFeatured">Return to Main Page &raquo;</button>
                 </div>
-
+                <div style="display: flex; float: right; margin-right: 80px">
+                    <p style="line-height: 1.8" class="resultsSectionHeading">Sort By: &nbsp;</p>
+                    <nav class="segmented-button">
+                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="N" id="seg-Users" class="filterName" checked>
+                        <label for="seg-Users" class="first">Name</label>
+                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="D" id="seg-Organisation" class="filterDate">
+                        <label for="seg-Organisation" class="last">Date</label>
+                    </nav>
+                </div>
                 <div style="display: flex;">
                     <p class="resultsSectionHeading"><b>SEARCH RESULTS FOR:&nbsp;</b></p>
                     <p class="resultsQuery"><b id="resultsQuery">{{query}}</b></p><br>
@@ -109,15 +117,7 @@
                     <p class="resultsCount"><b>{{resultsJson.length}}</b></p><br>
                 </div>
                 
-                <div style="display: flex; float: right; margin-right: 80px">
-                    <p style="line-height: 1.8" class="resultsSectionHeading">Filter By: &nbsp;</p>
-                    <nav class="segmented-button">
-                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="N" id="seg-Users" class="filterName" checked>
-                        <label for="seg-Users" class="first">Name</label>
-                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="D" id="seg-Organisation" class="filterDate">
-                        <label for="seg-Organisation" class="last">Date</label>
-                    </nav>
-                </div>
+                
 
                 <hr class="resultsDivider" noshade>
                 <br>
@@ -129,11 +129,22 @@
                     <ul v-if="resultsJson.length > 0" style="list-style: none; padding-left: 0px;">
                         <li v-model="seeMoreToggler" v-for="(item,index) in resultsJson" style="margin-bottom: 30px; list-style: none;">
 
-                            <!--the data set name-->
-                            <a class='resultItemHeader' href="item.link" target="_blank">
-                                {{ item.name }} - {{ item.date}}
-                            </a>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td style="width: 70%">
+                                        <!--the data set name-->
+                                        <a class='resultItemHeader' style="padding-right: 0%" :href="item.link" target="_blank">
+                                            {{ item.name }}
 
+                                        </a>
+                                    </td>
+                                    <td style="text-align: right; width: 30%">
+                                        <p class="resultItemHeader" style="float: right; font-size: 18px;">
+                                            Date Added: {{ item.date}}
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
                             <!--the data set description-->
                             <p v-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.indexOf(" ", 290))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
                             <p v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description }}</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>

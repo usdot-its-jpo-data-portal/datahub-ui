@@ -60,7 +60,7 @@ p{
 p.headingFont{
 
   /* position and size */
-  padding: 45px 0 25px 0;
+  padding: 25px 0 0 0;
   
   /* text */
   font-size: 30px;
@@ -115,8 +115,8 @@ p.headingFont{
 
   /* position and size */
   /*max-width: 1100px;*/
-  padding-top: 25px;
-  padding-bottom: 10%;
+  /*padding-top: 25px;*/
+  /*padding-bottom: 5%;*/
 }
 
 /* updates cursor to hand when hovering over a submit button */
@@ -132,7 +132,7 @@ button:hover {
 .searchHeader {
 
   /* position and size */
-  height: 600px;
+  height: 400px;
   /*max-width: 1100px;*/
   margin: auto;
 
@@ -179,6 +179,7 @@ input.mainSearch {
   background: white;
   border: 1px solid #DEDEDE;
 
+
   /* text */
   font-family: Arial;
   font-size: 25px;
@@ -188,6 +189,7 @@ input.mainSearch {
 
 input.mainSearch:focus {
     opacity: 0.95;
+    outline: none;
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -197,10 +199,16 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 /* italicizes the placeholder font inside the textbox */
 ::-webkit-input-placeholder {
-   font-style: italic;
+ font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
 }
 :-ms-input-placeholder {  
-   font-style: italic;
+   font-style: italic; 
 }
 
 
@@ -294,7 +302,7 @@ button.topic:hover .RegularThumbnail{
 p.resultsSectionHeading {
 
   /* position and size */
-  padding-left: 80px;
+  margin-left: 80px;
 
   /* text */
   font-size: 15px;
@@ -323,9 +331,9 @@ p.showFeaturedData {
 
   /* position and size */
   margin-right: 80px;
-
+  font-weight: bold;
   /* text */
-  font-size: 15px;
+  font-size: 20px;
 }
 
 p.showFeaturedData:hover {
@@ -346,10 +354,10 @@ hr.resultsDivider {
 
 
 /* search result item headers */
-a.resultItemHeader {
+.resultItemHeader {
 
   /* text */
-  font-size: 17px;
+  font-size: 25px;
   font-weight: bold;
   color: #1b9b67;
   text-decoration: none;
@@ -471,4 +479,130 @@ img.featuredDataThumbnail {
 
 [id^=fds]:hover {
     transform: scale(1.1);
+}
+
+
+
+//////////////////
+//////////////////
+//SEGMENTED BUTTON
+//////////////////
+//////////////////
+.segmented-button {
+  padding: 12px;
+}
+.segmented-button input[type="radio"] {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+.segmented-button label {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e4e4e4));
+  background: -webkit-linear-gradient(#ffffff, #e4e4e4);
+  background: -moz-linear-gradient(#ffffff, #e4e4e4);
+  background: -o-linear-gradient(#ffffff, #e4e4e4);
+  background: -ms-linear-gradient(#ffffff, #e4e4e4);
+  background: linear-gradient(#ffffff, #e4e4e4);
+  border: 1px solid #b2b2b2;
+  color: #666666;
+  padding: 5px 24px;
+  padding-bottom: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: Helvetica;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  margin-right: -5px;
+}
+.segmented-button label {
+  *display: inline;
+}
+.segmented-button label:hover {
+  -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+.segmented-button label:active, .segmented-button label.active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4e4e4), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(#e4e4e4, #ffffff);
+  background: -moz-linear-gradient(#e4e4e4, #ffffff);
+  background: -o-linear-gradient(#e4e4e4, #ffffff);
+  background: -ms-linear-gradient(#e4e4e4, #ffffff);
+  background: linear-gradient(#e4e4e4, #ffffff);
+}
+.segmented-button label.first {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.segmented-button label.last {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.segmented-button input:checked + label, .segmented-button label.selected {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4e4e4), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(#e4e4e4, #ffffff);
+  background: -moz-linear-gradient(#e4e4e4, #ffffff);
+  background: -o-linear-gradient(#e4e4e4, #ffffff);
+  background: -ms-linear-gradient(#e4e4e4, #ffffff);
+  background: linear-gradient(#e4e4e4, #ffffff);
+}
+
+.readButton {
+    background: none repeat scroll 0 0 #b2b2b2;
+    /*box-shadow: 0 2px 0 rgba(35, 91, 122, 0.8);*/
+    /*font-weight: 700;*/
+    border: 1px;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+}
+button:focus {
+    outline: 0px;
+}
+.readButton:hover {
+    background: none repeat scroll 0 0 #787878;
+}
+
+.readButton:active {
+    top: 1px;
+    left: 0.5px;
+    position: relative;
 }

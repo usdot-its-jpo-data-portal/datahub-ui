@@ -187,7 +187,9 @@ var myVue = new Vue({
                     var tempJson = {};
                     tempJson["name"] = json.datasets[itemCountNTL].title;
                     tempJson["description"] = json.datasets[itemCountNTL].Abstract;
-                    tempJson["date"] = json.datasets[itemCountNTL].PublicationDate;
+                    // if string only has year then use that, otherwise parse string into date formatting
+                    tempJson["date"] = (json.datasets[itemCountNTL].PublicationDate.length < 7) ? json.datasets[itemCountNTL].PublicationDate : self.formatDate(json.datasets[itemCountNTL].PublicationDate);
+
                     var tagCount;
                     var allTags = [];
                     var RESEARCHRESULTS = "Research Results";
@@ -203,6 +205,22 @@ var myVue = new Vue({
                 }
                 self.initialSearch();
             });
+        },
+
+        // Parses a string with a date into a format "Month Day Year"
+        formatDate: function (date) {
+            var monthNames = [
+              "Jan", "Feb", "Mar",
+              "Apr", "May", "Jun", "Jul",
+              "Aug", "Sep", "Oct",
+              "Nov", "Dec"
+            ];
+            var newDate = new Date(date);
+            var day = newDate.getDate();
+            var monthIndex = newDate.getMonth();
+            var year = newDate.getFullYear();
+
+            return monthNames[monthIndex] + ' ' + day +  ' ' + year;
         },
 
         // searches ntl files for match based on tag (will be used until NTL becomes API called)
@@ -247,9 +265,10 @@ var myVue = new Vue({
                 var tempJson = {};
                 tempJson["name"] = self.items.results[itemCount].resource.name;
                 tempJson["description"] = self.items.results[itemCount].resource.description;
-                tempJson["date"] = self.items.results[itemCount].resource.updatedAt.substring(0,10);
+                // if string is only has year then only print year, otherwise parse into formatting
+                tempJson["date"] = (self.items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? self.items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(self.items.results[itemCount].resource.updatedAt.substring(0,10));
                 var tagCount;
-                var allTags = []
+                var allTags = [];
                 for (tagCount = 0; tagCount < self.items.results[itemCount].classification.domain_tags.length; tagCount++) {
                     allTags[tagCount] = self.items.results[itemCount].classification.domain_tags[tagCount];
                 }
