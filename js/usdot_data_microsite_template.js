@@ -44,9 +44,10 @@ var myVue = new Vue({
         
         // Loads the template data
         this.load_json();
-
-        this.create_buttons();
-        this.loadFeaturedDatasets();
+        if (!window.location.href.includes("search")) {
+            this.create_buttons();
+            this.loadFeaturedDatasets();
+        }
     },
 
     methods: {
@@ -129,6 +130,12 @@ var myVue = new Vue({
                 self.totalDataCount = data.results.length + self.NTLJson.length;
                 self.search_placeholder = self.totalDataCount.toString() + " data sets and counting!";
             });
+        },
+
+        // sets search term and sends to to next page
+        searchSend: function (search_query) {
+            localStorage.setItem("sentSearchTerm", search_query);
+            window.location.href = "search.html";
         },
 
         // gets the JSON data for a search term and sets it to the "items" variable
@@ -313,7 +320,7 @@ var myVue = new Vue({
                 var btn = document.createElement("button");
                 btn.setAttribute("class", "topic");
                 btn.setAttribute("id", "bterm" + i);
-                btn.setAttribute("v-on:click", "search(" + "buttonlabels[" + i + "])");
+                btn.setAttribute("v-on:click", "searchSend(" + "buttonlabels[" + i + "])");
                 btn.style.verticalAlign = "middle";
                 btn.setAttribute("style", "padding-bottom: 10px;");
                 btn.appendChild(imageHTML);

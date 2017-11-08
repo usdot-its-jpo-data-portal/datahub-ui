@@ -48,123 +48,44 @@
 
                 <!--search bar-->
                 <label for="mainSearch" class="hidden">Search</label>
-                <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
+                <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="searchSend(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="searchSend(query)">SEARCH</button>
             </div>
 
         </div>
 
-        <div v-show='hideResults === "True"'>
-
-
-            <!--===================TOPIC BUTTONS===================-->
-            <!--"Browse Our Data Set Topics" heading-->
-            <div id="categoryDiv">
-                <img class="contentIndicator" style="top: -57px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
-                <div id="CategoryAreaHead">
-                    <p class="headingFont" style="color: #3585B2">POPULAR DATA SET TOPICS</p>
-                </div>
-
-                <!--topic buttons generated through javascript method create_buttons()-->
-                <div id="categoryArea" class="contentArea categorylayout">
-                </div>
+       
+        <!--===================TOPIC BUTTONS===================-->
+        <!--"Browse Our Data Set Topics" heading-->
+        <div id="categoryDiv">
+            <img class="contentIndicator" style="top: -57px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
+            <div id="CategoryAreaHead">
+                <p class="headingFont" style="color: #3585B2">POPULAR DATA SET TOPICS</p>
             </div>
 
-            <!--===================FEATURED DATA SETS===================-->
-            <!--heading-->
-            <div id="DatasetDiv" style="text-align: center;">
-                <img class="contentIndicator" style="top: -30px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
-                <div id="FeaturedDataArea">
-                    <p class="headingFont" style="background-color: #152350; color: white; padding-top: 3%;">FEATURED DATA SETS</p>
-                </div>
-                <div class="contentArea" style="background-color: #152350;">
+            <!--topic buttons generated through javascript method create_buttons()-->
+            <div id="categoryArea" class="contentArea categorylayout">
+            </div>
+        </div>
 
-                    <!--data sets generated through javascript method loadFeaturedDatasets()-->
-                    <!--===================STATIC NON WIDGET ARTICLE===================-->
-                    <div style="display: flex; margin-left: 8%; margin-right: 8%; " id="datasetArea">
-                    </div>
+        <!--===================FEATURED DATA SETS===================-->
+        <!--heading-->
+        <div id="DatasetDiv" style="text-align: center;">
+            <img class="contentIndicator" style="top: -30px" src="images/icons/ContentIndicator.png" alt="Content Indicator Arrow"/>
+            <div id="FeaturedDataArea">
+                <p class="headingFont" style="background-color: #152350; color: white; padding-top: 3%;">FEATURED DATA SETS</p>
+            </div>
+            <div class="contentArea" style="background-color: #152350;">
 
+                <!--data sets generated through javascript method loadFeaturedDatasets()-->
+                <!--===================STATIC NON WIDGET ARTICLE===================-->
+                <div style="display: flex; margin-left: 8%; margin-right: 8%; " id="datasetArea">
                 </div>
+
             </div>
         </div>
 
 
-        <!--===================SEARCH RESULTS===================-->
-
-        <div v-show='hideResults === "False"'>
-            <!--list of generated search results-->
-            <div id="searchresults" class="contentArea searchResults">
-                <h1 style="text-align:center">NOTICE: Currently the data is limited, more data will be coming shortly as it is being uploaded in the coming months</h1></br>
-
-                <div style="display: flex;">
-                    <button id="returnPage" class="readButton" style="font-size: 15px; margin-left: 80px;margin-bottom: 10px" v-on:click="showFeatured">Return to Main Page &raquo;</button>
-                </div>
-                <div style="display: flex; float: right; margin-right: 80px">
-                    <p style="line-height: 1.8" class="resultsSectionHeading">Sort By: &nbsp;</p>
-                    <nav class="segmented-button">
-                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="N" id="seg-Users" class="filterName" checked>
-                        <label for="seg-Users" class="first">Name</label>
-                        <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="D" id="seg-Organisation" class="filterDate">
-                        <label for="seg-Organisation" class="last">Date</label>
-                    </nav>
-                </div>
-                <div style="display: flex;">
-                    <p class="resultsSectionHeading"><b>SEARCH RESULTS FOR:&nbsp;</b></p>
-                    <p class="resultsQuery"><b id="resultsQuery">{{query}}</b></p><br>
-                </div>
-
-                <div style="display: flex;">
-                    <p class="resultsSectionHeading"><b>Number of results:&nbsp;</b><p>
-                    <p class="resultsCount"><b>{{resultsJson.length}}</b></p><br>
-                </div>
-                
-                
-
-                <hr class="resultsDivider" noshade>
-                <br>
-
-                <!--generates a bullet point for each search result item-->
-                <div style="margin-left: 100px; margin-right: 100px;">
-
-                    <!--displays results if there are results-->
-                    <ul v-if="resultsJson.length > 0" style="list-style: none; padding-left: 0px;">
-                        <li v-model="seeMoreToggler" v-for="(item,index) in resultsJson" style="margin-bottom: 30px; list-style: none;">
-
-                            <table style="width: 100%">
-                                <tr>
-                                    <td style="width: 70%">
-                                        <!--the data set name-->
-                                        <a class='resultItemHeader' style="padding-right: 0%" :href="item.link" target="_blank">
-                                            {{ item.name }}
-
-                                        </a>
-                                    </td>
-                                    <td style="text-align: right; width: 30%">
-                                        <p class="resultItemHeader" style="float: right; font-size: 18px;">
-                                            Date Added: {{ item.date}}
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--the data set description-->
-                            <p v-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.indexOf(" ", 290))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                            <p v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description }}</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
-                            <p v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;">{{ item.description}}</p>
-                            <p v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
-
-                            <!--lists the domain tags-->
-                            <div v-if="item.tags.length > 0" style="padding-top: 5px;">
-                                <p style="float:left; padding: 3px; height: 30px; line-height: 30px;">Tags: </p>
-                                <button v-for="tag in item.tags" class='tag' v-on:click="search(tag)">{{tag}}</button>
-                            </div>
-                            <hr v-if="resultsJson.length != index+1" style="border-color: #DEDEDE" noshade>
-                        </li>
-                    <div v-else>
-                        <p>No search results.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        
 
         <div id="footerInfo" style="padding-top: 20px;">
             
