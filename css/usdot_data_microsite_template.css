@@ -11,7 +11,7 @@ body {
   /*height: 1200px;*/
   min-width: 600px;
   /* background */
-  background: linear-gradient(#D8D8D8, white, white);
+  background: white; /*linear-gradient(#D8D8D8, white, white);*/
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial;
