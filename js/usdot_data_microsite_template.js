@@ -10,6 +10,9 @@ var myVue = new Vue({
         items: '',
         resultsJson: [],
         NTLJson: [],
+        relevanceSortedJson: [],
+        dateSortedJson: [],
+        nameSortedJson: [],
         responseSocrata: '',
         // data set topics and search domain
         // modify these values to your preference
@@ -40,7 +43,7 @@ var myVue = new Vue({
     // Function runs on page load
     created: function () {
         // Loads the initial static file of NTL Data
-        this.addNTL();
+        //this.addNTL();
         
         // Loads the template data
         this.load_json();
@@ -157,13 +160,20 @@ var myVue = new Vue({
                 self.resultsJson = [];
                 self.items = data;
                 self.addSocratatoJson();
-                self.addNTLtoJson(search_query);
-                self.resultsJson.sort(self.compare);
+                //self.addNTLtoJson(search_query);
+                self.relevanceSortedJson = self.resultsJson.slice();
+
+                self.dateSortedJson = self.resultsJson.slice();
+                self.dateSortedJson.sort(self.compareDate);
+
+                self.nameSortedJson = self.resultsJson.slice();
+                self.nameSortedJson.sort(self.compare);
+
                 //document.getElementById('searchresults').scrollIntoView();
                 for (var i = 0; i < self.resultsJson.length; i = i + 1) {
                     self.seeMoreToggler[i] = true;
                 }
-                document.getElementsByClassName("filterName")[0].checked = true;
+                document.getElementsByClassName("filterRelevance")[0].checked = true;
             });
             self.query = search_query;
             this.hideResults = "False";
@@ -172,10 +182,13 @@ var myVue = new Vue({
         dropDownFilter: function () {
             var self = this;
             if (document.getElementsByClassName("filterName")[0].checked) {
-                self.resultsJson.sort(self.compare);
+                self.resultsJson = self.nameSortedJson.slice();
             }
             else if (document.getElementsByClassName("filterDate")[0].checked) {
-                self.resultsJson.sort(self.compareDate);
+                self.resultsJson = self.dateSortedJson.slice();
+            }
+            else if (document.getElementsByClassName("filterRelevance")[0].checked) {
+                self.resultsJson = self.relevanceSortedJson.slice();
             }
         },
 

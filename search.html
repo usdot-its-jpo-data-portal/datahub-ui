@@ -63,10 +63,12 @@
             <div style="display: flex; float: right; margin-right: 80px">
                 <p style="line-height: 1.8" class="resultsSectionHeading">Sort By: &nbsp;</p>
                 <nav class="segmented-button">
-                    <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="N" id="seg-Users" class="filterName" checked>
-                    <label for="seg-Users" class="first">Name</label>
-                    <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="D" id="seg-Organisation" class="filterDate">
-                    <label for="seg-Organisation" class="last">Date</label>
+                    <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="R" id="seg-Relevance" class="filterRelevance" checked>
+                    <label for="seg-Relevance" class="first">Relevance</label>
+                    <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="N" id="seg-Name" class="filterName">
+                    <label for="seg-Name" class="first">Name</label>
+                    <input v-on:click="dropDownFilter" type="radio" name="seg-1" value="D" id="seg-Date" class="filterDate">
+                    <label for="seg-Date" class="last">Date</label>
                 </nav>
             </div>
             <div style="display: flex;">
