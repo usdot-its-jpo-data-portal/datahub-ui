@@ -43,7 +43,7 @@ var myVue = new Vue({
     // Function runs on page load
     created: function () {
         // Loads the initial static file of NTL Data
-        //this.addNTL();
+        this.addNTL();
         
         // Loads the template data
         this.load_json();
