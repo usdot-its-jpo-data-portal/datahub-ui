@@ -47,7 +47,7 @@ var myVue = new Vue({
         
         // Loads the template data
         this.load_json();
-        if (!window.location.href.includes("search")) {
+        if (window.location.href.indexOf("search") == -1) {
             this.create_buttons();
             this.loadFeaturedDatasets();
         }
