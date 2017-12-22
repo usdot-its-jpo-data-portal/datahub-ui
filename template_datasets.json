@@ -1,27 +1,27 @@
 ﻿{
- "maxDatasetCount": 12,
+ "maxDatasetCount": 3,
 
     "datasets": [
         {
-			"name": "BSM Point Map",
-			"description": "Contains all Basic Safety Messages (BSMs) collected during the Advanced Messaging Concept Development (AMCD) field testing program.",
-            "url": "https://data.transportation.gov/Automobiles/BSM-Point-Map/fgbu-uats",
-            "image": "./images/BSM.PNG",
-            "altText": "Rail road car for rail related injuries"
+			"name": "Wyoming CV Pilot Basic Safety Messages Sample",
+			"description": "Contains a sample of sanitized Basic Safety Messages collected from the Wyoming Connected Vehicle pilot.",
+            "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Basic-Safety-Message-One-Day-Samp/9k4m-a3jc",
+            "image": "./images/Wyoming DOT Connected Vehicle Pilot.png",
+            "altText": "Link to sample Wyoming CV Pilot Basic Safety Messages"
         },
         {
-		    "name": "",
-			"description": "",
-            "url": "https://data.transportation.gov/Research-and-Statistics/Smart-City-Finalists-Map/gtg7-kcxb",
-            "image": "./images/SmartCity.PNG",
-            "altText": "Map of smart city finalists"
+		    "name": "Wyoming Connected Vehicle Pilot Basic Safety Message Visualization",
+			"description": "A visualization portal for the Wyoming CV Pilot Basic Safety Messages.",
+            "url": "https://data.transportation.gov/Automobiles/Wyoming-Connected-Vehicle-Pilot-Basic-Safety-Messa/hchs-a7s6",
+            "image": "./images/Wyoming Connected Vehicle Pilot Basic Safety Message Visualization.png",
+            "altText": "Map and histograms of Wyoming CV Pilot Basic Safety Messages"
         },
         {
-            "name": "Advanced Messaging Concept Development",
-            "description": "Contains all Basic Mobility Control Message (BMCMs) generated during the Advanced Messaging Concept Development (AMCD) field testing",
-            "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Mobil/wqch-9e2e",
+            "name": "Advanced Messaging Concept Development Basic Safety Message",
+            "description": "Contains all Basic Safety Messages generated during the Advanced Messaging Concept Development (AMCD) field testing",
+            "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Safet/eezi-v4pm",
             "image": "./images/AdvancedMessage.PNG",
-            "altText": "Graph of Advanced Message Concept"
+            "altText": "Link to Advanced Message Concept Development Basic Safety Messages"
         }
     ]
 }
