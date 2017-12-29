@@ -160,7 +160,7 @@ var myVue = new Vue({
                 self.resultsJson = [];
                 self.items = data;
                 self.addSocratatoJson();
-                //self.addNTLtoJson(search_query);
+                self.addNTLtoJson(search_query);
                 self.relevanceSortedJson = self.resultsJson.slice();
 
                 self.dateSortedJson = self.resultsJson.slice();
