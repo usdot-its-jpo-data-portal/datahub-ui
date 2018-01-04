@@ -125,6 +125,12 @@ p.headingFont{
 .publicAccess ul {
   margin-left: 4em;
   list-style: disc outside;
+  padding-bottom: 8px;
+}
+
+.publicAccess ol {
+  margin-left: 4em;
+  padding-bottom: 8px;
 }
 
 .publicAccess p {
