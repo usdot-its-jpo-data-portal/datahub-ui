@@ -6,19 +6,30 @@
 
    "tags": [
 
-        "Case studies information",
+        "case studies information",
 
-      "Data collection information",
+        "data collection information",
 
-        "Data quality information",
+        "data quality information",
 
-        "Highway travel information",
+        "highway travel information",
 
-        "Sensors information",
+        "sensors information",
 
-        "Traffic surveillance information",
+        "traffic surveillance information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l02"
+
 
     ],
 
@@ -26,7 +37,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/4039",
 
-    "Abstract": "Within the second Strategic Highway Research Program (SHRP 2), Project L02 focused on creating a suite of methods by which transportation agencies could monitor and evaluate travel time reliability. Creation of the methods also produced an improved understanding of why and how travel times vary and the factors that create that variation. This final report provides a brief narrative about what reliability is and how it can be measured and analyzed. A general finding is that reliability is best described by creating holistic pictures like probability density functions (PDFs) and their associated cumulative density functions (CDFs). PDFs are helpful for identifying multimodality or the existence of multiple operating conditions within the data being examined. CDFs are helpful for seeing if progress is being made in making a system more reliable or for comparing the reliability of one system against another. After an introductory chapter, chapters in this report address: a survey of existing systems and user needs; functional specifications; data collection, assembly, and cleaning; sensor spacing and sampling for travel time reliability monitoring; data processing and analysis; and case studies. The last chapter provides a summary and conclusions. For supporting datasets, please see https://ntlsearch.bts.gov/tris/record/ntl/61935.html"
+    "Abstract": "Within the second Strategic Highway Research Program (SHRP 2), Project L02 focused on creating a suite of methods by which transportation agencies could monitor and evaluate travel time reliability. Creation of the methods also produced an improved understanding of why and how travel times vary and the factors that create that variation. This final report provides a brief narrative about what reliability is and how it can be measured and analyzed. A general finding is that reliability is best described by creating holistic pictures like probability density functions (PDFs) and their associated cumulative density functions (CDFs). PDFs are helpful for identifying multimodality or the existence of multiple operating conditions within the data being examined. CDFs are helpful for seeing if progress is being made in making a system more reliable or for comparing the reliability of one system against another. After an introductory chapter, chapters in this report address: a survey of existing systems and user needs; functional specifications; data collection, assembly, and cleaning; sensor spacing and sampling for travel time reliability monitoring; data processing and analysis; and case studies. The last chapter provides a summary and conclusions. For supporting datasets, please see https://rosap.ntl.bts.gov/view/dot/3602"
 
   },
 
@@ -36,21 +47,29 @@
 
    "tags": [
 
-        "Data files information",
+        "case studies information",
 
-        "Case studies information",
+        "data collection information",
 
-        "Data collection information",
+        "data quality information",
 
-        "Data quality information",
+        "highway travel information",
 
-        "Highway travel information",
+        "sensors information",
 
-        "Sensors information", 
+        "traffic surveillance information",
 
-        "Traffic surveillance information",
+        "travel time information",
 
-        "Travel time information"
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l02"
 
     ],
 
@@ -58,7 +77,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3602",
 
-    "Abstract": "This zip file contains case study datasets for SHRP 2 Report S2-L02-RR1: Establishing Monitoring Programs for Travel Time Reliability, https://ntlsearch.bts.gov/tris/record/ntl/61934.html The files are in comma separated value (.csv) format. The compressed zip file is 84.15 MB. These files can be unzipped using any zip compression/decompression software. The .csv files can be read with any basic text editor."
+    "Abstract": "This zip file contains case study datasets for SHRP 2 Report S2-L02-RR1: Establishing Monitoring Programs for Travel Time Reliability, https://rosap.ntl.bts.gov/view/dot/4039 The files are in comma separated value (.csv) format. The compressed zip file is 84.15 MB. These files can be unzipped using any zip compression/decompression software. The .csv files can be read with any basic text editor."
 
   },
 
@@ -68,23 +87,34 @@
 
    "tags": [
 
-        "Before and after studies information",
+        "before and after studies information",
 
-        "Highway traffic control information",
+        "highway traffic control information",
 
-        "Highways information",
+        "highways information",
 
-        "Improvements information",
+        "improvements information",
 
-        "Nonrecurrent congestion information",
+        "nonrecurrent congestion information",
 
-        "Strategic planning information",
+        "strategic planning information",
 
-        "Traffic congestion information",
+        "traffic congestion information",
 
-        "Travel time information",
+        "travel time information",
 
-        "Uncertainty information"
+        "uncertainty information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l03"
+
 
     ],
 
@@ -102,23 +132,33 @@
 
    "tags": [
 
-        "Before and after studies information",
+        "before and after studies information",
 
-        "Highway traffic control information",
+        "highway traffic control information",
 
-        "Highways information",
+        "highways information",
 
-        "Improvements information",
+        "improvements information",
 
-        "Nonrecurrent congestion information",
+        "nonrecurrent congestion information",
 
-        "Strategic planning information",
+        "strategic planning information",
 
-        "Traffic congestion information",
+        "traffic congestion information",
 
-        "Travel time information",
+        "travel time information",
 
-        "Uncertainty information"
+        "uncertainty information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l03"
 
     ],
 
@@ -126,7 +166,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3619",
 
-    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L03-RR-1, Analytical procedures for determining the impacts of reliability mitigation strategies.Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://ntlsearch.bts.gov/tris/record/ntl/61950.html"
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L03-RR-1, Analytical procedures for determining the impacts of reliability mitigation strategies.Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://rosap.ntl.bts.gov/view/dot/3605"
 
   },
 
@@ -136,29 +176,40 @@
 
    "tags": [
 
-        "Cost effectiveness information",
+ "cost effectiveness information",
 
-        "Benefit cost analysis information",
+        "benefit cost analysis information",
 
-        "Highway design information",
+        "highway design information",
 
-        "Highway operations information",
+        "highway operations information",
 
-        "Highway operations information",
+        "highway operations information",
 
-        "Highway safety information",
+        "highway safety information",
 
-        "Level of service information",
+        "level of service information",
 
-        "Life cycle anaylsis information",
+        "life cycle anaylsis information",
 
-        "Mathematical models information",
+        "mathematical models information",
 
-        "Nonrecurrent congestion information",
+        "nonrecurrent congestion information",
 
-        "Traffic safety information",
+        "traffic safety information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l07"
+
 
     ],
 
@@ -166,7 +217,7 @@
 
     "URL": "https://www.nap.edu/catalog/22476/",
 
-    "Abstract": "This research report presents the findings on the identification and evaluation of the use of highway geometric design features on freeways to reduce nonrecurrent congestion and improve travel time reliability. General guidance is provided on the range of design elements that could be used by transportation agencies to improve travel time reliability and reduce nonrecurrent congestion, analysis procedures and models to measure their operational and safety effectiveness, as well as a life-cycle benefit–cost method to support decision making on the possible use of individual treatments to address actual nonrecurring traffic conditions. For the safety effectiveness analysis, a new relationship between safety and congestion was explored and a mathematical model developed to quantify crash frequency at various levels of service. For datasets related to this report, please visit https://ntlsearch.bts.gov/tris/record/ntl/61939.html"
+    "Abstract": "This research report presents the findings on the identification and evaluation of the use of highway geometric design features on freeways to reduce nonrecurrent congestion and improve travel time reliability. General guidance is provided on the range of design elements that could be used by transportation agencies to improve travel time reliability and reduce nonrecurrent congestion, analysis procedures and models to measure their operational and safety effectiveness, as well as a life-cycle benefit–cost method to support decision making on the possible use of individual treatments to address actual nonrecurring traffic conditions. For the safety effectiveness analysis, a new relationship between safety and congestion was explored and a mathematical model developed to quantify crash frequency at various levels of service. For datasets related to this report, please visit https://rosap.ntl.bts.gov/view/dot/3603"
 
   },
 
@@ -176,27 +227,37 @@
 
    "tags": [
 
-        "Benefit cost analysis information",
+        "benefit cost analysis information",
 
-        "Cost effectiveness information",
+        "highway design information",
 
-        "Highway design information",
+        "highway operations information",
 
-        "Highway operations information",
+        "highway operations information",
 
-        "Highway safety information",
+        "highway safety information",
 
-        "Level of service information",
+        "level of service information",
 
-        "Life cycle analysis information",
+        "life cycle anaylsis information",
 
-        "Mathematical models information",
+        "mathematical models information",
 
-        "Nonrecurrent congestion information",
+        "nonrecurrent congestion information",
 
-        "Traffic safety information",
+        "traffic safety information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l07"
 
     ],
 
@@ -204,7 +265,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3603",
 
-    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 Report S2-L07-RR-1, Identification and Evaluation of the Cost-Effectiveness of Highway Design Features to Reduce Nonrecurrent Congestion, https://ntlsearch.bts.gov/tris/record/ntl/61937.html The compressed zip file is 12 MB. These files can be unzipped using any zip compression/decompression software. The .csv files can be read with any basic text editor."
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 Report S2-L07-RR-1, Identification and Evaluation of the Cost-Effectiveness of Highway Design Features to Reduce Nonrecurrent Congestion, https://www.nap.edu/catalog/22476/ The compressed zip file is 12 MB. These files can be unzipped using any zip compression/decompression software. The .csv files can be read with any basic text editor."
 
   },
 
@@ -214,21 +275,32 @@
 
    "tags": [
 
-        "Forecasting information",
+        "forecasting information",
 
-        "Freeways information",
+        "freeways information",
 
-        "Highway capacity information",
+        "highway capacity information",
 
-        "Highway travel information",
+        "highway travel information",
 
-        "Methodology information",
+        "methodology information",
 
-        "Software information",
+        "software information",
 
-        "Streets information",
+        "streets information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l08"
+
 
     ],
 
@@ -246,21 +318,31 @@
 
    "tags": [
 
-        "Forecasting information",
+        "forecasting information",
 
-        "Freeways information",
+        "freeways information",
 
-        "Highway capacity information",
+        "highway capacity information",
 
-        "Highway travel information",
+        "highway travel information",
 
-        "Methodology information",
+        "methodology information",
 
-        "Software information",
+        "software information",
 
-        "Streets information",
+        "streets information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l08"
 
     ],
 
@@ -268,7 +350,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3617",
 
-    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L08-RW-1, Incorporating travel time reliability into the Highway Capacity Manual. Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://ntlsearch.bts.gov/tris/record/ntl/61951.html"
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-L08-RW-1, Incorporating travel time reliability into the Highway Capacity Manual. Zip size is 1.83 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view publication see: https://rosap.ntl.bts.gov/view/dot/3606"
 
   },
 
@@ -278,23 +360,34 @@
 
    "tags": [
 
-        "Definitions information",
+        "definitions information",
 
-        "Human factors information",
+        "human factors information",
 
-        "Information dissemination information",
+        "information dissemination information",
 
-        "Messages (Communications) information",
+        "messages (communications) information",
 
-        "Nonrecurrent congestion information",
+        "nonrecurrent congestion information",
 
-        "State of the practice information",
+        "state of the practice information",
 
-        "Traffic delay information",
+        "traffic delay information",
 
-        "Travel time information",
+        "travel time information",
 
-        "Traveler information and communication systems information"
+        "traveler information and communication systems information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l14"
+
 
     ],
 
@@ -302,7 +395,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3607",
 
-    "Abstract": "The second Strategic Highway Research Program (SHRP 2) Reliability program aims to improve trip time reliability by reducing the frequency and effects of events that cause travel times to fluctuate unpredictably. Congestion caused by unreliable, or nonrecurring, events is roughly as extensive as congestion caused by routine bottlenecks (Cambridge Systematics, Inc. 2003). Nonrecurring events such as crashes, work zones, special events, and weather disrupt normal traffic flow by causing reduced speeds, lane closures, and erratic driving maneuvers. The goals of the SHRP 2 Reliability program focus on travel time variation—the characteristic of the transportation system that can cause the driver’s current trip to take much longer than normally expected. For example, a driver must allow an hour to make a trip that normally takes 30 minutes. This transportation system characteristic is important for travelers and shippers and is a component of the congestion problem in which transportation agencies can make significant and measurable gains even as travel demand grows. Reducing delays related to reliability has the added benefit of reducing primary and secondary crashes, vehicle emissions, and fuel use, as well as other benefits. Travel time reliability information includes cumulative data about traffic speeds and trip times that take into account historical variations from day to day and enable individuals to understand the level of variation in traffic. Unlike real-time travel time information, which provides a current snapshot of trip conditions and travel time, reliability information can be used to plan and budget in advance for a trip. A key component in addressing the reliability issue related to urban mobility is conveying reliability-related information to system users so they can make informed decisions about their travel. The challenge for transportation professionals lies in selecting the best means of conveying that information so it is usable and effective. The goal of this research project was to examine what combination of words, numbers, and other features of user information messages, along with communications methods and technology platforms, best communicates information about travel time and reliability to travelers so that they can make optimal travel choices from their own point of view. Such choices include whether to take a trip, departure time, mode choice, and route choice. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61973.html"
+    "Abstract": "The second Strategic Highway Research Program (SHRP 2) Reliability program aims to improve trip time reliability by reducing the frequency and effects of events that cause travel times to fluctuate unpredictably. Congestion caused by unreliable, or nonrecurring, events is roughly as extensive as congestion caused by routine bottlenecks (Cambridge Systematics, Inc. 2003). Nonrecurring events such as crashes, work zones, special events, and weather disrupt normal traffic flow by causing reduced speeds, lane closures, and erratic driving maneuvers. The goals of the SHRP 2 Reliability program focus on travel time variation—the characteristic of the transportation system that can cause the driver’s current trip to take much longer than normally expected. For example, a driver must allow an hour to make a trip that normally takes 30 minutes. This transportation system characteristic is important for travelers and shippers and is a component of the congestion problem in which transportation agencies can make significant and measurable gains even as travel demand grows. Reducing delays related to reliability has the added benefit of reducing primary and secondary crashes, vehicle emissions, and fuel use, as well as other benefits. Travel time reliability information includes cumulative data about traffic speeds and trip times that take into account historical variations from day to day and enable individuals to understand the level of variation in traffic. Unlike real-time travel time information, which provides a current snapshot of trip conditions and travel time, reliability information can be used to plan and budget in advance for a trip. A key component in addressing the reliability issue related to urban mobility is conveying reliability-related information to system users so they can make informed decisions about their travel. The challenge for transportation professionals lies in selecting the best means of conveying that information so it is usable and effective. The goal of this research project was to examine what combination of words, numbers, and other features of user information messages, along with communications methods and technology platforms, best communicates information about travel time and reliability to travelers so that they can make optimal travel choices from their own point of view. Such choices include whether to take a trip, departure time, mode choice, and route choice. The datasets that support this report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3618"
 
   },
 
@@ -312,23 +405,33 @@
 
    "tags": [
 
-        "Definitions information",
+        "definitions information",
 
-        "Human factors information",
+        "human factors information",
 
-        "Information dissemination information",
+        "information dissemination information",
 
-        "Messages (Communications) information",
+        "messages (communications) information",
 
-        "Nonrecurrent congestion information",
+        "nonrecurrent congestion information",
 
-        "State of the practice information",
+        "state of the practice information",
 
-        "Traffic delay information",
+        "traffic delay information",
 
-        "Travel time information",
+        "travel time information",
 
-        "Traveler information and communication systems information"
+        "traveler information and communication systems information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l14"
 
     ],
 
@@ -336,7 +439,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3618",
 
-    "Abstract": "Data files in this zipped package include macro-enabled Microsoft Excel spreadsheets. These spreadsheets operate as interactive games. To save them into open formats would destroy this functionality. Therefore the macro-enabled spreadsheets are left as-is. There were opened prior to ingest in this repository using Microsoft Excel 2010. This dataset supports SHRP 2 report S2-L14-RW-1, Effectiveness of different approaches to disseminating traveler information on travel time reliability. Zip contains 628 MB. Files were accessed with Microsoft Excel 2016. Data will be preserved as it is. For the publication see: https://ntlsearch.bts.gov/tris/record/ntl/61952.html"
+    "Abstract": "Data files in this zipped package include macro-enabled Microsoft Excel spreadsheets. These spreadsheets operate as interactive games. To save them into open formats would destroy this functionality. Therefore the macro-enabled spreadsheets are left as-is. There were opened prior to ingest in this repository using Microsoft Excel 2010. This dataset supports SHRP 2 report S2-L14-RW-1, Effectiveness of different approaches to disseminating traveler information on travel time reliability. Zip contains 628 MB. Files were accessed with Microsoft Excel 2016. Data will be preserved as it is. For the publication see: https://rosap.ntl.bts.gov/view/dot/3607"
 
   },
 
@@ -346,17 +449,28 @@
 
    "tags": [
 
-        "Freeways information",
+        "freeways information",
 
-        "Traffic data information",
+        "traffic data information",
 
-        "Traffic models information",
+        "traffic models information",
 
-        "Travel time information",
+        "travel time information",
 
-        "Urban highways information",
+        "urban highways information",
 
-        "Validation information"
+        "validation information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l33"
+
 
     ],
 
@@ -374,17 +488,27 @@
 
    "tags": [
 
-        "Freeways information",
+        "freeways information",
 
-        "Traffic data information",
+        "traffic data information",
 
-        "Traffic models information",
+        "traffic models information",
 
-        "Travel time information",
+        "travel time information",
 
-        "Urban highways information",
+        "urban highways information",
 
-        "Validation information"
+        "validation information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l33"
 
     ],
 
@@ -392,7 +516,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/4141",
 
-    "Abstract": "The datasets in these 5 zip files are in support of SHRP 2 Report S2-L33-RW-1, Validation of Urban Freeway Models, https://ntlsearch.bts.gov/tris/record/ntl/61940.html The 5 zip files contain a total of 60 comma separated value (.csv) files. The compressed zip files total 3.8 GB in size. The files have been uploaded as-is; no further documentation was supplied. These files can be unzipped using any zip compression/decompression software. The files can be read in any simple text editor. [software requirements]"
+    "Abstract": "The datasets in these 5 zip files are in support of SHRP 2 Report S2-L33-RW-1, Validation of Urban Freeway Models, https://rosap.ntl.bts.gov/view/dot/4041 The 5 zip files contain a total of 60 comma separated value (.csv) files. The compressed zip files total 3.8 GB in size. The files have been uploaded as-is; no further documentation was supplied. These files can be unzipped using any zip compression/decompression software. The files can be read in any simple text editor. [software requirements]"
 
   },
 
@@ -402,17 +526,28 @@
 
    "tags": [
 
-        "Emergency management information",
+        "emergency management information",
 
-        "Software information",
+        "software information",
 
-        "State departments of transportation information",
+        "state departments of transportation information",
 
-        "Transit operating agencies information",
+        "transit operating agencies information",
 
-        "Transportation operations information",
+        "transportation operations information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l34"
+
 
     ],
 
@@ -430,19 +565,30 @@
 
    "tags": [
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Microsimulation information",
+        "microsimulation information",
 
-        "Performance measurement information",
+        "performance measurement information",
 
-        "Pilot studies information",
+        "pilot studies information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38a"
+
 
     ],
 
@@ -450,7 +596,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3611",
 
-    "Abstract": "The second Strategic Highway Research Program (SHRP 2) has been investigating the critical subject of travel time reliability for several years. As part of this research, SHRP 2 supported multiple efforts to develop products to evaluate travel time reliability and to estimate the impact of projects on reliability. SHRP 2 reliability projects have developed several methods to help public agencies: - Collect and analyze data on the variability of travel time - Diagnose problems - Propose actions or alternative mitigation strategies - Test the impacts of solutions One goal of this research has been to find ways to demonstrate how operational strategies improve travel time reliability, which is highly valued by both the person and goods movement transportation markets. Operational strategies are critical to improve mobility and travel time reliability on highways and can be implemented faster than larger system expansion projects, since they often do not require detailed environmental reviews, and they generally cost much less. In current practice, travel demand and microsimulation models have not been able to adequately estimate the reliability benefits of operations projects. As a result, the SHRP 2 reliability products have the potential to fill a void in the ability of transportation professionals to analyze reliability and quantify the likely benefits of these strategies. Some activity-based models (ABM) with dynamic traffic assignment (DTA) tools under assessment (e.g., in the report, SHRP 2 L04 Incorporating Reliability Performance Measures into Operations and Planning Modeling Tools) may be able to meet this need in the future, but none are currently in widespread use. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61963.html"
+    "Abstract": "The second Strategic Highway Research Program (SHRP 2) has been investigating the critical subject of travel time reliability for several years. As part of this research, SHRP 2 supported multiple efforts to develop products to evaluate travel time reliability and to estimate the impact of projects on reliability. SHRP 2 reliability projects have developed several methods to help public agencies: - Collect and analyze data on the variability of travel time - Diagnose problems - Propose actions or alternative mitigation strategies - Test the impacts of solutions One goal of this research has been to find ways to demonstrate how operational strategies improve travel time reliability, which is highly valued by both the person and goods movement transportation markets. Operational strategies are critical to improve mobility and travel time reliability on highways and can be implemented faster than larger system expansion projects, since they often do not require detailed environmental reviews, and they generally cost much less. In current practice, travel demand and microsimulation models have not been able to adequately estimate the reliability benefits of operations projects. As a result, the SHRP 2 reliability products have the potential to fill a void in the ability of transportation professionals to analyze reliability and quantify the likely benefits of these strategies. Some activity-based models (ABM) with dynamic traffic assignment (DTA) tools under assessment (e.g., in the report, SHRP 2 L04 Incorporating Reliability Performance Measures into Operations and Planning Modeling Tools) may be able to meet this need in the future, but none are currently in widespread use. The datasets that support this report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3613"
 
   },
 
@@ -460,19 +606,29 @@
 
    "tags": [
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Microsimulation information",
+        "microsimulation information",
 
-        "Performance measurement information",
+        "performance measurement information",
 
-        "Pilot studies information",
+        "pilot studies information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38a"
 
     ],
 
@@ -490,13 +646,24 @@
 
    "tags": [
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Performance measurement information"
+        "performance measurement information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38b"
+
 
     ],
 
@@ -504,7 +671,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3608",
 
-    "Abstract": "The Minnesota pilot site has undertaken an effort to test data and analytical tools developed through the Strategic Highway Research Program (SHRP) 2 Reliability focus area. The purpose of these tools is to facilitate the improvement of travel time reliability on highways by reducing the frequency and effects of events that cause travel times to fluctuate in an unpredictable manner. The SHRP 2 reliability data and analytical tools evaluated by the Minnesota team are intended to address travel time variability in one of three ways: 1. Establish monitoring systems to identify sources of unreliable travel times (Project L02) 2. Identify potential solutions to cost-effectively improve reliability (Project L07) 3. Incorporate consideration of travel time reliability into transportation agencies’ planning and programming framework (Project L05) The Project L02 data and analytical tools were pilot tested by collecting vast amounts of traffic and nonrecurring conditions data and compiling it in a travel time reliability monitoring system (TTRMS) for purposes of conducting reliability evaluations. The L07 benefit-cost tool was evaluated in a number of facets, including usability, performance, and sensitivity testing. Guidance from Project L05 to incorporate reliability into the planning and programming process was introduced to a wide audience of stakeholders through an extensive outreach effort of meetings, workshops, and web conferences. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61965.html"
+    "Abstract": "The Minnesota pilot site has undertaken an effort to test data and analytical tools developed through the Strategic Highway Research Program (SHRP) 2 Reliability focus area. The purpose of these tools is to facilitate the improvement of travel time reliability on highways by reducing the frequency and effects of events that cause travel times to fluctuate in an unpredictable manner. The SHRP 2 reliability data and analytical tools evaluated by the Minnesota team are intended to address travel time variability in one of three ways: 1. Establish monitoring systems to identify sources of unreliable travel times (Project L02) 2. Identify potential solutions to cost-effectively improve reliability (Project L07) 3. Incorporate consideration of travel time reliability into transportation agencies’ planning and programming framework (Project L05) The Project L02 data and analytical tools were pilot tested by collecting vast amounts of traffic and nonrecurring conditions data and compiling it in a travel time reliability monitoring system (TTRMS) for purposes of conducting reliability evaluations. The L07 benefit-cost tool was evaluated in a number of facets, including usability, performance, and sensitivity testing. Guidance from Project L05 to incorporate reliability into the planning and programming process was introduced to a wide audience of stakeholders through an extensive outreach effort of meetings, workshops, and web conferences. The datasets that support this report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3614"
 
   },
 
@@ -514,13 +681,23 @@
 
    "tags": [
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Performance measurement information"
+        "performance measurement information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38b"
 
     ],
 
@@ -528,7 +705,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3614",
 
-    "Abstract": "The datasets in the attached ZIP file support SHRP 2 reliability project L38B, 'Pilot testing of SHRP 2 reliability data and analytical products: Minnesota.' This report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61954.html This ZIP file package, which is 22.1 MB in size, contains 6 Microsoft Excel spreadsheet files (XLSX): (1) I-94 2012 Speed and Volume Data (Part 1).xlsx (2) I-94 2012 Speed and Volume Data (Part 2).xlsx (3) I-94 2012 Speed and Volume Data (Part 3).xlsx This file package also contains 3 Comma Separated Value files (CSV): (1) I-94 WB at Park Avenue Flow.csv (2) Project L07 Combined Database.csv (3) TH 100 NB Sample Database.csv The XLSX and CSV files can be opened using Microsoft Excel 2010 and 2016. The CSV files can be opened using most available text editing programs."
+    "Abstract": "The datasets in the attached ZIP file support SHRP 2 reliability project L38B, 'Pilot testing of SHRP 2 reliability data and analytical products: Minnesota.' This report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3608 This ZIP file package, which is 22.1 MB in size, contains 6 Microsoft Excel spreadsheet files (XLSX): (1) I-94 2012 Speed and Volume Data (Part 1).xlsx (2) I-94 2012 Speed and Volume Data (Part 2).xlsx (3) I-94 2012 Speed and Volume Data (Part 3).xlsx This file package also contains 3 Comma Separated Value files (CSV): (1) I-94 WB at Park Avenue Flow.csv (2) Project L07 Combined Database.csv (3) TH 100 NB Sample Database.csv The XLSX and CSV files can be opened using Microsoft Excel 2010 and 2016. The CSV files can be opened using most available text editing programs."
 
   },
 
@@ -538,19 +715,30 @@
 
    "tags": [
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Microsimulation information",
+        "microsimulation information",
 
-        "Performance measurement information",
+        "performance measurement information",
 
-        "Pilot studies information",
+        "pilot studies information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38c"
+
 
     ],
 
@@ -558,7 +746,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3609",
 
-    "Abstract": "Transportation agencies have realized the importance of performance estimation, measurement, and management. The Moving Ahead for Progress in the 21st Century Act legislation identifies travel time reliability as one of the goals of the federal highway programs to be supported by established performance measurement processes in each state. The Reliability Program of the second Strategic Highway Research Program (SHRP 2) has developed a number of products to support estimating travel time reliability, identifying reliability deficiencies and contributing factors, identifying alternative solutions, and analyzing the impacts of these solutions. As part of the SHRP 2 program, tools have been developed to assess reliability based on a variety of approaches such as sketch planning, analytical analysis, simulation analysis, and travel time monitoring. SHRP 2 initiated the L38 project to pilot test products from five of the program’s completed projects. The products support reliability estimation and use based on data analyses, analytical techniques, and decision-making framework. The L38 project has two main objectives: (1) to assist agencies in using travel time reliability as a measure in their business practices and (2) to receive feedback from the project research teams on the applicability and usefulness of the products tested, along with their suggested possible refinements. SHRP 2 selected four teams from California, Minnesota, Florida, and Washington. This document reports on the activities performed as part of the Florida project (Project L38C). Project L38C tested elements from Projects L02, L05, L07, and L08. Project L02 identified methods to collect, archive, and integrate required data for reliability estimation and methods for analyzing and visualizing the causes of unreliability based on the collected data. Projects L07 and L08 produced analytical techniques and tools for estimating reliability based on developed models and allowing the estimation of reliability and the impacts on reliability of alternative mitigating strategies. Project L05 provided guidance regarding how to use reliability assessments to support the business processes of transportation agencies. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61966.html"
+    "Abstract": "Transportation agencies have realized the importance of performance estimation, measurement, and management. The Moving Ahead for Progress in the 21st Century Act legislation identifies travel time reliability as one of the goals of the federal highway programs to be supported by established performance measurement processes in each state. The Reliability Program of the second Strategic Highway Research Program (SHRP 2) has developed a number of products to support estimating travel time reliability, identifying reliability deficiencies and contributing factors, identifying alternative solutions, and analyzing the impacts of these solutions. As part of the SHRP 2 program, tools have been developed to assess reliability based on a variety of approaches such as sketch planning, analytical analysis, simulation analysis, and travel time monitoring. SHRP 2 initiated the L38 project to pilot test products from five of the program’s completed projects. The products support reliability estimation and use based on data analyses, analytical techniques, and decision-making framework. The L38 project has two main objectives: (1) to assist agencies in using travel time reliability as a measure in their business practices and (2) to receive feedback from the project research teams on the applicability and usefulness of the products tested, along with their suggested possible refinements. SHRP 2 selected four teams from California, Minnesota, Florida, and Washington. This document reports on the activities performed as part of the Florida project (Project L38C). Project L38C tested elements from Projects L02, L05, L07, and L08. Project L02 identified methods to collect, archive, and integrate required data for reliability estimation and methods for analyzing and visualizing the causes of unreliability based on the collected data. Projects L07 and L08 produced analytical techniques and tools for estimating reliability based on developed models and allowing the estimation of reliability and the impacts on reliability of alternative mitigating strategies. Project L05 provided guidance regarding how to use reliability assessments to support the business processes of transportation agencies. The datasets that support this report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3615"
 
   },
 
@@ -568,19 +756,29 @@
 
    "tags": [
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Microsimulation information",
+        "microsimulation information",
 
-        "Performance measurement information",
+        "performance measurement information",
 
-        "Pilot studies information",
+        "pilot studies information",
 
-        "Travel time information"
+        "travel time information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38c"
 
     ],
 
@@ -588,7 +786,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3615",
 
-    "Abstract": "The datasets in this zip file, which is 7.83 MB in size, support of SHRP 2 reliability project L38C, 'Pilot testing of SHRP 2 reliability data and analytical products: Florida.' The accompanying report can be accessed at the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61955.html There are 12 datasets in this zip file, including 2 Microsoft Excel worksheets (XLSX) and 10 Comma Separated Values (CSV) files. The Microsoft Excel worksheets can be opened using the 2010 and 2016 versions of Microsoft Word, the CSV files can be opened using most text editors: (1) FREEVAL D6 TSS 05122010 5S.csv (2) FREEVAL I 95 NB Normal Day Volume.xlsx (3) FREEVAL PTMS Counts I95 2pm 7pm.xlsx (4) L08 STREETVAL 3 Year SR7 Crashes.csv (5) Project L38C I-95 NB 2012 Incident Data.csv (6) Project L38C Miami 2012 Precipitation.csv (7) Regimes I-95 NB EL 2012.csv (8) Regimes I-95 NB TVT DMS 22 TO CGI 2012.csv (9) Regimes I-95 SB EL 2012.csv (10) Regimes I-95 SB TVT DMS 3 TO I395 2012.csv (11) STREETEVAL SR7 Processed Data NB.csv (12) STREETEVAL SR7 Processed Data SB.csv"
+    "Abstract": "The datasets in this zip file, which is 7.83 MB in size, support of SHRP 2 reliability project L38C, 'Pilot testing of SHRP 2 reliability data and analytical products: Florida.' The accompanying report can be accessed at the following URL: https://rosap.ntl.bts.gov/view/dot/3609 There are 12 datasets in this zip file, including 2 Microsoft Excel worksheets (XLSX) and 10 Comma Separated Values (CSV) files. The Microsoft Excel worksheets can be opened using the 2010 and 2016 versions of Microsoft Word, the CSV files can be opened using most text editors: (1) FREEVAL D6 TSS 05122010 5S.csv (2) FREEVAL I 95 NB Normal Day Volume.xlsx (3) FREEVAL PTMS Counts I95 2pm 7pm.xlsx (4) L08 STREETVAL 3 Year SR7 Crashes.csv (5) Project L38C I-95 NB 2012 Incident Data.csv (6) Project L38C Miami 2012 Precipitation.csv (7) Regimes I-95 NB EL 2012.csv (8) Regimes I-95 NB TVT DMS 22 TO CGI 2012.csv (9) Regimes I-95 SB EL 2012.csv (10) Regimes I-95 SB TVT DMS 3 TO I395 2012.csv (11) STREETEVAL SR7 Processed Data NB.csv (12) STREETEVAL SR7 Processed Data SB.csv"
 
   },
 
@@ -598,17 +796,28 @@
 
    "tags": [
 
-        "Travel time information",
+        "travel time information",
 
-        "Traffic engineering information",
+        "traffic engineering information",
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Pilot studies information"
+        "pilot studies information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38d"
+
 
     ],
 
@@ -616,7 +825,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3610",
 
-    "Abstract": "The second Strategic Highway Research Program (SHRP 2) addresses the challenges of moving people and goods efficiently and safely on the nation’s highways. In its Reliability focus area, the research emphasizes improving the reliability of highway travel time by reducing the frequencies and effects of events that cause travel time to fluctuate in an unpredictable manner. and effects of events that cause travel time to fluctuate in an unpredictable manner. Washington State Department of Transportation (WSDOT), in association with the Smart Transportation Applications and Research Laboratory (STAR Lab) at the University of Washington (UW), is one of the four research teams for conducting the pilot testing of Project L38. This research project mainly tested and evaluated SHRP 2 Reliability Data and Analytical Products, specifically those produced by the SHRP 2 L02, L05, L07, L08, and C11 projects. These analytical tools are designed to use for travel time reliability measurement, monitoring, enhancement, and impact assessment. The datasets that support this report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61968.html"
+    "Abstract": "The second Strategic Highway Research Program (SHRP 2) addresses the challenges of moving people and goods efficiently and safely on the nation’s highways. In its Reliability focus area, the research emphasizes improving the reliability of highway travel time by reducing the frequencies and effects of events that cause travel time to fluctuate in an unpredictable manner. and effects of events that cause travel time to fluctuate in an unpredictable manner. Washington State Department of Transportation (WSDOT), in association with the Smart Transportation Applications and Research Laboratory (STAR Lab) at the University of Washington (UW), is one of the four research teams for conducting the pilot testing of Project L38. This research project mainly tested and evaluated SHRP 2 Reliability Data and Analytical Products, specifically those produced by the SHRP 2 L02, L05, L07, L08, and C11 projects. These analytical tools are designed to use for travel time reliability measurement, monitoring, enhancement, and impact assessment. The datasets that support this report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3616"
 
   },
 
@@ -626,17 +835,27 @@
 
    "tags": [
 
-        "Travel time information",
+        "travel time information",
 
-        "Traffic engineering information",
+        "traffic engineering information",
 
-        "Business practices information",
+        "business practices information",
 
-        "Data analysis information",
+        "data analysis information",
 
-        "Data collection information",
+        "data collection information",
 
-        "Pilot studies information"
+        "pilot studies information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project l38d"
 
     ],
 
@@ -644,7 +863,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/3616",
 
-    "Abstract": "The datasets in this zip file, which is 90.5 MB in size, are in support of SHRP 2 reliability project L38D, 'Pilot testing of SHRP 2 reliability data and analytical products: Washington.' The project report can be accessed via the following URL: https://ntlsearch.bts.gov/tris/record/ntl/61956.html This zip file contains 20 Comma Separated Values (CSV) files, which can be opened using most text editing programs."
+    "Abstract": "The datasets in this zip file, which is 90.5 MB in size, are in support of SHRP 2 reliability project L38D, 'Pilot testing of SHRP 2 reliability data and analytical products: Washington.' The project report can be accessed via the following URL: https://rosap.ntl.bts.gov/view/dot/3610 This zip file contains 20 Comma Separated Values (CSV) files, which can be opened using most text editing programs."
 
   },
 
@@ -654,23 +873,34 @@
 
    "tags": [
 
-        "Decision support systems information",
+        "decision support systems information",
 
-        "Highway corridors information",
+        "highway corridors information",
 
-        "Highway operations information",
+        "highway operations information",
 
-        "Programming (Planning) information",
+        "programming (planning) information",
 
-        "Software information",
+        "software information",
 
-        "Strategic planning information",
+        "strategic planning information",
 
-        "Traffic delay information",
+        "traffic delay information",
 
-        "Urban renewal information",
+        "urban renewal information",
 
-        "Work zone traffic control information"
+        "work zone traffic control information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project r11"
+
 
     ],
 
@@ -688,23 +918,33 @@
 
    "tags": [
 
-        "Decision support systems information",
+        "decision support systems information",
 
-        "Highway corridors information",
+        "highway corridors information",
 
-        "Highway operations information",
+        "highway operations information",
 
-        "Programming (Planning) information",
+        "programming (planning) information",
 
-        "Software information",
+        "software information",
 
-        "Strategic planning information",
+        "strategic planning information",
 
-        "Traffic delay information",
+        "traffic delay information",
 
-        "Urban renewal information",
+        "urban renewal information",
 
-        "Work zone traffic control information"
+        "work zone traffic control information",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "shrp 2",
+
+        "shrp2",
+
+        "project r11"
 
     ],
 
@@ -712,7 +952,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/32421",
 
-    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-R11-RW-1, Strategic approaches at the corridor and network level to minimize disruption from the renewal process. Zip size is 0.46 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view the publication see: https://ntlsearch.bts.gov/tris/record/ntl/61962.html"
+    "Abstract": "This zip file contains comma separated value (.csv) files of data to support SHRP 2 report S2-R11-RW-1, Strategic approaches at the corridor and network level to minimize disruption from the renewal process. Zip size is 0.46 MB. Files were accessed in Microsoft Excel 2016. Data will be preserved as is. To view the publication see: https://rosap.ntl.bts.gov/view/dot/3612"
 
   },
 
@@ -722,15 +962,22 @@
 
    "tags": [
 
-        "Data Sharing",
+        "data sharing",
 
-        "Disasters And Emergency Operations",
+        "disasters and emergency operations",
 
-        "Emergency Communication Systems",
+        "emergency communication systems",
 
-        "Intelligent Transportation Systems",
+        "intelligent transportation systems",
 
-        "Mobility"
+        "mobility",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "rescume"
+
 
     ],
 
@@ -748,15 +995,21 @@
 
    "tags": [
 
-        "Data Sharing",
+        "data sharing",
 
-        "Disasters And Emergency Operations",
+        "disasters and emergency operations",
 
-        "Emergency Communication Systems",
+        "emergency communication systems",
 
-        "Intelligent Transportation Systems",
+        "intelligent transportation systems",
 
-        "Mobility"
+        "mobility",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "rescume"
 
     ],
 
@@ -774,35 +1027,42 @@
 
    "tags": [
 
-        "Active Transportation And Demand Management",
+        "active transportation and demand management",
 
-        "Advanced Traffic Management Systems",
+        "advanced traffic management systems",
 
-        "AIMSUN",
+        "aimsun",
 
-        "Analysis Modeling And Simulation",
+        "analysis modeling and simulation",
 
-        "Connected Vehicles",
+        "connected vehicles",
 
-        "Dynamic Mobility Applications", 
+        "dynamic mobility applications", 
 
-        "Evaluation And Assessment",
+        "evaluation and assessment",
 
-        "Experiments", 
+        "experiments", 
 
-        "Integrated Corridor Management",
+        "integrated corridor management",
 
-        "Intelligent Transportation Systems", 
+        "intelligent transportation systems", 
 
-        "Mobile Communication Systems",
+        "mobile communication systems",
 
-        "Test Beds",
+        "test beds",
 
-        "Testing",
+        "testing",
 
-        "Traffic Simulation",
+        "traffic simulation",
 
-        "Travel Demand Management"
+        "travel demand management",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams san diego"
+
 
     ],
 
@@ -820,35 +1080,41 @@
 
    "tags": [
 
-        "Active Transportation And Demand Management",
+        "active transportation and demand management",
 
-        "Advanced Traffic Management Systems",
+        "advanced traffic management systems",
 
-        "AIMSUN",
+        "aimsun",
 
-        "Analysis Modeling And Simulation",
+        "analysis modeling and simulation",
 
-        "Connected Vehicles",
+        "connected vehicles",
 
-        "Dynamic Mobility Applications", 
+        "dynamic mobility applications", 
 
-        "Evaluation And Assessment",
+        "evaluation and assessment",
 
-        "Experiments", 
+        "experiments", 
 
-        "Integrated Corridor Management",
+        "integrated corridor management",
 
-        "Intelligent Transportation Systems", 
+        "intelligent transportation systems", 
 
-        "Mobile Communication Systems",
+        "mobile communication systems",
 
-        "Test Beds",
+        "test beds",
 
-        "Testing",
+        "testing",
 
-        "Traffic Simulation",
-        
-        "Travel Demand Management"
+        "traffic simulation",
+
+        "travel demand management",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams san diego"
 
     ],
 
@@ -856,7 +1122,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/32835",
 
-    "Abstract": "The datasets in this zip file are in support of Intelligent Transportation Systems Joint Program Office (ITS JPO) report FHWA-JPO-16-385, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Report for ATDM Program, https://ntlrepository.blob.core.windows.net/lib/62000/62300/62391/FHWA-JPO-16-385_v3.pdf and FHWA-JPO-16-389, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs : Evaluation Report for the San Diego Testbed : Draft Report, https://ntlrepository.blob.core.windows.net/lib/62000/62500/62556/FHWA-JPO-16-389_v2.pdf The files in this zip file are specifically related to the San Diego Testbed. The compressed zip files total 3.17 GB in size. The files have been uploaded as-is; no further documentation was supplied by NTL. All located .docx files were converted to .pdf document files which are an open, archival format. These pdfs were then added to the zip file alongside the original .docx files. These files can be unzipped using any zip compression/decompression software. This zip file contains files in the following formats: .pdf document files which can be read using any pdf reader; .cvs text files which can be read using any text editor; .txt text files which can be read using any text editor; .docx document files which can be read in Microsoft Word and some other word processing programs; . xlsx spreadsheet files which can be read in Microsoft Excel and some other spreadsheet programs; .dat data files which may be text or multimedia; as well as GIS or mapping files in the following formats: .mxd, .dbf, .prj, .sbn, .shp., .shp.xml; which may be opened in ArcGIS or other GIS software. [software requirements] These files were last accessed in 2017."
+    "Abstract": "The datasets in this zip file are in support of Intelligent Transportation Systems Joint Program Office (ITS JPO) report FHWA-JPO-16-389, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs : Evaluation Report for the San Diego Testbed : Draft Report, https://rosap.ntl.bts.gov/view/dot/32530 The files in this zip file are specifically related to the San Diego Testbed. The compressed zip files total 3.17 GB in size. The files have been uploaded as-is; no further documentation was supplied by NTL. All located .docx files were converted to .pdf document files which are an open, archival format. These pdfs were then added to the zip file alongside the original .docx files. These files can be unzipped using any zip compression/decompression software. This zip file contains files in the following formats: .pdf document files which can be read using any pdf reader; .cvs text files which can be read using any text editor; .txt text files which can be read using any text editor; .docx document files which can be read in Microsoft Word and some other word processing programs; . xlsx spreadsheet files which can be read in Microsoft Excel and some other spreadsheet programs; .dat data files which may be text or multimedia; as well as GIS or mapping files in the following formats: .mxd, .dbf, .prj, .sbn, .shp., .shp.xml; which may be opened in ArcGIS or other GIS software. [software requirements] These files were last accessed in 2017."
 
   },
 
@@ -866,31 +1132,38 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements ",
+        "active transportation demand managements ",
 
-        "AMS ",
+        "ams ",
 
-        "ATDM ",
+        "atdm ",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application ",
+        "dynamic mobility application ",
 
-        "Modeling ", 
+        "modeling ", 
 
-        "Phoenix",
+        "phoenix",
 
-        "Selection Criteria",
+        "selection criteria",
 
-        "Testbeds",
+        "testbeds",
 
-        "Calibration",
+        "calibration",
         
-        "Simulation",
+        "simulation",
 
-        "Traffic Models",
+        "traffic models",
 
-        "Travel Demand Management"
+        "travel demand management",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams phoenix"
+
 
     ],
 
@@ -908,31 +1181,37 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements ",
+        "active transportation demand managements ",
 
-        "AMS ",
+        "ams ",
 
-        "ATDM ",
+        "atdm ",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application ",
+        "dynamic mobility application ",
 
-        "Modeling ", 
+        "modeling ", 
 
-        "Phoenix",
+        "phoenix",
+
+        "selection criteria",
+
+        "testbeds",
+
+        "calibration",
         
-        "Selection Criteria",
+        "simulation",
 
-        "Testbeds",
+        "traffic models",
 
-        "Calibration",
-        
-        "Simulation",
+        "travel demand management",
 
-        "Traffic Models",
+        "intelligent transportation systems (its)",
 
-        "Travel Demand Management"
+        "its joint program office (jpo)",
+
+        "ams phoenix"
 
     ],
 
@@ -950,33 +1229,41 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements",
+        "active transportation demand managements",
 
-        "AMS",
+        "ams",
 
-        "ATDM",
+        "atdm",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application",
+        "dynamic mobility application",
 
-        "Impact Studies", 
+        "impact studies", 
 
-        "Mathematical Models",
+        "mathematical models",
 
-        "Modeling",
+        "modeling",
 
-        "Selection Criteria",
+        "selection criteria",
 
-        "Simulation",
+        "simulation",
 
-        "Strategic Planning",
+        "strategic planning",
 
-        "Testbeds",
+        "testbeds",
 
-        "Traffic Flow", 
+        "traffic flow", 
 
-        "Travel Demand"
+        "travel demand",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams pasadena"
+
+
 
     ],
 
@@ -994,33 +1281,39 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements",
+        "active transportation demand managements",
 
-        "AMS",
+        "ams",
 
-        "ATDM",
+        "atdm",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application",
+        "dynamic mobility application",
 
-        "Impact Studies", 
+        "impact studies", 
 
-        "Mathematical Models",
+        "mathematical models",
 
-        "Modeling",
+        "modeling",
 
-        "Selection Criteria",
+        "selection criteria",
 
-        "Simulation",
+        "simulation",
 
-        "Strategic Planning",
+        "strategic planning",
 
-        "Testbeds",
+        "testbeds",
 
-        "Traffic Flow", 
+        "traffic flow", 
 
-        "Travel Demand"
+        "travel demand",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams pasadena"
 
     ],
 
@@ -1028,7 +1321,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/32534",
 
-    "Abstract": "This zip file contains POSTDATA.ATT (.ATT); Print to File (.PRN); Portable Document Format (.PDF); and document (.DOCX) files of data to support FHWA-JPO-16-385, Analysis, modeling, and simulation (AMS) testbed development and evaluation to support dynamic mobility applications (DMA) and active transportation and demand management (ATDM) programs — evaluation report for ATDM program. Zip size is 168 MB. Files were accessed in 2017. Data will be preserved as is. To view publication see: https://ntlrepository.blob.core.windows.net/lib/62000/62300/62391/FHWA-JPO-16-385_v3.pdf"
+    "Abstract": "This zip file contains POSTDATA.ATT (.ATT); Print to File (.PRN); Portable Document Format (.PDF); and document (.DOCX) files of data to support FHWA-JPO-16-385, Analysis, modeling, and simulation (AMS) testbed development and evaluation to support dynamic mobility applications (DMA) and active transportation and demand management (ATDM) programs — evaluation report for ATDM program. Zip size is 168 MB. Files were accessed in 2017. Data will be preserved as is. To view publication see: https://rosap.ntl.bts.gov/view/dot/32520"
 
   },
 
@@ -1038,35 +1331,39 @@
 
    "tags": [
 
-        "AMS",
+        "analysis",
 
-        "Analysis",
+        "atdm",
 
-        "ATDM",
+        "connected vehicles",
 
-        "Connected Vehicles",
+        "dma",
 
-        "DMA",
+        "dynamic mobility applications", 
 
-        "Dynamic Mobility Applications", 
+        "modeling",
 
-        "Modeling",
+        "san mateo",
 
-        "San Mateo",
+        "simulation",
 
-        "Simulation",
+        "vissim",
 
-        "Vissim",
+        "calibration",
 
-        "Calibration",
+        "simulation",
 
-        "Simulation",
+        "traffic models", 
 
-        "Traffic Models", 
+        "travel demand management",
 
-        "Travel Demand Management",
+        "wireless communication systems",
 
-        "Wireless Communication Systems"
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams san mateo"
 
     ],
 
@@ -1084,35 +1381,39 @@
 
    "tags": [
 
-        "AMS",
+        "analysis",
 
-        "Analysis",
+        "atdm",
 
-        "ATDM",
+        "connected vehicles",
 
-        "Connected Vehicles",
+        "dma",
 
-        "DMA",
+        "dynamic mobility applications", 
 
-        "Dynamic Mobility Applications", 
+        "modeling",
 
-        "Modeling",
+        "san mateo",
 
-        "San Mateo",
+        "simulation",
 
-        "Simulation",
+        "vissim",
 
-        "Vissim",
+        "calibration",
 
-        "Calibration",
+        "simulation",
 
-        "Simulation",
+        "traffic models", 
 
-        "Traffic Models", 
+        "travel demand management",
 
-        "Travel Demand Management",
+        "wireless communication systems",
 
-        "Wireless Communication Systems"
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams san mateo"
 
     ],
 
@@ -1130,33 +1431,40 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements",
+        "active transportation demand managements",
 
-        "AMS",
+        "ams",
 
-        "ATDM",
+        "atdm",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application",
+        "dynamic mobility application",
 
-        "Impact Studies", 
+        "impact studies", 
 
-        "Mathematical Models",
+        "mathematical models",
 
-        "Modeling",
+        "modeling",
 
-        "Selection Criteria", 
+        "selection criteria", 
 
-        "Simulation",
+        "simulation",
 
-        "Strategic Planning",
+        "strategic planning",
 
-        "Testbeds", 
+        "testbeds", 
 
-        "Traffic Flow",
+        "traffic flow",
 
-        "Travel Demand"
+        "travel demand",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams chicago"
+
 
     ],
 
@@ -1164,7 +1472,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/32652",
 
-    "Abstract": "The datasets in this zip file are in support of Intelligent Transportation Systems Joint Program Office (ITS JPO) report FHWA-JPO-16-385, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Report for ATDM Program, https://ntlrepository.blob.core.windows.net/lib/62000/62300/62391/FHWA-JPO-16-385_v3.pdf and FHWA-JPO-16-388, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Summary for the Chicago Testbed, https://ntlrepository.blob.core.windows.net/lib/62000/62100/62177/FHWA-JPO-16-388__2_.pdf The files in this zip file are specifically related to the Chicago Testbed. The compressed zip files total 1.6 GB in size. The files have been uploaded as-is; no further documentation was supplied by NTL. All located .docx files were converted to .pdf document files which are an open, archival format. These pdfs were then added to the zip file alongside the original .docx files. These files can be unzipped using any zip compression/decompression software. This zip file contains files in the following formats: .pdf document files which can be read using any pdf reader; .cvs text files which can be read using any text editor; .txt text files which can be read using any text editor; .docx document files which can be read in Microsoft Word and some other word processing programs; . xlsx spreadsheet files which can be read in Microsoft Excel and some other spreadsheet programs; .dat data files which may be text or multimedia; as well as GIS or mapping files in the fowling formats: .mxd, .dbf, .prj, .sbn, .shp., .shp.xml; which may be opened in ArcGIS or other GIS software. [software requirements] These files were last accessed in 2017. "
+    "Abstract": "The datasets in this zip file are in support of Intelligent Transportation Systems Joint Program Office (ITS JPO) report FHWA-JPO-16-385, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Report for ATDM Program, and FHWA-JPO-16-388, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Summary for the Chicago Testbed. The files in this zip file are specifically related to the Chicago Testbed. The compressed zip files total 1.6 GB in size. The files have been uploaded as-is; no further documentation was supplied by NTL. All located .docx files were converted to .pdf document files which are an open, archival format. These pdfs were then added to the zip file alongside the original .docx files. These files can be unzipped using any zip compression/decompression software. This zip file contains files in the following formats: .pdf document files which can be read using any pdf reader; .cvs text files which can be read using any text editor; .txt text files which can be read using any text editor; .docx document files which can be read in Microsoft Word and some other word processing programs; . xlsx spreadsheet files which can be read in Microsoft Excel and some other spreadsheet programs; .dat data files which may be text or multimedia; as well as GIS or mapping files in the fowling formats: .mxd, .dbf, .prj, .sbn, .shp., .shp.xml; which may be opened in ArcGIS or other GIS software. [software requirements] These files were last accessed in 2017. "
 
   },
 
@@ -1174,29 +1482,36 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements",
+        "active transportation demand managements",
 
-        "AMS",
+        "ams",
 
-        "ATDM",
+        "atdm",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application",
+        "dynamic mobility application",
 
-        "ICM Dallas", 
+        "icm dallas", 
 
-        "Modeling",
+        "modeling",
 
-        "Selection Criteria",
+        "selection criteria",
 
-        "Testbeds", 
+        "testbeds", 
 
-        "Demand Responsive Transportation",
+        "demand responsive transportation",
 
-        "Test Beds",
+        "test beds",
 
-        "Travel Demand Management"
+        "travel demand management",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams dallas"
+
 
     ],
 
@@ -1214,29 +1529,35 @@
 
    "tags": [
 
-        "Active Transportation Demand Managements",
+        "active transportation demand managements",
 
-        "AMS",
+        "ams",
 
-        "ATDM",
+        "atdm",
 
-        "DMA",
+        "dma",
 
-        "Dynamic Mobility Application",
+        "dynamic mobility application",
 
-        "ICM Dallas", 
+        "icm dallas", 
 
-        "Modeling",
+        "modeling",
 
-        "Selection Criteria",
+        "selection criteria",
 
-        "Testbeds", 
+        "testbeds", 
 
-        "Demand Responsive Transportation",
+        "demand responsive transportation",
 
-        "Test Beds",
+        "test beds",
 
-        "Travel Demand Management"
+        "travel demand management",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "ams dallas"
 
     ],
 
@@ -1244,7 +1565,7 @@
 
     "URL": "https://rosap.ntl.bts.gov/view/dot/32635",
 
-    "Abstract": "The datasets in this zip file are in support of Intelligent Transportation Systems Joint Program Office (ITS JPO) report FHWA-JPO-16-385, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Report for ATDM Program, https://ntlrepository.blob.core.windows.net/lib/62000/62300/62391/FHWA-JPO-16-385_v3.pdf and FHWA-JPO-16-373, Analysis, modeling, and simulation (AMS) testbed development and evaluation to support dynamic mobility applications (DMA) and active transportation and demand management (ATDM) programs : Dallas testbed analysis plan, https://ntlrepository.blob.core.windows.net/lib/59000/59300/59362/FHWA-JPO-16-373.pdf The files in this zip file are specifically related to the Dallas Testbed. The compressed zip files total 2.2 GB in size. The files have been uploaded as-is; no further documentation was supplied by NTL. All located .docx files were converted to .pdf document files which are an open, archival format. These pdfs were then added to the zip file alongside the original .docx files. These files can be unzipped using any zip compression/decompression software. This zip file contains files in the following formats: .pdf document files which can be read using any pdf reader; .cvs text files which can be read using any text editor; .txt text files which can be read using any text editor; .docx document files which can be read in Microsoft Word and some other word processing programs; . xlsx spreadsheet files which can be read in Microsoft Excel and some other spreadsheet programs; .dat data files which may be text or multimedia; as well as GIS or mapping files in the fowling formats: .mxd, .dbf, .prj, .sbn, .shp., .shp.xml; which may be opened in ArcGIS or other GIS software. [software requirements] These files were last accessed in 2017."
+    "Abstract": "The datasets in this zip file are in support of Intelligent Transportation Systems Joint Program Office (ITS JPO) report FHWA-JPO-16-385, Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs — Evaluation Report for ATDM Program, https://rosap.ntl.bts.gov/view/dot/30882 and FHWA-JPO-16-373, Analysis, modeling, and simulation (AMS) testbed development and evaluation to support dynamic mobility applications (DMA) and active transportation and demand management (ATDM) programs : Dallas testbed analysis plan. The files in this zip file are specifically related to the Dallas Testbed. The compressed zip files total 2.2 GB in size. The files have been uploaded as-is; no further documentation was supplied by NTL. All located .docx files were converted to .pdf document files which are an open, archival format. These pdfs were then added to the zip file alongside the original .docx files. These files can be unzipped using any zip compression/decompression software. This zip file contains files in the following formats: .pdf document files which can be read using any pdf reader; .cvs text files which can be read using any text editor; .txt text files which can be read using any text editor; .docx document files which can be read in Microsoft Word and some other word processing programs; . xlsx spreadsheet files which can be read in Microsoft Excel and some other spreadsheet programs; .dat data files which may be text or multimedia; as well as GIS or mapping files in the fowling formats: .mxd, .dbf, .prj, .sbn, .shp., .shp.xml; which may be opened in ArcGIS or other GIS software. [software requirements] These files were last accessed in 2017."
 
   },
 
@@ -1254,17 +1575,27 @@
 
    "tags": [
 
-        "Evaluation And Assessment ",
+        "evaluation and assessment",
 
-        "Intelligent Transportation Systems ",
+        "intelligent transportation systems",
 
-        "Prototypes ",
+        "prototypes",
 
-        "Speed ",
+        "speed",
 
-        "Traffic Queuing ",
+        "traffic queuing",
 
-        "Traffic Simulation "
+        "traffic simulation",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "inflosim",
+
+        "inflo sim",
+
+        "intelligent network flow optimization"
 
     ],
 
@@ -1282,17 +1613,27 @@
 
    "tags": [
 
-        "Evaluation And Assessment ",
+        "evaluation and assessment",
 
-        "Intelligent Transportation Systems ",
+        "intelligent transportation systems",
 
-        "Prototypes ",
+        "prototypes",
 
-        "Speed ",
+        "speed",
 
-        "Traffic Queuing ",
+        "traffic queuing",
 
-        "Traffic Simulation "
+        "traffic simulation",
+
+        "intelligent transportation systems (its)",
+
+        "its joint program office (jpo)",
+
+        "inflosim",
+
+        "inflo sim",
+
+        "intelligent network flow optimization"
 
     ],
 
