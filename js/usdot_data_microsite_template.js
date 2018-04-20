@@ -2,25 +2,24 @@ var myVue = new Vue({
 
     el: '#searchTerms',
     data: {
-        background_image: '',
-        search_placeholder: '',
+        background_image: '',//Background image for search bar, set in load_json
+        search_placeholder: '',//Placeholder text for search bar on home page
 
         // functional variables - do not change
         hideResults: 'True',
-        items: '',
-        resultsJson: [],
-        NTLJson: [],
-        relevanceSortedJson: [],
-        dateSortedJson: [],
-        nameSortedJson: [],
-        responseSocrata: '',
-        // data set topics and search domain
-        // modify these values to your preference
-        url: 'https://api.us.socrata.com/api/catalog/v1?q=',
-        
-        query: '',
 
-        // Lists for dynamic data
+        searchResults: [], //List of combined search results
+        NTLJson: [], //List of NTL datasets loaded from NTL API
+        relevanceSortedSearchResults: [], //List of combined search results sorted by relevance
+        dateSortedSearchResults: [], //List of combined search results sorted by date
+        nameSortedSearchResults: [], //List of combined search results sorted by name
+        
+        socrata_url: 'https://api.us.socrata.com/api/catalog/v1?q=',//URL for Socrata API
+        socrata_domain: '',//Domain of Socrata site to search, set in load_json
+        
+        query: '',//Search query
+
+        // Entries for template data
         buttonlabels: [],
         buttonTags: [],
         altTextButtonIcons: [],
@@ -34,7 +33,6 @@ var myVue = new Vue({
         datasetNames: [],
         datasetDesc: [],
         contact_email: "",
-        domain: '',
         seeMoreToggler: [],
 
         totalDataCount: 0
@@ -42,9 +40,11 @@ var myVue = new Vue({
 
     // Function runs on page load
     created: function () {
-        // Loads the initial static file of NTL Data
-        this.addNTL();
         
+        this.loadNTL(); // Loads the initial static file of NTL Data
+
+        this.datasetCount(); //Sets the total number of datasets available visual
+
         // Loads the template data
         this.load_json();
         if (window.location.href.indexOf("search") == -1) {
@@ -54,37 +54,10 @@ var myVue = new Vue({
     },
 
     methods: {
-        // Method used for sorting json data when DTG and NTL are combined
-        compare: function (a, b) {
-            var self = this;
-            const titleA = a.name.toUpperCase();
-            const titleB = b.name.toUpperCase();
 
-            let comparison = 0;
-            if (titleA > titleB) {
-                comparison = 1;
-            } else if (titleA < titleB) {
-                comparison = -1;
-            }
-            return comparison;
-        },
-        
-        // Method used for sorting json data by date
-        compareDate: function(a, b) {
-            var self = this;
-            var dateA = new Date(a.date);
-            var dateB = new Date(b.date);
+        //===============================================SEARCH PAGE INITIALIZATION FUNCTIONS===============================================
 
-            let comparison = 0;
-            if (dateA < dateB) {
-                comparison = 1;
-            } else if (dateA > dateB) {
-                comparison = -1;
-            }
-            return comparison;
-        },
-
-        // function loads data.json and stores all values locally, function operates sync on load to prevent timing issue
+        //Function loads template_categories.json and template_datasets.json and stores all values locally, function operates sync on load to prevent timing issue
         load_json: function () {
             var self = this;
             $.ajaxSetup({
@@ -93,7 +66,7 @@ var myVue = new Vue({
             // Extracts all information out of data.json
             $.getJSON("template_categories.json", function (json) {
                 var i;
-                self.domain = json.domain;
+                self.socrata_domain = json.domain;
                 self.background_image = json.background_image;
                 self.contact_email = json.contact_email;
                 for (i = 0; i < Math.min(json.maxButtonCount, json.buttons.length) ; i++) {
@@ -126,41 +99,34 @@ var myVue = new Vue({
             });
         },
 
-        // Finds the total count of data for header
-        initialSearch: function () {
+        // Finds the total count of data for search bar placeholder text
+        datasetCount: function () {
             var self = this;
-            $.get(self.url + '&search_context=' + self.domain, function (data) {
+            $.get(self.socrata_url + '&search_context=' + self.socrata_domain, function (data) {
                 self.totalDataCount = data.results.length + self.NTLJson.length;
                 self.search_placeholder = self.totalDataCount.toString() + " data sets and counting!";
             });
         },
+        
+        //===============================================SEARCH FUNCTIONS===============================================
 
-        // sets search term and sends to to next page
-        searchSend: function (search_query) {
-            localStorage.setItem("sentSearchTerm", search_query);
-            window.location.href = "search.html";
-        },
-
-        // gets the JSON data for a search term and sets it to the "items" variable
+        //Gets the search results for a search query
         search: function (search_query) {
             var self = this;
-            var buttonIdx;
-            var newQ = search_query;
 
-            $.get(self.url + newQ + '&search_context=' + self.domain, function (data) {
-                self.resultsJson = [];
-                self.items = data;
-                self.addSocratatoJson();
-                self.addNTLtoJson(search_query);
-                self.relevanceSortedJson = self.resultsJson.slice();
+            $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain, function (data) {
+                self.searchResults = [];
+                self.addSocratatoSearchResult(data);
+                self.addNTLtoSearchResult(search_query);
+                self.relevanceSortedSearchResults = self.searchResults.slice();
 
-                self.dateSortedJson = self.resultsJson.slice();
-                self.dateSortedJson.sort(self.compareDate);
+                self.dateSortedSearchResults = self.searchResults.slice();
+                self.dateSortedSearchResults.sort(self.compareDate);
 
-                self.nameSortedJson = self.resultsJson.slice();
-                self.nameSortedJson.sort(self.compare);
+                self.nameSortedSearchResults = self.searchResults.slice();
+                self.nameSortedSearchResults.sort(self.compareName);
 
-                for (var i = 0; i < self.resultsJson.length; i = i + 1) {
+                for (var i = 0; i < self.searchResults.length; i = i + 1) {
                     self.seeMoreToggler[i] = true;
                 }
                 document.getElementsByClassName("filterRelevance")[0].checked = true;
@@ -168,60 +134,110 @@ var myVue = new Vue({
             self.query = search_query;
             this.hideResults = "False";
         },
-
-        dropDownFilter: function () {
-            var self = this;
-            if (document.getElementsByClassName("filterName")[0].checked) {
-                self.resultsJson = self.nameSortedJson.slice();
-            }
-            else if (document.getElementsByClassName("filterDate")[0].checked) {
-                self.resultsJson = self.dateSortedJson.slice();
-            }
-            else if (document.getElementsByClassName("filterRelevance")[0].checked) {
-                self.resultsJson = self.relevanceSortedJson.slice();
-            }
+        
+        //Sets search term and sends it to search html page
+        searchSend: function (search_query) {
+            localStorage.setItem("sentSearchTerm", search_query);
+            window.location.href = "search.html";
         },
 
-        toggleSeeMore: function (index) {
-            this.seeMoreToggler[index] = !this.seeMoreToggler[index];
-            this.$forceUpdate();
-        },
+        //===============================================NTL FUNCTIONS===============================================
 
-        // Loads json file for NTL data, called on webpage load (will be used until NTL becomes api called)
-        addNTL: function () {
+        // Calls NTL API to grab json file containing ITS JPO dataset listings from NTL, called on webpage load, function operates sync on load to prevent timing issue
+        loadNTL: function () {
+            $.ajaxSetup({
+                async: false
+            });
             var itemCountNTL;
             var self = this;
+            var NTL_url = "https://rosap.ntl.bts.gov/fedora/export/view/collection/";
+            var NTL_collection = "dot:239"; //Limit results to specific collection
+            var NTL_datelimit = "?from=2018-01-01T00:00:00Z"; //Limit results to before, after or between a specific date range
+            var NTL_rowslimit = "&rows=9999"; //Set number of rows to have returned (NTL default is 100), max 9999
 
-            $.get("https://rosap.ntl.bts.gov/fedora/export/view/collection/dot:239?from=2018-01-01T00:00:00Z&rows=9999", function (data) {
+            $.get(NTL_url + NTL_collection + NTL_datelimit + NTL_rowslimit, function (data) {
                 var json = JSON.parse(data);
                 for (itemCountNTL = 0; itemCountNTL < json.response.docs.length; itemCountNTL++) {
-                    if (json.response.docs[itemCountNTL]["mods.sm_resource_type"][0] == "Dataset" && json.response.docs[itemCountNTL]['fgs.lastModifiedDate'] ){
+                    //Filter results to pull only dataset types
+                    if (json.response.docs[itemCountNTL]["mods.sm_resource_type"][0] == "Dataset"){
                         var tempJson = {};
-                        tempJson["name"] = json.response.docs[itemCountNTL]["dc.title"][0];// + json.response.docs[itemCountNTL]["dc.title"][1];
+                        //Read dataset name, description, date
+                        tempJson["name"] = json.response.docs[itemCountNTL]["dc.title"][0];
                         tempJson["description"] = json.response.docs[itemCountNTL]["mods.abstract"][0];
-                        // if string only has year then use that, otherwise parse string into date formatting
                         tempJson["date"] = self.formatDate(json.response.docs[itemCountNTL]["fgs.createdDate"]);
 
+                        //Read dataset tags, add Research Results button tag to all NTL results
                         var tagCount;
                         var allTags = [];
                         var RESEARCHRESULTS = "Research Results";
-
                         allTags[0] = RESEARCHRESULTS;
                         for (tagCount = 0; tagCount < json.response.docs[itemCountNTL]["mods.sm_key_words"].length; tagCount++) {
                             allTags[tagCount + 1] = json.response.docs[itemCountNTL]["mods.sm_key_words"][tagCount];
                         }
                         tempJson["tags"] = allTags;
                         tempJson["tags"].sort();
+
+                        //Build URL to refer to NTL result using PID
                         var PID = json.response.docs[itemCountNTL].PID.split(":")[1];
                         tempJson["link"] = "https://rosap.ntl.bts.gov/view/dot/" + PID;
+
+                        //Add to NTL datasets JSON list
                         self.NTLJson.push(tempJson);
                     }
                     
                 }
-                self.initialSearch();
+            });
+            $.ajaxSetup({
+                async: true
             });
         },
 
+        //Searches NTL files for match based on tag, title, or description and adds them to combined search result list
+        addNTLtoSearchResult: function (search_query) {
+            var itemCountNTL;
+            var self = this;
+            for (itemCountNTL = 0; itemCountNTL < self.NTLJson.length; itemCountNTL++) {
+                if(self.NTLJson[itemCountNTL]["name"].toLowerCase().search(search_query.toLowerCase()) > -1){
+                    self.searchResults.push(self.NTLJson[itemCountNTL]);
+                } else if(self.NTLJson[itemCountNTL]["description"].toLowerCase().search(search_query.toLowerCase()) > -1){
+                    self.searchResults.push(self.NTLJson[itemCountNTL]);
+                } else {
+                    var tagCount;
+                    for (tagCount = 0; tagCount < self.NTLJson[itemCountNTL].tags.length; tagCount++) {
+                        if (self.NTLJson[itemCountNTL].tags[tagCount].toLowerCase().search(search_query.toLowerCase()) > -1) {
+                            self.searchResults.push(self.NTLJson[itemCountNTL]);
+                            break;
+                        }
+                    }
+                }
+            }
+        },
+
+        //===============================================SOCRATA FUNCTION===============================================
+
+        //Adds Socrata search results to combined search result list
+        addSocratatoSearchResult: function (items) {
+            var itemCount;
+            var self = this;
+            for (itemCount = 0; itemCount < items.results.length; itemCount++) {
+                var tempJson = {};
+                tempJson["name"] = items.results[itemCount].resource.name;
+                tempJson["description"] = items.results[itemCount].resource.description;
+                // if string only has year then only print year, otherwise parse into formatting
+                tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt.substring(0,10));
+                var tagCount;
+                var allTags = [];
+                for (tagCount = 0; tagCount < items.results[itemCount].classification.domain_tags.length; tagCount++) {
+                    allTags[tagCount] = items.results[itemCount].classification.domain_tags[tagCount];
+                }
+                tempJson["tags"] = allTags;
+                tempJson["tags"].sort();
+                tempJson["link"] = items.results[itemCount].link;
+                self.searchResults.push(tempJson);
+            }
+        },
+
+        ////===============================================SEARCH HELPER FUNCTIONS===============================================
         // Parses a string with a date into a format "Month Day Year"
         formatDate: function (date) {
             var monthNames = [
@@ -238,49 +254,59 @@ var myVue = new Vue({
             return monthNames[monthIndex] + ' ' + day +  ' ' + year;
         },
 
-        // searches ntl files for match based on tag, title, description
-        addNTLtoJson: function (search_query) {
-            var itemCountNTL;
+        // Method used for sorting search results by dataset title alphabetically
+        compareName: function (a, b) {
             var self = this;
-            for (itemCountNTL = 0; itemCountNTL < self.NTLJson.length; itemCountNTL++) {
-                if(self.NTLJson[itemCountNTL]["name"].toLowerCase().search(search_query.toLowerCase()) > -1){
-                    self.resultsJson.push(self.NTLJson[itemCountNTL]);
-                } else if(self.NTLJson[itemCountNTL]["description"].toLowerCase().search(search_query.toLowerCase()) > -1){
-                    self.resultsJson.push(self.NTLJson[itemCountNTL]);
-                } else {
-                    var tagCount;
-                    for (tagCount = 0; tagCount < self.NTLJson[itemCountNTL].tags.length; tagCount++) {
-                        // Checks if tag matches query
-                        if (self.NTLJson[itemCountNTL].tags[tagCount].toLowerCase().search(search_query.toLowerCase()) > -1) {
-                            self.resultsJson.push(self.NTLJson[itemCountNTL]);
-                            break;
-                        }
-                    }
-                }
+            const titleA = a.name.toUpperCase();
+            const titleB = b.name.toUpperCase();
+
+            let comparison = 0;
+            if (titleA > titleB) {
+                comparison = 1;
+            } else if (titleA < titleB) {
+                comparison = -1;
+            }
+            return comparison;
+        },
+        
+        // Method used for sorting search results by date created
+        compareDate: function(a, b) {
+            var self = this;
+            var dateA = new Date(a.date);
+            var dateB = new Date(b.date);
+
+            let comparison = 0;
+            if (dateA < dateB) {
+                comparison = 1;
+            } else if (dateA > dateB) {
+                comparison = -1;
+            }
+            return comparison;
+        },
+
+        //===============================================SEARCH RESULT PAGE FORMATTING FUNCTIONS===============================================
+
+        //Creates buttons to select how to organize search results by Name, Date or Relevance
+        dropDownFilter: function () {
+            var self = this;
+            if (document.getElementsByClassName("filterName")[0].checked) {
+                self.searchResults = self.nameSortedSearchResults.slice();
+            }
+            else if (document.getElementsByClassName("filterDate")[0].checked) {
+                self.searchResults = self.dateSortedSearchResults.slice();
+            }
+            else if (document.getElementsByClassName("filterRelevance")[0].checked) {
+                self.searchResults = self.relevanceSortedSearchResults.slice();
             }
         },
 
-        // adds socrata data together with NTL for one query display
-        addSocratatoJson: function () {
-            var itemCount;
-            var self = this;
-            for (itemCount = 0; itemCount < self.items.results.length; itemCount++) {
-                var tempJson = {};
-                tempJson["name"] = self.items.results[itemCount].resource.name;
-                tempJson["description"] = self.items.results[itemCount].resource.description;
-                // if string is only has year then only print year, otherwise parse into formatting
-                tempJson["date"] = (self.items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? self.items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(self.items.results[itemCount].resource.updatedAt.substring(0,10));
-                var tagCount;
-                var allTags = [];
-                for (tagCount = 0; tagCount < self.items.results[itemCount].classification.domain_tags.length; tagCount++) {
-                    allTags[tagCount] = self.items.results[itemCount].classification.domain_tags[tagCount];
-                }
-                tempJson["tags"] = allTags;
-                tempJson["tags"].sort();
-                tempJson["link"] = self.items.results[itemCount].link;
-                self.resultsJson.push(tempJson);
-            }
+        //Allows the user to expand the dataset description
+        toggleSeeMore: function (index) {
+            this.seeMoreToggler[index] = !this.seeMoreToggler[index];
+            this.$forceUpdate();
         },
+
+        //===============================================TEMPLATE FUNCTIONS===============================================
 
         // Function generates html for buttons and all attributes attached to it
         create_buttons: function () {
@@ -367,7 +393,7 @@ var myVue = new Vue({
             for (i = 0; i < this.urls.length; i++) {
                 var dataId = self.urls[i].substring(self.urls[i].length - 9, self.urls[i].length);
                 this.srcs[i] = "https://data.transportation.gov/w/" + dataId + "/m7rw-edbr?cur=u0WX7_BAfhk&from=root"
-                var jsonurl = "https://" + this.domain + "/views/" + dataId + ".json";
+                var jsonurl = "https://" + this.socrata_domain + "/views/" + dataId + ".json";
                 $.get(jsonurl, function (data) {
                     var datasetArea = document.getElementById("bulmaDatasetFDS");
                     //datasetArea.setAttribute("style", "text-align: center");
