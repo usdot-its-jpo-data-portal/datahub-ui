@@ -58,7 +58,7 @@
         <div id="searchresults" class="contentArea searchResults">
             <br>
             <div style="display: flex;">
-                <button id="returnPage" class="readButton" style="font-size: 15px; margin-left: 80px;margin-bottom: 10px" v-on:click="window.location.href = 'https://www.its.dot.gov/data/'">Return to Main Page &raquo;</button>
+                <button id="returnPage" class="readButton" style="font-size: 15px; margin-left: 80px;margin-bottom: 10px" v-on:click="window.location.href = '/data/'">Return to Main Page &raquo;</button>
             </div>
             <div style="display: flex; float: right; margin-right: 80px">
                 <p style="line-height: 1.8" class="resultsSectionHeading">Sort By: &nbsp;</p>
@@ -78,7 +78,7 @@
 
             <div style="display: flex;">
                 <p class="resultsSectionHeading"><b>Number of results:&nbsp;</b><p>
-                <p class="resultsCount"><b>{{resultsJson.length}}</b></p><br>
+                <p class="resultsCount"><b>{{searchResults.length}}</b></p><br>
             </div>
 
 
@@ -90,8 +90,8 @@
             <div style="margin-left: 100px; margin-right: 100px;">
 
                 <!--displays results if there are results-->
-                <ul v-if="resultsJson.length > 0" style="list-style: none; padding-left: 0px;">
-                    <li v-model="seeMoreToggler" v-for="(item,index) in resultsJson" style="margin-bottom: 30px; list-style: none;">
+                <ul v-if="searchResults.length > 0" style="list-style: none; padding-left: 0px;">
+                    <li v-model="seeMoreToggler" v-for="(item,index) in searchResults" style="margin-bottom: 30px; list-style: none;">
 
                         <table style="width: 100%">
                             <tr>
@@ -121,7 +121,7 @@
                             <p style="float:left; padding: 3px; height: 30px; line-height: 30px;">Tags: </p>
                             <button v-for="tag in item.tags" class='tag' v-on:click="search(tag)">{{tag}}</button>
                         </div>
-                        <hr v-if="resultsJson.length != index+1" style="border-color: #DEDEDE" noshade>
+                        <hr v-if="searchResults.length != index+1" style="border-color: #DEDEDE" noshade>
                     </li>
                     <div v-else>
                         <p>No search results.</p>
