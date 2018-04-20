@@ -146,16 +146,7 @@ var myVue = new Vue({
             var self = this;
             var buttonIdx;
             var newQ = search_query;
-            //for (buttonIdx = 0; buttonIdx < self.buttonlabels.length; buttonIdx++) {
-            //    if (search_query === self.buttonlabels[buttonIdx]) {
-            //        var tagIdx;
-            //        if (self.buttonTags[buttonIdx] !== undefined) {
-            //            for (tagIdx = 0; tagIdx < self.buttonTags[buttonIdx].length; tagIdx++) {
-            //                newQ = newQ + "+" + self.buttonTags[buttonIdx][tagIdx];
-            //            }
-            //        }
-            //    }
-            //}
+
             $.get(self.url + newQ + '&search_context=' + self.domain, function (data) {
                 self.resultsJson = [];
                 self.items = data;
@@ -169,7 +160,6 @@ var myVue = new Vue({
                 self.nameSortedJson = self.resultsJson.slice();
                 self.nameSortedJson.sort(self.compare);
 
-                //document.getElementById('searchresults').scrollIntoView();
                 for (var i = 0; i < self.resultsJson.length; i = i + 1) {
                     self.seeMoreToggler[i] = true;
                 }
@@ -202,26 +192,31 @@ var myVue = new Vue({
             var itemCountNTL;
             var self = this;
 
-            $.getJSON("json/NTL.json", function (json) {
-                for (itemCountNTL = 0; itemCountNTL < json.datasets.length; itemCountNTL++) {
-                    var tempJson = {};
-                    tempJson["name"] = json.datasets[itemCountNTL].title;
-                    tempJson["description"] = json.datasets[itemCountNTL].Abstract;
-                    // if string only has year then use that, otherwise parse string into date formatting
-                    tempJson["date"] = (json.datasets[itemCountNTL].PublicationDate.length < 7) ? json.datasets[itemCountNTL].PublicationDate : self.formatDate(json.datasets[itemCountNTL].PublicationDate);
+            $.get("https://rosap.ntl.bts.gov/fedora/export/view/collection/dot:239?from=2018-01-01T00:00:00Z&rows=9999", function (data) {
+                var json = JSON.parse(data);
+                for (itemCountNTL = 0; itemCountNTL < json.response.docs.length; itemCountNTL++) {
+                    if (json.response.docs[itemCountNTL]["mods.sm_resource_type"][0] == "Dataset" && json.response.docs[itemCountNTL]['fgs.lastModifiedDate'] ){
+                        var tempJson = {};
+                        tempJson["name"] = json.response.docs[itemCountNTL]["dc.title"][0];// + json.response.docs[itemCountNTL]["dc.title"][1];
+                        tempJson["description"] = json.response.docs[itemCountNTL]["mods.abstract"][0];
+                        // if string only has year then use that, otherwise parse string into date formatting
+                        tempJson["date"] = self.formatDate(json.response.docs[itemCountNTL]["fgs.createdDate"]);
 
-                    var tagCount;
-                    var allTags = [];
-                    var RESEARCHRESULTS = "Research Results";
+                        var tagCount;
+                        var allTags = [];
+                        var RESEARCHRESULTS = "Research Results";
 
-                    allTags[0] = RESEARCHRESULTS;
-                    for (tagCount = 0; tagCount < json.datasets[itemCountNTL].tags.length; tagCount++) {
-                        allTags[tagCount + 1] = json.datasets[itemCountNTL].tags[tagCount];
+                        allTags[0] = RESEARCHRESULTS;
+                        for (tagCount = 0; tagCount < json.response.docs[itemCountNTL]["mods.sm_key_words"].length; tagCount++) {
+                            allTags[tagCount + 1] = json.response.docs[itemCountNTL]["mods.sm_key_words"][tagCount];
+                        }
+                        tempJson["tags"] = allTags;
+                        tempJson["tags"].sort();
+                        var PID = json.response.docs[itemCountNTL].PID.split(":")[1];
+                        tempJson["link"] = "https://rosap.ntl.bts.gov/view/dot/" + PID;
+                        self.NTLJson.push(tempJson);
                     }
-                    tempJson["tags"] = allTags;
-                    tempJson["tags"].sort();
-                    tempJson["link"] = json.datasets[itemCountNTL].URL;
-                    self.NTLJson.push(tempJson);
+                    
                 }
                 self.initialSearch();
             });
@@ -243,34 +238,22 @@ var myVue = new Vue({
             return monthNames[monthIndex] + ' ' + day +  ' ' + year;
         },
 
-        // searches ntl files for match based on tag (will be used until NTL becomes API called)
+        // searches ntl files for match based on tag, title, description
         addNTLtoJson: function (search_query) {
             var itemCountNTL;
             var self = this;
-            var buttonIdx = -1;
-            var tempCount;
-            // match query to button
-            for (tempCount = 0; tempCount < self.buttonlabels.length; tempCount++) {
-                if (search_query === self.buttonlabels[tempCount]) {
-                    buttonIdx = tempCount;
-                }
-            }
             for (itemCountNTL = 0; itemCountNTL < self.NTLJson.length; itemCountNTL++) {
-                for (tagCount = 0; tagCount < self.NTLJson[itemCountNTL].tags.length; tagCount++) {
-                    // Checks if tag matches query
-                    if (self.NTLJson[itemCountNTL].tags[tagCount].toLowerCase().search(search_query.toLowerCase()) > -1) {
-                        self.resultsJson.push(self.NTLJson[itemCountNTL]);
-                        tagCount = self.NTLJson[itemCountNTL].tags.length;
-                    }
-                    else {
-                        var buttonCount;
-                        if (self.buttonTags[buttonIdx] !== undefined) {
-                            for (buttonCount = 0; buttonCount < self.buttonTags[buttonIdx].length; buttonCount++) {
-                                if (self.NTLJson[itemCountNTL].tags[tagCount].toLowerCase().search(self.buttonTags[buttonIdx][buttonCount].toLowerCase()) > -1) {
-                                    self.resultsJson.push(self.NTLJson[itemCountNTL]);
-                                    buttonCount = self.buttonTags[buttonIdx].length;
-                                }
-                            }
+                if(self.NTLJson[itemCountNTL]["name"].toLowerCase().search(search_query.toLowerCase()) > -1){
+                    self.resultsJson.push(self.NTLJson[itemCountNTL]);
+                } else if(self.NTLJson[itemCountNTL]["description"].toLowerCase().search(search_query.toLowerCase()) > -1){
+                    self.resultsJson.push(self.NTLJson[itemCountNTL]);
+                } else {
+                    var tagCount;
+                    for (tagCount = 0; tagCount < self.NTLJson[itemCountNTL].tags.length; tagCount++) {
+                        // Checks if tag matches query
+                        if (self.NTLJson[itemCountNTL].tags[tagCount].toLowerCase().search(search_query.toLowerCase()) > -1) {
+                            self.resultsJson.push(self.NTLJson[itemCountNTL]);
+                            break;
                         }
                     }
                 }
