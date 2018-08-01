@@ -13,31 +13,8 @@
 
 <body id="search-wrapper">
     <div id='searchTerms'>
-        <a id="main"></a>
-
-        <!--===================DOT HEADER===================-->
-
-        <div id="dotTopBanner" style="width: 100%; background: #152350; height: 60px; padding: 5px 0 0 10px">
-            <a style="background: none" href="https://transportation.gov">
-                <img src="../images/icons/dot_logo.png" style="height: 35px; margin-left: 25px; margin-top: 8px;"alt="department of transportation logo">
-            </a>
-            <div id="dotTopLinks" style="line-height: 30px; background: #04214f">
-                <a class="headHovers" href="https://www.transportation.gov/mission/about-us" style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a>
-                <a class="headHovers" href="https://www.transportation.gov/briefingroom" style="font-size: 11px; width: 80px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-                <a class="headHovers" href="https://www.transportation.gov/our-activities" style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;OUR ACTIVITIES</a>
-            </div>
-        </div>
-        
-
-        <!--==================Navigation Bar================-->
-        <div class="navigation-bar navBarLinks">
-		      <a class="headHovers navBarLinks" href="/" v-on:click="navBarClick">ITS JPO SITE</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-		      <a class="headHovers navBarLinks" href="/data/">HOME</a> <div style="font-size: 15px; padding:3px 5px 7px 7px; display: inline;">|</div>
-		      <a class="headHovers navBarLinks" href="/data/about/" v-on:click="navBarClick">ABOUT</a><div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-		      <a class="headHovers navBarLinks" href="/data/public-access/" v-on:click="navBarClick">PUBLIC ACCESS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-		      <a class="headHovers navBarLinks" href="/data/metrics/" v-on:click="navBarClick">METRICS</a><div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-		      <a class="headHovers navBarLinks" href="/data/visualizations/" v-on:click="navBarClick">VISUALIZATIONS</a>
-        </div>
+    	<dot-header></dot-header>
+        <navigation-top></navigation-top>
         <div class="publicAccess">
 			<h1>About the ITS Public Data Hub</h1><br><br>
         	<p><strong>What is the ITS Public Data Hub?</strong></p>
@@ -118,18 +95,10 @@
 			<p>For more information about the ITS Public Data Hub, please contact the ITS JPO Data Program support team at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.</p>
 			<hr><p><strong>*</strong>This legacy dataset was created before data.transportation.gov and is only currently available via the attached file(s). Please contact the dataset owner if there is a need for users to work with this data using the data.transportation.gov analysis features (online viewing, API, graphing, etc.) and the USDOT will consider modifying the dataset to fully integrate in DTG.</p>
 		</div>
-		<div id="footerInfo" style="padding-top: 20px;">
-            <div style="display:inline; font-size:50px; font-weight:100; text-align:center">
-                <img src="../images/icons/dot_logo.png" style="height: 30px;margin-right: 3px;" alt="DOT Logo" /> 
-                |
-                <img src="../images/icons/ITS_JPO.png" style="height: 27px" alt="ITS JPO Logo" /> 
-            </div>
-            <p style="font-weight: bold;">Questions? Contact Us</p>
-            <p id="contactEmail">data.itsjpo@dot.gov</p>
-        </div>
-	    <script src="./js/vue.min.js"></script>
-	    <script src="./js/jquery.min.js"></script>
-	    <script src="./js/usdot_data_microsite_template.js"></script>
+		<microsite-footer></microsite-footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="/data/js/usdot_data_microsite_template.min.js"></script>
 
 	    <!-- Google Analytics -->
 	    <script>

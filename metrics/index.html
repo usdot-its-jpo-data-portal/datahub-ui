@@ -13,49 +13,19 @@
 
 <body id="search-wrapper">
     <div id='searchTerms'>
-        <a id="main"></a>
-
-        <!--===================DOT HEADER===================-->
-
-        <div id="dotTopBanner" style="width: 100%; background: #152350; height: 60px; padding: 5px 0 0 10px">
-            <a style="background: none" href="https://transportation.gov">
-                <img src="../images/icons/dot_logo.png" style="height: 35px; margin-left: 25px; margin-top: 8px;"alt="department of transportation logo">
-            </a>
-            <div id="dotTopLinks" style="line-height: 30px; background: #04214f">
-                <a class="headHovers" href="https://www.transportation.gov/mission/about-us" style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a>
-                <a class="headHovers" href="https://www.transportation.gov/briefingroom" style="font-size: 11px; width: 80px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-                <a class="headHovers" href="https://www.transportation.gov/our-activities" style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;OUR ACTIVITIES</a>
-            </div>
-        </div>
-        
-
-        <!--==================Navigation Bar================-->
-        <div class="navigation-bar navBarLinks">
-              <a class="headHovers navBarLinks" href="/" v-on:click="navBarClick">ITS JPO SITE</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-              <a class="headHovers navBarLinks" href="/data/">HOME</a> <div style="font-size: 15px; padding:3px 5px 7px 7px; display: inline;">|</div>
-              <a class="headHovers navBarLinks" href="/data/about/" v-on:click="navBarClick">ABOUT</a><div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-              <a class="headHovers navBarLinks" href="/data/public-access/" v-on:click="navBarClick">PUBLIC ACCESS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-              <a class="headHovers navBarLinks" href="/data/metrics/" v-on:click="navBarClick">METRICS</a><div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-              <a class="headHovers navBarLinks" href="/data/visualizations/" v-on:click="navBarClick">VISUALIZATIONS</a> 
-        </div>
+        <dot-header></dot-header>
+        <navigation-top></navigation-top>
         <div class="publicAccess">
             <h1>ITS Public Data Hub Metrics Dashboard</h1><br><br>
             <p>Below is the public ITS Public Data Hub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS Public Data Hub system including page views, data downloads and programmatic data access. The first two visualizations are for its.dot.gov/data and show the pageviews by day for the past month and a monthly count of the number of sessions and session duration by source. The next four pie charts are for data.transportation.gov and show the number of pageviews per dataset, the number of downloads per dataset, the number of rows accessed through the API by dataset and the number of rows download through the API by dataset over the past month. Below the pie charts is a table summarizing this information. The next two pie charts are all-time counts for pageviews per dataset and downloads per dataset. The next two visualizations are a map of the United States showing metro areas where its.dot.gov/data pageviews originated from and one showing the number of views on the GitHub repositories associated with the ITS Public Data Hub by day over the past month. The last set of visulizations are for datasets hosted by the National Transportation Library. These show monthly pageviews and downloads and total pageviews and downloads by dataset.</p><br>
             <p>If you are having trouble viewing the data below, you can download an accessible PDF with the latest monthly summary of this data by clicking <a href="https://its.dot.gov/data/metrics/documents/MonthlyMetrics.pdf">here</a>.</p><br><br>
-			<iframe width="1366" height="4850" src="https://datastudio.google.com/embed/reporting/118Ukr5AhSUhpKvflMp4RC7Kq8nyOe88w/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen></iframe>
+			<iframe width="1366" height="4350" src="https://datastudio.google.com/embed/reporting/118Ukr5AhSUhpKvflMp4RC7Kq8nyOe88w/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen></iframe>
 		</div>
-		<div id="footerInfo" style="padding-top: 20px;">
-            <div style="display:inline; font-size:50px; font-weight:100; text-align:center">
-                <img src="../images/icons/dot_logo.png" style="height: 30px;margin-right: 3px;" alt="DOT Logo" /> 
-                |
-                <img src="../images/icons/ITS_JPO.png" style="height: 27px" alt="ITS JPO Logo" /> 
-            </div>
-            <p style="font-weight: bold;">Questions? Contact Us</p>
-            <p id="contactEmail">data.itsjpo@dot.gov</p>
-        </div>
-	    <script src="./js/vue.min.js"></script>
-	    <script src="./js/jquery.min.js"></script>
-	    <script src="./js/usdot_data_microsite_template.js"></script>
+        <microsite-footer></microsite-footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="/data/js/usdot_data_microsite_template.min.js"></script>
 
 	    <!-- Google Analytics -->
 	    <script>

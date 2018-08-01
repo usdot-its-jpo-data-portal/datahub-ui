@@ -2,7 +2,7 @@
 <html lang="en" style="overflow-x: auto;">
 <a href="#main" class="hidden">Skip to main content</a>
 <head>
-    <title>Department of Transportation - ITS Public Data Hub | Search</title>
+    <title>Department of Transportation - ITS Public Data Hub</title>
     <link rel="stylesheet" type="text/css" href="css/ITS_JPO.css">
     <link rel="stylesheet" type="text/css" href="css/usdot_data_microsite_template.css">
     <link rel="stylesheet" href="css/bulma.css">
@@ -13,12 +13,14 @@
 
 <body id="search-wrapper">
     <div id='searchTerms'>
+
         <dot-header></dot-header>
         <div id="searchHead" class="searchHeader">
             <navigation-top></navigation-top>
-            <search-main :query=sessionStorage.getItem("sentSearchTerm")></search-main>
+            <search-main></search-main>
         </div>
-        <search-results :query=sessionStorage.getItem("sentSearchTerm")></search-results>
+        <category-search></category-search>
+        <featured-data></featured-data>
         <microsite-footer></microsite-footer>
     </div>
 </body>

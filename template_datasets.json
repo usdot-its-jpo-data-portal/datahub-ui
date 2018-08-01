@@ -7,21 +7,21 @@
 			"description": "Contains a sample of sanitized Basic Safety Messages collected from the Wyoming Connected Vehicle pilot.",
             "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Basic-Safety-Message-One-Day-Samp/9k4m-a3jc",
             "image": "./images/Wyoming DOT Connected Vehicle Pilot.png",
-            "altText": "Link to sample Wyoming CV Pilot Basic Safety Messages"
+            "altText": "Link to sample Wyoming CV Pilot Basic Safety Messages on data.transportation.gov"
         },
         {
 		    "name": "Wyoming Connected Vehicle Pilot Basic Safety Message Visualization",
 			"description": "A visualization portal for the Wyoming CV Pilot Basic Safety Messages.",
             "url": "https://data.transportation.gov/Automobiles/Wyoming-Connected-Vehicle-Pilot-Basic-Safety-Messa/hchs-a7s6",
             "image": "./images/Wyoming Connected Vehicle Pilot Basic Safety Message Visualization.png",
-            "altText": "Map and histograms of Wyoming CV Pilot Basic Safety Messages"
+            "altText": "Map and histograms of Wyoming CV Pilot Basic Safety Messages on data.transportation.gov"
         },
         {
-            "name": "Advanced Messaging Concept Development Basic Safety Message",
-            "description": "Contains all Basic Safety Messages generated during the Advanced Messaging Concept Development (AMCD) field testing",
-            "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Safet/eezi-v4pm",
-            "image": "./images/AdvancedMessage.PNG",
-            "altText": "Link to Advanced Message Concept Development Basic Safety Messages"
+            "name": "Proof-of-Concept Vehicle Platooning Based on CACC",
+            "description": "Performance of a proof-of-concept vehicle platooning based on Cooperative Adaptive Cruise Control (CACC).",
+            "url": "https://data.transportation.gov/Automobiles/Test-Data-of-Proof-of-Concept-Vehicle-Platooning-B/wpek-zziu",
+            "image": "./images/video.png",
+            "altText": "Link to Test Data of Proof-of-Concept Vehicle Platooning Based on Cooperative Adaptive Cruise Control (CACC) on data.transportation.gov"
         }
     ]
 }
