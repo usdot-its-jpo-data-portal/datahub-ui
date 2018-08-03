@@ -396,16 +396,9 @@ Vue.component('category-search', {
             $.getJSON("template_categories.json", function (json) {
                 var i;
                 for (i = 0; i < Math.min(json.maxButtonCount, json.buttons.length) ; i++) {
-                    var tagList = [];
-                    if (json.buttons[i].tags.length !== undefined) {
-                        for (tagIdx = 0; tagIdx < json.buttons[i].tags.length; tagIdx++) {
-                            tagList[tagIdx] = json.buttons[i].tags[tagIdx];
-                        }
-                    }
                     self.buttons.push({ 'labels': json.buttons[i].CategoryName,
                                         'imgIcons':json.buttons[i].imgIcons,
                                         'rolloverImages': json.buttons[i].rolloverImages,
-                                        'tags': tagList,
                                         'altText': json.buttons[i].altText,
                                         'id':"bterm" + i});
                 }
