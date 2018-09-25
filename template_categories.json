@@ -9,51 +9,43 @@
             "CategoryName": "Connected Vehicle Message",
             "imgIcons": "/data/images/icons/CVPCars.png",
 			"rolloverImages": "/data/images/icons/CVPCars_Rollover.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for connected vehicle message"
         }, {
             "CategoryName": "Application Message",
             "imgIcons": "/data/images/icons/AppMessage.png",
 			"rolloverImages": "/data/images/icons/AppMessage_Rollover.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for application message"
         }, {
             "CategoryName": "Trajectories",
             "imgIcons": "/data/images/icons/Trajectories.png",
 			"rolloverImages": "/data/images/icons/Trajectories_Rollover.png",
-            "altText": "car icon",
-			"tags": ["highways information", "improvements information", "basic safety message"]
+            "altText": "search for Trajectories"
         }, {
             "CategoryName": "Field Test",
             "imgIcons": "/data/images/icons/FieldTest.png",
 			"rolloverImages": "/data/images/icons/FieldTest_Rollover.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for Field Test"
         }, {
             "CategoryName": "Sensor Data",
             "imgIcons": "/data/images/icons/SensorData.png",
 			"rolloverImages": "/data/images/icons/SensorData_Rollover.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for sensor data"
         }, {
             "CategoryName": "Research Results",
             "imgIcons": "/data/images/icons/ResearchResults.png",
 			"rolloverImages": "/data/images/icons/ResearchResults_Rollover.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for research results"
         }, {
             "CategoryName": "Connected Equipment",
             "imgIcons": "/data/images/icons/Equipment.png",
 			"rolloverImages": "/data/images/icons/Equipment_Rollover.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for connected equipment"
         },
         {
             "CategoryName": "Weather",
             "imgIcons": "/data/images/icons/Weather_v2.png",
 			"rolloverImages": "/data/images/icons/Weather_Rollover_v2.png",
-            "altText": "car icon",
-			"tags": []
+            "altText": "search for weather"
         }
     ]
 }

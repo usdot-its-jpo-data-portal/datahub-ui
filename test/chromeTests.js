@@ -1,5 +1,5 @@
 ﻿var mochaTimeout = 30000; // ms
-var urlTest = 'http://127.0.0.1:8080/usdot_data_microsite_template.html';
+var urlTest = 'http://127.0.0.1:8080/index.html';
 
 var webdriver = require('selenium-webdriver');
 var test = require('selenium-webdriver/testing');

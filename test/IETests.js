@@ -6,7 +6,7 @@ var chai = require('chai');
 var should = chai.should();
 var expect = chai.expect;
 var until = webdriver.until;
-var urlTest = 'http://127.0.0.1:8080/usdot_data_microsite_template.html';
+var urlTest = 'http://127.0.0.1:8080/index.html';
 
 var browser;
 

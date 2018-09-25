@@ -69,7 +69,7 @@ Vue.component('search-main', {
     },
     methods: {
         //===============================================SEARCH PAGE INITIALIZATION FUNCTIONS===============================================
-        // Finds the total count of data for search bar placeholder text
+        // Finds the total count of data for search bar placeholder text, would need to be modified if different search domain is used
         datasetCount: function () {
             var self = this;
             $.get(self.socrata_url + '&search_context=' + self.socrata_domain, function (data) {
@@ -77,8 +77,7 @@ Vue.component('search-main', {
                 self.search_placeholder = self.totalDataCount.toString() + " data sets and counting!";
             });
         },
-        
-        //===============================================SEARCH FUNCTIONS===============================================        
+            
         //Sets search term and sends it to search html page
         searchSend: function (search_query) {
             sessionStorage.setItem("sentSearchTerm", search_query);
@@ -119,9 +118,9 @@ Vue.component('search-results', {
         search: function (search_query) {
             var self = this;
 
-            $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain, function (data) {
                 self.searchResults = [];
-                self.addSocratatoSearchResult(data);
+                //Additional or different search domains should be added here
+                self.addSocratatoSearchResult(search_query);
                 self.addNTLtoSearchResult(search_query);
                 self.relevanceSortedSearchResults = self.searchResults.slice();
 
@@ -135,7 +134,6 @@ Vue.component('search-results', {
                     self.seeMoreToggler[i] = true;
                 }
                 document.getElementsByClassName("filterRelevance")[0].checked = true;
-            });
         },
         //===============================================NTL FUNCTIONS===============================================
 
@@ -212,25 +210,27 @@ Vue.component('search-results', {
         //===============================================SOCRATA FUNCTION===============================================
 
         //Adds Socrata search results to combined search result list
-        addSocratatoSearchResult: function (items) {
+        addSocratatoSearchResult: function (search_query) {
             var itemCount;
             var self = this;
-            for (itemCount = 0; itemCount < items.results.length; itemCount++) {
-                var tempJson = {};
-                tempJson["name"] = items.results[itemCount].resource.name;
-                tempJson["description"] = items.results[itemCount].resource.description;
-                // if string only has year then only print year, otherwise parse into formatting
-                tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt.substring(0,10));
-                var tagCount;
-                var allTags = [];
-                for (tagCount = 0; tagCount < items.results[itemCount].classification.domain_tags.length; tagCount++) {
-                    allTags[tagCount] = items.results[itemCount].classification.domain_tags[tagCount];
+            $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain, function (items) {
+                for (itemCount = 0; itemCount < items.results.length; itemCount++) {
+                    var tempJson = {};
+                    tempJson["name"] = items.results[itemCount].resource.name;
+                    tempJson["description"] = items.results[itemCount].resource.description;
+                    // if string only has year then only print year, otherwise parse into formatting
+                    tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt.substring(0,10));
+                    var tagCount;
+                    var allTags = [];
+                    for (tagCount = 0; tagCount < items.results[itemCount].classification.domain_tags.length; tagCount++) {
+                        allTags[tagCount] = items.results[itemCount].classification.domain_tags[tagCount];
+                    }
+                    tempJson["tags"] = allTags;
+                    tempJson["tags"].sort();
+                    tempJson["link"] = items.results[itemCount].link;
+                    self.searchResults.push(tempJson);
                 }
-                tempJson["tags"] = allTags;
-                tempJson["tags"].sort();
-                tempJson["link"] = items.results[itemCount].link;
-                self.searchResults.push(tempJson);
-            }
+            });
         },
 
         ////===============================================SEARCH HELPER FUNCTIONS===============================================
