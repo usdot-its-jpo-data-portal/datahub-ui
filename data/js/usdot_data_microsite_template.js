@@ -72,7 +72,7 @@ Vue.component('search-main', {
         // Finds the total count of data for search bar placeholder text, would need to be modified if different search domain is used
         datasetCount: function () {
             var self = this;
-            $.get(self.socrata_url + '&search_context=' + self.socrata_domain, function (data) {
+            $.get(self.socrata_url + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)', function (data) {
                 self.totalDataCount = data.results.length;
                 self.search_placeholder = self.totalDataCount.toString() + " data sets and counting!";
             });
@@ -213,7 +213,7 @@ Vue.component('search-results', {
         addSocratatoSearchResult: function (search_query) {
             var itemCount;
             var self = this;
-            $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain, function (items) {
+            $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)', function (items) {
                 for (itemCount = 0; itemCount < items.results.length; itemCount++) {
                     var tempJson = {};
                     tempJson["name"] = items.results[itemCount].resource.name;
