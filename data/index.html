@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="overflow-x: auto;">
+<a href="#main" class="hidden">Skip to main content</a>
+<head>
+    <title>Department of Transportation - ITS DataHub</title>
+    <link rel="stylesheet" type="text/css" href="css/ITS_JPO.css">
+    <link rel="stylesheet" type="text/css" href="css/usdot_data_microsite_template.css">
+    <link rel="stylesheet" href="css/bulma.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+</head>
+
+<body id="search-wrapper">
+    <div id='searchTerms'>
+
+        <dot-header></dot-header>
+        <div id="searchHead" class="searchHeader">
+            <navigation-top></navigation-top>
+            <search-main></search-main>
+        </div>
+        <category-search></category-search>
+        <featured-data></featured-data>
+        <microsite-footer></microsite-footer>
+    </div>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/data/js/usdot_data_microsite_template.min.js"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32989783-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script type="text/javascript" src="/js/dot_ostr_analytics.js"> </script>
+<!-- End Google Analytics -->
