@@ -1,0 +1,3 @@
+[submodule "data/visualizations"]
+	path = data/visualizations
+	url = https://github.com/usdot-its-jpo-data-portal/RDE-Visualization-Website.git
