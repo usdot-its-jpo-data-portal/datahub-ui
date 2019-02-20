@@ -2,26 +2,26 @@
  "maxDatasetCount": 3,
 
     "datasets": [
-        {
-			"name": "Wyoming CV Pilot Basic Safety Messages Sample",
-			"description": "Contains a sample of sanitized Basic Safety Messages collected from the Wyoming Connected Vehicle pilot.",
-            "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Basic-Safety-Message-One-Day-Samp/9k4m-a3jc",
-            "image": "./images/Wyoming DOT Connected Vehicle Pilot.png",
-            "altText": "Link to sample Wyoming CV Pilot Basic Safety Messages on data.transportation.gov"
+       
+        {   "name": "Tampa CV Pilot Basic Safety Messages Sample", 
+            "description": "Contains a sample of sanitized Basic Safety Messages collected from the Tampa Connected Vehicle pilot.", 
+            "url": "https://data.transportation.gov/Automobiles/Tampa-CV-Pilot-Basic-Safety-Message-BSM-Sample/nm7w-nvbm", 
+            "image": "./images/tampa-dot-connected-vehicle-pilot-img.png", 
+            "altText": "Link to sample Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
+        },
+
+        {   "name": "Tampa Connected Vehicle Pilot Basic Safety Message Visualization", 
+            "description": "A visualization portal for the Tampa CV Pilot Basic Safety Messages.", 
+            "url": "https://data.transportation.gov/Automobiles/Speed-coloured-points/qkm7-rymj/", 
+            "image": "./images/tampa-connected-vehicle-pilot-basic-safety-message-visualization.png", 
+            "altText": "Map of Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
         },
         {
-		    "name": "Wyoming Connected Vehicle Pilot Basic Safety Message Visualization",
-			"description": "A visualization portal for the Wyoming CV Pilot Basic Safety Messages.",
-            "url": "https://data.transportation.gov/Automobiles/Wyoming-Connected-Vehicle-Pilot-Basic-Safety-Messa/hchs-a7s6",
-            "image": "./images/Wyoming Connected Vehicle Pilot Basic Safety Message Visualization.png",
-            "altText": "Map and histograms of Wyoming CV Pilot Basic Safety Messages on data.transportation.gov"
-        },
-        {
-            "name": "Proof-of-Concept Vehicle Platooning Based on CACC",
-            "description": "Performance of a proof-of-concept vehicle platooning based on Cooperative Adaptive Cruise Control (CACC).",
-            "url": "https://data.transportation.gov/Automobiles/Test-Data-of-Proof-of-Concept-Vehicle-Platooning-B/wpek-zziu",
+            "name": "Cooperative Automated Research Mobility Applications (CARMA) 2",
+            "description": "Data represent the performance of prototype cooperative automated driving system applications for improving traffic mobility.",
+            "url": "https://data.transportation.gov/Automobiles/Cooperative-Automated-Research-Mobility-Applicatio/dusd-cr84",
             "image": "./images/video.png",
-            "altText": "Link to Test Data of Proof-of-Concept Vehicle Platooning Based on Cooperative Adaptive Cruise Control (CACC) on data.transportation.gov"
+            "altText": "Link to Cooperative Automated Research Mobility Applications (CARMA) 2 on data.transportation.gov"
         }
     ]
 }
