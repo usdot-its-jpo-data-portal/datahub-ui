@@ -149,8 +149,11 @@ Vue.component('search-results', {
             var NTL_datelimit = "?from=2018-01-01T00:00:00Z"; //Limit results to before, after or between a specific date range
             var NTL_rowslimit = "&rows=9999"; //Set number of rows to have returned (NTL default is 100), max 9999
 
-            $.get(NTL_url + NTL_collection + NTL_datelimit + NTL_rowslimit, function (data) {
-                var json = JSON.parse(data);
+            $.get(NTL_url + NTL_collection + "&parentId=dot%3A239&sm_resource_type=Dataset" + NTL_datelimit + NTL_rowslimit, function (data) {
+                //try catch
+                try{
+                    var json = JSON.parse(data);
+                
                 for (itemCountNTL = 0; itemCountNTL < json.response.docs.length; itemCountNTL++) {
                     //Filter results to pull only dataset types
                     if (json.response.docs[itemCountNTL]["mods.sm_resource_type"][0] == "Dataset"){
@@ -179,6 +182,10 @@ Vue.component('search-results', {
                         self.NTLJson.push(tempJson);
                     }
                     
+                }
+                }
+                catch(error){
+                    system.out.println("hit catch");
                 }
             });
             $.ajaxSetup({
@@ -356,12 +363,12 @@ Vue.component('search-results', {
                                     </tr>
                                 </table>
                                 <!--the data set description-->
-                                <p v-if="item.description.length > 300 && seeMoreToggler[index] && item.description.indexOf(' ', 290) != -1" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.indexOf(" ", 290))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                                <p v-else-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.lastIndexOf(" "))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                                <p v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description }}</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
-                                <p v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;">{{ item.description}}</p>
+                                <p v-if="item.description.length > 300 && seeMoreToggler[index] && item.description.indexOf(' ', 290) != -1" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.indexOf(' ', 290))"></span>...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                                <p v-else-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.lastIndexOf(' '))"></span>{{ item.description.substring(0,item.description.lastIndexOf(" "))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                                <p v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span></br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
+                                <p v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span></p>
                                 <p v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
-
+                                
                                 <!--lists the domain tags-->
                                 <div v-if="item.tags.length > 0" style="padding-top: 5px;">
                                     <p style="float:left; padding: 3px; height: 30px; line-height: 30px;">Tags: </p>
