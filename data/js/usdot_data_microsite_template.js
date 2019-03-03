@@ -333,7 +333,7 @@ Vue.component('search-results', {
                     <br>
 
                     <!--generates a bullet point for each search result item-->
-                    <div style="margin-left: 100px; margin-right: 100px;">
+                    <div class="search-results" style="margin-left: 100px; margin-right: 100px;">
 
                         <!--displays results if there are results-->
                         <ul v-if="searchResults.length > 0" style="list-style: none; padding-left: 0px;">
@@ -356,11 +356,11 @@ Vue.component('search-results', {
                                     </tr>
                                 </table>
                                 <!--the data set description-->
-                                <p v-if="item.description.length > 300 && seeMoreToggler[index] && item.description.indexOf(' ', 290) != -1" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.indexOf(" ", 290))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                                <p v-else-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description.substring(0,item.description.lastIndexOf(" "))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                                <p v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;">{{ item.description }}</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
-                                <p v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;">{{ item.description}}</p>
-                                <p v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
+                                <p class="dataset-description" v-if="item.description.length > 300 && seeMoreToggler[index] && item.description.indexOf(' ', 290) != -1" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.indexOf(' ', 290))"></span>...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                                <p class="dataset-description" v-else-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.lastIndexOf(' '))"></span>{{ item.description.substring(0,item.description.lastIndexOf(" "))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                                <p class="dataset-description" v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span></br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
+                                <p class="dataset-description" v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span></p>
+                                <p class="dataset-description" v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
 
                                 <!--lists the domain tags-->
                                 <div v-if="item.tags.length > 0" style="padding-top: 5px;">

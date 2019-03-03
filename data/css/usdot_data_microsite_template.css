@@ -387,6 +387,11 @@ button.tag {
 
 }
 
+/* links in description */
+.dataset-description a{
+  color: #0074D9;
+}
+
 
 /********FEATURED DATA SETS***********/
 
