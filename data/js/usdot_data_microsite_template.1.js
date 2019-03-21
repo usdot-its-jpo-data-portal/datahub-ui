@@ -148,7 +148,6 @@ Vue.component('search-results', {
             var NTL_collection = "dot:239"; //Limit results to specific collection
             var NTL_datelimit = "?from=2018-01-01T00:00:00Z"; //Limit results to before, after or between a specific date range
             var NTL_rowslimit = "&rows=9999"; //Set number of rows to have returned (NTL default is 100), max 9999
-            var tempAccessLevel = "";
 
             $.get(NTL_url + NTL_collection + NTL_datelimit + NTL_rowslimit, function (data) {
                 var json = JSON.parse(data);
@@ -160,13 +159,6 @@ Vue.component('search-results', {
                         tempJson["name"] = json.response.docs[itemCountNTL]["dc.title"][0];
                         tempJson["description"] = json.response.docs[itemCountNTL]["mods.abstract"][0];
                         tempJson["date"] = self.formatDate(json.response.docs[itemCountNTL]["fgs.createdDate"]);
-                        tempAccessLevel = json.response.docs[itemCountNTL]["rdf.isOpenAccess"][0];
-                        if(tempAccessLevel == "true"){
-                            tempJson["accessLevelIsPublic"] ="Public";
-                        }
-                        else{
-                            tempJson["accessLevelIsPublic"] = tempAccessLevel;
-                        }
 
                         //Read dataset tags, add Research Results button tag to all NTL results
                         var tagCount;
@@ -221,23 +213,13 @@ Vue.component('search-results', {
         addSocratatoSearchResult: function (search_query) {
             var itemCount;
             var self = this;
-            var tempAccessLevel = "";
             $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)', function (items) {
                 for (itemCount = 0; itemCount < items.results.length; itemCount++) {
                     var tempJson = {};
                     tempJson["name"] = items.results[itemCount].resource.name;
                     tempJson["description"] = items.results[itemCount].resource.description;
-                    tempAccessLevel  = items.results[itemCount].classification.domain_metadata[3].value;
-                    if(tempAccessLevel == "public"){
-                        tempJson["accessLevelIsPublic"] ="Public";
-                    }
-                    else{
-                        tempJson["accessLevelIsPublic"] = tempAccessLevel;
-                    }
-                    
                     // if string only has year then only print year, otherwise parse into formatting
                     tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt.substring(0,10));
-
                     var tagCount;
                     var allTags = [];
                     for (tagCount = 0; tagCount < items.results[itemCount].classification.domain_tags.length; tagCount++) {
@@ -351,7 +333,7 @@ Vue.component('search-results', {
                     <br>
 
                     <!--generates a bullet point for each search result item-->
-                    <div class="search-results-div" style="margin-left: 100px; margin-right: 100px;">
+                    <div class="search-results" style="margin-left: 100px; margin-right: 100px;">
 
                         <!--displays results if there are results-->
                         <ul v-if="searchResults.length > 0" style="list-style: none; padding-left: 0px;">
@@ -366,14 +348,9 @@ Vue.component('search-results', {
 
                                             </a>
                                         </td>
-                                        <td style="text-align: right;">
+                                        <td style="text-align: right; width: 30%">
                                             <p class="resultItemHeader" style="float: right; font-size: 18px;">
                                                 Date Added: {{ item.date}}
-                                            </p>
-                                        </td>
-                                        <td style="text-align: right;">
-                                            <p class="resultItemHeader" style="float: right; font-size: 18px;">
-                                                Access: {{ item.accessLevelIsPublic}}
                                             </p>
                                         </td>
                                     </tr>
