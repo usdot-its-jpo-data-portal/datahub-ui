@@ -168,6 +168,10 @@ p.headingFont{
   color: #0074D9;
 }
 
+.metrics-section-headers{
+  visibility: hidden;
+}
+
 /*
 .table-of-contents li + li {
   margin-top: 0.25em;
