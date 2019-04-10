@@ -120,14 +120,8 @@ Vue.component('search-results', {
 
                 self.searchResults = [];
                 //Additional or different search domains should be added here
-                console.log("search results #1: "+self.searchResults.length);
-                
                 self.addSocratatoSearchResult(search_query);
-                console.log("search results #2: "+self.searchResults.length);
-                
                 self.addNTLtoSearchResult(search_query);
-                console.log("search results #3: "+self.searchResults.length);
-                
                 self.relevanceSortedSearchResults = self.searchResults.slice();
 
                 self.dateSortedSearchResults = self.searchResults.slice();
@@ -136,7 +130,6 @@ Vue.component('search-results', {
                 self.nameSortedSearchResults = self.searchResults.slice();
                 self.nameSortedSearchResults.sort(self.compareName);
 
-                console.log("search results #4: "+self.searchResults.length);
                 for (var i = 0; i < self.searchResults.length; i = i + 1) {
                     
                     self.seeMoreToggler[i] = true;
@@ -168,20 +161,17 @@ Vue.component('search-results', {
                         //Read dataset name, description, date
                         tempJson["name"] = json.response.docs[itemCountNTL]["dc.title"][0];
                         tempJson["description"] = json.response.docs[itemCountNTL]["mods.abstract"][0];
-                        console.log("Data set name: " + tempJson["name"] + "; description length: " + tempJson["description"].length + "; .indexOf(' ', 290) = " + tempJson["description"].indexOf(' ', 290));
-                        
                         tempJson["date"] = self.formatDate(json.response.docs[itemCountNTL]["fgs.createdDate"]);
                         tempAccessLevel = json.response.docs[itemCountNTL]["rdf.isOpenAccess"][0];
-                        console.log("Dataset " + counter + ": " +tempJson["name"] + ": " + tempAccessLevel);
+                        
                         if((tempAccessLevel == "") || (tempAccessLevel == null)){
-                            console.log("~*~*~Dataset " + tempJson["name"] + " is missing the access level.");
+                            tempJson["accessLevelIsPublic"] ="Public";
                         }
                         if(tempAccessLevel == "true"){
                             tempJson["accessLevelIsPublic"] ="Public";
                         }
                         else{
-                            tempJson["accessLevelIsPublic"] = tempAccessLevel;
-                            console.log("~~~Dataset " + tempJson["name"] + " might have an unexpected Access level. Access level is: " + tempAccessLevel);
+                            tempJson["accessLevelIsPublic"] = "Restricted";
                         }
 
                         //Read dataset tags, add Research Results button tag to all NTL results
@@ -213,7 +203,6 @@ Vue.component('search-results', {
 
         //Searches NTL files for match based on tag, title, or description and adds them to combined search result list
         addNTLtoSearchResult: function (search_query) {
-            console.log("start of NTL function");
             var itemCountNTL;
             var self = this;
             for (itemCountNTL = 0; itemCountNTL < self.NTLJson.length; itemCountNTL++) {
@@ -237,18 +226,15 @@ Vue.component('search-results', {
 
         //Adds Socrata search results to combined search result list
         addSocratatoSearchResult: function (search_query) {
-            console.log("start of socrata function");
             var itemCount;
             var self = this;
             var tempAccessLevel = "";
-            console.log("second start of socrata function.");
+            var metadata_element;
             $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)', function (items) {
-                console.log("third start of socrata function.");
                 for (itemCount = 0; itemCount < items.results.length; itemCount++) {
                     var tempJson = {};
                     tempJson["name"] = items.results[itemCount].resource.name;
                     tempJson["description"] = items.results[itemCount].resource.description;
-                    console.log("!@$DTG: Data set name: " + tempJson["name"] + "; description length: " + tempJson["description"].length + "; .indexOf(' ', 290) = " + tempJson["description"].indexOf(' ', 290));
                     //items.results[itemCount].classification.domain_metadata[3].value;
                     for (metadata_element in items.results[itemCount].classification.domain_metadata){
                         if(items.results[itemCount].classification.domain_metadata[metadata_element].key == "Common-Core_Public-Access-Level"){
@@ -265,8 +251,7 @@ Vue.component('search-results', {
                     }
                     
                     // if string only has year then only print year, otherwise parse into formatting
-                    tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt.substring(0,10));
-
+                     tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt);
                     var tagCount;
                     var allTags = [];
                     for (tagCount = 0; tagCount < items.results[itemCount].classification.domain_tags.length; tagCount++) {
@@ -277,7 +262,6 @@ Vue.component('search-results', {
                     tempJson["link"] = items.results[itemCount].link;
                     self.searchResults.push(tempJson);
                 }
-                console.log("search results #5: "+self.searchResults.length);
                 for (var i = 0; i < self.searchResults.length; i = i + 1) {
                     
                     self.seeMoreToggler[i] = true;
@@ -290,12 +274,11 @@ Vue.component('search-results', {
                 self.nameSortedSearchResults = self.searchResults.slice();
                 self.nameSortedSearchResults.sort(self.compareName);
             });
-            console.log("search results #6: "+self.searchResults.length);
-                for (var i = 0; i < self.searchResults.length; i = i + 1) {
+            for (var i = 0; i < self.searchResults.length; i = i + 1) {
                     
-                    self.seeMoreToggler[i] = true;
-                }
-                // document.getElementsByClassName("filterRelevance")[0].checked = true;
+                self.seeMoreToggler[i] = true;
+            }
+            // document.getElementsByClassName("filterRelevance")[0].checked = true;
         },
 
         ////===============================================SEARCH HELPER FUNCTIONS===============================================
@@ -337,10 +320,9 @@ Vue.component('search-results', {
               "Nov", "Dec"
             ];
             var newDate = new Date(date);
-            var day = newDate.getDate();
-            var monthIndex = newDate.getMonth();
-            var year = newDate.getFullYear();
-
+            var day = newDate.getUTCDate();
+            var monthIndex = newDate.getUTCMonth();
+            var year = newDate.getUTCFullYear();
             return monthNames[monthIndex] + ' ' + day +  ' ' + year;
         },
         //===============================================SEARCH RESULT PAGE FORMATTING FUNCTIONS===============================================
