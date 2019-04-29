@@ -198,3 +198,14 @@ p.headingFont{
 .table-of-contents li {
   font-size: 16px;
 }*/
+
+.public-access-page h2::before,
+.public-access-page h3::before,
+.metrics-page h2::before{ 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
