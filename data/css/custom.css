@@ -1,0 +1,70 @@
+#returnPage.readButton,
+button.btn-read-more-less,
+button.tag{
+    background: none;
+    border: none;
+    color: #2E5B7A;
+}
+#returnPage.readButton,
+button.btn-read-more-less{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#returnPage.readButton {   
+    border-radius: 5px;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+button.btn-read-more-less{
+    padding: 5px 15px 5px 0px;
+    text-transform: uppercase;
+}
+
+button.tag,
+span.tag{
+    padding: 0px 1px;
+    background-color: white;
+    font-size: 13px;
+    height: auto;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    margin-right: 1px;
+    
+
+}
+button.btn-read-more-less:hover,
+#returnPage.readButton:hover,
+button.tag:hover{
+    
+    border: none;
+    color: #2b7cde;
+    background-color: white;   
+}
+
+.tags-tag{
+    font-weight: bold !important;
+    font-size: 14px;
+    padding-left: 0px;
+} 
+
+.resultItemHeader.date-access{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    float: right;
+    /*margin-left: 160px;*/
+    margin-left: auto;
+    text-align: left;
+}
+
+.slightly-bold{
+    font-weight: 600;
+   
+}
+
+.dataset-description{
+    padding-left: 5px;
+}
