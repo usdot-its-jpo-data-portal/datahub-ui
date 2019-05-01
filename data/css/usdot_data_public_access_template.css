@@ -209,3 +209,12 @@ p.headingFont{
   visibility: hidden; 
   pointer-events: none;
 }
+
+.public-access-page .list-half-indent{
+  margin-left: 2.5em;  
+}
+
+.public-access-page .back-to-top{
+  font-size: 14px;
+  margin-left: 5px;
+}
