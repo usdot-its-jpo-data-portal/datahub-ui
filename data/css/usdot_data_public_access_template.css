@@ -198,3 +198,23 @@ p.headingFont{
 .table-of-contents li {
   font-size: 16px;
 }*/
+
+.public-access-page h2::before,
+.public-access-page h3::before,
+.metrics-page h2::before{ 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.public-access-page .list-half-indent{
+  margin-left: 2.5em;  
+}
+
+.public-access-page .back-to-top{
+  font-size: 14px;
+  margin-left: 5px;
+}
