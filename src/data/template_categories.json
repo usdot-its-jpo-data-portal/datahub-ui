@@ -1,0 +1,51 @@
+﻿{
+    "background_image": "../images/Transportation Background.png",
+	"contact_email": "data.itsjpo@dot.gov",
+    
+    "maxButtonCount": 16,
+
+    "buttons": [
+        {
+            "CategoryName": "Connected Vehicle Message",
+            "imgIcons": "../images/icons/CVPCars.png",
+			"rolloverImages": "../images/icons/CVPCars_Rollover.png",
+            "altText": "search for connected vehicle message"
+        }, {
+            "CategoryName": "Application Message",
+            "imgIcons": "../images/icons/AppMessage.png",
+			"rolloverImages": "../images/icons/AppMessage_Rollover.png",
+            "altText": "search for application message"
+        }, {
+            "CategoryName": "Trajectories",
+            "imgIcons": "../images/icons/Trajectories.png",
+			"rolloverImages": "../images/icons/Trajectories_Rollover.png",
+            "altText": "search for Trajectories"
+        }, {
+            "CategoryName": "Field Test",
+            "imgIcons": "../images/icons/FieldTest.png",
+			"rolloverImages": "../images/icons/FieldTest_Rollover.png",
+            "altText": "search for Field Test"
+        }, {
+            "CategoryName": "Sensor Data",
+            "imgIcons": "../images/icons/SensorData.png",
+			"rolloverImages": "../images/icons/SensorData_Rollover.png",
+            "altText": "search for sensor data"
+        }, {
+            "CategoryName": "Research Results",
+            "imgIcons": "../images/icons/ResearchResults.png",
+			"rolloverImages": "../images/icons/ResearchResults_Rollover.png",
+            "altText": "search for research results"
+        }, {
+            "CategoryName": "Connected Equipment",
+            "imgIcons": "../images/icons/Equipment.png",
+			"rolloverImages": "../images/icons/Equipment_Rollover.png",
+            "altText": "search for connected equipment"
+        },
+        {
+            "CategoryName": "Weather",
+            "imgIcons": "../images/icons/Weather_v2.png",
+			"rolloverImages": "../images/icons/Weather_Rollover_v2.png",
+            "altText": "search for weather"
+        }
+    ]
+}

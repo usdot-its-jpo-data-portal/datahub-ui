@@ -1,0 +1,220 @@
+
+/********UNIVERSAL***********/
+
+html {
+    width: 100%;
+}
+/* body */
+body {
+
+  /* position and size */
+  /*height: 1200px;*/
+  min-width: 600px;
+  /* background */
+  position: relative;
+  min-height: 100%;
+  background: linear-gradient(#E2E2E2, white, white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* div type to prevent movement on resize */
+#dataset-wrapper, #search-wrapper {
+
+  width: 100%;
+  /*max-width:1100px;*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/* headings */
+.headingStyles {
+
+  /* position and size */
+  padding: 45px 0 25px 0;
+  font-weight: 400;
+  /*max-width: 1100px;*/
+
+  /* background */
+  /*background-color: #EDEDEF;
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;*/
+
+}
+
+
+/* font for headings */
+p.headingFont{
+
+  /* position and size */
+  padding: 25px 0 0 0;
+  
+  /* text */
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.headHovers:hover {
+    color: white;
+    font-weight: bold;
+}
+/* Navigation bar background and font*/
+.navigation-bar {
+    /*position:fixed;*/
+    background: 
+        rgba(35, 91, 122, 0.6);
+    height: 40px;
+    padding: 0px 38px 0 38px;
+    margin-bottom: 50px;
+    text-align: left;
+
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    min-width: 600px;
+    width: 100%;
+    background: 
+        rgba(35, 91, 122, 0.8);
+}
+
+
+.navBarLinks{
+    color: white;
+    font-size: 12px;
+    transition: transform 0.6s ease-in-out;
+    line-height: 2.5;
+    /*padding-top: 50%;*/
+}
+
+.hidden {
+    position: absolute;
+    left: -1000000px;
+    top:auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#footerInfo{
+    background-color: #2E5B7A;
+    text-align: center;
+    color: white;
+    height: 160px;
+}
+
+/* search box area */
+.publicAccess {
+
+  /* position and size */
+  min-height: 100%;
+  /*max-width: 1100px;*/
+  margin-bottom:50px;
+  padding: 0px 38px 0 38px;
+}
+
+.publicAccess ul {
+  margin-left: 4em;
+  list-style: disc outside;
+  padding-bottom: 8px;
+}
+
+.publicAccess ol {
+  margin-left: 4em;
+  padding-bottom: 8px;
+}
+
+.publicAccess p {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.publicAccess img {
+  display: block;
+  margin: auto;
+}
+
+.publicAccess li {
+  font-size: 16px;
+}
+
+.publicAccess h1 {
+  font-size: 28px;
+}
+
+.publicAccess h2 {
+  font-size: 22px;
+}
+
+.publicAccess h3 {
+  font-size: 19px;
+}
+
+.publicAccess h4 {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.publicAccess a {
+  color: #0074D9;
+}
+
+.metrics-section-headers{
+  visibility: hidden;
+}
+
+/*
+.table-of-contents li + li {
+  margin-top: 0.25em;
+}
+
+.table-of-contents ul:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.table-of-contents ul {
+  margin-left: 2em;
+  margin-top: 1em;
+  list-style: none;
+}
+
+.table-of-contents ul ul {
+  margin-top: 0.5em;
+}
+
+.table-of-contents a {
+  color: blue;
+}
+
+.table-of-contents li {
+  font-size: 16px;
+}*/
+
+.public-access-page h2::before,
+.public-access-page h3::before,
+.metrics-page h2::before{ 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.public-access-page .list-half-indent{
+  margin-left: 2.5em;  
+}
+
+.public-access-page .back-to-top{
+  font-size: 14px;
+  margin-left: 5px;
+}

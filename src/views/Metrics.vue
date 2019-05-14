@@ -1,0 +1,68 @@
+<template>
+<div id="search-wrapper">
+    <div id='searchTerms' tabindex="0">
+        <div class="publicAccess metrics-page" title="ITS DataHub Metrics Dashboard">
+            <h1 id="itsDataHubMetricsDashboardHeader" role="heading" aria-level="1">ITS DataHub Metrics Dashboard</h1><br>
+            <p>Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportaion Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views. </p>
+            <p>Table of Contents:</p>
+            <ul>
+                <li><a href="#dataset-highlights">Dataset Highlights</a></li>
+                <li><a href="#dtg-dataset-details">DTG Dataset Details data.transporation.gov</a></li>
+                <li><a href="#ntl-datset-details">NTL Dataset Details National Transportation Library</a></li>
+                <li><a href="#sandbox-datasets">Sandbox Datasets</a></li>
+                <li><a href="#github-repository-views">DataHub (Microsite) & Sandbox GitHub Repository Views</a></li>
+                <li><a href="#datahub-usage-metrics">DataHub Usage Metrics</a></li>
+            </ul>
+            
+            <div id="dataset-highlights-div" tabindex="0">
+                <h2 id="dataset-highlights" class="metrics-section-headers">Dataset Highlights</h2>
+                <iframe tab-index="0" width="1372" height="1204" title="Dataset Highlights" src="https://datastudio.google.com/embed/reporting/1DPGZ3cYtQ-E8DVK05Q3VhfQGjHp7rVlF/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            </div>
+            <div id="dtg-dataset-details-div" tabindex="0">
+                <h2 id="dtg-dataset-details" class="metrics-section-headers">DTG Dataset Details data.transporation.gov</h2>
+                <iframe width="1372" height="2944" title="DTG Dataset Details data.transporation.gov" src="https://datastudio.google.com/embed/reporting/1-VMDfwYqUMq-j8YOBk5-Sast14kYn4Ea/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            </div>
+            <div id="ntl-datset-details-div" tabindex="0">
+                <h2 id="ntl-datset-details" class="metrics-section-headers">NTL Dataset Details National Transportation Library</h2>
+                <iframe width="1372" height="2250" title="NTL Dataset Details National Transportation Library" src="https://datastudio.google.com/embed/reporting/1Gu1KMfPjkJUk17QL3fP_hDAH3JpVyQvC/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            </div>
+
+            <div id="sandbox-datasets-div" tabindex="0">
+                <h2 id="sandbox-datasets" class="metrics-section-headers">Sandbox Datasets</h2>
+                <iframe width="1372" height="1050" title="Sandbox Datasets" src="https://datastudio.google.com/embed/reporting/1WSneXEi3T4h7eZhq3EcnEnEGWb5N6BQX/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            </div>
+            <div id="github-repository-views-div" tabindex="0">
+                <h2 id="github-repository-views" class="metrics-section-headers">DataHub (Microsite) & Sandbox GitHub Repository Views</h2>
+                <iframe width="1372" height="500" title="DataHub (Microsite) and Sandbox GitHub Repository Views" src="https://datastudio.google.com/embed/reporting/1UVkRwkxc1KvxgUXGAU9OowgE4LnK1WVg/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            </div>
+            <div id="datahub-usage-metrics-div" tabindex="0"></div>
+                <h2 id="datahub-usage-metrics" class="metrics-section-headers">DataHub Usage Metrics</h2>
+                <iframe width="1372" height="1000" title="DataHub Usage Metrics" src="https://datastudio.google.com/embed/reporting/1NSiUsh02hpE3viSpbNxBJr-tAI8SGLMY/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            </div>
+        </div>
+</div>
+</template>
+
+<!-- Google Analytics -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32989783-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script src="../js/dot_ostr_analytics.js"> </script>
+<!-- End Google Analytics -->
+
+<script>
+export default {
+  name: 'metrics'
+}
+</script>
+<style lang="scss" scoped>
+
+</style>
