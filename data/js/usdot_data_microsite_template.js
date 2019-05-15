@@ -131,9 +131,10 @@ Vue.component('search-results', {
                 self.nameSortedSearchResults.sort(self.compareName);
 
                 for (var i = 0; i < self.searchResults.length; i = i + 1) {
+                    
                     self.seeMoreToggler[i] = true;
                 }
-                document.getElementsByClassName("filterRelevance")[0].checked = true;
+                //document.getElementsByClassName("filterRelevance")[0].checked = true;
         },
         //===============================================NTL FUNCTIONS===============================================
 
@@ -148,6 +149,8 @@ Vue.component('search-results', {
             var NTL_collection = "dot:239"; //Limit results to specific collection
             var NTL_datelimit = "?from=2018-01-01T00:00:00Z"; //Limit results to before, after or between a specific date range
             var NTL_rowslimit = "&rows=9999"; //Set number of rows to have returned (NTL default is 100), max 9999
+            var tempAccessLevel = "";
+            var counter = 0;
 
             $.get(NTL_url + NTL_collection + NTL_datelimit + NTL_rowslimit, function (data) {
                 var json = JSON.parse(data);
@@ -159,6 +162,17 @@ Vue.component('search-results', {
                         tempJson["name"] = json.response.docs[itemCountNTL]["dc.title"][0];
                         tempJson["description"] = json.response.docs[itemCountNTL]["mods.abstract"][0];
                         tempJson["date"] = self.formatDate(json.response.docs[itemCountNTL]["fgs.createdDate"]);
+                        tempAccessLevel = json.response.docs[itemCountNTL]["rdf.isOpenAccess"][0];
+                        
+                        if((tempAccessLevel == "") || (tempAccessLevel == null)){
+                            tempJson["accessLevelIsPublic"] ="Public";
+                        }
+                        if(tempAccessLevel == "true"){
+                            tempJson["accessLevelIsPublic"] ="Public";
+                        }
+                        else{
+                            tempJson["accessLevelIsPublic"] = "Restricted";
+                        }
 
                         //Read dataset tags, add Research Results button tag to all NTL results
                         var tagCount;
@@ -177,6 +191,7 @@ Vue.component('search-results', {
 
                         //Add to NTL datasets JSON list
                         self.NTLJson.push(tempJson);
+                        counter++;
                     }
                     
                 }
@@ -213,13 +228,30 @@ Vue.component('search-results', {
         addSocratatoSearchResult: function (search_query) {
             var itemCount;
             var self = this;
+            var tempAccessLevel = "";
+            var metadata_element;
             $.get(self.socrata_url + search_query + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)', function (items) {
                 for (itemCount = 0; itemCount < items.results.length; itemCount++) {
                     var tempJson = {};
                     tempJson["name"] = items.results[itemCount].resource.name;
                     tempJson["description"] = items.results[itemCount].resource.description;
+                    //items.results[itemCount].classification.domain_metadata[3].value;
+                    for (metadata_element in items.results[itemCount].classification.domain_metadata){
+                        if(items.results[itemCount].classification.domain_metadata[metadata_element].key == "Common-Core_Public-Access-Level"){
+                            tempAccessLevel  = items.results[itemCount].classification.domain_metadata[metadata_element].value;
+                        }
+                        
+                    }
+                    //tempAccessLevel  = items.results[itemCount].classification.domain_metadata[3].value;
+                    if(tempAccessLevel == "public" || tempAccessLevel == "Public"){
+                        tempJson["accessLevelIsPublic"] ="Public";
+                    }
+                    else{
+                        tempJson["accessLevelIsPublic"] = "Restricted";
+                    }
+                    
                     // if string only has year then only print year, otherwise parse into formatting
-                    tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt.substring(0,10));
+                     tempJson["date"] = (items.results[itemCount].resource.updatedAt.substring(0,10) < 7) ? items.results[itemCount].resource.updatedAt.substring(0,10) : self.formatDate(items.results[itemCount].resource.updatedAt);
                     var tagCount;
                     var allTags = [];
                     for (tagCount = 0; tagCount < items.results[itemCount].classification.domain_tags.length; tagCount++) {
@@ -230,7 +262,23 @@ Vue.component('search-results', {
                     tempJson["link"] = items.results[itemCount].link;
                     self.searchResults.push(tempJson);
                 }
+                for (var i = 0; i < self.searchResults.length; i = i + 1) {
+                    
+                    self.seeMoreToggler[i] = true;
+                }
+                self.relevanceSortedSearchResults = self.searchResults.slice();
+
+                self.dateSortedSearchResults = self.searchResults.slice();
+                self.dateSortedSearchResults.sort(self.compareDate);
+
+                self.nameSortedSearchResults = self.searchResults.slice();
+                self.nameSortedSearchResults.sort(self.compareName);
             });
+            for (var i = 0; i < self.searchResults.length; i = i + 1) {
+                    
+                self.seeMoreToggler[i] = true;
+            }
+            // document.getElementsByClassName("filterRelevance")[0].checked = true;
         },
 
         ////===============================================SEARCH HELPER FUNCTIONS===============================================
@@ -272,10 +320,9 @@ Vue.component('search-results', {
               "Nov", "Dec"
             ];
             var newDate = new Date(date);
-            var day = newDate.getDate();
-            var monthIndex = newDate.getMonth();
-            var year = newDate.getFullYear();
-
+            var day = newDate.getUTCDate();
+            var monthIndex = newDate.getUTCMonth();
+            var year = newDate.getUTCFullYear();
             return monthNames[monthIndex] + ' ' + day +  ' ' + year;
         },
         //===============================================SEARCH RESULT PAGE FORMATTING FUNCTIONS===============================================
@@ -304,7 +351,7 @@ Vue.component('search-results', {
     template: `<div id="searchresults" class="contentArea searchResults">
                     <br>
                     <div style="display: flex;">
-                        <button id="returnPage" class="readButton" style="font-size: 15px; margin-left: 80px;margin-bottom: 10px" v-on:click="window.location.href = '/data/'">Return to Main Page &raquo;</button>
+                        <a id="returnPage" class="readButton" style="font-size: 15px; margin-left: 80px;margin-bottom: 10px" v-on:click="window.location.href = '/data/'">Return to Home Page &raquo;</a>
                     </div>
                     <div style="display: flex; float: right; margin-right: 80px">
                         <p style="line-height: 1.8" class="resultsSectionHeading">Sort By: &nbsp;</p>
@@ -333,7 +380,7 @@ Vue.component('search-results', {
                     <br>
 
                     <!--generates a bullet point for each search result item-->
-                    <div class="search-results" style="margin-left: 100px; margin-right: 100px;">
+                    <div class="search-results-div" style="margin-left: 100px; margin-right: 100px;">
 
                         <!--displays results if there are results-->
                         <ul v-if="searchResults.length > 0" style="list-style: none; padding-left: 0px;">
@@ -348,24 +395,36 @@ Vue.component('search-results', {
 
                                             </a>
                                         </td>
-                                        <td style="text-align: right; width: 30%">
-                                            <p class="resultItemHeader" style="float: right; font-size: 18px;">
-                                                Date Added: {{ item.date}}
+                                        <td style="text-align: right; width: 30%;">
+                                            <p class="resultItemHeader date-access">
+                                                <span class="slightly-bold">Date Added:</span> {{ item.date}}
+                                                <br />
+                                                <span class="slightly-bold">Access:</span> {{ item.accessLevelIsPublic}}
                                             </p>
                                         </td>
                                     </tr>
                                 </table>
                                 <!--the data set description-->
-                                <p class="dataset-description" v-if="item.description.length > 300 && seeMoreToggler[index] && item.description.indexOf(' ', 290) != -1" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.indexOf(' ', 290))"></span>...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                                <p class="dataset-description" v-else-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.lastIndexOf(' '))"></span>{{ item.description.substring(0,item.description.lastIndexOf(" "))}}...</br><button class="readButton" v-on:click="toggleSeeMore(index)">Read More</button></p>
-                                <p class="dataset-description" v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span></br><button class="readButton" v-on:click="toggleSeeMore(index)">Read Less</button></p>
+                                <p class="dataset-description" v-if="item.description.length > 300 && seeMoreToggler[index] && item.description.indexOf(' ', 290) != -1" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.indexOf(' ', 290))"></span>...&nbsp;&nbsp; <button class="btn-read-more-less one" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                                <p class="dataset-description" v-else-if="item.description.length > 300 && seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description.substring(0,item.description.lastIndexOf(' '))"></span>{{ item.description.substring(0,item.description.lastIndexOf(" "))}}...&nbsp;&nbsp; <button class="btn-read-more-less two" v-on:click="toggleSeeMore(index)">Read More</button></p>
+                                <p class="dataset-description" v-else-if="item.description.length > 300 && !seeMoreToggler[index]" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span>&nbsp;&nbsp; <button class="btn-read-more-less three" v-on:click="toggleSeeMore(index)">Read Less</button></p>
                                 <p class="dataset-description" v-else-if="item.description.length > 0" style="font-size: 15px; padding-top: 5px;"><span v-html="item.description"></span></p>
                                 <p class="dataset-description" v-else style="font-size: 15px; padding-top: 5px;">No description available.</p>
 
                                 <!--lists the domain tags-->
                                 <div v-if="item.tags.length > 0" style="padding-top: 5px;">
-                                    <p style="float:left; padding: 3px; height: 30px; line-height: 30px;">Tags: </p>
-                                    <button v-for="tag in item.tags" class='tag' v-on:click="search(tag)">{{tag}}</button>
+                                    <table>
+                                        <td>
+                                            <p class="tags-tag" style="float:left; height: auto; line-height: 20px;">Tags: </p>
+                                        </td>
+                                        <td>
+                                            <button v-for="(tag, index) in item.tags" class='tag' v-on:click="search(tag)">
+                                                {{tag}}
+                                                <span v-if="index != item.tags.length - 1">,</span>    
+                                            </button>
+                                            
+                                        </td>
+                                    </table>
                                 </div>
                                 <hr v-if="searchResults.length != index+1" style="border-color: #DEDEDE" noshade>
                             </li>
