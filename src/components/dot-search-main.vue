@@ -13,31 +13,33 @@
 <script>
 import TEMPLATE_CATEGORIES from '@/data/template_categories.json';
 import axios from 'axios';
-import {EventBus} from '../eventbus/eventbus.js';
-import {SEARCH_QUERY_UPDATE, SEARCH_QUERY_SUBMIT} from '../consts/constants.js'
 
 export default {
   name: 'DOTSearchMain',
-  props: ['query'],
   data: function(){
     return{
         background_image: '',//Background image for search bar, set in load_json
         search_placeholder: '',//Placeholder text for search bar on home page
         socrata_url: 'https://api.us.socrata.com/api/catalog/v1?q=',//URL for Socrata API
         socrata_domain: 'data.transportation.gov',//Domain of Socrata site to search, set in load_json
-        queryText: this.query === 'null' ? '' : this.query,//Search query
         totalDataCount: 0
+    }
+  },
+  computed: {
+    queryText : {
+        get: function() { return this.$store.state.queryString; },
+        set: function(val) { this.$store.state.queryString = val; }
+    }
+  },
+  mounted: function() {
+    if(this.$router.currentRoute.name === 'home') {
+      this.$store.commit('searchText', '');
     }
   },
   // Function runs on page load
   created: function () {
     this.datasetCount(); //Sets the total number of datasets available visual
     this.background_image = TEMPLATE_CATEGORIES.background_image;
-  },
-  mounted: function() {
-    EventBus.$on(SEARCH_QUERY_UPDATE, (payload) => {
-      this.queryText = payload;
-    })
   },
   methods: {
     //===============================================SEARCH PAGE INITIALIZATION FUNCTIONS===============================================
@@ -51,18 +53,19 @@ export default {
           url: self.socrata_url + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)'
         }).then( response => {
           self.totalDataCount = response.data.results.length;
-          self.search_placeholder = self.totalDataCount.toString() + " data sets and counting!";
+          self.search_placeholder = "search for data sets...";
         }, error => { console.error(error)});
     },
         
     //Sets search term and sends it to search html page
     searchSend: function (search_query) {
-      sessionStorage.setItem("sentSearchTerm", search_query);
-      if(this.$router.currentRoute.name === 'search') {
-        EventBus.$emit(SEARCH_QUERY_SUBMIT, search_query);
-      } else {
-        this.$router.push('search');
-      }
+
+      this.$store.commit('searchText', search_query);
+      this.$store.commit('setLastQueryString', search_query);
+      this.$store.dispatch('getSocrataData', search_query);
+
+      this.$router.push('search');
+
     },
 
   }

@@ -64,8 +64,11 @@
       //===============================================SEARCH FUNCTIONS===============================================        
       //Sets search term and sends it to search html page
       searchSend: function (search_query) {
-          sessionStorage.setItem("sentSearchTerm", search_query);
-          window.location.href = "search.html";
+        this.$store.commit('searchText', search_query);
+        this.$store.commit('setLastQueryString', search_query);
+        this.$store.dispatch('getSocrataData', search_query);
+
+        this.$router.push('search');
       }
     }
   }
