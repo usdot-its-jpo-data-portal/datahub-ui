@@ -8,7 +8,7 @@
         <router-link class="headHovers navBarLinks" to="/about">ABOUT</router-link> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
         <router-link class="headHovers navBarLinks" to="/publicAccess">PUBLIC ACCESS</router-link> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
         <router-link class="headHovers navBarLinks" to="/metrics">METRICS</router-link> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-        <router-link class="headHovers navBarLinks" to="/visualizations">VISUALIZATIONS</router-link> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
+        <a class="headHovers navBarLinks" href="https://its.dot.gov/data/visualizations/" target="_blank">VISUALIZATIONS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
         <router-link class="headHovers navBarLinks" to="/search">SEARCH</router-link> 
         <a class="headHovers navBarLinks" href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank" style="float:right; text-align:right;padding:3px 7px 3px 7px;">VIEW THIS PROJECT ON GITHUB</a>
       </div>
