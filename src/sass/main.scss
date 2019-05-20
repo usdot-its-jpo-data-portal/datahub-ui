@@ -1,10 +1,3 @@
-// @import '../../node_modules/uswds/src/stylesheets/uswds.scss';
-
-// @mixin test_back_color {
-//     // write the css here
-//     background-color: color('red-cool-50v') !important;
-// }
-
-// .test_scss {
-//     @include test_back_color;
-// }
+@import '../../node_modules/uswds/src/stylesheets/uswds.scss';
+@import './variables.scss';
+@import './dot-microsite-footer.scss';

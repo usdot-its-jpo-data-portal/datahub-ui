@@ -1,0 +1,109 @@
+.usa-footer__primary-section {
+  @extend .usa-footer__primary-section;
+  background-color: $dh-footer-color-primary;
+}
+
+.usa-footer__secondary-section {
+  @extend .usa-footer__secondary-section;
+  background-color: $dh-footer-color-secondary;  
+}
+
+.usa-footer__logo {
+  @extend .usa-footer__logo;
+}
+
+.usa-footer__logo-img {
+  @extend .usa-footer__logo-img;
+  padding: 0 !important;
+  height: 50px;
+  width: 267px;
+  max-width: 276px !important;
+}
+
+.usa-footer__logo-img-its {
+  @extend .usa-footer__logo-img;
+  padding: 0 !important;
+  height: 39px;
+  width: 313px;
+  max-width: 313 !important;
+}
+
+.usa-footer__contact-heading {
+  @extend .usa-footer__contact-heading;
+  font-weight: bold;
+  color: $dh-color-white;
+  font-size: 17px;
+}
+
+.usa-footer__address {
+  @extend .usa-footer__address;
+  color: $dh-color-white !important;
+}
+
+.usa-footer__contact-info {
+  @extend .usa-footer__contact-info;
+  font-weight: bold;
+  color: $dh-color-white !important;
+  font-size: 17px;
+  a {
+    color: $dh-color-white !important;
+  }
+}
+
+.usa-footer__social-links {
+  @extend .usa-footer__social-links;
+}
+
+.usa-social-link {
+  @extend .usa-social-link;
+  // $background-height: units(1); // Height of icon within hit area.
+  background-color: color('transparent');
+  // display: inline-block;
+}
+
+.usa-social-link--facebook {
+  @extend .usa-social-link--facebook;
+  background-image:url("/images/icons/facebook25.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/facebook25.svg"), linear-gradient(transparent, transparent);
+  background-repeat:no-repeat;
+}
+
+.usa-social-link--twitter {
+  @extend .usa-social-link--twitter;
+  background-image:url("/images/icons/twitter16.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/twitter16.svg"), linear-gradient(transparent, transparent);
+  background-repeat:no-repeat;
+}
+
+.usa-social-link--youtube {
+  @extend .usa-social-link--youtube;
+  background-image:url("/images/icons/youtube15.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/youtube15.svg"), linear-gradient(transparent, transparent);
+  background-repeat:no-repeat;
+}
+
+.usa-social-link--rss {
+  @extend .usa-social-link--rss;
+  background-image:url("/images/icons/rss25.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/rss25.svg"), linear-gradient(transparent, transparent);
+  background-repeat:no-repeat;
+}
+
+.usa-footer__primary-link {
+  @extend .usa-footer__primary-link;
+}
+
+.usa-footer__primary-link-icon {
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.usa-footer__primary-link-icon-social {
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  margin-top: 25px;
+}
