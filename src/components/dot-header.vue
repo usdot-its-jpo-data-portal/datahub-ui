@@ -1,42 +1,139 @@
 <template>
-  <div
-    id="dotTopBanner"
-    style="width: 100%; background: #152350; height: 60px; padding: 5px 0 0 10px">
-    <a style="background: none" href="https://transportation.gov">
-      <img
-        src="/images/icons/dot_logo.png"
-        style="height: 35px; margin-left: 25px; margin-top: 8px;"
-        alt="department of transportation logo"
-      >
-    </a>
-    <div id="dotTopLinks" style="line-height: 30px; background: #04214f">
-      <a
-        class="headHovers"
-        href="https://www.transportation.gov/mission/about-us"
-        style="font-size: 11px; width: 70px; background: #04214f"
-      >ABOUT DOT&emsp;&nbsp;|</a>
-      <a
-        class="headHovers"
-        href="https://www.transportation.gov/briefingroom"
-        style="font-size: 11px; width: 80px; background: #04214f"
-      >&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-      <a
-        class="headHovers"
-        href="https://www.transportation.gov/our-activities"
-        style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f"
-      >&emsp;&nbsp;OUR ACTIVITIES</a>
+<div>
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  <div class="usa-banner">
+    <div class="usa-accordion">
+      <header class="usa-banner__header">
+        <div class="usa-banner__inner">
+          <div class="grid-col-auto">
+            <img class="usa-banner__header-flag" src="images/us_flag_small.png" alt="U.S. flag">
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto">
+            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+          </div>
+          <button
+            class="usa-accordion__button usa-banner__button"
+            aria-expanded="false"
+            aria-controls="gov-banner">
+            <span class="usa-banner__button-text">Here’s how you know</span>
+          </button>
+        </div>
+      </header>
+      <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img
+              class="usa-banner__icon usa-media-block__img"
+              src="images/icon-dot-gov.svg"
+              alt="Dot gov">
+            <div class="usa-media-block__body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br>Federal government websites often end in .gov or .mil. Before sharing sensitive information,
+                make sure you’re on a federal government site.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img
+              class="usa-banner__icon usa-media-block__img"
+              src="images/icon-https.svg"
+              alt="Https">
+            <div class="usa-media-block__body">
+              <p>
+                <strong>The site is secure.</strong>
+                <br>The
+                <strong>https://</strong> ensures that you are connecting to the official website and
+                that any information you provide is encrypted and transmitted securely.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="usa-overlay"></div>
+  <header class="usa-header usa-header--extended" role="banner">
+    <div class="usa-navbar" style="padding-top: 2rem;">
+      <div class="usa-logo" id="extended-logo">
+        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">ITS DataHub</a></em>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav">
+      <div class="nav_top" >
+        <div class="usa-nav__inner">
+          <a style="background: none" href="https://transportation.gov">
+            <img src="images/usdot_transportation_gov-01.svg" style="height: 35px; margin-left: 25px; margin-top: 8px;" alt="Department of Transportation logo">
+          </a>
+        </div>
+      </div>
+      <div class="usa-nav__inner"><button class="usa-nav__close"><img src="images/close.svg" alt="close"></button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <router-link class="usa-nav__link" to="/">Home</router-link>
+            <!-- <a class="usa-nav__link" href="/"><span>Home</span></a> -->
+          </li>
+          <li class="usa-nav__primary-item">
+            <!-- <a class="usa-nav__link" href="/about"><span>About</span></a> -->
+            <router-link class="headHovers navBarLinks" to="/about">ABOUT</router-link> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+              aria-controls="extended-nav-section-two"><span>Resources</span></button>
+            <ul id="extended-nav-section-two" class="usa-nav__submenu">
+              <li class="usa-nav__submenu-item">
+                <a href="#">1</a>
+              </li>
+              <li class="usa-nav__submenu-item">
+                <a href="#">2</a>
+              </li>
+              <li class="usa-nav__submenu-item">
+                <a href="#">3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a class="usa-nav__link" href="/metrics"><span>Metrics</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a class="usa-nav__link" href="/search"><span>Search</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a class="usa-nav__link" href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
+          </li>
+        </ul>
+        <div class="usa-nav__secondary" style="bottom: 8.5rem;">
+          
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item">
+              <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
+            </li>
+            <li class="usa-nav__secondary-item">
+              <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT DOT</a>
+            </li>
+            <li class="usa-nav__secondary-item">
+              <a href="https://www.transportation.gov/briefingroom" target="_blank">DOT BREIFING ROOM</a>
+            </li>
+            <li class="usa-nav__secondary-item">
+              <a href="https://www.transportation.gov/our-activities" target="_blank">DOT ACTIVITIES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'DOTHeader',
+  name: "DOTHeader",
   props: {}
-}
+};
 </script>
 
 <style scoped lang="scss">
-
 </style>
 
