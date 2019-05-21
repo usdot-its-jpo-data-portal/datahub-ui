@@ -1,13 +1,19 @@
 <template>
-  <div class="TitleText" style="padding-top: 40px;">
-    <p class="searchHeaderText">EXPLORE OUR DATA</p>
-    <h3 style="font-size: 18px; color: white; text-align: center; margin-top: 10px;">Department of Transportation ITS JPO Data</h3>
-    <h3 style="font-size: 18px; color: white; text-align: center; margin-bottom: 12px;"> Welcome to the ITS JPO public access point for ITS data</h3>
-
-    <label for="mainSearch" class="hidden">Search</label>
-    <input class="mainSearch" id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" v-bind:placeholder="search_placeholder">
-    <button class="searchButton" v-on:click="searchSend(queryText)">SEARCH</button>
-  </div>
+  <section class="usa-hero">
+    <div class="grid-container">
+      <div class="usa-hero__callout">
+        <h1 class="usa-hero__heading">
+          <span class="usa-hero__heading--alt">Explore our data.</span>
+          ITS DataHub Offers and access point to all of ITS JPO's data sets.
+        </h1>
+        <div class="dh-home__main-search__callout-inputs">
+          <label for="mainSearch">Search</label>
+          <input id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" v-bind:placeholder="search_placeholder">
+          <button v-on:click="searchSend(queryText)">SEARCH</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
