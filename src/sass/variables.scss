@@ -1,9 +1,19 @@
 
 // Global Colors
 $dh-color-white: white;
+$dh-color-gray80: #cccccc;
 
+$dh-link_color-default: #005ea2;
+$dh-link_color-hover: #1a4480;
+$dh-link_color-visited: purple;
+$dh-link_text-decoration: underline;
 
 // Footer variables
 $dh-footer-color-primary: $theme-color-base-lightest;
 $dh-footer-color-secondary: #003E7E;
 
+// About page variables
+$dh-about_text-width: 110ex;
+$dh-about_font-size: 16px;
+$dh-about_font-weight: normal;
+$dh-about_list-indent: 5px;
