@@ -1,6 +1,9 @@
 .usa-footer__primary-section {
   @extend .usa-footer__primary-section;
   background-color: $dh-footer-color-primary;
+  a {
+    font-size: 15px;
+  }
 }
 
 .usa-footer__secondary-section {
@@ -75,17 +78,10 @@
   background-repeat:no-repeat;
 }
 
-.usa-social-link--youtube {
+.usa-social-link--instagram {
   @extend .usa-social-link--youtube;
-  background-image:url("/images/icons/youtube15.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/icons/youtube15.svg"), linear-gradient(transparent, transparent);
-  background-repeat:no-repeat;
-}
-
-.usa-social-link--rss {
-  @extend .usa-social-link--rss;
-  background-image:url("/images/icons/rss25.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/icons/rss25.svg"), linear-gradient(transparent, transparent);
+  background-image:url("/images/icons/instagram.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/instagram.svg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
 }
 
