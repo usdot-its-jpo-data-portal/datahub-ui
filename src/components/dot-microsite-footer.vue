@@ -64,7 +64,7 @@
               </div>
               <div class="grid-col-auto">
                 <a id="dh-footer_social-instagram" class="usa-social-link usa-social-link--instagram" href=" https://www.instagram.com/usdot/?hl=en" target="_blank">
-                  <span>YouTube</span>
+                  <span>Instagram</span>
                   <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
                 </a>
               </div>

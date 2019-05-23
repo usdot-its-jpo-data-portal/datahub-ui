@@ -64,17 +64,11 @@ describe('DOT Microsite Footer', () => {
     expect(v.is('a')).toBe(true);
     expect(v.text()).toMatch('Twitter');
   });
-  it('has a link to YouTube', () => {
+  it('has a link to Instagram', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-    let v = wrapper.find('#dh-footer_social-youtube');
+    let v = wrapper.find('#dh-footer_social-instagram');
     expect(v.is('a')).toBe(true);
-    expect(v.text()).toMatch('YouTube');
-  });
-  it('has a link to RSS', () => {
-    const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-    let v = wrapper.find('#dh-footer_social-rss');
-    expect(v.is('a')).toBe(true);
-    expect(v.text()).toMatch('RSS');
+    expect(v.text()).toMatch('Instagram');
   });
   it('has contact us text title', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
