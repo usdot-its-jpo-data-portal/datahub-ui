@@ -1,0 +1,64 @@
+.usa-nav__secondary-links .usa-nav__secondary-item a{
+    //color: $dh-color-text-light;
+}
+// height: 35px; margin-left: 25px; margin-top: 8px;
+
+#nav_top{
+    background-color: $dh-color-dot-banner-background; 
+    //position: absolute; 
+    //top: -8rem; 
+    width: 100%;
+    height: 5rem;
+    height: units(10);
+    padding-top: units(2.5);
+    padding-bottom: units(2.5);
+}
+
+#dot_logo
+{
+    height: units(5);
+}
+
+#nav_top .usa-banner__inner{
+    @extend .usa-banner__inner;
+    //padding-left: units(4) !important;
+}
+
+.usa-nav__primary{
+    @extend .usa-nav__primary;
+    > .usa-nav__primary-item{
+        @extend .usa-nav__primary-item;
+        > a{
+            color: $dh-color-primary-blue-dark;
+            @include no-knockout-font-smoothing;
+        }
+    }
+    button{
+        color: $dh-color-primary-blue-dark;
+    }
+}
+.site-banner{
+    background-color: #1b1b1b;
+    & .usa-banner__header-text{
+        color: $dh-color-text-light;
+    }
+    & .usa-banner__button{
+        
+        &::after{
+            background-image:url("/images/angle-arrow-down-primary_adadad.svg");
+        }
+        &:hover{
+            color: $dh-color-text-light;
+            ::after{
+                background-image:url("/img/angle-arrow-down-primary_ffffff.svg");
+            }
+        }
+    }
+
+    & #gov-banner,
+    & .usa-banner__button{
+        color: $dh-color-text-light;
+    }
+
+
+}
