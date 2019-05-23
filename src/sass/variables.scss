@@ -2,11 +2,12 @@
 // Global Colors
 $dh-color-white: white;
 $dh-color-black: black;
+$dh-color-navy: #162E51;
 
 
 // Footer variables
 $dh-footer-color-primary: $theme-color-base-lightest;
-$dh-footer-color-secondary: #003E7E;
+$dh-footer-color-secondary: $dh-color-navy;
 
 // Home : Category Search
 $dh-home-color_category-search-background: #142350;
