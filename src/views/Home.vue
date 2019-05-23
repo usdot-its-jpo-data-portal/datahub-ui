@@ -1,10 +1,10 @@
 <template>
-  <div class="home">
+  <div >
     <div class="searchHeader">
       <DOTSearchMain></DOTSearchMain>
     </div>
-    <DOTCategorySearch></DOTCategorySearch>
     <DOTFeaturedData></DOTFeaturedData>
+    <DOTCategorySearch></DOTCategorySearch>
   </div>
 </template>
 
