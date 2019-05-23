@@ -1,6 +1,9 @@
 .usa-footer__primary-section {
   @extend .usa-footer__primary-section;
   background-color: $dh-footer-color-primary;
+  a {
+    font-size: units(2);
+  }
 }
 
 .usa-footer__secondary-section {
@@ -15,24 +18,24 @@
 .usa-footer__logo-img {
   @extend .usa-footer__logo-img;
   padding: 0 !important;
-  height: 50px;
-  width: 267px;
-  max-width: 276px !important;
+  height: units(6);
+  width: units('card-lg')+units(4);
+  max-width: units('card-lg')+units(4) !important;
 }
 
 .usa-footer__logo-img-its {
   @extend .usa-footer__logo-img;
   padding: 0 !important;
-  height: 39px;
-  width: 313px;
-  max-width: 313 !important;
+  height: units(5);
+  width: units('card-lg')+units(8);
+  max-width: units('card-lg')+units(8) !important;
 }
 
 .usa-footer__contact-heading {
   @extend .usa-footer__contact-heading;
   font-weight: bold;
   color: $dh-color-white;
-  font-size: 17px;
+  font-size: units(2);
 }
 
 .usa-footer__address {
@@ -44,7 +47,7 @@
   @extend .usa-footer__contact-info;
   font-weight: bold;
   color: $dh-color-white !important;
-  font-size: 17px;
+  font-size: units(2);
   a {
     color: $dh-color-white !important;
   }
@@ -75,17 +78,10 @@
   background-repeat:no-repeat;
 }
 
-.usa-social-link--youtube {
+.usa-social-link--instagram {
   @extend .usa-social-link--youtube;
-  background-image:url("/images/icons/youtube15.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/icons/youtube15.svg"), linear-gradient(transparent, transparent);
-  background-repeat:no-repeat;
-}
-
-.usa-social-link--rss {
-  @extend .usa-social-link--rss;
-  background-image:url("/images/icons/rss25.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/icons/rss25.svg"), linear-gradient(transparent, transparent);
+  background-image:url("/images/icons/instagram.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/instagram.svg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
 }
 
@@ -94,16 +90,16 @@
 }
 
 .usa-footer__primary-link-icon {
-  height: 10px;
-  width: 10px;
+  height: units(1.5);
+  width: units(1.5);
   background-color: transparent;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
 .usa-footer__primary-link-icon-social {
-  height: 10px;
-  width: 10px;
+  height: units(1.5);
+  width: units(1.5);
   background-color: transparent;
-  margin-top: 25px;
+  margin-top: units(3);
 }

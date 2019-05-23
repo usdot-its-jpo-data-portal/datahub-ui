@@ -1,7 +1,10 @@
 
 // Global Colors
 $dh-color-white: white;
+$dh-color-black: black;
 $dh-color-gray80: #cccccc;
+$dh-color-navy: #162E51;
+$dh-color-lightcyan: #9BFFFF;
 
 $dh-link_color-default: #005ea2;
 $dh-link_color-hover: #1a4480;
@@ -10,7 +13,15 @@ $dh-link_text-decoration: underline;
 
 // Footer variables
 $dh-footer-color-primary: $theme-color-base-lightest;
-$dh-footer-color-secondary: #003E7E;
+$dh-footer-color-secondary: $dh-color-navy;
+
+// Home : Category Search
+$dh-home-color_category-search-background: $dh-color-navy;
+$dh-home-color_featured-search-title: $dh-color-navy;
+$dh-home-color_featured-dataset-background: $dh-color-navy;
+$dh-home-color_main-search_heading-alt: $dh-color-lightcyan;
+$dh-home-color_main-search_callout-background: $dh-color-navy;
+$dh-home-color_main-search_callout-input-background: $dh-color-gray80;
 
 // About page variables
 $dh-about_text-width: units('desktop');
