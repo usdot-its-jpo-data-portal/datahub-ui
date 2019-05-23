@@ -59,7 +59,7 @@ export default {
           url: self.socrata_url + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)'
         }).then( response => {
           self.totalDataCount = response.data.results.length;
-          self.search_placeholder = "search for data sets...";
+          self.search_placeholder = "";
         }, error => { console.error(error)});
     },
         

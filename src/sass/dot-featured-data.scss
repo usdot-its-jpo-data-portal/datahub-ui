@@ -3,8 +3,6 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 100%;
 }
 .dh-home_featured-search-title {
@@ -12,20 +10,20 @@
   width: 100%;
   h3 {
     color: $dh-home-color_featured-search-title;
-    font-size: 38px;
+    font-size: units(5);
     font-weight: bold;
     text-shadow: 1px 1px 1px;
   }
 }
 .dh-home_featured-search-layout {
   justify-items: center;
-  padding-top: 10px;
+  padding-top: units(1);
 }
 .dh-home_featured-search-layout-cell {
-  width: 300px;
-  height: 350px;
-  margin-right: 15px;
-  margin-bottom: 20px;
+  width: units('card-lg')+units(8);
+  height: units('mobile');
+  margin-right: units(2);
+  margin-bottom: units(3);
   a {
     position: relative;
     top: 0;
@@ -35,7 +33,7 @@
     display: block;
     border: solid 1px gray;
     background-color: $dh-home-color_featured-dataset-background;
-    border-radius: 3px;
+    border-radius: units(0.5);
     box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
     transition: all .2s ease-in-out;
     &:hover { 
@@ -50,19 +48,19 @@
       height: 50%;
       .dh-home_featured-search_dataset-name {
         color: $dh-color-white;
-        font-size: 17px;
+        font-size: units(2);
         font-weight: bold;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: units(2);
+        padding-right: units(2);
       }
       .dh-home_featured-search_dataset-description {
         color: $dh-color-white;
-        font-size: 15px;
+        font-size: units(2);
         font-weight: normal;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: units(2);
+        padding-right: units(2);
         overflow: hidden;
-        margin-top: 15px;
+        margin-top: units(2);
       }
     }
   }
