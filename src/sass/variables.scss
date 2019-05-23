@@ -13,7 +13,7 @@ $dh-footer-color-primary: $theme-color-base-lightest;
 $dh-footer-color-secondary: #003E7E;
 
 // About page variables
-$dh-about_text-width: 110ex;
-$dh-about_font-size: 16px;
+$dh-about_text-width: units('desktop');
+$dh-about_font-size: units(2.5);
 $dh-about_font-weight: normal;
-$dh-about_list-indent: 5px;
+$dh-about_list-indent: units(1);
