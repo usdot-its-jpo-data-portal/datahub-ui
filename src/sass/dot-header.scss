@@ -4,7 +4,7 @@
 // height: 35px; margin-left: 25px; margin-top: 8px;
 
 #nav_top{
-    background-color: $dh-color-dot-banner-background; 
+    background-color: $dh-header-color_dot-banner-background; 
     //position: absolute; 
     //top: -8rem; 
     width: 100%;
@@ -29,12 +29,12 @@
     > .usa-nav__primary-item{
         @extend .usa-nav__primary-item;
         > a{
-            color: $dh-color-primary-blue-dark;
+            color: $dh-nav-links_primary-state-default;
             @include no-knockout-font-smoothing;
         }
     }
     button{
-        color: $dh-color-primary-blue-dark;
+        color: $dh-nav-links_primary-state-default;
     }
 }
 .site-banner{

@@ -1,13 +1,48 @@
 
 // Global Colors
 $dh-color-white: white;
-$dh-color-text-light:#ffffff;
-$dh-color-primary-blue-dark: #162E51;
-$dh-color-dot-banner-background: #142350;
+$dh-color-black: black;
+$dh-color-gray80: #cccccc;
+$dh-color-navy: #162E51; //Blue to be used most places - Gio please remove after you read this
+$dh-color-lightcyan: #9BFFFF;
+
+$dh-color-text-light: $dh-color-white;
+$dh-color-primary-blue-custom: #142350; //Blue to be used for Hero on homepage "Explore our data" background color
 $dh-color-paragraph: #333333;
 
+// <a> colors
+$dh-link_color-default: #005ea2;
+$dh-link_color-hover: #1a4480;
+$dh-link_color-visited: purple;
+$dh-link_text-decoration: underline;
+
+// Header variables
+$dh-header-color_dot-banner-background: $dh-color-navy;
+$dh-header-color-primary_title: $dh-color-primary-blue-custom;
+
+// Navigation Variables (part of the header.scss)
+$dh-nav-links_primary-state-default: $dh-color-primary-blue-custom;
+// $dh-nav-links_primary-state-hover: ;
+$dh-nav-links_secondary-state-defualt: #242222;
+// $dh-nav-links_secondary-state-hover: ;
 
 // Footer variables
 $dh-footer-color-primary: $theme-color-base-lightest;
-$dh-footer-color-secondary: #003E7E;
+$dh-footer-color-secondary: $dh-color-navy; 
 
+
+
+
+// Home : Category Search
+$dh-home-color_category-search-background: $dh-color-navy;
+$dh-home-color_featured-search-title: $dh-color-navy;
+$dh-home-color_featured-dataset-background: $dh-color-navy;
+$dh-home-color_main-search_heading-alt: $dh-color-lightcyan;
+$dh-home-color_main-search_callout-background: $dh-color-navy;
+$dh-home-color_main-search_callout-input-background: $dh-color-gray80;
+
+// About page variables
+$dh-about_text-width: units('desktop');
+$dh-about_font-size: units(2.5);
+$dh-about_font-weight: normal;
+$dh-about_list-indent: units(1);

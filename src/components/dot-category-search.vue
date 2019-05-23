@@ -1,33 +1,26 @@
 <template>
-  <div id="categoryDiv">
-    <img
-      class="contentIndicator"
-      style="top: -57px"
-      src="images/icons/ContentIndicator.png"
-      alt="Content Indicator Arrow"
-    >
-    <div id="CategoryAreaHead">
-      <p class="headingFont" style="color: #3585B2">POPULAR DATA SET TOPICS</p>
+  <div class="dh-home_category-search-wrapper">
+
+    <div class="grid-container">
+      <div class="grid-row" style="solid 1px green;">
+        <div class="grid-col-auto dh-home_category-search-title">
+          <h3>POPULAR DATA SET SEARCHES</h3>
+        </div>
+      </div>
     </div>
 
-    <div id="categoryArea" class="contentArea categorylayout">
-      <div id="bulmaDataset" class="columns is-multiline" style="padding: 0 0 5% 0; height: 100%">
-        <div class="bulmaCategories column is-one-quarter" v-for="btn in buttons" :key="btn.id">
+    <div class="grid-container">
+      <div class="grid-row grid-gap-1 dh-home_category-search-layout">
+        <div class="grid-col-auto grid-offset-1 dh-home_category-search-layout-cell" v-for="btn in buttons" :key="btn.id">
           <button
             v-bind:id="btn.id"
-            class="topic"
-            vertical-align="middle"
-            style="padding-bottom: 10px;"
             v-on:click="searchSend(btn.labels)"
           >
             <img
               v-bind:src="btn.imgIcons"
               v-bind:alt="btn.altText"
-              style="width: 55%; height: 55%; margin-bottom: 20%;"
-              class="RegularThumbnail"
             >
-            <img v-bind:src="btn.rolloverImages" v-bind:alt="btn.altText" class="HoverThumbnail">
-            <p class="categoryText" style="text-transform: uppercase;">{{btn.labels}}</p>
+            <p>{{btn.labels}}</p>
           </button>
         </div>
       </div>

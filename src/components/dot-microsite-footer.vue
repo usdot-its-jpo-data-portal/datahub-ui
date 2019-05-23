@@ -22,7 +22,7 @@
             </a>
           </li>
           <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-            <a id="dh-footer_visualizations-link" class="usa-footer__primary-link" href="https://its.dot.gov/data/visualizations/ " target="_blank">
+            <a id="dh-footer_visualizations-link" class="usa-footer__primary-link" href="/visualizations/index.html" target="_blank">
               Visualizations
               <img class="usa-footer__primary-link-icon" src="/images/icons/external-tabs.svg" alt>
             </a>
@@ -63,14 +63,8 @@
                 </a>
               </div>
               <div class="grid-col-auto">
-                <a id="dh-footer_social-youtube" class="usa-social-link usa-social-link--youtube" href="https://www.youtube.com/user/usdotgov" target="_blank">
-                  <span>YouTube</span>
-                  <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
-                </a>
-              </div>
-              <div class="grid-col-auto">
-                <a id="dh-footer_social-rss" class="usa-social-link usa-social-link--rss" href="javascript:void(0);">
-                  <span>RSS</span>
+                <a id="dh-footer_social-instagram" class="usa-social-link usa-social-link--instagram" href=" https://www.instagram.com/usdot/?hl=en" target="_blank">
+                  <span>Instagram</span>
                   <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
                 </a>
               </div>
