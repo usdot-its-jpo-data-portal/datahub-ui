@@ -17,7 +17,7 @@
       @extend .usa-hero__heading;
       font-size: units(1)+units(0.5);
       font-weight: bold;
-      color: $dh-color-white;
+      color: $dh-color-text-light;
   
       .usa-hero__heading--alt {
         @extend .usa-hero__heading--alt;

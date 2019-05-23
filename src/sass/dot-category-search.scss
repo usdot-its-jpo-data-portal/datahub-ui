@@ -7,10 +7,10 @@
   text-align: center;
   width: 100%;
   h3 {
-    color: $dh-color-white;
+    color: $dh-color-text-light;
     font-size: units(5);
     font-weight: bold;
-    text-shadow: 1px 1px 1px;
+    // text-shadow: 1px 1px 1px;
   }
 }
 .dh-home_category-search-layout {
@@ -41,7 +41,7 @@
     p {
       font-size: units(2.5);
       font-weight: bold;
-      color: $dh-color-white;
+      color: $dh-color-text-light;
     }
   }
 }

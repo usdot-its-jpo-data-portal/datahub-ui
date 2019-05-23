@@ -12,7 +12,7 @@
     color: $dh-home-color_featured-search-title;
     font-size: units(5);
     font-weight: bold;
-    text-shadow: 1px 1px 1px;
+    // text-shadow: 1px 1px 1px;
   }
 }
 .dh-home_featured-search-layout {
@@ -47,14 +47,14 @@
       width: 100%;
       height: 50%;
       .dh-home_featured-search_dataset-name {
-        color: $dh-color-white;
+        color: $dh-color-text-light;
         font-size: units(2);
         font-weight: bold;
         padding-left: units(2);
         padding-right: units(2);
       }
       .dh-home_featured-search_dataset-description {
-        color: $dh-color-white;
+        color: $dh-color-text-light;
         font-size: units(2);
         font-weight: normal;
         padding-left: units(2);

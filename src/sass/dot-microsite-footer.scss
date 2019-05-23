@@ -34,22 +34,22 @@
 .usa-footer__contact-heading {
   @extend .usa-footer__contact-heading;
   font-weight: bold;
-  color: $dh-color-white;
+  color: $dh-color-text-light;
   font-size: units(2);
 }
 
 .usa-footer__address {
   @extend .usa-footer__address;
-  color: $dh-color-white !important;
+  color: $dh-color-text-light !important;
 }
 
 .usa-footer__contact-info {
   @extend .usa-footer__contact-info;
   font-weight: bold;
-  color: $dh-color-white !important;
+  color: $dh-color-text-light !important;
   font-size: units(2);
   a {
-    color: $dh-color-white !important;
+    color: $dh-color-text-light !important;
   }
 }
 
