@@ -1,3 +1,16 @@
+.usa-nav {
+    @extend .usa-nav;
+    margin-bottom: units(1);
+}
+
+.usa-logo__text {
+    @extend .usa-logo__text;
+    a {
+        font-size: units(6);
+        color: $dh-color-navy;
+        text-decoration: none;
+    }
+}
 .usa-nav__secondary-links .usa-nav__secondary-item a{
     //color: $dh-color-text-light;
 }
@@ -61,4 +74,28 @@
     }
 
 
+}
+
+.usa-nav__primary-item {
+    @extend .usa-nav__primary-item;
+    a, button {
+        &:hover {
+            color: lighter($dh-color-navy,10%);
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0 !important;
+                bottom: -4px !important;
+                height: 4px;
+                background-color:$dh-color-green !important;
+                width: 100%;
+                transition: width .25s;
+            }
+        }
+        &.router-link-exact-active {
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            border-bottom-color: $dh-color-navy;
+        }
+    }
 }
