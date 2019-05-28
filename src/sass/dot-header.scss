@@ -1,27 +1,46 @@
-.usa-nav__secondary-links .usa-nav__secondary-item a{
-    //color: $dh-color-text-light;
+/*styles unique to the black banner with US flag*/
+.site-banner{
+    background-color: #1b1b1b;
+    & .usa-banner__header-text,
+    & #gov-banner{
+        color: $dh-color-text-light;
+    }
+    & .usa-banner__button{
+        color: #adadad;
+        &::after{
+            background-image:url("/images/angle-arrow-down-primary_adadad.svg");
+        }
+        &:hover{
+            color: $dh-color-text-light;
+            ::after{
+                background-image:url("/images/angle-arrow-down-white.svg");
+            }
+        }
+        &[aria-expanded=true]:after{
+            background-image:url("/images/icons/angle-arrow-up-white.svg")
+        }
+    }
 }
-// height: 35px; margin-left: 25px; margin-top: 8px;
 
-#nav_top{
+
+#nav_dot_banner{
     background-color: $dh-header-color_dot-banner-background; 
-    //position: absolute; 
-    //top: -8rem; 
     width: 100%;
-    height: 5rem;
-    height: units(10);
-    padding-top: units(2.5);
-    padding-bottom: units(2.5);
-}
-
-#dot_logo
-{
-    height: units(5);
-}
-
-#nav_top .usa-banner__inner{
-    @extend .usa-banner__inner;
-    //padding-left: units(4) !important;
+    height: units(7);
+    padding-top: units(1.5);
+    padding-bottom: units(1.5);
+    & #dot_logo{
+        height: units(4);
+    }
+    @include at-media ($theme-navigation-width){
+        height: units(10);
+        padding-top: units(2.5);
+        padding-bottom: units(2.5);
+        & #dot_logo
+        {
+            height: units(5);
+        }
+    }
 }
 
 .usa-nav__primary{
@@ -37,28 +56,31 @@
         color: $dh-nav-links_primary-state-default;
     }
 }
-.site-banner{
-    background-color: #1b1b1b;
-    & .usa-banner__header-text{
-        color: $dh-color-text-light;
-    }
-    & .usa-banner__button{
-        
-        &::after{
-            background-image:url("/images/angle-arrow-down-primary_adadad.svg");
+
+.usa-nav__secondary{
+    @extend .usa-nav__secondary;
+    @include at-media ($theme-navigation-width){
+        bottom: 4rem;
+        & .usa-nav__secondary-links a{
+            color: $dh-nav-links_secondary-state-defualt;
+            &:hover{
+                color: $dh-nav-links_secondary-state-hover;
+            }
         }
-        &:hover{
-            color: $dh-color-text-light;
-            ::after{
-                background-image:url("/img/angle-arrow-down-primary_ffffff.svg");
+        & #addthis_wrapper{
+            margin-top: 30px;
+            float: right;
+            & #addthis_header{
+                margin-top: 0px;
+                margin-bottom: 6px;
+                font-size: 15px;
+                font-weight:600;
+                color: $dh-color-primary-blue-custom;
             }
         }
     }
+}
 
-    & #gov-banner,
-    & .usa-banner__button{
-        color: $dh-color-text-light;
-    }
-
-
+#extended-logo a{
+    color: $dh-nav-links_primary-state-default;
 }

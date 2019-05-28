@@ -24,7 +24,7 @@ $dh-header-color-primary_title: $dh-color-primary-blue-custom;
 $dh-nav-links_primary-state-default: $dh-color-primary-blue-custom;
 // $dh-nav-links_primary-state-hover: ;
 $dh-nav-links_secondary-state-defualt: #242222;
-// $dh-nav-links_secondary-state-hover: ;
+$dh-nav-links_secondary-state-hover: $dh-link_color-default;
 
 // Footer variables
 $dh-footer-color-primary: $theme-color-base-lightest;

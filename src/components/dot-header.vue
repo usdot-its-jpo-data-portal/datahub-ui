@@ -25,7 +25,7 @@
           <div class="usa-banner__guidance tablet:grid-col-6">
             <img
               class="usa-banner__icon usa-media-block__img"
-              src="/images/icon/icon-dot-gov.svg"
+              src="/images/icons/icon-dot-gov.svg"
               alt="Dot gov">
             <div class="usa-media-block__body">
               <p>
@@ -38,7 +38,7 @@
           <div class="usa-banner__guidance tablet:grid-col-6">
             <img
               class="usa-banner__icon usa-media-block__img"
-              src="/images/icon-https.svg"
+              src="/images/icons/icon-https.svg"
               alt="Https">
             <div class="usa-media-block__body">
               <p>
@@ -57,7 +57,7 @@
   
   <div class="usa-overlay"></div>
   <header class="usa-header usa-header--extended" role="banner">
-    <div id="nav_top" class="usa-banner__header">
+    <div id="nav_dot_banner" class="usa-banner__header">
       <div class="usa-banner__inner">
         <a style="background: none" href="https://transportation.gov">
           <img id="dot_logo" src="/images/dot_logo.png" style="" alt="Department of Transportation logo">
@@ -108,22 +108,29 @@
             <a class="usa-nav__link" href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
           </li>
         </ul>
-        <div class="usa-nav__secondary" style="bottom: 8.5rem;">
+        <div class="usa-nav__secondary" style="">
           
           <ul class="usa-nav__secondary-links">
             <li class="usa-nav__secondary-item">
               <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
             </li>
             <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT DOT</a>
+              <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
             </li>
             <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/briefingroom" target="_blank">DOT BREIFING ROOM</a>
+              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BREIFING ROOM</a>
             </li>
             <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/our-activities" target="_blank">DOT ACTIVITIES</a>
+              <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
             </li>
           </ul>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div id="addthis_wrapper">
+                  <p id="addthis_header">Share</p>
+                  <div class="addthis_inline_share_toolbox"></div>
+                </div>
+            
         </div>
       </div>
     </nav>
