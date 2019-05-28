@@ -22,7 +22,7 @@
 .dh-home_category-search-layout-cell {
   padding-bottom: units(3);
   button {
-    height: units(15);
+    height: units('card');
     width: units(15);
     margin-bottom: units(3);
     background-color: transparent;
@@ -30,7 +30,7 @@
     transition: all .2s ease-in-out;
     &:hover { 
       transform: scale(1.1);
-      text-transform: uppercase;
+      // text-transform: uppercase;
     }
     img {
       height: units(10);

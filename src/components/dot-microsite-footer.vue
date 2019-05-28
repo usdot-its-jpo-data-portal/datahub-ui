@@ -4,15 +4,15 @@
       <nav class="usa-footer__nav">
         <ul class="add-list-reset grid-row grid-gap">
           <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-            <a id="dh-footer_sdc-link" class="usa-footer__primary-link" href="https://its.dot.gov/data/secure/index.html" target="_blank">
-              SDC Page
-              <img class="usa-footer__primary-link-icon" src="/images/icons/external-tabs.svg" alt>
+            <a id="dh-footer_sandbox-link" class="usa-footer__primary-link" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" target="_blank">
+              Sandbox Page
+              <img class="usa-footer__primary-link-icon" src="/images/icons/external-link.svg" alt>
             </a>
           </li>
           <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
-            <a id="dh-footer_sandbox-link" class="usa-footer__primary-link" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" target="_blank">
-              Link to Sandbox
-              <img class="usa-footer__primary-link-icon" src="/images/icons/external-link.svg" alt>
+            <a id="dh-footer_sdc-link" class="usa-footer__primary-link" href="https://its.dot.gov/data/secure/index.html" target="_blank">
+              SDC Page
+              <img class="usa-footer__primary-link-icon" src="/images/icons/external-tabs.svg" alt>
             </a>
           </li>
           <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
@@ -21,9 +21,9 @@
               <img class="usa-footer__primary-link-icon" src="/images/icons/external-tabs.svg" alt>
             </a>
           </li>
-          <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
+          <li class="mobile-lg:grid-col-4 desktop:grid-col-3 usa-footer__primary-content">
             <a id="dh-footer_visualizations-link" class="usa-footer__primary-link" href="/visualizations/index.html" target="_blank">
-              Visualizations
+              Data Visualizations
               <img class="usa-footer__primary-link-icon" src="/images/icons/external-tabs.svg" alt>
             </a>
           </li>
