@@ -28,6 +28,10 @@
       }
     }
     .dh-home__main-search__callout-inputs {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: flex-start;
       margin-top: units(4);
       label {
         display: none;
