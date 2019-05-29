@@ -60,7 +60,7 @@
 .usa-nav__secondary{
     @extend .usa-nav__secondary;
     @include at-media ($theme-navigation-width){
-        bottom: 4rem;
+        bottom: 0.5rem;
         & .usa-nav__secondary-links a{
             color: $dh-nav-links_secondary-state-defualt;
             &:hover{
@@ -68,21 +68,55 @@
             }
         }
         & #addthis_wrapper{
-            margin-top: 30px;
+            margin-top: 20px;
             float: right;
             & #addthis_header{
                 margin-top: 0px;
                 margin-bottom: 6px;
                 font-size: 15px;
                 font-weight:600;
-                color: $dh-color-primary-blue-custom;
+                color: $dh-color-primary-blue;
+            }
+        }
+        & #followus_wrapper{
+            margin-top: 20px;
+            margin-left: 40px;
+            float: right;
+            & #followus_header{
+                margin-top: 0px;
+                margin-bottom: 6px;
+                font-size: 15px;
+                font-weight:600;
+                color: $dh-color-primary-blue;
+            }
+        }
+        .usa-social-link.dh-follow-us{
+            height: auto;
+            width: auto;
+        }
+
+        #followus_wrapper{
+            & .usa-nav__secondary-links .usa-nav__secondary-item + .usa-nav__secondary-item::before{
+                content: none;
+            }
+            & .usa-nav__secondary-links{
+                height: 35px;
+                margin-bottom: 0px;
+            }
+            & .usa-nav__secondary-item:first-child{
+                padding-left: 0px;
             }
         }
     }
 }
 
-#extended-logo a{
-    color: $dh-nav-links_primary-state-default;
+#extended-logo{
+    & a{
+        color: $dh-nav-links_primary-state-default;
+    }
+    @include at-media($theme-navigation-width) {
+        margin-top: 0px;
+    }
 }
 
 .usa-nav__primary-item {
@@ -106,5 +140,13 @@
             border-bottom-width: 4px;
             border-bottom-color: $dh-color-navy;
         }
+    }
+}
+
+#dh-nav{
+    @include at-media($theme-navigation-width) {
+        border-top: none;
+        border-bottom: units(1px) solid color('base-lighter');
+        padding-bottom: units(1.5)
     }
 }

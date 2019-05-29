@@ -4,7 +4,7 @@
     <div class="grid-container">
       <div class="grid-row" style="solid 1px green;">
         <div class="grid-col-auto dh-home_category-search-title">
-          <h3>POPULAR DATA SET SEARCHES</h3>
+          <h3>RECOMMENDED DATA SET SEARCHES</h3>
         </div>
       </div>
     </div>

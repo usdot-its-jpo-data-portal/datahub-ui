@@ -2,14 +2,14 @@
   <section class="usa-hero">
     <div class="grid-container">
       <div class="usa-hero__callout">
-        <h1 class="usa-hero__heading">
-          <span class="usa-hero__heading--alt">Explore our data.</span>
-          ITS DataHub Offers and access point to all of ITS JPO's data sets.
+        <h1 class="usa-hero__heading" id="hero_text">
+          <span class="usa-hero__heading--alt">EXPLORE OUR DATA!</span>
+          Welcome to the Department of Transporation public access point for ITS JPO Data
         </h1>
         <div class="dh-home__main-search__callout-inputs">
           <label for="mainSearch">Search</label>
           <input id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" v-bind:placeholder="search_placeholder">
-          <button v-on:click="searchSend(queryText)">SEARCH</button>
+          <button v-on:click="searchSend(queryText)">Search</button>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@ export default {
   data: function(){
     return{
         background_image: '',//Background image for search bar, set in load_json
-        search_placeholder: '',//Placeholder text for search bar on home page
+        search_placeholder: 'Find Primary and Derived Research Data',//Placeholder text for search bar on home page
         socrata_url: 'https://api.us.socrata.com/api/catalog/v1?q=',//URL for Socrata API
         socrata_domain: 'data.transportation.gov',//Domain of Socrata site to search, set in load_json
         totalDataCount: 0

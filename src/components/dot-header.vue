@@ -71,7 +71,7 @@
       <button class="usa-menu-btn">Menu</button>
     </div>
     
-    <nav role="navigation" class="usa-nav">
+    <nav role="navigation" class="usa-nav" id="dh-nav">
       
       <div class="usa-nav__inner"><button class="usa-nav__close"><img src="/images/close.svg" alt="close"></button>
         <ul class="usa-nav__primary usa-accordion">
@@ -124,12 +124,37 @@
               <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
             </li>
           </ul>
-
+          <div>
+                
+                <div id="followus_wrapper">
+                    <p id="followus_header">Follow Us</p>
+                    <ul class="usa-nav__secondary-links">
+                      <li class="usa-nav__secondary-item">
+                        <a class="usa-social-link dh-follow-us" target="_blank">
+                          <span>Follow us on Facebook</span>
+                          <img src="/images/icons/facebook_logo.svg" class="" style="width: 1.9rem; height: auto;">
+                        </a>
+                      </li>
+                      <li class="usa-nav__secondary-item">
+                        <a class="usa-social-link dh-follow-us" target="_blank">
+                          <span>Follow us on Twitter</span>
+                          <img src="/images/icons/Twitter_Social_Icon_Circle_Color.svg" class="" style="width: 1.9rem; height: auto;">
+                        </a>
+                      </li>
+                      <li class="usa-nav__secondary-item">
+                        <a class="usa-social-link dh-follow-us" target="_blank">
+                          <span>Follow us on Twitter</span>
+                          <img src="/images/icons/github_logo.svg" class="" style="width: 1.9rem; height: auto;">
+                        </a>
+                      </li>
+                    </ul>
+                </div>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div id="addthis_wrapper">
-                  <p id="addthis_header">Share</p>
-                  <div class="addthis_inline_share_toolbox"></div>
+                    <p id="addthis_header">Share</p>
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
+          </div>
             
         </div>
       </div>

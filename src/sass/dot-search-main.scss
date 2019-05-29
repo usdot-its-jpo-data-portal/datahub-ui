@@ -1,28 +1,32 @@
 .usa-hero {
   @extend .usa-hero;
-  background-image:url("/images/header_background.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/header_background.png"), linear-gradient(transparent, transparent);
+  background-image:url("/images/header_background_new.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/header_background_new.png"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
   .usa-hero__callout {
     @extend .usa-hero__callout;
-    width: units('mobile-lg')+units(4);
-    max-width: units('mobile-lg')+units(4);
+    width: units('mobile-lg')+units(1);
+    max-width: units('mobile-lg')+units(1);
     height: units('card-lg');
     background-color: $dh-home-color_main-search_callout-background;
     box-shadow: 4px 4px 4px ligther($dh-color-black,50%);
+    margin-left: units(6);
+    border-radius: 6px;
     h1 {
       text-align: left;
     }
     .usa-hero__heading {
       @extend .usa-hero__heading;
-      font-size: units(1)+units(0.5);
+      font-size: units(2.5);
       font-weight: bold;
       color: $dh-color-text-light;
+      //font-family: $theme-font-type-sans;
+      @include typeset('sans', 'md');
   
       .usa-hero__heading--alt {
         @extend .usa-hero__heading--alt;
-        margin-bottom: units(4);
-        font-size: units(5);
+        margin-bottom: units(1);
+        font-size: units(4);
         font-weight: bold;
         color: $dh-home-color_main-search_heading-alt;
       }
@@ -32,7 +36,7 @@
       flex-direction: row;
       align-content: center;
       justify-content: flex-start;
-      margin-top: units(4);
+      margin-top: units(2);
       label {
         display: none;
       }
@@ -40,7 +44,7 @@
         height: units(5);
         width: units('mobile');
         background: $dh-home-color_main-search_callout-input-background;
-        border: 1px solid $dh-color-gray80;
+        border: 1px solid $dh-color-primary-blue;
         border-top-left-radius: units(0.5);
         border-bottom-left-radius: units(0.5);
         font-size: units(3);
@@ -55,10 +59,11 @@
   
         /* background */
         background-color: $dh-home-color_main-search_heading-alt;
-        border-left: none;
-        border-top: 1px solid $dh-home-color_main-search_heading-alt;
-        border-bottom: 1px solid $dh-home-color_main-search_heading-alt;
-        border-right: 1px solid $dh-home-color_main-search_heading-alt;
+        border: 1px solid $dh-color-primary-blue;
+        // border-left: none;
+        // border-top: 1px solid $dh-home-color_main-search_heading-alt;
+        // border-bottom: 1px solid $dh-home-color_main-search_heading-alt;
+        // border-right: 1px solid $dh-home-color_main-search_heading-alt;
         border-top-right-radius: units(0.5);
         border-bottom-right-radius: units(0.5);
   

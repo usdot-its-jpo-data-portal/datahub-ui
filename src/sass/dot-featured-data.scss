@@ -1,7 +1,7 @@
 .dh-home_featured-search-wrapper {
   background: url('/images/CategoryBackground.png');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center -2rem;
   background-size: cover;
   width: 100%;
 }
@@ -12,6 +12,8 @@
     color: $dh-home-color_featured-search-title;
     font-size: units(5);
     font-weight: bold;
+    margin-top: units(4);
+    margin-bottom: units(2.5); 
     // text-shadow: 1px 1px 1px;
   }
 }
@@ -23,7 +25,7 @@
   width: units('card-lg')+units(8);
   height: units('mobile');
   margin-right: units(2);
-  margin-bottom: units(3);
+  margin-bottom: units(6);
   a {
     position: relative;
     top: 0;
@@ -51,6 +53,7 @@
         color: $dh-color-text-light;
         font-size: units(2);
         font-weight: bold;
+        padding-top: .4rem;
         padding-left: units(2);
         padding-right: units(2);
       }

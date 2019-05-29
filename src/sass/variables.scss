@@ -8,8 +8,10 @@ $dh-color-lightcyan: #9BFFFF;
 $dh-color-green: #066A07;
 
 $dh-color-text-light: $dh-color-white;
-$dh-color-primary-blue-custom: #142350; //Blue to be used for Hero on homepage "Explore our data" background color
+$dh-color-blue-custom: #142350; //Blue to be used for Hero on homepage "Explore our data" background color
 $dh-color-paragraph: #333333;
+$dh-color-primary-blue: $dh-color-blue-custom;
+$dh-color-input-box-background: #f5f1f1;
 
 // <a> colors
 $dh-link_color-default: #005ea2;
@@ -18,29 +20,29 @@ $dh-link_color-visited: purple;
 $dh-link_text-decoration: underline;
 
 // Header variables
-$dh-header-color_dot-banner-background: $dh-color-navy;
-$dh-header-color-primary_title: $dh-color-primary-blue-custom;
+$dh-header-color_dot-banner-background: $dh-color-primary-blue ;
+$dh-header-color-primary_title: $dh-color-primary-blue;
 
 // Navigation Variables (part of the header.scss)
-$dh-nav-links_primary-state-default: $dh-color-primary-blue-custom;
+$dh-nav-links_primary-state-default: $dh-color-primary-blue;
 // $dh-nav-links_primary-state-hover: ;
 $dh-nav-links_secondary-state-defualt: #242222;
 $dh-nav-links_secondary-state-hover: $dh-link_color-default;
 
 // Footer variables
 $dh-footer-color-primary: $theme-color-base-lightest;
-$dh-footer-color-secondary: $dh-color-navy; 
+$dh-footer-color-secondary: $dh-color-primary-blue; 
 
 
 
 
 // Home : Category Search
-$dh-home-color_category-search-background: $dh-color-navy;
-$dh-home-color_featured-search-title: $dh-color-navy;
-$dh-home-color_featured-dataset-background: $dh-color-navy;
+$dh-home-color_category-search-background: $dh-color-primary-blue;
+$dh-home-color_featured-search-title: $dh-color-primary-blue;
+$dh-home-color_featured-dataset-background: $dh-color-primary-blue;
 $dh-home-color_main-search_heading-alt: $dh-color-lightcyan;
-$dh-home-color_main-search_callout-background: $dh-color-navy;
-$dh-home-color_main-search_callout-input-background: $dh-color-gray80;
+$dh-home-color_main-search_callout-background: $dh-color-primary-blue;
+$dh-home-color_main-search_callout-input-background: $dh-color-input-box-background;
 
 // About page variables
 $dh-about_text-width: units('desktop');
