@@ -118,7 +118,7 @@
               <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
             </li>
             <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BREIFING ROOM</a>
+              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
             </li>
             <li class="usa-nav__secondary-item">
               <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
@@ -130,21 +130,21 @@
                     <p id="followus_header">Follow Us</p>
                     <ul class="usa-nav__secondary-links">
                       <li class="usa-nav__secondary-item">
-                        <a class="usa-social-link dh-follow-us" target="_blank">
+                        <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
                           <span>Follow us on Facebook</span>
-                          <img src="/images/icons/facebook_logo.svg" class="" style="width: 1.9rem; height: auto;">
+                          <img src="/images/icons/facebook_logo.svg" class="header-social-icons" style="">
                         </a>
                       </li>
                       <li class="usa-nav__secondary-item">
-                        <a class="usa-social-link dh-follow-us" target="_blank">
+                        <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
                           <span>Follow us on Twitter</span>
-                          <img src="/images/icons/Twitter_Social_Icon_Circle_Color.svg" class="" style="width: 1.9rem; height: auto;">
+                          <img src="/images/icons/Twitter_Social_Icon_Circle_Color.svg" class="header-social-icons" style="">
                         </a>
                       </li>
                       <li class="usa-nav__secondary-item">
-                        <a class="usa-social-link dh-follow-us" target="_blank">
-                          <span>Follow us on Twitter</span>
-                          <img src="/images/icons/github_logo.svg" class="" style="width: 1.9rem; height: auto;">
+                        <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
+                          <span>Follow us on GitHub</span>
+                          <img src="/images/icons/github_logo.svg" class="header-social-icons" style="">
                         </a>
                       </li>
                     </ul>

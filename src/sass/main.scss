@@ -1,4 +1,7 @@
+@import './uswds-theme-utilities.scss';
+@import './override_uswds.scss';
 @import '../../node_modules/uswds/src/stylesheets/uswds.scss';
+
 @import './variables.scss';
 @import './dot-microsite-footer.scss';
 @import './dot-header.scss';
