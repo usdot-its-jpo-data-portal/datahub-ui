@@ -118,7 +118,7 @@
               <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
             </li>
             <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BREIFING ROOM</a>
+              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
             </li>
             <li class="usa-nav__secondary-item">
               <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
@@ -143,7 +143,7 @@
                       </li>
                       <li class="usa-nav__secondary-item">
                         <a class="usa-social-link dh-follow-us" target="_blank">
-                          <span>Follow us on Twitter</span>
+                          <span>Follow us on Github</span>
                           <img src="/images/icons/github_logo.svg" class="" style="width: 1.9rem; height: auto;">
                         </a>
                       </li>
