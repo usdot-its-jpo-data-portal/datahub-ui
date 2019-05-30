@@ -8,7 +8,7 @@
         </h1>
         <div class="dh-home__main-search__callout-inputs">
           <label for="mainSearch">Search</label>
-          <input id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" v-bind:placeholder="search_placeholder">
+          <input id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
           <button v-on:click="searchSend(queryText)">Search</button>
         </div>
       </div>
@@ -25,7 +25,6 @@ export default {
   data: function(){
     return{
         background_image: '',//Background image for search bar, set in load_json
-        search_placeholder: 'Find Primary and Derived Research Data',//Placeholder text for search bar on home page
         socrata_url: 'https://api.us.socrata.com/api/catalog/v1?q=',//URL for Socrata API
         socrata_domain: 'data.transportation.gov',//Domain of Socrata site to search, set in load_json
         totalDataCount: 0
@@ -35,11 +34,15 @@ export default {
     queryText : {
         get: function() { return this.$store.state.queryString; },
         set: function(val) { this.$store.state.queryString = val; }
+    },
+    search_placeholder : {
+        get: function() {return 'Find Primary and Derived Research Data'; },
+        set: function(){}
     }
   },
   mounted: function() {
     if(this.$router.currentRoute.name === 'home') {
-      this.$store.commit('searchText', '');
+      this.$store.commit('searchText', null);
     }
   },
   // Function runs on page load
