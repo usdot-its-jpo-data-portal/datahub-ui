@@ -51,6 +51,18 @@
         color: $dh-color-black;
         padding-left: units(0.5);
       }
+      input::-webkit-input-placeholder {
+        font-size: units(2);
+      }
+      input::-moz-placeholder {
+        font-size: units(2);
+      }
+      input::-ms-input-placeholder {
+        font-size: units(2);
+      }
+      input::placeholder {
+        font-size: units(2);
+      }
       button {
          /* position and size */
         position: relative;

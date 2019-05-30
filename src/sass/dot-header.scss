@@ -142,6 +142,9 @@
             border-bottom-style: solid;
             border-bottom-width: 4px;
             border-bottom-color: $dh-color-navy;
+            &:after {
+                width: 0;
+            }
         }
     }
 }
