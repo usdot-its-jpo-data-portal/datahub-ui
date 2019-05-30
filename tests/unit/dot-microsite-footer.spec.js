@@ -5,17 +5,17 @@ describe('DOT Microsite Footer', () => {
   it('constains a text to the SDC page', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
     let v = wrapper.find('#dh-footer_sdc-link');
-    expect(v.text()).toMatch('SDC Page');
+    expect(v.text()).toMatch('Secure Data Commons');
   });
   it('the link of the SDC Page contains an icon', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
     let v = wrapper.find('#dh-footer_sdc-link');
     expect(v.html().includes('<img src="')).toBe(true);
   });
-  it('constains a text Link to Sandbox', () => {
+  it('constains a text Sandbox Data', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
     let v = wrapper.find('#dh-footer_sandbox-link');
-    expect(v.text()).toMatch('Link to Sandbox');
+    expect(v.text()).toMatch('Sandbox Data');
   });
   it('the link of the Sandbox contains an icon', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });

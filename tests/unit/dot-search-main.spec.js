@@ -24,12 +24,12 @@ describe('DOT Microsite - Home : Main Search', () => {
     let h = wrapper.find('h1');
     let s = h.find('span');
     expect(s.is('span')).toBe(true);
-    expect(s.text()).toMatch('Explore our data.');
+    expect(s.text()).toMatch('EXPLORE OUR DATA!');
   });
   it('constains the heading description', () => {
     const wrapper = shallowMount(DOTSearchMain, {attachTo: document.body, mocks: { $router, $store }});
     let h = wrapper.find('h1');
-    expect(h.text().includes('ITS DataHub Offers and access point to all of ITS JPO\'s data sets.')).toBe(true);
+    expect(h.text().includes('Welcome to the Department of Transporation public access point for ITS JPO Data')).toBe(true);
   });
   it('constains a label with the Search text', () => {
     const wrapper = shallowMount(DOTSearchMain, {attachTo: document.body, mocks: { $router, $store }});

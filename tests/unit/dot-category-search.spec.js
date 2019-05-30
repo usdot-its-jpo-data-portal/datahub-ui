@@ -6,7 +6,7 @@ describe('DOT Microsite - Home : Category Search', () => {
     const wrapper = shallowMount(DOTCategorySearch, {attachTo: document.body});
     let f = wrapper.find('h3');
     expect(f.is('h3')).toBe(true);
-    expect(f.text()).toMatch('POPULAR DATA SET SEARCHES');
+    expect(f.text()).toMatch('RECOMMENDED DATA SET SEARCHES');
   });
   it('renders the right number of categories', () => {
     const wrapper = shallowMount(DOTCategorySearch, {attachTo: document.body});
