@@ -2,7 +2,7 @@
   <div id="search-wrapper">
       <div id='searchTerms'>
           <div id="searchHead" class="searchHeader">
-              <DOTSearchMain  ></DOTSearchMain>
+              <DOTSearchSearch  ></DOTSearchSearch>
           </div>
           <DOTSearchResults ></DOTSearchResults>
       </div>
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import DOTSearchMain from '@/components/dot-search-main.vue';
+import DOTSearchSearch from '@/components/dot-search-search.vue';
 import DOTSearchResults from '@/components/dot-search-results.vue';
 
 export default {
   name: 'search',
   components: {
-    DOTSearchMain,
+    DOTSearchSearch,
     DOTSearchResults
   }
 }
