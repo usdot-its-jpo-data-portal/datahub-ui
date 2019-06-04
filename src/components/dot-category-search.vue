@@ -59,7 +59,7 @@
       searchSend: function (search_query) {
         this.$store.commit('searchText', search_query);
         this.$store.commit('setLastQueryString', search_query);
-        this.$store.dispatch('getSocrataData', search_query);
+        this.$store.dispatch('searchAllData', search_query);
 
         this.$router.push('search');
       }

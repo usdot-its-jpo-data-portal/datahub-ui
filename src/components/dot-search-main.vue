@@ -7,8 +7,8 @@
           Welcome to the Department of Transporation public access point for ITS JPO Data
         </h1>
         <div class="dh-home__main-search__callout-inputs">
-          <label for="mainSearch">Search</label>
-          <input id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
+          <label class="usa-label" for="mainSearch">Search</label>
+          <input :class="isInvalid ? 'usa-input--error' : 'usa-input'" id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
           <button v-on:click="searchSend(queryText)">Search</button>
         </div>
       </div>
@@ -18,16 +18,15 @@
 
 <script>
 import TEMPLATE_CATEGORIES from '@/data/template_categories.json';
-import axios from 'axios';
 
 export default {
   name: 'DOTSearchMain',
   data: function(){
     return{
         background_image: '',//Background image for search bar, set in load_json
-        socrata_url: 'https://api.us.socrata.com/api/catalog/v1?q=',//URL for Socrata API
-        socrata_domain: 'data.transportation.gov',//Domain of Socrata site to search, set in load_json
-        totalDataCount: 0
+        isInvalid: false,
+        placeholderDef: 'Find Primary and Derived Research Data',
+        placeholderValue: 'Find Primary and Derived Research Data'
     }
   },
   computed: {
@@ -36,42 +35,32 @@ export default {
         set: function(val) { this.$store.state.queryString = val; }
     },
     search_placeholder : {
-        get: function() {return 'Find Primary and Derived Research Data'; },
-        set: function(){}
+        get: function() {return this.placeholderValue; },
+        set: function(val){ this.placeholderValue = val; }
     }
   },
   mounted: function() {
     if(this.$router.currentRoute.name === 'home') {
-      this.$store.commit('searchText', null);
+      this.queryText = '';
     }
   },
   // Function runs on page load
   created: function () {
-    this.datasetCount(); //Sets the total number of datasets available visual
     this.background_image = TEMPLATE_CATEGORIES.background_image;
   },
   methods: {
-    //===============================================SEARCH PAGE INITIALIZATION FUNCTIONS===============================================
-    // Finds the total count of data for search bar placeholder text, would need to be modified if different search domain is used
-
-    datasetCount: function () {
-        var self = this;
-        axios({
-          method: 'GET',
-          headers: { "content-type": "application/json" },
-          url: self.socrata_url + '&search_context=' + self.socrata_domain + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)'
-        }).then( response => {
-          self.totalDataCount = response.data.results.length;
-          self.search_placeholder = "";
-        }, error => { console.error(error)});
-    },
-        
     //Sets search term and sends it to search html page
     searchSend: function (search_query) {
-
+      this.isInvalid = false;
+      if(!search_query || search_query.length==0) {
+        this.isInvalid = true;
+        this.search_placeholder = 'Invalid search text!';
+        return;
+      }
+      this.search_placeholder = this.placeholderDef;
       this.$store.commit('searchText', search_query);
       this.$store.commit('setLastQueryString', search_query);
-      this.$store.dispatch('getSocrataData', search_query);
+      this.$store.dispatch('searchAllData', search_query);
 
       this.$router.push('search');
 

@@ -29,7 +29,6 @@
     DOTMicrositeFooter
   },
   created: function() {
-    this.$store.dispatch('getNTLData');
   }
 }
 </script>

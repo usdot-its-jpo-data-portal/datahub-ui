@@ -1,0 +1,59 @@
+<svg width="145" height="145" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+    <defs>
+        <style>
+
+            .circle1 {
+                stroke:#5883A3;
+                fill="none";
+            }
+            .circle2 {
+                stroke:#005280;
+                fill="none";
+            }
+            .circle3 {
+                stroke:#04466D;
+                fill="none";
+            }
+
+    </style>
+  </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+        <circle class="circle1" cx="22" cy="22" r="6" stroke-opacity="0">
+            <animate attributeName="r"
+                 begin="1.5s" dur="3s"
+                 values="6;22"
+                 calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                 begin="1.5s" dur="3s"
+                 values="1;0" calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-width"
+                 begin="1.5s" dur="3s"
+                 values="1;0" calcMode="linear"
+                 repeatCount="indefinite" />
+        </circle>
+        <circle class="circle2" cx="22" cy="22" r="6" stroke-opacity="0">
+            <animate attributeName="r"
+                 begin="3s" dur="3s"
+                 values="6;22"
+                 calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                 begin="3s" dur="3s"
+                 values="1;0" calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-width"
+                 begin="3s" dur="3s"
+                 values="1;0" calcMode="linear"
+                 repeatCount="indefinite" />
+        </circle>
+        <circle class="circle3" cx="22" cy="22" r="8" stroke-width="1">
+            <animate attributeName="r"
+                 begin="0s" dur="1.5s"
+                 values="6;0;1;2;3;4;5;6"
+                 calcMode="linear"
+                 repeatCount="indefinite" />
+        </circle>
+    </g>
+</svg>
