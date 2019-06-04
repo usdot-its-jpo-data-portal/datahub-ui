@@ -5,6 +5,11 @@ $theme-navigation-width: null;
 
 
 $theme-grid-container-max-width: 'desktop-lg' !global;
-$theme-site-max-width: 'desktop-lg' !global;
-$theme-site-margins-breakpoint:     'desktop-lg' !global;
-$theme-navigation-width: 'desktop-lg' !global;
+$theme-site-max-width: 'desktop' !global;
+$theme-site-margins-breakpoint:     'desktop' !global;
+//theme-site-margins-width: 4
+//$theme-site-margins-mobile-width: 2 
+$theme-navigation-width: 'desktop' !global; 
+//'tablet-lg'is 800 for menu switch from horizontal to mobile menu
+//'desktop' is 1024 for menu switch from horizontal to mobile menu
+//'desktop-lg' is 1200 for menu switch from horizontal to mobile menu
