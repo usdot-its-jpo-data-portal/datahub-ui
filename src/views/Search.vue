@@ -2,7 +2,7 @@
   <div id="search-wrapper">
       <div id='searchTerms'>
           <div id="searchHead" class="searchHeader">
-              <DOTSearchSearch  ></DOTSearchSearch>
+              <DOTSearchSearch></DOTSearchSearch>
           </div>
           <DOTSearchResults ></DOTSearchResults>
       </div>

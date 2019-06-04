@@ -1,0 +1,75 @@
+.dh-result-card__wrapper {
+  margin-bottom: units(4);
+  padding-bottom: units(3);
+  padding-top: units(2);
+  border-bottom-color: lighten($dh-color-gray80, 1%);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  z-index: -10;
+
+  &:hover {
+    // border: solid 1px lighten($dh-color-gray80, 0%);
+    // box-shadow: 1px 1px 2px darken($dh-color-gray80, 20%);
+    // transition-property: border;
+    // transition-duration: 400ms;
+    // transition-delay: 0.1s;
+    .dh-result-card__title {
+      a {
+        color: lighten($dh-color-green, 5%);
+      }
+    }
+  }
+
+  .dh-result-card__title {
+    margin-bottom: units(2);
+    a {
+      font-weight: bold;
+      font-size: units(3);
+      color: $dh-color-green;
+      text-decoration: none;
+      img {
+        height: units(1.5);
+        width: units(1.5);
+      }
+    }
+  }
+  .dh-result-card__meta-text {
+    font-weight: normal;
+    font-size: units(2);
+  }
+  .dh-result-card__meta-data {
+    font-weight: bold;
+    font-size: untis(2.5);
+    margin-bottom: units(2);
+  }
+  .dh-result-card__description {
+    font-size: units(2.5);
+    font-weight: normal;
+    .dh-result-vard__description-readmore {
+      border: none;
+      font-size: units(1.5);
+      text-decoration: underline;
+      color: $dh-link_color-default;
+      background-color: transparent;
+    }
+  }
+  .dh-result-card__tags {
+    margin-top: units(2);
+    .dh-result-card__tag {
+      display: inline;
+      button {
+        border: none;
+        font-size: units(2);
+        text-decoration: underline;
+        color: $dh-link_color-default;
+        background-color: transparent;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+  hr {
+    border: solid 1px  lighten($dh-color-gray80, 10%);
+    margin-top: units(4);
+  }
+}
