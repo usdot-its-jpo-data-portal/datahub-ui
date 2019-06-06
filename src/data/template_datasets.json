@@ -6,21 +6,21 @@
         {   "name": "Tampa CV Pilot Basic Safety Messages Sample", 
             "description": "Contains a sample of sanitized Basic Safety Messages collected from the Tampa Connected Vehicle pilot.", 
             "url": "https://data.transportation.gov/Automobiles/Tampa-CV-Pilot-Basic-Safety-Message-BSM-Sample/nm7w-nvbm", 
-            "image": "./images/tampa-dot-connected-vehicle-pilot-img.png", 
+            "image": "./images/tampa-dot-connected-vehicle-pilot-img.jpeg",
             "altText": "Link to sample Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
         },
 
         {   "name": "Tampa Connected Vehicle Pilot Basic Safety Message Visualization", 
             "description": "A visualization portal for the Tampa CV Pilot Basic Safety Messages.", 
             "url": "https://data.transportation.gov/Automobiles/Speed-coloured-points/qkm7-rymj/", 
-            "image": "./images/tampa-connected-vehicle-pilot-basic-safety-message-visualization.png", 
+            "image": "./images/tampa-connected-vehicle-pilot-basic-safety-message-visualization.jpeg",
             "altText": "Map of Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
         },
         {
             "name": "Cooperative Automated Research Mobility Applications (CARMA) 2",
             "description": "Data representing the performance of prototype cooperative automated driving system applications for improving traffic mobility.",
             "url": "https://data.transportation.gov/Automobiles/Cooperative-Automated-Research-Mobility-Applicatio/dusd-cr84",
-            "image": "./images/video.png",
+            "image": "./images/video.jpeg",
             "altText": "Link to Cooperative Automated Research Mobility Applications (CARMA) 2 on data.transportation.gov"
         }
     ]

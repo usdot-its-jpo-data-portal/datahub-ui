@@ -143,7 +143,7 @@ There are five fields for each dataset:
             "name": "Proof-of-Concept Vehicle Platooning Based on CACC",
             "description": "Performance of a proof-of-concept vehicle platooning based on Cooperative Adaptive Cruise Control (CACC).",
             "url": "https://data.transportation.gov/Automobiles/Test-Data-of-Proof-of-Concept-Vehicle-Platooning-B/wpek-zziu",
-            "image": "./images/video.png",
+            "image": "./images/video.jpeg",
             "altText": "Link to Test Data of Proof-of-Concept Vehicle Platooning Based on Cooperative Adaptive Cruise Control (CACC) on data.transportation.gov"
         }
     ]

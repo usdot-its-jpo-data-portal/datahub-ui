@@ -1,7 +1,7 @@
 .usa-hero {
   @extend .usa-hero;
-  background-image:url("/images/header_background_new.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/header_background_new.png"), linear-gradient(transparent, transparent);
+  background-image:url("/images/header_background_new.jpeg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/header_background_new.jpeg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
   .usa-hero__callout {
     @extend .usa-hero__callout;
