@@ -1,0 +1,30 @@
+.dh-metrics__wrapper {
+  .grid-container {
+    @extend .grid-container;
+    .dh-metrics__sidemenu {
+    }
+    .usa-prose {
+      @extend .usa-prose;
+    }
+    .dh-metrics__document {
+      .dh-metrics__iframe {
+        iframe {
+          border: none;
+          position: relative;
+        }
+        &.dh-metrics__iframe-chart {
+          iframe {
+            width: 380px;
+            height: 310px;
+          }
+        }
+        &.dh-metrics__iframe-table {
+          iframe {
+            width: 760px;
+            height: 600px;
+          }
+        }
+      }
+    }
+  }
+}

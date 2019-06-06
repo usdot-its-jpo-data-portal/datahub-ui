@@ -1,0 +1,32 @@
+.dh-iframe__wrapper {
+  .dh-iframe__iframe-hide {
+    visibility: hidden;
+    height: 0 !important;
+    width: 0 !important;
+    border: none !important;
+  }
+  .dh-iframe__loading {
+    text-align: center;
+    .dh-iframe__loading-loading {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      img {
+        height: units(7);
+        width: units(7);
+        margin-top: 0px !important;
+      }
+      .dh-iframe__loading-title {
+        padding-top: units(1);
+        font-size: units(2.5);
+        color: darken($dh-color-gray80, 30%);
+        font-weight: bold;
+      }
+    }
+    .dh-iframe__loading-text {
+      font-size: units(2);
+      color: darken($dh-color-gray80, 30%);
+    }
+  }
+}

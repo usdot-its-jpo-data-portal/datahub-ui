@@ -1,51 +1,196 @@
 <template>
-<div id="search-wrapper">
-    <div id='searchTerms' tabindex="0">
-        <div class="publicAccess metrics-page" title="ITS DataHub Metrics Dashboard">
-            <h1 id="itsDataHubMetricsDashboardHeader" role="heading" aria-level="1">ITS DataHub Metrics Dashboard</h1><br>
-            <p>Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportaion Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views. </p>
-            <p>Table of Contents:</p>
-            <ul>
-                <li><a href="#dataset-highlights">Dataset Highlights</a></li>
-                <li><a href="#dtg-dataset-details">DTG Dataset Details data.transporation.gov</a></li>
-                <li><a href="#ntl-datset-details">NTL Dataset Details National Transportation Library</a></li>
-                <li><a href="#sandbox-datasets">Sandbox Datasets</a></li>
-                <li><a href="#github-repository-views">DataHub (Microsite) & Sandbox GitHub Repository Views</a></li>
-                <li><a href="#datahub-usage-metrics">DataHub Usage Metrics</a></li>
-            </ul>
-            
-            <div id="dataset-highlights-div" tabindex="0">
-                <h2 id="dataset-highlights" class="metrics-section-headers">Dataset Highlights</h2>
-                <iframe tab-index="0" width="1372" height="1204" title="Dataset Highlights" src="https://datastudio.google.com/embed/reporting/1DPGZ3cYtQ-E8DVK05Q3VhfQGjHp7rVlF/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
-            </div>
-            <div id="dtg-dataset-details-div" tabindex="0">
-                <h2 id="dtg-dataset-details" class="metrics-section-headers">DTG Dataset Details data.transporation.gov</h2>
-                <iframe width="1372" height="2944" title="DTG Dataset Details data.transporation.gov" src="https://datastudio.google.com/embed/reporting/1-VMDfwYqUMq-j8YOBk5-Sast14kYn4Ea/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
-            </div>
-            <div id="ntl-datset-details-div" tabindex="0">
-                <h2 id="ntl-datset-details" class="metrics-section-headers">NTL Dataset Details National Transportation Library</h2>
-                <iframe width="1372" height="2250" title="NTL Dataset Details National Transportation Library" src="https://datastudio.google.com/embed/reporting/1Gu1KMfPjkJUk17QL3fP_hDAH3JpVyQvC/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+  <div class="dh-metrics__wrapper">
+    <div class="usa-layout-docs usa-section" id="main-content">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <aside class="usa-layout-docs__sidenav desktop:grid-col-3 dh-metrics__sidemenu">
+            <nav>
+              <h4>Table of Contents</h4>
+              <ul class="usa-sidenav">
+                <li class="usa-sidenav__item">
+                  <a href="#" @click="moveToTag($event, 'dataset-highlights')">Dataset Highlights</a>
+                </li>
+                <li class="usa-sidenav__item">
+                  <a href="#" @click="moveToTag($event, 'dtg-dataset-details')">DTG Dataset Details data.transporation.gov</a>
+                </li>
+                <li class="usa-sidenav__item">
+                  <a href="#" @click="moveToTag($event, 'ntl-datset-details')">NTL Dataset Details National Transportation Library</a>
+                </li>
+                <li class="usa-sidenav__item">
+                  <a href="#" @click="moveToTag($event, 'sandbox-datasets')">Sandbox Datasets</a>
+                </li>
+                <li class="usa-sidenav__item">
+                  <a href="#" @click="moveToTag($event, 'github-repository-views')">DataHub (Microsite) & Sandbox GitHub Repository Views</a>
+                </li>
+                <li class="usa-sidenav__item">
+                  <a href="#" @click="moveToTag($event, 'datahub-usage-metrics')">DataHub Usage Metrics</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose dh-metrics__document">
+            <h1>ITS DataHub Metrics Dashboard</h1>
+            <p class="usa-intro">Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportaion Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views.</p>
+
+            <h2 id="dataset-highlights">Dataset Highlights</h2>
+            <div class="grid-container">
+              <h3>Recently Downloaded Datasets (last 30 days)</h3>
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top DTG Datasets Downloaded (last 30 days)"
+                    src="https://datastudio.google.com/embed/reporting/1JhiZYIyIWXcU14gHOiyBdwNWRqxZex_h/page/0bOK" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top NTL Datasets Downloaded (last 30 days)"
+                    src="https://datastudio.google.com/embed/reporting/1kWIFrlJ1ACkAR8uydbsZZGYD52cWx2An/page/0bOK" />
+                </div>
+              </div>
+              <h3>Frequently Downloaded Datasets (all time)</h3>
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top DTG Datasets Downloaded (all time)"
+                    src="https://datastudio.google.com/embed/reporting/1L6Xu1099L1yfG_4Bbsu5fz2M764Hba8g/page/0bOK" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top NTL Datasets Dowloaded (all time)"
+                    src="https://datastudio.google.com/embed/reporting/1PAVzzG4ypAiwTmva04pH46HDUut236rC/page/0bOK" />
+                </div>
+              </div>
             </div>
 
-            <div id="sandbox-datasets-div" tabindex="0">
-                <h2 id="sandbox-datasets" class="metrics-section-headers">Sandbox Datasets</h2>
-                <iframe width="1372" height="1050" title="Sandbox Datasets" src="https://datastudio.google.com/embed/reporting/1WSneXEi3T4h7eZhq3EcnEnEGWb5N6BQX/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+            <h2 id="dtg-dataset-details">DTG Dataset Details data.transporation.gov</h2>
+            <div class="grid-container">
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top DTG Datasets Viewed (last 30 days)"
+                    src="https://datastudio.google.com/embed/reporting/1nH4nLIOsRPtHnrXtBn9IN7ibhp7oQ05J/page/0bOK" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top DTG Datasets Downloaded (last 30 days)"
+                    src="https://datastudio.google.com/embed/reporting/1JhiZYIyIWXcU14gHOiyBdwNWRqxZex_h/page/0bOK" />
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top DTG Datasets Viewed (all time)"
+                    src="https://datastudio.google.com/embed/reporting/1PNb5yI7miCOqeDuy4vLIgSC3_4qDyLlo/page/0bOK" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-chart"
+                    title="Top DTG Datasets Downloaded (all time)"
+                    src="https://datastudio.google.com/embed/reporting/1L6Xu1099L1yfG_4Bbsu5fz2M764Hba8g/page/0bOK" />
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="desktop:grid-col-12 mobile:grid-col-12">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-table"
+                    title="DTG Dataset Views And Downloads (last 30 days)"
+                    src="https://datastudio.google.com/embed/reporting/1tohVI_KySS-TyKQkcIAAhwtqfLnxm7Ir/page/0bOK" />
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="desktop:grid-col-12 mobile:grid-col-12">
+                  <DOTIFrame
+                    class="dh-metrics__iframe dh-metrics__iframe-table"
+                    title="DTG Dataset Views and Downloads (all time)"
+                    src="https://datastudio.google.com/embed/reporting/193GyrPXakM4z5c-lk5j9EWWCenitrDnG/page/0bOK" />
+                </div>
+              </div>
             </div>
-            <div id="github-repository-views-div" tabindex="0">
-                <h2 id="github-repository-views" class="metrics-section-headers">DataHub (Microsite) & Sandbox GitHub Repository Views</h2>
-                <iframe width="1372" height="500" title="DataHub (Microsite) and Sandbox GitHub Repository Views" src="https://datastudio.google.com/embed/reporting/1UVkRwkxc1KvxgUXGAU9OowgE4LnK1WVg/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+
+            <h2 id="ntl-datset-details">NTL Dataset Details National Transportation Library</h2>
+            <div class="grid-container">
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+              </div>
             </div>
-            <div id="datahub-usage-metrics-div" tabindex="0"></div>
-                <h2 id="datahub-usage-metrics" class="metrics-section-headers">DataHub Usage Metrics</h2>
-                <iframe width="1372" height="1000" title="DataHub Usage Metrics" src="https://datastudio.google.com/embed/reporting/1NSiUsh02hpE3viSpbNxBJr-tAI8SGLMY/page/0bOK" style="border:0;display:block;margin: 0 auto;" allowfullscreen>Sorry your browser does not support iframes.</iframe>
+
+            <h2 id="sandbox-datasets">Sandbox Datasets</h2>
+            <div class="grid-container">
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+              </div>
             </div>
+
+            <h2 id="github-repository-views" >DataHub (Microsite) & Sandbox GitHub Repository Views</h2>
+            <div class="grid-container">
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+              </div>
+            </div>
+
+            <h2 id="datahub-usage-metrics">DataHub Usage Metrics</h2>
+            <div class="grid-container">
+              <div class="grid-row">
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                  <DOTIFrame title="Testing title" src="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import DOTIFrame from '@/components/dot-iframe.vue';
+
 export default {
-  name: 'metrics'
+  name: 'metrics',
+  components: {
+    DOTIFrame
+    },
+  methods: {
+    moveToTag: function(event,id) {
+      event.preventDefault();
+      let element = document.getElementById(`${id}`);
+      if(element) {
+        console.log(id);
+        window.scroll(0,0); //resets reference;
+        const y = element.getBoundingClientRect().top + window.scrollY;
+        console.log(y);
+        window.scroll({top: y,behavior: 'smooth'});
+      }
+    }
+  }
+
 }
 </script>
 <style lang="scss" scoped>
