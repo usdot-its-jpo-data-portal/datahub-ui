@@ -45,7 +45,7 @@
   .dh-result-card__description {
     font-size: units(2.5);
     font-weight: normal;
-    .dh-result-vard__description-readmore {
+    .dh-result-card__description-readmore {
       border: none;
       font-size: units(1.5);
       text-decoration: underline;
@@ -55,6 +55,11 @@
   }
   .dh-result-card__tags {
     margin-top: units(2);
+    .dh-result-card__tags-title {
+      font-size: units(2);
+      color: lighten($dh-color-black, 30%);
+      font-weight: normal;
+    }
     .dh-result-card__tag {
       display: inline;
       button {
@@ -65,6 +70,16 @@
         background-color: transparent;
         margin: 0 !important;
         padding: 0 !important;
+      }
+    }
+    .dh-result-card__tags-showmore {
+      display: inline;
+      button {
+        border: none;
+        font-size: units(1.5);
+        text-decoration: underline;
+        color: $dh-link_color-default;
+        background-color: transparent;
       }
     }
   }

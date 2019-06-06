@@ -17,7 +17,7 @@
       </div>
       <div class="grid-col-fill dh-result-card__description">
         <span v-html="itemDescription"></span>
-        <button v-if="readButtonVisible" class="dh-result-vard__description-readmore" v-on:click="toggleSeeMore()">
+        <button v-if="readButtonVisible" class="dh-result-card__description-readmore" v-on:click="toggleSeeMore()">
           {{readButtonText}}
         </button>
       </div>
@@ -26,12 +26,19 @@
       <div class="grid-col-2">
       </div>
       <div class="grid-col-fill dh-result-card__tags">
-        <div v-if="item.tags.length > 0" >
-          <div v-for="(tag, idx) in item.tags" :key="idx" class="dh-result-card__tag">
+        <div v-if="itemTags.length > 0" >
+          <div class="dh-result-card__tags-title">Tags({{item.tags.length}}):</div>
+          <div v-for="(tag, idx) in itemTags" :key="idx" class="dh-result-card__tag">
             <button @click="$emit('search',tag)">
               {{tag}}
             </button>
-            <span v-if="idx < item.tags.length - 1">,&nbsp;</span>
+            <span v-if="idx < itemTags.length - 1">,&nbsp;</span>
+          </div>
+          <div v-if="tagsShowVisible" class="dh-result-card__tags-showmore">
+            <span v-if="tagsShowMore">...&nbsp;</span>
+            <button v-if="readButtonVisible" v-on:click="toggleShowMoreTags()">
+              {{tagsShowButtonText}}
+            </button>
           </div>
         </div>
       </div>
@@ -49,7 +56,11 @@ export default {
       idx: this.index,
       readMore: true,
       readButtonVisible: true,
-      readButtonText: ''
+      readButtonText: '',
+      tagsShowMore: true,
+      tagsShowVisible: true,
+      tagsShowButtonText: '',
+      tagsShowLimit: 11
     }
   },
   computed: {
@@ -79,11 +90,42 @@ export default {
         }
       },
       set: function() {}
+    },
+    itemTags: {
+      get: function() {
+        let result = [];
+        if(!this.item) {
+          return result;
+        }
+        if(this.item.tags.length === 0) {
+          this.updateTagsTools(false,this.tagsShowMore,this.tagsShowButtonText);
+          result = this.item.tags;
+        } else {
+          if(this.item.tags.length <= this.tagsShowLimit) {
+            this.updateTagsTools(false,this.tagsShowMore,this.tagsShowButtonText);
+            result = this.item.tags;
+          } else {
+            if(this.tagsShowMore){
+              this.updateTagsTools(true,true,'SHOW MORE');
+              result = this.item.tags.slice(0, this.tagsShowLimit);
+            } else {
+              this.updateTagsTools(true,false,'SHOW LESS');
+              result = this.item.tags;
+            }
+          }
+        }
+        return result;
+      },
+      set: function(){}
     }
   },
   methods: {
     toggleSeeMore: function () {
       this.readMore = !this.readMore;
+      this.$forceUpdate();
+    },
+    toggleShowMoreTags: function() {
+      this.tagsShowMore = !this.tagsShowMore;
       this.$forceUpdate();
     },
     updateDescriptionTools(visible, readMore, text) {
@@ -117,6 +159,11 @@ export default {
         }
       }
       return result;
+    },
+    updateTagsTools(visible, showMore, text) {
+      this.tagsShowVisible = visible;
+      this.tagsShowMore = showMore;
+      this.tagsShowButtonText = text;
     }
   }
 }
