@@ -9,9 +9,10 @@
     </div>
 
     <div class="grid-container">
-      <div class="grid-row grid-gap-1 dh-home_featured-search-layout">
+      <div class="grid-row grid-gap dh-home_featured-search-layout">
 
-            <div class="grid-col-auto dh-home_featured-search-layout-cell" v-for="dataset in datasets" :key="dataset.id" v-bind:id="dataset.id">
+            <div class="grid-col" v-for="dataset in datasets" :key="dataset.id" v-bind:id="dataset.id">
+              <div class="dh-home_featured-search-layout-cell">
                 <a v-bind:href="dataset.url" target="_blank">
                   <img v-bind:src="dataset.image" v-bind:alt="dataset.altText">
                   <div class="dh-home_featured-search_dataset-textbox">
@@ -23,6 +24,7 @@
                     </div>
                   </div>
                 </a>
+              </div>
             </div>
       </div>
     </div>

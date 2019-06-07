@@ -10,8 +10,8 @@
     </div>
 
     <div class="grid-container">
-      <div class="grid-row grid-gap-1 dh-home_category-search-layout">
-        <div class="grid-col-auto grid-offset-1 dh-home_category-search-layout-cell" v-for="btn in buttons" :key="btn.id">
+      <div class="grid-row grid-gap dh-home_category-search-layout">
+        <div class="grid-col grid-offset-1 dh-home_category-search-layout-cell" v-for="btn in buttons" :key="btn.id">
           <button
             v-bind:id="btn.id"
             v-on:click="searchSend(btn.labels)"
