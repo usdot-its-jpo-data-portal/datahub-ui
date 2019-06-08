@@ -83,8 +83,8 @@
 
 .usa-social-link--instagram {
   @extend .usa-social-link--youtube;
-  background-image:url("/images/icons/instagram.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/icons/instagram.svg"), linear-gradient(transparent, transparent);
+  background-image:url("/images/icons/Instagram.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/Instagram.svg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
 }
 
