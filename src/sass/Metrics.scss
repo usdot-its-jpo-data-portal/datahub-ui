@@ -16,7 +16,7 @@
         &.dh-metrics__iframe-chart {
           iframe {
             width: 380px;
-            height: 310px;
+            height: 320px;
           }
         }
         &.dh-metrics__iframe-table {
@@ -29,6 +29,12 @@
           iframe {
             width: 760px;
             height: 500px;
+          }
+        }
+        &.dh-metrics__iframe-table-xl {
+          iframe {
+            width: 760px;
+            height: 1000px;
           }
         }
       }

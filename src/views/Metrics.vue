@@ -197,7 +197,7 @@
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 19 -->
                   <DOTIFrame
-                    class="dh-metrics__iframe dh-metrics__iframe-table"
+                    class="dh-metrics__iframe dh-metrics__iframe-table-xl"
                     title="NTL Dataset Views and Downloads (all time)"
                     src="https://datastudio.google.com/embed/reporting/1a8k6Imi01k0DXA1y2vEYMRGQa7oOm8RZ/page/0bOK" />
                 </div>
