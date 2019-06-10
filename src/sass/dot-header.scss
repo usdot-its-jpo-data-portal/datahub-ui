@@ -22,6 +22,15 @@
     }
 }
 
+.usa-logo__text {
+  @extend .usa-logo__text;
+  // font-size: units(4);
+  .dh-logo__text-subtitle {
+    color: $dh-color-navy;
+    font-size: units(2);
+    font-weight: normal;
+  }
+}
 
 #nav_dot_banner{
     background-color: $dh-header-color_dot-banner-background; 
@@ -61,10 +70,11 @@
     @extend .usa-nav__secondary;
     @include at-media ($theme-navigation-width){
         bottom: 0.5rem;
-        & .usa-nav__secondary-links a{
-            color: $dh-nav-links_secondary-state-defualt;
+        & .dh-header__secondary-links .usa-nav__secondary-links a{
+            color: $dh-color-white;
+            margin-bottom: units(9);
             &:hover{
-                color: $dh-nav-links_secondary-state-hover;
+                color: lighten($dh-nav-links_secondary-state-hover, 30%);
             }
         }
         & #addthis_wrapper{

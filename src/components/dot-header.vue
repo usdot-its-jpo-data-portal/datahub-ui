@@ -65,7 +65,12 @@
     </div>
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">ITS DataHub</a></em>
+        <em class="usa-logo__text">
+          <a href="/" title="Home" aria-label="Home">
+            ITS DataHub
+            <div class="dh-logo__text-subtitle">Intelligent Transportation Systems</div>
+          </a>
+        </em>
       </div>
       <button class="usa-menu-btn" aria-controls="dh-nav">Menu</button>
     </div>
@@ -97,23 +102,24 @@
           </li>
         </ul>
         <div class="usa-nav__secondary" style="">
-          
-          <ul class="usa-nav__secondary-links">
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
-            </li>
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
-            </li>
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
-            </li>
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
-            </li>
-          </ul>
+          <div class="dh-header__secondary-links">
+            <ul class="usa-nav__secondary-links">
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
+              </li>
+            </ul>
+          </div>
           <div>
-                
+
                 <div id="followus_wrapper">
                     <p id="followus_header">Follow Us</p>
                     <ul class="usa-nav__secondary-links">
