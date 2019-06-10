@@ -10,6 +10,7 @@
     @extend %dh-about_paragraph;
   }
   a {
+    word-wrap: break-word;
     font-weight: bold;
     // text-decoration: $dh-link_text-decoration;
     color: $dh-link_color-default;

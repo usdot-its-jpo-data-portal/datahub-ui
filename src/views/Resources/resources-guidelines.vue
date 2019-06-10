@@ -407,4 +407,7 @@ export default {
     list-style-type: upper-alpha;
     font-weight: bold;
   }
+  a {
+    word-wrap: break-word;
+  }
 </style>

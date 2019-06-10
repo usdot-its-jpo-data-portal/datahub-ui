@@ -45,6 +45,10 @@
   .dh-result-card__description {
     font-size: units(2.5);
     font-weight: normal;
+    word-wrap: break-word;
+    a {
+      word-wrap: break-word;
+    }
     .dh-result-card__description-readmore {
       border: none;
       font-size: units(1.5);
