@@ -66,15 +66,19 @@
       }
       input::-webkit-input-placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       input::-moz-placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       input::-ms-input-placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       input::placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       button {
          /* position and size */

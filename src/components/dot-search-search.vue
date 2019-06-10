@@ -3,14 +3,14 @@
     <div class="grid-container">
         <div class="grid-row">
           <div class="grid-col-auto dh-search__search-title">
-            <h1>Search</h1>
+            <h1>Search for datasets</h1>
           </div>
           <div class="grid-col-fill">
           </div>
         </div>
         <div class="grid-row">
           <div class="grid-col-fill dh-search__search-inputs">
-            <label class="usa-label" for="searchInput">Search</label>
+            <label class="usa-label" for="searchInput">Search for datasets</label>
             <input :class="isInvalid ? 'usa-input--error' : 'usa-input'" id="searchInput" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
             <button v-on:click="searchSend(queryText)">
               <img src="/images/icons/icon-magnifier.svg" alt="Search">
@@ -30,8 +30,8 @@ export default {
         socrata_domain: 'data.transportation.gov',//Domain of Socrata site to search, set in load_json
         totalDataCount: 0,
         isInvalid: false,
-        placeholderDef: 'Find Primary and Derived Research Data',
-        placeholderValue: 'Find Primary and Derived Research Data',
+        placeholderDef: 'Search by project names and topics...',
+        placeholderValue: 'Search by project names and topics...',
     }
   },
   computed: {
