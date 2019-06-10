@@ -88,17 +88,23 @@
   background-repeat:no-repeat;
 }
 
-.usa-footer__primary-link {
-  @extend .usa-footer__primary-link;
+.usa-footer__nav {
+  @extend .usa-footer__nav;
+  height: units(7);
+  .usa-footer__primary-link {
+    @extend .usa-footer__primary-link;
+    display: none; // Hiding secundary links.
+  }
+
+  .usa-footer__primary-link-icon {
+    height: units(1.5);
+    width: units(1.5);
+    background-color: transparent;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
 }
 
-.usa-footer__primary-link-icon {
-  height: units(1.5);
-  width: units(1.5);
-  background-color: transparent;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
 
 .usa-footer__primary-link-icon-social {
   height: units(1.5);
