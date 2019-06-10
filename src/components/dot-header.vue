@@ -63,34 +63,37 @@
         </a>
       </div>
     </div>
-    <div class="usa-navbar" style="padding-top: 2rem;">
+    <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
         <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">ITS DataHub</a></em>
       </div>
-      <button class="usa-menu-btn">Menu</button>
+      <button class="usa-menu-btn" aria-controls="dh-nav">Menu</button>
     </div>
     
     <nav role="navigation" class="usa-nav" id="dh-nav">
       
-      <div class="usa-nav__inner"><button class="usa-nav__close"><img src="/images/close.svg" alt="close"></button>
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/images/close.svg" alt="close">
+        </button>
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/">Home</router-link>
+            <router-link aria-controls="dh-nav1" to="/">Home</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/about">About</router-link>
+            <router-link aria-controls="dh-nav2" to="/about">About</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/resources">Resources</router-link>
+            <router-link to="/resources">Resources</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/metrics">Metrics</router-link>
+            <router-link to="/metrics">Metrics</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/search">Search</router-link>
+            <router-link to="/search">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <a class="usa-nav__link" href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
+            <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
           </li>
         </ul>
         <div class="usa-nav__secondary" style="">
