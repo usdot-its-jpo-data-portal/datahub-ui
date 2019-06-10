@@ -54,7 +54,6 @@
     </div>
   </div>
 
-  
   <div class="usa-overlay"></div>
   <header class="usa-header usa-header--extended" role="banner">
     <div id="nav_dot_banner" class="usa-banner__header">
@@ -76,33 +75,19 @@
       <div class="usa-nav__inner"><button class="usa-nav__close"><img src="/images/close.svg" alt="close"></button>
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/"><span>Home</span></router-link>
-            <!-- <a class="usa-nav__link" href="/"><span>Home</span></a> -->
+            <router-link class="usa-nav__link" to="/">Home</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <!-- <a class="usa-nav__link" href="/about"><span>About</span></a> -->
-            <router-link class="usa-nav__link" to="/about"><span>About</span></router-link>
+            <router-link class="usa-nav__link" to="/about">About</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
-              aria-controls="extended-nav-section-one"><span>Resources</span></button>
-            <ul id="extended-nav-section-one" class="usa-nav__submenu">
-              <li class="usa-nav__submenu-item">
-                <router-link class="usa-nav__link" to="#">1</router-link>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <router-link class="usa-nav__link" to="#">2</router-link>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <router-link class="usa-nav__link" to="#">3</router-link>
-              </li>
-            </ul>
+            <router-link class="usa-nav__link" to="/resources">Resources</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/metrics"><span>Metrics</span></router-link>
+            <router-link class="usa-nav__link" to="/metrics">Metrics</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/search"><span>Search</span></router-link>
+            <router-link class="usa-nav__link" to="/search">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">
             <a class="usa-nav__link" href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
