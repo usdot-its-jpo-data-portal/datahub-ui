@@ -22,13 +22,13 @@
     <ul>
       <li>
         Open, Public, Electronic, and Necessary (OPEN) Government Data Act: Title II of
-        <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95">
+        <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95" target="_blank">
           Foundations for Evidence-Based Policymaking Act (H.R. 4174)
         </a>
       </li>
       <li>
         U.S. DOT Public Access Plan: 
-        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official DOT Public Access Plan.pdf">
+        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official DOT Public Access Plan.pdf" target="_blank">
           Increasing Access to Federally Funded Research Results
         </a>
       </li>
@@ -37,13 +37,13 @@
       </li>
       <li>
         Office of Science and Technology Policy (OSTP) Memorandum:
-        <a href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf">
+        <a href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf" target="_blank">
           Increasing Access to the Results of Federally Funded Scientific Research (February 22, 2013)
         </a>
       </li>
       <li>
         Federal Open Data Policy: 
-        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf">
+        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf" target="_blank">
           M-13-13 memorandum for the Heads of Executive Departments and Agencies
         </a>
       </li>
@@ -198,7 +198,7 @@
       </li>
       <p>
         Consistent with federal policy (
-        <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95">
+        <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95" target="_blank">
           OPEN Government Data Act</a>
         ),awardees must provide public access to data collected or created through the project unless a specific privacy,
         confidentiality, security, or other valid restriction is identified. This presumption in favor of openness must be
@@ -210,18 +210,18 @@
       </p>
       <p>
         Final research results must satisfy the reporting and compliance requirements as set forth in the
-        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official DOT Public Access Plan.pdf">
+        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official DOT Public Access Plan.pdf" target="_blank">
           U.S.DOT Public Access Plan
         </a>
         , including, but not limited to, the use of Open Researcher and Contributor ID (ORCID) numbers, the creation
         and maintenance of a research project record in the Transportation Research Board’s (TRB) Research in Progress (RiP)
         database, and the timely and complete submission of all required publications and associated digital datasets as such
         terms are defined in the
-        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official DOT Public Access Plan.pdf">
+        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official DOT Public Access Plan.pdf" target="_blank">
           U.S. DOT Public Access Plan
         </a>
         . Additional information about how to comply with the requirements can be found at:
-        <a href="https://ntl.bts.gov/public-access/how-comply">
+        <a href="https://ntl.bts.gov/public-access/how-comply" target="_blank">
           https://ntl.bts.gov/public-access/how-comply
         </a>
         . The ITS JPO will assist awardees in compliance with these broader U.S. DOT requirements.
@@ -240,7 +240,7 @@
         Awardees may use different systems to store different types of data (e.g., public, non-public, primary, derived,
         streaming, static). The ITS JPO has designated several public and controlled access data systems that awardees can use
         to meet their data access and retention requirements, including registering metadata in the
-        <a href="https://its.dot.gov/data/">
+        <a href="https://its.dot.gov/data/" target="_blank">
           ITS DataHub.
         </a>
         Applicants are encouraged to use these shared resources but can propose alternative systems for storing and providing
@@ -254,18 +254,18 @@
       </li>
       <p>
         Consistent with federal policy (
-        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf">
+        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf" target="_blank">
           M-13-13
         </a>
         ), awardees must apply open licenses to data collected or created through the
         project so there are no restrictions on copying, publishing, distributing, transmitting, adapting, or otherwise using
         the information. The ITS JPO uses clauses in
-        <a href="http://farsite.hill.af.mil/reghtml/regs/far2afmcfars/fardfars/far/52_227.htm#P254_51765">
+        <a href="http://farsite.hill.af.mil/reghtml/regs/far2afmcfars/fardfars/far/52_227.htm#P254_51765" target="_blank">
           FAR 52.227-14
         </a>
         to acquire unlimited rights to data for the government,
         though applicants can claim exemptions and propose limited rights data as described in
-        <a href="http://farsite.hill.af.mil/reghtml/regs/far2afmcfars/fardfars/far/52_227.htm#P254_51765">
+        <a href="http://farsite.hill.af.mil/reghtml/regs/far2afmcfars/fardfars/far/52_227.htm#P254_51765" target="_blank">
           FAR 52.227-14
         </a>
         .Applicants must describe their proposed approach to data rights in their draft DMP, including, where applicable,
@@ -277,7 +277,7 @@
       </li>
       <p>
         Consistent with federal policy (
-        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf">
+        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf" target="_blank">
           M-13-13
         </a>
         ), awardees must use standards to promote data interoperability and openness.
@@ -301,11 +301,11 @@
       <p>
         Awardees must provide metadata on all data described in their DMP. Awardees can provide additional metadata beyond
         the common core fields if desired, and reference more detailed documentation. Consistent with federal policy (
-        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf">
+        <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2013/m-13-13.pdf" target="_blank">
           M-13-13
         </a>
         ), ITS JPO will provide this metadata to the public via the
-        <a href="https://its.dot.gov/data/">
+        <a href="https://its.dot.gov/data/" target="_blank">
           ITS DataHub
         </a>
         and other data catalogs to facilitate data discovery, unless a specific privacy, confidentiality, security, or other
@@ -338,16 +338,16 @@
       </li>
       <li>
         ITS JPO: The primary role is to administer the ITS JPO Data Access COE requirements and the
-        <a href="https://its.dot.gov/data/">
+        <a href="https://its.dot.gov/data/" target="_blank">
           ITS DataHub
         </a>
         , as well as provide technical assistance to ITS JPO-funded project data providers, project awardees and project
         managers. Main responsibilities include: a) defining requirements, data management standards and
-        <a href="https://its.dot.gov/data/">
+        <a href="https://its.dot.gov/data/" target="_blank">
           ITS DataHub
         </a>
         guidelines; b) operating and maintaining the 
-        <a href="https://its.dot.gov/data/">
+        <a href="https://its.dot.gov/data/" target="_blank">
           ITS DataHub
         </a>
         ; c) providing technical assistance to awardees to create a DMP and successfully implement the project's DMP.
@@ -363,32 +363,32 @@
     <h2 id="References">References</h2>
     <ul>
       <li>
-        <a href="https://www.its.dot.gov/about/its_jpo.htm">
+        <a href="https://www.its.dot.gov/about/its_jpo.htm" target="_blank">
           https://www.its.dot.gov/about/its_jpo.htm
         </a>
       </li>
       <li>
-        <a href="https://www.law.cornell.edu/cfr/text/19/201.6">
+        <a href="https://www.law.cornell.edu/cfr/text/19/201.6" target="_blank">
           https://www.law.cornell.edu/cfr/text/19/201.6
         </a>
       </li>
       <li>
-        <a href="https://project-opendata.cio.gov/v1.1/schema/">
+        <a href="https://project-opendata.cio.gov/v1.1/schema/" target="_blank">
           https://project-opendata.cio.gov/v1.1/schema/
         </a>
       </li>
       <li>
-        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20Order%201351.18%20Privacy%20Risk%20Management%20Policy.pdf">
+        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20Order%201351.18%20Privacy%20Risk%20Management%20Policy.pdf" target="_blank">
           https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20Order%201351.18%20Privacy%20Risk%20Management%20Policy.pdf
         </a>
       </li>
       <li>
-        <a href="https://www.techopedia.com/dictionary">
+        <a href="https://www.techopedia.com/dictionary" target="_blank">
           https://www.techopedia.com/dictionary
         </a>
       </li>
       <li>
-        <a href="http://www.sapdc.org/business/government-contracting-terms-definitions">
+        <a href="http://www.sapdc.org/business/government-contracting-terms-definitions" target="_blank">
           http://www.sapdc.org/business/government-contracting-terms-definitions
         </a>
       </li>
