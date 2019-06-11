@@ -43,7 +43,7 @@
               </div>
               <div class="grid-row grid-gap">
                 <div class="grid-col-auto">
-                  <img id="usa-footer__logo-img-its" class="usa-footer__logo-img-its" src="/images/icons/ITS_JPO.png" alt>
+                  <img id="usa-footer__logo-img-its" class="usa-footer__logo-img-its" src="/images/icons/its_jpo_footer.svg" alt>
                 </div>
               </div>
             </div>
