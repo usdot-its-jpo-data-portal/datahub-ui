@@ -18,6 +18,11 @@
 }
 .dh-home_featured-search-layout {
   padding-top: units(1);
+  //padding-left: 5%;
+  //padding-right: 5%;
+  // @include at-media-min('desktop'){
+
+  // }
 }
 .dh-home_featured-search-layout-cell {
   align-items: stretch;
@@ -41,6 +46,8 @@
       width: 100%;
       height: 13rem;
       flex: 1 1 auto;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
     }
     .dh-home_featured-search_dataset-textbox {
       width: 100%;
@@ -64,7 +71,8 @@
       }
     }
   }
-  @include at-media-max('tablet-lg'){
+  width: 24rem;
+  @include at-media-max('desktop-lg'){
     width: 24rem;
     margin-left: auto;
     margin-right: auto;
