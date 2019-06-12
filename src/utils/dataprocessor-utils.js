@@ -90,7 +90,7 @@ export default {
         } else {
           for (let tagCount = 0; tagCount < ntlData[itemCountNTL].tags.length; tagCount++) {
             if (ntlData[itemCountNTL].tags[tagCount].toLowerCase().search(search_query.toLowerCase()) > -1) {
-              socraData.push(self.NTLJson[itemCountNTL]);
+              socraData.push(ntlData[itemCountNTL]);
               break;
             }
           }
