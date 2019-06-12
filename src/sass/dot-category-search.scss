@@ -28,6 +28,9 @@
     background-color: transparent;
     border: solid 0px transparent;
     transition: all .2s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     &:hover { 
       transform: scale(1.1);
       // text-transform: uppercase;
@@ -43,5 +46,8 @@
       font-weight: bold;
       color: $dh-color-text-light;
     }
+  }
+  @include at-media-max('tablet'){
+    padding-bottom: 3.5rem;
   }
 }

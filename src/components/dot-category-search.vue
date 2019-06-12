@@ -4,14 +4,14 @@
     <div class="grid-container">
       <div class="grid-row" style="solid 1px green;">
         <div class="grid-col-auto dh-home_category-search-title">
-          <h3>RECOMMENDED DATA SET SEARCHES</h3>
+          <h3>RECOMMENDED DATASET SEARCHES</h3>
         </div>
       </div>
     </div>
 
     <div class="grid-container">
       <div class="grid-row grid-gap-1 dh-home_category-search-layout">
-        <div class="grid-col-auto grid-offset-1 dh-home_category-search-layout-cell" v-for="btn in buttons" :key="btn.id">
+        <div class="desktop:grid-col-3 tablet:grid-col-4 mobile:grid-col-6 grid-gap-1 dh-home_category-search-layout-cell" v-for="btn in buttons" :key="btn.id">
           <button
             v-bind:id="btn.id"
             v-on:click="searchSend(btn.labels)"
