@@ -1,9 +1,9 @@
 .dh-home_featured-search-wrapper {
   background: url('/images/CategoryBackground.png');
   background-repeat: no-repeat;
-  background-position: center -2rem;
+  background-position: center;
   background-size: cover;
-  width: 100%;
+  width: auto;
 }
 .dh-home_featured-search-title {
   text-align: center;
@@ -13,25 +13,21 @@
     font-size: units(5);
     font-weight: bold;
     margin-top: units(4);
-    margin-bottom: units(2.5); 
-    // text-shadow: 1px 1px 1px;
+    margin-bottom: units(2.5);
   }
 }
 .dh-home_featured-search-layout {
-  justify-items: center;
   padding-top: units(1);
 }
 .dh-home_featured-search-layout-cell {
-  width: units('card-lg')+units(8);
-  height: units('mobile');
-  margin-right: units(2);
+  align-items: stretch;
   margin-bottom: units(6);
   a {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     display: block;
     border: solid 1px $dh-color-gray80;
     background-color: $dh-home-color_featured-dataset-background;
@@ -44,11 +40,12 @@
     }
     img {
       width: 100%;
-      height: 50%;
+      height: 13rem;
+      flex: 1 1 auto;
     }
     .dh-home_featured-search_dataset-textbox {
       width: 100%;
-      height: 50%;
+      padding-bottom: 5%;
       .dh-home_featured-search_dataset-name {
         color: $dh-color-text-light;
         font-size: units(2);
@@ -67,5 +64,10 @@
         margin-top: units(2);
       }
     }
+  }
+  @include at-media-max('tablet-lg'){
+    width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
