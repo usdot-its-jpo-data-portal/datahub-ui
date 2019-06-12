@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="gio">
+  <div id="app">
     <DOTHeader/>
     <!-- <div id="searchHead">
       <div id="nav" class="navigation-bar navBarLinks">
