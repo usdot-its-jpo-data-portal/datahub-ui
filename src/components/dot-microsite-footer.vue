@@ -40,32 +40,32 @@
               <p id="follow_header" class="social-share">Follow</p>
               <div id="follow_wrapper" class="grid-row grid-gap-1">
                   
-                  <div class="grid-col-3 dh-follow-us-div">
+                  <div class="grid-col-auto dh-follow-us-div">
                     <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
                            <!--<span>Follow us on Facebook</span>-->
-                          <img src="/images/icons/facebook_logo.svg" class="footer-share-social-icons">
-                          <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                          <img src="/images/icons/facebook_follow_svg.svg" class="footer-share-social-icons">
+                          <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
                         </a>
                   </div>
                   <div class="grid-col-3 dh-follow-us-div">  
                     <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
                       <!--<span>Follow us on Twitter</span>-->
-                      <img src="/images/icons/Twitter_Social_Icon_Circle_Color.svg" class="footer-share-social-icons">
-                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                      <img src="/images/icons/twitter_follow_svg.svg" class="footer-share-social-icons">
+                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
                     </a>
                   </div>
                   <div class="grid-col-3 dh-follow-us-div">
                     <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
                       <!--<span>Follow us on GitHub</span>-->
-                      <img src="/images/icons/github_logo.svg" class="footer-share-social-icons">
-                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                      <img src="/images/icons/instagram_follow_svg.svg" class="footer-share-social-icons">
+                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
                     </a>
                   </div>
                   <div class="grid-col-3 dh-follow-us-div">
                     <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
                       <!--<span>Follow us on GitHub</span>-->
-                      <img src="/images/icons/github_logo.svg" class="footer-share-social-icons">
-                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                      <img src="/images/icons/github_follow_svg.svg" class="footer-share-social-icons">
+                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
                     </a>
                   </div>
               </div>
@@ -103,7 +103,7 @@
               <div class="grid-col-auto">
                 <a id="dh-footer_social-twitter" class="usa-social-link usa-social-link--twitter" href="https://twitter.com/USDOT" target="_blank">
                   <span>Twitter</span>
-                  <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                  <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
                 </a>
               </div>
               <div class="grid-col-auto">
@@ -113,6 +113,7 @@
                 </a>
               </div>
             </div>
+            <div class="grid-col-auto contact-datahub" id="contact-datahub">
             <h3 id="dh-footer_contact-us-title" class="usa-footer__contact-heading">Contact ITS DataHub</h3>
             <address class="usa-footer__address">
               <div class="usa-footer__contact-info grid-row grid-gap">
@@ -121,6 +122,7 @@
                 </div>
               </div>
             </address>
+            </div>
           </div>
         </div>
       </div>

@@ -43,11 +43,26 @@
   .dh-follow-us .usa-footer__primary-link-icon-social{
     margin-top: 0px;
   }
+  .social-media-footer-top-wrapper{
+    justify-content: flex-end;
+  }
 }
 
 .usa-footer__secondary-section {
   @extend .usa-footer__secondary-section;
   background-color: $dh-footer-color-secondary;  
+  & .usa-footer__social-links{
+    display: none;
+  }
+  
+}
+#contact-datahub{
+  margin-top: 20px;
+}
+@include at-media-max('mobile-lg'){ 
+  #contact-datahub{
+    margin-top: 0px;
+  }
 }
 
 .usa-footer__logo {
@@ -100,7 +115,7 @@
   @extend .usa-social-link;
   // $background-height: units(1); // Height of icon within hit area.
   background-color: color('transparent');
-  // display: inline-block;
+  display: inline-block;
 }
 
 .usa-social-link--facebook {
