@@ -4,8 +4,44 @@
   a {
     font-size: units(2);
   }
-  #dh-footer_sdc-link_li{
-    width: 22%;
+  // #dh-footer_sdc-link_li{
+  //   width: 22%;
+  // }
+  .dh-follow-us-div{
+    display: inline;
+  }
+  #addthis_wrapper .social-share,
+  #follow_header{
+    float: left;
+  }
+  .addthis_inline_share_toolbox_yi93,
+  #follow_wrapper{
+    display: inline-flex;
+  }
+  #follow_wrapper{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  .social-share,
+  .addthis_inline_share_toolbox_yi93{
+    //margin-block-start: units(0.5);
+    //margin-block-end: units(0.5);
+  }
+
+  .footer-share-social-icons{
+    width: 1.9rem;
+    height: auto;
+  }
+  .social-share{
+    line-height: 28px;
+    margin-right: units(1);
+  }
+  .dh-follow-us img.footer-share-social-icons{
+    width: 25px;
+  }
+  .dh-follow-us .usa-footer__primary-link-icon-social{
+    margin-top: 0px;
   }
 }
 
@@ -83,22 +119,28 @@
 
 .usa-social-link--instagram {
   @extend .usa-social-link--youtube;
-  background-image:url("/images/icons/instagram.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/icons/instagram.svg"), linear-gradient(transparent, transparent);
+  background-image:url("/images/icons/Instagram.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/icons/Instagram.svg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
 }
 
-.usa-footer__primary-link {
-  @extend .usa-footer__primary-link;
+.usa-footer__nav {
+  @extend .usa-footer__nav;
+  //height: units(7);
+  .usa-footer__primary-link {
+    @extend .usa-footer__primary-link;
+    //display: none; // Hiding secondary links.
+  }
+
+  .usa-footer__primary-link-icon {
+    height: units(1.5);
+    width: units(1.5);
+    background-color: transparent;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
 }
 
-.usa-footer__primary-link-icon {
-  height: units(1.5);
-  width: units(1.5);
-  background-color: transparent;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
 
 .usa-footer__primary-link-icon-social {
   height: units(1.5);

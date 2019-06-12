@@ -14,3 +14,12 @@
 @import './dot-result-card.scss';
 @import './Metrics.scss';
 @import './dot-iframe.scss';
+@import './Resources.scss';
+
+html, body {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

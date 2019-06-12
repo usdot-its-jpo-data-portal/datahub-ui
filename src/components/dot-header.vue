@@ -54,7 +54,6 @@
     </div>
   </div>
 
-  
   <div class="usa-overlay"></div>
   <header class="usa-header usa-header--extended" role="banner">
     <div id="nav_dot_banner" class="usa-banner__header">
@@ -64,69 +63,64 @@
         </a>
       </div>
     </div>
-    <div class="usa-navbar" style="padding-top: 2rem;">
+    <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo__text"><a href="/" title="Home" aria-label="Home">ITS DataHub</a></em>
+        <em class="usa-logo__text">
+          <a href="/" title="Home" aria-label="Home">
+            ITS DataHub
+            <div class="dh-logo__text-subtitle">Intelligent Transportation Systems</div>
+          </a>
+        </em>
       </div>
-      <button class="usa-menu-btn">Menu</button>
+      <button class="usa-menu-btn" aria-controls="dh-nav">Menu</button>
     </div>
     
     <nav role="navigation" class="usa-nav" id="dh-nav">
       
-      <div class="usa-nav__inner"><button class="usa-nav__close"><img src="/images/close.svg" alt="close"></button>
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/images/close.svg" alt="close">
+        </button>
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/"><span>Home</span></router-link>
-            <!-- <a class="usa-nav__link" href="/"><span>Home</span></a> -->
+            <router-link aria-controls="dh-nav1" to="/">Home</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <!-- <a class="usa-nav__link" href="/about"><span>About</span></a> -->
-            <router-link class="usa-nav__link" to="/about"><span>About</span></router-link>
+            <router-link aria-controls="dh-nav2" to="/about">About</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
-              aria-controls="extended-nav-section-one"><span>Resources</span></button>
-            <ul id="extended-nav-section-one" class="usa-nav__submenu">
-              <li class="usa-nav__submenu-item">
-                <router-link class="usa-nav__link" to="#">1</router-link>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <router-link class="usa-nav__link" to="#">2</router-link>
-              </li>
-              <li class="usa-nav__submenu-item">
-                <router-link class="usa-nav__link" to="#">3</router-link>
-              </li>
-            </ul>
+            <router-link to="/resources">Resources</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/metrics"><span>Metrics</span></router-link>
+            <router-link to="/metrics">Metrics</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link class="usa-nav__link" to="/search"><span>Search</span></router-link>
+            <router-link to="/search">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <a class="usa-nav__link" href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
+            <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
           </li>
         </ul>
         <div class="usa-nav__secondary" style="">
-          
-          <ul class="usa-nav__secondary-links">
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
-            </li>
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
-            </li>
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
-            </li>
-            <li class="usa-nav__secondary-item">
-              <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
-            </li>
-          </ul>
+          <div class="dh-header__secondary-links">
+            <ul class="usa-nav__secondary-links">
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
+              </li>
+            </ul>
+          </div>
           <div>
-                
-                <div id="followus_wrapper">
+
+                <div id="followus_wrapper" style="visibility: hidden;">
                     <p id="followus_header">Follow Us</p>
                     <ul class="usa-nav__secondary-links">
                       <li class="usa-nav__secondary-item">
@@ -148,11 +142,6 @@
                         </a>
                       </li>
                     </ul>
-                </div>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div id="addthis_wrapper">
-                    <p id="addthis_header">Share</p>
-                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
           </div>
             

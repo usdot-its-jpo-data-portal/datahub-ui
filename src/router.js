@@ -35,6 +35,17 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: () => import('./views/Search.vue')
+    },
+    {
+      path: '/resources',
+      components: { default: () => import('./views/Resources.vue')},
+      children: [
+        {
+          path: '',
+          name: 'guidelines',
+          components: { resources: () => import('./views/Resources/resources-guidelines.vue')}
+        }
+      ]
     }
   ]
 })

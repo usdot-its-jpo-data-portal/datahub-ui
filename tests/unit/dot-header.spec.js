@@ -114,7 +114,7 @@ describe('DOT Microsite Header', () => {
   });
   it('contains link to View On GitHub', () => {
     const wrapper = shallowMount(DOTHeader, {localVue, router});
-    let items = wrapper.findAll('.usa-nav__link');
+    let items = wrapper.findAll('.usa-nav__primary-item');
     let found = false;
     for(let i=0 ; i<items.length; i++) {
       if(items.at(i).text()==='View On GitHub'){
@@ -205,7 +205,7 @@ describe('DOT Microsite Header', () => {
     let items = wrapper.findAll('.dh-follow-us');
     let found = false;
     for(let i=0 ; i<items.length; i++) {
-      if(items.at(i).text() != 'Follow us on Facebook')
+      if(!items.at(i).text().includes('Follow us on Facebook'))
         continue;
 
       let item = items.at(i).find('img');
@@ -223,7 +223,7 @@ describe('DOT Microsite Header', () => {
     let items = wrapper.findAll('.dh-follow-us');
     let found = false;
     for(let i=0 ; i<items.length; i++) {
-      if(items.at(i).text() != 'Follow us on Twitter')
+      if(!items.at(i).text().includes('Follow us on Twitter'))
         continue;
 
       let item = items.at(i).find('img');
@@ -241,14 +241,14 @@ describe('DOT Microsite Header', () => {
     let items = wrapper.findAll('.dh-follow-us');
     let found = false;
     for(let i=0 ; i<items.length; i++) {
-      if(items.at(i).text() != 'Follow us on Github')
+      if(!items.at(i).text().includes('Follow us on GitHub'))
         continue;
 
       let item = items.at(i).find('img');
       if(!item.is('img'))
         continue;
-
-      expect(item.html().includes('src="/images/icons/github_logo.svg"')).toBe(true);
+      let hasSrc = item.html().includes('src="/images/icons/github_logo.svg"');
+      expect(hasSrc).toBe(true);
       found = true;
       break;
     }

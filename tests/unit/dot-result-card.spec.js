@@ -62,7 +62,7 @@ describe('DOT Microsite - Search : Card', () => {
   it('constains description ', () => {
     const wrapper = shallowMount(DOTResultCard, {attachTo: document.body, propsData: { index: 0, data: item, search: searchFnc}});
     let h = wrapper.find('.dh-result-card__description');
-    let b = wrapper.find('.dh-result-vard__description-readmore');
+    let b = wrapper.find('.dh-result-card__description-readmore');
     b.trigger('click');
     let d = h.text();
     d = d.substring(0,100);

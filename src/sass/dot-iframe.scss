@@ -1,4 +1,6 @@
 .dh-iframe__wrapper {
+  border: none;
+  overflow: hidden;
   .dh-iframe__iframe-hide {
     visibility: hidden;
     height: 0 !important;

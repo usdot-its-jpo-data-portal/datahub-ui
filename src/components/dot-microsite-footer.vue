@@ -2,7 +2,7 @@
   <footer class="usa-footer" role="contentinfo">
     <div class="usa-footer__primary-section">
       <nav class="usa-footer__nav">
-        <ul class="add-list-reset grid-row grid-gap">
+        <!--<ul class="add-list-reset grid-row grid-gap">
           <li class="mobile-lg:grid-col-4 desktop:grid-col-2 usa-footer__primary-content">
             <a id="dh-footer_sandbox-link" class="usa-footer__primary-link" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" target="_blank">
               Sandbox Data
@@ -27,6 +27,50 @@
               <img class="usa-footer__primary-link-icon" src="/images/icons/external-tabs.svg" alt>
             </a>
           </li>
+        </ul>-->
+        <ul class="add-list-reset grid-row social-media-footer-top-wrapper">
+          <li class="desktop:grid-col-3 social-media-footer-top usa-footer__primary-content">
+            <div id="addthis_wrapper" class="usa-footer__primary-link">
+              <p class="social-share">Share</p>
+              <div class="addthis_inline_share_toolbox_yi93"></div>
+            </div>
+          </li>
+          <li class="desktop:grid-col-4 social-media-footer-top usa-footer__social-links">
+            <div id="share_wrapper" class="usa-footer__primary-link">
+              <p id="follow_header" class="social-share">Follow</p>
+              <div id="follow_wrapper" class="grid-row grid-gap-1">
+                  
+                  <div class="grid-col-3 dh-follow-us-div">
+                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
+                           <!--<span>Follow us on Facebook</span>-->
+                          <img src="/images/icons/facebook_logo.svg" class="footer-share-social-icons">
+                          <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                        </a>
+                  </div>
+                  <div class="grid-col-3 dh-follow-us-div">  
+                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
+                      <!--<span>Follow us on Twitter</span>-->
+                      <img src="/images/icons/Twitter_Social_Icon_Circle_Color.svg" class="footer-share-social-icons">
+                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                    </a>
+                  </div>
+                  <div class="grid-col-3 dh-follow-us-div">
+                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
+                      <!--<span>Follow us on GitHub</span>-->
+                      <img src="/images/icons/github_logo.svg" class="footer-share-social-icons">
+                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                    </a>
+                  </div>
+                  <div class="grid-col-3 dh-follow-us-div">
+                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
+                      <!--<span>Follow us on GitHub</span>-->
+                      <img src="/images/icons/github_logo.svg" class="footer-share-social-icons">
+                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
@@ -43,7 +87,7 @@
               </div>
               <div class="grid-row grid-gap">
                 <div class="grid-col-auto">
-                  <img id="usa-footer__logo-img-its" class="usa-footer__logo-img-its" src="/images/icons/ITS_JPO.png" alt>
+                  <img id="usa-footer__logo-img-its" class="usa-footer__logo-img-its" src="/images/icons/its_jpo_footer.svg" alt>
                 </div>
               </div>
             </div>

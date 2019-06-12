@@ -1,6 +1,6 @@
 .dh-search__search-wrapper {
-  background-image:url("/images/datahub_search_header_background.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/datahub_search_header_background.png"), linear-gradient(transparent, transparent);
+  background-image:url("/images/datahub_search_header_background.jpeg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/datahub_search_header_background.jpeg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
   height: units('card');
   width: 100%;
@@ -50,15 +50,19 @@
     }
     input::-webkit-input-placeholder {
       font-size: units(2);
+      font-style: italic;
     }
     input::-moz-placeholder {
       font-size: units(2);
+      font-style: italic;
     }
     input::-ms-input-placeholder {
       font-size: units(2);
+      font-style: italic;
     }
     input::placeholder {
       font-size: units(2);
+      font-style: italic;
     }
     button {
       position: relative;

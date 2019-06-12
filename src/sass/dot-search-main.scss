@@ -1,7 +1,7 @@
 .usa-hero {
   @extend .usa-hero;
-  background-image:url("/images/header_background_new.png"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
-  background-image:url("/images/header_background_new.png"), linear-gradient(transparent, transparent);
+  background-image:url("/images/header_background_new.jpeg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image:url("/images/header_background_new.jpeg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
   .usa-hero__callout {
     @extend .usa-hero__callout;
@@ -84,15 +84,19 @@
       }
       input::-webkit-input-placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       input::-moz-placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       input::-ms-input-placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       input::placeholder {
         font-size: units(2);
+        font-style: italic;
       }
       button {
          /* position and size */
