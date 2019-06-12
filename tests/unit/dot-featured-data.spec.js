@@ -6,7 +6,7 @@ describe('DOT Microsite - Home : Featured Search', () => {
     const wrapper = shallowMount(DOTFeaturedData, {attachTo: document.body});
     let f = wrapper.find('h3');
     expect(f.is('h3')).toBe(true);
-    expect(f.text()).toMatch('FEATURED DATA SETS');
+    expect(f.text()).toMatch('FEATURED DATASETS');
   });
   it('renders the right number of datasets', () => {
     const wrapper = shallowMount(DOTFeaturedData, {attachTo: document.body});
