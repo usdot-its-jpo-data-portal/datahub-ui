@@ -70,4 +70,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @include at-media-max('mobile-lg'){
+    &.grid-col-4{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 3.5rem;
+      padding-left: 3.5rem;
+    }
+  }
 }

@@ -3,7 +3,7 @@
     <div class="grid-container">
       <div class="grid-row">
         <div class="grid-col-auto dh-home_featured-search-title">
-          <h3>FEATURED DATA SETS</h3>
+          <h3>FEATURED DATASETS</h3>
         </div>
       </div>
     </div>
