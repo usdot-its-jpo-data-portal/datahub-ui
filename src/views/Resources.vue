@@ -62,9 +62,10 @@ export default {
       event.preventDefault();
       let element = document.getElementById(`${id}`);
       if(element) {
-        window.scroll(0,0); //resets reference;
-        const y = element.getBoundingClientRect().top + window.scrollY;
-        window.scroll({top: y,behavior: 'smooth'});
+        // due to support IE11 where scrollY is not available
+        let yOff = window.scrollY ? window.scrollY : window.pageYOffset;
+        const y = element.getBoundingClientRect().top + yOff;
+        window.scrollTo(0, y);
       }
     }
   }
