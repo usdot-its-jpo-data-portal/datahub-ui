@@ -63,7 +63,7 @@
         border: 1px solid $dh-color-primary-blue;
         border-top-left-radius: units(0.5);
         border-bottom-left-radius: units(0.5);
-        font-size: units(3);
+        // font-size: units(3);
         color: $dh-color-black;
         padding-left: units(0.5);
         @include at-media-max('tablet'){
