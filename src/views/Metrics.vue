@@ -3,7 +3,7 @@
     <div class="usa-layout-docs usa-section" id="main-content">
       <div class="grid-container">
         <div class="grid-row grid-gap">
-          <aside class="usa-layout-docs__sidenav desktop:grid-col-3 dh-metrics__sidemenu">
+          <aside v-if="!isMobile" class="usa-layout-docs__sidenav desktop:grid-col-3 dh-metrics__sidemenu">
             <nav>
               <h4>Table of Contents</h4>
               <ul class="usa-sidenav">
@@ -33,8 +33,9 @@
             <h1>ITS DataHub Metrics Dashboard</h1>
             <p class="usa-intro">Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportaion Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views.</p>
             <!-- implementation base on https://usdotjpoode.atlassian.net/wiki/spaces/RDA/pages/678494209/New+iframes+for+DataHub+-+USWDS -->
-            <h2 id="dataset-highlights">Dataset Highlights</h2>
-            <div class="grid-container">
+
+            <h2 v-if="!isMobile" id="dataset-highlights">Dataset Highlights</h2>
+            <div v-if="!isMobile" class="grid-container">
               <h3>Recently Downloaded Datasets (last 30 days)</h3>
               <div class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-10">
@@ -89,7 +90,7 @@
                     src="https://datastudio.google.com/embed/reporting/1JhiZYIyIWXcU14gHOiyBdwNWRqxZex_h/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-10">
                   <!-- 7 -->
                   <DOTIFrame
@@ -105,7 +106,7 @@
                     src="https://datastudio.google.com/embed/reporting/1L6Xu1099L1yfG_4Bbsu5fz2M764Hba8g/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 9 -->
                   <DOTIFrame
@@ -114,7 +115,7 @@
                     src="https://datastudio.google.com/embed/reporting/1tohVI_KySS-TyKQkcIAAhwtqfLnxm7Ir/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 10 -->
                   <DOTIFrame
@@ -123,7 +124,7 @@
                     src="https://datastudio.google.com/embed/reporting/193GyrPXakM4z5c-lk5j9EWWCenitrDnG/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-10">
                   <!-- 11 -->
                   <DOTIFrame
@@ -139,7 +140,7 @@
                     src="https://datastudio.google.com/embed/reporting/1GZSvnTSFSC0esKSDLM6zhCRP84EsXPbM/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- *13 -->
                   <DOTIFrame
@@ -168,7 +169,7 @@
                     src="https://datastudio.google.com/embed/reporting/1kWIFrlJ1ACkAR8uydbsZZGYD52cWx2An/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-10">
                   <!-- 16 -->
                   <DOTIFrame
@@ -184,7 +185,7 @@
                     src="https://datastudio.google.com/embed/reporting/1CBTZhW0lANvTcoquWKktCHOmpVaEOW50/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 18 -->
                   <DOTIFrame
@@ -193,7 +194,7 @@
                     src="https://datastudio.google.com/embed/reporting/1ocfAs5j6LskVxzwp56-wuo-yMJC-x9s0/page/0bOK" />
                 </div>
               </div>
-              <div class="grid-row">
+              <div v-if="!isMobile" class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 19 -->
                   <DOTIFrame
@@ -204,8 +205,8 @@
               </div>
             </div>
 
-            <h2 id="sandbox-datasets">Sandbox Datasets</h2>
-            <div class="grid-container">
+            <h2 v-if="!isMobile" id="sandbox-datasets">Sandbox Datasets</h2>
+            <div v-if="!isMobile" class="grid-container">
               <div class="grid-row">
                 <!-- text description -->
                 <div class="desktop:grid-col-6 mobile:grid-col-10">
@@ -243,8 +244,8 @@
               </div>
             </div>
 
-            <h2 id="github-repository-views" >DataHub (Microsite) & Sandbox GitHub Repository Views</h2>
-            <div class="grid-container">
+            <h2 v-if="!isMobile" id="github-repository-views" >DataHub (Microsite) & Sandbox GitHub Repository Views</h2>
+            <div v-if="!isMobile" class="grid-container">
               <div class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 22 -->
@@ -256,8 +257,8 @@
               </div>
             </div>
 
-            <h2 id="datahub-usage-metrics">DataHub Usage Metrics</h2>
-            <div class="grid-container">
+            <h2 v-if="!isMobile" id="datahub-usage-metrics">DataHub Usage Metrics</h2>
+            <div v-if="!isMobile" class="grid-container">
               <div class="grid-row">
                 <div class="desktop:grid-col-12 mobile:grid-col-12">
                   <!-- 23 -->
@@ -307,7 +308,13 @@ export default {
   name: 'metrics',
   components: {
     DOTIFrame
-    },
+  },
+  computed: {
+    isMobile : {
+      get: function() { return this.$store.state.isMobile; },
+      set: function(){}
+    }
+  },
   methods: {
     moveToTag: function(event,id) {
       event.preventDefault();

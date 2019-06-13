@@ -23,7 +23,8 @@ export default new Vuex.Store({
     loadingNTL: false,
     searchByName: false,
     NTLData : [],
-    SocrataData: []
+    SocrataData: [],
+    isMobile: false
   },
   mutations: {
     searchText(state, text) {
@@ -46,6 +47,10 @@ export default new Vuex.Store({
     },
     setSearchByName(state, data){
       state.searchByName = data;
+    },
+    setIsMobile(state, data) {
+      console.log(data);
+      state.isMobile = data;
     }
   },
   actions: {
