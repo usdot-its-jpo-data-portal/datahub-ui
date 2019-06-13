@@ -29,6 +29,10 @@
     DOTMicrositeFooter
   },
   created: function() {
+    let isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent));
+      if(this.$store.state.isMobile != isMobile){
+        this.$store.commit('setIsMobile', isMobile);
+      }
   }
 }
 </script>
