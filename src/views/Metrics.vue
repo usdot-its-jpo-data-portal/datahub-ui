@@ -38,14 +38,14 @@
             <div v-if="!isMobile" class="grid-container">
               <h3>Recently Downloaded Datasets (last 30 days)</h3>
               <div class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 1 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="Top DTG Datasets Downloaded (last 30 days)"
                     src="https://datastudio.google.com/embed/reporting/1JhiZYIyIWXcU14gHOiyBdwNWRqxZex_h/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 2 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -55,14 +55,14 @@
               </div>
               <h3>Frequently Downloaded Datasets (all time)</h3>
               <div class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 3 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="Top DTG Datasets Downloaded (all time)"
                     src="https://datastudio.google.com/embed/reporting/1L6Xu1099L1yfG_4Bbsu5fz2M764Hba8g/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 4 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -75,14 +75,14 @@
             <h2 id="dtg-dataset-details">DTG Dataset Details data.transporation.gov</h2>
             <div class="grid-container">
               <div class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 5 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="Top DTG Datasets Viewed (last 30 days)"
                     src="https://datastudio.google.com/embed/reporting/1nH4nLIOsRPtHnrXtBn9IN7ibhp7oQ05J/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 6 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -91,14 +91,14 @@
                 </div>
               </div>
               <div v-if="!isMobile" class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 7 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="Top DTG Datasets Viewed (all time)"
                     src="https://datastudio.google.com/embed/reporting/1PNb5yI7miCOqeDuy4vLIgSC3_4qDyLlo/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 8 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -125,14 +125,14 @@
                 </div>
               </div>
               <div v-if="!isMobile" class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 11 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="DTG Dataset API Rows Accessed (last 30 days)"
                     src="https://datastudio.google.com/embed/reporting/126BBqpIEREiHWB-cXYlhrZDh5yGLz6ll/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 12 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -154,14 +154,14 @@
             <h2 id="ntl-datset-details">NTL Dataset Details National Transportation Library</h2>
             <div class="grid-container">
               <div class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 14 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="Top NTL Dataset Views (last 30 days)"
                     src="https://datastudio.google.com/embed/reporting/1K0uYPKrJTY1BhdyRXnuT6KGen0UUCFDq/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 15 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -170,14 +170,14 @@
                 </div>
               </div>
               <div v-if="!isMobile" class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 16 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="Top NTL Dataset Views (all time)"
                     src="https://datastudio.google.com/embed/reporting/1LewfQCFWIXBoiVlB7GRwinfqbxvABH4k/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 17 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
@@ -209,14 +209,14 @@
             <div v-if="!isMobile" class="grid-container">
               <div class="grid-row">
                 <!-- text description -->
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <div class="dh-metrics__iframe-description">
                     <h4>What is the Sandbox?</h4>
                     <p>The sandbox is our data repository that uses Amazon Web Services (AWS) Simple Storage System (S3).
                       Large data streams and immature data whose schemas are still subject to change are stored in our sandbox.</p>
                   </div>
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <div class="dh-metrics__iframe-description">
                     <h4>How do I view the Sandbox and its datasets?</h4>
                     <p>Users can access the data in the sandbox using any existing tools that interact with AWS S3 as well as
@@ -269,14 +269,14 @@
                 </div>
               </div>
               <div class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 24 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"
                     title="User Sessions by Source (How did users get to DataHub)"
                     src="https://datastudio.google.com/embed/reporting/1BEoBiibq3-2Tw8IQrl42rWMrfRPQbdyi/page/0bOK" />
                 </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-10">
+                <div class="desktop:grid-col-6 mobile:grid-col-12">
                   <!-- 25 -->
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart"

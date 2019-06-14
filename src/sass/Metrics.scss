@@ -17,12 +17,20 @@
           iframe {
             width: 380px;
             height: 320px;
+            @include at-media-max('mobile-lg'){
+              width: unset;
+              height: 250px;
+            }
           }
         }
         &.dh-metrics__iframe-table {
           iframe {
             width: 760px;
             height: 650px;
+          }
+          @include at-media-max('tablet'){
+            width: unset;
+            height: 250px;
           }
         }
         &.dh-metrics__iframe-chart-xl {
