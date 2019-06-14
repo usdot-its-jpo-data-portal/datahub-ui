@@ -3,7 +3,7 @@
   <main class="usa-layout-docs usa-section" id="main-content">
     <div class="grid-container">
       <div class="grid-row grid-gap">
-        <div class="usa-layout-docs__main desktop:grid-col-19 grid-offset-3 usa-prose about-vue">
+        <div class="usa-layout-docs__main desktop:grid-col-9 grid-offset-2 usa-prose about-vue">
           <h1>About the ITS DataHub</h1>
           <p class="usa-intro">
             The ITS DataHub provides a single point of entry to discover USDOT&rsquo;s
