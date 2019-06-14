@@ -2,6 +2,7 @@ $theme-grid-container-max-width: null;
 $theme-site-max-width: null;
 $theme-site-margins-breakpoint: null;
 $theme-navigation-width: null;
+$theme-font-role-heading: null;
 
 
 $theme-grid-container-max-width: 'desktop-lg' !global;
@@ -13,3 +14,5 @@ $theme-navigation-width: 'desktop' !global;
 //'tablet-lg'is 800 for menu switch from horizontal to mobile menu
 //'desktop' is 1024 for menu switch from horizontal to mobile menu
 //'desktop-lg' is 1200 for menu switch from horizontal to mobile menu
+$theme-font-role-heading: 'sans' !global;
+
