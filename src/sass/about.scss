@@ -64,5 +64,11 @@
       max-width: $dh-about_text-width * 1.2;
     }
   }
+
+  &.about-vue{
+    @include at-media-max('desktop'){
+      margin-left: 0px;
+    }
+  }
 }
 
