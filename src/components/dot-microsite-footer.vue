@@ -104,6 +104,7 @@
               <div class="usa-footer__contact-info grid-row grid-gap">
                 <div class="grid-col-auto">
                   <a id="dh-footer_contact-us-email" href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>
+                  <div class="dh-footer__version-id">Version: {{versionId}}</div>
                 </div>
               </div>
             </address>
@@ -128,6 +129,12 @@ export default {
   },
   created: function(){
     this.contact_email = TEMPLATE_CATEGORY.contact_email;
+  },
+  computed: {
+    versionId : {
+      get: function() {return this.$store.state.version },
+      set: function(){}
+    }
   }
 }
 </script>

@@ -24,7 +24,8 @@ export default new Vuex.Store({
     searchByName: false,
     NTLData : [],
     SocrataData: [],
-    isMobile: false
+    isMobile: false,
+    version: JSON.parse(unescape(process.env.VUE_APP_PACKAGE_JSON || '%7Bversion%3A0%7D')).version
   },
   mutations: {
     searchText(state, text) {
