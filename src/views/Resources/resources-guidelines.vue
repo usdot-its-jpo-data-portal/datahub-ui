@@ -60,31 +60,31 @@
     <h2 id="Definitions">Definitions</h2>
     <ul>
       <li>
-        <strong>Applicants</strong>: persons responding to a solicitation by the U.S. DOT for an ITS JPO-funded grant, contract, or other funding agreement.
+        <strong>Applicants</strong>: Persons responding to a solicitation by the U.S. DOT for an ITS JPO-funded grant, contract, or other funding agreement.
       </li>
       <li>
-        <strong>Award</strong>: any funding agreement, such as a contract or grant, signed by a contracting officer that permits the expenditure of government funds or use of such government resources to a provider of the goods or services requested in the funding agreement.
+        <strong>Award</strong>: Any funding agreement, such as a contract or grant, signed by a contracting officer that permits the expenditure of government funds or use of such government resources to a provider of the goods or services requested in the funding agreement.
       </li>
       <li>
         <strong>Awardee</strong>: An organizational entity or individual that receives a written agreement from a U.S. DOT contracting officer to receive funds from the ITS JPO and/or the U.S. DOT in order to carry out a project or activity.
       </li>
       <li>
-        <strong>Confidentiality</strong>: the ability of only authorized users to access controlled access data.
+        <strong>Confidentiality</strong>: The ability of only authorized users to access controlled access data.
       </li>
       <li>
-        <strong>Confidential business information</strong>: trade secrets and commercial or financial information obtained from a person and privileged or confidential.
+        <strong>Confidential business information</strong>: Trade secrets and commercial or financial information obtained from a person and privileged or confidential.
       </li>
       <li>
         <strong>Controlled access</strong>: Restricting access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information.
       </li>
       <li>
-        <strong>Data</strong>: recorded information, regardless of form or the media on which the data is recorded.
+        <strong>Data</strong>: Recorded information, regardless of form or the media on which the data is recorded.
       </li>
       <li>
         <strong>Data discovery</strong>: The ability to find data from search engine, such as the ITS DataHub.
       </li>
       <li>
-        <strong>Data integrity</strong>: the assurance that digital information is uncorrupted and can only be accessed or modified by those authorized to do so. Integrity involves maintaining the consistency, accuracy and trustworthiness of data over its entire lifecycle.
+        <strong>Data integrity</strong>: The assurance that digital information is uncorrupted and can only be accessed or modified by those authorized to do so. Integrity involves maintaining the consistency, accuracy and trustworthiness of data over its entire lifecycle.
       </li>
       <li>
         <strong>Data owner</strong>: The person or organization that has the authority, ability, and responsibility to access, create, modify, store, use, share, and protect data. Data owners have the right to delegate these privileges and responsibilities to other parties. Please note, for U.S. DOT-funded projects this may be U.S. DOT.
@@ -93,7 +93,7 @@
         <strong>Data provider</strong>: An individual or team that collects, prepares and/or submits research datasets to the ITS JPO.
       </li>
       <li>
-        <strong>Data security</strong>: protective digital privacy measures that are applied to prevent unauthorized access to computers, databases and websites. Data security also protects data from corruption.
+        <strong>Data security</strong>: Protective digital privacy measures that are applied to prevent unauthorized access to computers, databases and websites. Data security also protects data from corruption.
       </li>
       <li>
         <strong>Data steward</strong>: At the direction of the data owner, the person or organization that is delegated the privileges and responsibilities to manage, control, and maintain the quality of a data asset throughout the data life cycle. The data steward may also apply appropriate protections, restrictions, and other safeguards depending on the nature of the data, subject to the direction of the data owner.
@@ -105,7 +105,7 @@
         <strong>Metadata</strong>: Structural or descriptive information about data such as content, format, source, rights, accuracy, provenance, frequency, periodicity, granularity, publisher or responsible party, contact information, method of collection, and other descriptions.
       </li>
       <li>
-        <strong>Personally Identifiable Information (PII)</strong>: information that alone or in conjunction with additional information can threaten the privacy or identity of an individual.
+        <strong>Personally Identifiable Information (PII)</strong>: Information that alone or in conjunction with additional information can threaten the privacy or identity of an individual.
       </li>
       <li>
         <strong>Primary data</strong>: Data collected during research that has not had significant analysis performed on it.
