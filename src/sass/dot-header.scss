@@ -69,7 +69,7 @@
 .usa-nav__secondary{
     @extend .usa-nav__secondary;
     @include at-media ($theme-navigation-width){
-        bottom: 0.5rem;
+        bottom: 1.5rem;
         & .dh-header__secondary-links .usa-nav__secondary-links a{
             color: $dh-color-white;
             margin-bottom: units(9);
@@ -159,3 +159,13 @@
         padding-bottom: units(1.5)
     }
 }
+
+@include at-media($theme-navigation-width){
+    .usa-header--extended .usa-navbar{
+        border-bottom: 1px solid #E6DDDD;
+        #extended-logo{
+            margin: 1rem 0 1.5rem;
+        }
+    }
+} 
+//#E6DDDD
