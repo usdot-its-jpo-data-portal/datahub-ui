@@ -32,9 +32,7 @@
             </ul>
           </nav>
         </aside>
-        <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
           <router-view name="resources" :key="$route.fullPath"></router-view>
-        </div>
       </div>
     </div>
   </main>

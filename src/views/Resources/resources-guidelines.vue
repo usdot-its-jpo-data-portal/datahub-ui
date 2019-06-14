@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <h1>Guidelines</h1>
 
     <h2 id="Background-and-Purpose">Background and Purpose</h2>
