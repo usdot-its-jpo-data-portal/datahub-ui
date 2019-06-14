@@ -98,7 +98,11 @@
             <router-link to="/search">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank"><span>View On GitHub</span></a>
+            <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank">
+              <span>View On GitHub</span>
+              <img class="usa-header__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
+            </a>
+            
           </li>
         </ul>
         <div class="usa-nav__secondary" style="">
@@ -118,32 +122,7 @@
               </li>
             </ul>
           </div>
-          <div>
-
-                <div id="followus_wrapper" style="visibility: hidden;">
-                    <p id="followus_header">Follow Us</p>
-                    <ul class="usa-nav__secondary-links">
-                      <li class="usa-nav__secondary-item">
-                        <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
-                          <span>Follow us on Facebook</span>
-                          <img src="/images/icons/facebook_logo.svg" class="header-social-icons" style="">
-                        </a>
-                      </li>
-                      <li class="usa-nav__secondary-item">
-                        <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
-                          <span>Follow us on Twitter</span>
-                          <img src="/images/icons/Twitter_Social_Icon_Circle_Color.svg" class="header-social-icons" style="">
-                        </a>
-                      </li>
-                      <li class="usa-nav__secondary-item">
-                        <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
-                          <span>Follow us on GitHub</span>
-                          <img src="/images/icons/github_logo.svg" class="header-social-icons" style="">
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-          </div>
+          
             
         </div>
       </div>

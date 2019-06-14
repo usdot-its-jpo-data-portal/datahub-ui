@@ -69,7 +69,7 @@
 .usa-nav__secondary{
     @extend .usa-nav__secondary;
     @include at-media ($theme-navigation-width){
-        bottom: 1.5rem;
+        bottom: 6.5rem;
         & .dh-header__secondary-links .usa-nav__secondary-links a{
             color: $dh-color-white;
             margin-bottom: units(9);
@@ -77,49 +77,6 @@
                 color: lighten($dh-nav-links_secondary-state-hover, 30%);
             }
         }
-        & #addthis_wrapper{
-            margin-top: 20px;
-            float: right;
-            & #addthis_header{
-                margin-top: 0px;
-                margin-bottom: 6px;
-                font-size: 15px;
-                font-weight:600;
-                color: $dh-color-primary-blue;
-            }
-        }
-        & #followus_wrapper{
-            margin-top: 20px;
-            margin-left: 40px;
-            float: right;
-            & #followus_header{
-                margin-top: 0px;
-                margin-bottom: 6px;
-                font-size: 15px;
-                font-weight:600;
-                color: $dh-color-primary-blue;
-            }
-        }
-        .usa-social-link.dh-follow-us{
-            height: auto;
-            width: auto;
-        }
-
-        #followus_wrapper{
-            & .usa-nav__secondary-links .usa-nav__secondary-item + .usa-nav__secondary-item::before{
-                content: none;
-            }
-            & .usa-nav__secondary-links{
-                height: 35px;
-                margin-bottom: 0px;
-            }
-            & .usa-nav__secondary-item:first-child{
-                padding-left: 0px;
-            }
-        }
-    }
-    & .header-social-icons{
-        width: 1.9rem; height: auto;
     }
 }
 
@@ -149,6 +106,12 @@
                 width: 0;
             }
         }
+        & .usa-header__primary-link-icon-social{
+            height: 0.75rem;
+            width: 0.75rem;
+            background-color: transparent;
+            margin-left: .20rem;
+        }
     }
 }
 
@@ -167,5 +130,4 @@
             margin: 1rem 0 1.5rem;
         }
     }
-} 
-//#E6DDDD
+}
