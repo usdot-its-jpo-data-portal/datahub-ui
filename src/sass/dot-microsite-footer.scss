@@ -4,16 +4,7 @@
   a {
     font-size: units(2);
   }
-  // #dh-footer_sdc-link_li{
-  //   width: 22%;
-  // }
-  .dh-follow-us-div{
-    display: inline;
-  }
-  #addthis_wrapper .social-share,
-  #follow_header{
-    float: left;
-  }
+
   .addthis_inline_share_toolbox_yi93,
   #follow_wrapper{
     display: inline-flex;
@@ -23,20 +14,11 @@
     margin-block-end: 1em;
   }
 
-  .social-share,
-  .addthis_inline_share_toolbox_yi93{
-    //margin-block-start: units(0.5);
-    //margin-block-end: units(0.5);
-  }
-
   .footer-share-social-icons{
     width: 1.9rem;
     height: auto;
   }
-  .social-share{
-    line-height: 28px;
-    margin-right: units(1);
-  }
+
   .dh-follow-us img.footer-share-social-icons{
     width: 25px;
   }
@@ -45,6 +27,11 @@
   }
   .social-media-footer-top-wrapper{
     justify-content: flex-end;
+    .usa-footer__primary-link {
+      @extend .usa-footer__primary-link;
+      padding-bottom: 0;
+      padding-top: units(1);
+    }
   }
 }
 
@@ -109,6 +96,7 @@
 
 .usa-footer__social-links {
   @extend .usa-footer__social-links;
+
 }
 
 .usa-social-link {
@@ -162,4 +150,47 @@
   width: units(1.5);
   background-color: transparent;
   margin-top: units(3);
+}
+
+$dh-footer-social-main-justify: flex-end;
+
+
+@include at-media-max('mobile-lg'){
+  #contact-datahub{
+    margin-top: 0px;
+  }
+}
+
+.dh-footer__social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include at-media-max('mobile-lg'){
+    justify-content: flex-start;
+  }
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: units(2);
+  font-weight: bold;
+  padding-top: units(1.5);
+  margin-left: units(1.5);
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-right: units(1);
+  }
+  .dh-footer__social-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-right: units(2.5);
+  }
+  .dh-footer__social-share {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
 }

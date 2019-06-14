@@ -28,50 +28,35 @@
             </a>
           </li>
         </ul>-->
-        <ul class="add-list-reset grid-row social-media-footer-top-wrapper">
-          <li class="desktop:grid-col-3 social-media-footer-top usa-footer__primary-content">
-            <div id="addthis_wrapper" class="usa-footer__primary-link">
-              <p class="social-share">Share</p>
-              <div class="addthis_inline_share_toolbox_yi93"></div>
-            </div>
-          </li>
-          <li class="desktop:grid-col-4 social-media-footer-top usa-footer__social-links">
-            <div id="share_wrapper" class="usa-footer__primary-link">
-              <p id="follow_header" class="social-share">Follow</p>
-              <div id="follow_wrapper" class="grid-row grid-gap-1">
-                  
-                  <div class="grid-col-auto dh-follow-us-div">
-                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
-                           <!--<span>Follow us on Facebook</span>-->
-                          <img src="/images/icons/facebook_follow_svg.svg" class="footer-share-social-icons">
-                          <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
-                        </a>
-                  </div>
-                  <div class="grid-col-3 dh-follow-us-div">  
-                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
-                      <!--<span>Follow us on Twitter</span>-->
-                      <img src="/images/icons/twitter_follow_svg.svg" class="footer-share-social-icons">
-                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
-                    </a>
-                  </div>
-                  <div class="grid-col-3 dh-follow-us-div">
-                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
-                      <!--<span>Follow us on GitHub</span>-->
-                      <img src="/images/icons/instagram_follow_svg.svg" class="footer-share-social-icons">
-                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
-                    </a>
-                  </div>
-                  <div class="grid-col-3 dh-follow-us-div">
-                    <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
-                      <!--<span>Follow us on GitHub</span>-->
-                      <img src="/images/icons/github_follow_svg.svg" class="footer-share-social-icons">
-                      <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
-                    </a>
-                  </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="dh-footer__social-wrapper">
+          <div class="dh-footer__social-add">
+            <p class="social-share">Share</p>
+            <div class="addthis_inline_share_toolbox_yi93"></div>
+          </div>
+          <div class="dh-footer__social-share">
+            <p id="follow_header" class="social-share">Follow</p>
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
+                <!--<span>Follow us on Facebook</span>-->
+              <img src="/images/icons/facebook_follow_svg.svg" class="footer-share-social-icons">
+              <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
+            </a>
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
+              <!--<span>Follow us on Twitter</span>-->
+              <img src="/images/icons/twitter_follow_svg.svg" class="footer-share-social-icons">
+              <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
+            </a>
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
+              <!--<span>Follow us on GitHub</span>-->
+              <img src="/images/icons/instagram_follow_svg.svg" class="footer-share-social-icons">
+              <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
+            </a>
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://github.com/usdot-its-jpo-data-portal/microsite">
+              <!--<span>Follow us on GitHub</span>-->
+              <img src="/images/icons/github_follow_svg.svg" class="footer-share-social-icons">
+              <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
 
