@@ -9,11 +9,11 @@
       </div>
     </div>
     <div class="grid-row">
-      <div class="grid-col-2">
-        <div class="dh-result-card__meta-text">Date Added:</div>
-        <div class="dh-result-card__meta-data">{{ item.date}}</div>
-        <div class="dh-result-card__meta-text">Access:</div>
-        <div class="dh-result-card__meta-data">{{ item.accessLevelIsPublic}}</div>
+      <div id="left_column_results_wrapper" class="mobile-lg:grid-col-2">
+        <div id="results_date_label" class="dh-result-card__meta-text">Date Added:</div>
+        <div id="results_date_data" class="dh-result-card__meta-data">{{ item.date}}</div>
+        <div id="results_access_label" class="dh-result-card__meta-text">Access:</div>
+        <div id="results_access_data" class="dh-result-card__meta-data">{{ item.accessLevelIsPublic}}</div>
       </div>
       <div class="grid-col-fill dh-result-card__description">
         <span v-html="itemDescription"></span>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="grid-row">
-      <div class="grid-col-2">
+      <div class="mobile-lg:grid-col-2">
       </div>
       <div class="grid-col-fill dh-result-card__tags">
         <div v-if="itemTags.length > 0" >
