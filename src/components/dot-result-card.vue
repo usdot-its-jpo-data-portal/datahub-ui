@@ -27,7 +27,7 @@
       </div>
       <div class="grid-col-fill dh-result-card__tags">
         <div v-if="itemTags.length > 0" >
-          <div class="dh-result-card__tags-title">Tags({{item.tags.length}}):</div>
+          <div class="dh-result-card__tags-title">Tags:</div>
           <div v-for="(tag, idx) in itemTags" :key="idx" class="dh-result-card__tag">
             <button @click="$emit('search',tag)">
               {{tag}}
