@@ -225,3 +225,10 @@ $dh-footer-social-main-justify: flex-end;
   font-weight: normal;
   color: darken($dh-color-white, 5%);
 }
+.usa-footer__contact-info:hover{
+  text-decoration: none;
+}
+.usa-footer__contact-info a:hover{
+  text-decoration: underline;
+}
+
