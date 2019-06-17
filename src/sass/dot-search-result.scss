@@ -10,6 +10,10 @@
       padding: 0 !important;
       margin: 0 !important;
     }
+    button,
+    #number-of-results{
+      font-weight: normal;
+    }
   }
   .dh-search-results__sortby-wrapper {
     display: flex;
@@ -74,6 +78,18 @@
         }
       }
     }
+  }
+  @include at-media-max('mobile-lg'){
+    .dh-search-results__result-text{
+      font-size: units(3);
+    }
+    .dh-search-results__sortby-wrapper{
+      margin-top: units(1);
+    }
+    // .dh-search-results__sortby-wrapper .dh-search-results__sortby-text{
+    //   font-size: units(2);
+    // }
+
   }
 
   .dh-search-results_list {
