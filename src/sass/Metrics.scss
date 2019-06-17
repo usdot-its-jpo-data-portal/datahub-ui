@@ -1,10 +1,16 @@
 .dh-metrics__wrapper {
   .grid-container {
     @extend .grid-container;
-    .dh-metrics__sidemenu {
-    }
+    // .dh-metrics__sidemenu {
+    // }
     .usa-prose {
       @extend .usa-prose;
+      & h2 > span{
+        font-size: units(3);
+        //margin-left: units(1);
+        font-weight: normal;
+        flex-wrap: nowrap;
+      }
     }
     .dh-metrics__document {
       .dh-metrics__iframe {

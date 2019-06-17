@@ -72,7 +72,7 @@
               </div>
             </div>
 
-            <h2 id="dtg-dataset-details">DTG Dataset Details data.transporation.gov</h2>
+            <h2 id="dtg-dataset-details">DTG Dataset Details&nbsp;&nbsp;&nbsp;<span> data.transporation.gov</span></h2>
             <div class="grid-container">
               <div class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-12">
@@ -151,7 +151,7 @@
               </div>
             </div>
 
-            <h2 id="ntl-datset-details">NTL Dataset Details National Transportation Library</h2>
+            <h2 id="ntl-datset-details">NTL Dataset Details&nbsp;&nbsp;&nbsp;<span> National&nbsp;Transportation&nbsp;Library</span></h2>
             <div class="grid-container">
               <div class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-12">
