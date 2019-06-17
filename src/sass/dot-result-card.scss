@@ -39,7 +39,7 @@
   }
   .dh-result-card__meta-data {
     font-weight: bold;
-    font-size: untis(2.5);
+    //font-size: units(2.5);
     margin-bottom: units(2);
   }
   .dh-result-card__description {
@@ -90,5 +90,17 @@
   hr {
     border: solid 1px  lighten($dh-color-gray80, 10%);
     margin-top: units(4);
+  }
+  @include at-media-max('mobile-lg'){
+    #left_column_results_wrapper{
+      display: flex;
+
+      & .dh-result-card__meta-text{
+        margin-right: units(.5);
+      }
+      & #results_date_data{
+        margin-right: units(3);
+      }
+    }
   }
 }

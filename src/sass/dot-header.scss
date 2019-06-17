@@ -27,8 +27,10 @@
   // font-size: units(4);
   .dh-logo__text-subtitle {
     color: $dh-color-navy;
-    font-size: units(2);
     font-weight: normal;
+    @include at-media($theme-navigation-width){
+        font-size: units(2);
+    }
   }
 }
 

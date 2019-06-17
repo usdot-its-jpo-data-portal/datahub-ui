@@ -24,3 +24,31 @@ html, body {
   width: 0px;
   background: transparent;
 }
+h3{
+  margin-block-start: 1.5em;
+  margin-block-end: .7em;
+}
+@include at-media-max('tablet'){
+  .usa-prose ol ol{
+    margin-left: 0px;
+    padding-left: units(2.5);
+    margin-top: units(1.5);
+    margin-bottom: units(1.5);
+    & ol{
+      margin-left: 0px;
+      margin-top: units(2.5);
+      margin-bottom: units(2.5);
+    }
+  }
+  .usa-prose ul ul{
+    margin-left: 0px;
+    padding-left: units(2.5);
+    margin-top: units(1.5);
+    margin-bottom: units(1.5);
+    & ul{
+      margin-left: 0px;
+      margin-top: units(2.5);
+      margin-bottom: units(2.5);
+    }
+  }
+}

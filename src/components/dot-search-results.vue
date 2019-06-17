@@ -11,7 +11,7 @@
       </div>
       <div class="grid-row">
         <div class="grid-col-auto dh-search-results__result-text">
-          Number of Results:&nbsp;{{searchResults.length}}
+          Number of Results:&nbsp;<span id="number-of-results">{{searchResults.length}}</span>
         </div>
         <div class="grid-col-fill"></div>
         <div class="grid-col-auto dh-search-results__sortby-wrapper">

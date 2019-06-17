@@ -2,18 +2,29 @@
   background-image:url("/images/datahub_search_header_background.jpeg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   background-image:url("/images/datahub_search_header_background.jpeg"), linear-gradient(transparent, transparent);
   background-repeat:no-repeat;
-  height: units('card');
+  height: auto;
   width: 100%;
-  background-size: 100% units('card');
+  background-size: cover;
+  background-position: center;
+  padding-top: units(2);
+  padding-bottom: units(2);
   .dh-search__search-title {
     opacity: 1;
     background-color: $dh-color-primary-blue;
-    margin-top: units(2.5);
+    //margin-top: units(2.5);
     h1 {
       color: $dh-color-lightcyan;
       font-size: units(5);
       margin: 0 !important;
       // padding: units(0.5) !important;
+      @include at-media-max('mobile-lg'){
+        font-size: units(4);
+      }
+    }
+    @include at-media-max('mobile-lg'){
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 100%;
     }
   }
   .dh-search__search-inputs {
@@ -37,6 +48,9 @@
       // font-size: units(3);
       color: $dh-color-black;
       padding-left: units(0.5);
+      @include at-media-max("tablet-lg"){
+        width: 100%;
+      }
     }
     .usa-input--error {
       @extend .usa-input--error;
@@ -88,4 +102,7 @@
       }
     }
   }
+  // @include at-media-max(){
+
+  // }
 }
