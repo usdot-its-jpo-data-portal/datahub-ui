@@ -19,6 +19,10 @@
     height: auto;
   }
 
+  .usa-social-link.dh-follow-us{
+    height: auto;
+  }
+
   .dh-follow-us img.footer-share-social-icons{
     width: 25px;
   }
@@ -174,6 +178,7 @@ $dh-footer-social-main-justify: flex-end;
   font-size: units(2);
   font-weight: bold;
   padding-top: units(1.5);
+  padding-bottom: units(.5);
   margin-left: units(1.5);
   p {
     margin-block-start: 0;
@@ -193,6 +198,9 @@ $dh-footer-social-main-justify: flex-end;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    @include at-media-max('mobile-lg'){
+      margin-top: units(1);
+    }
   }
 }
 
