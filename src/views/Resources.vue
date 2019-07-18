@@ -132,7 +132,6 @@ export default {
   },
   methods: {
     isVisible: function(id) {
-      //unicorn console.log("isVisible id: " + id);
       return this.$router.currentRoute.name == id;
       
     },

@@ -3,7 +3,7 @@
     <h1>Post-Award DMP Instructions</h1>
     <h2 id="post-introduction">Introduction</h2>
     <p>
-      This following web page provides guidelines for creating a post-award Data Management Plan (DMP) to make it easier for projects to prepare their post-award DMP using a consistent format. To see a downloadable version of these instructions, as well as an associated template, please reference the “Templates &amp; Instructions” tab. To provide content and updates to these instructions or the associated template, you may provide comments through our <a href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page</a>.
+      This following web page provides guidelines for creating a post-award Data Management Plan (DMP) to make it easier for projects to prepare their post-award DMP using a consistent format. To see a downloadable version of these instructions, as well as an associated template, please reference the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Templates &amp; Instructions</router-link> tab. To provide content and updates to these instructions or the associated template, you may provide comments through our <a href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page</a>.
     </p>
     <p>
       This web page provides guidelines for creating a Data Management Plan (DMP) to make it easier for projects to prepare their DMP using a consistent format. These instructions are based off of the United States Department of Transportation’s (U.S. DOT’s) National Transportation Library’s <a href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Guidance for Creating Data Management Plans for Extramural Research</a>, and provide additional clarification for U.S. DOT’s expectations for DMPs. These instructions inform applicants of elements the U.S. DOT would like to see in a DMP, but do not serve as an approved government form or template. Applicants should use their best judgement in determining what information to include and if additional information should be incorporated into the DMP.
@@ -16,7 +16,7 @@
     </p>
     
     <h2 id="post-project-overview">1. Project Overview</h2>
-    <p>Please provide summary information about the research project and its goals, as well as how the project’s data helps the U.S. DOT achieve its goals.</p>
+    <p>In this section provide summary information about the research project and its goals, as well as how the project’s data helps achieve U.S. DOT’s research goals.</p>
       <p>Suggested elements for this section include, but are not limited to:
       <ul>
         <li>
