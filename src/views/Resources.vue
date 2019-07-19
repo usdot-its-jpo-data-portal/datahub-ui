@@ -101,6 +101,9 @@
                   </li>
                 </ul>
               </li>
+              <li id="faqs" class="usa-sidenav__item">
+                <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
+              </li>
             </ul>
           </nav>
         </aside>
