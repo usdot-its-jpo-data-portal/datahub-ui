@@ -19,7 +19,7 @@
     </ul>
 
     <p>
-      Additionally, you can download these documents and comment on proposed improvements to them by visiting our <a href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page</a>.
+      Additionally, you can download these documents and comment on proposed improvements to them by visiting our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page</a>.
     </p>
   
 </div>
