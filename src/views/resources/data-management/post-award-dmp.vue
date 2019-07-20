@@ -102,7 +102,7 @@
       Providing appropriate data access to safeguard data is a key aspect of data stewardship. In accordance with the OPEN Government Data Act, datasets must be made publicly accessible unless specific concerns require the data to have controlled-access. Please detail which data require controlled-access, reasons for controlling access to data, and methods taken to safeguard these data.
     </p>
     <p>
-      Controlled-access is defined as restricting access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI).  
+      Controlled-access is defined as restricting access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI), please see Requirements Section B. Access Requirements on the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Guidelines page</router-link>.  
     </p>
     
     <h4>3.2.1 Can all of the data from this project be shared with the public, or is controlled-access required for at least some of the data?</h4>
@@ -177,7 +177,7 @@
       In this section, list all of the data storage systems that are used to store the research project’s data, provide details on those data systems, and specify how long the data will be stored in each system.
     </p>
     <p>
-      A public access system provides full data access to the public. A controlled-access system restricts access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI).  An applicant system is managed by the applicant, a U.S. DOT system is managed by the U.S. DOT, and a third-party system is a system that is managed by a person, group or organization other than the U.S. DOT or the applicant.
+      A public access system provides full data access to the public. A controlled-access system restricts access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI), please see Requirements Section B. Access Requirements on the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Guidelines page</router-link>.  An applicant system is managed by the applicant, a U.S. DOT system is managed by the U.S. DOT, and a third-party system is a system that is managed by a person, group or organization other than the U.S. DOT or the applicant.
     </p>
     <p>
       Suggested elements for this section include, but are not limited to:
@@ -225,7 +225,7 @@
           <a target=”_blank” href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories">Guidelines for Evaluating Repositories for Conformance with the DOT Public Access Plan</a>
         </li>
         <li>
-          o	For Controlled-Access Systems, describe how the system enables privacy protection, controlled-access and collaboration at least equal to U.S. DOT’s controlled-access system, the <a target=”_blank” href="https://its.dot.gov/data/secure/index.html">U.S. DOT Secure Data Commons</a>
+          For Controlled-Access Systems, describe how the system enables privacy protection, controlled-access and collaboration at least equal to U.S. DOT’s controlled-access system, the <a target=”_blank” href="https://its.dot.gov/data/secure/index.html">U.S. DOT Secure Data Commons</a>
         </li>
       </ul>
     </p>

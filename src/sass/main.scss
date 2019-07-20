@@ -16,6 +16,7 @@
 @import './dot-iframe.scss';
 @import './Resources.scss';
 @import './side-nav.scss';
+@import './icons.scss';
 
 html, body {
   scrollbar-width: none;
@@ -28,6 +29,9 @@ html, body {
 h3{
   margin-block-start: 1.5em;
   margin-block-end: .7em;
+}
+h4{
+
 }
 @include at-media-max('tablet'){
   .usa-prose ol ol{

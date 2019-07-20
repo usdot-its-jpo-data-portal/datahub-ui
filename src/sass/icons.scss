@@ -1,0 +1,15 @@
+#app .in-line-external-link-icon_not-visited,
+#app .in-line-external-link-icon_visitied{
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: transparent;
+    margin-left: 0.2rem;
+    margin-top: 0px;
+}
+
+#app a:visited > .in-line-external-link-icon_not-visited{
+    display: none !important;
+}
+#app a > .in-line-external-link-icon_visited{
+    display: none !important;
+}
