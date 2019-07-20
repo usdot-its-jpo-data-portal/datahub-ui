@@ -69,7 +69,12 @@
                     </li>
                   </ol>
                 </li>
-                <li><u>Attached datasets</u> do not have the capability for users to view or work with the data within the interface<sup><strong><a href="#dh-about_footnote">1</a></strong></sup>:
+                <li><u>Attached datasets</u> do not have the capability for users to view or work with the data within the interface.
+                <br /> (<strong>Please note</strong>: This legacy dataset was created before data.transportation.gov and is only currently
+              available via the attached file(s). 
+              Please contact the dataset owner if there is a need for users to work with this data using the
+              data.transportation.gov analysis features (online viewing, API, graphing, etc.) and the USDOT will
+              consider modifying the dataset to fully integrate in DTG.):<br />
                   <ol>
                     <li>To download the metadata, refer to the &ldquo;<strong>Download this Resource</strong>&rdquo; section.</li>
                     <li>To download the data, zip files of the data can be found in the &ldquo;<strong>Attachments</strong>&rdquo; section.</li>
@@ -137,18 +142,6 @@
             For more information about the ITS DataHub, please contact the ITS JPO Data Program support team
             at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
           </p>
-          <br>
-          <br>
-          <div class="dh-about-footnote">
-            <p id="dh-about_footnote">
-              1)&nbsp;This legacy dataset was created before data.transportation.gov and is only currently
-              available via the attached file(s). 
-              Please contact the dataset owner if there is a need for users to work with this data using the
-              data.transportation.gov analysis features (online viewing, API, graphing, etc.) and the USDOT will
-              consider modifying the dataset to fully integrate in DTG.
-            </p>
-          </div>
-
         </div>
       </div>
     </div>
