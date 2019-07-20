@@ -139,7 +139,7 @@
 
     <h4>3.2.3	Informed Consent</h4>
     <p>
-      If your project contains human subject research, please describe how informed consent forms will permit sharing with the research community and whether additional steps, such as an Institutional Review Board (IRB) may be used to protect privacy and confidentiality.
+      If your project contains human subject research, please describe how informed consent forms will permit sharing with the research community and whether additional steps, such as an Institutional Review Board (IRB) may be used to protect privacy and confidentiality. Please refer to <a target="_blank" href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research"> NTL's web page on Creating Data Management Plans for Extramural Research</a> for more information.
     </p>
 
     <h4>3.2.5	Relevant Privacy and/or Security Agreements</h4>
@@ -161,7 +161,7 @@
           <strong>Dataset Title:</strong> Please provide the title of the dataset(s) that use this license.
         </li>
         <li>
-          <strong>License Used:</strong> List the license that is used for this/these dataset(s) (e.g. Creative Commons – BY version X.0) and provide a URL (or several) with more information on the license. Specify whether the license is an open license or a non-open license. An “’open license’ means a legal guarantee that a data asset is made available (A) at no cost to the public and (B) with no restrictions on copying publishing, distributing, transmitting, citing or adapting such asset. ” A non-open license does not adhere to all of the open license criteria.  
+          <strong>License Used:</strong> List the license that is used for this/these dataset(s) (e.g. Creative Commons – BY version X.0) and provide a URL (or several) with more information on the license. Specify whether the license is an open license or a non-open license. An “’open license’ means a legal guarantee that a data asset is made available (A) at no cost to the public and (B) with no restrictions on copying publishing, distributing, transmitting, citing or adapting such asset. ”, definition referenced from <a target="_blank">congress.gov's webpage for H.R.1770</a>, see SEC. 4. OPEN GOVERNMENT DATA.  A non-open license does not adhere to all of the open license criteria.  
         </li>
         <li>
           <strong>Reason(s) for a Non-Open License:</strong> If a non-open license is used for a dataset, provide the reason for using a non-open license.
