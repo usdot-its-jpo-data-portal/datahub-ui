@@ -19,7 +19,7 @@
     </ul>
 
     <p>
-      Additionally, you can download these documents and comment on proposed improvements to them by visiting our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page</a>.
+      Additionally, you can download these documents and comment on proposed improvements to them by visiting our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
     </p>
   
 </div>

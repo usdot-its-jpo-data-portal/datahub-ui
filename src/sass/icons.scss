@@ -1,15 +1,11 @@
-#app .in-line-external-link-icon_not-visited,
-#app .in-line-external-link-icon_visitied{
-    height: 0.75rem;
-    width: 0.75rem;
+#app .in-line-external-link-icon,
+#app .in-line-dot-link-new-tab{
+    height: units(1.5);
+    width: units(1.5);
     background-color: transparent;
     margin-left: 0.2rem;
     margin-top: 0px;
 }
-
-#app a:visited > .in-line-external-link-icon_not-visited{
-    display: none !important;
-}
-#app a > .in-line-external-link-icon_visited{
-    display: none !important;
+#app .in-line-dot-link-new-tab.search-results{
+    margin-left: 0px;
 }

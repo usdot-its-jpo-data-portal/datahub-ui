@@ -3,10 +3,10 @@
     <h1>Post-Award DMP Instructions</h1>
     <h2 id="post-introduction">Introduction</h2>
     <p>
-      This following web page provides guidelines for creating a post-award Data Management Plan (DMP) to make it easier for projects to prepare their post-award DMP using a consistent format. To see a downloadable version of these instructions, as well as an associated template, please reference the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Templates &amp; Instructions</router-link> tab. To provide content and updates to these instructions or the associated template, you may provide comments through our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page</a>.
+      This following web page provides guidelines for creating a post-award Data Management Plan (DMP) to make it easier for projects to prepare their post-award DMP using a consistent format. To see a downloadable version of these instructions, as well as an associated template, please reference the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Templates &amp; Instructions</router-link> tab. To provide content and updates to these instructions or the associated template, you may provide comments through our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
     </p>
     <p>
-      This web page provides guidelines for creating a Data Management Plan (DMP) to make it easier for projects to prepare their DMP using a consistent format. These instructions are based off of the United States Department of Transportation’s (U.S. DOT’s) National Transportation Library’s <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Guidance for Creating Data Management Plans for Extramural Research</a>, and provide additional clarification for U.S. DOT’s expectations for DMPs. These instructions inform applicants of elements the U.S. DOT would like to see in a DMP, but do not serve as an approved government form or template. Applicants should use their best judgement in determining what information to include and if additional information should be incorporated into the DMP.
+      This web page provides guidelines for creating a Data Management Plan (DMP) to make it easier for projects to prepare their DMP using a consistent format. These instructions are based off of the United States Department of Transportation’s (U.S. DOT’s) National Transportation Library’s <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Guidance for Creating Data Management Plans for Extramural Research<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>, and provide additional clarification for U.S. DOT’s expectations for DMPs. These instructions inform applicants of elements the U.S. DOT would like to see in a DMP, but do not serve as an approved government form or template. Applicants should use their best judgement in determining what information to include and if additional information should be incorporated into the DMP.
     </p>
     <p>
       The Data Management Plan (DMP) is a living document describing how researchers will handle digital data both during and after a research project, and how the research proposal conforms to U.S. DOT policy on the dissemination and sharing of research results. The DMP should adequately identify the data to be collected, how the data will further the goals of the U.S. DOT, how the data will be made accessible, how the data will be stored, and in what standard(s) the data will use.
@@ -139,7 +139,7 @@
 
     <h4>3.2.3	Informed Consent</h4>
     <p>
-      If your project contains human subject research, please describe how informed consent forms will permit sharing with the research community and whether additional steps, such as an Institutional Review Board (IRB) may be used to protect privacy and confidentiality. Please refer to <a target="_blank" href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research"> NTL's web page on Creating Data Management Plans for Extramural Research</a> for more information.
+      If your project contains human subject research, please describe how informed consent forms will permit sharing with the research community and whether additional steps, such as an Institutional Review Board (IRB) may be used to protect privacy and confidentiality. Please refer to <a target="_blank" href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research"> NTL's web page on Creating Data Management Plans for Extramural Research<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a> for more information.
     </p>
 
     <h4>3.2.5	Relevant Privacy and/or Security Agreements</h4>
@@ -152,7 +152,7 @@
       The U.S. DOT is interested in who holds the intellectual property right(s) for the research project data, whether these rights will transfer to a data archive, whether any copyrights apply to the data, and other aspects that apply to the rights to use the data. Please provide details on these elements in this section.
     </p>
     <p>
-      In accordance with the <a target=”_blank” href="https://www.congress.gov/bill/115th-congress/house-bill/1770/text">OPEN Government Data Act</a>, to the extent practicable, data must be made available through an open license that is available at no cost to the public and with no restrictions on copying, publishing, distributing, transmitting, citing or adapting such asset. In this section, please provide the applicable licenses for each dataset and specify if an open license will be used. If the project is U.S. DOT-funded, an open license should be used for the dataset, unless otherwise restricted by controlled access. If a non-open license is used for this data, include a justification for why a non-open license is used.
+      In accordance with the <a target=”_blank” href="https://www.congress.gov/bill/115th-congress/house-bill/1770/text">OPEN Government Data Act<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>, to the extent practicable, data must be made available through an open license that is available at no cost to the public and with no restrictions on copying, publishing, distributing, transmitting, citing or adapting such asset. In this section, please provide the applicable licenses for each dataset and specify if an open license will be used. If the project is U.S. DOT-funded, an open license should be used for the dataset, unless otherwise restricted by controlled access. If a non-open license is used for this data, include a justification for why a non-open license is used.
     </p>
     <p>
       Suggested elements for this section include, but are not limited to:
@@ -161,7 +161,7 @@
           <strong>Dataset Title:</strong> Please provide the title of the dataset(s) that use this license.
         </li>
         <li>
-          <strong>License Used:</strong> List the license that is used for this/these dataset(s) (e.g. Creative Commons – BY version X.0) and provide a URL (or several) with more information on the license. Specify whether the license is an open license or a non-open license. An “’open license’ means a legal guarantee that a data asset is made available (A) at no cost to the public and (B) with no restrictions on copying publishing, distributing, transmitting, citing or adapting such asset. ”, definition referenced from <a target="_blank">congress.gov's webpage for H.R.1770</a>, see SEC. 4. OPEN GOVERNMENT DATA.  A non-open license does not adhere to all of the open license criteria.  
+          <strong>License Used:</strong> List the license that is used for this/these dataset(s) (e.g. Creative Commons – BY version X.0) and provide a URL (or several) with more information on the license. Specify whether the license is an open license or a non-open license. An “’open license’ means a legal guarantee that a data asset is made available (A) at no cost to the public and (B) with no restrictions on copying publishing, distributing, transmitting, citing or adapting such asset. ”, definition referenced from <a target="_blank" href="https://www.congress.gov/bill/115th-congress/house-bill/1770/text">congress.gov's webpage for H.R.1770<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>, see SEC. 4. OPEN GOVERNMENT DATA.  A non-open license does not adhere to all of the open license criteria.  
         </li>
         <li>
           <strong>Reason(s) for a Non-Open License:</strong> If a non-open license is used for a dataset, provide the reason for using a non-open license.
@@ -222,10 +222,10 @@
       Provide a description of the data storage system, including any URLs or other means that provide additional details and documentation of the system, details on data backup of the system, and details on access and controlled-access. If using an applicant or third-party data storage system, please provide additional details that demonstrate the system adheres to the U.S. DOT’s policies for data storage systems, including:
       <ul>
         <li>
-          <a target=”_blank” href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories">Guidelines for Evaluating Repositories for Conformance with the DOT Public Access Plan</a>
+          <a target=”_blank” href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories">Guidelines for Evaluating Repositories for Conformance with the DOT Public Access Plan<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
         </li>
         <li>
-          For Controlled-Access Systems, describe how the system enables privacy protection, controlled-access and collaboration at least equal to U.S. DOT’s controlled-access system, the <a target=”_blank” href="https://its.dot.gov/data/secure/index.html">U.S. DOT Secure Data Commons</a>
+          For Controlled-Access Systems, describe how the system enables privacy protection, controlled-access and collaboration at least equal to U.S. DOT’s controlled-access system, the <a target=”_blank” href="https://its.dot.gov/data/secure/index.html">U.S. DOT Secure Data Commons<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
         </li>
       </ul>
     </p>
@@ -281,13 +281,13 @@
 
     <h3>4.3	Metadata and Data Dictionary</h3>
     <p>
-      ITS JPO requires a metadata schema with each dataset submission to enable search and discovery. Review the <a target=”_blank” href="https://dot-jpo.atlassian.net/wiki/spaces/RDA2/pages/517767201/Metadata+Questionnaire">Metadata Questionnaire</a> and provide access and metadata summary information in this section. Note that the U.S. DOT expects metadata in several contexts, including:
+      ITS JPO requires a metadata schema with each dataset submission to enable search and discovery. Review the <a target=”_blank” href="https://dot-jpo.atlassian.net/wiki/spaces/RDA2/pages/517767201/Metadata+Questionnaire" >Metadata Questionnaire<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a> and provide access and metadata summary information in this section. Note that the U.S. DOT expects metadata in several contexts, including:
       <ul>
         <li>
           At the field level, describing the elements in the data and/or dataset 
         </li>
         <li>
-          At the asset level, describing the contents of the data or dataset generally, in accordance with the Project Open <a target=”_blank” href="https://project-open-data.cio.gov/v1.1/schema/">Data Metadata Schema</a> or another appropriate standard 
+          At the asset level, describing the contents of the data or dataset generally, in accordance with the Project Open <a target=”_blank” href="https://project-open-data.cio.gov/v1.1/schema/">Data Metadata Schema<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a> or another appropriate standard 
         </li>
         <li>
           At any other level that may be appropriate for the data and/or dataset

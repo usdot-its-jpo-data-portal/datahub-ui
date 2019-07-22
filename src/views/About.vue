@@ -21,7 +21,7 @@
             The ITS DataHub&rsquo;s data sets contain various types of information,
             such as highway detector data, travel times, traffic signal timing data, incident data,
             weather data, and connected vehicle data.
-            As the <a href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilots</a>
+            As the <a href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilots<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
             continue to progress, more preliminary data sets will become available to the public.
             Basic Safety Messages (BSMs) and Traveler Information Messages (TIMs) from a field test of the
             Wyoming DOT Connected Vehicle Pilot became available to the public in early 2018.
@@ -87,7 +87,7 @@
           <h2 id="section-heading-h2">How do I provide data to the ITS DataHub?</h2>
           <p>
             The most current information on how data providers can provide information to the ITS DataHub 
-            can be found at <a href="http://www.its.dot.gov/data/public-access/">www.its.dot.gov/data/public-access/</a>. 
+            can be found on the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Guidelines page</router-link>. 
           </p>
 
           <h2 id="section-heading-h2">How do I get access to sensitive transportation datasets?</h2>
