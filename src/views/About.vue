@@ -21,7 +21,7 @@
             The ITS DataHub&rsquo;s data sets contain various types of information,
             such as highway detector data, travel times, traffic signal timing data, incident data,
             weather data, and connected vehicle data.
-            As the <a href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilots</a>
+            As the <a target="_blank" href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilots<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
             continue to progress, more preliminary data sets will become available to the public.
             Basic Safety Messages (BSMs) and Traveler Information Messages (TIMs) from a field test of the
             Wyoming DOT Connected Vehicle Pilot became available to the public in early 2018.
@@ -69,7 +69,12 @@
                     </li>
                   </ol>
                 </li>
-                <li><u>Attached datasets</u> do not have the capability for users to view or work with the data within the interface<sup><strong><a href="#dh-about_footnote">1</a></strong></sup>:
+                <li><u>Attached datasets</u> do not have the capability for users to view or work with the data within the interface.
+                <br /> (<strong>Please note</strong>: This legacy dataset was created before data.transportation.gov and is only currently
+              available via the attached file(s). 
+              Please contact the dataset owner if there is a need for users to work with this data using the
+              data.transportation.gov analysis features (online viewing, API, graphing, etc.) and the USDOT will
+              consider modifying the dataset to fully integrate in DTG.):<br />
                   <ol>
                     <li>To download the metadata, refer to the &ldquo;<strong>Download this Resource</strong>&rdquo; section.</li>
                     <li>To download the data, zip files of the data can be found in the &ldquo;<strong>Attachments</strong>&rdquo; section.</li>
@@ -82,7 +87,7 @@
           <h2 id="section-heading-h2">How do I provide data to the ITS DataHub?</h2>
           <p>
             The most current information on how data providers can provide information to the ITS DataHub 
-            can be found at <a href="http://www.its.dot.gov/data/public-access/">www.its.dot.gov/data/public-access/</a>. 
+            can be found on the <router-link id="data-management-template-id-in-page" to="/resources" class="in-page-link">Guidelines page</router-link>. 
           </p>
 
           <h2 id="section-heading-h2">How do I get access to sensitive transportation datasets?</h2>
@@ -100,34 +105,34 @@
 
           <h2 id="section-heading-h2">Other Resources</h2>
           <ul>
-            <li>ITS Research Data Fact Sheet: <a href="https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf">https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf</a></li>
+            <li>ITS Research Data Fact Sheet: <a target="_blank" href="https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf">https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a></li>
           </ul>
           <ul>
             <li>U.S. DOT Work Zone Data Exchange (WZDx) Project on February 26, 2019:</li>
             <ul>
-              <li>Recording Link: <a href="http://itsa.adobeconnect.com/pbniwiub81oi/">http://itsa.adobeconnect.com/pbniwiub81oi/</a></li>
-              <li>Webinar Presentation: <a href="https://www.its.dot.gov/resources/pdf/WZDx_Webinar_Presentation_26FEB2019.pdf">https://www.its.dot.gov/resources/pdf/WZDx_Webinar_Presentation_26FEB2019.pdf</a></li>
+              <li>Recording Link: <a target="_blank" href="http://itsa.adobeconnect.com/pbniwiub81oi/">http://itsa.adobeconnect.com/pbniwiub81oi/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a></li>
+              <li>Webinar Presentation: <a target="_blank" href="https://www.its.dot.gov/resources/pdf/WZDx_Webinar_Presentation_26FEB2019.pdf">https://www.its.dot.gov/resources/pdf/WZDx_Webinar_Presentation_26FEB2019.pdf<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a></li>
             </ul>
           </ul>
           <ul>
             <li>Data Exchanges to Enable Automated Vehicle Integration on November 8, 2018:</li>
             <ul>
-              <li>Recording Link: <a href="https://connectdot.connectsolutions.com/puzqp81cjws2/">https://connectdot.connectsolutions.com/puzqp81cjws2/</a></li>
-              <li>Webinar Presentation: <a href="https://www.its.dot.gov/presentations/2018/DAVI_Webinar.pdf">https://www.its.dot.gov/presentations/2018/DAVI_Webinar.pdf</a></li>
+              <li>Recording Link: <a target="_blank" href="https://connectdot.connectsolutions.com/puzqp81cjws2/">https://connectdot.connectsolutions.com/puzqp81cjws2/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a></li>
+              <li>Webinar Presentation: <a target="_blank" href="https://www.its.dot.gov/presentations/2018/DAVI_Webinar.pdf">https://www.its.dot.gov/presentations/2018/DAVI_Webinar.pdf<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a></li>
             </ul>
           </ul>
           <ul>
             <li>ITS Data Update Webinar on January 25, 2018:
               <ul>
-                <li>Recording Link: <a href="http://itsa.adobeconnect.com/pea1mfcm39fv/">http://itsa.adobeconnect.com/pea1mfcm39fv/</a> &nbsp;</li>
-                <li>Webinar Presentation: <a href="https://www.its.dot.gov/presentations/2018/ITS_PublicDataHub_Webinar.pdf">https://www.its.dot.gov/presentations/2018/ITS_PublicDataHub_Webinar.pdf</a></li>
+                <li>Recording Link: <a target="_blank" href="http://itsa.adobeconnect.com/pea1mfcm39fv/">http://itsa.adobeconnect.com/pea1mfcm39fv/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a> &nbsp;</li>
+                <li>Webinar Presentation: <a target="_blank" href="https://www.its.dot.gov/presentations/2018/ITS_PublicDataHub_Webinar.pdf">https://www.its.dot.gov/presentations/2018/ITS_PublicDataHub_Webinar.pdf<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a></li>
               </ul>
             </li>
           </ul>
           <ul>
             <li>ITS JPO Data Program Webinar on August 15, 2017:
             <ul>
-              <li>Recording Link: <a href="http://itsa.adobeconnect.com/pn2f951fsqso/">http://itsa.adobeconnect.com/pn2f951fsqso/</a></li>
+              <li>Recording Link: <a target="_blank" href="http://itsa.adobeconnect.com/pn2f951fsqso/">http://itsa.adobeconnect.com/pn2f951fsqso/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a></li>
             </ul>	
             </li>
           </ul>
@@ -137,18 +142,6 @@
             For more information about the ITS DataHub, please contact the ITS JPO Data Program support team
             at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
           </p>
-          <br>
-          <br>
-          <div class="dh-about-footnote">
-            <p id="dh-about_footnote">
-              1)&nbsp;This legacy dataset was created before data.transportation.gov and is only currently
-              available via the attached file(s). 
-              Please contact the dataset owner if there is a need for users to work with this data using the
-              data.transportation.gov analysis features (online viewing, API, graphing, etc.) and the USDOT will
-              consider modifying the dataset to fully integrate in DTG.
-            </p>
-          </div>
-
         </div>
       </div>
     </div>

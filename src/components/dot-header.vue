@@ -83,19 +83,19 @@
         </button>
         <ul class="usa-nav__primary usa-accordion">
           <li class="usa-nav__primary-item">
-            <router-link aria-controls="dh-nav1" to="/">Home</router-link>
+            <router-link aria-controls="dh-nav1" to="/" exact-active-class="router-link-exact-active" exact>Home</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link aria-controls="dh-nav2" to="/about">About</router-link>
+            <router-link aria-controls="dh-nav2" to="/about" active-class="router-link-active">About</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link to="/resources">Resources</router-link>
+            <router-link to="/resources" active-class="router-link-active">Resources</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link to="/metrics">Metrics</router-link>
+            <router-link to="/metrics" active-class="router-link-active">Metrics</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <router-link to="/search">Search</router-link>
+            <router-link to="/search" active-class="router-link-active">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">
             <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank">
