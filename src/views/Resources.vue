@@ -152,11 +152,25 @@ export default {
       }
     },
     handleScroll: function() {
-      let sy = window.scrollY;
+      // handling scroll position to support IE11
+      let sy = window.scrollY ? window.scrollY : window.pageYOffset;
+      let cln = this.sideMenuElement.className;
+      let topclass = 'dh-resource-main_float-menu_top';
+      // handling className instead of classList to support IE11
       if(sy > 250 && this.sideMenuElement) {
-        this.sideMenuElement.classList.add('dh-resource-main_float-menu_top');
+        if (cln && !cln.includes(topclass)) {
+          cln += ' '+topclass;
+          this.sideMenuElement.className = cln;
+        }
       } else {
-        this.sideMenuElement.classList.remove('dh-resource-main_float-menu_top');
+        if (cln && cln.includes(topclass)) {
+          let x = cln.indexOf(topclass);
+          if(x>=0) {
+            let v1 = cln.substring(0, x-1);
+            let v2 = cln.substring(x+topclass.length, cln.length);
+            this.sideMenuElement.className = v1+v2;
+          }
+        }
       }
     }
   }
