@@ -1,4 +1,5 @@
 .dh-resources__wrapper {
+  z-index: 10;
   .dh-resources__section{
     
   }
@@ -10,5 +11,23 @@
   }
   .dhhidden {
     display: none;
+  }
+  .dh-resource-main_float-menu {
+    @include at-media('desktop'){
+      position: fixed;
+      width: units('card-lg');
+      z-index: 10;
+    }
+  }
+  .dh-resource-main_float-menu_top {
+    @include at-media('desktop'){
+      top: units(6);
+    }
+  }
+  .dh-resource-main_float-content {
+    @include at-media('desktop'){
+      margin-left: units('card-lg');
+      z-index: 10;
+    }
   }
 }

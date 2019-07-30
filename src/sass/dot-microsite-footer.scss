@@ -1,3 +1,9 @@
+.usa-footer {
+  @extend .usa-footer;
+  z-index: 20;
+  position: relative;
+}
+
 .usa-footer__primary-section {
   @extend .usa-footer__primary-section;
   background-color: $dh-footer-color-primary;
