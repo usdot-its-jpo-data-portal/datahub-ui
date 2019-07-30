@@ -1,0 +1,12 @@
+.usa-sidenav a{
+    color: #444444;
+    &.page{
+        font-weight: bold;
+    }
+    &.table-of-contents{
+        font-size: font-size($theme-sidenav-font-family, '2xs');
+    }
+}
+.usa-sidenav__sublist li.usa-sidenav__item:not(.sub-page-li) {
+    border: none;
+}

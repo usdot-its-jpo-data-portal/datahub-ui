@@ -1,0 +1,11 @@
+#app .in-line-external-link-icon,
+#app .in-line-dot-link-new-tab{
+    height: units(1.5);
+    width: units(1.5);
+    background-color: transparent;
+    margin-left: 0.2rem;
+    margin-top: 0px;
+}
+#app .in-line-dot-link-new-tab.search-results{
+    margin-left: 0px;
+}

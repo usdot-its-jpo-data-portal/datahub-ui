@@ -53,9 +53,35 @@ export default new Router({
         {
           path: '',
           name: 'guidelines',
-          components: { resources: () => import('./views/Resources/resources-guidelines.vue')}
-        }
+          components: { resources: () => import('./views/resources/resources-guidelines.vue')}
+        },
+        {
+          path: '/resources/data-management/data-management',
+          name: 'datamanagement',
+          components: { management: () => import('./views/resources/data-management/data-management.vue')}
+        },
+        {
+          path: '/resources/data-management/preliminary-dmp',
+          name: 'preliminarydmp',
+          components: { template: () => import('./views/resources/data-management/preliminary-dmp.vue')}
+        },
+        {
+          path: '/resources/data-management/post-award-dmp',
+          name: 'postawarddmp',
+          components: { template: () => import('./views/resources/data-management/post-award-dmp.vue')}
+        },
+        {
+          path: '/resources/data-management/template-and-instructions',
+          name: 'templateandinstructions',
+          components: { template: () => import('./views/resources/data-management/template-and-instructions.vue')}
+        },
+        {
+          path: '/resources/data-management/faqs',
+          name: 'faqs',
+          components: { management: () => import('./views/resources/faqs.vue')}
+        },
       ]
     }
   ]
 })
+
