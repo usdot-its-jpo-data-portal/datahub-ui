@@ -230,6 +230,7 @@ $dh-footer-social-main-justify: flex-end;
   font-size: units(1.5);
   font-weight: normal;
   color: darken($dh-color-white, 5%);
+  text-align: left;
 }
 .usa-footer__contact-info:hover{
   text-decoration: none;
