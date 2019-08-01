@@ -6,9 +6,12 @@
         <aside id="dh-resources-side-menu" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-resource-main_float-menu">
           <nav>
             <ul id="dh-resources-main-id" :key="refreshCounter" class="usa-sidenav">
+              <li id="resourceslanding" class="usa-sidenav__item">
+                <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">General</router-link>
+              </li>
               <li id="guidelines" class="usa-sidenav__item">
                 <!-- <router-link id="id-guidelines" to="/resources/" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link> -->
-                <router-link id="id-guidelines" to="/resources" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link>
+                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link>
                 <ul v-if="isVisible('guidelines')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background and Purpose</a>
@@ -101,6 +104,23 @@
                   </li>
                 </ul>
               </li>
+              <li id="data-storage-system" class="usa-sidenav__item">
+                <router-link id="id-data-storage-system" to="/resources/data-storage-system" class="page" :class=" isVisible('datastoragesystem') ? 'usa-current' : '' ">Data Storage System</router-link>
+                <ul v-if="isVisible('datastoragesystem')" id="ul-datastoragesystem" class="usa-sidenav__sublist">
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-purpose')" class="table-of-contents">Purpose</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-datastoragesystemdecisiontree')" class="table-of-contents">Data Storage System Decision Tree</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-decisionpoints')" class="table-of-contents">Decision Points</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-datastoragesystems')" class="table-of-contents">Data Storage Systems</a>
+                  </li>
+                </ul>
+              </li>
               <li id="faqs" class="usa-sidenav__item">
                 <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
               </li>
@@ -133,6 +153,7 @@ export default {
   },
   mounted: function(){
     this.sideMenuElement = document.getElementById('dh-resources-side-menu');
+    // window.scrollTo(0, 240);
   },
   destroyed: function(){
     window.removeEventListener('scroll', this.handleScroll);

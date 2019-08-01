@@ -52,6 +52,11 @@ export default new Router({
       children: [
         {
           path: '',
+          name: 'resourceslanding',
+          components: { resources: () => import('./views/resources/resources-landing.vue')}
+        },
+        {
+          path: '/resources/guidelines',
           name: 'guidelines',
           components: { resources: () => import('./views/resources/resources-guidelines.vue')}
         },
@@ -74,6 +79,11 @@ export default new Router({
           path: '/resources/data-management/template-and-instructions',
           name: 'templateandinstructions',
           components: { resources: () => import('./views/resources/data-management/template-and-instructions.vue')}
+        },
+        {
+          path: '/resources/data-storage-system',
+          name: 'datastoragesystem',
+          components: { resources: () => import('./views/resources/data-storage-system.vue')}
         },
         {
           path: '/resources/data-management/faqs',
