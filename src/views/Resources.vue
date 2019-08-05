@@ -7,7 +7,7 @@
           <nav>
             <ul id="dh-resources-main-id" :key="refreshCounter" class="usa-sidenav">
               <li id="resourceslanding" class="usa-sidenav__item">
-                <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Resources</router-link>
+                <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
               </li>
               <li id="guidelines" class="usa-sidenav__item">
                 <!-- <router-link id="id-guidelines" to="/resources/" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link> -->
