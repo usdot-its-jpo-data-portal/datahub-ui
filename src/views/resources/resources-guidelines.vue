@@ -99,6 +99,9 @@
         <strong>Data steward</strong>: At the direction of the data owner, the person or organization that is delegated the privileges and responsibilities to manage, control, and maintain the quality of a data asset throughout the data life cycle. The data steward may also apply appropriate protections, restrictions, and other safeguards depending on the nature of the data, subject to the direction of the data owner.
       </li>
       <li>
+        <strong>Derived data</strong>: Data derived thorough analysis of other data and shared as part of a final report to communicate the methodology and findings of a research project.
+      </li>
+      <li>
         <strong>Limited rights data</strong>: Data, other than computer software, that embody trade secrets or are commercial or financial and confidential or privileged, to the extent that such data pertain to items, components, or processes developed at private expense, including minor modifications.
       </li>
       <li>

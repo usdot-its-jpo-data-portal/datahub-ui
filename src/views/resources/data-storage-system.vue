@@ -3,10 +3,15 @@
     <h1>Data Storage System</h1>
     <h2 id="datastoragesystems-purpose">Purpose</h2>
     <p>
-      The purpose of this document is to provide information on the different data storage systems available to research projects in order to be compliant with the Intelligent Transportation Systems (ITS) Joint Program Office (JPO) Data Access Center of Excellence (CoE) guidelines, as well as the United States Department of Transportation (U.S. DOT) Public Access Plan; the Open, Public, Electronic, and Necessary (OPEN) Government Data Act; and other applicable data policies at the United States Department of Transportation (U.S. DOT) and the federal level.
+      The following web page provides information on the different data storage systems available to research projects in order to be compliant with the Intelligent Transportation Systems (ITS) Joint Program Office (JPO) Data Access Center of Excellence (CoE)
+      <router-link to="/resources/guidelines">Guidelines</router-link>
+      , as well as the United States Department of Transportation (U.S. DOT) Public Access Plan; the Open, Public, Electronic, and Necessary (OPEN) Government Data Act; and other applicable data policies at the United States Department of Transportation (U.S. DOT) and the federal level. To see a downloadable version of this information, please reference the
+      <router-link to="/resources/data-management/template-and-instructions">Templates & Instructions</router-link>
+      tab. To provide feedback or questions on this information, you can file an issue on our
+      <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>.
     </p>
     <p>
-      In order to be compliant with the ITS JPO Data Access Center of Excellence guidelines, &ldquo;awardees must provide public access to data collected or created through the project unless a specific privacy confidentiality, security or other valid restriction is identified.&rdquo;  This document walks through data storage systems that can be used to provide access to a project’s data and several data management decision points that can help determine which data storage system may be the best fit for the data. Details on these data storage systems are provided in the &ldquo;Data Storage Systems&rdquo; section.
+      In order to be compliant with the ITS JPO Data Access Center of Excellence Guidelines, &ldquo;awardees must provide public access to data collected or created through the project unless a specific privacy confidentiality, security or other valid restriction is identified.&rdquo;  This web page walks through data management decision points that can help determine which data storage system may be the best fit to provide access to data, as well as details on available data storage systems.
     </p>
     <h2 id="datastoragesystems-datastoragesystemdecisiontree">Data Storage System Decision Tree</h2>
     <p>
