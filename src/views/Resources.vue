@@ -3,12 +3,15 @@
   <main class="usa-layout-docs usa-section">
     <div class="grid-container">
       <div class="grid-row grid-gap">
-        <aside class="usa-layout-docs__sidenav sidenav desktop:grid-col-3">
+        <aside id="dh-resources-side-menu" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-resource-main_float-menu">
           <nav>
             <ul id="dh-resources-main-id" :key="refreshCounter" class="usa-sidenav">
+              <li id="resourceslanding" class="usa-sidenav__item">
+                <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
+              </li>
               <li id="guidelines" class="usa-sidenav__item">
                 <!-- <router-link id="id-guidelines" to="/resources/" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link> -->
-                <router-link id="id-guidelines" to="/resources" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link>
+                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link>
                 <ul v-if="isVisible('guidelines')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background and Purpose</a>
@@ -101,19 +104,30 @@
                   </li>
                 </ul>
               </li>
+              <li id="data-storage-system" class="usa-sidenav__item">
+                <router-link id="id-data-storage-system" to="/resources/data-storage-system" class="page" :class=" isVisible('datastoragesystem') ? 'usa-current' : '' ">Data Storage System</router-link>
+                <ul v-if="isVisible('datastoragesystem')" id="ul-datastoragesystem" class="usa-sidenav__sublist">
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-purpose')" class="table-of-contents">Purpose</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-datastoragesystemdecisiontree')" class="table-of-contents">Data Storage System Decision Tree</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-decisionpoints')" class="table-of-contents">Decision Points</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'datastoragesystems-datastoragesystems')" class="table-of-contents">Data Storage Systems</a>
+                  </li>
+                </ul>
+              </li>
               <li id="faqs" class="usa-sidenav__item">
                 <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
               </li>
             </ul>
           </nav>
         </aside>
-          <!-- <keep-alive> -->
-            <router-view name="resources" :key="$route.fullPath"></router-view>
-            <router-view name="management" :key="$route.fullPath"></router-view>
-            <router-view name="preliminarydmp" :key="$route.fullPath" ></router-view>
-            <router-view name="postawarddmp" :key="$route.fullPath" ></router-view>
-            <router-view name="template" :key="$route.fullPath" ></router-view>
-          <!-- </keep-alive> -->
+          <router-view name="resources" :key="$route.fullPath" class="dh-resource-main_float-content"></router-view>
       </div>
     </div>
   </main>
@@ -128,15 +142,25 @@ export default {
     return {
       refreshCounter: 0,
       currentId: 'ul-jupiter',
-      id:''
+      id:'',
+      sideMenuElement: null
     }
   },
   computed: {
   },
+  created : function(){
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  mounted: function(){
+    this.sideMenuElement = document.getElementById('dh-resources-side-menu');
+    // window.scrollTo(0, 240);
+  },
+  destroyed: function(){
+    window.removeEventListener('scroll', this.handleScroll);
+  },
   methods: {
     isVisible: function(id) {
       return this.$router.currentRoute.name == id;
-      
     },
     moveToTag: function(event,id) {
       event.preventDefault();
@@ -146,6 +170,28 @@ export default {
         let yOff = window.scrollY ? window.scrollY : window.pageYOffset;
         const y = element.getBoundingClientRect().top + yOff;
         window.scrollTo(0, y);
+      }
+    },
+    handleScroll: function() {
+      // handling scroll position to support IE11
+      let sy = window.scrollY ? window.scrollY : window.pageYOffset;
+      let cln = this.sideMenuElement.className;
+      let topclass = 'dh-resource-main_float-menu_top';
+      // handling className instead of classList to support IE11
+      if(sy > 250 && this.sideMenuElement) {
+        if (cln && !cln.includes(topclass)) {
+          cln += ' '+topclass;
+          this.sideMenuElement.className = cln;
+        }
+      } else {
+        if (cln && cln.includes(topclass)) {
+          let x = cln.indexOf(topclass);
+          if(x>=0) {
+            let v1 = cln.substring(0, x-1);
+            let v2 = cln.substring(x+topclass.length, cln.length);
+            this.sideMenuElement.className = v1+v2;
+          }
+        }
       }
     }
   }

@@ -104,7 +104,10 @@
               <div class="usa-footer__contact-info grid-row grid-gap">
                 <div class="grid-col-auto">
                   <a id="dh-footer_contact-us-email" href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>
-                  <div class="dh-footer__version-id">Version: {{versionId}}</div>
+                  <div class="dh-footer__version-id">
+                    Version: {{versionId}}
+                    <span v-if="buildId" ><br>Build: {{buildId}}</span>
+                  </div>
                 </div>
               </div>
             </address>
@@ -132,8 +135,31 @@ export default {
   },
   computed: {
     versionId : {
-      get: function() {return this.$store.state.version },
+      get: function() {
+        if(!this.$store.state.version)
+          return null;
+        let parts = this.$store.state.version.split('.');
+        if(parts.length != 3)
+          return this.$store.state.version;
+
+        return parts[0]+'.'+parts[1];
+      },
       set: function(){}
+    },
+    buildId : {
+      get: function() {
+        if(!this.$store.state.version)
+          return null;
+        let parts = this.$store.state.version.split('.');
+        if(parts.length != 3)
+          return null;
+
+        if(parts[2] === "0")
+          return null;
+
+        return parts[2];
+
+      }
     }
   }
 }

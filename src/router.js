@@ -52,33 +52,43 @@ export default new Router({
       children: [
         {
           path: '',
+          name: 'resourceslanding',
+          components: { resources: () => import('./views/resources/resources-landing.vue')}
+        },
+        {
+          path: '/resources/guidelines',
           name: 'guidelines',
           components: { resources: () => import('./views/resources/resources-guidelines.vue')}
         },
         {
           path: '/resources/data-management/data-management',
           name: 'datamanagement',
-          components: { management: () => import('./views/resources/data-management/data-management.vue')}
+          components: { resources: () => import('./views/resources/data-management/data-management.vue')}
         },
         {
           path: '/resources/data-management/preliminary-dmp',
           name: 'preliminarydmp',
-          components: { template: () => import('./views/resources/data-management/preliminary-dmp.vue')}
+          components: { resources: () => import('./views/resources/data-management/preliminary-dmp.vue')}
         },
         {
           path: '/resources/data-management/post-award-dmp',
           name: 'postawarddmp',
-          components: { template: () => import('./views/resources/data-management/post-award-dmp.vue')}
+          components: { resources: () => import('./views/resources/data-management/post-award-dmp.vue')}
         },
         {
           path: '/resources/data-management/template-and-instructions',
           name: 'templateandinstructions',
-          components: { template: () => import('./views/resources/data-management/template-and-instructions.vue')}
+          components: { resources: () => import('./views/resources/data-management/template-and-instructions.vue')}
+        },
+        {
+          path: '/resources/data-storage-system',
+          name: 'datastoragesystem',
+          components: { resources: () => import('./views/resources/data-storage-system.vue')}
         },
         {
           path: '/resources/data-management/faqs',
           name: 'faqs',
-          components: { management: () => import('./views/resources/faqs.vue')}
+          components: { resources: () => import('./views/resources/faqs.vue')}
         },
       ]
     }
