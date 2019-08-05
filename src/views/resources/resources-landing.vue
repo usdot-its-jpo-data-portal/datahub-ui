@@ -16,7 +16,7 @@
     </ul>
     <p>
       To provide feedback on any information provided on the Resources page, please file an issue on our
-      <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+      <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a>
       page or contact
       <a target="_blank" href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
       .
