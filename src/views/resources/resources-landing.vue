@@ -1,5 +1,6 @@
 <template>
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+    <h1>Overview</h1>
     <p>
       Welcome to the Resources page! Here you will find resources data providers, project managers, and program managers can use to adhere to the requirements for ITS Joint Program Office’s (JPO) data management and ingestion into the Intelligent Transportation Systems (ITS) DataHub.
     </p>
