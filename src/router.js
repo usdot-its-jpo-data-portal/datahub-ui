@@ -37,6 +37,23 @@ export default new Router({
       component: () => import('./views/Metrics.vue')
     },
     {
+      path: '/data-access-coe',
+      name: 'dataaccesscoe',
+      components: { default: () => import('./views/DataAccessCoE.vue')},
+      children: [
+        {
+          path: '',
+          name: 'dataaccesscoeoverview',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/overview.vue')}
+        },
+        {
+          path: '/data-access-coe/project-lifecycle',
+          name: 'dataaccesscoeprojectlifecycle',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/project-lifecycle.vue')}
+        }
+      ]
+    },
+    {
       path: '/publicAccess',
       name: 'publicAccess',
       component: () => import('./views/PublicAccess.vue')
