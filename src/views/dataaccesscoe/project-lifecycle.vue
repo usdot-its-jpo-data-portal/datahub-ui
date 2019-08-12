@@ -7,6 +7,8 @@
 
 
     <svg
+      height="550"
+      width="550"
       viewBox="0 20 158.75 120">
       <defs
         id="defs2" />
