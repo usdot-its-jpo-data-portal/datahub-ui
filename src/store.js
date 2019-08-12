@@ -67,7 +67,7 @@ export default new Vuex.Store({
       const socra = axios({
         method: 'GET',
         headers: { "content-type": "application/json" },
-        url: SOCRATA_URL + '?q=' + search_query + '&search_context=' + SOCRATA_DOMAIN + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)'
+        url: SOCRATA_URL + '?q=' + search_query + '&search_context=' + SOCRATA_DOMAIN + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)&provenance=official'
       });
 
       commit('setSearching', true);
