@@ -1,5 +1,8 @@
-export const SOCRATA_URL = 'https://api.us.socrata.com/api/catalog/v1';
-export const SOCRATA_DOMAIN = 'data.transportation.gov';
+export const DTG_URL = 'https://api.us.socrata.com/api/catalog/v1';
+export const DTG_DOMAIN = 'data.transportation.gov';
+
+export const SCGC_URL = 'https://api.us.socrata.com/api/catalog/v1';
+export const SCGC_DOMAIN = 'datahub.transportation.gov';
 
 export const NTL_URL = 'https://rosap.ntl.bts.gov/fedora/export/view/collection/';
 export const NTL_COLLECTION = "dot:239"; //Limit results to specific collection

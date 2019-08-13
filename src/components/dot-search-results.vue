@@ -72,8 +72,8 @@ export default {
       set: function(val) { this.$store.state.lastQueryString = val; }
     },
     searchResults: {
-      get: function() { return this.$store.state.SocrataData; },
-      set: function(val) { this.$store.commit('setSocrataData',val); }
+      get: function() { return this.$store.state.MainData; },
+      set: function(val) { this.$store.commit('setMainData',val); }
     },
     isSearching: {
       get: function() { return this.$store.state.searching; },
