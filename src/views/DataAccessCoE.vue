@@ -9,23 +9,23 @@
               <li id="dataaccesscoeoverview" class="usa-sidenav__item">
                 <router-link id="id-dataaccesscoeoverview" to="/data-access-coe" class="page" :class=" isVisible('dataaccesscoeoverview') ? 'usa-current' : '' ">Overview</router-link>
               </li>
-              <li id="dataaccesscoeprojectlifecycle" class="usa-sidenav__item">
-                <router-link id="id-dataaccesscoeprojectlifecycle" to="/data-access-coe/project-lifecycle" class="page" :class=" isVisible('dataaccesscoeprojectlifecycle') ? 'usa-current' : '' ">Project Lifecycle</router-link>
-                <ul v-if="isVisible('dataaccesscoeprojectlifecycle')" id="ul-dataaccesscoeprojectlifecycle" class="usa-sidenav__sublist">
+              <li id="dataaccesscoe-pl" class="usa-sidenav__item">
+                <router-link id="id-dataaccesscoe-pl" to="/data-access-coe/project-lifecycle" class="page" :class="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Project Lifecycle</router-link>
+                <ul v-if="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout')" id="ul-dataaccesscoeprojectlifecycle" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Planning')" class="table-of-contents">Planning</a>
+                    <router-link id="id-dataaccesscoe-pl-planning" to="/data-access-coe/project-lifecycle/planning" class="sub-page" :class="isVisible('dataaccesscoe-pl-planning') ? 'usa-current' : '' ">Planning</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Pre-Award')" class="table-of-contents">Pre-Award</a>
+                    <router-link id="id-dataaccesscoe-pl-preaward" to="/data-access-coe/project-lifecycle/preaward" class="sub-page" :class="isVisible('dataaccesscoe-pl-preaward') ? 'usa-current' : '' ">Pre-Award</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Award')" class="table-of-contents">Award</a>
+                    <router-link id="id-dataaccesscoe-pl-award" to="/data-access-coe/project-lifecycle/award" class="sub-page" :class="isVisible('dataaccesscoe-pl-award') ? 'usa-current' : '' ">Award</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Post-Award')" class="table-of-contents">Post-Award</a>
+                    <router-link id="id-dataaccesscoe-pl-postaward" to="/data-access-coe/project-lifecycle/postaward" class="sub-page" :class="isVisible('dataaccesscoe-pl-postaward') ? 'usa-current' : '' ">Post-Award</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Closeout')" class="table-of-contents">Closeout</a>
+                    <router-link id="id-dataaccesscoe-pl-closeout" to="/data-access-coe/project-lifecycle/closeout" class="sub-page" :class="isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Closeout</router-link>
                   </li>
                 </ul>
               </li>

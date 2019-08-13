@@ -27,6 +27,7 @@
   $dh-data-access-coe_project-lifecycle_color-yellow: #ffc000;
   $dh-data-access-coe_project-lifecycle_color-lightblue: #5b9bd5;
   $dh-data-access-coe_project-lifecycle_color-green: #70ad47;
+  $dh-data-access-coe_project-lifecycle_color-red: #db1111;
 
   @mixin dh-data-access-coe_project-lifecycle_border {
     stroke:$dh-data-access-coe_project-lifecycle_color-white;
@@ -146,5 +147,18 @@
   .dh-data-access-coe_project-lifecycle_image-closeout-circle {
     @include dh-data-access-coe_project-lifecycle_circle;
     stroke:$dh-data-access-coe_project-lifecycle_color-green;
+  }
+
+  .dh-data-access-coe_project-lifecycle_stroke_active {
+    stroke: $dh-data-access-coe_project-lifecycle_color-red;
+    color: $dh-data-access-coe_project-lifecycle_color-red;
+    cursor: pointer;
+  }
+
+  .dh-data-access-coe_project-lifecycle_subpage_title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
   }
 }

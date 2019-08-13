@@ -38,7 +38,6 @@ export default new Router({
     },
     {
       path: '/data-access-coe',
-      name: 'dataaccesscoe',
       components: { default: () => import('./views/DataAccessCoE.vue')},
       children: [
         {
@@ -48,8 +47,33 @@ export default new Router({
         },
         {
           path: '/data-access-coe/project-lifecycle',
-          name: 'dataaccesscoeprojectlifecycle',
-          components: { dataaccesscoe: () => import('./views/dataaccesscoe/project-lifecycle.vue')}
+          name: 'dataaccesscoe-pl',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/project-lifecycle.vue')},
+        },
+        {
+          path: '/data-access-coe/project-lifecycle/planning',
+          name: 'dataaccesscoe-pl-planning',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-planning.vue')}
+        },
+        {
+          path: '/data-access-coe/project-lifecycle/preaward',
+          name: 'dataaccesscoe-pl-preaward',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-preaward.vue')}
+        },
+        {
+          path: '/data-access-coe/project-lifecycle/award',
+          name: 'dataaccesscoe-pl-award',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-award.vue')}
+        },
+        {
+          path: '/data-access-coe/project-lifecycle/postaward',
+          name: 'dataaccesscoe-pl-postaward',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-postaward.vue')}
+        },
+        {
+          path: '/data-access-coe/project-lifecycle/closeout',
+          name: 'dataaccesscoe-pl-closeout',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-closeout.vue')}
         }
       ]
     },
