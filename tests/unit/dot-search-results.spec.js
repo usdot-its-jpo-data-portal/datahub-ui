@@ -16,7 +16,7 @@ describe('DOT Microsite - Search : Results', () => {
       state: {
         queryString: 'data',
         lastQueryString: 'data',
-        SocrataData: SEARCH_RESULTS,
+        MainData: SEARCH_RESULTS,
         searching: false
       },
       commit: function(a,b){},
@@ -87,14 +87,14 @@ describe('DOT Microsite - Search : Results', () => {
   });
   it('displays Searching... ', () => {
     $store.state.searching = true;
-    $store.state.SocrataData = [];
+    $store.state.MainData = [];
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
     let h = wrapper.find('.dh-search-results_list-searching');
     expect(h.text()).toMatch('Searching...')
   });
   it('Searching has an image ', () => {
     $store.state.searching = true;
-    $store.state.SocrataData = [];
+    $store.state.MainData = [];
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
     let h = wrapper.find('.dh-search-results_list-searching');
     let i = h.find('img');
@@ -102,7 +102,7 @@ describe('DOT Microsite - Search : Results', () => {
   });
   it('displays No search results. ', () => {
     $store.state.searching = false;
-    $store.state.SocrataData = [];
+    $store.state.MainData = [];
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
     let h = wrapper.find('.dh-search-results_list-no-results');
     expect(h.text()).toMatch('No search results.');

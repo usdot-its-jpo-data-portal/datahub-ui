@@ -88,6 +88,18 @@ describe('DOT Microsite Header', () => {
     }
     expect(found).toBe(true);
   });
+  it('contains link to Resources page', () => {
+    const wrapper = shallowMount(DOTHeader, {localVue, router});
+    let items = wrapper.findAll('router-link-stub');
+    let found = false;
+    for(let i=0 ; i<items.length; i++) {
+      if(items.at(i).text()==='Resources'){
+        found = true;
+        break;
+      }
+    }
+    expect(found).toBe(true);
+  });
   it('contains link to Metrics page', () => {
     const wrapper = shallowMount(DOTHeader, {localVue, router});
     let items = wrapper.findAll('router-link-stub');
@@ -200,58 +212,5 @@ describe('DOT Microsite Header', () => {
     }
     expect(found).toBe(true);
   });
-  it('contains follow us link to Facebook', () => {
-    const wrapper = shallowMount(DOTHeader, {localVue, router});
-    let items = wrapper.findAll('.dh-follow-us');
-    let found = false;
-    for(let i=0 ; i<items.length; i++) {
-      if(!items.at(i).text().includes('Follow us on Facebook'))
-        continue;
 
-      let item = items.at(i).find('img');
-      if(!item.is('img'))
-        continue;
-
-      expect(item.html().includes('src="/images/icons/facebook_logo.svg"')).toBe(true);
-      found = true;
-      break;
-    }
-    expect(found).toBe(true);
-  });
-  it('contains follow us link to Twitter', () => {
-    const wrapper = shallowMount(DOTHeader, {localVue, router});
-    let items = wrapper.findAll('.dh-follow-us');
-    let found = false;
-    for(let i=0 ; i<items.length; i++) {
-      if(!items.at(i).text().includes('Follow us on Twitter'))
-        continue;
-
-      let item = items.at(i).find('img');
-      if(!item.is('img'))
-        continue;
-
-      expect(item.html().includes('src="/images/icons/Twitter_Social_Icon_Circle_Color.svg"')).toBe(true);
-      found = true;
-      break;
-    }
-    expect(found).toBe(true);
-  });
-  it('contains follow us link to Github', () => {
-    const wrapper = shallowMount(DOTHeader, {localVue, router});
-    let items = wrapper.findAll('.dh-follow-us');
-    let found = false;
-    for(let i=0 ; i<items.length; i++) {
-      if(!items.at(i).text().includes('Follow us on GitHub'))
-        continue;
-
-      let item = items.at(i).find('img');
-      if(!item.is('img'))
-        continue;
-      let hasSrc = item.html().includes('src="/images/icons/github_logo.svg"');
-      expect(hasSrc).toBe(true);
-      found = true;
-      break;
-    }
-    expect(found).toBe(true);
-  });
 });
