@@ -40,26 +40,11 @@
                   <div v-if="isVisible('datamanagement')"><li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Introduction')" class="table-of-contents">Introduction</a>
                   </li>
-                  <!-- <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Scope')" class="table-of-contents">Project Overview</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Data Overview</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Requirements')" class="table-of-contents">Data Stewardship</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Data Standards</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities-2')" class="table-of-contents">Glossary</a>
-                  </li> -->
                   </div>
                   <li class="usa-sidenav__item sub-page-li">
                     <!-- <a href="#" @click="moveToTag($event,'References')" class="sub-page">Template</a> -->
                     <router-link id="prelim-id" to="/resources/data-management/preliminary-dmp" class="sub-page" :class="isVisible('preliminarydmp') ? 'usa-current' : '' ">Preliminary DMP</router-link>
-                    <ul v-if="isVisible('preliminarydmp')" id="ul-guidelines" class="usa-sidenav__sublist">
+                    <ul v-if="isVisible('preliminarydmp')" id="ul-data-management-preliminary-dmp" class="usa-sidenav__sublist">
                       <li class="usa-sidenav__item"> 
                         <a href="#" @click="moveToTag($event,'prelim-introduction')" class="table-of-contents">Introduction</a>
                       </li>
@@ -77,7 +62,7 @@
                   <li class="usa-sidenav__item sub-page-li">
                     <!-- <a href="#" @click="moveToTag($event,'References')" class="sub-page">Template</a> -->
                     <router-link id="post-id" to="/resources/data-management/post-award-dmp" class="sub-page" :class="isVisible('postawarddmp') ? 'usa-current' : '' ">Post-Award DMP</router-link>
-                    <ul v-if="isVisible('postawarddmp')" id="ul-guidelines" class="usa-sidenav__sublist">
+                    <ul v-if="isVisible('postawarddmp')" id="ul-data-management-post-award-dmp" class="usa-sidenav__sublist">
                       <li class="usa-sidenav__item">
                         <a href="#" @click="moveToTag($event,'post-introduction')" class="table-of-contents">Introduction</a>
                       </li>
