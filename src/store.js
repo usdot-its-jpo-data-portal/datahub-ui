@@ -3,8 +3,10 @@ import Vuex from 'vuex'
 
 import axios from 'axios';
 import {
-  SOCRATA_URL,
-  SOCRATA_DOMAIN,
+  DTG_URL,
+  DTG_DOMAIN,
+  SCGC_URL,
+  SCGC_DOMAIN,
   NTL_URL,
   NTL_COLLECTION,
   NTL_DATELIMIT,
@@ -23,7 +25,7 @@ export default new Vuex.Store({
     loadingNTL: false,
     searchByName: false,
     NTLData : [],
-    SocrataData: [],
+    MainData: [],
     isMobile: false,
     version: JSON.parse(unescape(process.env.VUE_APP_PACKAGE_JSON || '%7Bversion%3A0%7D')).version
   },
@@ -43,14 +45,13 @@ export default new Vuex.Store({
     setNTLData(state, data) {
       state.NTLData = data;
     },
-    setSocrataData(state, data) {
-      state.SocrataData = data;
+    setMainData(state, data) {
+      state.MainData = data;
     },
     setSearchByName(state, data){
       state.searchByName = data;
     },
     setIsMobile(state, data) {
-      console.log(data);
       state.isMobile = data;
     }
   },
@@ -64,59 +65,76 @@ export default new Vuex.Store({
         url: NTL_URL + NTL_COLLECTION + NTL_DATELIMIT + NTL_ROWSLIMIT
       });
 
-      const socra = axios({
+      const dtg = axios({
         method: 'GET',
         headers: { "content-type": "application/json" },
-        url: SOCRATA_URL + '?q=' + search_query + '&search_context=' + SOCRATA_DOMAIN + '&domains=data.transportation.gov&tags=intelligent%20transportation%20systems%20(its)'
+        url: DTG_URL + '?q=' + search_query + '&search_context=' + DTG_DOMAIN + '&domains='+DTG_DOMAIN+'&tags=intelligent%20transportation%20systems%20(its)&provenance=official'
       });
 
+      const scgc = axios({
+        method: 'GET',
+        headers: { "content-type": "application/json" },
+        url: SCGC_URL + '?q=' + search_query + '&search_context=' + SCGC_DOMAIN + '&domains='+SCGC_DOMAIN+'&tags=intelligent%20transportation%20systems%20(its)&provenance=official'
+      })
+
       commit('setSearching', true);
-      commit('setSocrataData', []);
+      commit('setMainData', []);
 
       if(this.state.NTLData.length>0){
-        Promise.all([socra]).then( result => {
-          let socraData = DataProcessor.processSocratasData(result[0]);
-          socraData = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, socraData, search_query);
+        Promise.all([dtg,scgc]).then( result => {
+          let dtgData = DataProcessor.processSocratasData(result[0]);
+          let scgcData = DataProcessor.processSocratasData(result[1]);
+
+          dtgData = dtgData.concat(scgcData);
+
+          let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
 
           if(state.searchByName) {
-            socraData = socraData.sort(CompareUtils.compareName);
+            data = data.sort(CompareUtils.compareName);
           } else {
-            socraData = socraData.sort(CompareUtils.compareDate);
+            data = data.sort(CompareUtils.compareDate);
           }
           //set searched data to the store.
-          commit('setSocrataData', socraData);
+          commit('setMainData', data);
           commit('setSearching', false);
         });
       } else {
-        Promise.all([ntl,socra]).then( result => {
+        Promise.all([ntl,dtg,scgc]).then( result => {
           let ntlData = DataProcessor.processNTLData(result[0]);
           commit('setNTLData', ntlData);
 
-          let socraData = DataProcessor.processSocratasData(result[1]);
+          let dtgData = DataProcessor.processSocratasData(result[1]);
+          let scgcData = DataProcessor.processSocratasData(result[2]);
 
-          socraData = DataProcessor.mergeNTLandSocratasData(ntlData, socraData, search_query);
+          dtgData = dtgData.concat(scgcData);
+
+          let data = DataProcessor.mergeNTLandSocratasData(ntlData, dtgData, search_query);
 
           if(state.searchByName) {
-            socraData = socraData.sort(CompareUtils.compareName);
+            data = data.sort(CompareUtils.compareName);
           } else {
-            socraData = socraData.sort(CompareUtils.compareDate);
+            data = data.sort(CompareUtils.compareDate);
           }
           //set searched data to the store.
-          commit('setSocrataData', socraData);
+          commit('setMainData', data);
           commit('setSearching', false);
         }).catch( (error) => { //handle the case when NTL fails due to CORS
           console.log(error);
-          Promise.all([socra]).then( result => {
-            let socraData = DataProcessor.processSocratasData(result[0]);
-            socraData = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, socraData, search_query);
+          Promise.all([dtg,scgc]).then( result => {
+            let dtgData = DataProcessor.processSocratasData(result[0]);
+            let scgcData = DataProcessor.processSocratasData(result[1]);
+
+            dtgData = dtgData.concat(scgcData);
+
+            let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
 
             if(state.searchByName) {
-              socraData = socraData.sort(CompareUtils.compareName);
+              data = data.sort(CompareUtils.compareName);
             } else {
-              socraData = socraData.sort(CompareUtils.compareDate);
+              data = data.sort(CompareUtils.compareDate);
             }
             //set searched data to the store.
-            commit('setSocrataData', socraData);
+            commit('setMainData', data);
             commit('setSearching', false);
           });
         });
