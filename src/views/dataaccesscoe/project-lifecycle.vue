@@ -1,79 +1,29 @@
 <template>
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
-    <h1>Project Lifecycle</h1> <!--comment!-->
+    <h1>Community Support</h1> <!--comment!-->
+    <p>
+      The Data Access Community of Excellence (CoE) is one of several Intelligent Transportation Systems (ITS) Joint Program Office (JPO) CoEs created to promote best practices across the ITS JPO to maximize utility of ITS JPO-sponsored projects.
+    </p>
+    <p>
+      The Data Access CoE aims to maximize access to ITS JPO-funded research data and promote the following objectives:
+    </p>
+    <ul>
+      <li>
+        Promote data access and use across the ITS research portfolio
+      </li>
+      <li>
+        Operationalize existing data access policies and systems
+      </li>
+      <li>
+        Pilot best practices, standards, templates, & data storage & discovery capabilities within ITS JPO that can be scaled Department-wide
+      </li>
+    </ul>
     <p>
       This page contains information on how the Data Access CoE can support your project team. We base this support of the project lifecycle. Scroll across each part of the lifecycle and click on the phase to get more information.
     </p>
 
     <DOTProjectLifecycleImg height="550" width="550" active=""/>
-]
-    <p>
-      <strong id="Planning">Planning</strong>: {{tooltip_planning}} During this phase, the Data Access CoE supports project managers and data providers by:
-    </p>
-    <ul>
-      <li>
-        Advising on data access requirements clauses for Notice of Funding Opportunities (NOFOs), Requests for Proposals (RFPs) and internal ITS JPO-sponsored projects
-      </li>
-      <li>
-        Determining applicability for data access requirements
-      </li>
-      <li>
-        Providing templates to begin data management early on (e.g. preliminary DMPs)
-      </li>
-    </ul>
-    <p>
-      <strong id="Pre-Award">Pre-Award</strong>: {{tooltip_preaward}} During this phase, the Data Access CoE supports project managers and data providers by:
-    </p>
-    <ul>
-      <li>
-        Evaluating preliminary DMPs
-      </li>
-      <li>
-        Clarifying data sharing & data rights agreements
-      </li>
-      <li>
-        Evaluating proposed data management budgets
-      </li>
-    </ul>
-    <p>
-      <strong id="Award">Award</strong>: {{tooltip_award}} During this phase, the Data Access CoE supports project managers and data providers by:
-    </p>
-    <ul>
-      <li>
-        Identifying projects that may need assistance with data management
-      </li>
-      <li>
-        Reviewing draft project schedules & DMPs for consistency
-      </li>
-      <li>
-        Confirming timeline for the 60-day DMP update
-      </li>
-    </ul>
-    <p>
-      <strong id="Post-Award">Post-Award</strong>: {{tooltip_postaward}} During this phase, the Data Access CoE supports project managers and data providers by:
-    </p>
-    <ul>
-      <li>
-        Reviewing DMP updates
-      </li>
-      <li>
-        Coordinating dataset & metadata ingestion (in some cases, provides data infrastructure)
-      </li>
-      <li>
-        Promoting data availability and use
-      </li>
-      <li>
-        Providing technical assistance to PMs & awardees on data access & lifecycle management
-      </li>
-    </ul>
-    <p>
-      <strong id="Closeout">Closeout</strong>: {{tooltip_closeout}} During this phase, the Data Access CoE supports project managers and data providers by:
-    </p>
-    <ul>
-      <li>
-        Implementing the data retention plan
-      </li>
-    </ul>
+
   </div>
 </template>
 <script>

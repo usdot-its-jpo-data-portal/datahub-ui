@@ -43,11 +43,21 @@
     fill:none;
     fill-opacity:1;
     stroke-width:5.5;
-    stroke-linecap:round;
-    stroke-linejoin:round;
+    stroke-linecap:butt;
+    stroke-linejoin:miter;
     stroke-miterlimit:4;
     stroke-dasharray:none;
-    stroke-opacity:1
+    stroke-opacity:1;
+  }
+
+  @mixin dh-data-access-coe_project-lifecycle_circle_arrow {
+    fill-opacity:1;
+    stroke-width:2.19591522;
+    stroke-linecap:butt;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
   }
 
   @mixin dh-data-access-coe_project-lifecycle_text {
@@ -87,6 +97,7 @@
   .dh-data-access-coe_project-lifecycle_image-planning {
     @include dh-data-access-coe_project-lifecycle_border;
     fill:$dh-data-access-coe_project-lifecycle_color-orange;
+    stroke:$dh-data-access-coe_project-lifecycle_color-orange;
     fill-opacity:1;
     &:hover {
       @include dh-data-access-coe_project-lifecycle_stroke;
@@ -96,10 +107,16 @@
     @include dh-data-access-coe_project-lifecycle_circle;
     stroke:$dh-data-access-coe_project-lifecycle_color-orange;
   }
+  .dh-data-access-coe_project-lifecycle_image-planning-circle-arrow {
+    @include dh-data-access-coe_project-lifecycle_circle_arrow;
+    stroke:$dh-data-access-coe_project-lifecycle_color-orange;
+    fill:$dh-data-access-coe_project-lifecycle_color-orange;
+  }
 
   .dh-data-access-coe_project-lifecycle_image-preaward {
     @include dh-data-access-coe_project-lifecycle_border;
     fill:$dh-data-access-coe_project-lifecycle_color-lightgray;
+    stroke:$dh-data-access-coe_project-lifecycle_color-lightgray;
     fill-opacity:1;
     &:hover {
       @include dh-data-access-coe_project-lifecycle_stroke;
@@ -109,10 +126,16 @@
     @include dh-data-access-coe_project-lifecycle_circle;
     stroke:$dh-data-access-coe_project-lifecycle_color-lightgray;
   }
+  .dh-data-access-coe_project-lifecycle_image-preaward-circle-arrow {
+    @include dh-data-access-coe_project-lifecycle_circle_arrow;
+    stroke:$dh-data-access-coe_project-lifecycle_color-lightgray;
+    fill:$dh-data-access-coe_project-lifecycle_color-lightgray;
+  }
 
   .dh-data-access-coe_project-lifecycle_image-award {
     @include dh-data-access-coe_project-lifecycle_border;
     fill:$dh-data-access-coe_project-lifecycle_color-yellow;
+    stroke:$dh-data-access-coe_project-lifecycle_color-yellow;
     fill-opacity:1;
     &:hover {
       @include dh-data-access-coe_project-lifecycle_stroke;
@@ -122,10 +145,16 @@
     @include dh-data-access-coe_project-lifecycle_circle;
     stroke:$dh-data-access-coe_project-lifecycle_color-yellow;
   }
+  .dh-data-access-coe_project-lifecycle_image-award-circle-arrow {
+    @include dh-data-access-coe_project-lifecycle_circle_arrow;
+    stroke:$dh-data-access-coe_project-lifecycle_color-yellow;
+    fill:$dh-data-access-coe_project-lifecycle_color-yellow;
+  }
 
   .dh-data-access-coe_project-lifecycle_image-postaward {
     @include dh-data-access-coe_project-lifecycle_border;
     fill:$dh-data-access-coe_project-lifecycle_color-lightblue;
+    stroke:$dh-data-access-coe_project-lifecycle_color-lightblue;
     fill-opacity:1;
     &:hover {
       @include dh-data-access-coe_project-lifecycle_stroke;
@@ -135,10 +164,16 @@
     @include dh-data-access-coe_project-lifecycle_circle;
     stroke:$dh-data-access-coe_project-lifecycle_color-lightblue;
   }
+  .dh-data-access-coe_project-lifecycle_image-postaward-circle-arrow {
+    @include dh-data-access-coe_project-lifecycle_circle_arrow;
+    stroke:$dh-data-access-coe_project-lifecycle_color-lightblue;
+    fill:$dh-data-access-coe_project-lifecycle_color-lightblue;
+  }
 
   .dh-data-access-coe_project-lifecycle_image-closeout {
     @include dh-data-access-coe_project-lifecycle_border;
     fill:$dh-data-access-coe_project-lifecycle_color-green;
+    stroke:$dh-data-access-coe_project-lifecycle_color-green;
     fill-opacity:1;
     &:hover {
       @include dh-data-access-coe_project-lifecycle_stroke;
@@ -148,10 +183,16 @@
     @include dh-data-access-coe_project-lifecycle_circle;
     stroke:$dh-data-access-coe_project-lifecycle_color-green;
   }
+  .dh-data-access-coe_project-lifecycle_image-closeout-circle-arrow {
+    @include dh-data-access-coe_project-lifecycle_circle_arrow;
+    stroke:$dh-data-access-coe_project-lifecycle_color-green;
+    fill:$dh-data-access-coe_project-lifecycle_color-green;
+  }
 
   .dh-data-access-coe_project-lifecycle_stroke_active {
     stroke: $dh-data-access-coe_project-lifecycle_color-red;
     color: $dh-data-access-coe_project-lifecycle_color-red;
+    stroke-width: 4px;
     cursor: pointer;
   }
 
@@ -160,5 +201,9 @@
     flex-direction: row;
     align-content: center;
     justify-content: flex-start;
+    h1 {
+      padding-top: units(3);
+      padding-left: units(2);
+    }
   }
 }

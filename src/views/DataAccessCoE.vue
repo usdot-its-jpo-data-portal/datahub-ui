@@ -6,11 +6,11 @@
         <aside id="dh-data-access-coe" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-data-access-coe_float-menu">
           <nav>
             <ul id="dh-data-access-coe-main-id" :key="refreshCounter" class="usa-sidenav">
-              <li id="dataaccesscoeoverview" class="usa-sidenav__item">
+              <!-- <li id="dataaccesscoeoverview" class="usa-sidenav__item">
                 <router-link id="id-dataaccesscoeoverview" to="/data-access-coe" class="page" :class=" isVisible('dataaccesscoeoverview') ? 'usa-current' : '' ">Overview</router-link>
-              </li>
+              </li> -->
               <li id="dataaccesscoe-pl" class="usa-sidenav__item">
-                <router-link id="id-dataaccesscoe-pl" to="/data-access-coe/project-lifecycle" class="page" :class="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Project Lifecycle</router-link>
+                <router-link id="id-dataaccesscoe-pl" to="/data-access-coe" class="page" :class="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Community Support</router-link>
                 <ul v-if="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout')" id="ul-dataaccesscoeprojectlifecycle" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
                     <router-link id="id-dataaccesscoe-pl-planning" to="/data-access-coe/project-lifecycle/planning" class="sub-page" :class="isVisible('dataaccesscoe-pl-planning') ? 'usa-current' : '' ">Planning</router-link>

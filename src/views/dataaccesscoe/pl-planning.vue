@@ -1,7 +1,7 @@
 <template>
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <div class="dh-data-access-coe_project-lifecycle_subpage_title">
-      <DOTProjectLifecycleImg height="150" width="150" active="planning"/>
+      <DOTProjectLifecycleImg height="170" width="170" active="planning"/>
       <h1>Planning</h1>
     </div>
     <p>

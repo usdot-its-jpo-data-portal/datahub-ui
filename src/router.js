@@ -40,13 +40,13 @@ export default new Router({
       path: '/data-access-coe',
       components: { default: () => import('./views/DataAccessCoE.vue')},
       children: [
+        // {
+        //   path: '',
+        //   name: 'dataaccesscoeoverview',
+        //   components: { dataaccesscoe: () => import('./views/dataaccesscoe/overview.vue')}
+        // },
         {
           path: '',
-          name: 'dataaccesscoeoverview',
-          components: { dataaccesscoe: () => import('./views/dataaccesscoe/overview.vue')}
-        },
-        {
-          path: '/data-access-coe/project-lifecycle',
           name: 'dataaccesscoe-pl',
           components: { dataaccesscoe: () => import('./views/dataaccesscoe/project-lifecycle.vue')},
         },
