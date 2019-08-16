@@ -125,7 +125,9 @@ class DHDatasetVerification:
             fileName = fileName + '.json'
         else:
             fileName = fileName + '.txt'
-        fileObj = open(fileName, 'w')
+
+        if saveToFile:
+            fileObj = open(fileName, 'w')
         
         #pylint: disable=unused-variable
         s = ''.join(['-' for i in range(60)])
