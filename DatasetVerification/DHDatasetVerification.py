@@ -3,6 +3,7 @@ from os import path
 import requests
 from DHDataset import DHDataset
 import datetime
+import boto3
 
 class DHDatasetVerification:
 
@@ -222,11 +223,26 @@ class DHDatasetVerification:
         fileObj = None
         dt = datetime.datetime.now()
         dtStr = dt.strftime("%Y%m%d%H%M%S")
+        filePath = ''
+        if (self._params.fromlambda):
+            filePath = '/tmp/'
 
-        fileName = 'dh-datasets-compare-'+grp+'-'+dtStr+'.txt'
-        fileObj = open(fileName, 'w')
-        fileObj.write(rep)
-        fileObj.close()
+        fileName = filePath+'dh-datasets-compare-'+grp+'-'+dtStr+'.txt'
+        with open(fileName, 'w') as fileObj:
+            fileObj.write(rep)
+
+        return filePath, fileName
+
+    def _save_report_to_s3(self, params, fileName, filePath):
+        s3 = boto3.resource('s3')
+        lambda_path = filePath + fileName
+
+        data = ''
+        with open(lambda_path) as f:
+            data = f.read()
+        encoded_data = data.encode('utf-8')
+
+        s3.Bucket(params.s3_bucket_name).put_object(Key=params.s3_path, Body=encoded_data)
 
 
     def _compare_datasets(self, params, retDatasets, expDatasets):
@@ -239,7 +255,9 @@ class DHDatasetVerification:
             rep = self._generate_report(rep, 'New Datasets', params.dataset, diff, retDatasets, expDatasets)
             print (rep)
             if params.save: 
-                self._save_report_to_file(params.dataset, rep)
+                repFilePath, repFilename = self._save_report_to_file(params.dataset, rep)
+                if params.fromlambda:
+                    self._save_report_to_s3(params, repFilename, repFilePath)
 
         else:
             ds = 'dtg'
@@ -262,7 +280,9 @@ class DHDatasetVerification:
             
             print(rep)
             if params.save:
-                self._save_report_to_file(params.dataset, rep)
+                repFilePath, repFilename = self._save_report_to_file(params.dataset, rep)
+                if params.fromlambda:
+                    self._save_report_to_s3(params, repFilename, repFilePath)
 
 
     def _do_verification(self, params, datasets):

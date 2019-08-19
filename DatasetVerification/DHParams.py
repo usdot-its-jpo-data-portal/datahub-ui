@@ -13,6 +13,9 @@ class DHParams:
         self._list = False
         self._json = False
 
+        self._s3_bucket_name = None
+        self._s3_path = None
+
         self._cmdline = not self._detect_environment_var()
         self._message = ''
 
@@ -86,22 +89,39 @@ class DHParams:
     def message(self, value):
         self._message = value
 
+    @property
+    def s3_bucket_name(self):
+        return self._s3_bucket_name
+    @s3_bucket_name.setter
+    def s3_bucket_name(self, value):
+        self._s3_bucket_name = value
+
+    @property
+    def s3_path(self):
+        return self._s3_path
+    @s3_path.setter
+    def s3_path(self, value):
+        self._s3_path = value
+
     def _detect_environment_var(self):
         envVars = ['DHDV_CONFIG','DHDV_DATASET']
         for v in envVars:
             o = os.environ.get(v)
-            if o != None:
+            if (o != None) or (self._fromLambda):
                 return True
         return False
 
     def __str__(self):
-        s = 'DHParams(cmdline = {}, config = {}, dataset = {}, expected = {}, json = {}, list = {}, save = {}, valid = {})'.format(
+        s = 'DHParams(cmdline = {}, config = {}, dataset = {}, expected = {}, fromLambda = {}, json = {}, list = {}, s3_bucket_name = {}, s3_path = {}, save = {}, valid = {})'.format(
             self._cmdline,
             self._config,
             self._dataset,
             self._expected,
+            self._fromLambda,
             self._json,
             self._list,
+            self._s3_bucket_name,
+            self._s3_path,
             self._save,
             self._valid
         )
@@ -145,6 +165,20 @@ class DHParams:
             self._valid = False
             self._message = 'Enviroment variable DHDV_EXPECTED is required for verification'
             return
+
+        if self._fromLambda:
+            self._s3_bucket_name = os.environ.get('DHDV_S3_BUCKET_NAME')
+            if self._s3_bucket_name == None:
+                self._valid = False
+                self._message = 'App is running under AWS Lambda, environment variable DHDV_S3_BUCKET_NAME is mandatory'
+                return
+
+            self._s3_path = os.environ.get('DHDV_S3_PATH')
+            if self._s3_path == None:
+                self._valid = False
+                self._message = 'App is running under AWS Lambda, environment variable DHDV_S3_PATH is required.'
+                return
+
 
         self._valid = True
         self._message = ''

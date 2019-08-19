@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ITS DataHub
 # Dataset Verification
 #  - Validates the returned dataset against an expected template document.
@@ -34,4 +36,13 @@ export DHDV_SAVE=False
 #   DHDV_LIST=True, DHDV_JSON=True, DHDV_SAVE=True
 export DHDV_EXPECTED=expected-datasets-doc.json
 
+# S3 Bucket Name
+# This will be used in case that the application is running in AWS-Lambda
+export DHDV_S3_BUCKET_NAME=usdot-its-datahub-dataset-verification
+
+# S3 Path Name
+# Path/folder under the Bucket name
+export DHDV_S3_PATH=logs/
+
+# Main execution
 python dh-verification.py
