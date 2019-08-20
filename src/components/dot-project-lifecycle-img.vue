@@ -286,6 +286,13 @@
   </svg>
 </template>
 <script>
+import {
+  COE_TOOLTIP_PLANNING,
+  COE_TOOLTIP_PREAWARD,
+  COE_TOOLTIP_AWARD,
+  COE_TOOLTIP_POSTAWARD,
+  COE_TOOLTIP_CLOSEOUT
+} from '@/consts/constants.js';
 
 export default {
   name: 'DOTProjectLifecycleImg',
@@ -295,11 +302,11 @@ export default {
       img_height: this.heigth,
       img_width: this.width,
       img_active: this.active,
-      tooltip_planning: 'The Planning phase consists of planning for a project or procurement.',
-      tooltip_preaward: 'The Pre-Award phase consists of preparing for responses to procurement requests and the start of a project.',
-      tooltip_award: 'The Award phase consists of the phase after the award of a procurement to a data provider and the start of the project.',
-      tooltip_postaward: 'The Post-Award phase consists of the period after initial award where the project grows and starts producing data.',
-      tooltip_closeout: 'The Closeout phase consists of the end of the project and ensuring data is properly retained.'
+      tooltip_planning: COE_TOOLTIP_PLANNING,
+      tooltip_preaward: COE_TOOLTIP_PREAWARD,
+      tooltip_award: COE_TOOLTIP_AWARD,
+      tooltip_postaward: COE_TOOLTIP_POSTAWARD,
+      tooltip_closeout: COE_TOOLTIP_CLOSEOUT,
     }
   },
   methods: {
@@ -310,31 +317,31 @@ export default {
         case 'planning-group':
         case 'planning-rect':
         case 'planning-tspan': {
-          this.$router.push({path: '/data-access-coe/project-lifecycle/planning'});
+          this.$router.push({path: '/data-access-coe/community-support/planning'});
           break;
         }
         case 'preaward-group':
         case 'preaward-rect':
         case 'preaward-tspan': {
-          this.$router.push({path: '/data-access-coe/project-lifecycle/preaward'});
+          this.$router.push({path: '/data-access-coe/community-support/preaward'});
           break;
         }
         case 'award-group':
         case 'award-rect':
         case 'award-tspan': {
-          this.$router.push({path: '/data-access-coe/project-lifecycle/award'});
+          this.$router.push({path: '/data-access-coe/community-support/award'});
           break;
         }
         case 'postaward-group':
         case 'postaward-rect':
         case 'postaward-tspan': {
-          this.$router.push({path: '/data-access-coe/project-lifecycle/postaward'});
+          this.$router.push({path: '/data-access-coe/community-support/postaward'});
           break;
         }
         case 'closeout-group':
         case 'closeout-rect':
         case 'closeout-tspan': {
-          this.$router.push({path: '/data-access-coe/project-lifecycle/closeout'});
+          this.$router.push({path: '/data-access-coe/community-support/closeout'});
           break;
         }
         default: return;

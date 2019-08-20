@@ -2,24 +2,21 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <h1>Community Support</h1> <!--comment!-->
     <p>
-      The Data Access Community of Excellence (CoE) is one of several Intelligent Transportation Systems (ITS) Joint Program Office (JPO) CoEs created to promote best practices across the ITS JPO to maximize utility of ITS JPO-sponsored projects.
+      The Data Access Center of Excellence (CoE) is one of several Intelligent Transportation Systems (ITS) Joint Program Office (JPO) CoEs created as a community to promote best practices across the ITS JPO in order to maximize utility of ITS JPO-sponsored projects.
     </p>
     <p>
-      The Data Access CoE aims to maximize access to ITS JPO-funded research data and promote the following objectives:
+      The Data Access CoE aims to achieve this boarder by executing the following objectives for data access:
     </p>
     <ul>
       <li>
-        Promote data access and use across the ITS research portfolio
+        Promoting data access and use across the ITS research portfolio 
       </li>
       <li>
-        Operationalize existing data access policies and systems
-      </li>
-      <li>
-        Pilot best practices, standards, templates, & data storage & discovery capabilities within ITS JPO that can be scaled Department-wide
+        Piloting best practices, standards, templates, and data storage & discovery capabilities within ITS JPO that can be scaled Department-wide
       </li>
     </ul>
     <p>
-      This page contains information on how the Data Access CoE can support your project team. We base this support of the project lifecycle. Scroll across each part of the lifecycle and click on the phase to get more information.
+      This page contains information on how the Data Access CoE can support your project team. We organize this support around the project lifecycle. Scroll across each part of the lifecycle below and click on each phase to get more information on the resources and services this community can provide Program/Project Managers and Data Providers.
     </p>
 
     <DOTProjectLifecycleImg height="550" width="550" active=""/>
@@ -28,6 +25,14 @@
 </template>
 <script>
 import DOTProjectLifecycleImg from '@/components/dot-project-lifecycle-img.vue';
+import {
+  COE_TOOLTIP_PLANNING,
+  COE_TOOLTIP_PREAWARD,
+  COE_TOOLTIP_AWARD,
+  COE_TOOLTIP_POSTAWARD,
+  COE_TOOLTIP_CLOSEOUT
+} from '@/consts/constants.js';
+
 export default {
   name: 'DataAccessCoEProjectLifeCycle',
   components: {
@@ -35,11 +40,11 @@ export default {
   },
   data: function(){
     return {
-      tooltip_planning: 'The Planning phase consists of planning for a project or procurement.',
-      tooltip_preaward: 'The Pre-Award phase consists of preparing for responses to procurement requests and the start of a project.',
-      tooltip_award: 'The Award phase consists of the phase after the award of a procurement to a data provider and the start of the project.',
-      tooltip_postaward: 'The Post-Award phase consists of the period after initial award where the project grows and starts producing data.',
-      tooltip_closeout: 'The Closeout phase consists of the end of the project and ensuring data is properly retained.'
+      tooltip_planning: COE_TOOLTIP_PLANNING,
+      tooltip_preaward: COE_TOOLTIP_PREAWARD,
+      tooltip_award: COE_TOOLTIP_AWARD,
+      tooltip_postaward: COE_TOOLTIP_POSTAWARD,
+      tooltip_closeout: COE_TOOLTIP_CLOSEOUT
     }
   },
   methods: {

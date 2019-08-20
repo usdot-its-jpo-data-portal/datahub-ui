@@ -206,4 +206,33 @@
       padding-left: units(2);
     }
   }
+
+  .dh-data-access-coe_tab {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    button {
+      color: $dh-link_color-default;
+      background-color: inherit;
+      float: left;
+      border: solid units(0.5) transparent;
+      outline: none;
+      cursor: pointer;
+      padding: units(1.5) units(2);
+      transition: 0.3s;
+      &:hover {
+        border-bottom: solid units(0.5) $dh-color-green;
+      }
+    }
+  }
+
+  .dh-data-access-coe_tab-active {
+    font-weight: bold;
+    border-bottom: solid units(0.5) $dh-link_color-hover !important;
+  }
+
+  .dh-data-access-coe_tab-content {
+    border-top: 1px solid #ddd;
+  }
 }

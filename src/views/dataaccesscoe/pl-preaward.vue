@@ -5,23 +5,86 @@
       <h1>Pre-Award</h1>
     </div>
     <p>
-      {{tooltip_preaward}} During this phase, the Data Access CoE supports project managers and data providers by:
+      The Pre-Award phase occurs after the release of a project or procurement through evaluation of project or procurement responses. During this phase, Program/Project Managers review responses to procurement requests and prepare for the start of a project. Data Providers ensure their responses to procurements and projects adhere to the requirements and prepare for the kickoff of a project. See the appropriate page for Program/Project Manager and Data Provider resources.
     </p>
-    <ul>
-      <li>
-        Evaluating preliminary DMPs
-      </li>
-      <li>
-        Clarifying data sharing & data rights agreements
-      </li>
-      <li>
-        Evaluating proposed data management budgets
-      </li>
-    </ul>
+    <!-- Tab links -->
+    <div class="dh-data-access-coe_tab">
+      <button :class="active_tab=='id_tab1'?'dh-data-access-coe_tab-active':''" @click="tabClicked($event, 'id_tab1')">Program/Project Manager</button>
+      <button :class="active_tab=='id_tab2'?'dh-data-access-coe_tab-active':''" @click="tabClicked($event, 'id_tab2')">Data Providers</button>
+    </div>
+
+    <!-- Tab content -->
+    <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
+      <p>
+        In the Pre-Award project lifecycle phase, Program and Project Managers prepare for and execute evaluations of data management materials and ensure projects have appropriate planning to manage project data after kickoff. See resources on this page and contact
+        <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
+        for assistance with this project lifecycle phase.
+      </p>
+      <p>
+        During pre-award, the Data Access CoE can help Program/Project Managers by:
+      </p>
+      <ul>
+        <li>
+          Preparing for evaluation of preliminary DMPs – the Data Access CoE can train technical evaluation teams on DMP evaluation or assist in evaluating if needed.
+        </li>
+        <li>
+          Evaluating preliminary DMPs.
+        </li>
+        <li>
+          Clarifying data sharing & data rights agreements.
+        </li>
+        <li>
+          Evaluating proposed data management budgets.
+        </li>
+      </ul>
+      <i>Resources</i>
+      <ul>
+        <li>
+          Guidelines for determining if a separate DMP evaluation panel is needed
+        </li>
+        <li>
+          Evaluation checklists
+        </li>
+        <li>
+          Preliminary DMP evaluation training
+        </li>
+        <li>
+          Due to procurement sensitivity, Program/Project Managers must request preliminary DMP evaluation materials by contacting
+          <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
+        </li>
+        <li>
+          Data rights clauses: FAR 52.227-14 (contracts) CFR 100.315 (grants and cooperative agreements)
+        </li>
+      </ul>
+    </div>
+
+    <div v-if="active_tab=='id_tab2'" id="id_tab2" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
+      <p>
+        In the Pre-Award project lifecycle phase, Data Providers prepare their responses to a solicitation or project. Data Providers must ensure their responses incorporate all data management requirements listed in the solicitation, which usually includes a requirement for a preliminary DMP.
+      </p> 
+      <i>Resources</i>
+      <ul>
+        <li>
+          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP Instructions Web Page</router-link>
+        </li>
+        <li>
+          <router-link to="/resources/data-management/template-and-instructions">Preliminary DMP Template and Downloadable Instructions</router-link>
+        </li>
+      </ul>
+
+    </div>
   </div>
 </template>
 <script>
 import DOTProjectLifecycleImg from '@/components/dot-project-lifecycle-img.vue';
+import {
+  COE_TOOLTIP_PLANNING,
+  COE_TOOLTIP_PREAWARD,
+  COE_TOOLTIP_AWARD,
+  COE_TOOLTIP_POSTAWARD,
+  COE_TOOLTIP_CLOSEOUT
+} from '@/consts/constants.js';
+
 export default {
   name: 'DataAccessCoEPlanning',
   components: {
@@ -29,11 +92,17 @@ export default {
   },
   data: function(){
     return {
-      tooltip_planning: 'The Planning phase consists of planning for a project or procurement.',
-      tooltip_preaward: 'The Pre-Award phase consists of preparing for responses to procurement requests and the start of a project.',
-      tooltip_award: 'The Award phase consists of the phase after the award of a procurement to a data provider and the start of the project.',
-      tooltip_postaward: 'The Post-Award phase consists of the period after initial award where the project grows and starts producing data.',
-      tooltip_closeout: 'The Closeout phase consists of the end of the project and ensuring data is properly retained.'
+      tooltip_planning: COE_TOOLTIP_PLANNING,
+      tooltip_preaward: COE_TOOLTIP_PREAWARD,
+      tooltip_award: COE_TOOLTIP_AWARD,
+      tooltip_postaward: COE_TOOLTIP_POSTAWARD,
+      tooltip_closeout: COE_TOOLTIP_CLOSEOUT,
+      active_tab: 'id_tab1'
+    }
+  },
+  methods: {
+    tabClicked: function(event, tabId) {
+      this.active_tab = tabId;
     }
   }
 }

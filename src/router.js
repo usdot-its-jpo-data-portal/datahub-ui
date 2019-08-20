@@ -48,30 +48,30 @@ export default new Router({
         {
           path: '',
           name: 'dataaccesscoe-pl',
-          components: { dataaccesscoe: () => import('./views/dataaccesscoe/project-lifecycle.vue')},
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/community-support.vue')},
         },
         {
-          path: '/data-access-coe/project-lifecycle/planning',
+          path: '/data-access-coe/community-support/planning',
           name: 'dataaccesscoe-pl-planning',
           components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-planning.vue')}
         },
         {
-          path: '/data-access-coe/project-lifecycle/preaward',
+          path: '/data-access-coe/community-support/preaward',
           name: 'dataaccesscoe-pl-preaward',
           components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-preaward.vue')}
         },
         {
-          path: '/data-access-coe/project-lifecycle/award',
+          path: '/data-access-coe/community-support/award',
           name: 'dataaccesscoe-pl-award',
           components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-award.vue')}
         },
         {
-          path: '/data-access-coe/project-lifecycle/postaward',
+          path: '/data-access-coe/community-support/postaward',
           name: 'dataaccesscoe-pl-postaward',
           components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-postaward.vue')}
         },
         {
-          path: '/data-access-coe/project-lifecycle/closeout',
+          path: '/data-access-coe/community-support/closeout',
           name: 'dataaccesscoe-pl-closeout',
           components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-closeout.vue')}
         }

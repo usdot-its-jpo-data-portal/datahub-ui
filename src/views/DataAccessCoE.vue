@@ -13,19 +13,19 @@
                 <router-link id="id-dataaccesscoe-pl" to="/data-access-coe" class="page" :class="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Community Support</router-link>
                 <ul v-if="isVisible('dataaccesscoe-pl')||isVisible('dataaccesscoe-pl-planning')||isVisible('dataaccesscoe-pl-preaward')||isVisible('dataaccesscoe-pl-award')||isVisible('dataaccesscoe-pl-postaward')||isVisible('dataaccesscoe-pl-closeout')" id="ul-dataaccesscoeprojectlifecycle" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
-                    <router-link id="id-dataaccesscoe-pl-planning" to="/data-access-coe/project-lifecycle/planning" class="sub-page" :class="isVisible('dataaccesscoe-pl-planning') ? 'usa-current' : '' ">Planning</router-link>
+                    <router-link id="id-dataaccesscoe-pl-planning" to="/data-access-coe/community-support/planning" class="sub-page" :class="isVisible('dataaccesscoe-pl-planning') ? 'usa-current' : '' ">Planning</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <router-link id="id-dataaccesscoe-pl-preaward" to="/data-access-coe/project-lifecycle/preaward" class="sub-page" :class="isVisible('dataaccesscoe-pl-preaward') ? 'usa-current' : '' ">Pre-Award</router-link>
+                    <router-link id="id-dataaccesscoe-pl-preaward" to="/data-access-coe/community-support/preaward" class="sub-page" :class="isVisible('dataaccesscoe-pl-preaward') ? 'usa-current' : '' ">Pre-Award</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <router-link id="id-dataaccesscoe-pl-award" to="/data-access-coe/project-lifecycle/award" class="sub-page" :class="isVisible('dataaccesscoe-pl-award') ? 'usa-current' : '' ">Award</router-link>
+                    <router-link id="id-dataaccesscoe-pl-award" to="/data-access-coe/community-support/award" class="sub-page" :class="isVisible('dataaccesscoe-pl-award') ? 'usa-current' : '' ">Award</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <router-link id="id-dataaccesscoe-pl-postaward" to="/data-access-coe/project-lifecycle/postaward" class="sub-page" :class="isVisible('dataaccesscoe-pl-postaward') ? 'usa-current' : '' ">Post-Award</router-link>
+                    <router-link id="id-dataaccesscoe-pl-postaward" to="/data-access-coe/community-support/postaward" class="sub-page" :class="isVisible('dataaccesscoe-pl-postaward') ? 'usa-current' : '' ">Post-Award</router-link>
                   </li>
                   <li class="usa-sidenav__item">
-                    <router-link id="id-dataaccesscoe-pl-closeout" to="/data-access-coe/project-lifecycle/closeout" class="sub-page" :class="isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Closeout</router-link>
+                    <router-link id="id-dataaccesscoe-pl-closeout" to="/data-access-coe/community-support/closeout" class="sub-page" :class="isVisible('dataaccesscoe-pl-closeout') ? 'usa-current' : '' ">Closeout</router-link>
                   </li>
                 </ul>
               </li>
