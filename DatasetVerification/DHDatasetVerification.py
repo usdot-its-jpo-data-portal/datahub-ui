@@ -227,22 +227,23 @@ class DHDatasetVerification:
         if (self._params.fromlambda):
             filePath = '/tmp/'
 
-        fileName = filePath+'dh-datasets-compare-'+grp+'-'+dtStr+'.txt'
+        fileName = 'dh-datasets-compare-'+grp+'-'+dtStr+'.txt'
+        self._filename = fileName
         with open(fileName, 'w') as fileObj:
             fileObj.write(rep)
 
         return filePath, fileName
 
-    def _save_report_to_s3(self, params, fileName, filePath):
+    def _save_report_to_s3(self, params, rep):
+        dt = datetime.datetime.now()
+        dtStr = dt.strftime("%Y%m%d%H%M%S")
+        fileName = 'dh-datasets-compare-'+params.dataset+'-'+dtStr+'.txt'
+
         s3 = boto3.resource('s3')
-        lambda_path = filePath + fileName
-
-        data = ''
-        with open(lambda_path) as f:
-            data = f.read()
-        encoded_data = data.encode('utf-8')
-
-        s3.Bucket(params.s3_bucket_name).put_object(Key=params.s3_path, Body=encoded_data)
+        encoded_data = rep.encode('utf-8')
+        name = '{}{}'.format(params.s3_path,fileName)
+        s3.Bucket(params.s3_bucket_name).put_object(Key=name, Body=encoded_data)
+        print('S3 Saved. Bucket: {} Path: {}'.format(params.s3_bucket_name, name))
 
 
     def _compare_datasets(self, params, retDatasets, expDatasets):
@@ -254,10 +255,11 @@ class DHDatasetVerification:
             diff = self._get_difference(params.dataset, retDatasets, expDatasets)
             rep = self._generate_report(rep, 'New Datasets', params.dataset, diff, retDatasets, expDatasets)
             print (rep)
-            if params.save: 
-                repFilePath, repFilename = self._save_report_to_file(params.dataset, rep)
+            if params.save:
                 if params.fromlambda:
-                    self._save_report_to_s3(params, repFilename, repFilePath)
+                    self._save_report_to_s3(params, rep)
+                else:
+                    self._save_report_to_file(params.dataset, rep)
 
         else:
             ds = 'dtg'
@@ -280,9 +282,10 @@ class DHDatasetVerification:
             
             print(rep)
             if params.save:
-                repFilePath, repFilename = self._save_report_to_file(params.dataset, rep)
                 if params.fromlambda:
-                    self._save_report_to_s3(params, repFilename, repFilePath)
+                    self._save_report_to_s3(params, rep)
+                else:
+                    self._save_report_to_file(params.dataset, rep)
 
 
     def _do_verification(self, params, datasets):
