@@ -34,7 +34,7 @@ export DHDV_SAVE=False
 # Document in JSON format that contains the expected return of the datasets
 # * This document can be generated using:
 #   DHDV_LIST=True, DHDV_JSON=True, DHDV_SAVE=True
-export DHDV_EXPECTED=expected-datasets-doc.json
+export DHDV_EXPECTED=expected-datasets-api.json
 
 # S3 Bucket Name
 # This will be used in case that the application is running in AWS-Lambda
