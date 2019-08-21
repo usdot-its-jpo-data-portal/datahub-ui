@@ -1,6 +1,6 @@
 <template>
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
-    <h1>Data Storage System</h1>
+    <h1>Data Storage Systems</h1>
     <h2 id="datastoragesystems-purpose">Purpose</h2>
     <p>
       The following web page provides information on the different data storage systems available to research projects in order to be compliant with the Intelligent Transportation Systems (ITS) Joint Program Office (JPO) Data Access Center of Excellence (CoE)
