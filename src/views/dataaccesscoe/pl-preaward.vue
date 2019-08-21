@@ -5,7 +5,7 @@
       <h1>Pre-Award</h1>
     </div>
     <p>
-      The Pre-Award phase occurs after the release of a project or procurement through evaluation of project or procurement responses. During this phase, Program/Project Managers review responses to procurement requests and prepare for the start of a project. Data Providers ensure their responses to procurements and projects adhere to the requirements and prepare for the kickoff of a project. See the appropriate page for Program/Project Manager and Data Provider resources.
+      The Pre-Award project lifecycle phase occurs after the release of a project or procurement through evaluation of project or procurement responses. During this phase, Program/Project Managers review responses to procurement requests and prepare for the start of a project. Data Providers ensure their responses to procurements and projects adhere to procurement requirements. See the appropriate page for Program/Project Manager and Data Provider resources.
     </p>
     <!-- Tab links -->
     <div class="dh-data-access-coe_tab">
@@ -16,16 +16,16 @@
     <!-- Tab content -->
     <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Pre-Award project lifecycle phase, Program and Project Managers prepare for and execute evaluations of data management materials and ensure projects have appropriate planning to manage project data after kickoff. See resources on this page and contact
+        In the Pre-Award project lifecycle phase, Program and Project Managers prepare for and execute evaluations of data management materials and ensure projects have appropriate planning to manage project data. See resources on this page and contact
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
         for assistance with this project lifecycle phase.
       </p>
       <p>
-        During pre-award, the Data Access CoE can help Program/Project Managers by:
+        During Pre-Award, the Data Access CoE can help Program/Project Managers by:
       </p>
       <ul>
         <li>
-          Preparing for evaluation of preliminary DMPs – the Data Access CoE can train technical evaluation teams on DMP evaluation or assist in evaluating if needed.
+          Preparing for evaluation of preliminary data management plans (DMPs). The Data Access CoE can train technical evaluation teams on DMP evaluation or assist in evaluating if needed.
         </li>
         <li>
           Evaluating preliminary DMPs.
@@ -40,35 +40,34 @@
       <i>Resources</i>
       <ul>
         <li>
-          Guidelines for determining if a separate DMP evaluation panel is needed
+          Due to procurement sensitivity, Program/Project Managers must request preliminary DMP evaluation materials, such as evaluation checklists and evaluation training, by contacting 
+          <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
         </li>
         <li>
-          Evaluation checklists
-        </li>
-        <li>
-          Preliminary DMP evaluation training
-        </li>
-        <li>
-          Due to procurement sensitivity, Program/Project Managers must request preliminary DMP evaluation materials by contacting
+          Guidelines for determining if a separate DMP evaluation panel is needed – contact
           <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
+          for help determining this.
         </li>
         <li>
-          Data rights clauses: FAR 52.227-14 (contracts) CFR 100.315 (grants and cooperative agreements)
+          <router-link to="/resources/data-management/faqs">FAQs</router-link> – Frequently Asked Questions about the ITS JPO Guidelines and Resources.
         </li>
       </ul>
     </div>
 
     <div v-if="active_tab=='id_tab2'" id="id_tab2" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Pre-Award project lifecycle phase, Data Providers prepare their responses to a solicitation or project. Data Providers must ensure their responses incorporate all data management requirements listed in the solicitation, which usually includes a requirement for a preliminary DMP.
+        In the Pre-Award project lifecycle phase, Data Providers prepare their responses to a solicitation or project. Data Providers must ensure their responses incorporate all data management requirements listed in the solicitation, which usually includes a requirement for a preliminary data management plan (DMP).
       </p> 
       <i>Resources</i>
       <ul>
         <li>
-          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP Instructions Web Page</router-link>
+          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP Instructions</router-link> - a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is filled out by a solicitation or project applicant.
         </li>
         <li>
-          <router-link to="/resources/data-management/template-and-instructions">Preliminary DMP Template and Downloadable Instructions</router-link>
+          <router-link to="/resources/data-management/template-and-instructions">Preliminary DMP Template and Downloadable Instructions</router-link> – an associated template and downloadable version of the Preliminary DMP Instructions.
+        </li>
+        <li>
+          <router-link to="/resources/data-management/faqs">FAQs</router-link> – Frequently Asked Questions about the ITS JPO Guidelines and Resources.
         </li>
       </ul>
 

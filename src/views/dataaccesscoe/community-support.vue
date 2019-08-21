@@ -2,21 +2,21 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <h1>Community Support</h1> <!--comment!-->
     <p>
-      The Data Access Center of Excellence (CoE) is one of several Intelligent Transportation Systems (ITS) Joint Program Office (JPO) CoEs created as a community to promote best practices across the ITS JPO in order to maximize utility of ITS JPO-sponsored projects.
+      The ITS JPO has created a community called the Data Access Center of Excellence (CoE) to promote best practices around data management in order to maximize utility of ITS JPO-sponsored project data.
     </p>
     <p>
-      The Data Access CoE aims to achieve this boarder by executing the following objectives for data access:
+      The Data Access CoE aims to achieve this by executing the following objectives:
     </p>
     <ul>
       <li>
-        Promoting data access and use across the ITS research portfolio 
+        Promoting data access and use across the ITS research portfolio
       </li>
       <li>
-        Piloting best practices, standards, templates, and data storage & discovery capabilities within ITS JPO that can be scaled Department-wide
+        Piloting data management best practices, standards, templates, and data storage & discovery capabilities within ITS JPO that can be scaled Department-wide
       </li>
     </ul>
     <p>
-      This page contains information on how the Data Access CoE can support your project team. We organize this support around the project lifecycle. Scroll across each part of the lifecycle below and click on each phase to get more information on the resources and services this community can provide Program/Project Managers and Data Providers.
+      This page contains information on how the Data Access CoE can support your project team with data management. We organize this support around the project lifecycle. Scroll across each part of the lifecycle below and click on each phase to get more information on the resources and services this community can provide Program/Project Managers and Data Providers.
     </p>
 
     <DOTProjectLifecycleImg height="550" width="550" active=""/>
