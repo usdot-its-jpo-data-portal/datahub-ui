@@ -1,0 +1,20 @@
+{
+  "ntl": {
+    "name": "ntl",
+    "url": "https://rosap.ntl.bts.gov/fedora/export/view/collection/",
+    "collection": "dot:239",
+    "datelimit": "?from=2019-05-24T00:00:00Z",
+    "rows": "&rows=9999",
+    "link": "https://rosap.ntl.bts.gov/view/dot/"
+  },
+  "dtg": {
+    "name": "dtg",
+    "url": "https://api.us.socrata.com/api/catalog/v1",
+    "domain": "data.transportation.gov"
+  },
+  "scgc": {
+    "name": "scgc",
+    "url": "https://api.us.socrata.com/api/catalog/v1",
+    "domain": "datahub.transportation.gov"
+  }
+}

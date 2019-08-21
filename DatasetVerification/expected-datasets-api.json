@@ -1,0 +1,353 @@
+{
+  "ntl": [
+      {
+          "id": "dot:3602",
+          "name": "Establishing Monitoring Programs for Travel Time Reliability [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3602"
+      },
+      {
+          "id": "dot:4141",
+          "name": "Validation of Urban Freeway Models [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/4141"
+      },
+      {
+          "id": "dot:3613",
+          "name": "Pilot Testing of SHRP 2 Reliability Data and Analytical Products: Southern California [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3613"
+      },
+      {
+          "id": "dot:3603",
+          "name": "Identification and Evaluation of the Cost-Effectiveness of Highway Design Features to Reduce Nonrecurrent Congestion [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3603"
+      },
+      {
+          "id": "dot:32758",
+          "name": "Response, Emergency Staging, Communications, Uniform Management, and Evacuation (R.E.S.C.U.M.E.): Concept of Operations [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32758"
+      },
+      {
+          "id": "dot:32652",
+          "name": "Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs \u00e2\u0080\u0094 Summary Report for the Chicago Testbed [supporting datasets - Chicago Testbed]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32652"
+      },
+      {
+          "id": "dot:32742",
+          "name": "Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs - calibration Report for Phoenix Testbed: Final Report [supporting datasets - Phoenix Testbed]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32742"
+      },
+      {
+          "id": "dot:32571",
+          "name": "Impacts Assessment of Dynamic Speed Harmonization with Queue Warning: Task 3, Impacts Assessment Report [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32571"
+      },
+      {
+          "id": "dot:32635",
+          "name": "Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs: Dallas Testbed Analysis Plan [supporting datasets - Dallas Testbed]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32635"
+      },
+      {
+          "id": "dot:32835",
+          "name": "Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs : Evaluation Report for the San Diego Testbed: Draft Report [supporting datasets - San Diego]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32835"
+      },
+      {
+          "id": "dot:32698",
+          "name": "Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs - San Mateo Testbed Analysis Plan [supporting datasets - San Mateo Testbed]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32698"
+      },
+      {
+          "id": "dot:32541",
+          "name": "Dynamic Mobility Applications Policy Analysis: Policy and Institutional Issues for Integrated Dynamic Transit Operations (IDTO) [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32541"
+      },
+      {
+          "id": "dot:32534",
+          "name": "Analysis, Modeling, and Simulation (AMS) Testbed Development and Evaluation to Support Dynamic Mobility Applications (DMA) and Active Transportation and Demand Management (ATDM) Programs \u00e2\u0080\u0094 Evaluation Report for ATDM Program [supporting datasets - Pasadena Testbed]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32534"
+      },
+      {
+          "id": "dot:3619",
+          "name": "Analytical Procedures for Determining the Impacts of Reliability Mitigation Strategies [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3619"
+      },
+      {
+          "id": "dot:32421",
+          "name": "Strategic Approaches at the Corridor and Network Level to Minimize Disruption from the Renewal Process [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/32421"
+      },
+      {
+          "id": "dot:3618",
+          "name": "Effectiveness of Different Approaches to Disseminating Traveler Information on Travel Time Reliability [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3618"
+      },
+      {
+          "id": "dot:3616",
+          "name": "Pilot Testing of SHRP 2 Reliability Data and Analytical Products: Washington [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3616"
+      },
+      {
+          "id": "dot:3615",
+          "name": "Pilot Testing of SHRP 2 Reliability Data and Analytical Products: Florida [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3615"
+      },
+      {
+          "id": "dot:3614",
+          "name": "Pilot Testing of SHRP 2 Reliability Data and Analytical Products: Minnesota [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3614"
+      },
+      {
+          "id": "dot:3617",
+          "name": "Incorporating travel time reliability into the Highway Capacity Manual [supporting datasets]",
+          "url": "https://rosap.ntl.bts.gov/view/dot/3617"
+      }
+  ],
+  "dtg": [
+      {
+          "id": "8ect-6jqj",
+          "name": "Next Generation Simulation (NGSIM) Vehicle Trajectories and Supporting Data",
+          "url": "https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj"
+      },
+      {
+          "id": "jc5e-psbx",
+          "name": "Road Weather Demonstration Data",
+          "url": "https://data.transportation.gov/dataset/Road-Weather-Demonstration-Data/jc5e-psbx"
+      },
+      {
+          "id": "bagt-569v",
+          "name": "Portland, Oregon Test Data Set Arterial Loop Detector Data",
+          "url": "https://data.transportation.gov/Automobiles/Portland-Oregon-Test-Data-Set-Arterial-Loop-Detect/bagt-569v"
+      },
+      {
+          "id": "6bhp-rgk2",
+          "name": "Portland, Oregon Test Data Set Freeway Loop Detector Data",
+          "url": "https://data.transportation.gov/Automobiles/Portland-Oregon-Test-Data-Set-Freeway-Loop-Detecto/6bhp-rgk2"
+      },
+      {
+          "id": "7ee5-ppkq",
+          "name": "Advanced Messaging Concept Development: Probe Vehicle Data",
+          "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Probe-Vehic/7ee5-ppkq"
+      },
+      {
+          "id": "a79b-e3wn",
+          "name": "AMS Pasadena Main Data",
+          "url": "https://data.transportation.gov/Research-and-Statistics/AMS-Pasadena-Main-Data/a79b-e3wn"
+      },
+      {
+          "id": "hcgc-h7hr",
+          "name": "AMS San Diego Testbed - Calibration Data",
+          "url": "https://data.transportation.gov/Research-and-Statistics/AMS-San-Diego-Testbed-Calibration-Data/hcgc-h7hr"
+      },
+      {
+          "id": "t6ey-ykqh",
+          "name": "AMS Pasadena Precipitation Data",
+          "url": "https://data.transportation.gov/Research-and-Statistics/AMS-Pasadena-Precipitation-Data/t6ey-ykqh"
+      },
+      {
+          "id": "e5bn-vf7s",
+          "name": "Intelligent Network Flow Optimization Prototype Infrastructure Traffic Sensor System Data Aggregator",
+          "url": "https://data.transportation.gov/Automobiles/Intelligent-Network-Flow-Optimization-Prototype-In/e5bn-vf7s"
+      },
+      {
+          "id": "q3ms-nja6",
+          "name": "Advanced Messaging Concept Development: Probe Data Control Message",
+          "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Probe-Data-/q3ms-nja6"
+      },
+      {
+          "id": "wpek-zziu",
+          "name": "Test Data of Proof-of-Concept Vehicle Platooning Based on Cooperative Adaptive Cruise Control (CACC)",
+          "url": "https://data.transportation.gov/Automobiles/Test-Data-of-Proof-of-Concept-Vehicle-Platooning-B/wpek-zziu"
+      },
+      {
+          "id": "3trh-hz5x",
+          "name": "2014 ITS World Congress Connected Vehicle Test Bed Demonstration Intersection Situation Data",
+          "url": "https://data.transportation.gov/Automobiles/2014-ITS-World-Congress-Connected-Vehicle-Test-Bed/3trh-hz5x"
+      },
+      {
+          "id": "swef-k9yw",
+          "name": "2014 ITS World Congress Connected Vehicle Test Bed Demonstration Traveler Situation Data",
+          "url": "https://data.transportation.gov/Automobiles/2014-ITS-World-Congress-Connected-Vehicle-Test-Bed/swef-k9yw"
+      },
+      {
+          "id": "i5z4-qh9m",
+          "name": "2014 ITS World Congress Connected Vehicle Test Bed Demonstration Vehicle Situation Data",
+          "url": "https://data.transportation.gov/Automobiles/2014-ITS-World-Congress-Connected-Vehicle-Test-Bed/i5z4-qh9m"
+      },
+      {
+          "id": "6nxx-nmxk",
+          "name": "Wyoming CV Pilot Traveler Information Message Sample (Schema Version 6)",
+          "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Traveler-Information-Message-Samp/6nxx-nmxk"
+      },
+      {
+          "id": "2rdx-wgpx",
+          "name": "Wyoming CV Pilot Traveler Information Message Sample (Schema Version 5)",
+          "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Traveler-Information-Message-Samp/2rdx-wgpx"
+      },
+      {
+          "id": "9k4m-a3jc",
+          "name": "Wyoming CV Pilot Basic Safety Message One Day Sample",
+          "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Basic-Safety-Message-One-Day-Samp/9k4m-a3jc"
+      },
+      {
+          "id": "xn7c-yu2n",
+          "name": "Tampa CV Pilot Signal Phasing and Timing (SPaT) Sample",
+          "url": "https://data.transportation.gov/Automobiles/Tampa-CV-Pilot-Signal-Phasing-and-Timing-SPaT-Samp/xn7c-yu2n"
+      },
+      {
+          "id": "eezi-v4pm",
+          "name": "Advanced Messaging Concept Development Basic Safety Message",
+          "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Safet/eezi-v4pm"
+      },
+      {
+          "id": "nm7w-nvbm",
+          "name": "Tampa CV Pilot Basic Safety Message (BSM) Sample",
+          "url": "https://data.transportation.gov/Automobiles/Tampa-CV-Pilot-Basic-Safety-Message-BSM-Sample/nm7w-nvbm"
+      },
+      {
+          "id": "wz7m-693m",
+          "name": "Intelligent Network Flow Optimization Prototype Basic Safety Messages",
+          "url": "https://data.transportation.gov/Automobiles/Intelligent-Network-Flow-Optimization-Prototype-Ba/wz7m-693m"
+      },
+      {
+          "id": "rh2j-ihhy",
+          "name": "Multi-Modal Intelligent Traffic Signal Systems Vehicle Trajectories for Roadside Equipment",
+          "url": "https://data.transportation.gov/Automobiles/Multi-Modal-Intelligent-Traffic-Signal-Systems-Veh/rh2j-ihhy"
+      },
+      {
+          "id": "2f79-bkh3",
+          "name": "Multi-Modal Intelligent Traffic Signal Systems GPS",
+          "url": "https://data.transportation.gov/Automobiles/Multi-Modal-Intelligent-Traffic-Signal-Systems-GPS/2f79-bkh3"
+      },
+      {
+          "id": "gr7j-n2cj",
+          "name": "Multi-Modal Intelligent Traffic Signal Systems Signal Plans for Roadside Equipment",
+          "url": "https://data.transportation.gov/Automobiles/Multi-Modal-Intelligent-Traffic-Signal-Systems-Sig/gr7j-n2cj"
+      },
+      {
+          "id": "7xqa-bpf3",
+          "name": "Enhanced Transit Safety Retrofit Package (E-TRP)",
+          "url": "https://data.transportation.gov/Automobiles/Enhanced-Transit-Safety-Retrofit-Package-E-TRP-/7xqa-bpf3"
+      },
+      {
+          "id": "wqch-9e2e",
+          "name": "Advanced Messaging Concept Development Basic Mobility Control Message",
+          "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Mobil/wqch-9e2e"
+      },
+      {
+          "id": "in46-gmir",
+          "name": "Tampa CV Pilot Traveler Information Message (TIM) Sample",
+          "url": "https://data.transportation.gov/Automobiles/Tampa-CV-Pilot-Traveler-Information-Message-TIM-Sa/in46-gmir"
+      },
+      {
+          "id": "ij7i-psm5",
+          "name": "Intelligent Network Flow Optimization Prototype Traffic Management Entity-Based Speed Harmonization",
+          "url": "https://data.transportation.gov/Automobiles/Intelligent-Network-Flow-Optimization-Prototype-Tr/ij7i-psm5"
+      },
+      {
+          "id": "fnkc-y5dk",
+          "name": "Intelligent Network Flow Optimization Prototype Traffic Management Entity-Based Queue Warning",
+          "url": "https://data.transportation.gov/Automobiles/Intelligent-Network-Flow-Optimization-Prototype-Tr/fnkc-y5dk"
+      },
+      {
+          "id": "wxyj-6dfq",
+          "name": "Advanced Messaging Concept Development: Basic Mobility Message",
+          "url": "https://data.transportation.gov/Automobiles/Advanced-Messaging-Concept-Development-Basic-Mobil/wxyj-6dfq"
+      },
+      {
+          "id": "dusd-cr84",
+          "name": "Cooperative Automated Research Mobility Applications (CARMA) 2",
+          "url": "https://data.transportation.gov/Automobiles/Cooperative-Automated-Research-Mobility-Applicatio/dusd-cr84"
+      }
+  ],
+  "scgc": [
+      {
+          "id": "a7qq-9vfe",
+          "name": "Safety Pilot Model Deployment Data",
+          "url": "https://datahub.transportation.gov/Automobiles/Safety-Pilot-Model-Deployment-Data/a7qq-9vfe"
+      },
+      {
+          "id": "6qbu-yvq3",
+          "name": "San Diego Test Data Sets",
+          "url": "https://datahub.transportation.gov/Automobiles/San-Diego-Test-Data-Sets/6qbu-yvq3"
+      },
+      {
+          "id": "e8av-qz9y",
+          "name": "Basic Safety Message Data Emulator",
+          "url": "https://datahub.transportation.gov/Automobiles/Basic-Safety-Message-Data-Emulator/e8av-qz9y"
+      },
+      {
+          "id": "xig6-cb63",
+          "name": "Pasadena Test Data Sets",
+          "url": "https://datahub.transportation.gov/Automobiles/Pasadena-Test-Data-Sets/xig6-cb63"
+      },
+      {
+          "id": "tw8w-mfxe",
+          "name": "Southeast Michigan Operational Data Environment (SEMI-ODE)",
+          "url": "https://datahub.transportation.gov/dataset/Southeast-Michigan-Operational-Data-Environment-SE/tw8w-mfxe"
+      },
+      {
+          "id": "htmy-j8sh",
+          "name": "Vehicle Awareness Device Data from Leesburg, Virginia",
+          "url": "https://datahub.transportation.gov/dataset/Vehicle-Awareness-Device-Data-from-Leesburg-Virgin/htmy-j8sh"
+      },
+      {
+          "id": "hk7z-wi42",
+          "name": "Prototype Operational Data Environment (P-ODE)",
+          "url": "https://datahub.transportation.gov/dataset/Prototype-Operational-Data-Environment-P-ODE-/hk7z-wi42"
+      },
+      {
+          "id": "xz9a-9kps",
+          "name": "NCAR 2009+2010 and VII POC Weather Data",
+          "url": "https://datahub.transportation.gov/dataset/NCAR-2009-2010-and-VII-POC-Weather-Data/xz9a-9kps"
+      },
+      {
+          "id": "kn5d-ptj9",
+          "name": "Minnesota Department of Transportation Mobile Observation",
+          "url": "https://datahub.transportation.gov/Automobiles/Minnesota-Department-of-Transportation-Mobile-Obse/kn5d-ptj9"
+      },
+      {
+          "id": "ntts-pk3f",
+          "name": "Seattle I-405 Simulated Basic Safety Message",
+          "url": "https://datahub.transportation.gov/Automobiles/Seattle-I-405-Simulated-Basic-Safety-Message/ntts-pk3f"
+      },
+      {
+          "id": "r2cx-w8z5",
+          "name": "Florida DOT Orlando ITS World Congress Vehicle Awareness Device",
+          "url": "https://datahub.transportation.gov/Automobiles/Florida-DOT-Orlando-ITS-World-Congress-Vehicle-Awa/r2cx-w8z5"
+      },
+      {
+          "id": "ixg2-6cni",
+          "name": "Seattle 20 Second Freeway",
+          "url": "https://datahub.transportation.gov/Automobiles/Seattle-20-Second-Freeway/ixg2-6cni"
+      },
+      {
+          "id": "25r8-p3cy",
+          "name": "Active Transportation Demand Management (ATDM) Trajectory Level Validation",
+          "url": "https://datahub.transportation.gov/Automobiles/Active-Transportation-Demand-Management-ATDM-Traje/25r8-p3cy"
+      },
+      {
+          "id": "9v5g-t8u8",
+          "name": "Seattle Freeway Travel Times",
+          "url": "https://datahub.transportation.gov/Automobiles/Seattle-Freeway-Travel-Times/9v5g-t8u8"
+      },
+      {
+          "id": "as63-iaxk",
+          "name": "Integrated Dynamic Transit Operations (IDTO) Impact Assessment (IA)",
+          "url": "https://datahub.transportation.gov/Automobiles/Integrated-Dynamic-Transit-Operations-IDTO-Impact-/as63-iaxk"
+      },
+      {
+          "id": "hgmr-wk87",
+          "name": "Intelligent Transportation Systems (ITS) Costs",
+          "url": "https://datahub.transportation.gov/Automobiles/Intelligent-Transportation-Systems-ITS-Costs/hgmr-wk87"
+      },
+      {
+          "id": "ex7f-b9wq",
+          "name": "Intelligent Transportation Systems (ITS) Benefits",
+          "url": "https://datahub.transportation.gov/Automobiles/Intelligent-Transportation-Systems-ITS-Benefits/ex7f-b9wq"
+      },
+      {
+          "id": "8y7u-tmga",
+          "name": "Intelligent Transportation Systems (ITS) Lessons Learned",
+          "url": "https://datahub.transportation.gov/Automobiles/Intelligent-Transportation-Systems-ITS-Lessons-Lea/8y7u-tmga"
+      }
+  ]
+}
