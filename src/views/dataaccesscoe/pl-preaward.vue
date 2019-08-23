@@ -61,7 +61,7 @@
       <i>Resources</i>
       <ul>
         <li>
-          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP Instructions</router-link> - a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is filled out by a solicitation or project applicant.
+          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP Instructions</router-link> - a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
         </li>
         <li>
           <router-link to="/resources/data-management/template-and-instructions">Preliminary DMP Template and Downloadable Instructions</router-link> – an associated template and downloadable version of the Preliminary DMP Instructions.

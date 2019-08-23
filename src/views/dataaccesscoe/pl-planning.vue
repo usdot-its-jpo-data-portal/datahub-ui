@@ -25,7 +25,7 @@
       </p>
       <ul>
         <li>
-          Advising on data access requirements clauses and solicitation language for Notice of Funding Opportunities (NOFOs), Requests for Proposals (RFPs) and internal ITS JPO-sponsored projects. We have standard language and clauses that can be tailored to your needs.
+          Advising on data access requirements clauses and solicitation language for Notice of Funding Opportunities (NOFOs), Requests for Proposals (RFPs) and internal ITS JPO-sponsored projects. Standard language and clauses that can be tailored to your needs.
         </li>
         <li>
           Determining applicability for data access requirements for your project, including whether data can be made public and what U.S. DOT-managed systems are be available to store project data.
@@ -44,7 +44,7 @@
           <router-link to="/resources/guidelines">ITS DataHub Guidelines</router-link> – these are ITS JPO’s overall guidelines and requirements for data access and management.
         </li>
         <li>
-          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions – a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is filled out by a solicitation or project applicant.
+          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions – a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
         </li>
         <li>
           Standard Solicitation Language – contact
@@ -61,7 +61,7 @@
       <p>
         During the Planning phase, Data Providers should be brainstorming and planning project ideas. For help brainstorming potential project ideas and gathering lessons learned and cost estimates from previous ITS projects, see the
         <a target="_blank" href="https://www.itsbenefits.its.dot.gov/its/benecost.nsf/ByLink/BenefitsAbout">ITS Benefits Database<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>.
-        Additionally, review ITS JPO’s data management Resources page and associated templates and guidance to anticipate requirements that might be part of the project.
+        Additionally, review ITS JPO’s data management Resources page, associated templates and guidance to anticipate requirements that might be part of the project.
       </p> 
       <i>Resources</i>
       <ul>
@@ -69,7 +69,7 @@
           <router-link to="/resources">ITS DataHub Resources Page</router-link> – a page containing guidelines and associate templates usually included in solicitations.
         </li>
         <li>
-          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions - a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is filled out by a solicitation or project applicant.
+          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions - a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
         </li>
         <li>
           <router-link to="/resources/guidelines">System Guidelines</router-link>

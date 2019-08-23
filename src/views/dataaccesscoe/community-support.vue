@@ -9,10 +9,10 @@
     </p>
     <ul>
       <li>
-        Promoting data access and use across the ITS research portfolio
+        Promoting data access and use across the ITS research portfolio.
       </li>
       <li>
-        Piloting data management best practices, standards, templates, and data storage & discovery capabilities within ITS JPO that can be scaled Department-wide
+        Piloting data management best practices, standards, templates, and data storage & discovery capabilities within ITS JPO that can be scaled department-wide.
       </li>
     </ul>
     <p>

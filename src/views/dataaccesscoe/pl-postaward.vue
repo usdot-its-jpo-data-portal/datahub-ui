@@ -49,7 +49,7 @@
         In the Post-Award project lifecycle phase, Data Providers execute their project and begin to produce data. Data Providers must execute their DMP and provide an updated DMP approved by ITS JPO within 60 days of project award and updated as changes occur to data management or at least every six months in accordance with the ITS JPO Guidelines.
       </p> 
       <p>
-        During the Award phase, the Data Access CoE can help Data Providers by:
+        During the Award Phase, the Data Access CoE can help Data Providers by:
       </p>
       <ul>
         <li>
