@@ -16,7 +16,7 @@
       </li>
     </ul>
     <p>
-      This page contains information on how the Data Access CoE can support your project team with data management. We organize this support around the project lifecycle. Scroll across each part of the lifecycle below and click on each phase to get more information on the resources and services this community can provide Program/Project Managers and Data Providers.
+      This page contains information on how the Data Access CoE can support your project team with data management. Organized around the project lifecycle, you can click on each phase to obtain more information on the resources and services this community can provide Program/Project Managers and Data Providers.
     </p>
 
     <DOTProjectLifecycleImg height="550" width="550" active=""/>
