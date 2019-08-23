@@ -95,6 +95,9 @@
             <router-link to="/metrics" active-class="router-link-active">Metrics</router-link>
           </li>
           <li class="usa-nav__primary-item">
+            <router-link to="/data-access-coe" active-class="router-link-active">Community</router-link>
+          </li>
+          <li class="usa-nav__primary-item">
             <router-link to="/search" active-class="router-link-active">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">

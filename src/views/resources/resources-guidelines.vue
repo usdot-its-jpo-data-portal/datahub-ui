@@ -235,9 +235,15 @@
       </li>
       <p>
         Awardees must store their data in systems that provide an appropriate level of user access, functionality and data
-        lifecycle management. Awardees must provide access to data for five years or until the data is no longer required
-        for business purposes, whichever is later. This retention period begins when U.S. DOT first receives access to a
-        dataset.
+        lifecycle management. Datasets in ITS DataHub are required to be retained for a minimum of five years in accordance
+        with the
+        <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.fhwa.dot.gov_legsregs_directives_orders_hoit-2Dhq-5F.cfm&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=AvfhqvHzwgtD4YBmX9XGz_Z4GeLyer-H3BMvjy12Amk&e=">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>,
+        NARA schedule number
+        <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.archives.gov_files_records-2Dmgmt_rcs_schedules_departments_department-2Dof-2Dtransportation_rg-2D0406_daa-2D0406-2D2014-2D0003-5Fsf115.pdf&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=7h17qK4mdzMLn3SHkGIl4PwNGSvuFmqi2wVm9ZiHQEU&e=">DAA-0406-2014-0003<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
+        Dataset types may include
+        roadway traffic-related data such as vehicle latitude, longitude, heading and speed; travel times on road segments;
+        traffic signal timing plans; rail transit schedules; and weather. This retention period begins when U.S. DOT first
+        receives access to a dataset.
       </p>
       <p>
         Awardees may use different systems to store different types of data (e.g., public, non-public, primary, derived,

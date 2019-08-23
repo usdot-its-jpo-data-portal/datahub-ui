@@ -37,6 +37,47 @@ export default new Router({
       component: () => import('./views/Metrics.vue')
     },
     {
+      path: '/data-access-coe',
+      components: { default: () => import('./views/DataAccessCoE.vue')},
+      children: [
+        // {
+        //   path: '',
+        //   name: 'dataaccesscoeoverview',
+        //   components: { dataaccesscoe: () => import('./views/dataaccesscoe/overview.vue')}
+        // },
+        {
+          path: '',
+          name: 'dataaccesscoe-pl',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/community-support.vue')},
+        },
+        {
+          path: '/data-access-coe/community-support/planning',
+          name: 'dataaccesscoe-pl-planning',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-planning.vue')}
+        },
+        {
+          path: '/data-access-coe/community-support/preaward',
+          name: 'dataaccesscoe-pl-preaward',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-preaward.vue')}
+        },
+        {
+          path: '/data-access-coe/community-support/award',
+          name: 'dataaccesscoe-pl-award',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-award.vue')}
+        },
+        {
+          path: '/data-access-coe/community-support/postaward',
+          name: 'dataaccesscoe-pl-postaward',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-postaward.vue')}
+        },
+        {
+          path: '/data-access-coe/community-support/closeout',
+          name: 'dataaccesscoe-pl-closeout',
+          components: { dataaccesscoe: () => import('./views/dataaccesscoe/pl-closeout.vue')}
+        }
+      ]
+    },
+    {
       path: '/publicAccess',
       name: 'publicAccess',
       component: () => import('./views/PublicAccess.vue')

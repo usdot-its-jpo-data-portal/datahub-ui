@@ -90,7 +90,7 @@
                 </ul>
               </li>
               <li id="data-storage-system" class="usa-sidenav__item">
-                <router-link id="id-data-storage-system" to="/resources/data-storage-system" class="page" :class=" isVisible('datastoragesystem') ? 'usa-current' : '' ">Data Storage System</router-link>
+                <router-link id="id-data-storage-system" to="/resources/data-storage-system" class="page" :class=" isVisible('datastoragesystem') ? 'usa-current' : '' ">Data Storage Systems</router-link>
                 <ul v-if="isVisible('datastoragesystem')" id="ul-datastoragesystem" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'datastoragesystems-purpose')" class="table-of-contents">Purpose</a>
