@@ -70,5 +70,13 @@
       margin-left: 0px;
     }
   }
+
+  .dh-about_color-blue {
+    color: $dh-link_color-hover;
+    font-weight: bold;
+  }
+  .dh-about_list-nobullet {
+    list-style: none;
+  }
 }
 
