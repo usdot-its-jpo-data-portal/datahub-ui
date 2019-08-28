@@ -73,11 +73,16 @@
         margin-left: 0px;
       }
     }
+    h1 {
+      margin-top: units(2.5) !important;
+    }
   }
 
   .dh-about_color-blue {
-    color: $dh-link_color-hover;
-    font-weight: bold;
+      color: $dh-link_color-hover;
+      font-weight: bold !important;
+      font-style: italic;
+      font-size: units(3) !important;
   }
   .dh-about_list-nobullet {
     list-style: none;
@@ -100,5 +105,11 @@
       margin-left: units('card-lg');
       z-index: 10;
     }
+  }
+  .dh-about-main_image {
+    min-width: units('mobile');
+    max-width: $dh-about_text-width * 0.65;
+    width: 100%;
+    height: auto;
   }
 }

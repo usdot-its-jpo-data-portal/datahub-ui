@@ -30,6 +30,9 @@
                 <a id="id-about_data-submission" href="#" @click="moveToTag($event,'data-submission')" class="page" :class="isVisible(['id-about_data-submission']) ? 'usa-current' : '' ">Data Submission</a>
               </li>
               <li class="usa-sidenav__item">
+                <a id="id-about_access-datasets" href="#" @click="moveToTag($event,'access-datasets')" class="page" :class="isVisible(['id-about_access-datasets']) ? 'usa-current' : '' ">Access to Sensitive Transportation Datasets</a>
+              </li>
+              <li class="usa-sidenav__item">
                 <a id="id-about-resources" href="#" @click="moveToTag($event,'resources')" class="page" :class="isVisible(['id-about-resources','id-about-resources_additional-information','id-about-resources_upcomming-webinars','id-about-resources_past-webinars','id-about-resources_links','id-about-resources_contact-information']) ? 'usa-current' : '' ">Resources</a>
                 <ul v-if="isVisible(['id-about-resources','id-about-resources_additional-information','id-about-resources_upcomming-webinars','id-about-resources_past-webinars','id-about-resources_links','id-about-resources_contact-information'])" id="ul-resources" class="usa-sidenav__sublist" >
                   <li class="usa-sidenav__item">
@@ -53,6 +56,7 @@
           </nav>
         </aside>
         <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose dh-about-main_float-content">
+          <img class="dh-about-main_image" src="images/ITSJPO_DataHub_081619Overview.png" alt="DataHub overview image">
           <h1 id="about">About the ITS DataHub</h1>
           <p class="usa-intro">
             The ITS DataHub provides a single point of entry to discover available intelligent transportation systems (ITS) primary and derived research data from the U.S. Department of Transportation (U.S. DOT). By providing access to these data, the U.S. DOT aims to enable third-party research into the effectiveness of emerging ITS technologies, preliminary development of third-party applications, and harmonization of data across similar collections.
@@ -69,15 +73,10 @@
           <p>
             The ITS DataHub allows discovery of datasets created using ITS technologies. The datasets contain various types of information, such as:
           </p>
-          <p>
-            The U.S. DOT’s
-            <a target="_blank" href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilot Deployment program<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-            pioneers the deployment of connected vehicle technologies in three U.S. locations—New York City, NY; Tampa, FL; and Wyoming (interstate I-80 data within Wyoming). One of the key goals of the program is to produce and provide open data from the pilots to the public in a quick and useful manner for use by third-party researchers and developers. Two of the pilots (Wyoming and Tampa) have already started providing sanitized data to the public through the ITS DataHub.
-          </p>
-          <p>
-            As well as...
-          </p>
           <ul>
+            <li>
+              Connected vehicle data.
+            </li>
             <li>
               Highway detector data.
             </li>
@@ -100,6 +99,15 @@
               And more!
             </li>
           </ul>
+          <p>
+            The U.S. DOT’s
+            <a target="_blank" href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilot Deployment program<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+            pioneers the deployment of connected vehicle technologies in three U.S. locations—New York City, NY; Tampa, FL; and Wyoming (interstate I-80 data within Wyoming). One of the key goals of the program is to produce and provide open data from the pilots to the public in a quick and useful manner for use by third-party researchers and developers. Two of the pilots (Wyoming and Tampa) have already started providing sanitized data to the public through the ITS DataHub.
+          </p>
+          <img class="dh-about-main_image" src="images/ITSJPO_DataHub_081619_CVPilots3.png" alt="DataHub data available image">
+          <p>
+            As the U.S. DOT’s Connected Vehicle Pilots continue to progress, more preliminary datasets will become available to the public.
+          </p>
 
           <h2 id="data-classification">Data Classification and Storage</h2>
 
@@ -115,7 +123,8 @@
             The datasets available are stored differently depending on how they are classified—as either primary or derived based on several criteria. Additionally, “immature” data (i.e., the data schema may change) are stored in a “sandbox” data environment to allow more flexibility while the data structure matures through feedback from researchers.
           </p>
           <img
-            src="/images/primary-deriveddata.png"
+            class="dh-about-main_image"
+            src="/images/ITSJPO_DataHub_081619_PrimaryDerived.png"
             alt="Graphic showing comparison between Primary Research Data that goes on data.transportation.gov and Dervied Research Data that goes on National Transportation Library. Primary data is data collected during pilot deployment research, testbed, or data generated from simluations. Examples are SHRP 2, ICM, CV Pilots. Derived data are final research results (such as evaluation data). They are useful in context with a report or analysis documenting methodology. Examples are SHRP2 subprojects, or AMS."
           >
 
@@ -123,6 +132,7 @@
           <p class="dh-about_color-blue">
             Easy access to data via a user-friendly interface...
           </p>
+          <img class="dh-about-main_image" src="images/ITSJPO_DataHub_081619_DataDiscovery.png" alt="DataHub data available image">
           <ol type="1">
             <li>
               <p>
@@ -220,7 +230,7 @@
             The most current information on how data providers can provide information to the ITS DataHub can be found on the
             <router-link to="/resources/guidelines">Guidelines page</router-link>.
           </p>
-          <h3>Access to Sensitive Transportation Datasets</h3>
+          <h2 id="access-datasets">Access to Sensitive Transportation Datasets</h2>
           <p>
             The U.S. DOT provides access to sensitive data via several systems. One such system is the proof-of-concept
             <a target="_blank" href="https://its.dot.gov/data/secure/index.html">Secure Data Commons<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>,
