@@ -1,10 +1,59 @@
 <template>
-<div>
-  <main class="usa-layout-docs usa-section" id="main-content">
+<div class="dh-about__wrapper">
+  <main class="usa-layout-docs usa-section">
     <div class="grid-container">
       <div class="grid-row grid-gap">
-        <div class="usa-layout-docs__main desktop:grid-col-9 grid-offset-2 usa-prose about-vue">
-          <h1>About the ITS DataHub</h1>
+        <aside id="dh-about-side-menu" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-about-main_float-menu">
+          <nav>
+            <ul class="usa-sidenav">
+              <li class="usa-sidenav__item">
+                <a id="id-about_overview" href="#" @click="moveToTag($event,'about')" class="page" :class="isVisible(['id-about_overview']) ? 'usa-current' : '' ">About the ITS DataHub</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a id="id-about_data-available" href="#" @click="moveToTag($event,'data-available')" class="page" :class="isVisible(['id-about_data-available']) ? 'usa-current' : '' ">Data Available</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a id="id-about_data-classification" href="#" @click="moveToTag($event,'data-classification')" class="page" :class="isVisible(['id-about_data-classification']) ? 'usa-current' : '' ">Data Classification and Storage</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a id="id-about_data-discovery" href="#" @click="moveToTag($event,'data-discovery')" class="page" :class="isVisible(['id-about_data-discovery','id-about_data-discovery_ntl','id-about_data-discovery_dtg']) ? 'usa-current' : '' ">Data Discovery</a>
+                <ul v-if="isVisible(['id-about_data-discovery','id-about_data-discovery_ntl','id-about_data-discovery_dtg'])" class="usa-sidenav__sublist">
+                  <li class="usa-sidenav__item">
+                    <a id="id-about_data-discovery_ntl" href="#" @click="moveToTag($event,'data-discovery_ntl')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_ntl']) ? 'usa-current' : '' ">NTL - National Transportation Library</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about_data-discovery_dtg" href="#" @click="moveToTag($event,'data-discovery_dtg')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_dtg']) ? 'usa-current' : '' ">DTG - data.transportation.gov</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="usa-sidenav__item">
+                <a id="id-about_data-submission" href="#" @click="moveToTag($event,'data-submission')" class="page" :class="isVisible(['id-about_data-submission']) ? 'usa-current' : '' ">Data Submission</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a id="id-about-resources" href="#" @click="moveToTag($event,'resources')" class="page" :class="isVisible(['id-about-resources','id-about-resources_additional-information','id-about-resources_upcomming-webinars','id-about-resources_past-webinars','id-about-resources_links','id-about-resources_contact-information']) ? 'usa-current' : '' ">Resources</a>
+                <ul v-if="isVisible(['id-about-resources','id-about-resources_additional-information','id-about-resources_upcomming-webinars','id-about-resources_past-webinars','id-about-resources_links','id-about-resources_contact-information'])" id="ul-resources" class="usa-sidenav__sublist" >
+                  <li class="usa-sidenav__item">
+                    <a id="id-about-resources_additional-information" href="#" @click="moveToTag($event,'resources_aditional-information')" class="table-of-contents" :class="isVisible(['id-about-resources_additional-information']) ? 'usa-current' : '' ">Additional Information</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about-resources_upcomming-webinars" href="#" @click="moveToTag($event,'resources_upcoming-webinars')" class="table-of-contents" :class="isVisible(['id-about-resources_upcomming-webinar']) ? 'usa-current' : '' ">Upcoming Webinars</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about-resources_past-webinars" href="#" @click="moveToTag($event,'resources_past-webinars')" class="table-of-contents" :class="isVisible(['id-about-resources_past-webinars']) ? 'usa-current' : '' ">Past Webinars</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about-resources_links" href="#" @click="moveToTag($event,'resources_links')" class="table-of-contents" :class="isVisible(['id-about-resources_links']) ? 'usa-current' : '' ">Links</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about-resources_contact-information" href="#" @click="moveToTag($event,'resources_contact-information')" class="table-of-contents" :class="isVisible(['id-about-resources_contact-information']) ? 'usa-current' : '' ">Contact Information</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose dh-about-main_float-content">
+          <h1 id="about">About the ITS DataHub</h1>
           <p class="usa-intro">
             The ITS DataHub provides a single point of entry to discover available intelligent transportation systems (ITS) primary and derived research data from the U.S. Department of Transportation (U.S. DOT). By providing access to these data, the U.S. DOT aims to enable third-party research into the effectiveness of emerging ITS technologies, preliminary development of third-party applications, and harmonization of data across similar collections.
           </p>
@@ -52,7 +101,7 @@
             </li>
           </ul>
 
-          <h2>Data Classification and Storage</h2>
+          <h2 id="data-classification">Data Classification and Storage</h2>
 
           <p class="dh-about_color-blue">
             One central location for discovering data...
@@ -70,7 +119,7 @@
             alt="Graphic showing comparison between Primary Research Data that goes on data.transportation.gov and Dervied Research Data that goes on National Transportation Library. Primary data is data collected during pilot deployment research, testbed, or data generated from simluations. Examples are SHRP 2, ICM, CV Pilots. Derived data are final research results (such as evaluation data). They are useful in context with a report or analysis documenting methodology. Examples are SHRP2 subprojects, or AMS."
           >
 
-          <h2>Data Discovery</h2>
+          <h2 id="data-discovery">Data Discovery</h2>
           <p class="dh-about_color-blue">
             Easy access to data via a user-friendly interface...
           </p>
@@ -95,7 +144,7 @@
               <p>
                 Once the results are populated, select the title of the search result to access the data where it resides—either the National Transportation Library (NTL) or data.transportation.gov (DTG).
               </p>
-              <h3>NTL – National Transportation Library</h3>
+              <h3 id="data-discovery_ntl">NTL – National Transportation Library</h3>
               <p>
                 If the data resides on NTL:
               </p>
@@ -113,7 +162,7 @@
                   To see reports related to the dataset, click on the “<strong>Related Documents</strong>” tab.
                 </li>
               </ul>
-              <h3>DTG – data.transportation.gov</h3>
+              <h3 id="data-discovery_dtg">DTG – data.transportation.gov</h3>
               <p>
                 There are two types of dataset formats for data that reside on DTG—datasets that have been integrated into the DTG interface and datasets that have been attached.
               </p>
@@ -163,7 +212,7 @@
               </ol>
             </li>
           </ol>
-          <h2>Data Submission</h2>
+          <h2 id="data-submission">Data Submission</h2>
           <p class="dh-about_color-blue">
             Be a part of the movement toward open data...
           </p>
@@ -182,18 +231,18 @@
             <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
           </p>
 
-          <h2>Resources</h2>
+          <h2 id="resources">Resources</h2>
           <p>
             The U.S. DOT offers several resources to learn more as well as discover transportation data and software source code.
           </p>
-          <h3>Additional Information</h3>
+          <h3 id="resources_aditional-information">Additional Information</h3>
           <a target="_blank" href="https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf">ITS Research Data Fact Sheet<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
 
-          <h3>Upcoming Webinars</h3>
+          <h3 id="resources_upcoming-webinars">Upcoming Webinars</h3>
           <p>
             Stay tuned for exciting upcoming events!
           </p>
-          <h4>Past Webinars</h4>
+          <h3 id="resources_past-webinars">Past Webinars</h3>
           <ul class="dh-about_list-nobullet">
             <li>
               <p>
@@ -253,7 +302,7 @@
             </li>
           </ul>
 
-          <h3>Links</h3>
+          <h3 id="resources_links">Links</h3>
           <ul>
             <li>
               <a target="_blank" href="https://its.dot.gov/code/">ITS CodeHub<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
@@ -273,12 +322,13 @@
             </li>
           </ul>
 
-          <h3>Contact Information</h3>
+          <h3 id="resources_contact-information">Contact Information</h3>
           <p>
             For more information about the ITS DataHub, please contact the ITS JPO Data Program support team at
             <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
           </p>
         </div>
+
       </div>
     </div>
   </main>
@@ -287,12 +337,69 @@
 
 <script>
 export default {
-  name: 'about'
-
+  name: 'about',
+  data: function() {
+    return {
+      refreshCounter: 0,
+      currentId:'id-about_overview',
+      sideMenuElement: null
+    }
+  },
+  computed: {
+  },
+  created : function(){
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  mounted: function(){
+    this.sideMenuElement = document.getElementById('dh-about-side-menu');
+    // window.scrollTo(0, 240);
+  },
+  destroyed: function(){
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    sectionClicked: function(event) {
+      this.currentId = event.target.id;
+    },
+    isVisible: function(ids) {
+      return ids.includes(this.currentId);
+    },
+    moveToTag: function(event,id) {
+      event.preventDefault();
+      this.currentId = event.target.id;
+      let element = document.getElementById(`${id}`);
+      if(element) {
+        // due to support IE11 where scrollY is not available
+        let yOff = window.scrollY ? window.scrollY : window.pageYOffset;
+        const y = element.getBoundingClientRect().top + yOff;
+        window.scrollTo(0, y);
+      }
+    },
+    handleScroll: function() {
+      // handling scroll position to support IE11
+      let sy = window.scrollY ? window.scrollY : window.pageYOffset;
+      let cln = this.sideMenuElement.className;
+      let topclass = 'dh-about-main_float-menu_top';
+      // handling className instead of classList to support IE11
+      if(sy > 250 && this.sideMenuElement) {
+        if (cln && !cln.includes(topclass)) {
+          cln += ' '+topclass;
+          this.sideMenuElement.className = cln;
+          console.log(cln);
+        }
+      } else {
+        if (cln && cln.includes(topclass)) {
+          let x = cln.indexOf(topclass);
+          if(x>=0) {
+            let v1 = cln.substring(0, x-1);
+            let v2 = cln.substring(x+topclass.length, cln.length);
+            console.log(v1+v2);
+            this.sideMenuElement.className = v1+v2;
+          }
+        }
+      }
+    }
+  }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
 
