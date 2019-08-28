@@ -21,18 +21,18 @@ describe('DOT Microsite About', () => {
   it('has the expected number of H2 elements', () => {
     const wrapper = shallowMount(about, { attachTo: document.body, localVue, router });
     let h2s = wrapper.findAll('h2');
-    expect(h2s.length).toEqual(7);
+    expect(h2s.length).toEqual(6);
   });
   it('has the expected H2 elements', () => {
     const wrapper = shallowMount(about, { attachTo: document.body, localVue, router });
     let h2s = wrapper.findAll('h2');
     let expected = [
-      'What data can I find on the ITS DataHub?',
-      'How do I find data on the ITS DataHub?',
-      'How do I provide data to the ITS DataHub?',
-      'How do I get access to sensitive transportation datasets?',
-      'Upcoming Webinars',
-      'Other Resources',
+      'Data Available',
+      'Data Classification and Storage',
+      'Data Discovery',
+      'Data Submission',
+      'Access to Sensitive Transportation Datasets',
+      'Resources',
       'Contact Information'
     ];
     for(let i=0; i<h2s.length; i++){
