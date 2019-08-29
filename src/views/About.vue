@@ -107,7 +107,7 @@
             Easy access to data via a user-friendly interface...
           </p>
           <img class="dh-about-main_image" src="images/ITSJPO_DataHub_081619_DataDiscovery.png" alt="DataHub data available image">
-          <ol type="1">
+          <ul class="dh-about_list-nobullet">
             <li>
               <p>
                 There are several ways to discover data via the ITS DataHub:
@@ -202,7 +202,7 @@
                 Users can access the data in the sandbox using any existing tools that interact with AWS S3 as well as browse the sandbox bucket via the online AWS S3 explorer.
               </p>
             </li>
-          </ol>
+          </ul>
 
           <h2 id="data-submission">Data Submission</h2>
           <p class="dh-about_color-blue">
