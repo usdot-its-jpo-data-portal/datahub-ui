@@ -21,7 +21,7 @@ describe('DOT Microsite About', () => {
   it('has the expected number of H2 elements', () => {
     const wrapper = shallowMount(about, { attachTo: document.body, localVue, router });
     let h2s = wrapper.findAll('h2');
-    expect(h2s.length).toEqual(6);
+    expect(h2s.length).toEqual(5);
   });
   it('has the expected H2 elements', () => {
     const wrapper = shallowMount(about, { attachTo: document.body, localVue, router });
@@ -31,7 +31,6 @@ describe('DOT Microsite About', () => {
       'Data Classification and Storage',
       'Data Discovery',
       'Data Submission',
-      'Access to Sensitive Transportation Datasets',
       'Resources',
       'Contact Information'
     ];

@@ -17,12 +17,15 @@
               </li>
               <li class="usa-sidenav__item">
                 <a id="id-about_data-discovery" href="#" @click="moveToTag($event,'data-discovery')" class="page" :class="isVisible(['id-about_data-discovery','id-about_data-discovery_ntl','id-about_data-discovery_dtg']) ? 'usa-current' : '' ">Data Discovery</a>
-                <ul v-if="isVisible(['id-about_data-discovery','id-about_data-discovery_ntl','id-about_data-discovery_dtg'])" class="usa-sidenav__sublist">
+                <ul v-if="isVisible(['id-about_data-discovery','id-about_data-discovery_ntl','id-about_data-discovery_dtg','id-about_data-discovery_sandbox'])" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
-                    <a id="id-about_data-discovery_ntl" href="#" @click="moveToTag($event,'data-discovery_ntl')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_ntl']) ? 'usa-current' : '' ">NTL - National Transportation Library</a>
+                    <a id="id-about_data-discovery_ntl" href="#" @click="moveToTag($event,'data-discovery_ntl')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_ntl']) ? 'usa-current' : '' ">National Transportation Library (NTL)</a>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a id="id-about_data-discovery_dtg" href="#" @click="moveToTag($event,'data-discovery_dtg')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_dtg']) ? 'usa-current' : '' ">DTG - data.transportation.gov</a>
+                    <a id="id-about_data-discovery_dtg" href="#" @click="moveToTag($event,'data-discovery_dtg')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_dtg']) ? 'usa-current' : '' ">Data.transportation.gov (DTG)</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about_data-discovery_sandbox" href="#" @click="moveToTag($event,'data-discovery_sandbox')" class="table-of-contents" :class="isVisible(['id-about_data-discovery_sandbox']) ? 'usa-current' : '' ">ITS Sandbox</a>
                   </li>
                 </ul>
               </li>
@@ -30,14 +33,8 @@
                 <a id="id-about_data-submission" href="#" @click="moveToTag($event,'data-submission')" class="page" :class="isVisible(['id-about_data-submission']) ? 'usa-current' : '' ">Data Submission</a>
               </li>
               <li class="usa-sidenav__item">
-                <a id="id-about_access-datasets" href="#" @click="moveToTag($event,'access-datasets')" class="page" :class="isVisible(['id-about_access-datasets']) ? 'usa-current' : '' ">Access to Sensitive Transportation Datasets</a>
-              </li>
-              <li class="usa-sidenav__item">
                 <a id="id-about-resources" href="#" @click="moveToTag($event,'resources')" class="page" :class="isVisible(['id-about-resources','id-about-resources_additional-information','id-about-resources_upcomming-webinars','id-about-resources_past-webinars','id-about-resources_links','id-about-resources_contact-information']) ? 'usa-current' : '' ">Resources</a>
                 <ul v-if="isVisible(['id-about-resources','id-about-resources_additional-information','id-about-resources_upcomming-webinars','id-about-resources_past-webinars','id-about-resources_links','id-about-resources_contact-information'])" id="ul-resources" class="usa-sidenav__sublist" >
-                  <li class="usa-sidenav__item">
-                    <a id="id-about-resources_additional-information" href="#" @click="moveToTag($event,'resources_aditional-information')" class="table-of-contents" :class="isVisible(['id-about-resources_additional-information']) ? 'usa-current' : '' ">Additional Information</a>
-                  </li>
                   <li class="usa-sidenav__item">
                     <a id="id-about-resources_upcomming-webinars" href="#" @click="moveToTag($event,'resources_upcoming-webinars')" class="table-of-contents" :class="isVisible(['id-about-resources_upcomming-webinar']) ? 'usa-current' : '' ">Upcoming Webinars</a>
                   </li>
@@ -46,6 +43,9 @@
                   </li>
                   <li class="usa-sidenav__item">
                     <a id="id-about-resources_links" href="#" @click="moveToTag($event,'resources_links')" class="table-of-contents" :class="isVisible(['id-about-resources_links']) ? 'usa-current' : '' ">Links</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a id="id-about-resources_additional-information" href="#" @click="moveToTag($event,'resources_aditional-information')" class="table-of-contents" :class="isVisible(['id-about-resources_additional-information']) ? 'usa-current' : '' ">Additional Information</a>
                   </li>
                   <li class="usa-sidenav__item">
                     <a id="id-about-resources_contact-information" href="#" @click="moveToTag($event,'resources_contact-information')" class="table-of-contents" :class="isVisible(['id-about-resources_contact-information']) ? 'usa-current' : '' ">Contact Information</a>
@@ -71,43 +71,17 @@
 
           <h2 id="data-available">Data Available</h2>
           <p>
-            The ITS DataHub allows discovery of datasets created using ITS technologies. The datasets contain various types of information, such as:
-          </p>
-          <ul>
-            <li>
-              Connected vehicle data.
-            </li>
-            <li>
-              Highway detector data.
-            </li>
-            <li>
-              Travel time data.
-            </li>
-            <li>
-              Traffic signal timing data.
-            </li>
-            <li>
-              Incident data.
-            </li>
-            <li>
-              Weather data.
-            </li>
-            <li>
-              Automated vehicle data.
-            </li>
-            <li>
-              And more!
-            </li>
-          </ul>
-          <p>
-            The U.S. DOT’s
-            <a target="_blank" href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilot Deployment program<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-            pioneers the deployment of connected vehicle technologies in three U.S. locations—New York City, NY; Tampa, FL; and Wyoming (interstate I-80 data within Wyoming). One of the key goals of the program is to produce and provide open data from the pilots to the public in a quick and useful manner for use by third-party researchers and developers. Two of the pilots (Wyoming and Tampa) have already started providing sanitized data to the public through the ITS DataHub.
+            The ITS DataHub allows discovery of datasets created using ITS technologies. The datasets contain various types of information, such as the U.S. DOT’s
+            <a target="_blank" href="https://its.dot.gov/pilots/index.htm">Connected Vehicle Pilot Deployment program<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>.
           </p>
           <img class="dh-about-main_image" src="images/ITSJPO_DataHub_081619_CVPilots3.png" alt="DataHub data available image">
           <p>
-            As the U.S. DOT’s Connected Vehicle Pilots continue to progress, more preliminary datasets will become available to the public.
+            The Connected Vehicle Pilot Deployment program pioneers the deployment of connected vehicle technologies in three U.S. locations—New York City, NY; Tampa, FL; and Wyoming (interstate I-80 data within Wyoming). One of the key goals of the program is to produce and provide open data from the pilots to the public in a quick and useful manner for use by third-party researchers and developers. Two of the pilots (Wyoming and Tampa) have already started providing sanitized data to the public through the ITS DataHub.
           </p>
+          <p>
+            Other datasets include: Highway detector data, Travel time data, Traffic signal timing data, Incident data, Weather data, Automated vehicle data, And more!
+          </p>
+
 
           <h2 id="data-classification">Data Classification and Storage</h2>
 
@@ -154,7 +128,7 @@
               <p>
                 Once the results are populated, select the title of the search result to access the data where it resides—either the National Transportation Library (NTL) or data.transportation.gov (DTG).
               </p>
-              <h3 id="data-discovery_ntl">NTL – National Transportation Library</h3>
+              <h3 id="data-discovery_ntl">National Transportation Library (NTL)</h3>
               <p>
                 If the data resides on NTL:
               </p>
@@ -172,9 +146,9 @@
                   To see reports related to the dataset, click on the “<strong>Related Documents</strong>” tab.
                 </li>
               </ul>
-              <h3 id="data-discovery_dtg">DTG – data.transportation.gov</h3>
+              <h3 id="data-discovery_dtg">Data.transportation.gov (DTG)</h3>
               <p>
-                There are two types of dataset formats for data that reside on DTG—datasets that have been integrated into the DTG interface and datasets that have been attached.
+                There are two types of dataset formats for data that reside on DTG – integrated datasets and added as attachments.
               </p>
               <ol type="1">
                 <li>
@@ -207,7 +181,7 @@
                   </p>
                   <p>
                     <i>
-                      (<strong>Please note</strong>: This legacy dataset was created before <s>data.transportation.gov</s> DTG and is only currently available via the attached file(s). Please contact the dataset owner if there is a need to work with this data using the data.transportation.gov analysis features (online viewing, API, graphing, etc.), and the U.S. DOT will consider fully integrating the dataset in DTG.)
+                      (<strong>Please note</strong>: This legacy dataset was created before DTG and is only currently available via the attached file(s). Please contact the dataset owner if there is a need to work with this data using the data.transportation.gov analysis features (online viewing, API, graphing, etc.), and the U.S. DOT will consider fully integrating the dataset in DTG.)
                     </i>
                   </p>
                   <ul>
@@ -222,15 +196,25 @@
               </ol>
             </li>
           </ol>
+
+          <h3 id="data-discovery_sandbox">ITS Sandbox</h3>
+          <p>
+            Several datasets transmitted to U.S. DOT are not fully mature therefore, they need to be stored in a flexible archive that allows for active data processing and user engagement to form the final mature data product. The ITS Sandbox is a lightweight sandbox environment that gives the development team full control of how the data is aggregated, processed, indexed and delivered to users.
+          </p>
+          <p>
+            Users can access the data in the sandbox using any existing tools that interact with AWS S3 as well as browse the sandbox bucket via the online AWS S3 explorer.
+          </p>
+
           <h2 id="data-submission">Data Submission</h2>
           <p class="dh-about_color-blue">
             Be a part of the movement toward open data...
           </p>
           <p>
             The most current information on how data providers can provide information to the ITS DataHub can be found on the
-            <router-link to="/resources/guidelines">Guidelines page</router-link>.
+            "<router-link to="/resources/data-storage-system">Data Storage Systems</router-link>"
+            page within the Resources tab.
           </p>
-          <h2 id="access-datasets">Access to Sensitive Transportation Datasets</h2>
+          <h3 id="access-datasets">Access to Sensitive Transportation Datasets</h3>
           <p>
             The U.S. DOT provides access to sensitive data via several systems. One such system is the proof-of-concept
             <a target="_blank" href="https://its.dot.gov/data/secure/index.html">Secure Data Commons<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>,
@@ -245,9 +229,6 @@
           <p>
             The U.S. DOT offers several resources to learn more as well as discover transportation data and software source code.
           </p>
-          <h3 id="resources_aditional-information">Additional Information</h3>
-          <a target="_blank" href="https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf">ITS Research Data Fact Sheet<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-
           <h3 id="resources_upcoming-webinars">Upcoming Webinars</h3>
           <p>
             Stay tuned for exciting upcoming events!
@@ -323,6 +304,10 @@
               – The SDC is the U.S. DOT’s prototype cloud-based analytics platform for the transportation sector to share and collaborate on research, tools, algorithms, analysis, and more around sensitive datasets.
             </li>
             <li>
+              <a target="_blank" href="https://its-datafiles.s3.amazonaws.com/index.html">ITS Sandbox<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
+              – The ITS Sandbox is the data repository that uses Amazon Web Services (AWS) Simple Storage System (S3). Large data streams and immature data whose schemas are still subject to change are stored in the sandbox.
+            </li>
+            <li>
               <a target="_blank" href="https://github.com/">GitHub<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
               – GitHub is a development platform to host and review code, manage projects, and build software alongside other developers.
             </li>
@@ -331,6 +316,9 @@
               – The U.S. DOT’s ITS JPO launched the Connected Vehicle Pilot Deployment Program in September 2015 to deploy, test, and operationalize cutting-edge mobile and roadside technologies and to enable multiple connected vehicle applications. This site provides a detailed description of the program and its objectives, phases, and research progress.
             </li>
           </ul>
+
+          <h3 id="resources_aditional-information">Additional Information</h3>
+          <a target="_blank" href="https://www.its.dot.gov/factsheets/pdf/ITS_ResearchData.pdf">ITS Research Data Fact Sheet<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
 
           <h3 id="resources_contact-information">Contact Information</h3>
           <p>
