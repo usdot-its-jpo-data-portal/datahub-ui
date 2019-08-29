@@ -194,16 +194,15 @@
                   </ul>
                 </li>
               </ol>
+              <h3 id="data-discovery_sandbox">ITS Sandbox</h3>
+              <p>
+                Several datasets transmitted to U.S. DOT are not fully mature therefore, they need to be stored in a flexible archive that allows for active data processing and user engagement to form the final mature data product. The ITS Sandbox is a lightweight sandbox environment that gives the development team full control of how the data is aggregated, processed, indexed and delivered to users.
+              </p>
+              <p>
+                Users can access the data in the sandbox using any existing tools that interact with AWS S3 as well as browse the sandbox bucket via the online AWS S3 explorer.
+              </p>
             </li>
           </ol>
-
-          <h3 id="data-discovery_sandbox">ITS Sandbox</h3>
-          <p>
-            Several datasets transmitted to U.S. DOT are not fully mature therefore, they need to be stored in a flexible archive that allows for active data processing and user engagement to form the final mature data product. The ITS Sandbox is a lightweight sandbox environment that gives the development team full control of how the data is aggregated, processed, indexed and delivered to users.
-          </p>
-          <p>
-            Users can access the data in the sandbox using any existing tools that interact with AWS S3 as well as browse the sandbox bucket via the online AWS S3 explorer.
-          </p>
 
           <h2 id="data-submission">Data Submission</h2>
           <p class="dh-about_color-blue">
@@ -304,7 +303,7 @@
               – The SDC is the U.S. DOT’s prototype cloud-based analytics platform for the transportation sector to share and collaborate on research, tools, algorithms, analysis, and more around sensitive datasets.
             </li>
             <li>
-              <a target="_blank" href="https://its-datafiles.s3.amazonaws.com/index.html">ITS Sandbox<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
+              <a target="_blank" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html">ITS Sandbox<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
               – The ITS Sandbox is the data repository that uses Amazon Web Services (AWS) Simple Storage System (S3). Large data streams and immature data whose schemas are still subject to change are stored in the sandbox.
             </li>
             <li>
