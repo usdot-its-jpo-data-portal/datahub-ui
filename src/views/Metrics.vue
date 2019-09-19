@@ -265,7 +265,7 @@
                   <DOTIFrame
                     class="dh-metrics__iframe dh-metrics__iframe-chart-xl"
                     title="DataHub Pageviews"
-                    src="https://datastudio.google.com/embed/reporting/1GFD8Ai0V6gvoNDLV0U_2vsYL24_YtZfw/page/0bOK" />
+                    src="https://datastudio.google.com/embed/reporting/1A5RJRUpOCiEumai6jyaRU0YWuz7mVpnM/page/0bOK" />
                 </div>
               </div>
               <div class="grid-row">
