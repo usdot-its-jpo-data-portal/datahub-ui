@@ -37,7 +37,7 @@
           Evaluating proposed data management budgets.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           Due to procurement sensitivity, Program/Project Managers must request preliminary DMP evaluation materials, such as evaluation checklists and evaluation training, by contacting 
@@ -58,7 +58,7 @@
       <p>
         In the Pre-Award project lifecycle phase, Data Providers prepare their responses to a solicitation or project. Data Providers must ensure their responses incorporate all data management requirements listed in the solicitation, which usually includes a requirement for a preliminary data management plan (DMP).
       </p> 
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP Instructions</router-link> - a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.

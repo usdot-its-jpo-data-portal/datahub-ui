@@ -34,7 +34,7 @@
           Confirming timeline for the 60-day DMP update.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS JPO Guidelines</router-link> - these are ITS JPO’s overall guidelines and requirements for data access and management throughout a project.
@@ -51,7 +51,7 @@
       <p>
         In the Award Phase, Data Providers prepare to kick-off and transition into the project. To ensure adherence to the data management requirements for ITS JPO projects, Data Providers should review the ITS JPO Guidelines and the solicitation language in their contract to ensure these requirements are incorporated into their project plan.
       </p> 
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS JPO Guidelines</router-link> - these are ITS JPO’s overall guidelines and requirements for data access and management throughout a project.

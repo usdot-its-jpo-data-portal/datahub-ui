@@ -30,7 +30,7 @@
           <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/data-management/post-award-dmp">Post-Award DMP Instructions Webpage</router-link> – all elements requested for the 60-day DMP update.
@@ -68,7 +68,7 @@
           Promoting data availability and use.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/data-management/post-award-dmp">Post-Award DMP Instructions Webpage</router-link> – all elements requested for the 60-day DMP update.

@@ -38,7 +38,7 @@
           <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS DataHub Guidelines</router-link> – these are ITS JPO’s overall guidelines and requirements for data access and management.
@@ -63,7 +63,7 @@
         <a target="_blank" href="https://www.itsbenefits.its.dot.gov/its/benecost.nsf/ByLink/BenefitsAbout" rel="noopener noreferrer">ITS Benefits Database<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>.
         Additionally, review ITS JPO’s data management Resources page, associated templates and guidance to anticipate requirements that might be part of the project.
       </p> 
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources">ITS DataHub Resources Page</router-link> – a page containing guidelines and associate templates usually included in solicitations.

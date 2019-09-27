@@ -38,7 +38,7 @@
           Determining the project data’s retention period.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS JPO Guidelines</router-link> (see Section C. Data Storage and Retention) - these are ITS JPO’s overall guidelines and requirements for data access and management throughout a project.
@@ -66,7 +66,7 @@
           Identifying requirements for data management within project closeout.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS JPO Guidelines</router-link> (see Section C. Data Storage and Retention) - - these are ITS JPO’s overall guidelines and requirements for data access and management throughout a project.
