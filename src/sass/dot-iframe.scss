@@ -31,4 +31,7 @@
       color: darken($dh-color-gray80, 30%);
     }
   }
+  iframe {
+    overflow: hidden;
+  }
 }

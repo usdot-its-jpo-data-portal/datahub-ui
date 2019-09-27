@@ -15,7 +15,6 @@
       :height="h"
       :width="w"
       allowfullscreen
-      scrolling="no"
       @load="loadCompleted"
       >
         Sorry your browser does not support iframes.
