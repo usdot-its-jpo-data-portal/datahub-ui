@@ -90,9 +90,9 @@ export default new Vuex.Store({
           let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
 
           if(state.searchByName) {
-            data = data.sort(CompareUtils.compareName);
+            data.sort(CompareUtils.compareName);
           } else {
-            data = data.sort(CompareUtils.compareDate);
+            data.sort(CompareUtils.compareDate);
           }
           //set searched data to the store.
           commit('setMainData', data);
@@ -111,9 +111,9 @@ export default new Vuex.Store({
           let data = DataProcessor.mergeNTLandSocratasData(ntlData, dtgData, search_query);
 
           if(state.searchByName) {
-            data = data.sort(CompareUtils.compareName);
+            data.sort(CompareUtils.compareName);
           } else {
-            data = data.sort(CompareUtils.compareDate);
+            data.sort(CompareUtils.compareDate);
           }
           //set searched data to the store.
           commit('setMainData', data);
@@ -129,9 +129,9 @@ export default new Vuex.Store({
             let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
 
             if(state.searchByName) {
-              data = data.sort(CompareUtils.compareName);
+              data.sort(CompareUtils.compareName);
             } else {
-              data = data.sort(CompareUtils.compareDate);
+              data.sort(CompareUtils.compareDate);
             }
             //set searched data to the store.
             commit('setMainData', data);
