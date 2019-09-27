@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-    <hr v-if="searchResults.length > 0" noshade>
+    <hr v-if="searchResults.length > 0">
     <br>
 
     <div class="dh-search-results_list">
