@@ -35,22 +35,22 @@
           </div>
           <div class="dh-footer__social-share">
             <p id="follow_header" class="social-share">Follow</p>
-            <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/">
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.facebook.com/USDOT/" rel="noopener noreferrer">
                 <!--<span>Follow us on Facebook</span>-->
               <img src="/images/icons/facebook_follow_svg.svg" class="footer-share-social-icons">
               <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
             </a>
-            <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT">
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://twitter.com/USDOT" rel="noopener noreferrer">
               <!--<span>Follow us on Twitter</span>-->
               <img src="/images/icons/twitter_follow_svg.svg" class="footer-share-social-icons">
               <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
             </a>
-            <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en">
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://www.instagram.com/usdot/?hl=en" rel="noopener noreferrer">
               <!--<span>Follow us on GitHub</span>-->
               <img src="/images/icons/instagram_follow_svg.svg" class="footer-share-social-icons">
               <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
             </a>
-            <a class="usa-social-link dh-follow-us" target="_blank" href="https://github.com/usdot-its-jpo-data-portal/microsite">
+            <a class="usa-social-link dh-follow-us" target="_blank" href="https://github.com/usdot-its-jpo-data-portal/microsite" rel="noopener noreferrer">
               <!--<span>Follow us on GitHub</span>-->
               <img src="/images/icons/github_follow_svg.svg" class="footer-share-social-icons">
               <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
@@ -80,13 +80,13 @@
           <div class="usa-footer__contact-links mobile-lg:grid-col-6">
             <div class="usa-footer__social-links grid-row grid-gap-1">
               <div class="grid-col-auto">
-                <a id="dh-footer_social-facebook" class="usa-social-link usa-social-link--facebook" href="https://www.facebook.com/USDOT/" target="_blank">
+                <a id="dh-footer_social-facebook" class="usa-social-link usa-social-link--facebook" href="https://www.facebook.com/USDOT/" target="_blank" rel="noopener noreferrer">
                   <span>Facebook</span>
                   <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link-alt-hover.svg" alt>
                 </a>
               </div>
               <div class="grid-col-auto">
-                <a id="dh-footer_social-twitter" class="usa-social-link usa-social-link--twitter" href="https://twitter.com/USDOT" target="_blank">
+                <a id="dh-footer_social-twitter" class="usa-social-link usa-social-link--twitter" href="https://twitter.com/USDOT" target="_blank" rel="noopener noreferrer">
                   <span>Twitter</span>
                   <img class="usa-footer__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
                 </a>

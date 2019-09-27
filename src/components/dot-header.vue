@@ -101,7 +101,7 @@
             <router-link to="/search" active-class="router-link-active">Search</router-link>
           </li>
           <li class="usa-nav__primary-item">
-            <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank">
+            <a href="https://github.com/usdot-its-jpo-data-portal/microsite" target="_blank" rel="noopener noreferrer">
               <span>View On GitHub</span>
               <img class="usa-header__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
             </a>
@@ -112,16 +112,16 @@
           <div class="dh-header__secondary-links">
             <ul class="usa-nav__secondary-links">
               <li class="usa-nav__secondary-item">
-                <a href="https://www.its.dot.gov/" target="_blank">ABOUT ITS JPO</a>
+                <a href="https://www.its.dot.gov/" target="_blank" rel="noopener noreferrer">ABOUT ITS JPO</a>
               </li>
               <li class="usa-nav__secondary-item">
-                <a href="https://www.transportation.gov/mission/about-us" target="_blank">ABOUT U.S. DOT</a>
+                <a href="https://www.transportation.gov/mission/about-us" target="_blank" rel="noopener noreferrer">ABOUT U.S. DOT</a>
               </li>
               <li class="usa-nav__secondary-item">
-                <a href="https://www.transportation.gov/briefingroom" target="_blank">U.S. DOT BRIEFING ROOM</a>
+                <a href="https://www.transportation.gov/briefingroom" target="_blank" rel="noopener noreferrer">U.S. DOT BRIEFING ROOM</a>
               </li>
               <li class="usa-nav__secondary-item">
-                <a href="https://www.transportation.gov/our-activities" target="_blank">U.S. DOT ACTIVITIES</a>
+                <a href="https://www.transportation.gov/our-activities" target="_blank" rel="noopener noreferrer">U.S. DOT ACTIVITIES</a>
               </li>
             </ul>
           </div>

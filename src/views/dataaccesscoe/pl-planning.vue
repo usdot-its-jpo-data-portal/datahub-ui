@@ -60,7 +60,7 @@
     <div v-if="active_tab=='id_tab2'" id="id_tab2" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
         During the Planning phase, Data Providers should be brainstorming and planning project ideas. For help brainstorming potential project ideas and gathering lessons learned and cost estimates from previous ITS projects, see the
-        <a target="_blank" href="https://www.itsbenefits.its.dot.gov/its/benecost.nsf/ByLink/BenefitsAbout">ITS Benefits Database<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>.
+        <a target="_blank" href="https://www.itsbenefits.its.dot.gov/its/benecost.nsf/ByLink/BenefitsAbout" rel="noopener noreferrer">ITS Benefits Database<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>.
         Additionally, review ITS JPO’s data management Resources page, associated templates and guidance to anticipate requirements that might be part of the project.
       </p> 
       <i>Resources</i>
