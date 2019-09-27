@@ -12,7 +12,7 @@ import {
   NTL_DATELIMIT,
   NTL_ROWSLIMIT
 } from './consts/constants.js';
-import CompareUtils from './utils/compare-utils.js';
+import SortUtils from './utils/sort-utils.js';
 import DataProcessor from './utils/dataprocessor-utils.js';
 
 Vue.use(Vuex)
@@ -89,11 +89,8 @@ export default new Vuex.Store({
 
           let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
 
-          if(state.searchByName) {
-            data.sort(CompareUtils.compareName);
-          } else {
-            data.sort(CompareUtils.compareDate);
-          }
+          data = SortUtils.sortData(data, state.searchByName);
+
           //set searched data to the store.
           commit('setMainData', data);
           commit('setSearching', false);
@@ -110,11 +107,8 @@ export default new Vuex.Store({
 
           let data = DataProcessor.mergeNTLandSocratasData(ntlData, dtgData, search_query);
 
-          if(state.searchByName) {
-            data.sort(CompareUtils.compareName);
-          } else {
-            data.sort(CompareUtils.compareDate);
-          }
+          data = SortUtils.sortData(data, state.searchByName);
+
           //set searched data to the store.
           commit('setMainData', data);
           commit('setSearching', false);
@@ -128,11 +122,8 @@ export default new Vuex.Store({
 
             let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
 
-            if(state.searchByName) {
-              data.sort(CompareUtils.compareName);
-            } else {
-              data.sort(CompareUtils.compareDate);
-            }
+            data = SortUtils.sortData(data, state.searchByName);
+
             //set searched data to the store.
             commit('setMainData', data);
             commit('setSearching', false);
