@@ -38,13 +38,13 @@
           Determining the project data’s retention period.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS JPO Guidelines</router-link> (see Section C. Data Storage and Retention) - these are ITS JPO’s overall guidelines and requirements for data access and management throughout a project.
         </li>
         <li>
-          <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.fhwa.dot.gov_legsregs_directives_orders_hoit-2Dhq-5F.cfm&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=AvfhqvHzwgtD4YBmX9XGz_Z4GeLyer-H3BMvjy12Amk&e=">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
+          <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.fhwa.dot.gov_legsregs_directives_orders_hoit-2Dhq-5F.cfm&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=AvfhqvHzwgtD4YBmX9XGz_Z4GeLyer-H3BMvjy12Amk&e=" rel="noopener noreferrer">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
           – ITS JPO’s National Archives & Records Administration (NARA)-approved disposition schedule for ITS DataHub.
         </li>
       </ul>
@@ -66,7 +66,7 @@
           Identifying requirements for data management within project closeout.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/guidelines">ITS JPO Guidelines</router-link> (see Section C. Data Storage and Retention) - - these are ITS JPO’s overall guidelines and requirements for data access and management throughout a project.

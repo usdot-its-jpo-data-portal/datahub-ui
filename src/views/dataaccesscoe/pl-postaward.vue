@@ -30,7 +30,7 @@
           <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/data-management/post-award-dmp">Post-Award DMP Instructions Webpage</router-link> – all elements requested for the 60-day DMP update.
@@ -68,7 +68,7 @@
           Promoting data availability and use.
         </li>
       </ul>
-      <i>Resources</i>
+      <em>Resources</em>
       <ul>
         <li>
           <router-link to="/resources/data-management/post-award-dmp">Post-Award DMP Instructions Webpage</router-link> – all elements requested for the 60-day DMP update.
@@ -80,7 +80,7 @@
           <router-link to="/resources/data-management/faqs">FAQs</router-link> – Frequently Asked Questions about the ITS JPO Guidelines and Resources.
         </li>
         <li>
-          <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/metadata_ingest/blob/master/forms/ITSJPO_MetadataQuestionnaire_fillable.pdf">Metadata Questionnaire<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
+          <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/metadata_ingest/blob/master/forms/ITSJPO_MetadataQuestionnaire_fillable.pdf" rel="noopener noreferrer">Metadata Questionnaire<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
           – a questionnaire to initiate dataset & metadata ingestion into U.S. DOT-managed data storage systems. The Data Access CoE will request this form near the ingestion date noted in the DMP.
         </li>
         <li>

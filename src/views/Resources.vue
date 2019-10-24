@@ -10,7 +10,6 @@
                 <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
               </li>
               <li id="guidelines" class="usa-sidenav__item">
-                <!-- <router-link id="id-guidelines" to="/resources/" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link> -->
                 <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Guidelines</router-link>
                 <ul v-if="isVisible('guidelines')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
@@ -35,14 +34,12 @@
               </li>
               <li id="data-managment-id" class="usa-sidenav__item">
                 <router-link id="data-management-id" to="/resources/data-management/data-management" class="page" :class="isVisible('datamanagement') || isVisible('preliminarydmp') || isVisible('postawarddmp') || isVisible('templateandinstructions') ? 'usa-current' : '' ">Data Management</router-link>
-                <!-- <router-link id="id-data-management" to="/resources/data-management/" class="usa-current">Data Management</router-link> -->
                 <ul v-if="isVisible('datamanagement') || isVisible('preliminarydmp') || isVisible('postawarddmp') || isVisible('templateandinstructions') " id="ul-data-management" class="usa-sidenav__sublist">
                   <div v-if="isVisible('datamanagement')"><li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Introduction')" class="table-of-contents">Introduction</a>
                   </li>
                   </div>
                   <li class="usa-sidenav__item sub-page-li">
-                    <!-- <a href="#" @click="moveToTag($event,'References')" class="sub-page">Template</a> -->
                     <router-link id="prelim-id" to="/resources/data-management/preliminary-dmp" class="sub-page" :class="isVisible('preliminarydmp') ? 'usa-current' : '' ">Preliminary DMP</router-link>
                     <ul v-if="isVisible('preliminarydmp')" id="ul-data-management-preliminary-dmp" class="usa-sidenav__sublist">
                       <li class="usa-sidenav__item"> 
@@ -60,7 +57,6 @@
                     </ul>
                   </li>
                   <li class="usa-sidenav__item sub-page-li">
-                    <!-- <a href="#" @click="moveToTag($event,'References')" class="sub-page">Template</a> -->
                     <router-link id="post-id" to="/resources/data-management/post-award-dmp" class="sub-page" :class="isVisible('postawarddmp') ? 'usa-current' : '' ">Post-Award DMP</router-link>
                     <ul v-if="isVisible('postawarddmp')" id="ul-data-management-post-award-dmp" class="usa-sidenav__sublist">
                       <li class="usa-sidenav__item">
@@ -84,7 +80,6 @@
                     </ul>
                   </li>
                   <li class="usa-sidenav__item sub-page-li">
-                    <!-- <a href="#" @click="moveToTag($event,'References')" class="sub-page">Template</a> -->
                     <router-link id="data-management-template-id" to="/resources/data-management/template-and-instructions" class="sub-page" :class="isVisible('templateandinstructions') ? 'usa-current' : '' ">Templates &amp; Instructions</router-link>
                   </li>
                 </ul>
@@ -138,7 +133,6 @@ export default {
   },
   mounted: function(){
     this.sideMenuElement = document.getElementById('dh-resources-side-menu');
-    // window.scrollTo(0, 240);
   },
   destroyed: function(){
     window.removeEventListener('scroll', this.handleScroll);
