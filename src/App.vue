@@ -14,6 +14,7 @@
       </div>
     </div> -->
     <router-view :key="$route.fullPath"></router-view>
+    <DOTEmailRegistration active="true"/>
     <DOTMicrositeFooter/>
   </div>
 </template>
@@ -21,11 +22,13 @@
 <script>
   import DOTHeader from '@/components/dot-header.vue';
   import DOTMicrositeFooter from '@/components/dot-microsite-footer.vue';
+  import DOTEmailRegistration from '@/components/email-registration.vue';
 
   export default {
   name: 'app',
   components: {
     DOTHeader,
+    DOTEmailRegistration,
     DOTMicrositeFooter
   },
   created: function() {
