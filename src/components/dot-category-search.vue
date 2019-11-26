@@ -30,13 +30,13 @@
 
 <script>
   import TEMPLATE_CATEGORIES from '@/data/template_categories.json';
+  import {ES_QUERY_LIMIT} from '../consts/constants.js'
 
   export default {
     name: 'DOTCategorySearch',
     props: {},
     data: function(){
         return{
-                // Entries for template data
                 buttons: []
         }
     },
@@ -54,12 +54,15 @@
                                 'id':"bterm" + i});
         }
       },
-      //===============================================SEARCH FUNCTIONS===============================================        
-      //Sets search term and sends it to search html page
       searchSend: function (search_query) {
-        this.$store.commit('searchText', search_query);
-        this.$store.commit('setLastQueryString', search_query);
-        this.$store.dispatch('searchAllData', search_query);
+        let searchObj = {
+          term: search_query,
+          phrase: true,
+          limit: ES_QUERY_LIMIT
+        };
+        this.$store.commit('setQueryObject', searchObj);
+        this.$store.commit('setLastQueryObject', searchObj);
+        this.$store.dispatch('searchDataAssets', searchObj);
 
         this.$router.push('search');
       }

@@ -15,6 +15,7 @@
     "babel-polyfill": "^6.26.0",
     "core-js": "^2.6.5",
     "es6-promise": "^4.2.6",
+    "moment": "^2.24.0",
     "uswds": "^2.0.2",
     "vue": "^2.6.10",
     "vue-gtm": "^2.0.0",

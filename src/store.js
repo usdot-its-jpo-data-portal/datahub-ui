@@ -2,134 +2,110 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import axios from 'axios';
+import DataUtils from './utils/data-utils.js';
 import {
-  DTG_URL,
-  DTG_DOMAIN,
-  SCGC_URL,
-  SCGC_DOMAIN,
-  NTL_URL,
-  NTL_COLLECTION,
-  NTL_DATELIMIT,
-  NTL_ROWSLIMIT
+  ES_QUERY_LIMIT,
+  CC_LIST_ID
 } from './consts/constants.js';
-import SortUtils from './utils/sort-utils.js';
-import DataProcessor from './utils/dataprocessor-utils.js';
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    queryString: '',
-    lastQueryString: '',
+    queryObject: {term:'', phrase: false, limit: ES_QUERY_LIMIT},
+    lastQueryObject: {term:'', phrase: false, limit: ES_QUERY_LIMIT},
     searching: false,
-    loadingNTL: false,
-    searchByName: false,
-    NTLData : [],
+    searchBy: 'relevance',
     MainData: [],
+    registering: false,
+    registerError: false,
+    registerMessage: '',
     isMobile: false,
     version: JSON.parse(unescape(process.env.VUE_APP_PACKAGE_JSON || '%7Bversion%3A0%7D')).version
   },
   mutations: {
-    searchText(state, text) {
-      state.queryString = text;
+    setQueryObject(state, val) {
+      state.queryObject = val;
     },
-    setLastQueryString(state, text) {
-      state.lastQueryString = text;
+    setLastQueryObject(state, val) {
+      state.lastQueryObject = val;
     },
     setSearching(state, tufa) {
       state.searching = tufa;
     },
-    setLoadingNTL(state, tufa) {
-      state.loadingNTL = tufa;
-    },
-    setNTLData(state, data) {
-      state.NTLData = data;
-    },
     setMainData(state, data) {
       state.MainData = data;
     },
-    setSearchByName(state, data){
-      state.searchByName = data;
+    setSearchBy(state, data){
+      state.searchBy = data;
     },
     setIsMobile(state, data) {
       state.isMobile = data;
+    },
+    setRegistering(state, val) {
+      state.registering = val;
+    },
+    setRegisterError(state, val) {
+      state.registerError = val;
+    },
+    setRegisterMessage(state, val) {
+      state.registerMessage = val;
     }
   },
   actions: {
-    searchAllData({commit, state}, search_query) {
-
-      const ntl = axios({
-        method: 'GET',
+    searchDataAssets({commit}, searchObj) {
+      const webApi = axios({
+        method: 'POST',
         headers: { "content-type": "application/json" },
         crossDomain: true,
-        url: NTL_URL + NTL_COLLECTION + NTL_DATELIMIT + NTL_ROWSLIMIT
+        url: '/api/v1/search',
+        data: searchObj
       });
-
-      const dtg = axios({
-        method: 'GET',
-        headers: { "content-type": "application/json" },
-        url: DTG_URL + '?q=' + search_query + '&search_context=' + DTG_DOMAIN + '&domains='+DTG_DOMAIN+'&tags=intelligent%20transportation%20systems%20(its)&provenance=official'
-      });
-
-      const scgc = axios({
-        method: 'GET',
-        headers: { "content-type": "application/json" },
-        url: SCGC_URL + '?q=' + search_query + '&search_context=' + SCGC_DOMAIN + '&domains='+SCGC_DOMAIN+'&tags=intelligent%20transportation%20systems%20(its)&provenance=official'
-      })
 
       commit('setSearching', true);
       commit('setMainData', []);
-
-      if(this.state.NTLData.length>0){
-        Promise.all([dtg,scgc]).then( result => {
-          let dtgData = DataProcessor.processSocratasData(result[0]);
-          let scgcData = DataProcessor.processSocratasData(result[1]);
-
-          dtgData = dtgData.concat(scgcData);
-
-          let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
-
-          data = SortUtils.sortData(data, state.searchByName);
-
-          //set searched data to the store.
+      Promise.all([webApi]).then( result => {
+        if (DataUtils.validResponse(result[0])) {
+          let data = [...result[0].data.result.result];
           commit('setMainData', data);
-          commit('setSearching', false);
-        });
-      } else {
-        Promise.all([ntl,dtg,scgc]).then( result => {
-          let ntlData = DataProcessor.processNTLData(result[0]);
-          commit('setNTLData', ntlData);
+        } else {
+          let errors = DataUtils.getErrors(result[0]);
+          console.log(errors);
+        }
+        commit('setSearching', false);
+      }).catch((e) => {console.log(e);})
+    },
+    registerEmail({commit}, email) {
+      let payload = {
+        listId: CC_LIST_ID,
+        email: email
+      };
+      const ccApi = axios({
+        method: 'POST',
+        headers: { "content-type": "application/json" },
+        crossDomain: true,
+        url: '/apicc/v1/contacts',
+        data: payload
+      });
 
-          let dtgData = DataProcessor.processSocratasData(result[1]);
-          let scgcData = DataProcessor.processSocratasData(result[2]);
+      commit('setRegistering', true);
+      commit('setRegisterError', false);
+      commit('setRegisterMessage', '');
+      Promise.all([ccApi]).then( result => {
+        if(DataUtils.validCCResponse(result[0])) {
+          commit('setRegisterMessage', 'Registration completed.');
+        } else {
+          let errors = DataUtils.getErrors(result[0]);
+          commit('setRegisterError', true);
+          commit('setRegisterMessage', errors);
+        }
 
-          dtgData = dtgData.concat(scgcData);
-
-          let data = DataProcessor.mergeNTLandSocratasData(ntlData, dtgData, search_query);
-
-          data = SortUtils.sortData(data, state.searchByName);
-
-          //set searched data to the store.
-          commit('setMainData', data);
-          commit('setSearching', false);
-        }).catch( (error) => { //handle the case when NTL fails due to CORS
-          console.log(error);
-          Promise.all([dtg,scgc]).then( result => {
-            let dtgData = DataProcessor.processSocratasData(result[0]);
-            let scgcData = DataProcessor.processSocratasData(result[1]);
-
-            dtgData = dtgData.concat(scgcData);
-
-            let data = DataProcessor.mergeNTLandSocratasData(this.state.NTLData, dtgData, search_query);
-
-            data = SortUtils.sortData(data, state.searchByName);
-
-            //set searched data to the store.
-            commit('setMainData', data);
-            commit('setSearching', false);
-          });
-        });
-      }
+        commit('setRegistering', false)
+      }).catch((e) => {
+        commit('setRegistering', false);
+        commit('setRegisterError', true);
+        commit('setRegisterMessage', e);
+      });
     }
   }
 })

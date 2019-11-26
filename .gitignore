@@ -22,3 +22,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+*.pyc
+/img
+/fonts
+/deployment
+*/venv

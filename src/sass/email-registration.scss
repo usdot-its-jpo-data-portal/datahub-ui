@@ -87,6 +87,10 @@
       font-weight: 400;
       color: $dh-color-black;
     }
+    .message-alert {
+      font-weight: 400;
+      color: darken($dh-color-red, 15%);
+    }
     .controls {
       display: flex;
       flex-direction: column;

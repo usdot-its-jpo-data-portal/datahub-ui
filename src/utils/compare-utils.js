@@ -1,5 +1,6 @@
+import moment from 'moment';
+
 export default {
-  ////===============================================SEARCH HELPER FUNCTIONS===============================================
   // Method used for sorting search results by dataset title alphabetically
   compareName: function (a, b) {
     const titleA = a.name.toUpperCase();
@@ -16,13 +17,24 @@ export default {
   
   // Method used for sorting search results by date created
   compareDate: function(a, b) {
-    var dateA = new Date(a.date);
-    var dateB = new Date(b.date);
+    let dateA = moment(a.lastUpdate);
+    let dateB = moment(b.lastUpdate);
 
     let comparison = 0;
-    if (dateA < dateB) {
+    if (dateA.isBefore(dateB)) {
       comparison = 1;
-    } else if (dateA > dateB) {
+    } else if (dateA.isAfter(dateB)) {
+      comparison = -1;
+    }
+    return comparison;
+  },
+
+  // Method used for sorting search results by rank
+  compareESScore: function(a, b) {
+    let comparison = 0;
+    if (a.esScore < b.esScore) {
+      comparison = 1;
+    } else if (a.esScore > b.esScore) {
       comparison = -1;
     }
     return comparison;

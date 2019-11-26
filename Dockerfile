@@ -1,6 +1,26 @@
-FROM bitnami/apache
+FROM node:8.16.1-jessie as buildimage
 
-#Copy the files to Apache document root
-COPY ./index.html /app
-COPY ./data/ /app/data/
-COPY ./data/js/dot_ostr_analytics.js /app/js/dot_ostr_analytics.js
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+
+RUN sh ./uswds-init.sh
+RUN sh ./prepare-visualizations.sh
+
+RUN node --max-old-space-size=512
+
+RUN npm run build
+
+FROM nginx:1.14.1
+
+WORKDIR /app
+
+COPY --from=buildimage /app/dist .
+
+COPY --from=buildimage /app/entrypoint.sh .
+
+COPY nginx.template.conf /etc/nginx
+
+CMD ["/app/entrypoint.sh"]
