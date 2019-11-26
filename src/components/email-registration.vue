@@ -9,11 +9,17 @@
         <span id="keyword" class="title2">{{ word }}</span>
         <span class="title1">?</span>
       </div>
-      <div class="message">
-        Join our mailing list! Stay up to date on new features and repositories!
+      <div v-if="!registerError && valid" class="message">
+        {{email_message}}
+      </div>
+      <div v-if="!valid" class="message-alert">
+        {{email_message_invalid_email}}
+      </div>
+      <div v-if="registerError && valid" class="message-alert">
+        {{email_message_alert}}
       </div>
       <div class="controls">
-        <input v-model="email" v-bind:class="valid ? 'form-control valid' : 'form-control invalid'" id="input-email-address" aria-describedby="emailHelp" placeholder="Email address" value.two-way="email">
+        <input v-model="email" v-bind:class="valid ? 'form-control valid' : 'form-control invalid'" id="input-email-address" aria-describedby="emailHelp" placeholder="Email address" value.two-way="email" v-on:keydown="keyPress">
         <button type="button" class="btn btn-primary" v-on:click="signup()">Sign Up <img src="/images/icons/external-link_ffffff.svg" alt="External link icon"> </button>
       </div>
     </div>
@@ -21,6 +27,11 @@
   </div>
 </template>
 <script>
+import {
+  EMAIL_MESSAGE,
+  EMAIL_MESSAGE_ALERT,
+  EMAIL_MESSAGE_INVALID_EMAIL
+} from '../consts/constants.js'
 export default  {
     name: 'DOTEmailRegistration',
     props: ['active'],
@@ -35,25 +46,49 @@ export default  {
             words: datahubwords,
             word_index: null,
             word: datahubwords[0],
-            msseconds: 4500
+            msseconds: 4500,
+            email_message: EMAIL_MESSAGE,
+            email_message_alert: EMAIL_MESSAGE_ALERT,
+            email_message_invalid_email: EMAIL_MESSAGE_INVALID_EMAIL
         }
     },
     computed: {
         isActive: {
             get: function() {return this.active;},
             set: function(val) {this.active = val;}
+        },
+        registering: {
+          get: function() { return this.$store.state.registering; },
+          set: function(val) { this.$store.commit('setRegistering', val)}
+        },
+        registerError: {
+          get: function() { return this.$store.state.registerError;},
+          set: function(val) {this.$store.commit('setRegisterError', val)}
+        },
+        registerMessage: {
+          get: function() { return this.$store.state.registerMessage; },
+          set: function(val) {this.$store.commit('setRegisterMessage', val)}
         }
+
     },
     mounted: function() {
             this.focus_input();
             this.timer_timeout();
     },
-    
+    watch: {
+      registering: function(newValue, oldValue) {
+        if (oldValue && !newValue && !this.registerError) {
+          this.email_message = 'Registration completed.'
+          setTimeout(() => {
+            this.close();
+          }, 1500)
+        }
+      }
+    },
     methods:{
         signup() {
             if (this.validate_email()) {
-                // TODO: Insert backend call here 
-                document.querySelector("#email-registration").style.display="none";
+                this.$store.dispatch('registerEmail', this.email);
             } else {
                 this.valid = false;
                 this.email = '';
@@ -140,8 +175,21 @@ export default  {
 
                         self.timer_timeout();
                     }, self.msseconds);
-                });                
+                });
             });
+        },
+        keyPress(event) {
+          if (event && event.key==='Enter') {
+            this.signup();
+          } else {
+            if (!this.valid) {
+              this.valid = true;
+            }
+            if (this.registerError) {
+              this.registerError = false;
+            }
+          }
+          return true;
         }
     }
 }

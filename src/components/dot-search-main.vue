@@ -18,6 +18,7 @@
 
 <script>
 import TEMPLATE_CATEGORIES from '@/data/template_categories.json';
+import {ES_QUERY_LIMIT} from '../consts/constants.js';
 
 export default {
   name: 'DOTSearchMain',
@@ -26,14 +27,11 @@ export default {
         background_image: '',//Background image for search bar, set in load_json
         isInvalid: false,
         placeholderDef: 'Search by project names and topics...',
-        placeholderValue: 'Search by project names and topics...'
+        placeholderValue: 'Search by project names and topics...',
+        queryText: ''
     }
   },
   computed: {
-    queryText : {
-        get: function() { return this.$store.state.queryString; },
-        set: function(val) { this.$store.state.queryString = val; }
-    },
     search_placeholder : {
         get: function() {return this.placeholderValue; },
         set: function(val){ this.placeholderValue = val; }
@@ -57,10 +55,15 @@ export default {
         this.search_placeholder = 'Invalid search text!';
         return;
       }
+      let searchObj = {
+        term: search_query,
+        phrase: false,
+        limit: ES_QUERY_LIMIT
+      };
       this.search_placeholder = this.placeholderDef;
-      this.$store.commit('searchText', search_query);
-      this.$store.commit('setLastQueryString', search_query);
-      this.$store.dispatch('searchAllData', search_query);
+      this.$store.commit('setQueryObject', searchObj);
+      this.$store.commit('setLastQueryObject', searchObj);
+      this.$store.dispatch('searchDataAssets', searchObj);
 
       this.$router.push('search');
 
