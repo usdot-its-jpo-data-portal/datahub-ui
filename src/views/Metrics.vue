@@ -11,7 +11,7 @@
                   <a href="#" @click="moveToTag($event, 'dataset-highlights')">Dataset Highlights</a>
                 </li>
                 <li class="usa-sidenav__item">
-                  <a href="#" @click="moveToTag($event, 'dtg-dataset-details')">DTG Dataset Details data.transporation.gov</a>
+                  <a href="#" @click="moveToTag($event, 'dtg-dataset-details')">DTG Dataset Details data.transportation.gov</a>
                 </li>
                 <li class="usa-sidenav__item">
                   <a href="#" @click="moveToTag($event, 'ntl-datset-details')">NTL Dataset Details National Transportation Library</a>
@@ -31,7 +31,7 @@
 
           <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose dh-metrics__document">
             <h1>ITS DataHub Metrics Dashboard</h1>
-            <p class="usa-intro">Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportaion Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views.</p>
+            <p class="usa-intro">Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportation Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views.</p>
             <!-- implementation base on https://usdotjpoode.atlassian.net/wiki/spaces/RDA/pages/678494209/New+iframes+for+DataHub+-+USWDS -->
 
             <h2 v-if="!isMobile" id="dataset-highlights">Dataset Highlights</h2>
@@ -72,7 +72,7 @@
               </div>
             </div>
 
-            <h2 id="dtg-dataset-details">DTG Dataset Details&nbsp;&nbsp;&nbsp;<span> data.transporation.gov</span></h2>
+            <h2 id="dtg-dataset-details">DTG Dataset Details&nbsp;&nbsp;&nbsp;<span> data.transportation.gov</span></h2>
             <div class="grid-container">
               <div class="grid-row">
                 <div class="desktop:grid-col-6 mobile:grid-col-12">
