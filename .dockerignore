@@ -1,0 +1,11 @@
+node_modules/
+.git/
+.chrome/
+.vscode/
+
+.env
+.editorconfig
+.gitignore
+build-and-run-docker.sh
+buildspec.yml
+Dockerfile
