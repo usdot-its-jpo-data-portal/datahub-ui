@@ -1,6 +1,6 @@
 ﻿# USDOT JPO Microsite Template
 
-The microsite is a standalone website that has been templated so that small changes can be made in a couple json files to create the desired website look and functionality.  
+The microsite is a standalone website that has been templated so that small changes can be made in a couple json files to create the desired website look and functionality.   
 
 The microsite template is designed to provide users of USDOT data a new standardized entry point for them to explore USDOT DOT data and for various groups within the USDOT to create custom data home pages with the template to promote their data.  The template is not intended to be a replacement for data.transportation.gov (DTG) or the National Transportation Library (NTL) sites but instead enhance those sites by providing additional entry points to those two systems in support of the ITS JPO No Wrong Door Policy. 
 
