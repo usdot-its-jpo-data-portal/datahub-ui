@@ -2,7 +2,7 @@
   <div class="grid-container dh-result-card__wrapper">
     <div class="grid-row">
       <div class="grid-col-fill dh-result-card__title">
-        <a :href="item.link" target="_blank">
+        <a :href="item.sourceUrl" target="_blank">
           {{ item.name }}
           <img class="in-line-dot-link-new-tab search-results" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
         </a>
@@ -11,9 +11,9 @@
     <div class="grid-row">
       <div id="left_column_results_wrapper" class="mobile-lg:grid-col-2">
         <div id="results_date_label" class="dh-result-card__meta-text">Date Added:</div>
-        <div id="results_date_data" class="dh-result-card__meta-data">{{ item.date}}</div>
+        <div id="results_date_data" class="dh-result-card__meta-data">{{ item.lastUpdate | filterDate}}</div>
         <div id="results_access_label" class="dh-result-card__meta-text">Access:</div>
-        <div id="results_access_data" class="dh-result-card__meta-data">{{ item.accessLevelIsPublic}}</div>
+        <div id="results_access_data" class="dh-result-card__meta-data">{{ item.accessLevel}}</div>
       </div>
       <div class="grid-col-fill dh-result-card__description">
         <span v-html="itemDescription"></span>
@@ -29,7 +29,7 @@
         <div v-if="itemTags.length > 0" >
           <div class="dh-result-card__tags-title">Tags:</div>
           <div v-for="(tag, idx) in itemTags" :key="idx" class="dh-result-card__tag">
-            <button @click="$emit('search',tag)">
+            <button @click="tagClicked(tag)">
               {{tag}}
             </button>
             <span v-if="idx < itemTags.length - 1">,&nbsp;</span>
@@ -47,6 +47,9 @@
 </template>
 
 <script>
+import moment from 'moment';
+import {ES_QUERY_LIMIT} from '../consts/constants.js';
+
 export default {
   name: 'DOTResultCard',
   props: ['index', 'data', 'search'],
@@ -61,6 +64,15 @@ export default {
       tagsShowVisible: true,
       tagsShowButtonText: '',
       tagsShowLimit: 11
+    }
+  },
+  filters: {
+    filterDate: function(date) {
+      if (date) {
+        let utc = moment.utc(date).toDate()
+        return moment(utc).local().format('MMM DD YYYY');
+      }
+      return '';
     }
   },
   computed: {
@@ -164,6 +176,14 @@ export default {
       this.tagsShowVisible = visible;
       this.tagsShowMore = showMore;
       this.tagsShowButtonText = text;
+    },
+    tagClicked(text) {
+      let searchObj = {
+        term: text,
+        phrase: true,
+        limit: ES_QUERY_LIMIT
+      }
+      this.$emit('search',searchObj);
     }
   }
 }

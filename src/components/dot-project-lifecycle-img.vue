@@ -311,7 +311,6 @@ export default {
   },
   methods: {
     ProjectLifecycleClick: function(event) {
-      console.log(event.target);
       let id = event.target.id;
       switch(id){
         case 'planning-group':

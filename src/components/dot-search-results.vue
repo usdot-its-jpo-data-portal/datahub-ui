@@ -5,7 +5,7 @@
         <div class="grid-col-auto dh-search-results__result-text">
           Search Results for:&nbsp;
           <button @click="search(queryText)">
-            {{queryText}}
+            {{queryText.term}}
           </button>
         </div>
       </div>
@@ -19,7 +19,11 @@
           <div class="dh-search-results__sortby-buttons">
             <legend class="usa-sr-only">Sort results</legend>
             <div class="usa-radio">
-              <input class="usa-radio__input" @click="dropDownFilter($event.target)" type="radio" id="seg-Date" name="seg-1" value="D" checked>
+              <input class="usa-radio__input" @click="dropDownFilter($event.target)" type="radio" id="seg-Relevance" name="seg-1" value="R" checked>
+              <label class="usa-radio__label" for="seg-Relevance" id="seg-Relevance-label">Relevance</label>
+            </div>
+            <div class="usa-radio">
+              <input class="usa-radio__input" @click="dropDownFilter($event.target)" type="radio" id="seg-Date" name="seg-1" value="D">
               <label class="usa-radio__label" for="seg-Date" id="seg-Date-label">Date</label>
             </div>
             <div class="usa-radio">
@@ -68,8 +72,8 @@ export default {
   },
   computed: {
     queryText: {
-      get: function() { return this.$store.state.lastQueryString; },
-      set: function(val) { this.$store.state.lastQueryString = val; }
+      get: function() { return this.$store.state.lastQueryObject; },
+      set: function(val) { this.$store.commit('setLastQueryObject',val); }
     },
     searchResults: {
       get: function() { return this.$store.state.MainData; },
@@ -84,8 +88,9 @@ export default {
     //Gets the search results for a search query
     search: function (search_query) {
       this.queryText = search_query;
-      this.$store.commit('searchText', search_query);
-      this.$store.dispatch('searchAllData', search_query);
+      this.$store.commit('setQueryObject', search_query);
+      this.$store.dispatch('searchDataAssets', search_query);
+      window.scrollTo(0, 0);
     },
 
     //Creates buttons to select how to organize search results by Name, Date or Relevance
@@ -93,12 +98,17 @@ export default {
       if(target.id === 'seg-Date') {
         let sortedList = this.searchResults.slice().sort(CompareUtils.compareDate);
         this.searchResults = sortedList;
-        this.$store.commit('setSearchByName', false);
+        this.$store.commit('setSearchBy', 'date');
         this.forceRerender();
       } else if(target.id === 'seg-Name') {
         let sortedList = this.searchResults.slice().sort(CompareUtils.compareName);
         this.searchResults = sortedList;
-        this.$store.commit('setSearchByName', true);
+        this.$store.commit('setSearchBy', 'name');
+        this.forceRerender();
+      } else if(target.id === 'seg-Relevance') {
+        let sortedList = this.searchResults.slice().sort(CompareUtils.compareESScore);
+        this.searchResults = sortedList;
+        this.$store.commit('setSearchBy', 'relevance');
         this.forceRerender();
       }
     },

@@ -11,7 +11,11 @@
         <div class="grid-row">
           <div class="grid-col-fill dh-search__search-inputs">
             <label class="usa-label" for="searchInput">Search for datasets</label>
-            <input :class="isInvalid ? 'usa-input--error' : 'usa-input'" id="searchInput" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
+            <input :class="isInvalid ? 'usa-input--error' : 'usa-input'" id="searchInput" v-model="queryText.term" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
+            <div class="dh-search__search-inputs-phrase">
+              <input type="checkbox" v-model="queryText.phrase" name="searchPhrase" id="id-searchPhrase">
+              <label for="id-searchPhrase">Phrase</label>
+            </div>
             <button v-on:click="searchSend(queryText)">
               <img src="/images/icons/icon-magnifier.svg" alt="Search">
             </button>
@@ -26,8 +30,6 @@ export default {
   name: 'DOTSearchSearch',
   data: function(){
     return{
-        socrata_url: 'https://api.us.socrata.com/api/catalog/v1?q=',//URL for Socrata API
-        socrata_domain: 'data.transportation.gov',//Domain of Socrata site to search, set in load_json
         totalDataCount: 0,
         isInvalid: false,
         placeholderDef: 'Search by project names and topics...',
@@ -36,8 +38,8 @@ export default {
   },
   computed: {
     queryText : {
-        get: function() { return this.$store.state.queryString; },
-        set: function(val) { this.$store.state.queryString = val; }
+        get: function() { return this.$store.state.queryObject; },
+        set: function(val) { this.$store.commit('setQueryObject',val); }
     },
     search_placeholder : {
         get: function() {return this.placeholderValue; },
@@ -48,17 +50,15 @@ export default {
     //Sets search term and sends it to search html page
     searchSend: function (search_query) {
       this.isInvalid = false;
-      if(search_query.length==0) {
+      if(search_query.term.length==0) {
         this.isInvalid = true;
         this.search_placeholder = 'Invalid search text!';
         return;
       }
       this.search_placeholder = this.placeholderDef;
-      this.$store.commit('searchText', search_query);
-      this.$store.commit('setLastQueryString', search_query);
-      this.$store.dispatch('searchAllData', search_query);
-
-      // this.$router.push('search');
+      this.$store.commit('setQueryObject', search_query);
+      this.$store.commit('setLastQueryObject', search_query);
+      this.$store.dispatch('searchDataAssets', search_query);
 
     },
 
