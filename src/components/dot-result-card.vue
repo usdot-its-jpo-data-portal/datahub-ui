@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="grid-row">
-      <div id="left_column_results_wrapper" class="mobile-lg:grid-col-2">
+      <div id="left_column_results_wrapper" class="mobile-lg:grid-col-3">
         <div id="results_date_label" class="dh-result-card__meta-text">Date Added:</div>
         <div id="results_date_data" class="dh-result-card__meta-data">{{ item.lastUpdate | filterDate}}</div>
         <div id="results_access_label" class="dh-result-card__meta-text">Access:</div>
@@ -23,7 +23,23 @@
       </div>
     </div>
     <div class="grid-row">
-      <div class="mobile-lg:grid-col-2">
+      <div class="mobile-lg:grid-col-3 dh-result-card__tags">
+        <div id="results_access_label" class="dh-result-card__meta-data">Related projects<br/>on ITS CodeHub:</div>
+        <ul>
+          <li v-for="(rel, index) in relatedItems" :key="index">
+            <a :href="rel.url" target="_blank" rel="noopener noreferrer">
+              {{rel.name}}
+              <img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+            </a>
+          </li>
+        </ul>
+        <div v-if="relatedShowVisible" class="dh-result-card__tags-showmore">
+          <span v-if="relatedShowMore">...&nbsp;</span>
+          <button v-if="relatedShowVisible" v-on:click="toggleShowMoreRelated()">
+            {{relatedShowMoreText}}
+          </button>
+        </div>
+        <div v-if="!relatedShowVisible && relatedItems.length===0" class="dh-result-card__meta-text">None</div>
       </div>
       <div class="grid-col-fill dh-result-card__tags">
         <div v-if="itemTags.length > 0" >
@@ -36,7 +52,7 @@
           </div>
           <div v-if="tagsShowVisible" class="dh-result-card__tags-showmore">
             <span v-if="tagsShowMore">...&nbsp;</span>
-            <button v-if="readButtonVisible" v-on:click="toggleShowMoreTags()">
+            <button v-if="tagsShowVisible" v-on:click="toggleShowMoreTags()">
               {{tagsShowButtonText}}
             </button>
           </div>
@@ -61,9 +77,13 @@ export default {
       readButtonVisible: true,
       readButtonText: '',
       tagsShowMore: true,
-      tagsShowVisible: true,
+      tagsShowVisible: false,
       tagsShowButtonText: '',
-      tagsShowLimit: 11
+      tagsShowLimit: 11,
+      relatedShowMore: true,
+      relatedShowMoreText: '',
+      relatedShowLimit: 3,
+      relatedShowVisible: false
     }
   },
   filters: {
@@ -105,27 +125,29 @@ export default {
     },
     itemTags: {
       get: function() {
-        let result = [];
-        if(!this.item) {
-          return result;
-        }
-        if(this.item.tags.length === 0) {
-          this.updateTagsTools(false,this.tagsShowMore,this.tagsShowButtonText);
-          result = this.item.tags;
-        } else {
-          if(this.item.tags.length <= this.tagsShowLimit) {
-            this.updateTagsTools(false,this.tagsShowMore,this.tagsShowButtonText);
-            result = this.item.tags;
-          } else {
-            if(this.tagsShowMore){
-              this.updateTagsTools(true,true,'SHOW MORE');
-              result = this.item.tags.slice(0, this.tagsShowLimit);
-            } else {
-              this.updateTagsTools(true,false,'SHOW LESS');
-              result = this.item.tags;
-            }
-          }
-        }
+
+        let result = this.manageListToogle(
+          this.item.tags,
+          this.updateTagsTools,
+          this.tagsShowLimit,
+          this.tagsShowVisible,
+          this.tagsShowMore,
+          this.tagsShowMoreText);
+        return result;
+      },
+      set: function(){}
+    },
+    relatedItems: {
+      get: function() {
+
+        let result = this.manageListToogle(
+          this.item.related,
+          this.updateRelatedTools,
+          this.relatedShowLimit,
+          this.relatedShowVisible,
+          this.relatedShowMore,
+          this.relatedShowMoreText);
+
         return result;
       },
       set: function(){}
@@ -140,6 +162,10 @@ export default {
       this.tagsShowMore = !this.tagsShowMore;
       this.$forceUpdate();
     },
+    toggleShowMoreRelated: function() {
+      this.relatedShowMore = !this.relatedShowMore;
+      this.$forceUpdate();
+    },
     updateDescriptionTools(visible, readMore, text) {
       this.readMore = readMore;
       this.readButtonVisible = visible;
@@ -147,6 +173,35 @@ export default {
     },
     updateItemDescription(description) {
       this.item.description = description;
+    },
+    updateRelatedTools(visible, showMore, text) {
+      this.relatedShowVisible = visible;
+      this.relatedShowMore = showMore;
+      this.relatedShowMoreText = text;
+    },
+    manageListToogle(list, fxUpdate, limit, visible, showMore, text) {
+      let result = [];
+      if(!list) {
+        return result;
+      }
+      if(list.length === 0) {
+        fxUpdate(false,showMore,text);
+        result = list;
+      } else {
+        if(list.length <= limit) {
+          fxUpdate(false,showMore,text);
+          result = list;
+        } else {
+          if(showMore){
+            fxUpdate(true,true,'SHOW MORE');
+            result = list.slice(0, limit);
+          } else {
+            fxUpdate(true,false,'SHOW LESS');
+            result = list;
+          }
+        }
+      }
+      return result;
     },
     indexOfNextSpace(text, fromIndex) {
       if(!fromIndex) {

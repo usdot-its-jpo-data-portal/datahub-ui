@@ -16,6 +16,8 @@ export default new Vuex.Store({
     lastQueryObject: {term:'', phrase: false, limit: ES_QUERY_LIMIT},
     searching: false,
     searchBy: 'relevance',
+    searchError: false,
+    searchMessage: '',
     MainData: [],
     registering: false,
     registerError: false,
@@ -50,6 +52,12 @@ export default new Vuex.Store({
     },
     setRegisterMessage(state, val) {
       state.registerMessage = val;
+    },
+    setSearchError(state, val) {
+      state.searchError = val;
+    },
+    setSearchMessage(state, val) {
+      state.searchMessage = val
     }
   },
   actions: {
@@ -64,16 +72,22 @@ export default new Vuex.Store({
 
       commit('setSearching', true);
       commit('setMainData', []);
+      commit('setSearchError', false);
+      commit('setSearchMessage', '');
       Promise.all([webApi]).then( result => {
         if (DataUtils.validResponse(result[0])) {
           let data = [...result[0].data.result.result];
           commit('setMainData', data);
         } else {
           let errors = DataUtils.getErrors(result[0]);
-          console.log(errors);
+          commit('setSearchError', true);
+          commit('setSearchMessage', errors);
         }
         commit('setSearching', false);
-      }).catch((e) => {console.log(e);})
+      }).catch((e) => {
+        commit('setSearchError', true);
+        commit('setSearchMessage', e);
+      })
     },
     registerEmail({commit}, email) {
       let payload = {
