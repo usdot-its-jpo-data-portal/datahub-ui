@@ -1,6 +1,7 @@
 import {shallowMount} from '@vue/test-utils';
 import DOTResultCard from '@/components/dot-result-card.vue';
 import SEARCH_RESULTS from '@/mockdata/search-results.json';
+import moment from 'moment';
 
 describe('DOT Microsite - Search : Card', () => {
   let item;
@@ -38,8 +39,12 @@ describe('DOT Microsite - Search : Card', () => {
   it('constains date for Date Added: ', () => {
     const wrapper = shallowMount(DOTResultCard, {attachTo: document.body, propsData: { index: 0, data: item, search: searchFnc}});
     let h = wrapper.findAll('.dh-result-card__meta-data');
-    expect(h.length).toEqual(2);
-    expect(h.at(0).text()).toMatch(item.date);
+
+    let utc = moment.utc(item.lastUpdate).toDate()
+    let dt = moment(utc).local().format('MMM DD YYYY');
+
+    expect(h.length).toEqual(3);
+    expect(h.at(0).text()).toMatch(dt);
   });
   it('constains Access: ', () => {
     const wrapper = shallowMount(DOTResultCard, {attachTo: document.body, propsData: { index: 0, data: item, search: searchFnc}});
@@ -56,8 +61,8 @@ describe('DOT Microsite - Search : Card', () => {
   it('constains access value: ', () => {
     const wrapper = shallowMount(DOTResultCard, {attachTo: document.body, propsData: { index: 0, data: item, search: searchFnc}});
     let h = wrapper.findAll('.dh-result-card__meta-data');
-    expect(h.length).toEqual(2);
-    expect(h.at(1).text()).toMatch(item.accessLevelIsPublic);
+    expect(h.length).toEqual(3);
+    expect(h.at(1).text()).toMatch(item.accessLevel);
   });
   it('constains description ', () => {
     const wrapper = shallowMount(DOTResultCard, {attachTo: document.body, propsData: { index: 0, data: item, search: searchFnc}});

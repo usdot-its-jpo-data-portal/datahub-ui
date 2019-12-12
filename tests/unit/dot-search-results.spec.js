@@ -14,8 +14,8 @@ describe('DOT Microsite - Search : Results', () => {
     };
     $store = {
       state: {
-        queryString: 'data',
-        lastQueryString: 'data',
+        queryObject: {term:'data', phrase: false, limit: 1000},
+        lastQueryObject: {term:'data', phrase: false, limit: 1000},
         MainData: SEARCH_RESULTS,
         searching: false
       },
