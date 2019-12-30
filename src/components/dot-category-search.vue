@@ -5,7 +5,6 @@
       <div class="grid-row" style="solid 1px green;">
         <div class="grid-col-auto dh-home_category-search-title">
           <h3>RECOMMENDED DATASET SEARCHES</h3>
-          <!-- Mary testing -->
         </div>
       </div>
     </div>
