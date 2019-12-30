@@ -11,12 +11,10 @@
   .dh-search__search-title {
     opacity: 1;
     background-color: $dh-color-primary-blue;
-    //margin-top: units(2.5);
     h1 {
       color: $dh-color-lightcyan;
       font-size: units(5);
       margin: 0 !important;
-      // padding: units(0.5) !important;
       @include at-media-max('mobile-lg'){
         font-size: units(4);
       }
@@ -38,12 +36,6 @@
       display: none;
       margin-top: units(2);
       @include at-media-max("tablet-lg"){
-        &.second-input{
-          margin-top: units(1);
-          margin-bottom: units(1);
-        }
-      }
-      @include at-media-max("tablet"){
         margin-top: units(1);
         margin-bottom: units(1);
       }
@@ -58,7 +50,6 @@
       border-right: none;
       border-top-left-radius: units(0.5);
       border-bottom-left-radius: units(0.5);
-      // font-size: units(3);
       color: $dh-color-black;
       padding-left: units(0.5);
       @include at-media-max("tablet-lg"){
@@ -115,7 +106,6 @@
       }
     }
     .dh-search__search-inputs-phrase {
-      //display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center;
@@ -134,7 +124,6 @@
       label {
         display: inline-block;
         font-size: units(2);
-        //font-style: italic;
         color: $dh-color-white;
         margin-left: units(1);
       }
