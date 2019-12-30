@@ -13,7 +13,7 @@ describe('DOT Microsite - Search : Search', () => {
     };
     $store = {
       state: {
-        queryString: 'data'
+        queryObject: {term:'data', phrase: false, limit: 1000},
       },
       commit: function(a,b){}
     };
