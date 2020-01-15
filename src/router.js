@@ -132,6 +132,10 @@ export default new Router({
           components: { resources: () => import('./views/resources/faqs.vue')}
         },
       ]
+    },
+    {
+      path: '/*',
+      redirect: { name: 'home' }
     }
   ]
 })

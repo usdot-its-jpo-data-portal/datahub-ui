@@ -37,8 +37,10 @@
 </template>
 
 <script>
+import {ES_QUERY_LIMIT} from '../consts/constants.js';
 export default {
   name: 'DOTSearchSearch',
+  props:['queryString'],
   data: function(){
     return{
         totalDataCount: 0,
@@ -46,6 +48,14 @@ export default {
         searchType: 'byWords',
         placeholderDef: 'Search by project names and topics...',
         placeholderValue: 'Search by project names and topics...',
+    }
+  },
+  mounted: function() {
+    if (this.queryString) {
+      setTimeout(()=>{
+        let sQuery = {term:this.queryString, phrase: true, limit: ES_QUERY_LIMIT};
+        this.searchSend(sQuery);
+      },500)
     }
   },
   computed: {
@@ -68,7 +78,6 @@ export default {
         this.search_placeholder = 'Invalid search text!';
         return;
       }
-      console.log(this.searchType);
       search_query.phrase = this.searchType=='byPhrase';
       this.search_placeholder = this.placeholderDef;
       this.$store.commit('setQueryObject', search_query);
