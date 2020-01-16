@@ -2,7 +2,7 @@
   <div id="search-wrapper">
       <div id='searchTerms'>
           <div id="searchHead" class="searchHeader">
-              <DOTSearchSearch></DOTSearchSearch>
+              <DOTSearchSearch v-bind:queryString="queryString"></DOTSearchSearch>
           </div>
           <DOTSearchResults ></DOTSearchResults>
       </div>
@@ -18,6 +18,11 @@ export default {
   components: {
     DOTSearchSearch,
     DOTSearchResults
+  },
+  computed: {
+    queryString: {
+      get: function() {return this.$route.query.t;}
+    }
   }
 }
 </script>
