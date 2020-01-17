@@ -53,8 +53,8 @@
     </div>
     <script>
       function getPathAndQuery(location) {
-        let result = location.pathname;
-        result = result + ((location.search == null || location.search == "") ? "?origin="+encodeURI(location.origin) : location.search + "&"+ encodeURI(location.origin));
+        var result = !location.hash ? "/" : "/"+location.hash;
+        result = result + ((result.includes('?')<0) ? "?origin="+encodeURI(location.origin) : location.search + "&origin="+ encodeURI(location.origin));
         return result;
       }
       function createIframe() {
