@@ -52,16 +52,9 @@
     <div id="iframe-wrapper" class="scroll-wrapper">
     </div>
     <script>
-      function getPath(pathname) {
-        var parts = pathname.split('/').filter(function(name){ return name != ""});
-        if (parts.length <= 1) {
-          return "/home";
-        }
-        return '/'+parts.slice(1).join('/');
-      }
       function getPathAndQuery(location) {
-        let result = getPath(location.pathname);
-        result = result + ((location.search == null || location.search == "") ? "?origin="+encodeURI(location.origin) : location.search + "&origin="+ encodeURI(location.origin));
+        var result = !location.hash ? "/" : "/"+location.hash;
+        result = result + ((result.includes('?')<0) ? "?origin="+encodeURI(location.origin) : location.search + "&origin="+ encodeURI(location.origin));
         return result;
       }
       function createIframe() {
