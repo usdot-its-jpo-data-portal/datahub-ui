@@ -235,15 +235,11 @@
       </li>
       <p>
         Awardees must store their data in systems that provide an appropriate level of user access, functionality and data
-        lifecycle management. Datasets in ITS DataHub are required to be retained for a minimum of five years in accordance
-        with the
-        <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.fhwa.dot.gov_legsregs_directives_orders_hoit-2Dhq-5F.cfm&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=AvfhqvHzwgtD4YBmX9XGz_Z4GeLyer-H3BMvjy12Amk&e=" rel="noopener noreferrer">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>,
-        NARA schedule number
-        <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.archives.gov_files_records-2Dmgmt_rcs_schedules_departments_department-2Dof-2Dtransportation_rg-2D0406_daa-2D0406-2D2014-2D0003-5Fsf115.pdf&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=7h17qK4mdzMLn3SHkGIl4PwNGSvuFmqi2wVm9ZiHQEU&e=" rel="noopener noreferrer">DAA-0406-2014-0003<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
-        Dataset types may include
-        roadway traffic-related data such as vehicle latitude, longitude, heading and speed; travel times on road segments;
-        traffic signal timing plans; rail transit schedules; and weather. This retention period begins when U.S. DOT first
-        receives access to a dataset.
+        lifecycle management. For more guidelines on acceptable data storage systems for U.S. DOT, see 
+        <a href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories" target="_blank" rel="noopener noreferrer">
+          Guidelines for Evaluating Repositories for Conformance to the DOT Public Access Plan
+        <img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+        </a>. 
       </p>
       <p>
         Awardees may use different systems to store different types of data (e.g., public, non-public, primary, derived,
@@ -257,7 +253,18 @@
         provide an appropriate level of user access and functionality and data lifecycle management, the awardee must use the
         systems designated by the ITS JPO. Wherever possible, these determinations will be made prior to award.
       </p>
-
+      <p>
+        Datasets in ITS DataHub are required to be retained for a minimum of five years in accordance
+        with the
+        <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.fhwa.dot.gov_legsregs_directives_orders_hoit-2Dhq-5F.cfm&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=AvfhqvHzwgtD4YBmX9XGz_Z4GeLyer-H3BMvjy12Amk&e=" rel="noopener noreferrer">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>,
+        NARA schedule number
+        <a target="_blank" href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.archives.gov_files_records-2Dmgmt_rcs_schedules_departments_department-2Dof-2Dtransportation_rg-2D0406_daa-2D0406-2D2014-2D0003-5Fsf115.pdf&d=DwMFAg&c=f4NRRID3zFYDyClb0wZXwA&r=u7RoqcKhr0ZTyUrh9-9vLPNfCjiY1PN51nvbAJRd86I&m=RJHBZQZ681YIadOiU_QhZX08QGI_Sbik_GmJHsmAyOg&s=7h17qK4mdzMLn3SHkGIl4PwNGSvuFmqi2wVm9ZiHQEU&e=" rel="noopener noreferrer">DAA-0406-2014-0003<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
+        Dataset types may include
+        roadway traffic-related data such as vehicle latitude, longitude, heading and speed; travel times on road segments;
+        traffic signal timing plans; rail transit schedules; and weather. This retention period begins when U.S. DOT first
+        receives access to a dataset.
+      </p>
+      
       <li class="dh-listtype__upperalpha">
         <h3>Data Rights</h3>
       </li>
@@ -268,16 +275,20 @@
         </a>
         ), awardees must apply open licenses to data collected or created through the
         project so there are no restrictions on copying, publishing, distributing, transmitting, adapting, or otherwise using
-        the information. The ITS JPO uses clauses in
-        <a href="http://farsite.hill.af.mil/reghtml/regs/far2afmcfars/fardfars/far/52_227.htm#P254_51765" target="_blank" rel="noopener noreferrer">
+        the information. The Open Source Initiative approves open source licenses that are "popular and widely used", a list of which can be found at
+        <a href="https://opensource.org/licenses/category" target="_blank" rel="noopener noreferrer">
+          https://opensource.org/licenses/category<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a> 
+        . The ITS JPO uses clauses in
+        <a href="https://www.acquisition.gov/content/52227-14-rights-data-general" target="_blank" rel="noopener noreferrer">
           FAR 52.227-14<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
         </a>
         to acquire unlimited rights to data for the government,
         though applicants can claim exemptions and propose limited rights data as described in
-        <a href="http://farsite.hill.af.mil/reghtml/regs/far2afmcfars/fardfars/far/52_227.htm#P254_51765" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.acquisition.gov/content/52227-14-rights-data-general" target="_blank" rel="noopener noreferrer">
           FAR 52.227-14<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
         </a>
-        .Applicants must describe their proposed approach to data rights in their draft DMP, including, where applicable,
+        . Applicants must describe their proposed approach to data rights in their draft DMP, including, where applicable,
         a detailed rationale for limiting the government's rights to data.
       </p>
 
