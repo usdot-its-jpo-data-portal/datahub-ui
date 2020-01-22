@@ -5,7 +5,7 @@
       <h1>Pre-Award</h1>
     </div>
     <p>
-      The Pre-Award project lifecycle phase occurs after the release of a project or procurement through evaluation of project or procurement responses. During this phase, Program/Project Managers review responses to procurement requests and prepare for the start of a project. Data Providers ensure their responses to procurements and projects adhere to procurement requirements. See the appropriate page for Program/Project Manager and Data Provider resources.
+      The Pre-Award project life cycle phase occurs after the release of a project or procurement through evaluation of project or procurement responses. During this phase, Program/Project Managers review responses to procurement requests and prepare for the start of a project. Data Providers ensure their responses to procurements and projects adhere to procurement requirements. See the appropriate page for Program/Project Manager and Data Provider resources.
     </p>
     <!-- Tab links -->
     <div class="dh-data-access-coe_tab">
@@ -16,9 +16,9 @@
     <!-- Tab content -->
     <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Pre-Award project lifecycle phase, Program and Project Managers prepare for and execute evaluations of data management materials and ensure projects have appropriate planning to manage project data. See resources on this page and contact
+        In the Pre-Award project life cycle phase, Program and Project Managers prepare for and execute evaluations of data management materials and ensure projects have appropriate planning to manage project data. See resources on this page and contact
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
-        for assistance with this project lifecycle phase.
+        for assistance with this project life cycle phase.
       </p>
       <p>
         During Pre-Award, the Data Access CoE can help Program/Project Managers by:
@@ -56,7 +56,7 @@
 
     <div v-if="active_tab=='id_tab2'" id="id_tab2" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Pre-Award project lifecycle phase, Data Providers prepare their responses to a solicitation or project. Data Providers must ensure their responses incorporate all data management requirements listed in the solicitation, which usually includes a requirement for a preliminary data management plan (DMP).
+        In the Pre-Award project life cycle phase, Data Providers prepare their responses to a solicitation or project. Data Providers must ensure their responses incorporate all data management requirements listed in the solicitation, which usually includes a requirement for a preliminary data management plan (DMP).
       </p> 
       <em>Resources</em>
       <ul>

@@ -5,7 +5,7 @@
       <h1>Award</h1>
     </div>
     <p>
-      The Award project lifecycle phase begins when project award occurs through project kick-off. During this phase, Program/Project Managers and Data Providers prepare for and conduct project kick-off. See the appropriate page for Program/Project Manager and Data Provider resources.
+      The Award project life cycle phase begins when project award occurs through project kick-off. During this phase, Program/Project Managers and Data Providers prepare for and conduct project kick-off. See the appropriate page for Program/Project Manager and Data Provider resources.
     </p>
     <!-- Tab links -->
     <div class="dh-data-access-coe_tab">
@@ -16,9 +16,9 @@
     <!-- Tab content -->
     <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Award project lifecycle phase, Program/Project Managers prepare for the project to begin and conduct project kick-off. See resources on this page and contact
+        In the Award project life cycle phase, Program/Project Managers prepare for the project to begin and conduct project kick-off. See resources on this page and contact
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
-        for assistance with this project lifecycle phase.
+        for assistance with this project life cycle phase.
       </p>
       <p>
         During Award, the Data Access CoE can help Program/Project Managers by:

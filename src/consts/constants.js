@@ -9,11 +9,11 @@ export const NTL_COLLECTION = "dot:239"; //Limit results to specific collection
 export const NTL_DATELIMIT = "?from=2019-05-24T00:00:00Z"; //Limit results to before, after or between a specific date range
 export const NTL_ROWSLIMIT = "&rows=9999";
 
-export const COE_TOOLTIP_PLANNING ='The Planning project lifecycle phase occurs when planning a project or procurement begins through release of a project or procurement.';
-export const COE_TOOLTIP_PREAWARD = 'The Pre-Award project lifecycle phase occurs after the release of a project or procurement through evaluation of project or procurement responses.';
-export const COE_TOOLTIP_AWARD = 'The Award project lifecycle phase begins when project award occurs through project kick-off.';
-export const COE_TOOLTIP_POSTAWARD = 'The Post-Award project lifecycle phase consists of the period after project kick-off where the project grows and starts producing data.';
-export const COE_TOOLTIP_CLOSEOUT = 'The Closeout project lifecycle phase occurs of the end of the project.';
+export const COE_TOOLTIP_PLANNING ='The Planning project life cycle phase occurs when planning a project or procurement begins through release of a project or procurement.';
+export const COE_TOOLTIP_PREAWARD = 'The Pre-Award project life cycle phase occurs after the release of a project or procurement through evaluation of project or procurement responses.';
+export const COE_TOOLTIP_AWARD = 'The Award project life cycle phase begins when project award occurs through project kick-off.';
+export const COE_TOOLTIP_POSTAWARD = 'The Post-Award project life cycle phase consists of the period after project kick-off where the project grows and starts producing data.';
+export const COE_TOOLTIP_CLOSEOUT = 'The Closeout project life cycle phase occurs of the end of the project.';
 
 export const ES_QUERY_LIMIT = 1000;
 export const CC_LIST_ID = 1335295517;
