@@ -84,7 +84,7 @@
         <strong>Data discovery</strong>: The ability to find data from search engine, such as the ITS DataHub.
       </li>
       <li>
-        <strong>Data integrity</strong>: The assurance that digital information is uncorrupted and can only be accessed or modified by those authorized to do so. Integrity involves maintaining the consistency, accuracy and trustworthiness of data over its entire lifecycle.
+        <strong>Data integrity</strong>: The assurance that digital information is uncorrupted and can only be accessed or modified by those authorized to do so. Integrity involves maintaining the consistency, accuracy and trustworthiness of data over its entire life cycle.
       </li>
       <li>
         <strong>Data owner</strong>: The person or organization that has the authority, ability, and responsibility to access, create, modify, store, use, share, and protect data. Data owners have the right to delegate these privileges and responsibilities to other parties. Please note, for U.S. DOT-funded projects this may be U.S. DOT.
@@ -236,7 +236,7 @@
       </li>
       <p>
         Awardees must store their data in systems that provide an appropriate level of user access, functionality and data
-        lifecycle management. For more guidelines on acceptable data storage systems for U.S. DOT, see 
+        life cycle management. For more guidelines on acceptable data storage systems for U.S. DOT, see 
         <a href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories" target="_blank" rel="noopener noreferrer">
           Guidelines for Evaluating Repositories for Conformance to the DOT Public Access Plan<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
         </a>. 
@@ -250,7 +250,7 @@
         </a>.
         Applicants are encouraged to use these shared resources but can propose alternative systems for storing and providing
         access to data via their draft DMP and supplemental information. If ITS JPO determines that a proposed system does not
-        provide an appropriate level of user access and functionality and data lifecycle management, the awardee must use the
+        provide an appropriate level of user access and functionality and data life cycle management, the awardee must use the
         systems designated by the ITS JPO. Wherever possible, these determinations will be made prior to award.
       </p>
       <p>
