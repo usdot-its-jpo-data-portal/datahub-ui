@@ -54,7 +54,6 @@
     <script>
       function getPathAndQuery(location) {
         var result = !location.hash ? "/" : "/"+location.hash;
-        result = result + ((result.includes('?')<0) ? "?origin="+encodeURI(location.origin) : location.search + "&origin="+ encodeURI(location.origin));
         return result;
       }
       function createIframe() {
