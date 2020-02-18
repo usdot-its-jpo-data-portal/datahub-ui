@@ -227,7 +227,14 @@
     </p>
     <p>
       <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">Data.transportation.gov (DTG)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>:
-      A U.S. DOT-managed public-access data storage system that stores non-sensitive, primary research data and data information such as metadata and data dictionaries. Primary research data is data collected during research that has not had significant analysis performed on it.
+      A U.S. DOT-managed public-access data storage system that stores non-sensitive, primary research data that is not suitable to be fully housed in DTG usually due to its large or continuously expanding size, immaturity, and/or non-standard or non-finalized format and structure.
+    </p>
+    <p>Some projects currently depositing to ITS Sandbox include:
+      <ul>
+        <li><a target="_blank" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" rel="noopener noreferrer">Connected Vehicle (CV) Pilot<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a></li>
+        <li><a target="_blank" href="http://usdot-its-workzone-public-data.s3.amazonaws.com/index.html" rel="noopener noreferrer">Work Zone Data Exchange (WZDx) Feed Archive<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a></li>
+      </ul>
+      For more information on ITS Sandbox, please see the <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/sandbox" rel="noopener noreferrer">sandbox GitHub repository<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a>.
     </p>
     <p>
       <a target="_blank" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" rel="noopener noreferrer">ITS Sandbox<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a>:
