@@ -29,7 +29,7 @@
           <strong>Project Description:</strong> Briefly describe the research project, including project design and execution.
         </li>
         <li>
-          <strong>Project Lifecycle Phase:</strong> Please provide the phase in project lifecycle as of the date of the DMP or revision thereof. Phases include: planning, pre-award, award, post award, and closeout.
+          <strong>Project Life Cycle Phase:</strong> Please provide the phase in project life cycle as of the date of the DMP or revision thereof. Phases include: planning, pre-award, award, post award, and closeout.
         </li>
       </ul>
     </p>
@@ -74,7 +74,7 @@
     </ul>
       
     <h2 id="post-data-stewardship">3. Data Stewardship</h2>
-    <p>Please provide details around data stewardship. Data stewardship involves proper management of data throughout the data lifecycle. This includes, but is not limited to, maintaining data quality and safeguarding the data.</p>
+    <p>Please provide details around data stewardship. Data stewardship involves proper management of data throughout the data life cycle. This includes, but is not limited to, maintaining data quality and safeguarding the data.</p>
     
     <h3>3.1 Data Owner and Steward</h3>
     <p>
@@ -90,7 +90,7 @@
           <strong>Data Owner:</strong> List who the data owner of the dataset is. The data owner is the person or organization that has the authority, ability, and responsibility to access, create, modify, store, use, share, and protect the data. Data owners have the right to delegate these privileges and responsibilities to other parties. Please note the data owner may be the U.S. DOT for U.S. DOT-funded research projects.
         </li>
         <li>
-          <strong>Data Steward:</strong> List who the data steward for the dataset is. The data steward is, at the direction of the data owner, the person or organization that is delegated the privileges and responsibilities to manage, control, and maintain the quality of a data asset throughout the data lifecycle. The data steward may also apply appropriate protections, restrictions, and other safeguards depending on the nature of the data, subject to the direction of the data owner. The data steward may be the recipient of U.S. DOT-funded research projects or one of the recipient’s partner organizations.
+          <strong>Data Steward:</strong> List who the data steward for the dataset is. The data steward is, at the direction of the data owner, the person or organization that is delegated the privileges and responsibilities to manage, control, and maintain the quality of a data asset throughout the data life cycle. The data steward may also apply appropriate protections, restrictions, and other safeguards depending on the nature of the data, subject to the direction of the data owner. The data steward may be the recipient of U.S. DOT-funded research projects or one of the recipient’s partner organizations.
         </li>
         <li>
           <strong>Federal Sponsor:</strong> Please list the U.S. DOT sponsor or project manager for this/these dataset(s).
@@ -171,7 +171,7 @@
 
     <h3>3.4	Data Storage, Archiving and Preservation</h3>
     <p>
-      Storing and retaining the data is a key part of the data steward’s responsibilities to manage, control, and maintain the quality of a data asset throughout the data lifecycle.  
+      Storing and retaining the data is a key part of the data steward’s responsibilities to manage, control, and maintain the quality of a data asset throughout the data life cycle.  
     </p>
     <p>
       In this section, list all of the data storage systems that are used to store the research project’s data, provide details on those data systems, and specify how long the data will be stored in each system.

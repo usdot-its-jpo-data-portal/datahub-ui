@@ -33,7 +33,7 @@
     <div class="usa-footer__secondary-section">
       <div class="grid-container">
         <div class="grid-row grid-gap">
-          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6">
             <div class="mobile-lg:grid-col-auto">
               <div class="grid-row grid-gap">
                 <div class="grid-col-auto">

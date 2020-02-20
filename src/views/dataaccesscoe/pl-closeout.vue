@@ -5,7 +5,7 @@
       <h1>Closeout</h1>
     </div>
     <p>
-      The Closeout project lifecycle phase occurs of the end of the project. During this phase, Program/Project Managers ensure Data Providers execute closeout as specified in the project requirements and retain all project deliverables, materials, and data from the project. Data Providers execute closeout as specified in the project and ensure the secure handoff of all project materials to the Program/Project Manager and the U.S. DOT.
+      The Closeout project life cycle phase occurs of the end of the project. During this phase, Program/Project Managers ensure Data Providers execute closeout as specified in the project requirements and retain all project deliverables, materials, and data from the project. Data Providers execute closeout as specified in the project and ensure the secure handoff of all project materials to the Program/Project Manager and the U.S. DOT.
     </p>
 
     <!-- Tab links -->
@@ -17,7 +17,7 @@
     <!-- Tab content -->
     <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Closeout project lifecycle phase, Program/Project Managers ensure Data Providers execute closeout as specified in the project and retain all project deliverables, materials, and data. The Program/Project Manager should contact
+        In the Closeout project life cycle phase, Program/Project Managers ensure Data Providers execute closeout as specified in the project and retain all project deliverables, materials, and data. The Program/Project Manager should contact
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
         for help with the data management portion of Closeout and to ensure the data is retained properly in accordance with its retention schedule.
       </p>
@@ -52,7 +52,7 @@
 
     <div v-if="active_tab=='id_tab2'" id="id_tab2" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Closeout project lifecycle phase, Data Providers ensure they are executing the requirements of their project for closeout and turn over all project deliverables, materials and data to their Program/Project Manager and the U.S. DOT. For help with carrying out project closeout, the Data Access CoE may be able to provide support. To contact the Data Access CoE, email
+        In the Closeout project life cycle phase, Data Providers ensure they are executing the requirements of their project for closeout and turn over all project deliverables, materials and data to their Program/Project Manager and the U.S. DOT. For help with carrying out project closeout, the Data Access CoE may be able to provide support. To contact the Data Access CoE, email
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
       </p>
       <p>

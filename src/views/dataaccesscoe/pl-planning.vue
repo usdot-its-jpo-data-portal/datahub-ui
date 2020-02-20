@@ -5,7 +5,7 @@
       <h1>Planning</h1>
     </div>
     <p>
-      The Planning project lifecycle phase occurs when planning a project or procurement begins through release of a project or procurement. During this phase, Program/Project Managers work on planning and releasing the project or procurement and Data Providers start brainstorming project ideas. See the appropriate page for Program/Project Manager and Data Provider resources.
+      The Planning project life cycle phase occurs when planning a project or procurement begins through release of a project or procurement. During this phase, Program/Project Managers work on planning and releasing the project or procurement and Data Providers start brainstorming project ideas. See the appropriate page for Program/Project Manager and Data Provider resources.
     </p>
 
     <!-- Tab links -->
@@ -17,7 +17,7 @@
     <!-- Tab content -->
     <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        To ensure the Data Access CoE provides the maximum benefit to a project or procurement, we recommend engaging the Data Access CoE team in at the beginning of the project lifecycle. To begin this engagement during the Planning phase, you can find resources on this page and contact us directly at
+        To ensure the Data Access CoE provides the maximum benefit to a project or procurement, we recommend engaging the Data Access CoE team in at the beginning of the project life cycle. To begin this engagement during the Planning phase, you can find resources on this page and contact us directly at
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
       </p>
       <p>
