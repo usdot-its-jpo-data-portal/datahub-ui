@@ -1,12 +1,40 @@
-.usa-sidenav a{
+.usa-sidenav{
     color: #444444;
-    &.page{
+    border-bottom: 2px solid $dh-color-gray-lines;
+    .page{
         font-weight: bold;
     }
-    &.table-of-contents{
-        font-size: font-size($theme-sidenav-font-family, '2xs');
+    .sub-page-li{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        .sub-page{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     }
+    span.page{
+        font-weight: bold;
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+    }
+    .usa-sidenav__sublist li.usa-sidenav__item:not(.sub-page-li) {
+        border: none;
+    }
+    .usa-sidenav__sublist li.usa-sidenav__item.sub-page-li{
+        font-weight: bold;
+        border-top-width: 1px;
+        & .table-of-contents{
+            font-weight: normal;
+        }
+    }
+    .usa-sidenav__item{
+        border-top: 2px solid $dh-color-gray-lines;
+        .table-of-contents{
+            font-size: font-size($theme-sidenav-font-family, '2xs');
+            padding-left: 2rem;
+        }
+    }
+    
 }
-.usa-sidenav__sublist li.usa-sidenav__item:not(.sub-page-li) {
-    border: none;
-}
+
