@@ -23,6 +23,7 @@ export default new Vuex.Store({
     registerError: false,
     registerMessage: '',
     isMobile: false,
+    emailRegistrationActive: true,
     version: JSON.parse(unescape(process.env.VUE_APP_PACKAGE_JSON || '%7Bversion%3A0%7D')).version
   },
   mutations: {
@@ -58,6 +59,9 @@ export default new Vuex.Store({
     },
     setSearchMessage(state, val) {
       state.searchMessage = val
+    },
+    setEmailRegistrationActive(state, val) {
+      state.emailRegistrationActive = val;
     }
   },
   actions: {
