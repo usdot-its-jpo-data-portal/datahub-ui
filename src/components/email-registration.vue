@@ -106,6 +106,7 @@ export default  {
             if(this.timer){
                 clearTimeout(this.timer);
             }
+            this.$store.commit('setEmailRegistrationActive', false);
         },
 
         focus_input() {
@@ -123,6 +124,9 @@ export default  {
         },
 
         fadeOutEffect(self, id, callback) {
+            if (this.$router.currentRoute.name != 'home' || !this.$store.state.emailRegistrationActive) {
+              return;
+            }
             let fadeTarget = document.querySelector(id);
             if(self.timer_fadeout){
                 clearInterval(self.timer_fadeout);
@@ -135,13 +139,17 @@ export default  {
                     fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) - 0.1;
                 } else {
                     clearInterval(self.timer_fadeout);
-
-                    callback(self);
+                    if (self.isActive) {
+                      callback(self);
+                    }
                 }
             }, 100);
         },
 
         fadeInEffect(self, id, callback) {
+            if (this.$router.currentRoute.name != 'home' || !this.$store.state.emailRegistrationActive) {
+              return;
+            }
             let fadeTarget = document.querySelector(id);
             if(self.timer_fadein){
                 clearInterval(self.timer_fadein);
@@ -154,14 +162,15 @@ export default  {
                     fadeTarget.style.opacity = parseFloat(fadeTarget.style.opacity) + 0.1;
                 } else {
                     clearInterval(self.timer_fadein);
-                    callback(self);
+                    if (self.isActive) {
+                      callback(self);
+                    }
                 }
             }, 100);
         },
 
         timer_timeout() {
             this.fadeOutEffect(this, "#keyword", (self) => {
-                
                 self.word_index ++;
                 if (!self.word_index || (self.word_index >= self.words.length)) {
                     self.word_index = 0;
@@ -172,8 +181,9 @@ export default  {
                         clearTimeout(self.timer);
                     }
                     self.timer = setTimeout( () => {
-
+                      if (self.isActive) {
                         self.timer_timeout();
+                      }
                     }, self.msseconds);
                 });
             });

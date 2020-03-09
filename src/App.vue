@@ -2,7 +2,7 @@
   <div id="app">
     <DOTHeader/>
     <router-view :key="$route.fullPath"></router-view>
-    <DOTEmailRegistration active="true"/>
+    <DOTEmailRegistration v-if="$router.currentRoute.name == 'home'" :active="$store.state.emailRegistrationActive"/>
     <DOTMicrositeFooter/>
   </div>
 </template>
