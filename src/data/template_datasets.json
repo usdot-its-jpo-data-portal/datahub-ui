@@ -3,18 +3,17 @@
 
     "datasets": [
        
-        {   "name": "Tampa CV Pilot Basic Safety Messages Sample", 
-            "description": "Contains a sample of sanitized Basic Safety Messages collected from the Tampa Connected Vehicle pilot.", 
-            "url": "https://data.transportation.gov/Automobiles/Tampa-CV-Pilot-Basic-Safety-Message-BSM-Sample/nm7w-nvbm", 
-            "image": "./images/tampa-dot-connected-vehicle-pilot-img.jpeg",
-            "altText": "Link to sample Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
-        },
-
         {   "name": "Tampa Connected Vehicle Pilot Basic Safety Message Visualization", 
             "description": "A visualization portal for the Tampa CV Pilot Basic Safety Messages.", 
             "url": "https://data.transportation.gov/Automobiles/Speed-coloured-points/qkm7-rymj/", 
             "image": "./images/tampa-connected-vehicle-pilot-basic-safety-message-visualization.jpeg",
             "altText": "Map of Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
+        },
+        {   "name": "AZTech Partnership (Maricopa County, Arizona) WZDx specification version 1.1 Data Sample",
+            "description": "Data containing a sample of ADOT freeway and MCDOT arterial road work zone data dissemination through Work Zone Data Exchange project.",
+            "url": "https://datahub.transportation.gov/Roadways-and-Bridges/Maricopa-County-Regional-Work-Zone-Data-Exchange-W/wd94-wugt",
+            "image": "./images/maricopa-county.png",
+            "altText": "Cars passing through a road work zone with a visualization of information being sent to cars via work zone machines. Link to explore dataset on data.transportation.gov"
         },
         {
             "name": "Cooperative Automated Research Mobility Applications (CARMA) 2",
