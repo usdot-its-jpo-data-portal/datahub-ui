@@ -19,13 +19,16 @@
                     <a href="#" @click="moveToTag($event,'Scope')" class="table-of-contents">Scope</a>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
+                    <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Requirements')" class="table-of-contents">Requirements</a>
+                    <a href="#" @click="moveToTag($event,'Guidelines')" class="table-of-contents">Guidelines</a>
                   </li>
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles and Responsibilities</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
                   </li>
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'References')" class="table-of-contents">References</a>

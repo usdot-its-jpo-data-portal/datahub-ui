@@ -57,12 +57,12 @@
       These guidelines apply to all research projects funded, either fully or partially, by the ITS JPO. Any ITS JPO-funded research project, including new awards, modifications and extensions to existing awards, and projects run by federal employees with ITS JPO funds is subject to these guidelines.
     </p>
 
-    <h2>Audience</h2>
+    <h2 id="Audience">Audience</h2>
     <p>
       These guidelines are meant to be used by project teams when creating and publishing ITS JPO-funded research data, as well as by U.S. DOT Project Managers as standards for their projects producing ITS JPO-funded research data.
     </p>
 
-    <h2>Guidelines</h2>
+    <h2 id="Guidelines">Guidelines</h2>
     <h3>A. Data Management Plan</h3>
     <p>
       Applicants must include a draft Data Management Plan (DMP) in their proposal. The U.S. DOT will use the information in the draft DMP as part of its evaluation criteria for award and may ask for clarifications or changes from applicants prior to award to ensure the U.S. DOT and/or public receives appropriate data access. The draft DMP must provide a preliminary overview of data that may be collected or created through the project, and include the following:
@@ -145,7 +145,7 @@
       The ITS JPO may request more detailed documentation and data dictionaries where necessary for users to understand and use the data.
     </p>
 
-    <h2>Implementation Roles and Responsibilities</h2>
+    <h2 id="Implementation-Roles-and-Responsibilities">Implementation Roles and Responsibilities</h2>
     <p>
       There are several key roles for implementing these guidelines. The roles are as follows:
       <ul>
