@@ -55,29 +55,29 @@ describe('DOT Microsite - Search : Results', () => {
     }
     expect(found.includes('5')).toBe(true);
   });
-  it('constains a radio button for Date ', () => {
+  it('contains a Select for sorting', () => {
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
-    let h = wrapper.find('#seg-Date');
-    expect(h.is('input')).toBe(true);
-    expect(h.html().includes('type="radio"')).toBe(true);
+    let h = wrapper.find('#sortSelector');
+    expect(h.is('select')).toBe(true);
   });
-  it('constains a label for Date ', () => {
+  it('Select for sorting has all the options', () => {
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
-    let h = wrapper.find('#seg-Date-label');
-    expect(h.is('label')).toBe(true);
-    expect(h.text()).toMatch('Date');
-  });
-  it('constains a radio button for Name ', () => {
-    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
-    let h = wrapper.find('#seg-Name');
-    expect(h.is('input')).toBe(true);
-    expect(h.html().includes('type="radio"')).toBe(true);
-  });
-  it('constains a label for Name ', () => {
-    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
-    let h = wrapper.find('#seg-Name-label');
-    expect(h.is('label')).toBe(true);
-    expect(h.text()).toMatch('Name');
+    let h = wrapper.findAll('option');
+    let expOptions = ['relevance','date','name','downloadsTotal','pageViewsLastMonth','pageViewsTotal'];
+    let options = [];
+    for(let j=0; j<h.length; j++) {
+      options.push(h.at(j).attributes().value);
+    }
+    let msg = '';
+    for(let i=0; i<expOptions.length; i++) {
+      if (!options.includes(expOptions[i])) {
+        msg += expOptions[i] +', ';
+      }
+    }
+    if (msg != '') {
+      msg = 'Missing options: ' + msg.substring(0,msg.length-2);
+    }
+    expect(msg).toBe('');
   });
   it('render the search results ', () => {
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
