@@ -55,7 +55,6 @@
 <script>
 import CompareUtils from '../utils/compare-utils.js';
 import DOTResultCard from '@/components/dot-result-card.vue';
-import compareUtils from '../utils/compare-utils.js';
 
 export default {
   name: 'DOTSearchResuls',
@@ -104,19 +103,19 @@ export default {
           this.searchResults.sort(CompareUtils.compareDate);
           break;
         case 'relevance':
-          this.searchResults.sort(compareUtils.compareESScore);
+          this.searchResults.sort(CompareUtils.compareESScore);
           break;
         case 'downloadstotal':
-          this.searchResults.sort(compareUtils.compareDownloadsTotal);
+          this.searchResults.sort(CompareUtils.compareDownloadsTotal);
           break;
         case 'pageviewslastmonth':
-          this.searchResults.sort(compareUtils.comparePageViewsLastMonth);
+          this.searchResults.sort(CompareUtils.comparePageViewsLastMonth);
           break;
         case 'pageviewstotal':
-          this.searchResults.sort(compareUtils.comparePageViewsTotal);
+          this.searchResults.sort(CompareUtils.comparePageViewsTotal);
           break;
         default:
-          this.searchResults.sort(compareUtils.compareESScore);
+          this.searchResults.sort(CompareUtils.compareESScore);
       }
       this.$store.commit('setSortBy', this.selectedSort);
       this.forceRerender();
