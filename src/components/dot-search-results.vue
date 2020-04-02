@@ -18,18 +18,14 @@
           <p class="dh-search-results__sortby-text">Sort By:&nbsp;</p>
           <div class="dh-search-results__sortby-buttons">
             <legend class="usa-sr-only">Sort results</legend>
-            <div class="usa-radio">
-              <input class="usa-radio__input" @click="dropDownFilter($event.target)" type="radio" id="seg-Relevance" name="seg-1" value="R" checked>
-              <label class="usa-radio__label" for="seg-Relevance" id="seg-Relevance-label">Relevance</label>
-            </div>
-            <div class="usa-radio">
-              <input class="usa-radio__input" @click="dropDownFilter($event.target)" type="radio" id="seg-Date" name="seg-1" value="D">
-              <label class="usa-radio__label" for="seg-Date" id="seg-Date-label">Date</label>
-            </div>
-            <div class="usa-radio">
-              <input class="usa-radio__input" @click="dropDownFilter($event.target)" type="radio" id="seg-Name" name="seg-1" value="N">
-              <label class="usa-radio__label" for="seg-Name" id="seg-Name-label">Name</label>
-            </div>
+            <select id="sortSelector" class="usa-select" v-model="selectedSort" @change="dropDownFilter">
+              <option value="relevance">Relevance</option>
+              <option value="date">Date</option>
+              <option value="name">Name</option>
+              <option value="downloadsTotal">Total Downloads</option>
+              <option value="pageViewsLastMonth">Last Month Page Views</option>
+              <option value="pageViewsTotal">Total Page Views</option>
+            </select>
           </div>
         </div>
       </div>
@@ -82,6 +78,10 @@ export default {
     isSearching: {
       get: function() { return this.$store.state.searching; },
       set: function(){}
+    },
+    selectedSort: {
+      get: function() { return this.$store.state.sortBy; },
+      set: function(val) { this.$store.commit('setSortBy', val); }
     }
   },
   methods: {
@@ -93,24 +93,32 @@ export default {
       window.scrollTo(0, 0);
     },
 
-    //Creates buttons to select how to organize search results by Name, Date or Relevance
-    dropDownFilter: function (target) {
-      if(target.id === 'seg-Date') {
-        let sortedList = this.searchResults.slice().sort(CompareUtils.compareDate);
-        this.searchResults = sortedList;
-        this.$store.commit('setSearchBy', 'date');
-        this.forceRerender();
-      } else if(target.id === 'seg-Name') {
-        let sortedList = this.searchResults.slice().sort(CompareUtils.compareName);
-        this.searchResults = sortedList;
-        this.$store.commit('setSearchBy', 'name');
-        this.forceRerender();
-      } else if(target.id === 'seg-Relevance') {
-        let sortedList = this.searchResults.slice().sort(CompareUtils.compareESScore);
-        this.searchResults = sortedList;
-        this.$store.commit('setSearchBy', 'relevance');
-        this.forceRerender();
+    dropDownFilter: function () {
+
+      switch(this.selectedSort.toLowerCase()) {
+        case 'name':
+          this.searchResults.sort(CompareUtils.compareName);
+          break;
+        case 'date':
+          this.searchResults.sort(CompareUtils.compareDate);
+          break;
+        case 'relevance':
+          this.searchResults.sort(CompareUtils.compareESScore);
+          break;
+        case 'downloadstotal':
+          this.searchResults.sort(CompareUtils.compareDownloadsTotal);
+          break;
+        case 'pageviewslastmonth':
+          this.searchResults.sort(CompareUtils.comparePageViewsLastMonth);
+          break;
+        case 'pageviewstotal':
+          this.searchResults.sort(CompareUtils.comparePageViewsTotal);
+          break;
+        default:
+          this.searchResults.sort(CompareUtils.compareESScore);
       }
+      this.$store.commit('setSortBy', this.selectedSort);
+      this.forceRerender();
     },
     forceRerender() {
       this.refreshKey += 1;

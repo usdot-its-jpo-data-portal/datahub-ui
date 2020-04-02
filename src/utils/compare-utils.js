@@ -38,5 +38,23 @@ export default {
       comparison = -1;
     }
     return comparison;
+  },
+  compareDownloadsTotal: function(a, b) {
+    if (a.metrics.downloadsTotal >= b.metrics.downloadsTotal) {
+      return -1;
+    }
+    return 1;
+  },
+  comparePageViewsLastMonth: function(a, b) {
+    if (a.metrics.pageViewsLastMonth >= b.metrics.pageViewsLastMonth) {
+      return -1;
+    }
+    return 1;
+  },
+  comparePageViewsTotal: function(a, b) {
+    if (a.metrics.pageViewsTotal >= b.metrics.pageViewsTotal) {
+      return -1;
+    }
+    return 1;
   }
 }
