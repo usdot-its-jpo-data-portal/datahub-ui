@@ -48,9 +48,10 @@ describe('DOT Microsite Resources', () => {
     let expectedSubsections = [
       {name:'Background and Purpose', found:false},
       {name:'Scope', found:false},
-      {name:'Definitions', found:false},
-      {name:'Requirements', found:false},
+      {name:'Audience', found:false},
+      {name:'Guidelines', found:false},
       {name:'Implementation Roles and Responsibilities', found:false},
+      {name:'Definitions', found:false},
       {name:'References', found:false}
     ]
     router.push({path:'/resources/guidelines'});

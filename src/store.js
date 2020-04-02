@@ -15,7 +15,7 @@ export default new Vuex.Store({
     queryObject: {term:'', phrase: false, limit: ES_QUERY_LIMIT},
     lastQueryObject: {term:'', phrase: false, limit: ES_QUERY_LIMIT},
     searching: false,
-    searchBy: 'relevance',
+    sortBy: 'relevance',
     searchError: false,
     searchMessage: '',
     MainData: [],
@@ -39,8 +39,8 @@ export default new Vuex.Store({
     setMainData(state, data) {
       state.MainData = data;
     },
-    setSearchBy(state, data){
-      state.searchBy = data;
+    setSortBy(state, data){
+      state.sortBy = data;
     },
     setIsMobile(state, data) {
       state.isMobile = data;
@@ -78,6 +78,7 @@ export default new Vuex.Store({
       commit('setMainData', []);
       commit('setSearchError', false);
       commit('setSearchMessage', '');
+      commit('setSortBy', 'relevance');
       Promise.all([webApi]).then( result => {
         if (DataUtils.validResponse(result[0])) {
           let data = [...result[0].data.result.result];
