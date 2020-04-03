@@ -3,7 +3,7 @@
     <h1>Post-Award DMP Instructions</h1>
     <h2 id="post-introduction">Introduction</h2>
     <p>
-      This following web page provides guidelines for creating a post-award Data Management Plan (DMP) to make it easier for projects to prepare their post-award DMP using a consistent format. To see a downloadable version of these instructions, as well as an associated template, please reference the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Templates &amp; Instructions</router-link> tab. To provide content and updates to these instructions or the associated template, you may provide comments through our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
+      This following web page provides guidelines for creating a post-award Data Management Plan (DMP) to make it easier for projects to prepare their post-award DMP using a consistent format. To see a downloadable version of these instructions, as well as an associated template, please reference the <router-link id="data-management-template-id-in-page" to="/resources/data-management/template-and-instructions" class="in-page-link">Templates &amp; Instructions</router-link> tab. To provide content and updates to these instructions or the associated template, please provide comments on our <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/data-access-coe-resources">GitHub page<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>.
     </p>
     <p>
       This web page provides guidelines for creating a Data Management Plan (DMP) to make it easier for projects to prepare their DMP using a consistent format. These instructions are based off of the United States Department of Transportation’s (U.S. DOT’s) National Transportation Library’s <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Guidance for Creating Data Management Plans for Extramural Research<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, and provide additional clarification for U.S. DOT’s expectations for DMPs. These instructions inform applicants of elements the U.S. DOT would like to see in a DMP, but do not serve as an approved government form or template. Applicants should use their best judgement in determining what information to include and if additional information should be incorporated into the DMP.
@@ -12,7 +12,7 @@
       The Data Management Plan (DMP) is a living document describing how researchers will handle digital data both during and after a research project, and how the research proposal conforms to U.S. DOT policy on the dissemination and sharing of research results. The DMP should adequately identify the data to be collected, how the data will further the goals of the U.S. DOT, how the data will be made accessible, how the data will be stored, and in what standard(s) the data will use.
     </p>
     <p>
-      A preliminary DMP with Project Overview, Data Overview, and Data Stewardship section details must be created for the proposal phase of a research project. It is important to note that projects applying and receiving funding from ITS JPO are required to submit DMPs when applying for funding (a preliminary DMP) and after award (a post-award DMP).  The preliminary DMP will evolve into the post-award DMP, and should be updated regularly to capture pertinent changes to a project's data management procedure and/or data, including schema changes.
+      A DMP should build on any preliminary DMP submitted during the application phase of a project and be updated regularly to capture pertinent changes to a project's data management procedures and/or data, including schema changes. It is recommended that DMPs do not initially exceed five pages more than the project’s preliminary DMP and should grow over the course of the project as more data are added and processes evolve. However, projects should refer to any solicitation or project documentation for specific page requirements.
     </p>
     
     <h2 id="post-project-overview">1. Project Overview</h2>
@@ -30,6 +30,9 @@
         </li>
         <li>
           <strong>Project Life Cycle Phase:</strong> Please provide the phase in project life cycle as of the date of the DMP or revision thereof. Phases include: planning, pre-award, award, post award, and closeout.
+        </li>
+        <li>
+          <strong>Project Performance Measurements:</strong> Briefly describe any performance measurements the project will use and how the data collected support these measurements, if appropriate.
         </li>
       </ul>
     </p>
@@ -102,7 +105,7 @@
       Providing appropriate data access to safeguard data is a key aspect of data stewardship. In accordance with the OPEN Government Data Act, datasets must be made publicly accessible unless specific concerns require the data to have controlled-access. Please detail which data require controlled-access, reasons for controlling access to data, and methods taken to safeguard these data.
     </p>
     <p>
-      Controlled-access is defined as restricting access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI), please see Requirements Section B. Access Requirements on the <router-link id="data-management-template-id-in-page" to="/resources" class="in-page-link">Guidelines page</router-link>.  
+      Controlled-access is defined as restricting access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI).  
     </p>
     
     <h4>3.2.1 Can all of the data from this project be shared with the public, or is controlled-access required for at least some of the data?</h4>
@@ -142,9 +145,14 @@
       If your project contains human subject research, please describe how informed consent forms will permit sharing with the research community and whether additional steps, such as an Institutional Review Board (IRB) may be used to protect privacy and confidentiality. Please refer to <a target="_blank" href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research" rel="noopener noreferrer"> NTL's web page on Creating Data Management Plans for Extramural Research<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a> for more information.
     </p>
 
-    <h4>3.2.5	Relevant Privacy and/or Security Agreements</h4>
+    <h4>3.2.4 Access Requests</h4>
     <p>
-      If applicable, for each dataset provide a list of relevant privacy and/or security agreements (e.g., non-disclosure agreements, rules of behavior, memoranda of understanding, confidentiality agreements, sub-contracts, etc.) that apply to these data and its users, including circumstances when these agreements would be used.
+      For each dataset, describe what processes you follow to allow full access to this data if requested, including criteria a user must pass to gain this access (e.g. for a specific business purpose, if the user is a part of a certain user group, a member of the research team, etc.).
+    </p>
+
+    <h4>3.2.5 Related Tools, Software and/or Code</h4>
+    <p>
+      List any specialized tools that are needed to access, analyze or manipulate the data to support reuse or replication, and name(s) of the needed tool(s) and software. Specify how any needed tools can be accessed (i.e., open source and freely available, generally available for a fee in the marketplace, or available only from the research team or some other source).
     </p> 
     
     <h3>3.3	Re-Use, Redistribution, and Derivative Products Policies</h3>
@@ -177,7 +185,10 @@
       In this section, list all of the data storage systems that are used to store the research project’s data, provide details on those data systems, and specify how long the data will be stored in each system.
     </p>
     <p>
-      A public access system provides full data access to the public. A controlled-access system restricts access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI), please see Requirements Section B. Access Requirements on the <router-link id="data-management-template-id-in-page" to="/resources" class="in-page-link">Guidelines page</router-link>.  An applicant system is managed by the applicant, a U.S. DOT system is managed by the U.S. DOT, and a third-party system is a system that is managed by a person, group or organization other than the U.S. DOT or the applicant.
+      A public access system provides full data access to the public. A controlled-access system restricts access to certain groups of persons due to data containing personally identifiable information (PII), information that threatens privacy of an individual or group, information that threatens confidentiality of a person or group, and/or contains confidential business information (CBI).  
+    </p>
+    <p>
+      An applicant system is managed by the applicant, a U.S. DOT system is managed by the U.S. DOT, and a third-party system is a system that is managed by a person, group or organization other than the U.S. DOT or the applicant.
     </p>
     <p>
       Suggested elements for this section include, but are not limited to:
@@ -246,9 +257,9 @@
     </p>
 
     <h2 id="post-data-standards">4. Data Standards</h2>
-    <h3>4.1	Collection Format Standards</h3>
+    <h3>4.1	Data Standards</h3>
     <p>
-      Please describe the data standards used, provide access to the data’s metadata and data dictionary, and provide any requirements for reading the data.
+      Please provide details on the data standard(s) used for each dataset and provide access to the data’s metadata and data dictionary.
     </p>
     <p>
       Suggested elements for this section include, but are not limited to:
@@ -257,19 +268,19 @@
           <strong>Dataset Title:</strong> Provide the dataset title. 
         </li>
         <li>
-          <strong>Data Collection Format Standard(s):</strong> List the name(s) of the format(s) in which the data is be collected, submitted, and/or preserved (note that these formats may be the same).
+          <strong>Data Standard(s):</strong> List the name(s) of the data standard(s) in which the data are made available to the U.S. DOT.
         </li>
         <li>
           <strong>Data Collection Format Standard Uniform Research Identifier(s) (URIs):</strong> List the URIs of the data collection format standard(s) for the data.
         </li>
         <li>
-          <strong>Open or Proprietary?:</strong> Indicate whether the data collection format standard is “Open” or “Proprietary.” It is important to note that data submitted to ITS JPO should be platform-independent and non-proprietary to ensure that they will be accessible.
+          <strong>Data Standard Digital Object Identifier(s) (DOI[s]):</strong>List the DOI(s) of the standard(s) for the data. If possible, provide a URL to the data standard(s).
         </li>
         <li>
-          <strong>Collection Format Rationale:</strong> Provide an explanation for using the chosen data collection format. If you are using proprietary or non-standard data formats, discuss your rationale for using those standards and formats here. If you are using standard data formats, also state that here and why the standard applies to this dataset.
+          <strong>Open or Proprietary?:</strong> Indicate whether the data standard(s) is/are “Open” or “Proprietary.” It is important to note that data submitted to ITS JPO should be platform-independent and non-proprietary to ensure that they will be accessible.
         </li>
         <li>
-          <strong>Access Tools:</strong> List any special tools required to read or view this data and/or its data standards, including tools needed for all types of workstations (e.g. personal computer (PC), Mac, Chromebook, etc.).
+          <strong>Data Standard(s) Rationale:</strong> Provide an explanation for using the chosen data standard(s). If you are using a proprietary or non-standard data standard, discuss your rationale for using that standard here. If you are using a non-proprietary data standard, also state that here and why the standard applies to this dataset.
         </li>
       </ul>
     </p>
