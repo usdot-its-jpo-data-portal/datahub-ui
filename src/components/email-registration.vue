@@ -20,7 +20,7 @@
       </div>
       <div class="controls">
         <input v-model="email" v-bind:class="valid ? 'form-control valid' : 'form-control invalid'" id="input-email-address" aria-describedby="emailHelp" placeholder="Email address" value.two-way="email" v-on:keydown="keyPress">
-        <button type="button" class="btn btn-primary" v-on:click="signup()">Sign Up <img src="/images/icons/external-link_ffffff.svg" alt="External link icon"> </button>
+        <button type="button" class="btn btn-primary" v-on:click="signup()" id="btn_submit-email-address">Sign Up <img src="/images/icons/external-link_ffffff.svg" alt="External link icon"> </button>
       </div>
     </div>
 
