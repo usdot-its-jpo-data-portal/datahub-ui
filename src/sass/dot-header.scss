@@ -24,7 +24,6 @@
 
 .usa-logo__text {
   @extend .usa-logo__text;
-  // font-size: units(4);
   .dh-logo__text-subtitle {
     color: $dh-color-navy;
     font-weight: normal;
@@ -56,6 +55,9 @@
 
 .usa-nav__primary{
     @extend .usa-nav__primary;
+    @include at-media ($theme-navigation-width){
+        margin-right: -1rem;
+    }
     > .usa-nav__primary-item{
         @extend .usa-nav__primary-item;
         > a{
@@ -71,7 +73,8 @@
 .usa-nav__secondary{
     @extend .usa-nav__secondary;
     @include at-media ($theme-navigation-width){
-        bottom: 6.5rem;
+        bottom: 1.5rem;
+        right: 0rem;
         & .dh-header__secondary-links .usa-nav__secondary-links a{
             color: $dh-color-white;
             margin-bottom: units(9);
@@ -121,16 +124,37 @@
 #dh-nav{
     @include at-media($theme-navigation-width) {
         border-top: none;
-        border-bottom: units(1px) solid color('base-lighter');
-        padding-bottom: units(1.5)
+        
+        padding-bottom: units(1.5);
+        align-self: center;
     }
+}
+.usa-nav-container{
+    border-bottom: units(1px) solid color('base-lighter');
 }
 
 @include at-media($theme-navigation-width){
-    .usa-header--extended .usa-navbar{
-        border-bottom: 1px solid #E6DDDD;
+    .usa-header--extended .usa-navbar,
+    .usa-header--basic .usa-navbar{
         #extended-logo{
             margin: 1rem 0 1.5rem;
+            max-width: unset;
         }
+    }
+    .usa-header--extended .usa-navbar,
+    .usa-header--basic .usa-navbar {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: inline-block;
+        height: auto;
+        overflow: auto;
+    }
+    .usa-header--extended .usa-nav__inner{
+        padding-right:  0rem;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }

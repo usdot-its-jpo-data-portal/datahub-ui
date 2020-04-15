@@ -9,7 +9,7 @@
         <div class="dh-home__main-search__callout-inputs">
           <label class="usa-label" for="mainSearch">Search</label>
           <input :class="isInvalid ? 'usa-input--error' : 'usa-input'" id="mainSearch" v-model="queryText" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
-          <button v-on:click="searchSend(queryText)">Search</button>
+          <button type="submit" id="btn_home-page_search" v-on:click="searchSend(queryText)">Search</button>
         </div>
       </div>
     </div>
