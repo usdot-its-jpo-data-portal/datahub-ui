@@ -63,43 +63,39 @@
     <h2 id="section-heading-h2">What are the differences between primary research data and derived research data?</h2>
     <p>The two tables below describe the general classification criteria for whether data is considered primary or derived.</p>
     <div class="research-data__wrapper">
-      <table class="research-data__table usa-table" id="primary-research-data__table">
-        <tr>
-          <th>Primary Research Data</th>
-        </tr>
+      <div class="research-data__table usa-table" id="primary-research-data__table">
+        <div class="research-data__table-header">
+          <span>Primary Research Data</span>
+        </div>
         
-        <tr>
-          <td id="align-tables__cell">
-            <ul>
-              <li>Original raw data collected during research that can be used for further analysis</li>
-              <li>Examples: SHRP 2, ICM, CV</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td class="research-data__table-footer">data.transportation.gov
+        <div>
+          <ul>
+            <li>Original raw data collected during research that can be used for further analysis</li>
+            <li>Examples: SHRP 2, ICM, CV</li>
+          </ul>
+        </div>
+        <div class="research-data__table-footer">
+          <span>data.transportation.gov
             <br>
             ITS Sandbox
-          </td>
-        </tr>
-      </table>
-      <table class="research-data__table usa-table" id="derived-research-data__table">
-        <tr>
-          <th>Derived Research Data</th>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>Data derived through analysis of other data and shared as part of a final report to communicate the methodology and findings of a research project</li>
-              <li>Must reference the primary data it builds upon</li>
-              <li>Examples: SHRP2 Subprojects, AMS</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td class="research-data__table-footer">National Transportation Library</td>
-        </tr>
-      </table>
+          </span>
+        </div>
+      </div>
+      <div class="research-data__table usa-table" id="derived-research-data__table">
+        <div class="research-data__table-header">
+          <span>Derived Research Data</span>
+        </div>
+        <div>
+          <ul>
+            <li>Data derived through analysis of other data and shared as part of a final report to communicate the methodology and findings of a research project</li>
+            <li>Must reference the primary data it builds upon</li>
+            <li>Examples: SHRP2 Subprojects, AMS</li>
+          </ul>
+        </div>
+        <div class="research-data__table-footer">
+          <span>National Transportation Library</span>
+        </div>
+      </div>
     </div>
 
     <h2>What is the purpose of a preliminary DMP and a post-award DMP?</h2>
