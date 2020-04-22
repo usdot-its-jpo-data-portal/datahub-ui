@@ -131,6 +131,11 @@ export default new Router({
           name: 'faqs',
           components: { resources: () => import('./views/resources/faqs.vue')}
         },
+        {
+          path: '/resources/data-management/additional-resources',
+          name: 'additional-resources',
+          components: { resources: () => import('./views/resources/additional-resources.vue')}
+        }
       ]
     },
     {
