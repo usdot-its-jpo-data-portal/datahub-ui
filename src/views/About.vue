@@ -14,10 +14,10 @@
 
           <h2 id="section-heading-h2">Available Data</h2>
           <p>
-            ITS DataHub is home to a wide variety of datasets created using ITS technologies. ITS DataHub’s datasets contain various types of information including, but not limited to connected vehicle messages, trajectories, field test data, sensor data, connected equipment data, weather data, and application messages. Data where the schema may change is considered “immature” and is stored in a “sandbox” data environment to allow for more flexibility while the data structure matures through researcher feedback. Through ITS DataHub, datasets are all searchable in one central location.
+            A wide variety of datasets created using ITS technologies are discoverable on ITS DataHub. Through ITS DataHub, datasets are all searchable in one central location. ITS DataHub’s datasets contain various types of information including, but not limited to, connected vehicle messages, automated vehicle data, trajectories, field test data, sensor data, connected equipment data, weather data, and application messages. Large, continuously expanding, or immature data is stored in a “sandbox” data environment.
           </p>
           <p>
-            Check ITS DataHub often for updates!
+            Many of the datasets found through ITS DataHub are published in near-real, decreasing the time from research to insight. Check ITS DataHub often for updates including new datasets!
           </p>
 
           <h2 id="section-heading-h2">Contact Information</h2>
