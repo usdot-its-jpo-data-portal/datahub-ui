@@ -17,7 +17,7 @@
             A wide variety of datasets created using ITS technologies are discoverable on ITS DataHub. Through ITS DataHub, datasets are all searchable in one central location. ITS DataHub’s datasets contain various types of information including, but not limited to, connected vehicle messages, automated vehicle data, trajectories, field test data, sensor data, connected equipment data, weather data, and application messages. Large, continuously expanding, or immature data is stored in a “sandbox” data environment.
           </p>
           <p>
-            Many of the datasets found through ITS DataHub are published in near-real, decreasing the time from research to insight. Check ITS DataHub often for updates including new datasets!
+            Many of the datasets found through ITS DataHub are published in near-real time, decreasing the time from research to insight. Check ITS DataHub often for updates including new datasets!
           </p>
 
           <h2 id="section-heading-h2">Contact Information</h2>
