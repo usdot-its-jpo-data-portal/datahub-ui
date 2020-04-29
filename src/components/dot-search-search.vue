@@ -27,7 +27,7 @@
           <div class="grid-col-fill dh-search__search-inputs">
             <label class="usa-label" for="searchInput">Search for datasets</label>
             <input :class="isInvalid ? 'usa-input--error' : 'usa-input'" id="searchInput" v-model="queryText.term" v-on:keyup.enter="searchSend(queryText)" :placeholder="search_placeholder">
-            <button v-on:click="searchSend(queryText)">
+            <button v-on:click="searchSend(queryText)" id="results-page_search-button">
               <img src="/images/icons/icon-magnifier.svg" alt="Search">
             </button>
           </div>
