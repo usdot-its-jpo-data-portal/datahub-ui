@@ -2,7 +2,7 @@
   <div class="grid-container dh-result-card__wrapper">
     <div class="grid-row">
       <div class="grid-col-fill dh-result-card__title">
-        <a :href="item.sourceUrl" target="_blank">
+        <a :href="item.sourceUrl" target="_blank" class="search-result-link">
           {{ item.name }}
           <img class="in-line-dot-link-new-tab search-results" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
         </a>
