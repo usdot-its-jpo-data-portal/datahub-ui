@@ -3,12 +3,12 @@
 
     "datasets": [
        
-        {   "name": "Tampa Connected Vehicle Pilot Basic Safety Message Visualization", 
-            "description": "A visualization portal for the Tampa CV Pilot Basic Safety Messages.", 
-            "url": "https://data.transportation.gov/Automobiles/Speed-coloured-points/qkm7-rymj/", 
-            "image": "./images/tampa-connected-vehicle-pilot-basic-safety-message-visualization.jpeg",
-            "altText": "Map of Tampa CV Pilot Basic Safety Messages on data.transportation.gov" 
-        },
+        {   "name": "Connected Vehicle Pilot Open Data Story", 
+            "description": "Calling all ITS and Traffic Safety Researchers - discover CV Pilot Open Data, the research tools and support available, and ways you can access them to support your projects.", 
+            "url": "https://data.transportation.gov/stories/s/Connected-Vehicle-Pilot-Sandbox/hr8h-ufhq", 
+            "image": "./images/connected_vehicle_pilot.jpg",
+            "altText": "Link to Overview of CV Pilot data and research tools on data.transportation.gov"
+        }, 
         {   "name": "AZTech Partnership (Maricopa County, Arizona) WZDx specification version 1.1 Data Sample",
             "description": "Data containing a sample of ADOT freeway and MCDOT arterial road work zone data dissemination through Work Zone Data Exchange project.",
             "url": "https://datahub.transportation.gov/Roadways-and-Bridges/Maricopa-County-Regional-Work-Zone-Data-Exchange-W/wd94-wugt",
