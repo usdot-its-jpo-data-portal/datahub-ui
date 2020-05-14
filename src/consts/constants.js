@@ -18,7 +18,7 @@ export const COE_TOOLTIP_CLOSEOUT = 'The Closeout project life cycle phase occur
 export const ES_QUERY_LIMIT = 1000;
 export const CC_LIST_ID = 1335295517;
 
-export const EMAIL_MESSAGE = 'Join our mailing list! Stay up to date on new features and repositories!';
+export const EMAIL_MESSAGE = 'Join our mailing list! Stay up to date on new features and datasets!';
 export const EMAIL_MESSAGE_ALERT = 'There is a problem with the registration service, please try again later.';
 export const EMAIL_MESSAGE_INVALID_EMAIL = 'Invalid email format, please try again.';
 

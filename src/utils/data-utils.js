@@ -16,6 +16,6 @@ export default {
     }
   },
   validCCResponse: function(response) {
-    return response && response.status === 200 && response.data && response.data.code === 200;
+    return response && response.status === 200 && response.data && (response.data.code === 200 || response.data.code === 201);
   }
 }
