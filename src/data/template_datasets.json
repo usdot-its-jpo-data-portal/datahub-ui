@@ -4,7 +4,7 @@
     "datasets": [
        
         {   "name": "Connected Vehicle Pilot Open Data Story", 
-            "description": "Calling all ITS and Traffic Safety Researchers - discover CVP Open Data and the research tools and support available and how you can access it to support your projects.", 
+            "description": "Calling all ITS and Traffic Safety Researchers - discover CV Pilot Open Data, the research tools and support available, and ways you can access them to support your projects.", 
             "url": "https://data.transportation.gov/stories/s/Connected-Vehicle-Pilot-Sandbox/hr8h-ufhq", 
             "image": "./images/connected_vehicle_pilot.jpg",
             "altText": "Link to Overview of CV Pilot data and research tools on data.transportation.gov"
