@@ -32,11 +32,6 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/metrics',
-      name: 'metrics',
-      component: () => import('./views/Metrics.vue')
-    },
-    {
       path: '/data-access-coe',
       components: { default: () => import('./views/DataAccessCoE.vue')},
       children: [
@@ -130,6 +125,11 @@ export default new Router({
           path: '/resources/data-management/faqs',
           name: 'faqs',
           components: { resources: () => import('./views/resources/faqs.vue')}
+        },
+        {
+          path: '/resources/metrics',
+          name: 'metrics',
+          component: () => import('./views/resources/metrics.vue')
         },
         {
           path: '/resources/data-management/additional-resources',

@@ -107,6 +107,9 @@
               <li id="faqs" class="usa-sidenav__item">
                 <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
               </li>
+              <li id="metrics" class="usa-sidenav__item">
+                <router-link id="id-metrics" to="/resources/metrics" class="page" :class=" isVisible('metrics') ? 'usa-current' : '' ">Metrics</router-link>
+              </li>
               <li id="additional-resources" class="usa-sidenav__item">
                 <router-link id="id-additional-resources" to="/resources/data-management/additional-resources" class="page" :class=" isVisible('additional-resources') ? 'usa-current' : '' ">Additional Resources</router-link>
               </li>

@@ -1,9 +1,9 @@
 <template>
-  <div class="dh-metrics__wrapper">
+  <!-- <div class="dh-metrics__wrapper">
     <div class="usa-layout-docs usa-section" id="main-content">
       <div class="grid-container">
-        <div class="grid-row grid-gap">
-          <aside v-if="!isMobile" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-metrics__sidemenu">
+        <div class="grid-row grid-gap"> -->
+          <!-- <aside v-if="!isMobile" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-metrics__sidemenu">
             <nav>
               <ul class="usa-sidenav">
                 <li class="usa-sidenav__item">
@@ -31,7 +31,7 @@
                 </li>
               </ul>
             </nav>
-          </aside>
+          </aside> -->
 
           <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose dh-metrics__document">
             <h1>ITS DataHub Metrics Dashboard</h1>
@@ -299,10 +299,10 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>

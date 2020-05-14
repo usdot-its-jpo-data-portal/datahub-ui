@@ -37,7 +37,7 @@
 </template>
 <script>
 export default {
-  name: 'Additional Resources'
+  name: 'AdditionalResources'
 }
 </script>
 <style lang="scss" scoped>
