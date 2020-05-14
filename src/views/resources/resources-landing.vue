@@ -2,11 +2,11 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <h1>Overview</h1>
     <p>
-      Here data providers, project teams, project managers, and program managers will find the ITS DataHub Guidelines as well as resources for conducting proper data management and interacting with ITS DataHub.
+      Here data providers, project teams, project managers, and program managers will find the Data Access Guidelines as well as resources for conducting proper data management and interacting with ITS DataHub.
     </p>
     <ul>
       <li>
-        <strong>ITS DataHub Guidelines</strong>: Details the ITS JPO’s data access and management requirements for project teams when creating and publishing ITS JPO-funded research data, and standards for U.S. DOT Project Managers whose projects produce ITS JPO-funded research data.
+        <strong>Data Access Guidelines</strong>: Details the ITS JPO’s data access and management requirements for project teams when creating and publishing ITS JPO-funded research data, and standards for U.S. DOT Project Managers whose projects produce ITS JPO-funded research data.
       </li>
       <li>
         <strong>Data Management</strong>: Support for proper and required data management practices.
