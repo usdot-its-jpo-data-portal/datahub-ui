@@ -10,7 +10,7 @@
                 <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
               </li>
               <li id="guidelines" class="usa-sidenav__item" :class=" isVisible('guidelines') ? 'usa-current_left-menu' : '' ">
-                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">ITS DataHub Guidelines</router-link>
+                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
                 <ul v-if="isVisible('guidelines')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background and Purpose</a>
@@ -20,9 +20,6 @@
                   </li>
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Guidelines')" class="table-of-contents">ITS DataHub Guidelines</a>
                   </li>
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles and Responsibilities</a>

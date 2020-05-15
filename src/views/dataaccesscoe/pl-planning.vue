@@ -41,7 +41,7 @@
       <em>Resources</em>
       <ul>
         <li>
-          <router-link to="/resources/guidelines">ITS DataHub Guidelines</router-link> – these are ITS JPO’s overall guidelines and requirements for data access and management.
+          <router-link to="/resources/guidelines">Data Access Guidelines</router-link> – these are ITS JPO’s overall guidelines and requirements for data access and management.
         </li>
         <li>
           <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions – a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
