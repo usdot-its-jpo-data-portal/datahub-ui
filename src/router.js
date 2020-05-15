@@ -129,7 +129,7 @@ export default new Router({
         {
           path: '/resources/metrics',
           name: 'metrics',
-          component: () => import('./views/resources/metrics.vue')
+          components: { resources: () => import('./views/resources/metrics.vue')}
         },
         {
           path: '/resources/data-management/additional-resources',
