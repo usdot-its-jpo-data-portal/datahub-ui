@@ -22,9 +22,6 @@
                     <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Guidelines')" class="table-of-contents">Data Access Guidelines</a>
-                  </li>
-                  <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles and Responsibilities</a>
                   </li>
                   <li class="usa-sidenav__item">
