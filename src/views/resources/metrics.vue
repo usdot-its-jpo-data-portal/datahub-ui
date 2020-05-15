@@ -1,39 +1,16 @@
-<template>
+<template> 
   <!-- <div class="dh-metrics__wrapper">
     <div class="usa-layout-docs usa-section" id="main-content">
       <div class="grid-container">
         <div class="grid-row grid-gap"> -->
           <!-- <aside v-if="!isMobile" class="usa-layout-docs__sidenav sidenav desktop:grid-col-3 dh-metrics__sidemenu">
             <nav>
-              <ul class="usa-sidenav">
-                <li class="usa-sidenav__item">
-                    <span class="page usa-current">Metrics</span>
-                  <ul class="usa-sidenav__sublist">
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event, 'dataset-highlights')" class="table-of-contents">Dataset Highlights</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event, 'dtg-dataset-details')" class="table-of-contents">DTG Dataset Details data.transportation.gov</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event, 'ntl-datset-details')" class="table-of-contents">NTL Dataset Details National Transportation Library</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event, 'sandbox-datasets')" class="table-of-contents">Sandbox Datasets</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event, 'github-repository-views')" class="table-of-contents">DataHub (Microsite) & Sandbox GitHub Repository Views</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event, 'datahub-usage-metrics')" class="table-of-contents">DataHub Usage Metrics</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              
             </nav>
           </aside> -->
-
-          <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose dh-metrics__document">
+        <!--  -->
+          <div class="usa-layout-docs__main desktop:grid-col-9 dh-metrics__document ">
+            <div class="dh-metrics__wrapper usa-prose">
             <h1>ITS DataHub Metrics Dashboard</h1>
             <p class="usa-intro">Below is the ITS DataHub metrics dashboard. The metrics dashboard provides statistics on user activity on the ITS DataHub, data.transportation.gov (DTG), and the National Transportation Library (NTL). Statistics include data and page views, data downloads, programmatic data access, and GitHub Repository views.</p>
             <!-- implementation base on https://usdotjpoode.atlassian.net/wiki/spaces/RDA/pages/678494209/New+iframes+for+DataHub+-+USWDS -->
@@ -247,60 +224,16 @@
                 </div>
               </div>
             </div>
-
-            <h2 v-if="!isMobile" id="github-repository-views" >DataHub (Microsite) & Sandbox GitHub Repository Views</h2>
-            <div v-if="!isMobile" class="grid-container">
-              <div class="grid-row">
-                <div class="desktop:grid-col-12 mobile:grid-col-12">
-                  <!-- 22 -->
-                  <DOTIFrame
-                    class="dh-metrics__iframe dh-metrics__iframe-chart-xl"
-                    title="DataHub (Microsite) & Sandbox GitHub Repository Views"
-                    src="https://datastudio.google.com/embed/reporting/1f4hWuwDCBsF207ZKzSrg0jQGU7scVdw6/page/0bOK" />
-                </div>
-              </div>
-            </div>
-
-            <h2 v-if="!isMobile" id="datahub-usage-metrics">DataHub Usage Metrics</h2>
-            <div v-if="!isMobile" class="grid-container">
-              <div class="grid-row">
-                <div class="desktop:grid-col-12 mobile:grid-col-12">
-                  <!-- 23 -->
-                  <DOTIFrame
-                    class="dh-metrics__iframe dh-metrics__iframe-chart-xl"
-                    title="DataHub Pageviews"
-                    src="https://datastudio.google.com/embed/reporting/1A5RJRUpOCiEumai6jyaRU0YWuz7mVpnM/page/0bOK" />
-                </div>
-              </div>
-              <div class="grid-row">
-                <div class="desktop:grid-col-6 mobile:grid-col-12">
-                  <!-- 24 -->
-                  <DOTIFrame
-                    class="dh-metrics__iframe dh-metrics__iframe-chart"
-                    title="User Sessions by Source (How did users get to DataHub)"
-                    src="https://datastudio.google.com/embed/reporting/1BEoBiibq3-2Tw8IQrl42rWMrfRPQbdyi/page/0bOK" />
-                </div>
-                <div class="desktop:grid-col-6 mobile:grid-col-12">
-                  <!-- 25 -->
-                  <DOTIFrame
-                    class="dh-metrics__iframe dh-metrics__iframe-chart"
-                    title="Users by Country"
-                    src="https://datastudio.google.com/embed/reporting/1W_xY32IzwOHxJtl6wRzNWDQOCFz4Zl3L/page/0bOK" />
-                </div>
-              </div>
-              <div class="grid-row">
-                <div class="desktop:grid-col-12 mobile:grid-col-12">
-                  <!-- 26 -->
-                  <DOTIFrame
-                    class="dh-metrics__iframe dh-metrics__iframe-chart-xl"
-                    title="Summary of DataHub (Microsite) Pageviews by Metro Area"
-                    src="https://datastudio.google.com/embed/reporting/1Fmdvoxh3IlmAmNsk1C5Y2uhoQvV1qyAv/page/0bOK" />
-                </div>
-              </div>
+          
+          
+          
+          
+          
+          
             </div>
           </div>
-        <!-- </div>
-      </div>
+        <!-- </div> -->
+      <!-- </div>
     </div>
   </div> -->
 </template>

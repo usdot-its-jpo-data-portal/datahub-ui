@@ -109,6 +109,26 @@
               </li>
               <li id="metrics" class="usa-sidenav__item">
                 <router-link id="id-metrics" to="/resources/metrics" class="page" :class=" isVisible('metrics') ? 'usa-current' : '' ">Metrics</router-link>
+                  <ul class="usa-sidenav__sublist">
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event, 'dataset-highlights')" class="table-of-contents">Dataset Highlights</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event, 'dtg-dataset-details')" class="table-of-contents">DTG Dataset Details data.transportation.gov</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event, 'ntl-datset-details')" class="table-of-contents">NTL Dataset Details National Transportation Library</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event, 'sandbox-datasets')" class="table-of-contents">Sandbox Datasets</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event, 'github-repository-views')" class="table-of-contents">DataHub (Microsite) & Sandbox GitHub Repository Views</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event, 'datahub-usage-metrics')" class="table-of-contents">DataHub Usage Metrics</a>
+                    </li>
+                  </ul>
               </li>
               <li id="additional-resources" class="usa-sidenav__item">
                 <router-link id="id-additional-resources" to="/resources/data-management/additional-resources" class="page" :class=" isVisible('additional-resources') ? 'usa-current' : '' ">Additional Resources</router-link>
