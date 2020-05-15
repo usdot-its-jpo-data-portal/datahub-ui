@@ -107,5 +107,4 @@ describe('DOT Microsite - Search : Results', () => {
     let h = wrapper.find('.dh-search-results_list-no-results');
     expect(h.text()).toMatch('No search results.');
   });
-
 });

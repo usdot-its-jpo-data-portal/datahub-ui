@@ -1,6 +1,7 @@
+import moment from 'moment';
 export default {
   validResponse: function(response) {
-    return response && response.status === 200 && response.data && response.data.code === 200 && response.data.result;
+    return response && response.status === 200 && response.data && [200,201,204].includes(response.data.code) && response.data.result;
   },
   getErrors: function(response) {
     if (!this.validResponse(response)) {
@@ -16,6 +17,15 @@ export default {
     }
   },
   validCCResponse: function(response) {
-    return response && response.status === 200 && response.data && (response.data.code === 200 || response.data.code === 201);
+    return response && response.status === 200 && response.data && [200,201,204].includes(response.data.code);
+  },
+  resolveVersion: function(pkgJson) {
+    if(!pkgJson || !pkgJson.version) {
+      return null;
+    }
+    let dt = moment().utc().format("YYMMDDHHmm");
+    let vers = pkgJson.version.split('.');
+    let v = vers[0]+'.'+vers[1]+'.'+dt;
+    return v;
   }
 }

@@ -1,0 +1,22 @@
+[
+  {
+      "id": "2f8a64ac-492a-4fbc-b0e5-db0333aab80e",
+      "name": "Test 1",
+      "description": "Test 1 description",
+      "lastModified": "2020-05-18T20:12:20.000+0000",
+      "content": "<h1>Test 1</h1>",
+      "controlsColor": "black",
+      "controlsShadow": "white",
+      "isActive": true
+  },
+  {
+    "id": "2f8a64ac-492a-4fbc-b0e5-db0333aab81f",
+    "name": "Test 2",
+    "description": "Test 2 description",
+    "lastModified": "2020-05-18T20:12:20.000+0000",
+    "content": "<h1>Test 2</h1>",
+    "controlsColor": "black",
+    "controlsShadow": "white",
+    "isActive": true
+  }
+]
