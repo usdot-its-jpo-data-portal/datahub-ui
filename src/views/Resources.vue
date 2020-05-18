@@ -104,6 +104,23 @@
               <li id="faqs" class="usa-sidenav__item">
                 <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
               </li>
+              <li id="metrics" class="usa-sidenav__item">
+                <router-link id="id-metrics" to="/resources/metrics" class="page" :class=" isVisible('metrics') ? 'usa-current' : '' ">Metrics</router-link>
+                <ul v-if="isVisible('metrics')" class="usa-sidenav__sublist">
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event, 'dataset-highlights')" class="table-of-contents">Dataset Highlights</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event, 'dtg-dataset-details')" class="table-of-contents">DTG Dataset Details data.transportation.gov</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event, 'ntl-datset-details')" class="table-of-contents">NTL Dataset Details National Transportation Library</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event, 'sandbox-datasets')" class="table-of-contents">Sandbox Datasets</a>
+                  </li>
+                </ul>
+              </li>
               <li id="additional-resources" class="usa-sidenav__item">
                 <router-link id="id-additional-resources" to="/resources/data-management/additional-resources" class="page" :class=" isVisible('additional-resources') ? 'usa-current' : '' ">Additional Resources</router-link>
               </li>

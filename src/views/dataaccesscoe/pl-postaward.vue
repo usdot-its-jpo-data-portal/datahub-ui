@@ -87,7 +87,7 @@
           <router-link to="/resources/data-storage-system">Data Storage Systems Web Page</router-link> – a web page describing different data storage systems available and decision points for choosing where to store data.
         </li>
         <li>
-          <router-link to="/metrics">Data Use Metrics</router-link> – metrics about the use of datasets hosted on U.S. DOT-management systems. Contact
+          <router-link to="/resources/metrics">Data Use Metrics</router-link> – metrics about the use of datasets hosted on U.S. DOT-management systems. Contact
           <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
           for more help with metrics.
         </li>
