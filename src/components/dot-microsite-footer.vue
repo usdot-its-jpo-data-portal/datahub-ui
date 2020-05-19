@@ -37,7 +37,7 @@
             <div class="tablet:grid-col-auto">
               <div class="grid-row grid-gap">
                 <div class="grid-col-auto cdh_usa-footer__logo-img-wrapper">
-                  <img id="usa-footer__logo-img" class="usa-footer__logo-img" src="/images/usdepartmentoftransportation_white.svg" alt>
+                  <img v-on:dblclick="vHandler($event)" id="usa-footer__logo-img" class="usa-footer__logo-img" src="/images/usdepartmentoftransportation_white.svg" alt>
                 </div>
               </div>
               <hr class="footer-divider" id="footer-divider_top">
@@ -48,10 +48,10 @@
                     <div class=" grid-row grid-gap">
                       <div class="grid-col-auto">
                         <a id="dh-footer_contact-us-email" :href="`mailto:${contact_email}`">{{contact_email}}</a>
-                        <!-- <div class="dh-footer__version-id">
+                        <div v-if="vVisible" class="dh-footer__version-id">
                           Version: {{versionId}}
-                          <span v-if="buildId" ><br>Build: {{buildId}}</span>
-                        </div> -->
+                          <span v-if="buildId" >&nbsp;Build: {{buildId}}</span>
+                        </div>
                       </div>
                     </div>
                   </address>
@@ -123,6 +123,7 @@ export default {
   data: function(){
     return {
             valid: true,
+            vVisible: false,
             contact_email:"",
             email: '',
             element: '',
@@ -226,6 +227,14 @@ export default {
             }
           }
           return true;
+        },
+        vHandler(event) {
+          if(event.altKey) {
+            this.vVisible = true;
+            setTimeout(()=>{
+              this.vVisible = false;
+            }, 3000);
+          }
         }
     }
 }

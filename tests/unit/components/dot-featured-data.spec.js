@@ -49,5 +49,4 @@ describe('DOT Microsite - Home : Featured Search', () => {
       expect(d.text()).toMatch(wrapper.vm.datasets[i].desc);
     }
   });
-
 });

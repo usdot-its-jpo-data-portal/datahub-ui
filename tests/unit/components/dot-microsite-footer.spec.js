@@ -13,54 +13,9 @@ describe('DOT Microsite Footer', () => {
     };
   });
 
-  // it('constains a text to the SDC page', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_sdc-link');
-  //   expect(v.text()).toMatch('Secure Data Commons');
-  // });
-  // it('the link of the SDC Page contains an icon', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_sdc-link');
-  //   expect(v.html().includes('<img src="')).toBe(true);
-  // });
-  // it('constains a text Sandbox Data', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_sandbox-link');
-  //   expect(v.text()).toMatch('Sandbox Data');
-  // });
-  // it('the link of the Sandbox contains an icon', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_sandbox-link');
-  //   expect(v.html().includes('<img src="')).toBe(true);
-  // });
-  // it('constains a text Link to CodeHub', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_codehub-link');
-  //   expect(v.text()).toMatch('CodeHub Beta');
-  // });
-  // it('the link of the Sandbox contains an icon', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_codehub-link');
-  //   expect(v.html().includes('<img src="')).toBe(true);
-  // });
-  // it('constains a text Link to Visualizations', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_visualizations-link');
-  //   expect(v.text()).toMatch('Visualizations');
-  // });
-  // it('the link of the Visualizations contains an icon', () => {
-  //   const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body });
-  //   let v = wrapper.find('#dh-footer_visualizations-link');
-  //   expect(v.html().includes('<img src="')).toBe(true);
-  // });
   it('has a logo image for DOT', () => {
     const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body, mocks: { $store }});
     let v = wrapper.find('#usa-footer__logo-img');
-    expect(v.is('img')).toBe(true);
-  });
-  it('has a logo image for ITS', () => {
-    const wrapper = shallowMount(DOTMicrositeFooter, { attachTo: document.body, mocks: { $store }});
-    let v = wrapper.find('#usa-footer__logo-img-its');
     expect(v.is('img')).toBe(true);
   });
   it('has a link to Facebook', () => {
@@ -147,5 +102,4 @@ describe('DOT Microsite Footer', () => {
     }
     expect(found).toBe(true);
   });
-
 });

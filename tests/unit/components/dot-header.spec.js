@@ -212,5 +212,4 @@ describe('DOT Microsite Header', () => {
     }
     expect(found).toBe(true);
   });
-
 });

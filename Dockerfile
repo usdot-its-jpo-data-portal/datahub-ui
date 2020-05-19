@@ -1,4 +1,4 @@
-FROM node:8.16.1-jessie as buildimage
+FROM node:10.20.0-jessie as buildimage
 
 WORKDIR /app
 
@@ -11,9 +11,11 @@ RUN sh ./prepare-visualizations.sh
 
 RUN node --max-old-space-size=512
 
+RUN npm run test:unit
+
 RUN npm run build
 
-FROM nginx:1.14.1
+FROM nginx:1.17.9
 
 WORKDIR /app
 

@@ -22,5 +22,4 @@ export const EMAIL_MESSAGE = 'Join our mailing list! Stay up to date on new feat
 export const EMAIL_MESSAGE_ALERT = 'There is a problem with the registration service, please try again later.';
 export const EMAIL_MESSAGE_INVALID_EMAIL = 'Invalid email format, please try again.';
 
-
-//Also as promised here is an API link that ONLY grabs the 20 datasets you monitor: https://rosap.ntl.bts.gov/fedora/export/view/collection/dot:239?from=2019-05-24T00:00:00Z&until=2019-05-25T23:59:59Z
+export const LS_DATAHUB_ENGAGEMENT_POPUP = 'LS_DATAHUB_ENGAGEMENT_POPUP';
