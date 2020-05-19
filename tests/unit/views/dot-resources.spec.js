@@ -43,13 +43,17 @@ describe('DOT Microsite Resources', () => {
     expect(item.is('router-link-stub')).toBe(true);
     expect(item.text()).toMatch('FAQs');
   });
-
+  it('has main section Metrics', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let item = wrapper.find('#id-metrics');
+    expect(item.is('router-link-stub')).toBe(true);
+    expect(item.text()).toMatch('Metrics');
+  });
   it('Validate Guidelines subsections', () => {
     let expectedSubsections = [
       {name:'Background and Purpose', found:false},
       {name:'Scope', found:false},
       {name:'Audience', found:false},
-      {name:'ITS DataHub Guidelines', found:false},
       {name:'Implementation Roles and Responsibilities', found:false},
       {name:'Definitions', found:false},
       {name:'References', found:false}
