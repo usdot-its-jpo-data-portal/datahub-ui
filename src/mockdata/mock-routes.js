@@ -8,10 +8,6 @@ export default [
     name: 'about'
   },
   {
-    path: '/metrics',
-    name: 'metrics'
-  },
-  {
     path: '/publicAccess',
     name: 'publicAccess'
   },
@@ -53,6 +49,10 @@ export default [
       {
         path: '/resources/data-management/faqs',
         name: 'faqs'
+      },
+      {
+        path: '/resources/metrics',
+        name: 'metrics'
       }
     ]
   }

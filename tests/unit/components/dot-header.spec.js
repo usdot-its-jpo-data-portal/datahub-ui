@@ -100,18 +100,6 @@ describe('DOT Microsite Header', () => {
     }
     expect(found).toBe(true);
   });
-  it('contains link to Metrics page', () => {
-    const wrapper = shallowMount(DOTHeader, {localVue, router});
-    let items = wrapper.findAll('router-link-stub');
-    let found = false;
-    for(let i=0 ; i<items.length; i++) {
-      if(items.at(i).text()==='Metrics'){
-        found = true;
-        break;
-      }
-    }
-    expect(found).toBe(true);
-  });
   it('contains link to Search page', () => {
     const wrapper = shallowMount(DOTHeader, {localVue, router});
     let items = wrapper.findAll('router-link-stub');
@@ -212,5 +200,4 @@ describe('DOT Microsite Header', () => {
     }
     expect(found).toBe(true);
   });
-
 });

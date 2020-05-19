@@ -24,7 +24,12 @@ export default new Vuex.Store({
     registerMessage: '',
     isMobile: false,
     emailRegistrationActive: true,
-    version: JSON.parse(unescape(process.env.VUE_APP_PACKAGE_JSON || '%7Bversion%3A0%7D')).version
+    version: DataUtils.resolveVersion(JSON.parse(unescape(process.env.VUE_APP_PACKAGE_JSON || '%7Bversion%3A0%7D'))),
+    isProcessing: false,
+    processingError: false,
+    processingMessage: '',
+    processingId: null,
+    engagementPopup: null
   },
   mutations: {
     setQueryObject(state, val) {
@@ -62,6 +67,21 @@ export default new Vuex.Store({
     },
     setEmailRegistrationActive(state, val) {
       state.emailRegistrationActive = val;
+    },
+    setIsProcessing(state, val) {
+      state.isProcessing = val;
+    },
+    setProcessingError(state, val) {
+      state.processingError = val;
+    },
+    setProcessingMessage(state, val) {
+      state.processingMessage = val;
+    },
+    setProcessingId(state, val) {
+      state.processingId = val;
+    },
+    setEngagementPopup(state, val) {
+      state.engagementPopup = val;
     }
   },
   actions: {
@@ -125,6 +145,32 @@ export default new Vuex.Store({
         commit('setRegisterError', true);
         commit('setRegisterMessage', e);
       });
+    },
+    getEngagementPopups: function({commit}) {
+      commit('setIsProcessing', true);
+      commit('setProcessingError', false);
+      commit('setProcessingMessage','Processing...');
+      commit('setEngagementPopup', null);
+
+      let options =  { headers: {'Content-Type':'application/json'}};
+
+      axios
+      .get('/api/v1/configurations/engagementpopups', options)
+      .then( response => {
+        if (DataUtils.validResponse(response)) {
+          commit('setEngagementPopup', response.data.result[0]);
+        } else {
+          let msg = DataUtils.getErrors(response);
+          commit('setProcessingError', true);
+          commit('setProcessingMessage', msg)
+        }
+        commit('setIsProcessing', false);
+      })
+      .catch( (error) => {
+        commit('setProcessingError', true);
+        commit('setProcessingMessage',  error.response.statusText);
+        commit('setIsProcessing', false);
+      })
     }
   }
 })

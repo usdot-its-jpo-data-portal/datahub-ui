@@ -43,13 +43,17 @@ describe('DOT Microsite Resources', () => {
     expect(item.is('router-link-stub')).toBe(true);
     expect(item.text()).toMatch('FAQs');
   });
-
+  it('has main section Metrics', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let item = wrapper.find('#id-metrics');
+    expect(item.is('router-link-stub')).toBe(true);
+    expect(item.text()).toMatch('Metrics');
+  });
   it('Validate Guidelines subsections', () => {
     let expectedSubsections = [
       {name:'Background and Purpose', found:false},
       {name:'Scope', found:false},
       {name:'Audience', found:false},
-      {name:'Guidelines', found:false},
       {name:'Implementation Roles and Responsibilities', found:false},
       {name:'Definitions', found:false},
       {name:'References', found:false}
@@ -153,7 +157,7 @@ describe('DOT Microsite Resources', () => {
           expectedSubsections[j].found = true;
         }
       }
-      
+
     }
     let result =  expectedSubsections.filter( (x) => { return x.found == false;} );
     if(result.length>0)
@@ -247,7 +251,5 @@ describe('DOT Microsite Resources', () => {
       }
     }
     expect(result.length).toEqual(0)
-
   });
-
 });
