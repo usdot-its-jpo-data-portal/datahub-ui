@@ -21,206 +21,208 @@
     <h2 id="datastoragesystems-decisionpoints">Decision Points</h2>
     <p>
       The following decision points should be considered when determining where a dataset should be stored. These decisions points are numbered in accordance with the diagram above. Unless otherwise noted under a selection, go through the decision points sequentially.
+      <ol start="1">
+        <li>
+          What is the dataset’s Access Level?
+          <p>
+            This information should be provided in the data provider’s Data Management Plan and/or Metadata Questionnaire. Options for this question are:
+            <ol type="a">
+              <li>
+                Public: this is the default value for this decision. All data should be accessible to the public according to U.S. DOT and federal policy and should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data that cause a threat to privacy (e.g. personally identifiable information [PII]) or considered confidential business information [CBI]).
+              </li>
+              <li>
+                &ldquo;Restricted Public&rdquo; or &ldquo;Non-Public&rdquo;: a dataset should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data that cause a threat to privacy (e.g. PII or CBI).
+                <ol type="i">
+                  <li>
+                    Skip to number 6.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </p>
+          
+        </li>
+        <li>
+          Is the data primary or derived data?
+          <p>
+            Determine whether the data is:
+          </p>
+          <ol type="a">
+            <li>
+              Primary research data: original and/or raw data collected during research that can be used for further analysis.
+            </li>
+            <li>
+              Derived research data: data derived thorough analysis of other data and shared as part of a final report to communicate the methodology and findings of a research project.
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to be stored in the 
+                  <a target="_blank" href="https://rosap.ntl.bts.gov/" rel="noopener noreferrer">National Transportation Library’s ROSA P system.<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Where will the data be accessed?
+          <p>
+            Will the public be able to access the data on a:
+          </p>
+          <ol type="a">
+            <li>
+              U.S. DOT System: A U.S. DOT-managed system, such as the
+              <a target="_blank" href="https://www.its.dot.gov/data/" rel="noopener noreferrer">ITS DataHub<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+            </li>
+            <li>
+              Non-U.S. DOT System: a system managed by someone other than the U.S. DOT (i.e. managed by the data provider or a third party).
+              <ol type="i">
+                <li>
+                  Skip to number 5.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Frequency of data update?
+          <p>
+            Determine if the data will be updated by:
+          </p>
+          <ol type="a">
+            <li>
+              Irregular updates/one-time dump: the research project will collect a limited amount of data and will not update its data once it is deposited, or update it at a few irregular times.
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to store in 
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">data.transportation.gov (DTG)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                </li>
+              </ol>
+            </li>
+            <li>
+              Regular updates: the research project will collect large datasets that will be updated regularly, including updated in near-real time.
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store sample data in
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  and fully store the data in the
+                  <a target="_blank" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" rel="noopener noreferrer">ITS Sandbox<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  </strong>.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Should a sample of the data be stored on DTG?
+          <p>
+            The Data Access CoE suggests storing sample data in DTG, as this provides another way for the public to access the data and maximize the data’s utility through additional analysis and development. Determine if a sample of the data should be stored on DTG:
+          </p>
+          <ol type="a">
+            <li>
+              Yes
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store sample data in </strong>
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  <strong> and fully store the data and data dictionary in a non-U.S. DOT public-access system.</strong>
+                </li>
+              </ol>
+            </li>
+            <li>
+              No
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store only the dataset’s metadata in </strong>
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  <strong> and fully store the data and data dictionary in a non-U.S. DOT-managed public-access system.</strong>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          What’s the dataset’s data dictionary’s Access Level?
+          <p>
+            Note that this decision asks the Access Level of the dataset’s data dictionary. This information should be provided in the data provider’s Data Management Plan and/or Metadata Questionnaire. Options for this question are:
+          </p>
+          <ol type="a">
+            <li>
+              Public: this is the default value for this decision. All data dictionaries should be accessible to the public and should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data dictionary - not the data - that cause a threat to privacy (e.g. PII or CBI).
+            </li>
+            <li>
+              &ldquo;Restricted Public&rdquo; or &ldquo;Non-Public&rdquo;: a data dictionary should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data dictionary that cause a threat to privacy (e.g. PII or CBI).
+              <ol type="i">
+                <li>
+                  Skip to number 8.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Where will the data be accessed?
+          <p>
+            Will users with access be able to access the data on a:
+          </p>
+          <ol type="a">
+            <li>
+              U.S. DOT system: A U.S. DOT-managed system, such as the
+              <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store metadata and the data dictionary in
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  and fully store the data in the
+                  <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  </strong>.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Non-U.S. DOT system: a system managed by someone other than the U.S. DOT (i.e. managed by the data provider or a third party).
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store metadata and the data dictionary in
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  and fully store the data in a non-U.S.DOT controlled-access system</strong>.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Where will the data be accessed?
+          <p>
+            Will users with access be able to access the data on a:
+          </p>
+          <ol type="a">
+            <li>
+              U.S. DOT system: A U.S. DOT-managed system, such as the
+              <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store only metadata in
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  and fully store the data in the
+                  <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  </strong>.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Non-U.S. DOT system: a system managed by someone other than the U.S. DOT (i.e. managed by the data provider or a third party).
+              <ol type="i">
+                <li>
+                  <strong>End</strong>: This data is a good fit to <strong>store only metadata in
+                  <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  and fully store the data in a non-U.S.DOT controlled-access system</strong>.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
     </p>
-    <ol start="1">
-      <li>
-        What is the dataset’s Access Level?
-        <p>
-          This information should be provided in the data provider’s Data Management Plan and/or Metadata Questionnaire. Options for this question are:
-        </p>
-        <ol type="a">
-          <li>
-            Public: this is the default value for this decision. All data should be accessible to the public according to U.S. DOT and federal policy and should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data that cause a threat to privacy (e.g. personally identifiable information [PII]) or considered confidential business information [CBI]).
-          </li>
-          <li>
-            &ldquo;Restricted Public&rdquo; or &ldquo;Non-Public&rdquo;: a dataset should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data that cause a threat to privacy (e.g. PII or CBI).
-            <ol type="i">
-              <li>
-                Skip to number 6.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        Is the data primary or derived data?
-        <p>
-          Determine whether the data is:
-        </p>
-        <ol type="a">
-          <li>
-            Primary research data: original and/or raw data collected during research that can be used for further analysis.
-          </li>
-          <li>
-            Derived research data: data derived thorough analysis of other data and shared as part of a final report to communicate the methodology and findings of a research project.
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to be stored in the 
-                <a target="_blank" href="https://rosap.ntl.bts.gov/" rel="noopener noreferrer">National Transportation Library’s ROSA P system.<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        Where will the data be accessed?
-        <p>
-          Will the public be able to access the data on a:
-        </p>
-        <ol type="a">
-          <li>
-            U.S. DOT System: A U.S. DOT-managed system, such as the
-            <a target="_blank" href="https://www.its.dot.gov/data/" rel="noopener noreferrer">ITS DataHub<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-          </li>
-          <li>
-            Non-U.S. DOT System: a system managed by someone other than the U.S. DOT (i.e. managed by the data provider or a third party).
-            <ol type="i">
-              <li>
-                Skip to number 5.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        Frequency of data update?
-        <p>
-          Determine if the data will be updated by:
-        </p>
-        <ol type="a">
-          <li>
-            Irregular updates/one-time dump: the research project will collect a limited amount of data and will not update its data once it is deposited, or update it at a few irregular times.
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to store in 
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">data.transportation.gov (DTG)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-              </li>
-            </ol>
-          </li>
-          <li>
-            Regular updates: the research project will collect large datasets that will be updated regularly, including updated in near-real time.
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store sample data in
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                and fully store the data in the
-                <a target="_blank" href="http://usdot-its-cvpilot-public-data.s3.amazonaws.com/index.html" rel="noopener noreferrer">ITS Sandbox<img class="in-line-dot-link-new-tab" src="/images/icons/external-link_1b1b1b.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                </strong>.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        Should a sample of the data be stored on DTG?
-        <p>
-          The Data Access CoE suggests storing sample data in DTG, as this provides another way for the public to access the data and maximize the data’s utility through additional analysis and development. Determine if a sample of the data should be stored on DTG:
-        </p>
-        <ol type="a">
-          <li>
-            Yes
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store sample data in </strong>
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                <strong> and fully store the data and data dictionary in a non-U.S. DOT public-access system.</strong>
-              </li>
-            </ol>
-          </li>
-          <li>
-            No
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store only the dataset’s metadata in </strong>
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                <strong> and fully store the data and data dictionary in a non-U.S. DOT-managed public-access system.</strong>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        What’s the dataset’s data dictionary’s Access Level?
-        <p>
-          Note that this decision asks the Access Level of the dataset’s data dictionary. This information should be provided in the data provider’s Data Management Plan and/or Metadata Questionnaire. Options for this question are:
-        </p>
-        <ol type="a">
-          <li>
-            Public: this is the default value for this decision. All data dictionaries should be accessible to the public and should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data dictionary - not the data - that cause a threat to privacy (e.g. PII or CBI).
-          </li>
-          <li>
-            &ldquo;Restricted Public&rdquo; or &ldquo;Non-Public&rdquo;: a data dictionary should only be made &ldquo;restricted public&rdquo; or &ldquo;non-public&rdquo; if there are specific elements of the data dictionary that cause a threat to privacy (e.g. PII or CBI).
-            <ol type="i">
-              <li>
-                Skip to number 8.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        Where will the data be accessed?
-        <p>
-          Will users with access be able to access the data on a:
-        </p>
-        <ol type="a">
-          <li>
-            U.S. DOT system: A U.S. DOT-managed system, such as the
-            <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store metadata and the data dictionary in
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                and fully store the data in the
-                <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                </strong>.
-              </li>
-            </ol>
-          </li>
-          <li>
-            Non-U.S. DOT system: a system managed by someone other than the U.S. DOT (i.e. managed by the data provider or a third party).
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store metadata and the data dictionary in
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                and fully store the data in a non-U.S.DOT controlled-access system</strong>.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        Where will the data be access?
-        <p>
-          Will users with access be able to access the data on a:
-        </p>
-        <ol type="a">
-          <li>
-            U.S. DOT system: A U.S. DOT-managed system, such as the
-            <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store only metadata in
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                and fully store the data in the
-                <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                </strong>.
-              </li>
-            </ol>
-          </li>
-          <li>
-            Non-U.S. DOT system: a system managed by someone other than the U.S. DOT (i.e. managed by the data provider or a third party).
-            <ol type="i">
-              <li>
-                <strong>End</strong>: This data is a good fit to <strong>store only metadata in
-                <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
-                and fully store the data in a non-U.S.DOT controlled-access system</strong>.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-    </ol>
+    
     <h2 id="datastoragesystems-datastoragesystems">Data Storage Systems</h2>
     <p>
       Below is a description of the data storage systems mentioned in the &ldquo;Data Storage System Decision Tree.&rdquo;

@@ -3,6 +3,8 @@
     <div class="grid-row">
       <div class="grid-col-fill dh-result-card__title">
         <a :href="item.sourceUrl" target="_blank" class="search-result-link">
+          <MDDatabase v-if="item.dhType=='Dataset'" title="Dataset" size="18px"></MDDatabase>
+          <MDFileDocument v-if="item.dhType=='Document'" title="Article" size="18px"></MDFileDocument>
           {{ item.name }}
           <img class="in-line-dot-link-new-tab search-results" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
         </a>
@@ -42,7 +44,7 @@
         <div v-if="!relatedShowVisible && relatedItems.length===0" class="dh-result-card__meta-text">None</div>
       </div>
       <div class="grid-col-fill dh-result-card__tags">
-        <div v-if="itemTags.length > 0" >
+        <div v-if="itemTags && itemTags.length > 0" >
           <div class="dh-result-card__tags-title">Tags:</div>
           <div v-for="(tag, idx) in itemTags" :key="idx" class="dh-result-card__tag">
             <button @click="tagClicked(tag)">
@@ -65,6 +67,8 @@
 <script>
 import moment from 'moment';
 import {ES_QUERY_LIMIT} from '../consts/constants.js';
+import MDDatabase from 'vue-material-design-icons/Database';
+import MDFileDocument from 'vue-material-design-icons/FileDocument';
 
 export default {
   name: 'DOTResultCard',
@@ -86,6 +90,10 @@ export default {
       relatedShowVisible: false
     }
   },
+  components: {
+    MDDatabase,
+    MDFileDocument
+  },
   filters: {
     filterDate: function(date) {
       if (date) {
@@ -98,6 +106,10 @@ export default {
   computed: {
     itemDescription: {
       get: function() {
+        if (!this.item.description) {
+          this.updateDescriptionTools(false, this.readMore, this.readButtonText);
+          return 'No description available';
+        }
 
         if(this.item.description.length > 300 && this.readMore && this.item.description.indexOf(' ', 290) != -1) {
           this.updateDescriptionTools(true, true, 'READ MORE');
@@ -113,13 +125,9 @@ export default {
         else if(this.item.description.length > 300 && !this.readMore) {
           this.updateDescriptionTools(true, false, 'READ LESS');
           return this.item.description;
-        } else if(this.item.description.length > 0) {
-          this.updateDescriptionTools(false, this.readMore, this.readButtonText);
-          return this.item.description;
-        } else {
-          this.updateDescriptionTools(false, this.readMore, this.readButtonText);
-          return 'No description available';
         }
+        this.updateDescriptionTools(false, this.readMore, this.readButtonText);
+        return this.item.description;
       },
       set: function() {}
     },
