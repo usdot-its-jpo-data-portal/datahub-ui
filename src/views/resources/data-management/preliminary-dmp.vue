@@ -167,7 +167,7 @@
           <strong>Data Storage System(s) Type:</strong> For each data storage system, state whether the data storage system is:
           <ul>
             <li>“Applicant &mdash; Public System”</li>
-            <li>o	“Applicant &mdash; Controlled System”</li>
+            <li>“Applicant &mdash; Controlled System”</li>
               <ul>
                 <li>If you are using an applicant-managed system, please state whether the system is currently operational, under development, or will be developed as part of this project.</li>
               </ul>
