@@ -4,7 +4,7 @@
       <div class="usa-hero__callout">
         <h1 class="usa-hero__heading" id="hero_text">
           <span class="usa-hero__heading--alt">EXPLORE OUR DATA!</span>
-          Welcome to the Department of Transporation <br> public access point for ITS JPO Data
+          Welcome to the Department of Transportation <br> public access point for ITS JPO Data
         </h1>
         <div class="dh-home__main-search__callout-inputs">
           <label class="usa-label" for="mainSearch">Search</label>

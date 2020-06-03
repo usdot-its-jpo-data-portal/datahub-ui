@@ -7,12 +7,12 @@
             "description": "Calling all ITS and Traffic Safety Researchers - discover CV Pilot Open Data, the research tools and support available, and ways you can access them to support your projects.", 
             "url": "https://data.transportation.gov/stories/s/Connected-Vehicle-Pilot-Sandbox/hr8h-ufhq", 
             "image": "./images/connected_vehicle_pilot.jpg",
-            "altText": "Link to Overview of CV Pilot data and research tools on data.transportation.gov"
+            "altText": "Texas Department of Transportation logo superimposed on an aerial city view."
         }, 
-        {   "name": "AZTech Partnership (Maricopa County, Arizona) WZDx specification version 1.1 Data Sample",
-            "description": "Data containing a sample of ADOT freeway and MCDOT arterial road work zone data dissemination through Work Zone Data Exchange project.",
-            "url": "https://datahub.transportation.gov/Roadways-and-Bridges/Maricopa-County-Regional-Work-Zone-Data-Exchange-W/wd94-wugt",
-            "image": "./images/maricopa-county.png",
+        {   "name": "Texas Department of Transportation WZDx Dataset",
+            "description": "Data sample includes lane closure occurrences from the Texas Department of Transportation (TxDOT) highway system.",
+            "url": "https://datahub.transportation.gov/Roadways-and-Bridges/Texas-DOT-TxDOT-Work-Zone-Data/h4kh-i7b7",
+            "image": "./images/txdot.png",
             "altText": "Cars passing through a road work zone with a visualization of information being sent to cars via work zone machines. Link to explore dataset on data.transportation.gov"
         },
         {
