@@ -31,7 +31,7 @@ describe('DOT Microsite - Home : Main Search', () => {
     let h = wrapper.find('h1');
     let t = h.text().replace(/ /g,'');
     t = t.replace(/\n/g,'');
-    expect(t.includes('EXPLOREOURDATA!WelcometotheDepartmentofTransporationpublicaccesspointforITSJPOData')).toBe(true);
+    expect(t.includes('EXPLOREOURDATA!WelcometotheDepartmentofTransportationpublicaccesspointforITSJPOData')).toBe(true);
   });
   it('constains a label with the Search text', () => {
     const wrapper = shallowMount(DOTSearchMain, {attachTo: document.body, mocks: { $router, $store }});
