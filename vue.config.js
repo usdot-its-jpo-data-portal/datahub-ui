@@ -18,6 +18,13 @@ module.exports = {
       '/api/*' : {
         target: process.env.VUE_APP_WEB_API_URL,
         secure: false
+      },
+      '/simages' : {
+        target: process.env.VUE_APP_S3IMAGES_URL,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/simages': ''
+        }
       }
     }
   }
