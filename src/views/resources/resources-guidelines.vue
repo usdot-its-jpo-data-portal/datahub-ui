@@ -65,7 +65,7 @@
     <h2 id="Guidelines">Guidelines</h2>
     <h3>A. Data Management Plan</h3>
     <p>
-      Applicants must include a draft Data Management Plan (DMP) in their proposal. The U.S. DOT will use the information in the draft DMP as part of its evaluation criteria for award and may ask for clarifications or changes from applicants prior to award to ensure the U.S. DOT and/or public receives appropriate data access. The draft DMP must provide a preliminary overview of data that may be collected or created through the project, and include the following:
+      Applicants must include a draft Data Management Plan (DMP) in their proposal. The ITS JPO recommends that this draft DMP does not exceed 10 pages. Project teams should review solicitation materials for any page limit requirements. The U.S. DOT will use the information in the draft DMP as part of its evaluation criteria for award and may ask for clarifications or changes from applicants prior to award to ensure the U.S. DOT and/or public receives appropriate data access. The draft DMP must provide a preliminary overview of data that may be collected or created through the project, and include the following:
       <ol>
         <li>
           DATA DESCRIPTION: Address the nature, scope, and scale of the data that will be collected or created. Define data elements within a detailed data dictionary.
@@ -90,7 +90,7 @@
       </ol>
     </p>
     <p>
-      Awardees must then maintain the DMP throughout the period of performance with more detailed, updated information as it becomes available. At a minimum, the Awardee must update the DMP every six months and any time the Awardee shares a new dataset or changes data standards used. By the end of the project, the DMP must be a complete and accurate record of all data collected or created through the project. <br>
+      It is recommended that DMPs do not initially exceed five pages more than the project’s preliminary DMP and should grow over the course of the project as more data are added and processes evolve. However, projects should refer to any solicitation or project documentation for specific page requirements. Awardees must then maintain the DMP throughout the period of performance with more detailed, updated information as it becomes available. At a minimum, the Awardee must update the DMP every six months and any time the Awardee shares a new dataset or changes data standards used. By the end of the project, the DMP must be a complete and accurate record of all data collected or created through the project. <br>
       The DMP must demonstrate the project's full compliance with these guidelines and all applicable U.S. DOT and federal policies and guidance.
     </p>
 
