@@ -16,7 +16,7 @@
     </p>
     
     <h2 id="post-project-overview">1. Project Overview</h2>
-    <p>Provide summary information about the research project and its goals, as well as how the project’s data helps achieve U.S. DOT research goals.</p>
+    <p>Provide summary information about the project and its goals, as well as how the project’s data helps achieve U.S. DOT research goals.</p>
       <p>Suggested elements for this section include, but are not limited to:
       <ul>
         <li>
@@ -99,7 +99,7 @@
     </p>
     <h3>3.2 Access Level</h3>
     <p>
-      Providing appropriate data access to safeguard data is a key aspect of data stewardship. In accordance with the OPEN Government Data Act, datasets must be made publicly accessible unless specific concerns require the data to have controlled-access. Please detail what, if any data requires controlled-access, reasons for controlling access, and methods taken to safeguard data.
+      Providing appropriate data access to safeguard data is a key aspect of data stewardship. In accordance with the OPEN Government Data Act, datasets must be made publicly accessible unless specific concerns require the data to have controlled-access. Please detail what, if any data requires controlled-access, reasons for controlling access, and methods taken to safeguard.
     </p>
     <p>
       Controlled-access is defined as restricting access to certain groups of persons due to data containing personally identifiable information (PII), confidential business information (CBI), or any other information that threatens the privacy of an individual or group. 
@@ -168,10 +168,10 @@
       Suggested elements for this section include, but are not limited to:
       <ul>
         <li>
-          <strong>Dataset Title:</strong> Please provide the title of the dataset(s) that use this license.
+          <strong>Dataset Title:</strong> Please provide the title of the dataset(s).
         </li>
         <li>
-          <strong>License Used:</strong> List the license used for this/these dataset(s) (e.g. CC0 1.0 Universal) and provide a URL linking to where the full text of the license is maintained . Specify whether the license is an open license or a non-open license. An “’open license’ means a legal guarantee that a data asset is made available (A) at no cost to the public and (B) with no restrictions on copying publishing, distributing, transmitting, citing or adapting such asset” (definition from <a target="_blank" href="https://www.congress.gov/bill/115th-congress/house-bill/1770/text" rel="noopener noreferrer">congress.gov's webpage for H.R.1770<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, see SEC. 4. OPEN GOVERNMENT DATA).  A non-open license fails to adhere to some or all of the open license criteria.  
+          <strong>License Used:</strong> List the license used for this/these dataset(s) (e.g. CC0 1.0 Universal) and provide a URL linking to where the full text of the license is maintained. Specify whether the license is an open license or a non-open license. An “’open license’ means a legal guarantee that a data asset is made available (A) at no cost to the public and (B) with no restrictions on copying publishing, distributing, transmitting, citing or adapting such asset” (definition from <a target="_blank" href="https://www.congress.gov/bill/115th-congress/house-bill/1770/text" rel="noopener noreferrer">congress.gov's webpage for H.R.1770<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, see SEC. 4. OPEN GOVERNMENT DATA).  A non-open license fails to adhere to some or all of the open license criteria.  
         </li>
         <li>
           <strong>Reason(s) for Non-Open License:</strong> If no license is applied or a non-open license is used for a dataset, provide the reason(s).
@@ -179,7 +179,7 @@
       </ul>
     </p>
 
-    <h3>3.4	Data Storage, Archiving and Preservation</h3>
+    <h3>3.4	Data Storage and Retention</h3>
     <p>
       Storing and retaining the data is a key part of the data steward’s responsibilities to manage, control, and maintain the quality of a data asset throughout the data life cycle.  
     </p>

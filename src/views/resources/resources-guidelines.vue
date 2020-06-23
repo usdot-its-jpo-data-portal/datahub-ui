@@ -4,7 +4,7 @@
 
     <h2 id="Background-and-Purpose">Background and Purpose</h2>
     <p>
-      The mission of the Intelligent Transportation Systems Joint Program Office (ITS JPO) is to "conduct research, development, and education activities to facilitate the adoption of information and communication technology to enable society to move more safely and efficiently." 
+      The mission of the Intelligent Transportation Systems Joint Program Office (ITS JPO) is to "conduct research, development, and education activities to facilitate the adoption of information and communication technology to enable society to move more safely and efficiently." To further this mission, the ITS JPO is committed to providing timely access to public research data to support third-party research, evaluation, and application development in order to maximize the ITS JPO’s investment in ITS research initiatives.  
     </p>
     <p>
       These guidelines outline ITS JPO's standards for maximizing access to ITS research data while protecting data integrity, data security, data management best practices, copyright laws, privacy, confidentiality, and confidential business information.
@@ -150,7 +150,7 @@
       There are several key roles for implementing these guidelines. The roles are as follows:
       <ul>
         <li>
-          Awardee: The primary role is the project principal investigator and ITS DataHub data provider. Main responsibilities include: a) creating and maintaining a DMP for their respective research project; b) identifying, collecting, managing and retaining research data for their respective project as per their DMP; c) preparing and coordinating data submissions with ITS JPO; d) answering questions about their research data; e) responding to access requests for their controlled data; e) complying with all ITS JPO Data Access guidelines.
+          Awardee: The primary role is the project principal investigator and ITS DataHub data provider. Main responsibilities include: a) creating and maintaining a DMP for their respective research project; b) identifying, collecting, managing and retaining research data for their respective project as per their DMP; c) preparing and coordinating data submissions with ITS JPO; d) answering questions about their research data; e) responding to access requests for their controlled data; f) complying with all ITS JPO Data Access guidelines.
         </li>
         <li>
           U.S. DOT Project Manager: The primary role is oversight for the research project. A U.S. DOT Project Manager is assigned to each ITS JPO-funded project. Main responsibilities include: a) coordinating execution of the project with the ITS JPO-funded project team; b) receiving, reviewing and approving the project's DMP; c) coordinating with the ITS JPO on research project execution and data submission.
