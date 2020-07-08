@@ -4,7 +4,7 @@
 
     <h2 id="Background-and-Purpose">Background and Purpose</h2>
     <p>
-      The mission of the Intelligent Transportation Systems Joint Program Office (ITS JPO) is to support "the overall advancement of ITS through investments in major research initiatives." To further this mission, the ITS JPO Data Center of Excellence is committed to providing timely access to public research data to support third-party research, evaluation, and application development in order to maximize the ITS JPO’s investment in ITS research initiatives. 
+      The mission of the Intelligent Transportation Systems Joint Program Office (ITS JPO) is to "conduct research, development, and education activities to facilitate the adoption of information and communication technology to enable society to move more safely and efficiently." To further this mission, the ITS JPO is committed to providing timely access to public research data to support third-party research, evaluation, and application development in order to maximize the ITS JPO’s investment in ITS research initiatives.  
     </p>
     <p>
       These guidelines outline ITS JPO's standards for maximizing access to ITS research data while protecting data integrity, data security, data management best practices, copyright laws, privacy, confidentiality, and confidential business information.
@@ -65,7 +65,7 @@
     <h2 id="Guidelines">Guidelines</h2>
     <h3>A. Data Management Plan</h3>
     <p>
-      Applicants must include a draft Data Management Plan (DMP) in their proposal. The U.S. DOT will use the information in the draft DMP as part of its evaluation criteria for award and may ask for clarifications or changes from applicants prior to award to ensure the U.S. DOT and/or public receives appropriate data access. The draft DMP must provide a preliminary overview of data that may be collected or created through the project, and include the following:
+      Applicants must include a draft Data Management Plan (DMP) in their proposal. The ITS JPO recommends that this draft DMP does not exceed 10 pages. Project teams should review solicitation materials for any page limit requirements. The U.S. DOT will use the information in the draft DMP as part of its evaluation criteria for award and may ask for clarifications or changes from applicants prior to award to ensure the U.S. DOT and/or public receives appropriate data access. The draft DMP must provide a preliminary overview of data that may be collected or created through the project, and include the following:
       <ol>
         <li>
           DATA DESCRIPTION: Address the nature, scope, and scale of the data that will be collected or created. Define data elements within a detailed data dictionary.
@@ -90,7 +90,7 @@
       </ol>
     </p>
     <p>
-      Awardees must then maintain the DMP throughout the period of performance with more detailed, updated information as it becomes available. At a minimum, the Awardee must update the DMP every six months and any time the Awardee shares a new dataset or changes data standards used. By the end of the project, the DMP must be a complete and accurate record of all data collected or created through the project. <br>
+      It is recommended that DMPs do not initially exceed five pages more than the project’s preliminary DMP and should grow over the course of the project as more data are added and processes evolve. However, projects should refer to any solicitation or project documentation for specific page requirements. Awardees must then maintain the DMP throughout the period of performance with more detailed, updated information as it becomes available. At a minimum, the Awardee must update the DMP every six months and any time the Awardee shares a new dataset or changes data standards used. By the end of the project, the DMP must be a complete and accurate record of all data collected or created through the project. <br>
       The DMP must demonstrate the project's full compliance with these guidelines and all applicable U.S. DOT and federal policies and guidance.
     </p>
 
@@ -150,13 +150,13 @@
       There are several key roles for implementing these guidelines. The roles are as follows:
       <ul>
         <li>
-          Awardee: The primary role is the project principal investigator and ITS DataHub data provider. Main responsibilities include: a) creating and maintaining a DMP for their respective research project; b) identifying, collecting, managing and retaining research data for their respective project as per their DMP; c) preparing and coordinating data submissions with ITS JPO; d) answering questions about their research data; e) responding to access requests for their controlled data; e) complying with all ITS JPO Data Access Center of Excellence (COE) guidelines.
+          Awardee: The primary role is the project principal investigator and ITS DataHub data provider. Main responsibilities include: a) creating and maintaining a DMP for their respective research project; b) identifying, collecting, managing and retaining research data for their respective project as per their DMP; c) preparing and coordinating data submissions with ITS JPO; d) answering questions about their research data; e) responding to access requests for their controlled data; f) complying with all ITS JPO Data Access guidelines.
         </li>
         <li>
           U.S. DOT Project Manager: The primary role is oversight for the research project. A U.S. DOT Project Manager is assigned to each ITS JPO-funded project. Main responsibilities include: a) coordinating execution of the project with the ITS JPO-funded project team; b) receiving, reviewing and approving the project's DMP; c) coordinating with the ITS JPO on research project execution and data submission.
         </li>
         <li>
-          ITS JPO: The primary role is to administer the ITS JPO Data Access COE guidelines and the <a href="" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, as well as provide technical assistance to ITS JPO-funded project data providers, project awardees and project managers. Main responsibilities include: a) defining guidelines, data management standards and <a href="" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a> guidelines; b) operating and maintaining the <a href="" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>; c) providing technical assistance to awardees to create a DMP and successfully implement the project's DMP. While the ITS JPO expects awardees to fully implement their DMP, the ITS JPO will provide technical assistance to clarify any ambiguity around data management and assist the project in implementing their DMP.
+          ITS JPO: The primary role is to administer the ITS JPO Data Access guidelines and the <a href="" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, as well as provide technical assistance to ITS JPO-funded project data providers, project awardees and project managers. Main responsibilities include: a) defining guidelines, data management standards and <a href="" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a> guidelines; b) operating and maintaining the <a href="" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>; c) providing technical assistance to awardees to create a DMP and successfully implement the project's DMP. While the ITS JPO expects awardees to fully implement their DMP, the ITS JPO will provide technical assistance to clarify any ambiguity around data management and assist the project in implementing their DMP.
         </li>
         <li>
           U.S. DOT CIO: The primary role is promoting the effective and efficient design and operation of all major information resource management processes within U.S. DOT.
