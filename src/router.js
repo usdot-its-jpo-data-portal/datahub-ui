@@ -97,6 +97,11 @@ export default new Router({
           components: { resources: () => import('./views/resources/resources-guidelines.vue')}
         },
         {
+          path: '/resources/guidelines-templates-guides',
+          name: 'guidelinestemplatesguides',
+          components: { resources: () => import('./views/resources/guidelines-templates-guides.vue')}
+        },
+        {
           path: '/resources/data-management/data-management',
           name: 'datamanagement',
           components: { resources: () => import('./views/resources/data-management/data-management.vue')}
