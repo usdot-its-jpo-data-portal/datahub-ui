@@ -271,7 +271,7 @@
       </li>
 
     </ul>
-    <p class="date-last-updated">Last updated: Friday, July 24, 2020</p>
+    <p class="date-last-updated">Last updated: Friday, July 31, 2020</p>
   </div>
 </template>
 <script>
