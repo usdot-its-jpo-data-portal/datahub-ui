@@ -104,6 +104,21 @@
               <li id="faqs" class="usa-sidenav__item">
                 <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
               </li>
+              <!-- <li id="registration-1" class="usa-sidenav__item">
+                <router-link id="id-registration-1" to="/resources/registration-1" class="page" :class=" isVisible('registration-1') ? 'usa-current' : '' ">Registration 1</router-link>
+              </li> -->
+              <li id="registration-2" class="usa-sidenav__item">
+                <router-link id="id-registration-2" to="/resources/registration-2" class="page" :class=" isVisible('registration-2') ? 'usa-current' : '' ">Registration</router-link>
+              </li>
+              <!-- <li id="registration-2_diff_images" class="usa-sidenav__item">
+                <router-link id="id-registration-2_diff_images" to="/resources/registration-2_diff_images" class="page" :class=" isVisible('registration-2_diff_images') ? 'usa-current' : '' ">Registration 2 w/ images</router-link>
+              </li>
+              <li id="registration-3" class="usa-sidenav__item">
+                <router-link id="id-registration-3" to="/resources/registration-3" class="page" :class=" isVisible('registration-3') ? 'usa-current' : '' ">Registration 3</router-link>
+              </li>
+              <li id="registration-4" class="usa-sidenav__item">
+                <router-link id="id-registration-4" to="/resources/registration-4" class="page" :class=" isVisible('registration-4') ? 'usa-current' : '' ">Registration 4</router-link>
+              </li> -->
               <li id="metrics" class="usa-sidenav__item">
                 <router-link id="id-metrics" to="/resources/metrics" class="page" :class=" isVisible('metrics') ? 'usa-current' : '' ">Metrics</router-link>
                 <ul v-if="isVisible('metrics')" class="usa-sidenav__sublist">

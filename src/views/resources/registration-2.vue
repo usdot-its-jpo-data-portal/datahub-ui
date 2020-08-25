@@ -39,7 +39,7 @@
             </p>
             </div>
             <div class="mobile-lg:grid-col-1 right-column_div">
-                <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_1.png" alt="New tab icon." title="Opens in a new tab.">
+                <img class="right-column" src="/images/ITSJPO_DataHub_RepositoryRegistration_072412_1_AssessDataset.png" alt="New tab icon." title="Opens in a new tab.">
             </div>
         </div>
         
@@ -68,7 +68,7 @@
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
-            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_1.png" alt="New tab icon." title="Opens in a new tab.">
+            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_2.png" alt="New tab icon." title="Opens in a new tab.">
         </div>
     </div>
 
@@ -81,7 +81,7 @@
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
-            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_1.png" alt="New tab icon." title="Opens in a new tab.">
+            <img class="right-column" src="/images/ITSJPO_DataHub_RepositoryRegistration_072412_4_Ingestion.png" alt="New tab icon." title="Opens in a new tab.">
         </div>
     </div>
 
@@ -98,7 +98,7 @@
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
-            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_1.png" alt="New tab icon." title="Opens in a new tab.">
+            <img class="right-column" src="/images/ITSJPO_DataHub_RepositoryRegistration_072412_5_Approval.png" alt="New tab icon." title="Opens in a new tab.">
         </div>
     </div>
     
@@ -124,7 +124,7 @@
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
-            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_1.png" alt="New tab icon." title="Opens in a new tab.">
+            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_delete.png" alt="New tab icon." title="Opens in a new tab.">
         </div>
     </div> 
   </div>

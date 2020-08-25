@@ -23,7 +23,7 @@
   }
   .dh-resource-main_float-content {
     @include at-media('desktop') {
-      margin-left: units('card-lg');
+      margin-left: units('card-lg')+1;
       z-index: 10;
     }
   }
