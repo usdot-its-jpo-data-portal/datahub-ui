@@ -22,7 +22,22 @@
                     <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
                   </li>
                   <li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles and Responsibilities</a>
+                    <a href="#" @click="moveToTag($event,'Access')" class="table-of-contents">Access</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Rights-and-Ownership')" class="table-of-contents">Rights & Ownership</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Storage-and-Retention')" class="table-of-contents">Storage & Retention</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles & Responsibilities</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Security-and-Privacy')" class="table-of-contents">Security & Privacy</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Documentation')" class="table-of-contents">Documentation</a>
                   </li>
                   <li class="usa-sidenav__item">
                     <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
