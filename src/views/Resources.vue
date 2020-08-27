@@ -9,31 +9,41 @@
               <li id="resourceslanding" class="usa-sidenav__item">
                 <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
               </li>
-              <li id="guidelines" class="usa-sidenav__item">
-                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class="isVisible('guidelines') || isVisible('guidelinestemplatesguides') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
-                <ul v-if="isVisible('guidelines') || isVisible('guidelinestemplatesguides')" id="ul-guidelines" class="usa-sidenav__sublist">
-                  <div v-if="isVisible('guidelines')">
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background and Purpose</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Scope')" class="table-of-contents">Scope</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles and Responsibilities</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
-                    </li>
-                    <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'References')" class="table-of-contents">References</a>
-                    </li>
-                  </div>
-                  <li class="usa-sidenav__item sub-page-li">
-                    <router-link id="guidelines-templates-guides-id" to="/resources/guidelines-templates-guides" class="sub-page" :class="isVisible('guidelinestemplatesguides') ? 'usa-current' : '' ">Templates & Guides</router-link>
+              <li id="guidelines" class="usa-sidenav__item" :class=" isVisible('guidelines') ? 'usa-current_left-menu' : '' ">
+                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
+                <ul v-if="isVisible('guidelines')" id="ul-guidelines" class="usa-sidenav__sublist">
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background and Purpose</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Scope')" class="table-of-contents">Scope</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Access')" class="table-of-contents">Access</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Rights-and-Ownership')" class="table-of-contents">Rights & Ownership</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Storage-and-Retention')" class="table-of-contents">Storage & Retention</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles & Responsibilities</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Security-and-Privacy')" class="table-of-contents">Security & Privacy</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Documentation')" class="table-of-contents">Documentation</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
+                  </li>
+                  <li class="usa-sidenav__item">
+                    <a href="#" @click="moveToTag($event,'References')" class="table-of-contents">References</a>
                   </li>
                 </ul>
               </li>
