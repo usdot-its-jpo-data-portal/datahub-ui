@@ -50,9 +50,10 @@
               <li id="data-managment-id" class="usa-sidenav__item">
                 <router-link id="data-management-id" to="/resources/data-management/data-management" class="page" :class="isVisible('datamanagement') || isVisible('preliminarydmp') || isVisible('postawarddmp') || isVisible('templateandinstructions') ? 'usa-current' : '' ">Data Management</router-link>
                 <ul v-if="isVisible('datamanagement') || isVisible('preliminarydmp') || isVisible('postawarddmp') || isVisible('templateandinstructions') " id="ul-data-management" class="usa-sidenav__sublist">
-                  <div v-if="isVisible('datamanagement')"><li class="usa-sidenav__item">
-                    <a href="#" @click="moveToTag($event,'Introduction')" class="table-of-contents">Introduction</a>
-                  </li>
+                  <div v-if="isVisible('datamanagement')">
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Introduction')" class="table-of-contents">Introduction</a>
+                    </li>
                   </div>
                   <li class="usa-sidenav__item sub-page-li">
                     <router-link id="prelim-id" to="/resources/data-management/preliminary-dmp" class="sub-page" :class="isVisible('preliminarydmp') ? 'usa-current' : '' ">Preliminary DMP</router-link>
