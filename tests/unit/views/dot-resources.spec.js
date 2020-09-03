@@ -54,9 +54,15 @@ describe('DOT Microsite Resources', () => {
       {name:'Background and Purpose', found:false},
       {name:'Scope', found:false},
       {name:'Audience', found:false},
-      {name:'Implementation Roles and Responsibilities', found:false},
+      {name: 'Access', found:false},
+      {name: 'Rights & Ownership'},
+      {name: 'Storage & Retention', found:false},
+      {name:'Implementation Roles & Responsibilities', found:false},
+      {name:'Security & Privacy', found:false},
+      {name:'Documentation', found:false},
       {name:'Definitions', found:false},
-      {name:'References', found:false}
+      {name:'References', found:false},
+      {name:'Templates & Guides', found:false}
     ]
     router.push({path:'/resources/guidelines'});
     const wrapper = shallowMount(Resources, {localVue, router});
@@ -66,10 +72,14 @@ describe('DOT Microsite Resources', () => {
     let found = false;
     for(let i=0; i<subSections.length; i++) {
       let subsec = subSections.at(i);
+     
       if(!subsec.is('li'))
         continue;
 
       let a = subsec.find('a');
+      if (!a.exists()){
+        a = subsec.find('router-link-stub');
+      }
       for(let j=0; j<expectedSubsections.length; j++){
         if(a.text() == expectedSubsections[j].name) {
           expectedSubsections[j].found = true;

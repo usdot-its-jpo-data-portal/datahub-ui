@@ -22,7 +22,7 @@
         for help with the data management portion of Closeout and to ensure the data is retained properly in accordance with its retention schedule.
       </p>
       <p>
-        During the Closeout Phase, the Data Access CoE can help Program/Project Managers by:
+        During the Closeout Phase, the ITS JPO can help Program/Project Managers by:
       </p>
       <ul>
         <li>
@@ -52,11 +52,11 @@
 
     <div v-if="active_tab=='id_tab2'" id="id_tab2" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        In the Closeout project life cycle phase, Data Providers ensure they are executing the requirements of their project for closeout and turn over all project deliverables, materials and data to their Program/Project Manager and the U.S. DOT. For help with carrying out project closeout, the Data Access CoE may be able to provide support. To contact the Data Access CoE, email
-        <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
+        In the Closeout project life cycle phase, Data Providers ensure they are executing the requirements of their project for closeout and turn over all project deliverables, materials and data to their Program/Project Manager and the U.S. DOT. For help with carrying out project closeout, the ITS JPO may be able to provide support, email
+        <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a> with inquiries.
       </p>
       <p>
-        During the Closeout Phase, the Data Access CoE can help Data Provider by:
+        During the Closeout Phase, the ITS JPO can help the Data Provider by:
       </p>
       <ul>
         <li>
