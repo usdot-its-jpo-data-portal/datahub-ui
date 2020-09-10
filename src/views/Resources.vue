@@ -9,8 +9,8 @@
               <li id="resourceslanding" class="usa-sidenav__item">
                 <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
               </li>
-              <li id="guidelines" class="usa-sidenav__item">
-                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class="isVisible('guidelines') || isVisible('guidelinestemplatesguides') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
+              <li id="guidelines" class="usa-sidenav__item" :class=" isVisible('guidelines') ? 'usa-current_left-menu' : '' ">
+                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
                 <ul v-if="isVisible('guidelines') || isVisible('guidelinestemplatesguides')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <div v-if="isVisible('guidelines')">
                     <li class="usa-sidenav__item">
@@ -23,7 +23,22 @@
                       <a href="#" @click="moveToTag($event,'Audience')" class="table-of-contents">Audience</a>
                     </li>
                     <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles and Responsibilities</a>
+                      <a href="#" @click="moveToTag($event,'Access')" class="table-of-contents">Access</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Rights-and-Ownership')" class="table-of-contents">Rights & Ownership</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Storage-and-Retention')" class="table-of-contents">Storage & Retention</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles & Responsibilities</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Security-and-Privacy')" class="table-of-contents">Security & Privacy</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Documentation')" class="table-of-contents">Documentation</a>
                     </li>
                     <li class="usa-sidenav__item">
                       <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
@@ -183,12 +198,43 @@ export default {
       let cln = this.sideMenuElement.className;
       let topclass = 'dh-resource-main_float-menu_top';
       // handling className instead of classList to support IE11
-      if(sy > 250 && this.sideMenuElement) {
-        if (cln && !cln.includes(topclass)) {
-          cln += ' '+topclass;
-          this.sideMenuElement.className = cln;
+
+      
+      let currentFooterBoundingClientRect = document.getElementById("ch-footer").getBoundingClientRect();
+      let footerTopLocationInWindow = currentFooterBoundingClientRect["top"];
+      
+      let asideElement = document.getElementById("dh-resources-side-menu");
+      let asideBoundingClientRect = asideElement.getBoundingClientRect();
+      let asideBottomLocationInWindow = asideBoundingClientRect["bottom"];
+
+      let desiredSpaceBetweenAsideAndFooter = 30;
+      let bufferBetweenAsideCssClassSwitching = desiredSpaceBetweenAsideAndFooter + 250;
+      let viewportHeight = window.innerHeight;
+      let valueToMoveAsideUp = 0;
+      
+      if(sy > 250){
+        if(this.sideMenuElement && (footerTopLocationInWindow - asideBottomLocationInWindow > bufferBetweenAsideCssClassSwitching)) {
+          if (cln && !cln.includes(topclass)) {
+            cln += ' '+topclass;
+            this.sideMenuElement.className = cln;
+            asideElement.style.top = "";
+          }
         }
-      } else {
+        if(this.sideMenuElement && (footerTopLocationInWindow - asideBottomLocationInWindow <= desiredSpaceBetweenAsideAndFooter)){
+          if (cln && cln.includes(topclass)) {
+            let x = cln.indexOf(topclass);
+            if(x>=0) {
+              let v1 = cln.substring(0, x-1);
+              let v2 = cln.substring(x+topclass.length, cln.length);
+              this.sideMenuElement.className = v1+v2;
+            }
+          }
+          viewportHeight = window.innerHeight;
+          valueToMoveAsideUp = viewportHeight - footerTopLocationInWindow;
+          asideElement.style.top = "-" + valueToMoveAsideUp + "px";
+        }
+      }
+      else {
         if (cln && cln.includes(topclass)) {
           let x = cln.indexOf(topclass);
           if(x>=0) {

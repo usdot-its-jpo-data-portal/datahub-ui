@@ -19,7 +19,7 @@
         In the Post-Award project life cycle phase, Program/Project Managers oversee adherence to the project plan and required deliverables, including data. Program/Project Managers must ensure their projects produce a post-award DMP approved by ITS JPO within 60 days of project award and update the DMP as changes occur or at least every six months in accordance with the ITS JPO Guidelines. Additionally, Program/Project Managers oversee their projects produce data and make the data accessible.
       </p>
       <p>
-        During the Post-Award phase, the Data Access CoE can help Program/Project Managers by:
+        During the Post-Award phase, the ITS JPO can help Program/Project Managers by:
       </p>
       <ul>
         <li>
@@ -49,7 +49,7 @@
         In the Post-Award project life cycle phase, Data Providers execute their project and begin to produce data. Data Providers must execute their DMP and provide an updated DMP approved by ITS JPO within 60 days of project award and updated as changes occur to data management or at least every six months in accordance with the ITS JPO Guidelines.
       </p> 
       <p>
-        During the Award Phase, the Data Access CoE can help Data Providers by:
+        During the Award Phase, the ITS JPO can help Data Providers by:
       </p>
       <ul>
         <li>
@@ -81,7 +81,7 @@
         </li>
         <li>
           <a target="_blank" href="https://github.com/usdot-its-jpo-data-portal/metadata_ingest/blob/master/forms/ITSJPO_MetadataQuestionnaire_fillable.pdf" rel="noopener noreferrer">Metadata Questionnaire<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab."></a>
-          – a questionnaire to initiate dataset & metadata ingestion into U.S. DOT-managed data storage systems. The Data Access CoE will request this form near the ingestion date noted in the DMP.
+          – a questionnaire to initiate dataset & metadata ingestion into U.S. DOT-managed data storage systems. The ITS JPO will request this form near the ingestion date noted in the DMP.
         </li>
         <li>
           <router-link to="/resources/data-storage-system">Data Storage Systems Web Page</router-link> – a web page describing different data storage systems available and decision points for choosing where to store data.
