@@ -1,5 +1,5 @@
 <template>
-  <footer class="usa-footer" role="contentinfo">
+  <footer class="usa-footer" role="contentinfo" id="ch-footer">
     <div class="usa-footer__primary-section">
       <nav class="usa-footer__nav">
         <div class="dh-footer__social-wrapper">

@@ -21,11 +21,11 @@
         for assistance with this project life cycle phase.
       </p>
       <p>
-        During Pre-Award, the Data Access CoE can help Program/Project Managers by:
+        During Pre-Award, the ITS JPO can help Program/Project Managers by:
       </p>
       <ul>
         <li>
-          Preparing for evaluation of preliminary data management plans (DMPs). The Data Access CoE can train technical evaluation teams on DMP evaluation or assist in evaluating if needed.
+          Preparing for evaluation of preliminary data management plans (DMPs). The ITS JPO can train technical evaluation teams on DMP evaluation or assist in evaluating if needed.
         </li>
         <li>
           Evaluating preliminary DMPs.

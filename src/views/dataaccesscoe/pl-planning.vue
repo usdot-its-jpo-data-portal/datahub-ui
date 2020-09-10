@@ -17,11 +17,11 @@
     <!-- Tab content -->
     <div v-if="active_tab=='id_tab1'" id="id_tab1" class="usa-layout-docs__main desktop:grid-col-10 dh-data-access-coe_tab-content">
       <p>
-        To ensure the Data Access CoE provides the maximum benefit to a project or procurement, we recommend engaging the Data Access CoE team in at the beginning of the project life cycle. To begin this engagement during the Planning phase, you can find resources on this page and contact us directly at
+        To ensure the ITS JPO provides the maximum benefit to a project or procurement, we recommend engaging the ITS JPO team in at the beginning of the project life cycle. To begin this engagement during the Planning phase, you can find resources on this page and contact us directly at
         <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>.
       </p>
       <p>
-        During Planning, the Data Access CoE can support Program/Project Managers by:
+        During Planning, the ITS JPO can support Program/Project Managers by:
       </p>
       <ul>
         <li>
@@ -47,9 +47,10 @@
           <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions – a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
         </li>
         <li>
-          Standard Solicitation Language – contact
-          <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link"></a>
-          for standard data management solicitation language.
+          Standard Solicitation Language – this language is meant to be inserted into ITS JPO procurements for contracts and grants by ITS JPO Program Managers and/or acquisition personnel. <router-link to="/resources/data-management/template-and-instructions">Templates & Guides</router-link>
+        </li>
+        <li>
+          DMP Sufficiency Checklists - a series checklists that can be used to aid in assessing DMPs. 
         </li>
         <li>
           <router-link to="/resources/data-management/faqs">FAQs</router-link> – Frequently Asked Questions about the ITS JPO Guidelines and Resources.

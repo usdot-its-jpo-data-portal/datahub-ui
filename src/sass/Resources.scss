@@ -10,10 +10,13 @@
     display: none;
   }
   .dh-resource-main_float-menu {
+    
     @include at-media('desktop') {
       position: fixed;
       width: units('card-lg');
       z-index: 10;
+      top: 261px;
+      transition: top .1s linear;
     }
   }
   .dh-resource-main_float-menu_top {
@@ -25,6 +28,11 @@
     @include at-media('desktop') {
       margin-left: units('card-lg');
       z-index: 10;
+    }
+  }
+  #dh-resources-side-menu{
+    @include at-media-max('desktop'){
+      top: auto !important;
     }
   }
 

@@ -21,7 +21,7 @@
         for assistance with this project life cycle phase.
       </p>
       <p>
-        During Award, the Data Access CoE can help Program/Project Managers by:
+        During Award, the ITS JPO can help Program/Project Managers by:
       </p>
       <ul>
         <li>

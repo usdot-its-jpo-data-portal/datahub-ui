@@ -2,10 +2,10 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <h1>Community Support</h1> <!--comment!-->
     <p>
-      The ITS JPO has created a community called the Data Access Center of Excellence (CoE) to promote best practices around data management in order to maximize utility of ITS JPO-sponsored project data.
+      The ITS JPO promotes best practices around data management in order to maximize utility of ITS JPO-sponsored project data.
     </p>
     <p>
-      The Data Access CoE aims to achieve this by executing the following objectives:
+      The ITS JPO aims to achieve this by executing the following objectives:
     </p>
     <ul>
       <li>
@@ -16,7 +16,7 @@
       </li>
     </ul>
     <p>
-      This page contains information on how the Data Access CoE can support your project team with data management. Organized around the project life cycle, you can click on each phase to obtain more information on the resources and services this community can provide Program/Project Managers and Data Providers.
+      This page contains information on how the ITS JPO can support your project team with data management. Organized around the project life cycle, you can click on each phase to obtain more information on the services this community can provide Program/Project Managers and Data Providers.
     </p>
 
     <DOTProjectLifecycleImg height="550" width="550" active=""/>
