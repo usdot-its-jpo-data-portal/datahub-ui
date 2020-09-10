@@ -4,7 +4,7 @@
 
     <h2 id="Background-and-Purpose">1. Background & Purpose</h2>
     <p>
-      The mission of the Intelligent Transportation Systems Joint Program Office (ITS JPO) is to lead "collaborative and innovative research, development, and implementation of intelligent transportation systems to improve the safety and mobility of people and goods." To further this mission, the ITS JPO is committed to providing timely access to public research data to support third-party research, evaluation, and application development in order to maximize the ITS JPO’s return on investment for ITS research initiatives.  
+      The mission of the Intelligent Transportation Systems Joint Program Office (ITS JPO) is to lead "collaborative and innovative research, development, and implementation of intelligent transportation systems to improve the safety and mobility of people and goods." To further this mission, the ITS JPO is committed to providing timely access to public research data to support third-party research, evaluation, and application development in order to maximize the ITS JPO’s return on investment for ITS research initiatives.
     </p>
     <p>
       These guidelines outline ITS JPO's standards for maximizing access to ITS research data while protecting data integrity, data security, data management best practices, copyright laws, privacy, confidentiality, and confidential business information.
@@ -280,6 +280,7 @@
         </a>
       </li>
     </ul>
+    <p class="date-last-updated">Last updated: Monday, August 31, 2020</p>
   </div>
 </template>
 <script>
@@ -294,5 +295,8 @@ export default {
   }
   a {
     word-wrap: break-word;
+  }
+  .date-last-updated{
+    padding-top: 1em;
   }
 </style>

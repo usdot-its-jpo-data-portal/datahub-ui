@@ -72,7 +72,6 @@ describe('DOT Microsite Resources', () => {
     let found = false;
     for(let i=0; i<subSections.length; i++) {
       let subsec = subSections.at(i);
-     
       if(!subsec.is('li'))
         continue;
 
