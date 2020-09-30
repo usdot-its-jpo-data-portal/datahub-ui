@@ -41,19 +41,19 @@
       <em>Resources</em>
       <ul>
         <li>
-          <router-link to="/resources/guidelines">Data Access Guidelines</router-link> – these are ITS JPO’s overall guidelines and requirements for data access and management.
+          <router-link to="/resources/guidelines">Data Access Guidelines</router-link> &mdash; these are ITS JPO’s overall guidelines and requirements for data access and management.
         </li>
         <li>
-          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions – a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
+          <router-link to="/resources/data-management/preliminary-dmp">Preliminary DMP</router-link> Instructions &mdash; a document to be used in a solicitation or early phases of a project to create a plan for data management. This document is to be filled out by a solicitation or project applicant.
         </li>
         <li>
-          Standard Solicitation Language – this language is meant to be inserted into ITS JPO procurements for contracts and grants by ITS JPO Program Managers and/or acquisition personnel. <router-link to="/resources/data-management/template-and-instructions">Templates & Guides</router-link>
+          <router-link to="/resources/data-management/template-and-instructions">Standard Solicitation Language</router-link> &mdash; this language is meant to be inserted into ITS JPO procurements for contracts and grants by ITS JPO Program Managers and/or acquisition personnel.
         </li>
         <li>
-          DMP Sufficiency Checklists - a series checklists that can be used to aid in assessing DMPs. 
+          <router-link to="/resources/data-management/template-and-instructions">DMP Sufficiency Checklists</router-link> &mdash; a series checklists that can be used to aid in assessing DMPs. 
         </li>
         <li>
-          <router-link to="/resources/data-management/faqs">FAQs</router-link> – Frequently Asked Questions about the ITS JPO Guidelines and Resources.
+          <router-link to="/resources/data-management/faqs">FAQs</router-link> &mdash; Frequently Asked Questions about the ITS JPO Guidelines and Resources.
         </li>
       </ul>
     </div>
