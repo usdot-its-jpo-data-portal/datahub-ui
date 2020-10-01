@@ -249,38 +249,197 @@
 
     <h2 id="References">References</h2>
     <ul>
-      <li>
+      <li><strong>About ITS JPO.</strong> U.S. Department of Transportation.
         <a href="https://www.its.dot.gov/about/its_jpo.htm" target="_blank" rel="noopener noreferrer">
-          https://www.its.dot.gov/about/its_jpo.htm<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+          https://www.its.dot.gov/about/its_jpo.htm<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
         </a>
       </li>
-      <li>
+      <li><strong>Confidential Business Information, 19 C.F.R. § 201.6.</strong> 
         <a href="https://www.law.cornell.edu/cfr/text/19/201.6" target="_blank" rel="noopener noreferrer">
           https://www.law.cornell.edu/cfr/text/19/201.6<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
         </a>
       </li>
-      <li>
-        <a href="https://project-opendata.cio.gov/v1.1/schema/" target="_blank" rel="noopener noreferrer">
+
+      <li><strong>Data.gov.</strong> U.S. General Services Administration.
+        <a href="https://www.data.gov/" target="_blank" rel="noopener noreferrer">
+          https://www.data.gov/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>
+        <!-- <a href="https://project-opendata.cio.gov/v1.1/schema/" target="_blank" rel="noopener noreferrer">
           https://project-opendata.cio.gov/v1.1/schema/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
-        </a>
+        </a> -->
       </li>
-      <li>
-        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20Order%201351.18%20Privacy%20Risk%20Management%20Policy.pdf" target="_blank" rel="noopener noreferrer">
-          https://www.transportation.gov/sites/dot.gov/files/docs/DOT%20Order%201351.18%20Privacy%20Risk%20Management%20Policy.pdf<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
-        </a>
+      <li><strong>DCAT-US Schema v1.1 (Project Open Data Metadata Schema).</strong>
+      &nbsp;U.S. General Services Administration, November 6, 2014.
+        <a href="https://resources.data.gov/resources/dcat-us/" target="_blank" rel="noopener noreferrer">
+          https://resources.data.gov/resources/dcat-us/
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
       </li>
-      <li>
-        <a href="https://www.techopedia.com/dictionary" target="_blank" rel="noopener noreferrer">
-          https://www.techopedia.com/dictionary<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
-        </a>
+      <li><strong>DOT Departmental Cybersecurity Compendium:</strong>
+        The Departmental Cybersecurity Policy (DOT Order 1351.37) serves as the overarching, foundational directive for cybersecurity for the U.S. DOT and authorizes the U.S. DOT Chief Information Officer to develop and disseminate supplemental policies, guidance, procedures, standards and processes that implement mandatory cybersecurity requirements required of the U.S. DOT by other entities. These entities include, but are not limited to, Congress, OMB, NIST, and DHS. This collection of supplemental policies and guidance is collectively referred to as the Departmental Cybersecurity Compendium. The Departmental Cybersecurity Compendium:
+        <ul>
+          <li>Incorporates and cross references cybersecurity requirements and national standards such as NIST Special Publication (SP) 800-53, according to information assurance control families in a manner that clearly presents scope and applicability.</li>
+          <li>Presents all U.S. DOT cybersecurity directives in a manner that enables the U.S. DOT to scale and supplement baseline Departmental directives to meet unique requirements, if necessary.</li>
+          <li>Exists as a living document, subject to additions, deletions, and/or content modifications based on changing requirements, technology, and threats, as deemed necessary by the U.S. DOT CIO.</li>
+        </ul>
       </li>
-      <li>
+      <li><strong>DOT Order 1351.18: Departmental Privacy Risk Management Policy.</strong>
+          U.S. Department of Transportation, September 30, 2014.
+        <a href=" https://www.transportation.gov/individuals/privacy/privacy-risk-management-policy" target="_blank" rel="noopener noreferrer">
+           https://www.transportation.gov/individuals/privacy/privacy-risk-management-policy.
+          <img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>DOT Order 1351.19: Personally Identifiable Information (PII) Breach Notification Controls.</strong>
+        U.S. Department of Transportation, May 5, 2009.
+        <a href="https://www.transportation.gov/individuals/privacy/pii-breach-notification-controls" target="_blank" rel="noopener noreferrer">
+          https://www.transportation.gov/individuals/privacy/pii-breach-notification-controls
+          <img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>DOT Order 1351.28: Records Management Policy.</strong>
+        U.S. Department of Transportation, August 11, 2016.
+        <a href="https://www.transportation.gov/sites/dot.gov/files/2020-03/Policy%20-%20Records%20Management%20%281351%2028%29%20-%20Policy%20-%20Final_signed.pdf" target="_blank" rel="noopener noreferrer">
+          https://www.transportation.gov/sites/dot.gov/files/2020-03/Policy%20-%20Records%20Management%20%281351%2028%29%20-%20Policy%20-%20Final_signed.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>DOT Order 1351.37: Departmental Cybersecurity Policy.</strong>
+        U.S. Department of Transportation, June 21, 2011.
+        <a href="https://cms8.dot.gov/sites/dot.gov/files/docs/DOT%20Order%201351.37%2C%20Departmental%20Cybersecurity%20Policy.pdf" target="_blank" rel="noopener noreferrer">
+          https://cms8.dot.gov/sites/dot.gov/files/docs/DOT%20Order%201351.37%2C%20Departmental%20Cybersecurity%20Policy.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Federal Plain Language Guidelines.</strong>
+        U.S. General Services Administration.
+        <a href="https://www.plainlanguage.gov/guidelines/" target="_blank" rel="noopener noreferrer">
+          https://www.plainlanguage.gov/guidelines/
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>FHWA Records Disposition Manual (Washington Headquarters) - ITS DataHub.</strong>
+        U.S. Department of Transportation.
+        <a href="https://www.fhwa.dot.gov/legsregs/directives/orders/hoit-hq_.cfm" target="_blank" rel="noopener noreferrer">
+          https://www.fhwa.dot.gov/legsregs/directives/orders/hoit-hq_.cfm
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>FIPS PUB 199: Standards for Security Categorization of Federal Information and Information Systems.</strong>
+        National Institute of Standards and Technology, U.S. Department of Commerce, February 2004.
+        <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf" target="_blank" rel="noopener noreferrer">
+          https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Foundations for Evidence-Based Policymaking Act,</strong>
+        Pub.L. 115–435, 2019.
+        <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95" target="_blank" rel="noopener noreferrer">
+          https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Government Contracting Terms & Definitions.</strong>
+        Southern Alleghenies Planning & Development Commission.
         <a href="http://www.sapdc.org/business/government-contracting-terms-definitions" target="_blank" rel="noopener noreferrer">
-          http://www.sapdc.org/business/government-contracting-terms-definitions<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
-        </a>
+          http://www.sapdc.org/business/government-contracting-terms-definitions
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Guidelines for Evaluating Repositories for Conformance with the DOT Public Access Plan.</strong>
+        U.S. Department of Transportation, January 26, 2018.
+        <a href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories" target="_blank" rel="noopener noreferrer">
+          https://ntl.bts.gov/public-access/guidelines-evaluating-repositories
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Highways,</strong>
+        23 U.S.C. 101-610.
+        <a href=" https://www.law.cornell.edu/uscode/text/23" target="_blank" rel="noopener noreferrer">
+           https://www.law.cornell.edu/uscode/text/23
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>How to Comply.</strong>
+        U.S. Department of Transportation, April 18, 2018.
+        <a href="https://ntl.bts.gov/public-access/how-comply" target="_blank" rel="noopener noreferrer">
+          https://ntl.bts.gov/public-access/how-comply
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Increasing Access to the Results of Federally Funded Scientific Research.</strong>
+        Office of Science and Technology Policy, February 22, 2013.
+        <a href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf" target="_blank" rel="noopener noreferrer">
+          https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Intangible Property,</strong> 2 C.F.R. § 200.315 (2014).
+      </li>
+      <li><strong>IT Accessibility Laws and Policies.</strong>
+        U.S. General Services Administration, July 2020. 
+        <a href="https://www.section508.gov/manage/laws-and-policies" target="_blank" rel="noopener noreferrer">
+          https://www.section508.gov/manage/laws-and-policies
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>ITS DataHub.</strong>
+         U.S. Department of Transportation.
+        <a href="https://www.its.dot.gov/data/" target="_blank" rel="noopener noreferrer">
+          https://www.its.dot.gov/data/
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>The Open Source Definition.</strong>
+        Open Source Initiative, March 22, 2007.
+        <a href="https://opensource.org/osd" target="_blank" rel="noopener noreferrer">
+          https://opensource.org/osd
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Plan to Increase Public Access to the Results of Federally-Funded Scientific Research Results.</strong>
+        U.S. Department of Transportation, December 16, 2015.
+        <a href="https://www.transportation.gov/sites/dot.gov/files/docs/Official%20DOT%20Public%20Access%20Plan%20ver%201.1.pdf" target="_blank" rel="noopener noreferrer">
+          https://www.transportation.gov/sites/dot.gov/files/docs/Official%20DOT%20Public%20Access%20Plan%20ver%201.1.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Request for Records Disposition Authority.</strong>
+        National Archives and Records Administration, March 4, 2016.
+        <a href="https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0406/daa-0406-2014-0003_sf115.pdf" target="_blank" rel="noopener noreferrer">
+          https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0406/daa-0406-2014-0003_sf115.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Rights in Data – General,</strong>
+        FAR § 52.227-14 (2014).
+      </li>
+      <li><strong>Rights in Data and Copyrights,</strong>
+        FAR § 27.4.
+      </li>
+      <li><strong>SP 800-37 Rev. 2: Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy.</strong>
+        National Institute of Standards and Technology, U.S. Department of Commerce, December 2018.
+        <a href="https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final" target="_blank" rel="noopener noreferrer">
+          https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Technology Dictionary.</strong>
+        Techopedia.
+        <a href="https://www.techopedia.com/dictionary" target="_blank" rel="noopener noreferrer">
+          https://www.techopedia.com/dictionary
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Transportation,</strong>
+        49 U.S.C. 101-80504.
+        <a href="https://www.law.cornell.edu/uscode/text/49" target="_blank" rel="noopener noreferrer">
+          https://www.law.cornell.edu/uscode/text/49
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
       </li>
     </ul>
-    <p class="date-last-updated">Last updated: Monday, August 31, 2020</p>
+    <p class="date-last-updated">Last updated: Wednesday, September 30, 2020</p>
   </div>
 </template>
 <script>
