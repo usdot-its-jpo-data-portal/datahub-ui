@@ -127,6 +127,11 @@ export default new Router({
           components: { resources: () => import('./views/resources/data-storage-system.vue')}
         },
         {
+          path: '/resources/data-registration',
+          name: 'data-registration',
+          components: { resources: () => import('./views/resources/data-registration.vue')}
+        },
+        {
           path: '/resources/data-management/faqs',
           name: 'faqs',
           components: { resources: () => import('./views/resources/faqs.vue')}
