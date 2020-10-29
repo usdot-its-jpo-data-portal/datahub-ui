@@ -122,29 +122,9 @@ export default new Router({
           components: { resources: () => import('./views/resources/data-storage-system.vue')}
         },
         {
-          path: '/resources/registration-1',
-          name: 'registration-1',
-          components: { resources: () => import('./views/resources/registration-1.vue')}
-        },
-        {
-          path: '/resources/registration-2',
-          name: 'registration-2',
-          components: { resources: () => import('./views/resources/registration-2.vue')}
-        },
-        {
-          path: '/resources/registration-2_diff_images',
-          name: 'registration-2_diff_images',
-          components: { resources: () => import('./views/resources/registration-2_diff_images.vue')}
-        },
-        {
-          path: '/resources/registration-3',
-          name: 'registration-3',
-          components: { resources: () => import('./views/resources/registration-3.vue')}
-        },
-        {
-          path: '/resources/registration-4',
-          name: 'registration-4',
-          components: { resources: () => import('./views/resources/registration-4.vue')}
+          path: '/resources/data-registration',
+          name: 'data-registration',
+          components: { resources: () => import('./views/resources/data-registration.vue')}
         },
         {
           path: '/resources/data-management/faqs',
