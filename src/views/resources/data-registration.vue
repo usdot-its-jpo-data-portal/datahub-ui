@@ -2,10 +2,11 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose images-in-right-column registration-page">
     <h1>Data Registration</h1>
     <p>
-      ITS DataHub is committed to providing the ITS community with simplified access to the most relevant and useful ITS research data. All data asset(s) produced by ITS JPO-funded projects in the <router-link to="data-access-coe/community-support/postaward" class="in-page-link">Post-Award phase</router-link> must be cataloged and discoverable through ITS DataHub and <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Data.gov<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. These data assets are also eligible for JPO-funded data hosting.
+      ITS DataHub is committed to providing the ITS community with simplified access to the most relevant and useful ITS research data. All data asset(s) produced by ITS JPO-funded projects in the <router-link to="/data-access-coe/community-support/postaward" class="in-page-link">Post-Award phase</router-link> must be cataloged and discoverable through ITS DataHub and <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Data.gov<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. These data assets are also eligible for JPO-funded data hosting.
+      
     </p>
     <p>
-        See the <router-link to="/resources/data-storage-system" class="in-page-link">Data Storage Systems page</router-link>  page for an overview of JPO-funded data systems and follow the steps below.
+        See the <router-link to="/resources/data-storage-system" class="in-page-link">Data Storage Systems page</router-link>  for an overview of JPO-funded data systems and follow the steps below.
     </p>
    
     <div class="grid-row step-one">
@@ -15,7 +16,7 @@
                 To register your data asset, email your <router-link to="/resources/data-management/template-and-instructions" class="in-page-link">Data Management Plan</router-link> to <a id="dh-footer_contact-us-email" :href="`mailto:${contact_email}`">{{contact_email}}</a>.
             </p>
             <p>
-                If you do not have a Data Management Plan or were not required by the <router-link to="/resources/guidelines" class="in-page-link">Data Access Guidelines</router-link> to create a Data Management Plan, please download and fill out the <router-link target=”_blank” to="https://github.com/usdot-its-jpo-data-portal/metadata_ingest/raw/master/forms/ITSJPO_MetadataQuestionnaire_fillable.pdf" class="in-page-link">ITS DataHub Metadata Questionnaire<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></router-link> and email it to <a id="dh-footer_contact-us-email" :href="`mailto:${contact_email}`">{{contact_email}}</a>. 
+                If you do not have a Data Management Plan or were not required by the <router-link to="/resources/guidelines" class="in-page-link">Data Access Guidelines</router-link> to create a Data Management Plan, please download and fill out the <a target=”_blank” href="https://github.com/usdot-its-jpo-data-portal/metadata_ingest/raw/master/forms/ITSJPO_MetadataQuestionnaire_fillable.pdf" class="in-page-link">ITS DataHub Metadata Questionnaire<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a> and email it to <a id="dh-footer_contact-us-email" :href="`mailto:${contact_email}`">{{contact_email}}</a>. 
             </p>
         </div>
         <div class="tablet:grid-col-1 right-column_div">
@@ -45,7 +46,7 @@
                 Once registration is complete (in 1-4 weeks), the ITS DataHub support team may schedule a short, 15-minute review. After the review, the data provider will have <strong>two to three days</strong> to provide additional feedback regarding the data asset.
             </p>
             <p>
-                If no additional feedback is received three days after the review, approval for publication from the data provider will be assumed.
+                If no additional feedback is received within three business days after the review is completed, approval for publication from the data provider will be assumed.
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
@@ -58,7 +59,7 @@
         <div class="mobile-lg:grid-col-10 left-column_div usa-prose">
             <h2>Step 4: Publication and Promotion</h2>
             <p>
-                After approval, the ITS DataHub support team will make the data asset discoverable through ITS DataHub and <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Data.gov<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. ITS DataHub may promote the data asset externally as appropriate.
+                After approval, the ITS DataHub support team will make the data asset discoverable through ITS DataHub and <a target=”_blank” href="http://data.gov/">Data.gov<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. ITS DataHub may promote the data asset externally as appropriate.
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
