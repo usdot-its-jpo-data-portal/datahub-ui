@@ -2,7 +2,7 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose images-in-right-column registration-page">
     <h1>Data Registration</h1>
     <p>
-      ITS DataHub is committed to providing the ITS community with simplified access to the most relevant and useful ITS research data. All data asset(s) produced by ITS JPO-funded projects in the <router-link to="/data-access-coe/community-support/postaward" class="in-page-link">Post-Award phase</router-link> must be cataloged and discoverable through ITS DataHub and <a target=”_blank” href="https://ntl.bts.gov/public-access/creating-data-management-plans-extramural-research">Data.gov<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. These data assets are also eligible for JPO-funded data hosting.
+      ITS DataHub is committed to providing the ITS community with simplified access to the most relevant and useful ITS research data. All data asset(s) produced by ITS JPO-funded projects in the <router-link to="/data-access-coe/community-support/postaward" class="in-page-link">Post-Award phase</router-link> must be cataloged and discoverable through ITS DataHub and <a target=”_blank” href="http://data.gov/">Data.gov<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. These data assets are also eligible for JPO-funded data hosting.
       
     </p>
     <p>
