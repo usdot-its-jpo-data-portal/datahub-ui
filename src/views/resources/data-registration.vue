@@ -6,7 +6,7 @@
       
     </p>
     <p>
-        See the <router-link to="/resources/data-storage-system" class="in-page-link">Data Storage Systems page</router-link>  for an overview of JPO-funded data systems and follow the steps below.
+        See the <router-link to="/resources/data-storage-system" class="in-page-link">Data Storage Systems page</router-link> for an overview of JPO-funded data systems and follow the steps below.
     </p>
    
     <div class="grid-row step-one">
@@ -67,7 +67,6 @@
         </div>
     </div>
 
-
     <div class="grid-row step-five">
         <div class="mobile-lg:grid-col-10 left-column_div usa-prose">
             <h2>Deprecation</h2>
@@ -95,29 +94,3 @@ export default {
   }
 }
 </script>
-<!--<style lang="scss">
-    .registration-page{
-        img.right-column{
-            max-width: 166px;
-            margin-top: 0px;
-            @media (max-width: 'tablet'){
-                max-width: 80px;
-            }
-        }
-        .right-column_div{
-            border-left: lightgray 5px solid;
-            margin-top: 15px;
-            margin-left: 0px;
-            padding-left: 20px;
-        }
-        h2{
-            margin-top: 25px;
-        }
-        
-        .step-two, .step-three,
-        .step-four, .step-five{
-            margin-top: 1.5em;
-        }
-    }
-</style> -->
-
