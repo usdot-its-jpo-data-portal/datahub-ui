@@ -125,6 +125,9 @@
               <li id="faqs" class="usa-sidenav__item">
                 <router-link id="id-faqs" to="/resources/data-management/faqs" class="page" :class=" isVisible('faqs') ? 'usa-current' : '' ">FAQs</router-link>
               </li>
+              <li id="registration" class="usa-sidenav__item">
+                <router-link id="id-registration" to="/resources/data-registration" class="page" :class=" isVisible('data-registration') ? 'usa-current' : '' ">Data Registration</router-link>
+              </li>
               <li id="metrics" class="usa-sidenav__item">
                 <router-link id="id-metrics" to="/resources/metrics" class="page" :class=" isVisible('metrics') ? 'usa-current' : '' ">Metrics</router-link>
                 <ul v-if="isVisible('metrics')" class="usa-sidenav__sublist">

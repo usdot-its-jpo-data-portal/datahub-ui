@@ -11,6 +11,31 @@ h3 {
     margin-block-end: .7em;
 }
 
+/*--- Page Layouts ---*/
+/**-- Images in right column --*/
+.usa-layout-docs__main.images-in-right-column{
+    img.right-column{
+        max-width: 166px;
+        margin-top: 0px;
+        @media (max-width: 'tablet'){
+            max-width: 80px;
+        }
+    }
+    .right-column_div{
+        border-left: lightgray 5px solid;
+        margin-top: 15px;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+    h2{
+        margin-top: 25px;
+    }   
+    .step-two, .step-three,
+    .step-four, .step-five{
+        margin-top: 1.5em;
+    }
+}
+
 /*--- Lists ---*/
 
 .usa-prose p ol,
