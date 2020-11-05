@@ -75,7 +75,7 @@
             </p>
         </div>
         <div class="mobile-lg:grid-col-1 right-column_div">
-            <img class="right-column" src="/images/ITSJPO_CodeHub_RepositoryRegistration_012820_delete.png" alt="New tab icon." title="Opens in a new tab.">
+            <img class="right-column" src="/images/ITSJPO_RepositoryRegistration_delete.png" alt="New tab icon." title="Opens in a new tab.">
         </div>
     </div> 
   </div>
