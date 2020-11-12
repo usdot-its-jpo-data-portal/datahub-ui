@@ -29,3 +29,4 @@ yarn-error.log*
 */venv
 .scannerwork/
 public/visualizations/
+test/coverage-jest/

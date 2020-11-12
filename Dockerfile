@@ -20,8 +20,6 @@ RUN node --max-old-space-size=512
 
 RUN npm run test:unit
 
-RUN npm run build
-
 # for sonarqube
 RUN mkdir -p /root/.sonar/sonar-scanner-4.4.0.2170-linux
 RUN rm -rf /root/.sonar/sonar-scanner-4.4.0.2170-linux
@@ -29,8 +27,9 @@ RUN mkdir -p /root/.sonar/sonar-scanner-4.4.0.2170-linux
 RUN curl -ksSLo /root/.sonar/sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.4.0.2170-linux.zip
 RUN unzip /root/.sonar/sonar-scanner.zip -d /root/.sonar/
 RUN rm /root/.sonar/sonar-scanner.zip
-RUN if [ -z ${SONAR_TOKEN} ]; then echo "NO SONAR"; else /root/.sonar/sonar-scanner-4.4.0.2170-linux/bin/sonar-scanner -Dsonar.projectKey=usdot-its-jpo-data-portal_datahub-ui -Dsonar.organization=usdot-its-jpo-data-portal -Dsonar.sources=src -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN} -Dsonar.branch.name=${CODEBUILD_GIT_BRANCH}; fi
+RUN if [ -z ${SONAR_TOKEN} ]; then echo "NO SONAR"; else /root/.sonar/sonar-scanner-4.4.0.2170-linux/bin/sonar-scanner -Dsonar.projectKey=usdot-its-jpo-data-portal_datahub-ui -Dsonar.organization=usdot-its-jpo-data-portal -Dsonar.sources=src -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN} -Dsonar.branch.name=${CODEBUILD_GIT_BRANCH} -Dsonar.javascript.lcov.reportPaths=test/coverage-jest/lcov.info; fi
 
+RUN npm run build
 
 FROM nginx:1.17.9
 
