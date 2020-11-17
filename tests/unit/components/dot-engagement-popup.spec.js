@@ -46,4 +46,128 @@ describe('dot-engagement-popup.vue', () => {
     expect(item.is('span')).toBe(true);
     expect(item.text()).toEqual('Click here if you would like to stop seeing this message');
   });
+  it('test backgroundColor no engagement popup', () => {
+    $store.state.engagementPopup = null;
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(0,0,0,0.6)');
+  });
+  it('test backgroundColor no controlsShadow', () => {
+    $store.state.engagementPopup.controlsShadow = null;
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(0,0,0,0.6)');
+  });
+  it('test backgroundColor black', () => {
+    $store.state.engagementPopup.controlsShadow = 'black';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(0,0,0,0.6)');
+  });
+  it('test backgroundColor white', () => {
+    $store.state.engagementPopup.controlsShadow = 'white';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(255,255,255,0.6)');
+  });
+  it('test backgroundColor navy', () => {
+    $store.state.engagementPopup.controlsShadow = 'navy';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(22,46,81,0.6)');
+  });
+  it('test backgroundColor gray', () => {
+    $store.state.engagementPopup.controlsShadow = 'gray';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(204,204,204,0.6)');
+  });
+  it('test backgroundColor darkgray', () => {
+    $store.state.engagementPopup.controlsShadow = 'darkgray';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(128,128,128,0.6)');
+  });
+  it('test backgroundColor green', () => {
+    $store.state.engagementPopup.controlsShadow = 'green';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(0,128,0,0.6)');
+  });
+  it('test backgroundColor red', () => {
+    $store.state.engagementPopup.controlsShadow = 'red';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(255,0,0,0.6)');
+  });
+  it('test backgroundColor darkred', () => {
+    $store.state.engagementPopup.controlsShadow = 'darkred';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(217,0,0,0.6)');
+  });
+  it('test backgroundColor blue', () => {
+    $store.state.engagementPopup.controlsShadow = 'blue';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(0,0,255,0.6)');
+  });
+  it('test backgroundColor orange', () => {
+    $store.state.engagementPopup.controlsShadow = 'orange';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(255,165,0,0.6)');
+  });
+  it('test backgroundColor transparent', () => {
+    $store.state.engagementPopup.controlsShadow = 'transparent';
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    let r = wrapper.vm.backgroundColor;
+    expect(r).toEqual('rgba(0,0,0,0)');
+  });
+  it('test close visible', async (done) => {
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    await wrapper.setData({isClose: false, isVisible: true});
+    wrapper.vm.close();
+    setTimeout(() => {
+      expect(wrapper.vm.$data.isClose).toBeTruthy();
+      expect(wrapper.vm.$data.isVisible).toBeFalsy();
+      done();
+    }, 600)
+  });
+  it('test noShowClicked', async (done) => {
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    await wrapper.setData({isClose: false, isVisible: true});
+    window.localStorage = {
+      setItem: function(a,b){}
+    }
+    wrapper.vm.noShowClicked();
+    setTimeout(() => {
+      expect(wrapper.vm.$data.isClose).toBeTruthy();
+      expect(wrapper.vm.$data.isVisible).toBeFalsy();
+      done();
+    }, 600)
+  });
+  it('test getUserSelection', () => {
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    window.localStorage = {
+      getItem: function(a) {return null;}
+    }
+    let r = wrapper.vm.getUserSelection({id:'id'});
+    expect(r).toBeTruthy();
+  });
+  it('test getUserSelection true', () => {
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    window.localStorage = {
+      getItem: function(a) {
+        return false;
+      }
+    }
+    let r = wrapper.vm.getUserSelection({id:'id'});
+    expect(r).toBeTruthy();
+  });
+  it('test watch data', () => {
+    const wrapper = shallowMount(DOTEngagementPopup, { attachTo: document.body, mocks: { $store }});
+    wrapper.vm.$options.watch.data.call(wrapper.vm, true, false);
+    expect(wrapper.vm.$data.isVisible).toBeTruthy();
+  });
 });

@@ -76,8 +76,7 @@ export default {
       set: function(val) { this.$store.commit('setMainData',val); }
     },
     isSearching: {
-      get: function() { return this.$store.state.searching; },
-      set: function(){}
+      get: function() { return this.$store.state.searching; }
     },
     selectedSort: {
       get: function() { return this.$store.state.sortBy; },

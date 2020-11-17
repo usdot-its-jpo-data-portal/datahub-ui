@@ -128,8 +128,7 @@ export default {
         }
         this.updateDescriptionTools(false, this.readMore, this.readButtonText);
         return this.item.description;
-      },
-      set: function() {}
+      }
     },
     itemTags: {
       get: function() {
@@ -142,8 +141,7 @@ export default {
           this.tagsShowMore,
           this.tagsShowMoreText);
         return result;
-      },
-      set: function(){}
+      }
     },
     relatedItems: {
       get: function() {
@@ -157,8 +155,7 @@ export default {
           this.relatedShowMoreText);
 
         return result;
-      },
-      set: function(){}
+      }
     }
   },
   methods: {
