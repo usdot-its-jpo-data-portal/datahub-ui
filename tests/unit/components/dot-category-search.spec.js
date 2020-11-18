@@ -2,6 +2,29 @@ import {shallowMount} from '@vue/test-utils';
 import DOTCategorySearch from '@/components/dot-category-search.vue';
 
 describe('DOT Microsite - Home : Category Search', () => {
+  let $router;
+  let $store;
+  let committedKey;
+  let committedVal;
+  let routerPushed;
+
+  beforeEach( () => {
+    routerPushed = [];
+    $router = {
+      push: function(a) {
+        routerPushed.push(a);
+      }
+    };
+    $store = {
+      commit: function(a,b){
+        committedKey = a;
+        committedVal = b;
+      },
+      dispatch: function(a,b){}
+    };
+
+  });
+
   it('contains a title', () => {
     const wrapper = shallowMount(DOTCategorySearch, {attachTo: document.body});
     let f = wrapper.find('h3');
@@ -42,5 +65,11 @@ describe('DOT Microsite - Home : Category Search', () => {
       expect(ifSrc).toBe(true);
     }
   });
+  it('test searchSend', () => {
+    const wrapper = shallowMount(DOTCategorySearch, {mocks: { $store, $router }});
+    wrapper.vm.searchSend("test");
+    expect(committedVal.term).toEqual("test");
+    expect(routerPushed[0]).toEqual("search");
+  })
 
 });

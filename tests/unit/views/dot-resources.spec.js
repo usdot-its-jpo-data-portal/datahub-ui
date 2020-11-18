@@ -261,4 +261,129 @@ describe('DOT Microsite Resources', () => {
     }
     expect(result.length).toEqual(0)
   });
+  it('test destroyed', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let r = null;
+    window.removeEventListener = (a, b) => {
+      r = a;
+    }
+    wrapper.destroy();
+    expect(r).toEqual('popstate');
+  });
+  it('test moveToTag', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let mockEvent = {
+      preventDefault: function(){},
+    };
+    let mockId = 'id';
+    window.scrollY = 0;
+    document.getElementById = function(id) {
+      return {
+        getBoundingClientRect: function() {
+          return {
+            top: 0
+          };
+        }
+      }
+    };
+    window.scrollTo = function(x,y) {}
+    wrapper.vm.moveToTag(mockEvent, mockId);
+    expect(window.scrollX).toEqual(0);
+  });
+  it('test handleScroll', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let mockSideMenuElement = {
+      className: 'dh-resource-main_float-menu_top'
+    };
+    wrapper.setData({sideMenuElement:mockSideMenuElement});
+    window.scrollY = 0;
+    document.getElementById = function(id) {
+      if(id == 'ch-footer') {
+        return {
+          getBoundingClientRect: function() {
+            return {
+              top: 10
+            }
+          }
+        }
+      } else if(id == 'dh-resources-side-menu') {
+        return {
+          getBoundingClientRect: function() {
+            return {
+              bottom: 1
+            }
+          }
+        }
+      }
+    }
+
+    wrapper.vm.handleScroll();
+    expect(wrapper.vm.$data.sideMenuElement.className).toEqual('');
+  });
+  it('test handleScroll sy > 250', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let mockSideMenuElement = {
+      className: 'test'
+    };
+    wrapper.setData({sideMenuElement:mockSideMenuElement});
+    window.scrollY = 300;
+    document.getElementById = function(id) {
+      if(id == 'ch-footer') {
+        return {
+          getBoundingClientRect: function() {
+            return {
+              top: 300
+            }
+          }
+        }
+      } else if(id == 'dh-resources-side-menu') {
+        return {
+          getBoundingClientRect: function() {
+            return {
+              bottom: 1
+            }
+          },
+          style: {
+            top: ''
+          }
+        }
+      }
+    }
+
+    wrapper.vm.handleScroll();
+    expect(wrapper.vm.$data.sideMenuElement.className).toEqual('test dh-resource-main_float-menu_top');
+  });
+  it('test handleScroll sy > 250 and less than desired space', () => {
+    const wrapper = shallowMount(Resources, {localVue, router});
+    let mockSideMenuElement = {
+      className: 'dh-resource-main_float-menu_top'
+    };
+    wrapper.setData({sideMenuElement:mockSideMenuElement});
+    window.scrollY = 300;
+    document.getElementById = function(id) {
+      if(id == 'ch-footer') {
+        return {
+          getBoundingClientRect: function() {
+            return {
+              top: 30
+            }
+          }
+        }
+      } else if(id == 'dh-resources-side-menu') {
+        return {
+          getBoundingClientRect: function() {
+            return {
+              bottom: 10
+            }
+          },
+          style: {
+            top: ''
+          }
+        }
+      }
+    }
+
+    wrapper.vm.handleScroll();
+    expect(wrapper.vm.$data.sideMenuElement.className).toEqual('');
+  });
 });
