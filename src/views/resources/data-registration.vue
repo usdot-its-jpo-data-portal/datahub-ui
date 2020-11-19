@@ -26,7 +26,7 @@
 
     <div class="grid-row step-two">
         <div class="tablet:grid-col-10 left-column_div usa-prose">       
-            <h2>Step 2: Registration Form Review</h2>
+            <h2>Step 2: Registration Form Check</h2>
             <p>
                 Upon receipt of the Data Management Plan or the Metadata Questionnaire, the ITS DataHub support team will check to ensure all required information has been provided.
             </p>

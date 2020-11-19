@@ -6,7 +6,7 @@
         <div class="usa-layout-docs__main desktop:grid-col-9 grid-offset-2 usa-prose about-vue">
           <h1>About</h1>
           <p class="usa-intro">
-            ITS DataHub provides a single point of entry to discover publicly available, reusable, and open ITS research projects and data management tools. ITS DataHub enables access to research datasets in near-real time and decreases the time from research to insight. Data accessible through ITS DataHub is quality-checked, well-documented, and freely available to the public.
+            ITS DataHub provides a single point of entry to discover publicly available, reusable, and open ITS research projects and data management tools. ITS DataHub enables free access to research datasets and associated documentation in near-real time and decreases the time from research to insight.
           </p>
           <p>
             Users can directly connect and contribute to the ITS DataHub community and open data by hosting new data, generating data stories, creating data visualizations, downloading data, or recommending improvements. ITS DataHub facilitates third-party research into the effectiveness of emerging ITS technologies, preliminary development of third-party applications, and harmonization across similar collections.

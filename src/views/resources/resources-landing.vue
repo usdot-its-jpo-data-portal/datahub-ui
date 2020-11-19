@@ -18,6 +18,12 @@
         <strong>FAQs</strong>: Answers to the most frequently asked questions concerning ITS DataHub and the related resources.
       </li>
       <li>
+        <strong>Data Registration</strong>: Details how to register a dataset with ITS DataHub.
+      </li>
+      <li>
+        <strong>Metrics</strong>: Information on ITS DataHub usage.
+      </li>
+      <li>
         <strong>Additional Resources</strong>: A list of links to other useful ITS resources.
       </li>
     </ul>
