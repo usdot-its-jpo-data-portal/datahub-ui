@@ -11,7 +11,7 @@
         }, 
         {   "name": "Work Zone Data Exchange (WZDx) Feed Registry and Archive",
             "description": "Discover multiple work zone data feeds, datasets, visualizations, and other tools to support your data projects.",
-            "url": "https://datahub.transportation.gov/Roadways-and-Bridges/Work-Zone-Data-Exchange-WZDx-Feed-Registry/69qe-yiui",
+            "url": "https://data.transportation.gov/stories/s/Work-Zone-Data-Initiative-Partnership/jixs-h7uw",
             "image": "./images/workzone_with_logo.png",
             "altText": "Cars passing through a road work zone with a visualization of information being sent to cars via work zone machines. Link to explore dataset on data.transportation.gov"
         },
