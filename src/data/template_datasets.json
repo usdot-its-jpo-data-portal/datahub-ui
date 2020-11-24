@@ -9,10 +9,10 @@
             "image": "./images/connected_vehicle_pilot.jpg",
             "altText": "Texas Department of Transportation logo superimposed on an aerial city view."
         }, 
-        {   "name": "Texas Department of Transportation WZDx Dataset",
-            "description": "Data sample includes lane closure occurrences from the Texas Department of Transportation (TxDOT) highway system.",
-            "url": "https://datahub.transportation.gov/Roadways-and-Bridges/Texas-DOT-TxDOT-Work-Zone-Data/h4kh-i7b7",
-            "image": "./images/txdot.png",
+        {   "name": "Work Zone Data Exchange (WZDx) Feed Registry and Archive",
+            "description": "Discover multiple work zone data feeds, datasets, visualizations, and other tools to support your data projects.",
+            "url": "https://data.transportation.gov/stories/s/Work-Zone-Data-Initiative-Partnership/jixs-h7uw",
+            "image": "./images/workzone_with_logo.png",
             "altText": "Cars passing through a road work zone with a visualization of information being sent to cars via work zone machines. Link to explore dataset on data.transportation.gov"
         },
         {
