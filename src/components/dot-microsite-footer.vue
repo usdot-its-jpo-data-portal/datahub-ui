@@ -145,8 +145,7 @@ export default {
           return this.$store.state.version;
 
         return parts[0]+'.'+parts[1];
-      },
-      set: function(){}
+      }
     },
     buildId : {
       get: function() {
@@ -163,22 +162,18 @@ export default {
 
       }
     },
-    isActive: {
-            get: function() {return this.active;},
-            set: function(val) {this.active = val;}
-        },
-        registering: {
-          get: function() { return this.$store.state.registering; },
-          set: function(val) { this.$store.commit('setRegistering', val)}
-        },
-        registerError: {
-          get: function() { return this.$store.state.registerError;},
-          set: function(val) {this.$store.commit('setRegisterError', val)}
-        },
-        registerMessage: {
-          get: function() { return this.$store.state.registerMessage; },
-          set: function(val) {this.$store.commit('setRegisterMessage', val)}
-        }
+    registering: {
+      get: function() { return this.$store.state.registering; },
+      set: function(val) { this.$store.commit('setRegistering', val)}
+    },
+    registerError: {
+      get: function() { return this.$store.state.registerError;},
+      set: function(val) {this.$store.commit('setRegisterError', val)}
+    },
+    registerMessage: {
+      get: function() { return this.$store.state.registerMessage; },
+      set: function(val) {this.$store.commit('setRegisterMessage', val)}
+    }
   },
   watch: {
     registering: function(newValue, oldValue) {

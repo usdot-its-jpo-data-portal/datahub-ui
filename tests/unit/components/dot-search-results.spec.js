@@ -5,6 +5,10 @@ import SEARCH_RESULTS from '@/mockdata/search-results.json';
 describe('DOT Microsite - Search : Results', () => {
   let $router;
   let $store;
+  let commitKey;
+  let commitVal;
+  let dispatchKey;
+  let dispatchVal;
 
   beforeEach(() => {
     $router = {
@@ -19,8 +23,14 @@ describe('DOT Microsite - Search : Results', () => {
         MainData: SEARCH_RESULTS,
         searching: false
       },
-      commit: function(a,b){},
-      dispatch: function(a,b){}
+      commit: function(a,b){
+        commitKey = a;
+        commitVal = b;
+      },
+      dispatch: function(a,b){
+        dispatchKey = a;
+        dispatchVal = b;
+      }
     };
   });
 
@@ -106,5 +116,105 @@ describe('DOT Microsite - Search : Results', () => {
     const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
     let h = wrapper.find('.dh-search-results_list-no-results');
     expect(h.text()).toMatch('No search results.');
+  });
+  it('test queryText get', () => {
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.queryText;
+    expect(r.term).toEqual('data');
+  });
+  it('test queryText set', () => {
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    wrapper.vm.queryText = 'test';
+    expect(commitKey).toEqual('setLastQueryObject');
+    expect(commitVal).toEqual('test');
+  });
+  it('test searchResults get', () => {
+    $store.state.MainData = [1,2,3,4,5];
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.searchResults;
+    expect(r.length).toEqual(5);
+  });
+  it('test searchResults set', () => {
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    wrapper.vm.searchResults = 'test';
+    expect(commitKey).toEqual('setMainData');
+    expect(commitVal).toEqual('test');
+  });
+  it('test isSearching get', () => {
+    $store.state.searching = true;
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    expect(wrapper.vm.isSearching).toBeTruthy()
+  });
+  it('test selectedSort get', () => {
+    let t = 'test';
+    $store.state.sortBy = t;
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    expect(wrapper.vm.selectedSort).toEqual(t);
+  });
+  it('test selectedSort set', () => {
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let t = 'test';
+    wrapper.vm.selectedSort = t;
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual(t);
+  });
+  it('test search', () => {
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let t = 'test';
+    window.scrollTo = function(a,b){};
+    wrapper.vm.search(t);
+    expect(commitKey).toEqual('setQueryObject');
+    expect(commitVal).toEqual(t);
+    expect(dispatchKey).toEqual('searchDataAssets');
+    expect(dispatchVal).toEqual(t);
+  });
+  it('test dropDownFilter sort by name', () => {
+    $store.state.sortBy = 'name';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
+  });
+  it('test dropDownFilter sort by date', () => {
+    $store.state.sortBy = 'date';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
+  });
+  it('test dropDownFilter sort by relevance', () => {
+    $store.state.sortBy = 'relevance';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
+  });
+  it('test dropDownFilter sort by downloadstotal', () => {
+    $store.state.sortBy = 'downloadstotal';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
+  });
+  it('test dropDownFilter sort by pageviewslastmonth', () => {
+    $store.state.sortBy = 'pageviewslastmonth';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
+  });
+  it('test dropDownFilter sort by pageviewstotal', () => {
+    $store.state.sortBy = 'pageviewstotal';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
+  });
+  it('test dropDownFilter sort by default', () => {
+    $store.state.sortBy = 'default';
+    const wrapper = shallowMount(DOTSearchResuls, {attachTo: document.body, mocks: { $router, $store }});
+    let r = wrapper.vm.dropDownFilter();
+    expect(commitKey).toEqual('setSortBy');
+    expect(commitVal).toEqual($store.state.sortBy);
   });
 });
