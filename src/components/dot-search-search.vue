@@ -7,7 +7,6 @@
           </div>
           <div class="grid-col-auto dh-search__search-inputs">
             <div class="dh-search__search-inputs-phrase above">
-              <!-- <input type="checkbox" v-model="queryText.phrase" name="searchPhrase" id="id-searchPhrase"> -->
               <input type="radio" id="searchByWords" name="searchByType" v-model="searchType" value="byWords">
               <label class="usa-label" for="searchByWords">Search by individual words</label>
             </div>
@@ -16,9 +15,6 @@
             <div class="dh-search__search-inputs-phrase above">   
               <input type="radio" id="searchByPhrase" name="searchByType" v-model="searchType" value="byPhrase">
               <label class="usa-label second-input" for="searchByPhrase">Search by entire phrase</label>
-              <!-- in input on change event 
-                put code that is phrase or !phrase.  v-model="queryText.phrase" or v-model="!queryText.phrase"-->
-              <!-- <label for="id-searchPhrase">Phrase</label> -->
             </div>
           </div>
           <div class="grid-col-fill"></div>
