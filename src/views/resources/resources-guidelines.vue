@@ -264,9 +264,6 @@
         <a href="https://www.data.gov/" target="_blank" rel="noopener noreferrer">
           https://www.data.gov/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
         </a>
-        <!-- <a href="https://project-opendata.cio.gov/v1.1/schema/" target="_blank" rel="noopener noreferrer">
-          https://project-opendata.cio.gov/v1.1/schema/<img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
-        </a> -->
       </li>
       <li><strong>DCAT-US Schema v1.1 (Project Open Data Metadata Schema).</strong>
       &nbsp;U.S. General Services Administration, November 6, 2014.

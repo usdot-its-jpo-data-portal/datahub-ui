@@ -59,7 +59,7 @@
     <div id="nav_dot_banner" class="usa-banner__header">
       <div class="usa-banner__inner">
         <a style="background: none" href="https://transportation.gov">
-          <img id="dot_logo" src="/images/dot_logo.png" style="" alt="Department of Transportation logo">
+          <img id="dot_logo" src="/images/dot_logo.png" alt="Department of Transportation logo">
         </a>
       </div>
     </div>
@@ -104,7 +104,7 @@
               
             </li>
           </ul>
-          <div class="usa-nav__secondary" style="">
+          <div class="usa-nav__secondary">
             <div class="dh-header__secondary-links">
               <ul class="usa-nav__secondary-links">
                 <li class="usa-nav__secondary-item">
@@ -137,7 +137,3 @@ export default {
   props: {}
 };
 </script>
-
-<style scoped lang="scss">
-</style>
-
