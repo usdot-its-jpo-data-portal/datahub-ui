@@ -22,7 +22,7 @@
 
           <h2 id="section-heading-h2">Contact Information</h2>
           <p>
-            For inquiries about ITS DataHub, please contact the ITS JPO Data Access Center of Excellence at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
+            For inquiries about ITS DataHub, please contact the ITS JPO Data Program support team at: <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
           </p>
         </div>
       </div>
