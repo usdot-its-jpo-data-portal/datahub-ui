@@ -155,7 +155,3 @@ export default {
   name: 'publicAccess'
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

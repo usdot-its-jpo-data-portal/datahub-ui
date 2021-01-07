@@ -41,6 +41,3 @@ export default {
   name: "ResourcesLanding"
 }
 </script>
-<style lang="scss">
-
-</style>

@@ -268,6 +268,3 @@ export default {
   name: "SystemDesign"
 }
 </script>
-<style lang="scss">
-
-</style>
