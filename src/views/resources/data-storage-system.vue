@@ -3,8 +3,7 @@
     <h1>Data Storage Systems</h1>
     <h2 id="datastoragesystems-purpose">Purpose</h2>
     <p>
-      The following web page provides information on the different data storage systems available to research projects in order to be compliant with the Intelligent Transportation Systems (ITS) Joint Program Office (JPO) Data Access Center of Excellence (CoE)
-      <router-link to="/resources/guidelines">Guidelines</router-link>,
+      The following web page provides information on the different data storage systems available to research projects in order to be compliant with the Intelligent Transportation Systems (ITS) Joint Program Office (JPO) Data Access <router-link to="/resources/guidelines">Guidelines</router-link>,
       as well as the United States Department of Transportation (U.S. DOT) Public Access Plan; the Open, Public, Electronic, and Necessary (OPEN) Government Data Act; and other applicable data policies at the United States Department of Transportation (U.S. DOT) and the federal level. To see a downloadable version of this information, please reference the
       <router-link to="/resources/data-management/template-and-instructions">Templates & Instructions</router-link>
       tab. To provide feedback or questions on this information, you can file an issue on our
@@ -166,13 +165,13 @@
           <ol type="a">
             <li>
               U.S. DOT system: A U.S. DOT-managed system, such as the
-              <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+              <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
               <ol type="i">
                 <li>
                   <strong>End</strong>: This data is a good fit to <strong>store metadata and the data dictionary in
                   <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
                   and fully store the data in the
-                  <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
                   </strong>.
                 </li>
               </ol>
@@ -197,13 +196,13 @@
           <ol type="a">
             <li>
               U.S. DOT system: A U.S. DOT-managed system, such as the
-              <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+              <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
               <ol type="i">
                 <li>
                   <strong>End</strong>: This data is a good fit to <strong>store only metadata in
                   <a target="_blank" href="https://data.transportation.gov/" rel="noopener noreferrer">DTG<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
                   and fully store the data in the
-                  <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+                  <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
                   </strong>.
                 </li>
               </ol>
@@ -249,7 +248,7 @@
       which the Data Access CoE references in its materials.
     </p>
     <p>
-      <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>:
+      <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons (SDC)<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>:
       A U.S. DOT-managed controlled-access data storage system that provides secure, cloud-based, controlled access to complex (high volume, velocity, and/or data variety) and sensitive (containing private, proprietary, and/or CBI) datasets in a secure enclave. Created to store PII, CBI and sensitive data for both ongoing, large-scale primary and derived research data, this system also contains analysis tools and/or shared computing resources. The ITS JPO adheres to the federal OPEN Government Data Act, and only restricts access to publicly funded data if necessary. To comply with these goals, data providers who submit research datasets to the SDC may need to provide a justification for why controlled-access is required for their data in their Data Management Plan and/or Metadata Questionnaire and provide a sanitized version of the data to a public-access system.
     </p>
     <p>
@@ -258,7 +257,7 @@
     </p>
     <p>
       <strong>Non-U.S. DOT controlled-access system</strong>: A system managed by a party other than the U.S. DOT, i.e. managed by the data provider or a third party, that provides controlled access to data. If a project has data stored in an alternative federated data system, the data provider may consult with ITS JPO to identify additional systems not listed above to store research data. The ITS JPO will review proposed alternative federated data systems and determine if the system meets Data Access CoE criteria. Data Access CoE criteria for approving a non-U.S. DOT controlled-access system includes but is not limited to ensuring the non-U.S. DOT controlled-access system protects PII and CBI, provides U.S. DOT analysts access to complete their work (e.g. evaluation), and enables controlled-access and collaboration at least equal to U.S. DOT’s controlled-access system (e.g. the 
-      <a target="_blank" href="https://its.dot.gov/data/secure/about.html" rel="noopener noreferrer">SDC<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+      <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">SDC<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
       ).
     </p>
   </div>

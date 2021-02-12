@@ -46,7 +46,7 @@
 
     <h2 id="section-heading-h2">How do I get access to sensitive transportation datasets?</h2>
     <p>
-      USDOT provides access to sensitive data via several systems. The proof-of-concept <a target="_blank" href="https://its.dot.gov/data/secure/" rel="noopener noreferrer">Secure Data Commons<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, 
+      USDOT provides access to sensitive data via several systems. The proof-of-concept <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, 
       provides a secure and collaborative controlled-access environment for sensitive data (i.e. proprietary or containing PII). 
       To get more information or to participate, 
       contact us at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
@@ -54,7 +54,7 @@
 
     <h2 id="section-heading-h2">How do I provide data to ITS DataHub?</h2>
     <p>
-      Please review the <router-link id="data-management-template-id-in-page" to="/resources" class="in-page-link">Guidelines page</router-link> and reach out to the ITS JPO Data Access Center of Excellence at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>. 
+      Please review the <router-link id="data-management-template-id-in-page" to="/resources" class="in-page-link">Guidelines page</router-link> and reach out to the ITS JPO Data Program support team at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>. 
     </p>
 
     <h2 id="section-heading-h2">What kind of data should I provide?</h2>
