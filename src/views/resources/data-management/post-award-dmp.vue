@@ -238,7 +238,7 @@
           <a target=”_blank” href="https://ntl.bts.gov/public-access/guidelines-evaluating-repositories">Guidelines for Evaluating Repositories for Conformance with the DOT Public Access Plan<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
         </li>
         <li>
-          For controlled-access systems, describe how the system enables privacy protection, controlled-access, and collaboration equal to or exceeding the U.S. DOT’s controlled-access system, the <a target=”_blank” href="https://its.dot.gov/data/secure/index.html">Secure Data Commons<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
+          For controlled-access systems, describe how the system enables privacy protection, controlled-access, and collaboration equal to or exceeding the U.S. DOT’s controlled-access system, the <a target=”_blank” href="https://www.transportation.gov/data/secure">Secure Data Commons<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>
         </li>
       </ul>
     </p>
