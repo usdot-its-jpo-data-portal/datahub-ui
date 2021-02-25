@@ -90,12 +90,12 @@
       Project teams may use different systems to store different types of data (e.g., public, non-public, primary, derived, streaming, static). The ITS JPO has designated several public and controlled access data systems that project teams can use to meet their data access and retention requirements, including registering metadata in the <a href="https://its.dot.gov/data/" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. Project teams are encouraged to use these shared resources but can propose alternative systems for storing and providing access to data via their preliminary Data Management Plan (DMP) and supplemental information. If ITS JPO determines that a proposed system does not provide an appropriate level of user access, functionality and data life cycle management, the  project team must use the systems designated by the ITS JPO. Wherever possible, these determinations will be made prior to award.
     </p>
     <p>
-      Datasets in ITS DataHub are required to be retained for a minimum of five years in accordance with the <a href="https://www.fhwa.dot.gov/legsregs/directives/orders/hoit-hq_.cfm" target="_blank" rel="noopener noreferrer">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, NARA schedule number <a href="https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0406/daa-0406-2014-0003_sf115.pdf" target="_blank" rel="noopener noreferrer">DAA-0406-2014-0003<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. This retention period begins when U.S. DOT first receives access to a dataset.
+      Datasets in ITS DataHub are required to be retained for a minimum of five years in accordance with the <a href="https://www.fhwa.dot.gov/legsregs/directives/orders/hoit-hq_.cfm" target="_blank" rel="noopener noreferrer">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, NARA schedule number <a href="https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0406/daa-0406-2014-0003_sf115.pdf" target="_blank" rel="noopener noreferrer">DAA-0406-2014-0003<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. This retention period begins when U.S. DOT first receives access to a dataset. Project teams should be aware that the ITS DataHub Records Disposition Manual does not replace other potentially relevant disposition schedules.
     </p>
 
     <h2 id="standards">7. Standards</h2>
     <p>
-      Consistent with federal policy, project teams must use standards to promote data interoperability and openness. Where existing standards are insufficient, project teams must describe in their DMP how they will contribute to the development of new standards.
+      Consistent with federal policy, project teams must use standards to promote data interoperability and openness, along with any other relevant standards, such as geospatial data standards. Where existing standards are insufficient, project teams must describe in their DMP how they will contribute to the development of new standards.
     </p>
     <p>
       Project teams must provide metadata on all data produced for their project prior to the data being made publicly accessible. Project teams can provide additional metadata beyond the common core fields if desired, and reference more detailed documentation. Consistent with federal policy, ITS JPO will provide this metadata to the public via the <a href="https://its.dot.gov/data/" target="_blank" rel="noopener noreferrer">ITS DataHub<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a> and other data catalogs to facilitate data discovery unless a specific privacy, confidentiality, security, or other valid restriction is identified. Project teams can claim such restrictions for approval by U.S. DOT when they submit their metadata. The ITS JPO may request more detailed documentation and data dictionaries where necessary for users to understand and use the data.
@@ -333,6 +333,20 @@
         Pub.L. 115–435, 2019.
         <a href="https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95" target="_blank" rel="noopener noreferrer">
           https://www.congress.gov/bill/115th-congress/house-bill/4174/text#toc-H8E449FBAEFA34E45A6F1F20EFB13ED95
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Geospatial Data Act of 2018.</strong>
+        43 USC 2801-2811 (2018).
+        <a href="https://www.fgdc.gov/gda/43-usc-ch-46-geospatial-data-geospatial-data-act.pdf" target="_blank" rel="noopener noreferrer">
+          https://www.fgdc.gov/gda/43-usc-ch-46-geospatial-data-geospatial-data-act.pdf
+          <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
+        </a>.
+      </li>
+      <li><strong>Geospatial Standards.</strong>
+        Geo Platform.gov, August 12, 2019.
+        <a href="https://communities.geoplatform.gov/ngda-transportation/geospatial-standards/" target="_blank" rel="noopener noreferrer">
+          https://communities.geoplatform.gov/ngda-transportation/geospatial-standards/
           <img class="in-line-external-link-icon" src="/images/icons/external-link_1b1b1b.svg" alt="External from DOT link icon" title="External link. Opens in a new tab.">
         </a>.
       </li>

@@ -14,7 +14,7 @@
                 <ul v-if="isVisible('guidelines') || isVisible('guidelinestemplatesguides')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <div v-if="isVisible('guidelines')">
                     <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background and Purpose</a>
+                      <a href="#" @click="moveToTag($event,'Background-and-Purpose')" class="table-of-contents">Background & Purpose</a>
                     </li>
                     <li class="usa-sidenav__item">
                       <a href="#" @click="moveToTag($event,'Scope')" class="table-of-contents">Scope</a>
@@ -32,13 +32,16 @@
                       <a href="#" @click="moveToTag($event,'Storage-and-Retention')" class="table-of-contents">Storage & Retention</a>
                     </li>
                     <li class="usa-sidenav__item">
-                      <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles & Responsibilities</a>
+                      <a href="#" @click="moveToTag($event,'Standards')" class="table-of-contents">Standards</a>
                     </li>
                     <li class="usa-sidenav__item">
                       <a href="#" @click="moveToTag($event,'Security-and-Privacy')" class="table-of-contents">Security & Privacy</a>
                     </li>
                     <li class="usa-sidenav__item">
                       <a href="#" @click="moveToTag($event,'Documentation')" class="table-of-contents">Documentation</a>
+                    </li>
+                    <li class="usa-sidenav__item">
+                      <a href="#" @click="moveToTag($event,'Implementation-Roles-and-Responsibilities')" class="table-of-contents">Implementation Roles & Responsibilities</a>
                     </li>
                     <li class="usa-sidenav__item">
                       <a href="#" @click="moveToTag($event,'Definitions')" class="table-of-contents">Definitions</a>
