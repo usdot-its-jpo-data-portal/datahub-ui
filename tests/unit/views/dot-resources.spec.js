@@ -51,7 +51,7 @@ describe('DOT Microsite Resources', () => {
   });
   it('Validate Guidelines subsections', () => {
     let expectedSubsections = [
-      {name:'Background and Purpose', found:false},
+      {name:'Background & Purpose', found:false},
       {name:'Scope', found:false},
       {name:'Audience', found:false},
       {name:'Access', found:false},
@@ -88,8 +88,10 @@ describe('DOT Microsite Resources', () => {
 
     }
     let result =  expectedSubsections.filter( (x) => { return x.found == false;} );
+    console.log(result);
     if(result.length>0)
     {
+      console.log("Length > 0");
       for(let k=0; k<result.length; k++) {
         console.log(`Missing sub-section [${result[k].name}]`)
       }
