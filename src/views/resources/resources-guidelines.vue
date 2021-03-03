@@ -93,7 +93,7 @@
       Datasets in ITS DataHub are required to be retained for a minimum of five years in accordance with the <a href="https://www.fhwa.dot.gov/legsregs/directives/orders/hoit-hq_.cfm" target="_blank" rel="noopener noreferrer">ITS DataHub Records Disposition Manual<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, NARA schedule number <a href="https://www.archives.gov/files/records-mgmt/rcs/schedules/departments/department-of-transportation/rg-0406/daa-0406-2014-0003_sf115.pdf" target="_blank" rel="noopener noreferrer">DAA-0406-2014-0003<img class="in-line-external-link-icon" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>. This retention period begins when U.S. DOT first receives access to a dataset. Project teams should be aware that the ITS DataHub Records Disposition Manual does not replace other potentially relevant disposition schedules.
     </p>
 
-    <h2 id="standards">7. Standards</h2>
+    <h2 id="Standards">7. Standards</h2>
     <p>
       Consistent with federal policy, project teams must use standards to promote data interoperability and openness, along with any other relevant standards, such as geospatial data standards. Where existing standards are insufficient, project teams must describe in their DMP how they will contribute to the development of new standards.
     </p>
