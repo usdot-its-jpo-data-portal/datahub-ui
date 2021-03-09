@@ -21,13 +21,14 @@ describe('DOT Microsite About', () => {
   it('has the expected number of H2 elements', () => {
     const wrapper = shallowMount(about, { attachTo: document.body, localVue, router });
     let h2s = wrapper.findAll('h2');
-    expect(h2s.length).toEqual(3);
+    expect(h2s.length).toEqual(4);
   });
   it('has the expected H2 elements', () => {
     const wrapper = shallowMount(about, { attachTo: document.body, localVue, router });
     let h2s = wrapper.findAll('h2');
     let expected = [
       'Available Data',
+      'Sample Collection Data Locations',
       'Disclaimer',
       'Contact Information'
     ];
