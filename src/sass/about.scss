@@ -22,11 +22,7 @@
     }
   }
   img {
-    // display: block;
     margin-top: 20px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // width: 80%;
   }
   ol {
     margin-left: 0*$dh-about_list-indent;
@@ -68,6 +64,20 @@
   &.about-vue{
     @include at-media-max('desktop'){
       margin-left: 0px;
+    }
+    @include at-media('desktop'){
+      #about-page_map{
+        padding-top: 15px;
+      }
+    }
+
+    #about-page_map_key{
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      max-width: 800px;
+      display: block;
+      padding-bottom: 1.5em;
     }
   }
 }

@@ -2,7 +2,7 @@
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
     <h1>Frequently Asked Questions (FAQs)</h1>
 
-    <h2 id="section-heading-h2">How do I find data on the ITS DataHub?</h2>
+    <h2>How do I find data on the ITS DataHub?</h2>
     <ol>
       <li>To begin your search for ITS data, type in a key word in the search bar or click on a <strong>RECOMMENDED DATASET SEARCHES</strong>. The <strong>FEATURED DATASETS</strong> section also highlights the newest datasets.</li>
       <li>Once the results are populated, clicking on the title of the search result will take you to the National Transportation Library (NTL) or data.transportation.gov (DTG), where the data resides.</li>
@@ -44,7 +44,7 @@
       </li>
     </ol>
 
-    <h2 id="section-heading-h2">How do I get access to sensitive transportation datasets?</h2>
+    <h2>How do I get access to sensitive transportation datasets?</h2>
     <p>
       USDOT provides access to sensitive data via several systems. The proof-of-concept <a target="_blank" href="https://www.transportation.gov/data/secure" rel="noopener noreferrer">Secure Data Commons<img class="in-line-dot-link-new-tab" src="/images/icons/external-tabs.svg" alt="New tab icon." title="Opens in a new tab."></a>, 
       provides a secure and collaborative controlled-access environment for sensitive data (i.e. proprietary or containing PII). 
@@ -52,15 +52,15 @@
       contact us at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
     </p>
 
-    <h2 id="section-heading-h2">How do I provide data to ITS DataHub?</h2>
+    <h2>How do I provide data to ITS DataHub?</h2>
     <p>
       Please review the <router-link id="data-management-template-id-in-page" to="/resources" class="in-page-link">Guidelines page</router-link> and reach out to the ITS JPO Data Program support team at <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>. 
     </p>
 
-    <h2 id="section-heading-h2">What kind of data should I provide?</h2>
+    <h2>What kind of data should I provide?</h2>
     <p>Appropriate data will vary according to the scope and goals of the proposed project. Applicants should consider the feasibility of obtaining and sharing data in preparing their proposals. In addition, appropriate data should be collected to support evaluation of the demonstrated system.</p>
 
-    <h2 id="section-heading-h2">What are the differences between primary research data and derived research data?</h2>
+    <h2>What are the differences between primary research data and derived research data?</h2>
     <p>The two tables below describe the general classification criteria for whether data is considered primary or derived.</p>
     <div class="research-data__wrapper">
       <div class="research-data__table usa-table" id="primary-research-data__table">

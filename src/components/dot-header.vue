@@ -58,7 +58,7 @@
   <header class="usa-header usa-header--extended usa-header--basic" role="banner">
     <div id="nav_dot_banner" class="usa-banner__header">
       <div class="usa-banner__inner">
-        <a style="background: none" href="https://transportation.gov">
+        <a style="background: none" target="_blank" href="https://transportation.gov">
           <img id="dot_logo" src="/images/dot_logo.png" alt="Department of Transportation logo">
         </a>
       </div>

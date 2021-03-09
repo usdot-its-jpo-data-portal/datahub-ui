@@ -12,15 +12,23 @@
             Users can directly connect and contribute to the ITS DataHub community and open data by hosting new data, generating data stories, creating data visualizations, downloading data, or recommending improvements. ITS DataHub facilitates third-party research into the effectiveness of emerging ITS technologies, preliminary development of third-party applications, and harmonization across similar collections.
           </p>
 
-          <h2 id="section-heading-h2">Available Data</h2>
+          <h2>Available Data</h2>
           <p>
             A wide variety of datasets created using ITS technologies are discoverable on ITS DataHub. Through ITS DataHub, datasets are all searchable in one central location. ITS DataHub’s datasets contain various types of information including, but not limited to, connected vehicle messages, automated vehicle data, trajectories, field test data, sensor data, connected equipment data, weather data, and application messages. Large, continuously expanding, or immature data is stored in a “sandbox” data environment.
           </p>
           <p>
             Many of the datasets found through ITS DataHub are published in near-real time, decreasing the time from research to insight. Check ITS DataHub often for updates including new datasets!
           </p>
+          <h2>Sample Collection Data Locations</h2>
+        </div>
 
-          <h2 id="section-heading-h2">Disclaimer</h2>
+        <div class="usa-layout-docs__main mobile:grid-col-12 usa-prose about-vue">
+          <img id="about-page_map" class="about-page_map" src="/images/us_map_data_locations.svg" alt="Map of the U.S displaying approximate locations of where some sample datasets on ITS DataHub come from.">
+          <img id="about-page_map_key" class="about-page_map" src="/images/us_map_data_locations_key.svg"  alt="Key for sample U.S. dataset locations map.">
+        </div>
+
+        <div class="usa-layout-docs__main desktop:grid-col-9 grid-offset-2 usa-prose about-vue">
+          <h2>Disclaimer</h2>
           <p>
             The data discoverable through ITS DataHub is offered as a public service by the U.S. Department of Transportation (U.S. DOT) and is expressly provided “AS IS” and “AS AVAILABLE”.
           </p>
@@ -33,7 +41,7 @@
           <p>
             Users should also review any relevant disclaimers found within storage systems used by ITS DataHub and/or datasets discoverable through ITS DataHub.
           </p>
-          <h2 id="section-heading-h2">Contact Information</h2>
+          <h2>Contact Information</h2>
           <p>
             For inquiries about ITS DataHub, please contact the ITS JPO Data Program support team at: <a href="mailto:data.itsjpo@dot.gov">data.itsjpo@dot.gov</a>.
           </p>
