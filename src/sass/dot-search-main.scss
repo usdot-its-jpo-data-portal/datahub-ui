@@ -105,14 +105,17 @@
         width: units(15);
   
         /* background */
-        background-color: $dh-home-color_main-search_heading-alt;
-        border: 1px solid $dh-color-primary-blue;
+        //background-color: $dh-home-color_main-search_heading-alt;
+        //border: 1px solid $dh-color-primary-blue;
         // border-left: none;
         // border-top: 1px solid $dh-home-color_main-search_heading-alt;
         // border-bottom: 1px solid $dh-home-color_main-search_heading-alt;
         // border-right: 1px solid $dh-home-color_main-search_heading-alt;
         border-top-right-radius: units(0.5);
         border-bottom-right-radius: units(0.5);
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-color: $dh-color-navy;
   
         /* text */
         font-size: units(3);

@@ -3,27 +3,31 @@
     <div class="grid-container">
       <div class="grid-row">
         <div class="grid-col-auto dh-home_featured-search-title">
-          <h3>FEATURED DATASETS</h3>
+          <h3 id="featured-datasets-heading">FEATURED DATASETS</h3>
         </div>
       </div>
     </div>
 
     <div class="grid-container">
-      <div class="grid-row grid-gap-6 dh-home_featured-search-layout">
-
-            <div class="grid-col-4 dh-home_featured-search-layout-cell" v-for="dataset in datasets" :key="dataset.id" v-bind:id="dataset.id">
-                <a class="featured-dataset" v-bind:href="dataset.url" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" target="_blank">
-                  <img v-bind:src="dataset.image" v-bind:alt="dataset.altText">
-                  <div class="dh-home_featured-search_dataset-textbox">
-                    <div class="dh-home_featured-search_dataset-name" :id="'dh-home_featured-search_dataset-name-'+dataset.id">
-                      {{dataset.name}}
-                    </div>
-                    <div class="dh-home_featured-search_dataset-description" :id="'dh-home_featured-search_dataset-description-'+dataset.id">
-                      {{dataset.desc}}
-                    </div>
-                  </div>
-                </a>
-            </div>
+      <div class="grid-row grid-gap-6 dh-home_featured-search-layout" role="region" aria-labelledby="featured-datasets-heading">
+        <div class="grid-col-4 mobile-lg:grid-col-6 dh-home_featured-search-layout-cell" v-for="dataset in datasets" :key="dataset.id" v-bind:id="dataset.id">
+            <!-- <a class="featured-dataset" v-bind:href="dataset.url" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" target="_blank" v-on:click="dot-disclaimer-popup"> -->
+              <!-- <a class="featured-dataset" v-bind:href="dataset.url" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" target="_blank" onclick="showDataDisclaimer()"> -->
+              <a class="featured-dataset" v-on:click="showDataDisclaimer(dataset.url)" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" tabindex="0" role="link">
+              
+              <!-- <img v-bind:src="dataset.image" v-bind:alt="dataset.altText"> -->
+              <div :id="'dh-home_featured-dataset_image-id_'+dataset.id" class="image-holder"></div>
+              <!-- <img v-bind:alt="dataset.altText" :id="'dh-home_featured-dataset_image-id_'+dataset.id"> -->
+              <div class="dh-home_featured-search_dataset-textbox">
+                <div class="dh-home_featured-search_dataset-name" :id="'dh-home_featured-search_dataset-name-'+dataset.id">
+                  {{dataset.name}}
+                </div>
+                <div class="dh-home_featured-search_dataset-description" :id="'dh-home_featured-search_dataset-description-'+dataset.id">
+                  {{dataset.desc}}
+                </div>
+              </div>
+            </a>
+        </div>
       </div>
     </div>
   </div>
@@ -57,6 +61,17 @@ export default {
             'dataId': TEMPLATE_DATASETS.datasets[i].url.substring(TEMPLATE_DATASETS.datasets[i].url.length - 9, TEMPLATE_DATASETS.datasets[i].url.length)
           })
         }
+      },
+      showDataDisclaimer: function (datasetUrl){
+        let alink = document.getElementById("data-disclaimer_navigate-to-dataset");
+        let popupElement = document.getElementById("data-disclaimer");
+        let overlayElement = document.getElementById("overlay");
+        let bodyElement = document.getElementById("body-id");
+        alink.setAttribute("href",datasetUrl);
+        popupElement.setAttribute("style","");
+        popupElement.setAttribute("aria-hidden","false");
+        overlayElement.setAttribute("class","is-visible");
+        bodyElement.classList.add("no-scroll");
       }
     }
   }

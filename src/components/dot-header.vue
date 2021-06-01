@@ -53,7 +53,6 @@
       </div>
     </div>
   </div>
-
   <div class="usa-overlay"></div>
   <header class="usa-header usa-header--extended usa-header--basic" role="banner">
     <div id="nav_dot_banner" class="usa-banner__header">
@@ -101,7 +100,6 @@
                 <span>View On GitHub</span>
                 <img class="usa-header__primary-link-icon-social" src="/images/icons/external-link_142350.svg" alt>
               </a>
-              
             </li>
           </ul>
           <div class="usa-nav__secondary">
@@ -121,8 +119,6 @@
                 </li>
               </ul>
             </div>
-            
-              
           </div>
         </div>
       </nav>
