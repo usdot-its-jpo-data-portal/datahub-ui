@@ -11,13 +11,8 @@
     <div class="grid-container">
       <div class="grid-row grid-gap-6 dh-home_featured-search-layout" role="region" aria-labelledby="featured-datasets-heading">
         <div class="grid-col-4 mobile-lg:grid-col-6 dh-home_featured-search-layout-cell" v-for="dataset in datasets" :key="dataset.id" v-bind:id="dataset.id">
-            <!-- <a class="featured-dataset" v-bind:href="dataset.url" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" target="_blank" v-on:click="dot-disclaimer-popup"> -->
-              <!-- <a class="featured-dataset" v-bind:href="dataset.url" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" target="_blank" onclick="showDataDisclaimer()"> -->
-              <a class="featured-dataset" v-on:click="showDataDisclaimer(dataset.url)" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" tabindex="0" role="link">
-              
-              <!-- <img v-bind:src="dataset.image" v-bind:alt="dataset.altText"> -->
+            <a class="featured-dataset" v-on:click="showDataDisclaimer(dataset.url)" :id="'dh-home_featured-datasets_dataset-name-'+dataset.id" tabindex="0" role="link">
               <div :id="'dh-home_featured-dataset_image-id_'+dataset.id" class="image-holder"></div>
-              <!-- <img v-bind:alt="dataset.altText" :id="'dh-home_featured-dataset_image-id_'+dataset.id"> -->
               <div class="dh-home_featured-search_dataset-textbox">
                 <div class="dh-home_featured-search_dataset-name" :id="'dh-home_featured-search_dataset-name-'+dataset.id">
                   {{dataset.name}}
