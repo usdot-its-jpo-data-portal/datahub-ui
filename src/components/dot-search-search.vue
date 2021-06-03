@@ -49,10 +49,8 @@ export default {
   mounted: function() {
     if (this.queryString) {
       setTimeout(()=>{
-        debugger;
         let sQuery = {term:this.queryString, phrase: true, limit: ES_QUERY_LIMIT};
         this.searchSend(sQuery);
-        debugger;
       },500)
     }
   },
