@@ -26,7 +26,7 @@
     </div>
     <div class="grid-row">
       <div class="mobile-lg:grid-col-3 dh-result-card__tags">
-        <div id="results_access_label" class="dh-result-card__meta-data">Related projects<br/>on ITS CodeHub:</div>
+        <div id="results_access_label" class="dh-result-card__meta-data" style="display: none;">Related projects<br/>on ITS CodeHub:</div>
         <ul>
           <li v-for="(rel, index) in relatedItems" :key="index">
             <a :href="rel.url" target="_blank" rel="noopener noreferrer">
@@ -35,13 +35,13 @@
             </a>
           </li>
         </ul>
-        <div v-if="relatedShowVisible" class="dh-result-card__tags-showmore">
+        <div v-if="relatedShowVisible" class="dh-result-card__tags-showmore" style="display: none;">
           <span v-if="relatedShowMore">...&nbsp;</span>
           <button v-if="relatedShowVisible" v-on:click="toggleShowMoreRelated()">
             {{relatedShowMoreText}}
           </button>
         </div>
-        <div v-if="!relatedShowVisible && relatedItems.length===0" class="dh-result-card__meta-text">None</div>
+        <div v-if="!relatedShowVisible && relatedItems.length===0" class="dh-result-card__meta-text" style="display: none;">None</div>
       </div>
       <div class="grid-col-fill dh-result-card__tags">
         <div v-if="itemTags && itemTags.length > 0" >
