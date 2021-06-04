@@ -11,6 +11,7 @@
     "uswds-init": "sh ./uswds-init.sh"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "bl": "^5.0.0",

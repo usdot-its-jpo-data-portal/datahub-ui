@@ -2,7 +2,7 @@
   <div class="grid-container dh-result-card__wrapper">
     <div class="grid-row">
       <div class="grid-col-fill dh-result-card__title">
-        <a :href="item.sourceUrl" target="_blank" class="search-result-link">
+        <a target="_blank" class="search-result-link" id="" v-on:click="showDataDisclaimer(item.sourceUrl)">
           <MDDatabase v-if="item.dhType=='Dataset'" title="Dataset" size="18px"></MDDatabase>
           <MDFileDocument v-if="item.dhType=='Document'" title="Article" size="18px"></MDFileDocument>
           {{ item.name }}
@@ -244,7 +244,18 @@ export default {
         limit: ES_QUERY_LIMIT
       }
       this.$emit('search',searchObj);
-    }
+    },
+    showDataDisclaimer: function (datasetUrl){
+        let alink = document.getElementById("data-disclaimer_navigate-to-dataset");
+        let popupElement = document.getElementById("data-disclaimer");
+        let overlayElement = document.getElementById("overlay");
+        let bodyElement = document.getElementById("body-id");
+        alink.setAttribute("href",datasetUrl);
+        popupElement.setAttribute("style","");
+        popupElement.setAttribute("aria-hidden","false");
+        overlayElement.setAttribute("class","is-visible");
+        bodyElement.classList.add("no-scroll");
+      }
   }
 }
 </script>

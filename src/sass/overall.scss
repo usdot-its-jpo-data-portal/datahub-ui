@@ -1,6 +1,10 @@
 html, body {
     scrollbar-width: none;
     -ms-overflow-style: none;
+
+    button, a {
+        cursor: pointer;
+    }
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -37,7 +41,6 @@ h3 {
 }
 
 /*--- Lists ---*/
-
 .usa-prose p ol,
 .usa-prose p ul{
     margin-top: units(1);
@@ -51,7 +54,6 @@ h3 {
 .usa-prose ol li{
     margin-bottom: units(1)
 }
-
 @include at-media-max('tablet') {
     .usa-prose ol ol {
         margin-left: 0px;
@@ -77,3 +79,67 @@ h3 {
     }
 }
 
+/*--- Buttons ---*/
+.lightcyan-button, .darkblue-button{
+    cursor: pointer;
+}
+
+.darkblue-button{
+    background-color: $dh-link_color-default;
+    border-color: $dh-color-light-gray;
+    color: $dh-color-white;
+
+    border: 1px solid $dh-color-light-gray;
+    border-color: #153e5b #143852 #103046;
+    border-radius: 4px;
+    background: $dh-link_color-default;
+    background: -webkit-linear-gradient(top,#018ed5,$dh-link_color-default);
+    background: linear-gradient(to bottom, #018ed5,$dh-link_color-default);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 40%) inset;
+}
+.darkblue-button:hover{
+    border: 1px solid $dh-color-light-gray;
+    border-color: #2F5875 #2E526C #2A4A60;
+    background: #1A78BC;
+    background: -webkit-linear-gradient(top,#1BA8EF,#1A78BC);
+    background: linear-gradient(to bottom,#1BA8EF,#1A78BC);
+}
+
+.lightcyan-button{
+    background-color:$dh-color-lightcyan;
+    border: 1px solid $dh-color-primary-blue;
+    border-color: #48d5d5 #3acfcf #2bb6b6;
+    border-radius: 4px;
+    background: $dh-color-lightcyan;
+    background: -webkit-linear-gradient(top,#d1ffff,$dh-color-lightcyan);
+    background: linear-gradient(to bottom,#d1ffff,$dh-color-lightcyan);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 40%) inset;
+    color: black !important;
+}
+.lightcyan-button:hover{
+    background-color:#82E6E6;
+    border: 1px solid $dh-color-primary-blue;
+    border-color: #2FBCBC #21B6B6 #129D9D;
+    border-radius: 4px;
+    background: #82E6E6;
+    background: linear-gradient(to bottom,$dh-color-lightcyan,#8BF2F2);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 40%) inset;
+}
+
+#overlay{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background: black;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 400;
+}
+#overlay.is-visible{
+    opacity: 0.7;
+    visibility: visible;
+}
