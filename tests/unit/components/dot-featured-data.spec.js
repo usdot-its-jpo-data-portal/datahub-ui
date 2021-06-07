@@ -15,7 +15,7 @@ describe('DOT Microsite - Home : Featured Search', () => {
     let b = wrapper.vm.datasets.length;
     expect(h).toEqual(b);
   });
-  it('renders the correct image source', () => {
+  /*it('renders the correct image source', () => {
     const wrapper = shallowMount(DOTFeaturedData, {attachTo: document.body});
     let htmlLinks = wrapper.findAll('a');
     for(let i=0; i<htmlLinks.length; i++) {
@@ -30,7 +30,7 @@ describe('DOT Microsite - Home : Featured Search', () => {
       let target = `alt="${wrapper.vm.datasets[i].altText}"`;
       expect(htmlLinks.at(i).find('img').html().includes(target)).toBe(true);
     }
-  });
+  });*/
   it('renders the correct dataset name', () => {
     const wrapper = shallowMount(DOTFeaturedData, {attachTo: document.body});
     let htmlLinks = wrapper.findAll('a');
