@@ -2,7 +2,7 @@
   <div class="grid-container dh-result-card__wrapper">
     <div class="grid-row">
       <div class="grid-col-fill dh-result-card__title">
-        <a :href="item.sourceUrl" target="_blank" class="search-result-link">
+        <a target="_blank" class="search-result-link" id="" v-on:click="showDataDisclaimer(item.sourceUrl)">
           <MDDatabase v-if="item.dhType=='Dataset'" title="Dataset" size="18px"></MDDatabase>
           <MDFileDocument v-if="item.dhType=='Document'" title="Article" size="18px"></MDFileDocument>
           {{ item.name }}
@@ -26,7 +26,7 @@
     </div>
     <div class="grid-row">
       <div class="mobile-lg:grid-col-3 dh-result-card__tags">
-        <div id="results_access_label" class="dh-result-card__meta-data">Related projects<br/>on ITS CodeHub:</div>
+        <div id="results_access_label" class="dh-result-card__meta-data" style="display: none;">Related projects<br/>on ITS CodeHub:</div>
         <ul>
           <li v-for="(rel, index) in relatedItems" :key="index">
             <a :href="rel.url" target="_blank" rel="noopener noreferrer">
@@ -35,13 +35,13 @@
             </a>
           </li>
         </ul>
-        <div v-if="relatedShowVisible" class="dh-result-card__tags-showmore">
+        <div v-if="relatedShowVisible" class="dh-result-card__tags-showmore" style="display: none;">
           <span v-if="relatedShowMore">...&nbsp;</span>
           <button v-if="relatedShowVisible" v-on:click="toggleShowMoreRelated()">
             {{relatedShowMoreText}}
           </button>
         </div>
-        <div v-if="!relatedShowVisible && relatedItems.length===0" class="dh-result-card__meta-text">None</div>
+        <div v-if="!relatedShowVisible && relatedItems.length===0" class="dh-result-card__meta-text" style="display: none;">None</div>
       </div>
       <div class="grid-col-fill dh-result-card__tags">
         <div v-if="itemTags && itemTags.length > 0" >
@@ -244,7 +244,18 @@ export default {
         limit: ES_QUERY_LIMIT
       }
       this.$emit('search',searchObj);
-    }
+    },
+    showDataDisclaimer: function (datasetUrl){
+        let alink = document.getElementById("data-disclaimer_navigate-to-dataset");
+        let popupElement = document.getElementById("data-disclaimer");
+        let overlayElement = document.getElementById("overlay");
+        let bodyElement = document.getElementById("body-id");
+        alink.setAttribute("href",datasetUrl);
+        popupElement.setAttribute("style","");
+        popupElement.setAttribute("aria-hidden","false");
+        overlayElement.setAttribute("class","is-visible");
+        bodyElement.classList.add("no-scroll");
+      }
   }
 }
 </script>
