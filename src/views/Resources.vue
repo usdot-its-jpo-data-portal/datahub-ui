@@ -10,7 +10,7 @@
                 <router-link id="id-resources-landing" to="/resources" class="page" :class=" isVisible('resourceslanding') ? 'usa-current' : '' ">Overview</router-link>
               </li>
               <li id="guidelines" class="usa-sidenav__item" :class=" isVisible('guidelines') ? 'usa-current_left-menu' : '' ">
-                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
+                <router-link id="id-guidelines" to="/resources/guidelines" class="page" :class=" isVisible('guidelines') || isVisible('guidelinestemplatesguides') ? 'usa-current' : '' ">Data Access Guidelines</router-link>
                 <ul v-if="isVisible('guidelines') || isVisible('guidelinestemplatesguides')" id="ul-guidelines" class="usa-sidenav__sublist">
                   <div v-if="isVisible('guidelines')">
                     <li class="usa-sidenav__item">
